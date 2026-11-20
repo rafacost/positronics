@@ -26,7 +26,7 @@ foreach ($kind in 'startup_scripts', 'server_scripts', 'client_scripts') {
 foreach ($dir in 'kubejs\assets', 'kubejs\data', 'kubejs\config', 'config', 'defaultconfigs') {
     $src = Join-Path $repo $dir
     if (Test-Path $src) {
-        robocopy $src (Join-Path $Instance $dir) /E /NJH /NJS /NP /NDL /XD positronics | Out-Null
+        robocopy $src (Join-Path $Instance $dir) /E /NJH /NJS /NP /NDL | Out-Null
         if ($LASTEXITCODE -ge 8) { throw "robocopy failed for $dir ($LASTEXITCODE)" }
         Write-Host "copied $dir"
     }

@@ -1,0 +1,346 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "waste_lands"
+	group: ""
+	icon: "minecraft:dead_bush"
+	id: "504F530000000101"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7[NCP Field Memo #0001]"
+				""
+				"Good morning, Reclamation Operator. The world has moved on, and most of it moved away."
+				"What remains is this fragment, one ruined NCP kiosk, and you."
+				""
+				"Your assignment: rebuild the North Central Positronics network, one tier at a time."
+				"Nothing here has ore. Nothing here spawns. Everything you will ever own, you will &areclaim&r, &aprocess&r or &aremember&r."
+				""
+				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
+			]
+			icon: "minecraft:lantern"
+			id: "504F530000001001"
+			rewards: [{
+				count: 3
+				id: "504F530000003001"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Welcome to the Waste Lands"
+			tasks: [{
+				id: "504F530000002001"
+				title: "Read the memo"
+				type: "checkmark"
+			}]
+			title: "The World Has Moved On"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #0002: Reclamation Units]"
+				""
+				"Your kit holds four &bMk I Reclamation Generators&r: cobblestone, dirt, sand and gravel."
+				"Place one and it slowly pulls matter in from the void. No power needed at this grade."
+				""
+				"Take items out by hand, or let a hopper or pipe do it for you."
+				"&7Tip: a hopper into a chest means the generator keeps working while you are away."
+			]
+			id: "504F530000001002"
+			rewards: [{
+				count: 2
+				id: "504F530000003002"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Matter from nothing (slowly)"
+			tasks: [{
+				count: 64L
+				id: "504F530000002002"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Reclamation Mk I"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #0003: Hydration Policy]"
+				""
+				"You have a &bthirst&r bar now. Drinking raw water is a bad idea: it is dirty, and it will make you sick."
+				""
+				"&aBoil it:&r put a water bottle on the campfire from your kit. After half a minute it is purified."
+				"Later, a &bWater Purifier&r does this much faster (it needs copper)."
+				""
+				"The little spring on the island never runs dry. Your canteen holds several drinks."
+				"&7NCP reminds you that dehydration is not covered by your contract."
+			]
+			id: "504F530000001003"
+			rewards: [{
+				count: 2
+				id: "504F530000003003"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Thirst, and how to survive it"
+			tasks: [{
+				count: 2L
+				id: "504F530000002003"
+				item: "toughasnails:purified_water_bottle"
+				type: "item"
+			}]
+			title: "Water Is Life"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["504F530000001003"]
+			description: [
+				"&7[NCP Field Memo #0004: Thermal Comfort]"
+				""
+				"Your body has a &btemperature&r. Nights, rain and winter push it down; heat sources push it up."
+				""
+				"&aStay warm:&r stand near your campfire, keep dry, and craft &bleaf armor&r from leaves for mild weather."
+				"Later, wool armor and a Thermoregulator will keep a whole room comfortable."
+				""
+				"Here is a thermometer, so you can see trouble before it finds you."
+			]
+			id: "504F530000001004"
+			rewards: [
+				{
+					id: "504F530000003004"
+					item: "toughasnails:thermometer"
+					type: "item"
+				}
+				{
+					id: "504F530000003005"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			subtitle: "Body temperature"
+			tasks: [{
+				id: "504F530000002004"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Warm Hands"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["504F530000001004"]
+			description: [
+				"&7[NCP Field Memo #0005: Seasonal Planning]"
+				""
+				"Time passes in &bseasons&r here: spring, summer, autumn, winter."
+				"Crops planted in the world grow only in the seasons they like, and winter is cold."
+				""
+				"&aPlan ahead:&r store food before winter and keep a warm place to stand."
+				"Take this calendar so you always know what is coming."
+			]
+			id: "504F530000001005"
+			rewards: [
+				{
+					id: "504F530000003006"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+				{
+					id: "504F530000003007"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			subtitle: "Spring, summer, autumn, winter"
+			tasks: [{
+				id: "504F530000002005"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Four Seasons"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #0006: Food Security]"
+				""
+				"There is no farmland to spare on a floating rock, so we grow food in &bBotany Pots&r."
+				""
+				"&aHow:&r place a pot, put a &bdirt&r block in it (your dirt generator makes plenty), then a seed."
+				"Wait, and right-click to harvest. Later, a &bhopper botany pot&r over a chest harvests on its own."
+			]
+			id: "504F530000001006"
+			rewards: [
+				{
+					count: 2
+					id: "504F530000003008"
+					item: "pamhc2crops:onionseeditem"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "504F530000003009"
+					item: "pamhc2crops:beanseeditem"
+					type: "item"
+				}
+				{
+					id: "504F53000000300A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			subtitle: "Farming without a farm"
+			tasks: [{
+				id: "504F530000002006"
+				item: "pamhc2crops:tomatoitem"
+				type: "item"
+			}]
+			title: "Pot Luck"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["504F530000001006"]
+			description: [
+				"&7[NCP Field Memo #0007: Nutrition]"
+				""
+				"Eating the same meal every day keeps you alive. Eating &bmany different foods&r makes you stronger:"
+				"every few new foods you try grants you an extra heart, permanently."
+				""
+				"Grow a variety, cook a variety. The Food Book tracks what you have already tried."
+			]
+			id: "504F530000001007"
+			rewards: [
+				{
+					id: "504F53000000300B"
+					item: "solcarrot:food_book"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "504F53000000300C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			subtitle: "Variety is the spice of life"
+			tasks: [
+				{
+					id: "504F530000002007"
+					item: "pamhc2crops:lettuceitem"
+					type: "item"
+				}
+				{
+					id: "504F530000002008"
+					item: "pamhc2crops:cornitem"
+					type: "item"
+				}
+			]
+			title: "Variety Is the Spice"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #0008: Timber]"
+				""
+				"That dead tree on the island still has two good logs in it. Your kit has saplings and bone meal."
+				""
+				"&aPlant, grow, harvest, replant.&r Wood is your first fuel, your first tools, and your first workbench."
+			]
+			id: "504F530000001008"
+			rewards: [{
+				count: 2
+				id: "504F53000000300D"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "A tree from a dead tree"
+			tasks: [{
+				count: 16L
+				id: "504F530000002009"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "Timber"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"504F530000001002"
+				"504F530000001008"
+			]
+			description: [
+				"&7[NCP Field Memo #0009: Glassworks]"
+				""
+				"Cobblestone makes a furnace. Sand from your generator, smelted, makes glass."
+				"Glass makes bottles, and bottles carry water. Everything connects."
+			]
+			id: "504F530000001009"
+			rewards: [{
+				id: "504F53000000300E"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Sand, fire, glass"
+			tasks: [{
+				count: 16L
+				id: "504F53000000200A"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "Glass and Bottles"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"504F530000001005"
+				"504F530000001007"
+				"504F530000001009"
+			]
+			description: [
+				"&7[NCP Field Memo #0010: Next Assignment]"
+				""
+				"You can drink, eat, stay warm and reclaim matter. You are, officially, &aalive&r."
+				""
+				"Your next posting is &bRiver Crossing&r: the first powered machines, the first Clearance Card,"
+				"and your first access to &bPositronic Memory&r."
+				""
+				"&8(Coming in the next alpha update.)"
+			]
+			icon: "minecraft:compass"
+			id: "504F53000000100A"
+			rewards: [{
+				count: 5
+				id: "504F53000000300F"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Survival training complete"
+			tasks: [{
+				id: "504F53000000200B"
+				title: "Report for duty"
+				type: "checkmark"
+			}]
+			title: "The Road Ahead"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "The Waste Lands"
+}
