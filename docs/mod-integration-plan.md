@@ -7,9 +7,9 @@ Added 2026-11-20: **Alchemistry** (+ ChemLib, AlchemyLib, KubeJS Alchemistry, AE
 | Mod | Decision | Status |
 |---|---|---|
 | **Immersive Engineering** | **Garden Cloche only.** | ✅ Done: every other IE recipe removed (excavator/veins, coke oven, blast furnace, wires); the cloche has a GT recipe at LV; the IE bee-processing add-on's recipes are removed. |
-| **Productive Bees** | Keep resource bees: "if one likes the bee path, it deserves to *bee* rewarded". **Balance instead of removal.** | Proposal below |
-| **Ad Astra + Stargate Journey** | **HV and higher are gated by ores found only on other planets.** Ships first, then stargates: a distant planet holds naquadah and the first Stargate, which you bring home. | Proposal below |
-| **Alchemistry** | **Make it shine:** elements as quest rewards, crafting with real chemical components, chemistry fully integrated with GregTech. | Proposal below |
+| **Productive Bees** | Keep resource bees: "if one likes the bee path, it deserves to *bee* rewarded". **Balance instead of removal.** | ✅ Done (Proposal B): 51 resource combs → Strata via GT centrifuge; Apiary chapter; honey booster in the Calla Paddy |
+| **Ad Astra + Stargate Journey** | **HV and higher are gated by ores found only on other planets.** Ships first, then stargates: a distant planet holds naquadah and the first Stargate, which you bring home. | ✅ Done (Proposal A, mapping approved): planet ground sifted at home; Glacio Stargate ruin (worldgen, verified); Space Program chapter |
+| **Alchemistry** | **Make it shine:** elements as quest rewards, crafting with real chemical components, chemistry fully integrated with GregTech. | ✅ Done (Proposal C): separate chemistry layer with guard rails, GT-tiered machines, fluid bridges, chemistry samples on Clearance Cards 3-10, Periodic Table chapter |
 
 ## Proposal A: Space gates the high tiers
 
