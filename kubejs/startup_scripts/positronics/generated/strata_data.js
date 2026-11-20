@@ -601,11 +601,11 @@ global.POSITRONICS_TRICKLE_STAGES = {
     "chances": [
       [
         "positronics:ferrous_stratum",
-        0.08
+        0.25
       ],
       [
         "positronics:cupric_stratum",
-        0.05
+        0.18
       ]
     ]
   },
