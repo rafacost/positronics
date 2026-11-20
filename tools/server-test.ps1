@@ -58,7 +58,12 @@ ServerEvents.loaded(event => {
     })
     JsonIO.write('kubejs/exported/positronics_star_caps.json', caps)
     console.info('[ServerTest] item + star dumps written')
-    event.server.scheduleInTicks(60, () => event.server.runCommandSilent('stop'))
+    event.server.runCommandSilent('execute in ad_astra:glacio run forceload add 0 0')
+    event.server.scheduleInTicks(200, () => {
+        let placed = event.server.runCommand('execute in ad_astra:glacio run place structure positronics:glacio_stargate_ruin 0 100 0')
+        console.info('[ServerTest] place glacio_stargate_ruin result: ' + placed)
+        event.server.scheduleInTicks(40, () => event.server.runCommandSilent('stop'))
+    })
 })
 '@ | Set-Content -Path $dump -Encoding utf8
 

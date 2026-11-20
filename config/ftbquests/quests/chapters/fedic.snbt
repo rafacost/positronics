@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FF0C2EAC1358C7FF"]
+			dependencies: ["FF0C2EAC1358C7FF" "2FC189C3A8E90004"]
 			description: [
 				"&7[NCP Field Memo #0602: Tungsten]"
 				""
@@ -160,7 +160,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7A208231B53A18D1"]
+			dependencies: ["7A208231B53A18D1" "26ED7FF269C5598E"]
 			description: [
 				"&7[NCP Field Memo #0606: Precious]"
 				""

@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B85D7C4C66D2C306"]
+			dependencies: ["B85D7C4C66D2C306" "D9F0FA7579486978"]
 			description: [
 				"&7[NCP Field Memo #0502: Titanium]"
 				""

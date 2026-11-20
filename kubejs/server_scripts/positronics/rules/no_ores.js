@@ -8,7 +8,8 @@ GTCEuServerEvents.oreVeins(event => {
 
 // Safety net: any ore block that still exists (structures, other mods) drops nothing.
 // Dimensions that are meant to have ores later (e.g. space) can be whitelisted here.
-const POSITRONICS_ORE_WHITELIST_MODS = []
+// Ad Astra and Stargate Journey ores only generate off Earth (planets, gate worlds): those are allowed.
+const POSITRONICS_ORE_WHITELIST_MODS = ['ad_astra', 'sgjourney']
 
 LootJS.modifiers(event => {
     Ingredient.of('#forge:ores').itemIds.forEach(id => {

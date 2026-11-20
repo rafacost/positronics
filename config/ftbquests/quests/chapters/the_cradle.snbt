@@ -39,11 +39,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FCBA41022669D42D"]
+			dependencies: ["FCBA41022669D42D" "B6634FEE059E59E6"]
 			description: [
 				"&7[NCP Field Memo #0402: Stainless]"
 				""
-				"Iron, nickel, chrome, manganese. Chrome comes from Seed III, so the first batches are precious."
+				"Iron, nickel, chrome, manganese. Chrome comes from the Moon (Space Program); later Seed III automates it at home."
 			]
 			id: "E24898A07A6CF886"
 			rewards: [

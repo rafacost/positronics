@@ -301,4 +301,72 @@ def simulation_lab():
             "title": "Simulation Lab", "icon": "hostilenetworks:sim_chamber", "quests": quests}
 
 
-SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), shop()]
+# ------------------------------------------------------------------ NCP SPACE PROGRAM (Ad Astra + Stargate Journey)
+def visit(dim):
+    return {"dimension": dim}
+
+
+SPACE = {
+    "id": "space_program", "filename": "space_program", "order": 33, "group": "Side Paths", "scrip": 5,
+    "title": "NCP Space Program", "icon": "ad_astra:tier_1_rocket",
+    "quests": [
+        {"key": "workbench", "title": "Look Up", "deps": ["lud:mvhull"], "tasks": ["ad_astra:nasa_workbench"],
+         "desc": memo("3401", "Space",
+                      "Everything above HV is made of things this world no longer has. The Moon, Mars, Venus and Mercury still do.",
+                      "The NASA Workbench needs your Clearance Card (Level 2, kept) and an MV hull.")},
+        {"key": "suit", "title": "Suit Up", "deps": ["workbench"],
+         "tasks": ["ad_astra:space_helmet", "ad_astra:space_suit", "ad_astra:space_pants", "ad_astra:space_boots", "ad_astra:oxygen_loader"],
+         "desc": memo("3402", "Life Support", "No air out there. Fill your suit with oxygen at an oxygen loader.")},
+        {"key": "fuel", "title": "Rocket Fuel", "deps": ["workbench"], "tasks": [("ad_astra:fuel_bucket", 3)],
+         "desc": memo("3403", "Fuel", "Distil ethanol (circuit 5) into rocket fuel at MV. Diesel works too, later.")},
+        {"key": "rocket1", "title": "Tier 1 Rocket", "deps": ["suit", "fuel"], "tasks": ["ad_astra:tier_1_rocket", "ad_astra:launch_pad"],
+         "scrip": 10, "desc": memo("3404", "Launch", "Build it at the NASA Workbench, place it on a launch pad, fuel it, and go.")},
+        {"key": "moon", "title": "The Moon", "deps": ["rocket1"], "tasks": [visit("ad_astra:moon")], "shape": "gear", "size": 1.4, "scrip": 15,
+         "desc": memo("3405", "The Moon", "One small step. Bring a lot of chests.")},
+        {"key": "moon_minerals", "title": "Lunar Regolith", "deps": ["moon"],
+         "tasks": [("ad_astra:moon_sand", 64), ("gtceu:chromite_dust", 8)],
+         "desc": memo("3406", "Chrome", "Sift moon sand in an MV sifter: &bchromite&r, cobaltite and vanadium magnetite.",
+                      "Chrome means kanthal and stainless steel: &bthis unlocks HV&r. Moon stone crushes into moon sand.")},
+        {"key": "desh", "title": "Desh", "deps": ["moon"], "tasks": [("ad_astra:desh_ingot", 16)],
+         "desc": memo("3407", "Desh", "Moon desh ore: the metal of the tier 2 rocket.")},
+        {"key": "rocket2", "title": "Tier 2 Rocket", "deps": ["desh", "the_cradle:hvhull"], "tasks": ["ad_astra:tier_2_rocket"], "scrip": 10,
+         "desc": memo("3408", "Launch", "Desh engines and tanks, built at HV.")},
+        {"key": "mars", "title": "Mars", "deps": ["rocket2"], "tasks": [visit("ad_astra:mars")], "shape": "gear", "size": 1.4, "scrip": 20,
+         "desc": memo("3409", "Mars", "Red, cold and full of titanium.")},
+        {"key": "mars_minerals", "title": "Martian Regolith", "deps": ["mars"], "tasks": [("ad_astra:mars_sand", 64), ("gtceu:rutile_dust", 8)],
+         "desc": memo("3410", "Titanium", "Sift mars sand at HV: &brutile&r, ilmenite, magnesite. Titanium: &bthis unlocks EV&r.")},
+        {"key": "ostrum", "title": "Ostrum", "deps": ["mars"], "tasks": [("ad_astra:ostrum_ingot", 16)],
+         "desc": memo("3411", "Ostrum", "Mars ostrum ore: the metal of the tier 3 rocket.")},
+        {"key": "rocket3", "title": "Tier 3 Rocket", "deps": ["ostrum", "the_dogan:evhull"], "tasks": ["ad_astra:tier_3_rocket"], "scrip": 10,
+         "desc": memo("3412", "Launch", "Ostrum engines, built at EV. Venus and Mercury are both in range.")},
+        {"key": "venus", "title": "Venus", "deps": ["rocket3"], "tasks": [visit("ad_astra:venus")], "shape": "gear", "size": 1.4, "scrip": 20,
+         "desc": memo("3413", "Venus", "464 degrees. Bring heat protection.")},
+        {"key": "venus_minerals", "title": "Venusian Regolith", "deps": ["venus"], "tasks": [("ad_astra:venus_sand", 64), ("gtceu:scheelite_dust", 8)],
+         "desc": memo("3414", "Tungsten", "Sift venus sand at EV: &bscheelite&r, tungstate, molybdenite, sulfur. Tungsten: &bthis unlocks IV&r.")},
+        {"key": "mercury", "title": "Mercury", "deps": ["rocket3"], "tasks": [visit("ad_astra:mercury")], "shape": "gear", "size": 1.4, "scrip": 20,
+         "desc": memo("3415", "Mercury", "Closest to the sun, richest in platinum.")},
+        {"key": "mercury_minerals", "title": "Mercurian Rock", "deps": ["mercury"], "tasks": [("ad_astra:mercury_cobblestone", 64), ("gtceu:cooperite_dust", 8)],
+         "desc": memo("3416", "Platinum", "Sift mercury cobblestone at EV: &bcooperite&r (the platinum group), tantalite, pyrochlore.")},
+        {"key": "calorite", "title": "Calorite", "deps": ["venus"], "tasks": [("ad_astra:calorite_ingot", 16)],
+         "desc": memo("3417", "Calorite", "Venus calorite ore: the metal of the tier 4 rocket.")},
+        {"key": "rocket4", "title": "Tier 4 Rocket", "deps": ["calorite", "fedic:ivhull"], "tasks": ["ad_astra:tier_4_rocket"], "scrip": 15,
+         "desc": memo("3418", "Launch", "Calorite engines, built at IV. Proxima Centauri is in range.")},
+        {"key": "glacio", "title": "Glacio", "deps": ["rocket4"], "tasks": [visit("ad_astra:glacio")], "shape": "gear", "size": 1.6, "scrip": 30,
+         "desc": memo("3419", "Another Star", "A frozen world around another star. NCP records mention a gate site here.")},
+        {"key": "ruin", "title": "The Ruin", "deps": ["glacio"], "tasks": ["sgjourney:classic_stargate", "sgjourney:classic_dhd"],
+         "shape": "hexagon", "size": 1.6, "scrip": 40,
+         "desc": memo("3420", "The Door",
+                      "Somewhere in Glacio's snowy barrens and ice peaks stands a broken ring of naquadah: an NCP gate site.",
+                      "Sites are scattered about every four hundred blocks. Under the ring, a chest: &bthe first Stargate&r and its DHD.",
+                      "&aBring them home.&r Ships got you here; from now on, gates take you further.")},
+        {"key": "naquadah", "title": "Naquadah", "deps": ["glacio"], "tasks": [("gtceu:naquadah_dust", 8)],
+         "desc": memo("3421", "Naquadah", "Sift glacio cobblestone at IV for monazite, pyrochlore, iridium, osmium and a little &bnaquadah&r.",
+                      "Raw naquadah from the gate site macerates into GregTech naquadah too. Naquadah: &bthis unlocks ZPM&r.")},
+        {"key": "abydos", "title": "Through the Gate", "deps": ["ruin"], "tasks": [visit("sgjourney:abydos")], "shape": "gear", "size": 1.8, "scrip": 50,
+         "desc": memo("3422", "Abydos", "Set up the gate and its DHD at home, power it, and dial. The first world beyond the ships.",
+                      "&7Further gate worlds (Chulak, Lantea, Athos...) become the resource regions of the last tiers.")},
+    ],
+}
+
+
+SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, shop()]

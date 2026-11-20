@@ -1,0 +1,690 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space_program"
+	group: "7189CCE6C12A632F"
+	icon: "ad_astra:tier_1_rocket"
+	id: "9897C6EB7EB7DBD1"
+	order_index: 33
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["D94F8F7610476EEB"]
+			description: [
+				"&7[NCP Field Memo #3401: Space]"
+				""
+				"Everything above HV is made of things this world no longer has. The Moon, Mars, Venus and Mercury still do."
+				"The NASA Workbench needs your Clearance Card (Level 2, kept) and an MV hull."
+			]
+			id: "163A2519AF47868C"
+			rewards: [
+				{
+					count: 5
+					id: "2C1CA4705BE5D64F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "612CA139C3747F01"
+					item: "ad_astra:nasa_workbench"
+					type: "item"
+				}
+			]
+			title: "Look Up"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["163A2519AF47868C"]
+			description: [
+				"&7[NCP Field Memo #3402: Life Support]"
+				""
+				"No air out there. Fill your suit with oxygen at an oxygen loader."
+			]
+			id: "656BDD5BB26FA08C"
+			rewards: [
+				{
+					count: 5
+					id: "A3C83EA9B06B77B1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F45C7ABF52B2EBDB"
+					item: "ad_astra:space_helmet"
+					type: "item"
+				}
+				{
+					id: "9A9EF854B9345857"
+					item: "ad_astra:space_suit"
+					type: "item"
+				}
+				{
+					id: "0DA745B489A5B508"
+					item: "ad_astra:space_pants"
+					type: "item"
+				}
+				{
+					id: "92D7CC1CA6BBE7A7"
+					item: "ad_astra:space_boots"
+					type: "item"
+				}
+				{
+					id: "9D5023D95CADAC08"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+			]
+			title: "Suit Up"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["163A2519AF47868C"]
+			description: [
+				"&7[NCP Field Memo #3403: Fuel]"
+				""
+				"Distil ethanol (circuit 5) into rocket fuel at MV. Diesel works too, later."
+			]
+			id: "B0E136AE55398379"
+			rewards: [
+				{
+					count: 5
+					id: "86E0BFC77E4C680F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "F9FC00FD46ED9E6D"
+					item: "ad_astra:fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "Rocket Fuel"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["656BDD5BB26FA08C" "B0E136AE55398379"]
+			description: [
+				"&7[NCP Field Memo #3404: Launch]"
+				""
+				"Build it at the NASA Workbench, place it on a launch pad, fuel it, and go."
+			]
+			id: "8F38D08F621E48B1"
+			rewards: [
+				{
+					count: 10
+					id: "E9B9866689F07456"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "18D4F4496CD6E8B9"
+					item: "ad_astra:tier_1_rocket"
+					type: "item"
+				}
+				{
+					id: "C42BFA3742861455"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
+			title: "Tier 1 Rocket"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8F38D08F621E48B1"]
+			description: [
+				"&7[NCP Field Memo #3405: The Moon]"
+				""
+				"One small step. Bring a lot of chests."
+			]
+			id: "3DCC64121D13E4FF"
+			rewards: [
+				{
+					count: 15
+					id: "4E74AA8C7D55DDDE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			tasks: [
+				{
+					dimension: "ad_astra:moon"
+					id: "2C4B8854112928A5"
+					type: "dimension"
+				}
+			]
+			title: "The Moon"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DCC64121D13E4FF"]
+			description: [
+				"&7[NCP Field Memo #3406: Chrome]"
+				""
+				"Sift moon sand in an MV sifter: &bchromite&r, cobaltite and vanadium magnetite."
+				"Chrome means kanthal and stainless steel: &bthis unlocks HV&r. Moon stone crushes into moon sand."
+			]
+			id: "B6634FEE059E59E6"
+			rewards: [
+				{
+					count: 5
+					id: "1780660D6D09CB0D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "D4FEE8242B80CD26"
+					item: "ad_astra:moon_sand"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "FB23FF39934D62D2"
+					item: "gtceu:chromite_dust"
+					type: "item"
+				}
+			]
+			title: "Lunar Regolith"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DCC64121D13E4FF"]
+			description: [
+				"&7[NCP Field Memo #3407: Desh]"
+				""
+				"Moon desh ore: the metal of the tier 2 rocket."
+			]
+			id: "95B35F4E0785302B"
+			rewards: [
+				{
+					count: 5
+					id: "E6D31045C9469145"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "EAA8722B11D1DD1B"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "Desh"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["95B35F4E0785302B" "31783CA49496A5D1"]
+			description: [
+				"&7[NCP Field Memo #3408: Launch]"
+				""
+				"Desh engines and tanks, built at HV."
+			]
+			id: "ECE3DAF5DC7F1322"
+			rewards: [
+				{
+					count: 10
+					id: "A25BA5E3B7BAB2DC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "52472A444006063C"
+					item: "ad_astra:tier_2_rocket"
+					type: "item"
+				}
+			]
+			title: "Tier 2 Rocket"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ECE3DAF5DC7F1322"]
+			description: [
+				"&7[NCP Field Memo #3409: Mars]"
+				""
+				"Red, cold and full of titanium."
+			]
+			id: "B895EF9E02027967"
+			rewards: [
+				{
+					count: 20
+					id: "18FCE016C0DA26DB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			tasks: [
+				{
+					dimension: "ad_astra:mars"
+					id: "55553224181B7802"
+					type: "dimension"
+				}
+			]
+			title: "Mars"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B895EF9E02027967"]
+			description: [
+				"&7[NCP Field Memo #3410: Titanium]"
+				""
+				"Sift mars sand at HV: &brutile&r, ilmenite, magnesite. Titanium: &bthis unlocks EV&r."
+			]
+			id: "D9F0FA7579486978"
+			rewards: [
+				{
+					count: 5
+					id: "72B492E921582488"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "AEACA64047CBC731"
+					item: "ad_astra:mars_sand"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5B1ECECBA33EC841"
+					item: "gtceu:rutile_dust"
+					type: "item"
+				}
+			]
+			title: "Martian Regolith"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B895EF9E02027967"]
+			description: [
+				"&7[NCP Field Memo #3411: Ostrum]"
+				""
+				"Mars ostrum ore: the metal of the tier 3 rocket."
+			]
+			id: "8E9335292F0ED114"
+			rewards: [
+				{
+					count: 5
+					id: "5768F529289B74B7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "E5540F65CADCA5AA"
+					item: "ad_astra:ostrum_ingot"
+					type: "item"
+				}
+			]
+			title: "Ostrum"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["8E9335292F0ED114" "22289E8809BF87AE"]
+			description: [
+				"&7[NCP Field Memo #3412: Launch]"
+				""
+				"Ostrum engines, built at EV. Venus and Mercury are both in range."
+			]
+			id: "5C0ED4B2E4BD5560"
+			rewards: [
+				{
+					count: 10
+					id: "D83EF45A86515CFD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "E249232AA281A29F"
+					item: "ad_astra:tier_3_rocket"
+					type: "item"
+				}
+			]
+			title: "Tier 3 Rocket"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C0ED4B2E4BD5560"]
+			description: [
+				"&7[NCP Field Memo #3413: Venus]"
+				""
+				"464 degrees. Bring heat protection."
+			]
+			id: "E24F83A3D4D42291"
+			rewards: [
+				{
+					count: 20
+					id: "02FFC78442CAF15C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			tasks: [
+				{
+					dimension: "ad_astra:venus"
+					id: "A167F2210DF167C4"
+					type: "dimension"
+				}
+			]
+			title: "Venus"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E24F83A3D4D42291"]
+			description: [
+				"&7[NCP Field Memo #3414: Tungsten]"
+				""
+				"Sift venus sand at EV: &bscheelite&r, tungstate, molybdenite, sulfur. Tungsten: &bthis unlocks IV&r."
+			]
+			id: "2FC189C3A8E90004"
+			rewards: [
+				{
+					count: 5
+					id: "2CA71AE682BC0AF3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "5D0EF40022797898"
+					item: "ad_astra:venus_sand"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "D8C8669CD7026341"
+					item: "gtceu:scheelite_dust"
+					type: "item"
+				}
+			]
+			title: "Venusian Regolith"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C0ED4B2E4BD5560"]
+			description: [
+				"&7[NCP Field Memo #3415: Mercury]"
+				""
+				"Closest to the sun, richest in platinum."
+			]
+			id: "A1BAE8B20B2344D8"
+			rewards: [
+				{
+					count: 20
+					id: "DDCB4B171510EC96"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			tasks: [
+				{
+					dimension: "ad_astra:mercury"
+					id: "752C308A1632E69D"
+					type: "dimension"
+				}
+			]
+			title: "Mercury"
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["A1BAE8B20B2344D8"]
+			description: [
+				"&7[NCP Field Memo #3416: Platinum]"
+				""
+				"Sift mercury cobblestone at EV: &bcooperite&r (the platinum group), tantalite, pyrochlore."
+			]
+			id: "26ED7FF269C5598E"
+			rewards: [
+				{
+					count: 5
+					id: "0B4F5D5E1D801894"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "EE6E7025EA771736"
+					item: "ad_astra:mercury_cobblestone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1C5B0CEE319576CB"
+					item: "gtceu:cooperite_dust"
+					type: "item"
+				}
+			]
+			title: "Mercurian Rock"
+			x: 20.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["E24F83A3D4D42291"]
+			description: [
+				"&7[NCP Field Memo #3417: Calorite]"
+				""
+				"Venus calorite ore: the metal of the tier 4 rocket."
+			]
+			id: "4F6972DD7B119EA8"
+			rewards: [
+				{
+					count: 5
+					id: "430BEEFEE8BFC88F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "83CEB8A7A82B1067"
+					item: "ad_astra:calorite_ingot"
+					type: "item"
+				}
+			]
+			title: "Calorite"
+			x: 20.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4F6972DD7B119EA8" "7A208231B53A18D1"]
+			description: [
+				"&7[NCP Field Memo #3418: Launch]"
+				""
+				"Calorite engines, built at IV. Proxima Centauri is in range."
+			]
+			id: "B9235C09791E4C1F"
+			rewards: [
+				{
+					count: 15
+					id: "56F2FA29A330BB59"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "FA88D7DD093E4487"
+					item: "ad_astra:tier_4_rocket"
+					type: "item"
+				}
+			]
+			title: "Tier 4 Rocket"
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B9235C09791E4C1F"]
+			description: [
+				"&7[NCP Field Memo #3419: Another Star]"
+				""
+				"A frozen world around another star. NCP records mention a gate site here."
+			]
+			id: "84E2641F20FABC9F"
+			rewards: [
+				{
+					count: 30
+					id: "31BAB6834C51A0BE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.6d
+			tasks: [
+				{
+					dimension: "ad_astra:glacio"
+					id: "F7C88BA629E4E2A7"
+					type: "dimension"
+				}
+			]
+			title: "Glacio"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["84E2641F20FABC9F"]
+			description: [
+				"&7[NCP Field Memo #3420: The Door]"
+				""
+				"Somewhere in Glacio's snowy barrens and ice peaks stands a broken ring of naquadah: an NCP gate site."
+				"Sites are scattered about every four hundred blocks. Under the ring, a chest: &bthe first Stargate&r and its DHD."
+				"&aBring them home.&r Ships got you here; from now on, gates take you further."
+			]
+			id: "761D8F57D4ED4352"
+			rewards: [
+				{
+					count: 40
+					id: "6A296197B4DB94D8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "A1186D3F9A675B9C"
+					item: "sgjourney:classic_stargate"
+					type: "item"
+				}
+				{
+					id: "B67307763AB783E2"
+					item: "sgjourney:classic_dhd"
+					type: "item"
+				}
+			]
+			title: "The Ruin"
+			x: 26.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["84E2641F20FABC9F"]
+			description: [
+				"&7[NCP Field Memo #3421: Naquadah]"
+				""
+				"Sift glacio cobblestone at IV for monazite, pyrochlore, iridium, osmium and a little &bnaquadah&r."
+				"Raw naquadah from the gate site macerates into GregTech naquadah too. Naquadah: &bthis unlocks ZPM&r."
+			]
+			id: "CD3EB71F7C570954"
+			rewards: [
+				{
+					count: 5
+					id: "B7B5281B98E55AF9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "40C36752A199BCB2"
+					item: "gtceu:naquadah_dust"
+					type: "item"
+				}
+			]
+			title: "Naquadah"
+			x: 26.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["761D8F57D4ED4352"]
+			description: [
+				"&7[NCP Field Memo #3422: Abydos]"
+				""
+				"Set up the gate and its DHD at home, power it, and dial. The first world beyond the ships."
+				"&7Further gate worlds (Chulak, Lantea, Athos...) become the resource regions of the last tiers."
+			]
+			id: "643D2AFC0670846D"
+			rewards: [
+				{
+					count: 50
+					id: "87204E16C35C059C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.8d
+			tasks: [
+				{
+					dimension: "sgjourney:abydos"
+					id: "02618B3308784262"
+					type: "dimension"
+				}
+			]
+			title: "Through the Gate"
+			x: 28.0d
+			y: 0.0d
+		}
+	]
+	title: "NCP Space Program"
+}

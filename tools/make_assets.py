@@ -23,6 +23,10 @@ class Int(int):
     pass
 
 
+class Byte(int):
+    pass
+
+
 def _name(buf, name):
     raw = name.encode("utf-8")
     buf.write(struct.pack(">H", len(raw)))
@@ -30,6 +34,8 @@ def _name(buf, name):
 
 
 def _type(value):
+    if isinstance(value, Byte):
+        return TAG_BYTE
     if isinstance(value, Int):
         return TAG_INT
     if isinstance(value, str):
@@ -43,7 +49,9 @@ def _type(value):
 
 def _payload(buf, value):
     t = _type(value)
-    if t == TAG_INT:
+    if t == TAG_BYTE:
+        buf.write(struct.pack(">b", value))
+    elif t == TAG_INT:
         buf.write(struct.pack(">i", value))
     elif t == TAG_STRING:
         _name(buf, value)
@@ -137,6 +145,54 @@ def island():
         "blocks": block_list,
         "entities": [],
     }
+
+
+def stargate_ruin():
+    """A ruined NCP gate site on Glacio: cracked platform, a broken naquadah ring, and a chest
+    holding the first Stargate. 11 x 9 x 5 (x, y, z)."""
+    blocks = {}
+
+    def put(x, y, z, name, props=None, nbt=None):
+        blocks[(x, y, z)] = (name, props or {}, nbt)
+
+    # platform (y=0): cut naquadah with cracked gaps of glacio cobblestone
+    for x in range(11):
+        for z in range(5):
+            name = "sgjourney:cut_naquadah_block" if (x * 7 + z * 3) % 5 else "ad_astra:glacio_cobblestone"
+            put(x, 0, z, name)
+    # broken ring in the x-y plane at z=2, centre (5, 4), radius 4; about a third is missing
+    for x in range(11):
+        for y in range(1, 9):
+            d = ((x - 5) ** 2 + (y - 4) ** 2) ** 0.5
+            if 3.5 <= d <= 4.5 and not (x >= 7 and y >= 4) and not (x == 1 and y == 6):
+                put(x, y, 2, "sgjourney:naquadah_block")
+    # fallen ring pieces on the platform
+    for x, z in [(8, 1), (9, 3), (8, 4)]:
+        put(x, 1, z, "sgjourney:naquadah_block")
+    # the chest, under the ring
+    items = [
+        {"Slot": Byte(0), "id": "sgjourney:classic_stargate", "Count": Byte(1)},
+        {"Slot": Byte(1), "id": "sgjourney:classic_dhd", "Count": Byte(1)},
+        {"Slot": Byte(4), "id": "sgjourney:raw_naquadah", "Count": Byte(16)},
+    ]
+    put(5, 1, 0, "minecraft:chest", {"facing": "north", "type": "single", "waterlogged": "false"},
+        {"id": "minecraft:chest", "Items": items})
+
+    palette, index, block_list = [], {}, []
+    for (x, y, z), (name, props, nbt) in sorted(blocks.items()):
+        key = (name, tuple(sorted(props.items())))
+        if key not in index:
+            entry = {"Name": name}
+            if props:
+                entry["Properties"] = dict(props)
+            index[key] = len(palette)
+            palette.append(entry)
+        entry = {"pos": [Int(x), Int(y), Int(z)], "state": Int(index[key])}
+        if nbt:
+            entry["nbt"] = nbt
+        block_list.append(entry)
+    return {"DataVersion": Int(DATA_VERSION), "size": [Int(11), Int(9), Int(5)],
+            "palette": palette, "blocks": block_list, "entities": []}
 
 
 # --------------------------------------------------------------------------- PNG writer
@@ -308,6 +364,9 @@ def sandwich_texture():
 
 
 if __name__ == "__main__":
+    ruin = os.path.join(ROOT, "kubejs", "data", "positronics", "structures", "stargate_ruin.nbt")
+    write_nbt(ruin, stargate_ruin())
+    print("wrote", os.path.relpath(ruin, ROOT))
     tex = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item")
     write_png(os.path.join(tex, "garden_salad.png"), bowl_texture([(92, 168, 64, 255), (126, 196, 82, 255), (200, 52, 40, 255), (70, 140, 50, 255)]))
     write_png(os.path.join(tex, "vegetable_broth.png"), bowl_texture([(214, 120, 48, 255), (232, 150, 70, 255), (196, 100, 40, 255), (120, 170, 70, 255)]))

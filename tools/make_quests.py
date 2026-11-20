@@ -160,6 +160,10 @@ def main():
                     lines.append(f"\t\t\t\t\tid: {tid}")
                     lines.append(f"\t\t\t\t\ttitle: {s(q.get('check_title', 'Understood'))}")
                     lines.append('\t\t\t\t\ttype: "checkmark"')
+                elif isinstance(t, dict) and "dimension" in t:
+                    lines.append(f"\t\t\t\t\tdimension: {s(t['dimension'])}")
+                    lines.append(f"\t\t\t\t\tid: {tid}")
+                    lines.append('\t\t\t\t\ttype: "dimension"')
                 else:
                     item, count = (t, 1) if isinstance(t, str) else t
                     check(item, f"{cid}/{k} task")
