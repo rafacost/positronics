@@ -4,19 +4,19 @@
 	filename: "the_cradle"
 	group: ""
 	icon: "gtceu:hv_machine_hull"
-	id: "F1BFAF7326DF9AA1"
+	id: "24D0CF758938E7F1"
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["A5675780849BF9A2"]
+			dependencies: ["5E90CEF477576E09"]
 			description: [
 				"&7[NCP Field Memo #0401: Posting]"
 				""
 				"The Cradle was Lud's great station. Restore its power."
 				"Goal: &bClearance Level 4&r."
 			]
-			id: "FCBA41022669D42D"
+			id: "2B380FF9E5AB61AF"
 			rewards: [
 				{
 					count: 5
@@ -39,13 +39,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FCBA41022669D42D" "B6634FEE059E59E6"]
+			dependencies: ["2B380FF9E5AB61AF" "3F9FC3DB1395B210"]
 			description: [
 				"&7[NCP Field Memo #0402: Stainless]"
 				""
 				"Iron, nickel, chrome, manganese. Chrome comes from the Moon (Space Program); later Seed III automates it at home."
 			]
-			id: "E24898A07A6CF886"
+			id: "5ABFB335F19B4F7E"
 			rewards: [
 				{
 					count: 5
@@ -67,7 +67,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["E24898A07A6CF886"]
+			dependencies: ["5ABFB335F19B4F7E"]
 			description: [
 				"&7[NCP Field Memo #0403: Hull]"
 				""
@@ -84,7 +84,7 @@
 			]
 			tasks: [
 				{
-					id: "F18719453727C751"
+					id: "61A7C375FB754D08"
 					item: "gtceu:hv_machine_hull"
 					type: "item"
 				}
@@ -100,7 +100,7 @@
 				""
 				"Microprocessors need clean air. Build a cleanroom around your chip lines."
 			]
-			id: "A7A0EC2728AE3A5A"
+			id: "2652E45AD9C46545"
 			rewards: [
 				{
 					count: 5
@@ -111,7 +111,7 @@
 			]
 			tasks: [
 				{
-					id: "96250A693A313CCF"
+					id: "2CF5E043D67A4977"
 					item: "gtceu:cleanroom"
 					type: "item"
 				}
@@ -131,7 +131,7 @@
 			rewards: [
 				{
 					count: 5
-					id: "8F116B300C5DAEE9"
+					id: "08693B03E17DAC10"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -180,12 +180,12 @@
 					type: "item"
 				}
 				{
-					id: "8FC770E5D28E5F9E"
+					id: "5D83A6C65F702B20"
 					item: "gtceu:mv_circuit_assembler"
 					type: "item"
 				}
 				{
-					id: "AB1104E002C9AC75"
+					id: "53B78850FFF6B21D"
 					item: "gtceu:hv_distillery"
 					type: "item"
 				}
@@ -195,7 +195,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["A7A0EC2728AE3A5A" "1A7F4A25FAD51EE0"]
+			dependencies: ["2652E45AD9C46545" "1A7F4A25FAD51EE0"]
 			description: [
 				"&7[NCP Field Memo #0407: Micro]"
 				""
@@ -205,7 +205,7 @@
 			rewards: [
 				{
 					count: 5
-					id: "F4EFDBFF8F340160"
+					id: "48F17E099447E797"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -213,13 +213,13 @@
 			tasks: [
 				{
 					count: 4L
-					id: "F954D59F44092B50"
+					id: "541F0347111D1650"
 					item: "gtceu:micro_processor"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "B75F38B9694EF831"
+					id: "49B2FC49114D4B31"
 					item: "gtceu:micro_processor_assembly"
 					type: "item"
 				}
@@ -240,7 +240,7 @@
 				""
 				"Assembled at HV with Positronic Core III. Tier 3 generators: four items a second, and the Ore Generator yields Seed III."
 			]
-			id: "8008AB950C5DA78B"
+			id: "7EDE7A02EE69280E"
 			rewards: [
 				{
 					count: 5
@@ -251,7 +251,7 @@
 			]
 			tasks: [
 				{
-					id: "A1CC964499137E4F"
+					id: "75B7DD9F65B61045"
 					item: "usrg:tier_upgrade_3"
 					type: "item"
 				}
@@ -261,17 +261,17 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["36EC39568E8EF167" "8008AB950C5DA78B"]
+			dependencies: ["36EC39568E8EF167" "7EDE7A02EE69280E"]
 			description: [
 				"&7[NCP Field Memo #0412: Clearance]"
 				""
 				"&bClearance Level 4&r. Next posting: &bThe Dogan&r."
 			]
-			id: "C4AEF99915A9BBC9"
+			id: "74726E133799D18A"
 			rewards: [
 				{
 					count: 30
-					id: "C550C01FBB351FCE"
+					id: "01A6D82006569645"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}

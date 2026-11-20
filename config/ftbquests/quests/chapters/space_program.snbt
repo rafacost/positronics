@@ -4,12 +4,12 @@
 	filename: "space_program"
 	group: "7189CCE6C12A632F"
 	icon: "ad_astra:tier_1_rocket"
-	id: "9897C6EB7EB7DBD1"
+	id: "42BA730BDC711F1C"
 	order_index: 33
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["D94F8F7610476EEB"]
+			dependencies: ["4E4FE4D9F25A12DF"]
 			description: [
 				"&7[NCP Field Memo #3401: Space]"
 				""
@@ -47,19 +47,19 @@
 			rewards: [
 				{
 					count: 5
-					id: "A3C83EA9B06B77B1"
+					id: "6136FD5485F64A2C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F45C7ABF52B2EBDB"
+					id: "0D34268310E8A5CE"
 					item: "ad_astra:space_helmet"
 					type: "item"
 				}
 				{
-					id: "9A9EF854B9345857"
+					id: "7C57279CC202C73D"
 					item: "ad_astra:space_suit"
 					type: "item"
 				}
@@ -69,12 +69,12 @@
 					type: "item"
 				}
 				{
-					id: "92D7CC1CA6BBE7A7"
+					id: "1715E36E09A49471"
 					item: "ad_astra:space_boots"
 					type: "item"
 				}
 				{
-					id: "9D5023D95CADAC08"
+					id: "0729B9138BFA308D"
 					item: "ad_astra:oxygen_loader"
 					type: "item"
 				}
@@ -90,11 +90,11 @@
 				""
 				"Distil ethanol (circuit 5) into rocket fuel at MV. Diesel works too, later."
 			]
-			id: "B0E136AE55398379"
+			id: "72AF1545E4E72B55"
 			rewards: [
 				{
 					count: 5
-					id: "86E0BFC77E4C680F"
+					id: "3B0FBED04B73561C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -102,7 +102,7 @@
 			tasks: [
 				{
 					count: 3L
-					id: "F9FC00FD46ED9E6D"
+					id: "368A71B835F18687"
 					item: "ad_astra:fuel_bucket"
 					type: "item"
 				}
@@ -112,17 +112,17 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["656BDD5BB26FA08C" "B0E136AE55398379"]
+			dependencies: ["656BDD5BB26FA08C" "72AF1545E4E72B55"]
 			description: [
 				"&7[NCP Field Memo #3404: Launch]"
 				""
 				"Build it at the NASA Workbench, place it on a launch pad, fuel it, and go."
 			]
-			id: "8F38D08F621E48B1"
+			id: "795082C560B87FE6"
 			rewards: [
 				{
 					count: 10
-					id: "E9B9866689F07456"
+					id: "79AA2AB803A3933F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -134,7 +134,7 @@
 					type: "item"
 				}
 				{
-					id: "C42BFA3742861455"
+					id: "3745D280D693F5C8"
 					item: "ad_astra:launch_pad"
 					type: "item"
 				}
@@ -144,7 +144,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8F38D08F621E48B1"]
+			dependencies: ["795082C560B87FE6"]
 			description: [
 				"&7[NCP Field Memo #3405: The Moon]"
 				""
@@ -180,7 +180,7 @@
 				"Sift moon sand in an MV sifter: &bchromite&r, cobaltite and vanadium magnetite."
 				"Chrome means kanthal and stainless steel: &bthis unlocks HV&r. Moon stone crushes into moon sand."
 			]
-			id: "B6634FEE059E59E6"
+			id: "3F9FC3DB1395B210"
 			rewards: [
 				{
 					count: 5
@@ -192,13 +192,13 @@
 			tasks: [
 				{
 					count: 64L
-					id: "D4FEE8242B80CD26"
+					id: "77C17BB65DB590DD"
 					item: "ad_astra:moon_sand"
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "FB23FF39934D62D2"
+					id: "4A8389C2DF87485F"
 					item: "gtceu:chromite_dust"
 					type: "item"
 				}
@@ -214,11 +214,11 @@
 				""
 				"Moon desh ore: the metal of the tier 2 rocket."
 			]
-			id: "95B35F4E0785302B"
+			id: "69BF824A18194099"
 			rewards: [
 				{
 					count: 5
-					id: "E6D31045C9469145"
+					id: "26059970021C4587"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -226,7 +226,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "EAA8722B11D1DD1B"
+					id: "3078A3D85265C3DF"
 					item: "ad_astra:desh_ingot"
 					type: "item"
 				}
@@ -236,17 +236,17 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["95B35F4E0785302B" "31783CA49496A5D1"]
+			dependencies: ["69BF824A18194099" "31783CA49496A5D1"]
 			description: [
 				"&7[NCP Field Memo #3408: Launch]"
 				""
 				"Desh engines and tanks, built at HV."
 			]
-			id: "ECE3DAF5DC7F1322"
+			id: "713E98558A939CEE"
 			rewards: [
 				{
 					count: 10
-					id: "A25BA5E3B7BAB2DC"
+					id: "77F27D9940C187C2"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -263,13 +263,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["ECE3DAF5DC7F1322"]
+			dependencies: ["713E98558A939CEE"]
 			description: [
 				"&7[NCP Field Memo #3409: Mars]"
 				""
 				"Red, cold and full of titanium."
 			]
-			id: "B895EF9E02027967"
+			id: "21BF91EF5B960DB1"
 			rewards: [
 				{
 					count: 20
@@ -292,13 +292,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B895EF9E02027967"]
+			dependencies: ["21BF91EF5B960DB1"]
 			description: [
 				"&7[NCP Field Memo #3410: Titanium]"
 				""
 				"Sift mars sand at HV: &brutile&r, ilmenite, magnesite. Titanium: &bthis unlocks EV&r."
 			]
-			id: "D9F0FA7579486978"
+			id: "4488DDDF712A5C93"
 			rewards: [
 				{
 					count: 5
@@ -310,7 +310,7 @@
 			tasks: [
 				{
 					count: 64L
-					id: "AEACA64047CBC731"
+					id: "3D477F92699F9929"
 					item: "ad_astra:mars_sand"
 					type: "item"
 				}
@@ -326,13 +326,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B895EF9E02027967"]
+			dependencies: ["21BF91EF5B960DB1"]
 			description: [
 				"&7[NCP Field Memo #3411: Ostrum]"
 				""
 				"Mars ostrum ore: the metal of the tier 3 rocket."
 			]
-			id: "8E9335292F0ED114"
+			id: "00BE5E6C875B0433"
 			rewards: [
 				{
 					count: 5
@@ -344,7 +344,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "E5540F65CADCA5AA"
+					id: "53C0CFCB4D230A5C"
 					item: "ad_astra:ostrum_ingot"
 					type: "item"
 				}
@@ -354,7 +354,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["8E9335292F0ED114" "22289E8809BF87AE"]
+			dependencies: ["00BE5E6C875B0433" "22289E8809BF87AE"]
 			description: [
 				"&7[NCP Field Memo #3412: Launch]"
 				""
@@ -364,14 +364,14 @@
 			rewards: [
 				{
 					count: 10
-					id: "D83EF45A86515CFD"
+					id: "0796E6D57081AA75"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "E249232AA281A29F"
+					id: "0770D6A89C600452"
 					item: "ad_astra:tier_3_rocket"
 					type: "item"
 				}
@@ -387,7 +387,7 @@
 				""
 				"464 degrees. Bring heat protection."
 			]
-			id: "E24F83A3D4D42291"
+			id: "45C45ECE02A3C5D2"
 			rewards: [
 				{
 					count: 20
@@ -401,7 +401,7 @@
 			tasks: [
 				{
 					dimension: "ad_astra:venus"
-					id: "A167F2210DF167C4"
+					id: "6C77AABA7E1454E6"
 					type: "dimension"
 				}
 			]
@@ -410,7 +410,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["E24F83A3D4D42291"]
+			dependencies: ["45C45ECE02A3C5D2"]
 			description: [
 				"&7[NCP Field Memo #3414: Tungsten]"
 				""
@@ -434,7 +434,7 @@
 				}
 				{
 					count: 8L
-					id: "D8C8669CD7026341"
+					id: "37C458872C0D497B"
 					item: "gtceu:scheelite_dust"
 					type: "item"
 				}
@@ -450,11 +450,11 @@
 				""
 				"Closest to the sun, richest in platinum."
 			]
-			id: "A1BAE8B20B2344D8"
+			id: "407D280136FA3793"
 			rewards: [
 				{
 					count: 20
-					id: "DDCB4B171510EC96"
+					id: "2347A3DF2016AA3C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -473,7 +473,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["A1BAE8B20B2344D8"]
+			dependencies: ["407D280136FA3793"]
 			description: [
 				"&7[NCP Field Memo #3416: Platinum]"
 				""
@@ -491,7 +491,7 @@
 			tasks: [
 				{
 					count: 64L
-					id: "EE6E7025EA771736"
+					id: "12A44BAF7C6281E2"
 					item: "ad_astra:mercury_cobblestone"
 					type: "item"
 				}
@@ -507,7 +507,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["E24F83A3D4D42291"]
+			dependencies: ["45C45ECE02A3C5D2"]
 			description: [
 				"&7[NCP Field Memo #3417: Calorite]"
 				""
@@ -525,7 +525,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "83CEB8A7A82B1067"
+					id: "734A4789D17EE099"
 					item: "ad_astra:calorite_ingot"
 					type: "item"
 				}
@@ -541,7 +541,7 @@
 				""
 				"Calorite engines, built at IV. Proxima Centauri is in range."
 			]
-			id: "B9235C09791E4C1F"
+			id: "1050F409A806F89F"
 			rewards: [
 				{
 					count: 15
@@ -552,7 +552,7 @@
 			]
 			tasks: [
 				{
-					id: "FA88D7DD093E4487"
+					id: "78661F9FE0101A8A"
 					item: "ad_astra:tier_4_rocket"
 					type: "item"
 				}
@@ -562,13 +562,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B9235C09791E4C1F"]
+			dependencies: ["1050F409A806F89F"]
 			description: [
 				"&7[NCP Field Memo #3419: Another Star]"
 				""
 				"A frozen world around another star. NCP records mention a gate site here."
 			]
-			id: "84E2641F20FABC9F"
+			id: "3156E4EF067C881C"
 			rewards: [
 				{
 					count: 30
@@ -582,7 +582,7 @@
 			tasks: [
 				{
 					dimension: "ad_astra:glacio"
-					id: "F7C88BA629E4E2A7"
+					id: "2533651AB6786BE2"
 					type: "dimension"
 				}
 			]
@@ -591,7 +591,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["84E2641F20FABC9F"]
+			dependencies: ["3156E4EF067C881C"]
 			description: [
 				"&7[NCP Field Memo #3420: The Door]"
 				""
@@ -612,12 +612,12 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "A1186D3F9A675B9C"
+					id: "2F0A4723C024FAD2"
 					item: "sgjourney:classic_stargate"
 					type: "item"
 				}
 				{
-					id: "B67307763AB783E2"
+					id: "19ABAC572EFB5108"
 					item: "sgjourney:classic_dhd"
 					type: "item"
 				}
@@ -627,18 +627,18 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["84E2641F20FABC9F"]
+			dependencies: ["3156E4EF067C881C"]
 			description: [
 				"&7[NCP Field Memo #3421: Naquadah]"
 				""
 				"Sift glacio cobblestone at IV for monazite, pyrochlore, iridium, osmium and a little &bnaquadah&r."
 				"Raw naquadah from the gate site macerates into GregTech naquadah too. Naquadah: &bthis unlocks ZPM&r."
 			]
-			id: "CD3EB71F7C570954"
+			id: "4EF0932A9045F8BB"
 			rewards: [
 				{
 					count: 5
-					id: "B7B5281B98E55AF9"
+					id: "55B76F5A30E43BC4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -667,7 +667,7 @@
 			rewards: [
 				{
 					count: 50
-					id: "87204E16C35C059C"
+					id: "13953A0C5C9B1808"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}

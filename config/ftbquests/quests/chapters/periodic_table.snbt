@@ -23,12 +23,12 @@
 			rewards: [
 				{
 					count: 5
-					id: "EB3EA1C1F1255DA6"
+					id: "059CCD31EFA82426"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "851F4226DCA7EBD9"
+					id: "2B7201D00109E926"
 					item: "chemlib:periodic_table"
 					type: "item"
 				}
@@ -43,12 +43,12 @@
 			size: 1.4d
 			tasks: [
 				{
-					id: "E643B6DB073DC63E"
+					id: "6E75A8BF418F438C"
 					item: "alchemistry:dissolver"
 					type: "item"
 				}
 				{
-					id: "F7EBD2CC4E7845D7"
+					id: "4D827DDF046F4B88"
 					item: "alchemistry:compactor"
 					type: "item"
 				}
@@ -65,7 +65,7 @@
 				"Collect one of each: Hydrogen, Helium."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
-			id: "F8236AC54509F58B"
+			id: "08B120B45703BABE"
 			rewards: [
 				{
 					count: 2
@@ -82,12 +82,12 @@
 			]
 			tasks: [
 				{
-					id: "DF930DFB2D0C657D"
+					id: "382E721026752D68"
 					item: "chemlib:hydrogen"
 					type: "item"
 				}
 				{
-					id: "CDFC18D50F476D37"
+					id: "7FA1A76DD972D6A9"
 					item: "chemlib:helium"
 					type: "item"
 				}
@@ -97,66 +97,66 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F8236AC54509F58B"]
+			dependencies: ["08B120B45703BABE"]
 			description: [
 				"&7[Periodic Table: Period 2]"
 				""
 				"Collect one of each: Lithium, Beryllium, Boron, Carbon, Nitrogen, Oxygen, Fluorine, Neon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
-			id: "F83CFEE152ACE45D"
+			id: "78F73D8FB719CCD9"
 			rewards: [
 				{
 					count: 4
-					id: "FDCEBBDB61F8C0AE"
+					id: "6663AD22D46A1BF4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "AC1285B0C3F64C6C"
+					id: "55C69A4F9253FDDA"
 					item: "chemlib:sodium"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "ED8082F0A2F575E7"
+					id: "3A23FDB39EAB7C84"
 					item: "chemlib:lithium"
 					type: "item"
 				}
 				{
-					id: "F9C72274285C30F3"
+					id: "16A0A141F63F41A0"
 					item: "chemlib:beryllium"
 					type: "item"
 				}
 				{
-					id: "EE8BCDE796E2A114"
+					id: "197280CCC52C437C"
 					item: "chemlib:boron"
 					type: "item"
 				}
 				{
-					id: "DC1E3A198A10FD7E"
+					id: "6DFD37C43ED08CA6"
 					item: "chemlib:carbon"
 					type: "item"
 				}
 				{
-					id: "CFE6D640AA8BB08C"
+					id: "45AB83E8094D85BD"
 					item: "chemlib:nitrogen"
 					type: "item"
 				}
 				{
-					id: "EBB8E19D57BB2F74"
+					id: "4DB0A13F76B65389"
 					item: "chemlib:oxygen"
 					type: "item"
 				}
 				{
-					id: "FF096D59A119A2F1"
+					id: "083C403A060118F9"
 					item: "chemlib:fluorine"
 					type: "item"
 				}
 				{
-					id: "8AE6A462052F5A61"
+					id: "2D050F661B81042B"
 					item: "chemlib:neon"
 					type: "item"
 				}
@@ -166,14 +166,14 @@
 			y: 1.2d
 		}
 		{
-			dependencies: ["F83CFEE152ACE45D"]
+			dependencies: ["78F73D8FB719CCD9"]
 			description: [
 				"&7[Periodic Table: Period 3]"
 				""
 				"Collect one of each: Sodium, Magnesium, Aluminum, Silicon, Phosphorus, Sulfur, Chlorine, Argon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
-			id: "AA5D657A0F0C2714"
+			id: "6FF37CA4763CA663"
 			rewards: [
 				{
 					count: 4
@@ -183,24 +183,24 @@
 				}
 				{
 					count: 4
-					id: "AA1CE3E10E72F4F0"
+					id: "66AA4C5CF8B32E23"
 					item: "chemlib:potassium"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "9E125196F1A49B9A"
+					id: "7F5811D70613EFC1"
 					item: "chemlib:sodium"
 					type: "item"
 				}
 				{
-					id: "B70AE90DBDECEFEF"
+					id: "048F490D15E5A3C2"
 					item: "chemlib:magnesium"
 					type: "item"
 				}
 				{
-					id: "9EC0DEFBE55A0ED7"
+					id: "798AE98314E59598"
 					item: "chemlib:aluminum"
 					type: "item"
 				}
@@ -215,7 +215,7 @@
 					type: "item"
 				}
 				{
-					id: "FB314833028E9310"
+					id: "20970FAD45828394"
 					item: "chemlib:sulfur"
 					type: "item"
 				}
@@ -235,7 +235,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["AA5D657A0F0C2714" "EF9B476473A6D772"]
+			dependencies: ["6FF37CA4763CA663" "7880EA8B44DE6CEA"]
 			description: [
 				"&7[Periodic Table: Period 4: Light Metals]"
 				""
@@ -246,25 +246,25 @@
 			rewards: [
 				{
 					count: 5
-					id: "DE95F77EC236C0CF"
+					id: "5D0EDDBB8D382A30"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "FC44FFBA1CCAA3B4"
+					id: "631D3C5E21762EC5"
 					item: "chemlib:nickel"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "998D5036FE078FE9"
+					id: "7CC7EEF544B7CCE8"
 					item: "chemlib:potassium"
 					type: "item"
 				}
 				{
-					id: "CD72178D16ED6DF6"
+					id: "75E6F4B60BDA6529"
 					item: "chemlib:calcium"
 					type: "item"
 				}
@@ -279,7 +279,7 @@
 					type: "item"
 				}
 				{
-					id: "F58EA0DD38BBFE48"
+					id: "5057E5FEF795190D"
 					item: "chemlib:vanadium"
 					type: "item"
 				}
@@ -294,12 +294,12 @@
 					type: "item"
 				}
 				{
-					id: "B8EE24F04D655D16"
+					id: "643B5792545462F9"
 					item: "chemlib:iron"
 					type: "item"
 				}
 				{
-					id: "EBCB2A461F9966DF"
+					id: "23B633957439A5B6"
 					item: "chemlib:cobalt"
 					type: "item"
 				}
@@ -320,7 +320,7 @@
 			rewards: [
 				{
 					count: 5
-					id: "DCDC0D25750C239B"
+					id: "08433F5D5CB2246A"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -333,17 +333,17 @@
 			]
 			tasks: [
 				{
-					id: "FE2CDE3200C38871"
+					id: "4FFBAE6382E42F84"
 					item: "chemlib:nickel"
 					type: "item"
 				}
 				{
-					id: "FDDCC73CDF780E73"
+					id: "0C4338F294B8C51D"
 					item: "chemlib:copper"
 					type: "item"
 				}
 				{
-					id: "A28F304443CF230A"
+					id: "2BCB8832D9D17DC2"
 					item: "chemlib:zinc"
 					type: "item"
 				}
@@ -353,12 +353,12 @@
 					type: "item"
 				}
 				{
-					id: "FB3A03975F95B3BA"
+					id: "06F5966CBA674E7F"
 					item: "chemlib:germanium"
 					type: "item"
 				}
 				{
-					id: "ABEA1D0E5C93B581"
+					id: "5C05CF637703CD21"
 					item: "chemlib:arsenic"
 					type: "item"
 				}
@@ -368,12 +368,12 @@
 					type: "item"
 				}
 				{
-					id: "C55BF70C19EB961A"
+					id: "73C4CF68292F0AC1"
 					item: "chemlib:bromine"
 					type: "item"
 				}
 				{
-					id: "BCDCA577ABE439F6"
+					id: "1EEAB72D0538D800"
 					item: "chemlib:krypton"
 					type: "item"
 				}
@@ -383,7 +383,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["074DC8E631C16DEB" "FCBA41022669D42D"]
+			dependencies: ["074DC8E631C16DEB" "2B380FF9E5AB61AF"]
 			description: [
 				"&7[Periodic Table: Period 5: Transition]"
 				""
@@ -394,7 +394,7 @@
 			rewards: [
 				{
 					count: 5
-					id: "9CFDEF4D718E2D35"
+					id: "0D559D961D200970"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -407,7 +407,7 @@
 			]
 			tasks: [
 				{
-					id: "D5BFAB3CCE2CADB7"
+					id: "5E03B6D5D4995C30"
 					item: "chemlib:rubidium"
 					type: "item"
 				}
@@ -427,7 +427,7 @@
 					type: "item"
 				}
 				{
-					id: "ABE6EF580E3A4C07"
+					id: "2699B7EF067C1A0F"
 					item: "chemlib:niobium"
 					type: "item"
 				}
@@ -437,7 +437,7 @@
 					type: "item"
 				}
 				{
-					id: "D0B716247AC2A7F8"
+					id: "66BA9CCC50F9BA32"
 					item: "chemlib:technetium"
 					type: "item"
 				}
@@ -447,7 +447,7 @@
 					type: "item"
 				}
 				{
-					id: "81B1CE779AAC4415"
+					id: "4A1FA3B1F20B259D"
 					item: "chemlib:rhodium"
 					type: "item"
 				}
@@ -464,7 +464,7 @@
 				"Collect one of each: Palladium, Silver, Cadmium, Indium, Tin, Antimony, Tellurium, Iodine, Xenon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
-			id: "BCEB1B6B35EE28CC"
+			id: "7322A56F5FA4AF40"
 			rewards: [
 				{
 					count: 5
@@ -474,7 +474,7 @@
 				}
 				{
 					count: 4
-					id: "900444D4ABAABA77"
+					id: "4C34E3B4816ECCB4"
 					item: "chemlib:lanthanum"
 					type: "item"
 				}
@@ -491,7 +491,7 @@
 					type: "item"
 				}
 				{
-					id: "8903DDDEB5223874"
+					id: "3F41815601156AF3"
 					item: "chemlib:cadmium"
 					type: "item"
 				}
@@ -506,12 +506,12 @@
 					type: "item"
 				}
 				{
-					id: "F51F1E7D5492A92D"
+					id: "12BD256D52965C2C"
 					item: "chemlib:antimony"
 					type: "item"
 				}
 				{
-					id: "9D9309843F4F1651"
+					id: "181885E20B38F2B5"
 					item: "chemlib:tellurium"
 					type: "item"
 				}
@@ -521,7 +521,7 @@
 					type: "item"
 				}
 				{
-					id: "E73C4A59304C3A3A"
+					id: "619173C7F54123E9"
 					item: "chemlib:xenon"
 					type: "item"
 				}
@@ -531,7 +531,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["BCEB1B6B35EE28CC" "B85D7C4C66D2C306"]
+			dependencies: ["7322A56F5FA4AF40" "4464C958924B8E91"]
 			description: [
 				"&7[Periodic Table: The Lanthanides]"
 				""
@@ -542,7 +542,7 @@
 			rewards: [
 				{
 					count: 7
-					id: "D7DEBD7B15ABA550"
+					id: "4F58E1CF77FD6F16"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -555,7 +555,7 @@
 			]
 			tasks: [
 				{
-					id: "FEE31F2A9A0358E2"
+					id: "2B320828FE68FBDF"
 					item: "chemlib:lanthanum"
 					type: "item"
 				}
@@ -570,7 +570,7 @@
 					type: "item"
 				}
 				{
-					id: "836F51D2EFE2AEFA"
+					id: "0C91F0AA584C4669"
 					item: "chemlib:neodymium"
 					type: "item"
 				}
@@ -595,7 +595,7 @@
 					type: "item"
 				}
 				{
-					id: "FFFB4ABDE9A8D8AB"
+					id: "5C57004C670D0C21"
 					item: "chemlib:terbium"
 					type: "item"
 				}
@@ -610,22 +610,22 @@
 					type: "item"
 				}
 				{
-					id: "842C813FE086F5F5"
+					id: "238429F6B36A8438"
 					item: "chemlib:erbium"
 					type: "item"
 				}
 				{
-					id: "C492E7B74DFA2986"
+					id: "62B47C064A5FAA08"
 					item: "chemlib:thulium"
 					type: "item"
 				}
 				{
-					id: "DE807212CA22232F"
+					id: "172927913BECFB09"
 					item: "chemlib:ytterbium"
 					type: "item"
 				}
 				{
-					id: "FF15EE8ACCE8D87E"
+					id: "3DBDE3CF90429EC8"
 					item: "chemlib:lutetium"
 					type: "item"
 				}
@@ -642,17 +642,17 @@
 				"Collect one of each: Cesium, Barium, Hafnium, Tantalum, Tungsten, Rhenium, Osmium, Iridium, Platinum, Gold, Mercury, Thallium, Lead, Bismuth, Polonium, Astatine, Radon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
-			id: "D871756BDFB8A59B"
+			id: "1815DD25F9252121"
 			rewards: [
 				{
 					count: 7
-					id: "F079335E35EA6C10"
+					id: "76305BD8568F7236"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "EBEFDAFE9A8D57E3"
+					id: "351767175C122757"
 					item: "chemlib:francium"
 					type: "item"
 				}
@@ -664,7 +664,7 @@
 					type: "item"
 				}
 				{
-					id: "AC878E37C0675671"
+					id: "57B32D4CF6088C06"
 					item: "chemlib:barium"
 					type: "item"
 				}
@@ -679,12 +679,12 @@
 					type: "item"
 				}
 				{
-					id: "C779EFB0F6240B1E"
+					id: "3A55453D89863681"
 					item: "chemlib:tungsten"
 					type: "item"
 				}
 				{
-					id: "81DF5943A371C41B"
+					id: "75516EEDE85C95C5"
 					item: "chemlib:rhenium"
 					type: "item"
 				}
@@ -694,7 +694,7 @@
 					type: "item"
 				}
 				{
-					id: "B4286D39CD7FA43F"
+					id: "77A2BA921D8FC97E"
 					item: "chemlib:iridium"
 					type: "item"
 				}
@@ -714,7 +714,7 @@
 					type: "item"
 				}
 				{
-					id: "C2824F68D48844CA"
+					id: "793BDAF4ADB39567"
 					item: "chemlib:thallium"
 					type: "item"
 				}
@@ -724,22 +724,22 @@
 					type: "item"
 				}
 				{
-					id: "E5018BCA04C82528"
+					id: "68ADDFDD2F1A0E6A"
 					item: "chemlib:bismuth"
 					type: "item"
 				}
 				{
-					id: "A5315C39C9359F2A"
+					id: "7DE4163C1EF86865"
 					item: "chemlib:polonium"
 					type: "item"
 				}
 				{
-					id: "B9AAFBF626D7762D"
+					id: "01F83DD706B05D0E"
 					item: "chemlib:astatine"
 					type: "item"
 				}
 				{
-					id: "973FB3083D6F14B0"
+					id: "407CC88544ADD246"
 					item: "chemlib:radon"
 					type: "item"
 				}
@@ -749,7 +749,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["D871756BDFB8A59B" "FF0C2EAC1358C7FF"]
+			dependencies: ["1815DD25F9252121" "28D3E2E88A03453A"]
 			description: [
 				"&7[Periodic Table: The Actinides]"
 				""
@@ -766,34 +766,34 @@
 				}
 				{
 					count: 4
-					id: "A0590B16B2907FA1"
+					id: "1BB9A1325C4A2CB3"
 					item: "chemlib:rutherfordium"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "C9F63F7485EBD559"
+					id: "4584C0711FFCB9BF"
 					item: "chemlib:francium"
 					type: "item"
 				}
 				{
-					id: "E5936E08ADFAADF1"
+					id: "21E73AA3210894B1"
 					item: "chemlib:radium"
 					type: "item"
 				}
 				{
-					id: "9CE40F13E6640AD0"
+					id: "44C55F05D1967D6B"
 					item: "chemlib:actinium"
 					type: "item"
 				}
 				{
-					id: "92E63FCD758CA779"
+					id: "3519F5A45329A313"
 					item: "chemlib:thorium"
 					type: "item"
 				}
 				{
-					id: "D55A35939717C30E"
+					id: "743F365943F510D7"
 					item: "chemlib:protactinium"
 					type: "item"
 				}
@@ -808,12 +808,12 @@
 					type: "item"
 				}
 				{
-					id: "FCBA9AEC72D8FE63"
+					id: "629DE0C1F1519544"
 					item: "chemlib:plutonium"
 					type: "item"
 				}
 				{
-					id: "A3DFCE670E1DD262"
+					id: "227C02CABC3B03A1"
 					item: "chemlib:americium"
 					type: "item"
 				}
@@ -823,7 +823,7 @@
 					type: "item"
 				}
 				{
-					id: "EB38A93C1E112A12"
+					id: "0674CA05603E2F92"
 					item: "chemlib:berkelium"
 					type: "item"
 				}
@@ -833,7 +833,7 @@
 					type: "item"
 				}
 				{
-					id: "AF45A3A955F59A63"
+					id: "742B47ED6B6782E5"
 					item: "chemlib:einsteinium"
 					type: "item"
 				}
@@ -843,7 +843,7 @@
 					type: "item"
 				}
 				{
-					id: "E916380FE2FB58C9"
+					id: "4F6FFDA3953B8085"
 					item: "chemlib:mendelevium"
 					type: "item"
 				}
@@ -874,7 +874,7 @@
 			rewards: [
 				{
 					count: 7
-					id: "DA597F7004247203"
+					id: "6A389DA7B8E52F80"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -896,7 +896,7 @@
 					type: "item"
 				}
 				{
-					id: "CD3E193CE788A49F"
+					id: "53A89E2FCA1C61C4"
 					item: "chemlib:seaborgium"
 					type: "item"
 				}
@@ -906,12 +906,12 @@
 					type: "item"
 				}
 				{
-					id: "D98611296763ACBB"
+					id: "6B005AAA48B3FA9A"
 					item: "chemlib:hassium"
 					type: "item"
 				}
 				{
-					id: "D11DB1C04AE3D893"
+					id: "3101ED49C97B6DA2"
 					item: "chemlib:meitnerium"
 					type: "item"
 				}
@@ -921,12 +921,12 @@
 					type: "item"
 				}
 				{
-					id: "E30F9DD80415214D"
+					id: "35D88FBDD588E52A"
 					item: "chemlib:roentgenium"
 					type: "item"
 				}
 				{
-					id: "D6E3A543DE094803"
+					id: "5E897F0A6BFD67B9"
 					item: "chemlib:copernicium"
 					type: "item"
 				}
@@ -941,7 +941,7 @@
 					type: "item"
 				}
 				{
-					id: "F3ACE2C76659E53B"
+					id: "5248BB0A21856C67"
 					item: "chemlib:moscovium"
 					type: "item"
 				}
@@ -956,7 +956,7 @@
 					type: "item"
 				}
 				{
-					id: "EBCEB32120158298"
+					id: "729C4C3E1B2F0216"
 					item: "chemlib:oganesson"
 					type: "item"
 				}
@@ -966,18 +966,18 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F83CFEE152ACE45D"]
+			dependencies: ["78F73D8FB719CCD9"]
 			description: [
 				"&7[Chemistry: Everyday Compounds]"
 				""
 				"Build them in the &bCombiner&r: water, carbon dioxide, sodium chloride, silicon dioxide, calcium carbonate."
 				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
-			id: "D13BC5F17202FB15"
+			id: "736B1585B1F804E2"
 			rewards: [
 				{
 					count: 3
-					id: "A1C122BCA220F475"
+					id: "2BC242E8B66B6609"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -989,7 +989,7 @@
 					type: "item"
 				}
 				{
-					id: "8E2D92A03FA1DD79"
+					id: "4441B07C0852995C"
 					item: "chemlib:carbon_dioxide"
 					type: "item"
 				}
@@ -999,12 +999,12 @@
 					type: "item"
 				}
 				{
-					id: "D93F3970A5D5CF61"
+					id: "002676AE3D5A67CF"
 					item: "chemlib:silicon_dioxide"
 					type: "item"
 				}
 				{
-					id: "9DF196E7E8F907AA"
+					id: "315FAE23F2D0ED36"
 					item: "chemlib:calcium_carbonate"
 					type: "item"
 				}
@@ -1014,14 +1014,14 @@
 			y: 3.2d
 		}
 		{
-			dependencies: ["AA5D657A0F0C2714"]
+			dependencies: ["6FF37CA4763CA663"]
 			description: [
 				"&7[Chemistry: Acids]"
 				""
 				"Build them in the &bCombiner&r: sulfuric acid, hydrochloric acid, nitric acid, phosphoric acid."
 				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
-			id: "F0E1C0B243A3904E"
+			id: "0A1F15325B1AD7FC"
 			rewards: [
 				{
 					count: 3
@@ -1032,12 +1032,12 @@
 			]
 			tasks: [
 				{
-					id: "B325D85B9C3D7B63"
+					id: "78D611A0095A0BD8"
 					item: "chemlib:sulfuric_acid"
 					type: "item"
 				}
 				{
-					id: "E3504AF532E79CCB"
+					id: "1F77548F8C012235"
 					item: "chemlib:hydrochloric_acid"
 					type: "item"
 				}
@@ -1047,7 +1047,7 @@
 					type: "item"
 				}
 				{
-					id: "E404BD01A856A088"
+					id: "2F415386185F705F"
 					item: "chemlib:phosphoric_acid"
 					type: "item"
 				}
@@ -1057,18 +1057,18 @@
 			y: 3.2d
 		}
 		{
-			dependencies: ["AA5D657A0F0C2714"]
+			dependencies: ["6FF37CA4763CA663"]
 			description: [
 				"&7[Chemistry: Bases]"
 				""
 				"Build them in the &bCombiner&r: sodium hydroxide, potassium hydroxide, calcium hydroxide, ammonia."
 				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
-			id: "FF704F234F7FF304"
+			id: "12596AA3AF0FCEC1"
 			rewards: [
 				{
 					count: 3
-					id: "DA8D1DE1D9420879"
+					id: "25F9FE0D10CBFE98"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1080,17 +1080,17 @@
 					type: "item"
 				}
 				{
-					id: "CED7F81B19DC02A5"
+					id: "4C010DC718885699"
 					item: "chemlib:potassium_hydroxide"
 					type: "item"
 				}
 				{
-					id: "AE23F25C856C6C32"
+					id: "694E47C35840AFDA"
 					item: "chemlib:calcium_hydroxide"
 					type: "item"
 				}
 				{
-					id: "95BE3BD0E310FCF0"
+					id: "0B65849D942AE82D"
 					item: "chemlib:ammonia"
 					type: "item"
 				}
@@ -1100,30 +1100,30 @@
 			y: 3.2d
 		}
 		{
-			dependencies: ["F83CFEE152ACE45D"]
+			dependencies: ["78F73D8FB719CCD9"]
 			description: [
 				"&7[Chemistry: Organic Chemistry]"
 				""
 				"Build them in the &bCombiner&r: methane, ethanol, cellulose, sucrose, starch."
 				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
-			id: "FE9FB7BFBB8BE3E7"
+			id: "2C2485B9222B683E"
 			rewards: [
 				{
 					count: 3
-					id: "F8BF079472714A4E"
+					id: "2768E314501FE29F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "81926ED06152806C"
+					id: "23A00EAF938F7BB1"
 					item: "chemlib:methane"
 					type: "item"
 				}
 				{
-					id: "FB0AF366AE5D9775"
+					id: "74FAFA31DC6D9512"
 					item: "chemlib:ethanol"
 					type: "item"
 				}
@@ -1155,11 +1155,11 @@
 				"Build them in the &bCombiner&r: titanium oxide, aluminum oxide, iron oxide, potassium dichromate, barium sulfate."
 				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
-			id: "C112F66EB9F77921"
+			id: "15C1E87B588FD14B"
 			rewards: [
 				{
 					count: 3
-					id: "D5D8132AF9A593CF"
+					id: "38882A313143EB78"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1171,22 +1171,22 @@
 					type: "item"
 				}
 				{
-					id: "B241303E9990A5A3"
+					id: "23B92A39B8879422"
 					item: "chemlib:aluminum_oxide"
 					type: "item"
 				}
 				{
-					id: "DEE32936649B074F"
+					id: "34BF976E633E173B"
 					item: "chemlib:iron_oxide"
 					type: "item"
 				}
 				{
-					id: "8918F3E35F361734"
+					id: "4D0DA67AA43EBF90"
 					item: "chemlib:potassium_dichromate"
 					type: "item"
 				}
 				{
-					id: "9EDF9467B966A755"
+					id: "41F082479F722966"
 					item: "chemlib:barium_sulfate"
 					type: "item"
 				}

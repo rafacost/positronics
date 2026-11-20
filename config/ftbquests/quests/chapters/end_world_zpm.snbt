@@ -9,18 +9,18 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["8E9B6498C93AAF6C"]
+			dependencies: ["676E664608D63792"]
 			description: [
 				"&7[NCP Field Memo #0801: Posting]"
 				""
 				"Fusion, naquadah and crystals."
 				"Goal: &bClearance Level 8&r."
 			]
-			id: "A8781861247F6045"
+			id: "2BC79305DD46B17E"
 			rewards: [
 				{
 					count: 9
-					id: "92A80B158B40F6F2"
+					id: "5DFB088BBCFBED94"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A8781861247F6045"]
+			dependencies: ["2BC79305DD46B17E"]
 			description: [
 				"&7[NCP Field Memo #0802: Fusion]"
 				""
@@ -56,7 +56,7 @@
 			]
 			tasks: [
 				{
-					id: "83B487ED774AC40F"
+					id: "0D61CE3B90F3F37F"
 					item: "gtceu:luv_fusion_reactor"
 					type: "item"
 				}
@@ -66,17 +66,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A8781861247F6045" "CD3EB71F7C570954"]
+			dependencies: ["2BC79305DD46B17E" "4EF0932A9045F8BB"]
 			description: [
 				"&7[NCP Field Memo #0803: Naquadah]"
 				""
 				"The Naquadic Stratum, an acid bath, and great care."
 			]
-			id: "BE7F06002BA03951"
+			id: "4523F49ED4C84B59"
 			rewards: [
 				{
 					count: 9
-					id: "835A858EE2B19414"
+					id: "1A7B5D95177D133D"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -84,13 +84,13 @@
 			tasks: [
 				{
 					count: 8L
-					id: "9FD53326AD19BF03"
+					id: "7C77FADA14213502"
 					item: "gtceu:naquadah_ingot"
 					type: "item"
 				}
 				{
 					count: 8L
-					id: "FFC50DB40CE6DF66"
+					id: "5849026086187879"
 					item: "gtceu:naquadah_alloy_ingot"
 					type: "item"
 				}
@@ -100,7 +100,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BE7F06002BA03951"]
+			dependencies: ["4523F49ED4C84B59"]
 			description: [
 				"&7[NCP Field Memo #0804: Hull]"
 				""
@@ -110,14 +110,14 @@
 			rewards: [
 				{
 					count: 9
-					id: "A3C985EFE2838DD1"
+					id: "149BC3B151C384F7"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "88A5A7E1587FDBD2"
+					id: "6B4EBA09EB64685F"
 					item: "gtceu:zpm_machine_hull"
 					type: "item"
 				}
@@ -137,7 +137,7 @@
 			rewards: [
 				{
 					count: 9
-					id: "96556F1FDD3E1171"
+					id: "53EFE563EC9A5F41"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -170,24 +170,24 @@
 			rewards: [
 				{
 					count: 9
-					id: "9E1EA67D202B4EC6"
+					id: "25F5C9C40818DE51"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "FDC882281E7EF514"
+					id: "5A555B96DA35954C"
 					item: "gtceu:data_bank"
 					type: "item"
 				}
 				{
-					id: "82B9980C930DB0AF"
+					id: "75A61151AEDBCED7"
 					item: "gtceu:high_performance_computation_array"
 					type: "item"
 				}
 				{
-					id: "AD1C84543FE347D7"
+					id: "40B4B861201B35F9"
 					item: "gtceu:network_switch"
 					type: "item"
 				}
@@ -207,14 +207,14 @@
 			rewards: [
 				{
 					count: 9
-					id: "BF0709696DC47AFB"
+					id: "0373CB7C46FB20B4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "B5CDB976D06F743B"
+					id: "31961C0E018AC437"
 					item: "usrg:tier_upgrade_5"
 					type: "item"
 				}
@@ -230,11 +230,11 @@
 				""
 				"&bClearance Level 8&r. Next posting: &bThe Beams&r."
 			]
-			id: "AA9462A7D8EBEB0E"
+			id: "1D72610E0ED2C7B4"
 			rewards: [
 				{
 					count: 50
-					id: "A316ECE75FD4F8D7"
+					id: "31B313516C5ABEE1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}

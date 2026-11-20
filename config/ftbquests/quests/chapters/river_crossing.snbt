@@ -28,7 +28,7 @@
 				}
 				{
 					count: 2
-					id: "ACE8B91F646015D4"
+					id: "7F9D8041CD9431FD"
 					item: "minecraft:sugar_cane"
 					type: "item"
 				}
@@ -58,7 +58,7 @@
 				"&7The stone hammer only finds iron and copper. Better hammers dig deeper: an iron-grade hammer finds tin, coal and lead"
 				"&7in gravel; a steel hammer finds redstone and nickel in sand. After that, strata come from machines."
 			]
-			id: "CFDF70CCAFE922AC"
+			id: "646ADF5E2F61D70F"
 			rewards: [
 				{
 					count: 2
@@ -70,13 +70,13 @@
 			tasks: [
 				{
 					count: 4L
-					id: "A1E8482475C78A75"
+					id: "2A2523C1E8A0FD20"
 					item: "positronics:ferrous_stratum"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "D0187B39750E84C1"
+					id: "039F976C820558E5"
 					item: "positronics:cupric_stratum"
 					type: "item"
 				}
@@ -86,7 +86,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["CFDF70CCAFE922AC"]
+			dependencies: ["69ADFFCDC361D941"]
 			description: [
 				"&7[NCP Field Memo #0103: Metalwork]"
 				""
@@ -104,13 +104,13 @@
 			tasks: [
 				{
 					count: 8L
-					id: "B910537ED912DBA0"
+					id: "4FF350FB2DEC235C"
 					item: "gtceu:wrought_iron_ingot"
 					type: "item"
 				}
 			]
 			title: "Wrought Iron"
-			x: 4.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -126,7 +126,7 @@
 			rewards: [
 				{
 					count: 2
-					id: "C2258DD597ADC09E"
+					id: "01DC6F35777ED4B0"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -148,18 +148,18 @@
 					type: "item"
 				}
 				{
-					id: "BDEA1C4A679A00F2"
+					id: "244A283D98008B06"
 					item: "gtceu:wrought_iron_screwdriver"
 					type: "item"
 				}
 				{
-					id: "90BB2039C8124335"
+					id: "0F6BFB8B63864E40"
 					item: "gtceu:wrought_iron_wire_cutter"
 					type: "item"
 				}
 			]
 			title: "Proper Tools"
-			x: 6.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -170,7 +170,7 @@
 				"Gravel holds the next layer: tin for solder and bronze, coal for steel, lead for cables."
 				"&7Only a GregTech hammer of iron grade or better finds them; the stone hammer just makes sand."
 			]
-			id: "EF4CE25023161407"
+			id: "33CDAA74B84BB5D0"
 			rewards: [
 				{
 					count: 2
@@ -194,17 +194,17 @@
 				}
 				{
 					count: 2L
-					id: "E589363435FA0BEE"
+					id: "038EDE40AAEF6CE1"
 					item: "positronics:plumbic_stratum"
 					type: "item"
 				}
 			]
 			title: "Digging Deeper"
-			x: 8.0d
-			y: 0.0d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["EF4CE25023161407"]
+			dependencies: ["33CDAA74B84BB5D0"]
 			description: [
 				"&7[NCP Field Memo #0115: Blast Furnace]"
 				""
@@ -214,11 +214,11 @@
 				"pack it into compressed fireclay (by hand); fire it in a furnace. Four firebrick make a firebricks block."
 				"&7Check the multiblock shape in EMI. Slow, hot, and worth it."
 			]
-			id: "CFE81DB356FFC332"
+			id: "254E5FE186B806B8"
 			rewards: [
 				{
 					count: 2
-					id: "8327B52A51240664"
+					id: "0452852DED743AE9"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -231,23 +231,23 @@
 				}
 				{
 					count: 24L
-					id: "DE605FCE02652D98"
+					id: "01BD07AE19CCEBD3"
 					item: "gtceu:firebricks"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "C89929C8A2392B48"
+					id: "5D00A5F68567135C"
 					item: "gtceu:steel_ingot"
 					type: "item"
 				}
 			]
 			title: "Steel Without Power"
-			x: 10.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["CFE81DB356FFC332"]
+			dependencies: ["254E5FE186B806B8"]
 			description: [
 				"&7[NCP Field Memo #0116: Sand]"
 				""
@@ -255,7 +255,7 @@
 				"This is the last layer a hand tool can reach. From here on, strata come from powered machines:"
 				"sifters, Ore Generators and bees, each at its own voltage."
 			]
-			id: "E166F900C4358044"
+			id: "0E9ACE22AA8BA4F2"
 			rewards: [
 				{
 					count: 2
@@ -266,7 +266,7 @@
 			]
 			tasks: [
 				{
-					id: "84005A7B61B16790"
+					id: "41080C79680FF03C"
 					item: "gtceu:steel_hammer"
 					type: "item"
 				}
@@ -284,11 +284,11 @@
 				}
 			]
 			title: "The Steel Hammer"
-			x: 12.0d
-			y: 0.0d
+			x: 12.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["076E7CC3AFDAC867" "D17A59BE9671EB7D"]
+			dependencies: ["076E7CC3AFDAC867" "45ED338A938645F1" "254E5FE186B806B8" "0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Field Memo #0105: Hull]"
 				""
@@ -299,14 +299,14 @@
 			rewards: [
 				{
 					count: 2
-					id: "D3F5071892812617"
+					id: "57B4EA1FC8E5BF2B"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "97EDB22D54469180"
+					id: "1092F4D0A7EDB149"
 					item: "gtceu:ulv_machine_casing"
 					type: "item"
 				}
@@ -317,8 +317,8 @@
 				}
 			]
 			title: "A ULV Hull"
-			x: 12.0d
-			y: 1.5d
+			x: 12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70EDF0098A06DF89"]
@@ -327,11 +327,11 @@
 				""
 				"The ULV circuit. Glass, wire and patience."
 			]
-			id: "F059AF61195C81A9"
+			id: "5BF37B5D49C970E6"
 			rewards: [
 				{
 					count: 2
-					id: "C98ECA55DC11E0A5"
+					id: "58F1E6D9EB2F18BE"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -339,17 +339,17 @@
 			tasks: [
 				{
 					count: 4L
-					id: "E06E5547DF2D5834"
+					id: "5DCF2B1614E4BD90"
 					item: "gtceu:vacuum_tube"
 					type: "item"
 				}
 			]
 			title: "Vacuum Tubes"
-			x: 14.0d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["70EDF0098A06DF89" "E166F900C4358044"]
+			dependencies: ["70EDF0098A06DF89"]
 			description: [
 				"&7[NCP Field Memo #0107: Power]"
 				""
@@ -365,7 +365,7 @@
 					type: "item"
 				}
 				{
-					id: "B437FF1476E0C0C8"
+					id: "4FF9A58EBB49B7CC"
 					item: "gtceu:ulv_battery_buffer_4x"
 					type: "item"
 				}
@@ -378,22 +378,22 @@
 				}
 			]
 			title: "Power"
-			x: 14.0d
-			y: 1.5d
+			x: 14.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["F059AF61195C81A9" "37E06DD9764C4021"]
+			dependencies: ["5BF37B5D49C970E6" "37E06DD9764C4021"]
 			description: [
 				"&7[NCP Field Memo #0108: Machine Shop]"
 				""
 				"NCP's ULV machines run GregTech recipes up to 8 EU/t. Crusher: one stratum, one whole dust."
 				"Smelter: bronze, red alloy, tin alloy and &bsteel without a coke oven&r. Sifter: automates the trickle."
 			]
-			id: "D055108009A1DF67"
+			id: "681A5E2D7CD1A735"
 			rewards: [
 				{
 					count: 2
-					id: "A152DE58D4A7B318"
+					id: "34FBBC8DFFD50DE0"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -405,7 +405,7 @@
 					type: "item"
 				}
 				{
-					id: "B16A5F1C77638343"
+					id: "03A5D771C8943A84"
 					item: "gtceu:ulv_reclamation_smelter"
 					type: "item"
 				}
@@ -416,11 +416,11 @@
 				}
 			]
 			title: "Reclamation Machines"
-			x: 16.0d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["D055108009A1DF67"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Field Memo #0109: Alloys]"
 				""
@@ -438,7 +438,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "E42A8E0AAA363A8C"
+					id: "4F47F83DF8E1927C"
 					item: "gtceu:bronze_ingot"
 					type: "item"
 				}
@@ -450,14 +450,14 @@
 				}
 				{
 					count: 8L
-					id: "A396E107A2649E13"
+					id: "3F85E50D9FC71DDD"
 					item: "gtceu:steel_ingot"
 					type: "item"
 				}
 			]
 			title: "The First Alloys"
-			x: 18.0d
-			y: 0.0d
+			x: 14.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["10BB65E601DDE91E"]
@@ -471,24 +471,24 @@
 			rewards: [
 				{
 					count: 2
-					id: "F2EA0C4E43431E85"
+					id: "75BD420F9C0DED68"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "9658781D21683C56"
+					id: "124C1601BE6B4DFD"
 					item: "usrg:oregenerator"
 					type: "item"
 				}
 			]
 			title: "Reclamation Mk II"
-			x: 20.0d
+			x: 18.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["BE97C804D6587521"]
+			dependencies: ["076E7CC3AFDAC867"]
 			description: [
 				"&7[NCP Field Memo #0111: Rubber]"
 				""
@@ -500,17 +500,17 @@
 				"&aRubber trees:&r plant the saplings in dirt and let them grow. Break the tree's own logs: each one"
 				"drops sticky resin most of the time. Logs you placed yourself, or from a botany pot, give none."
 			]
-			id: "D17A59BE9671EB7D"
+			id: "45ED338A938645F1"
 			rewards: [
 				{
 					count: 2
-					id: "83D5013A6AC98C6D"
+					id: "793BD3CFED095A55"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
 					count: 2
-					id: "B4A8B0C5658BAB68"
+					id: "07C1E0B6CDA87CC9"
 					item: "gtceu:rubber_sapling"
 					type: "item"
 				}
@@ -518,17 +518,17 @@
 			tasks: [
 				{
 					count: 2L
-					id: "9D80140F32934A45"
+					id: "0BDF61E6DE8BB7B6"
 					item: "gtceu:rubber_plate"
 					type: "item"
 				}
 			]
 			title: "Rubber"
-			x: 10.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["CFDF70CCAFE922AC"]
+			dependencies: ["271F6CBDB4715876"]
 			description: [
 				"&7[NCP Field Memo #0112: Memory]"
 				""
@@ -539,7 +539,7 @@
 				"back into one dust, one tier after the metal is first needed. The planets still have to be done by hand."
 				"&7Enclosed: 20 carbon and 20 hydrogen atoms. Burn one of each to learn them; the rest is your first rubber (see Rubber)."
 			]
-			id: "BD916EB4DA72382D"
+			id: "69ADFFCDC361D941"
 			rewards: [
 				{
 					count: 2
@@ -549,7 +549,7 @@
 				}
 				{
 					count: 20
-					id: "EACD513E4AABF5ED"
+					id: "50A3B7F64BC625A0"
 					item: "chemlib:carbon"
 					type: "item"
 				}
@@ -562,22 +562,22 @@
 			]
 			tasks: [
 				{
-					id: "FB452DC21F5D2F72"
+					id: "1F04F17F385F072F"
 					item: "minecraft:iron_ingot"
 					type: "item"
 				}
 				{
-					id: "CEE83668DAC04D82"
+					id: "62E7F4FFB3A9704F"
 					item: "projecte:transmutation_tablet"
 					type: "item"
 				}
 			]
 			title: "Positronic Memory"
-			x: 4.0d
-			y: 1.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["A938954098E8D840"]
+			dependencies: ["69ADFFCDC361D941"]
 			description: [
 				"&7[NCP Field Memo #0118: Biomass]"
 				""
@@ -590,7 +590,7 @@
 				"&7Enclosed: sugar cane. It grows in a botany pot and it is the fastest biomass you have."
 				"&7Leaves need shears; the NCP Shop sells a reinforced pair."
 			]
-			id: "BE97C804D6587521"
+			id: "556BA39D6B479B11"
 			rewards: [
 				{
 					count: 2
@@ -600,7 +600,7 @@
 				}
 				{
 					count: 4
-					id: "E8DC4BEBB822E3BA"
+					id: "55BE2A94EC3E478A"
 					item: "minecraft:sugar_cane"
 					type: "item"
 				}
@@ -608,17 +608,17 @@
 			tasks: [
 				{
 					count: 4L
-					id: "FFDF34420BBC2F91"
+					id: "7E90FA1638CED234"
 					item: "chemlib:cellulose"
 					type: "item"
 				}
 			]
 			title: "Green Atoms"
-			x: 8.0d
-			y: 1.5d
+			x: 8.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["BD916EB4DA72382D"]
+			dependencies: ["646ADF5E2F61D70F"]
 			description: [
 				"&7[NCP Field Memo #0119: Metal Atoms]"
 				""
@@ -627,11 +627,11 @@
 				"&bA ring of 8 atoms&r on the crafting table makes 4 nuggets again (iron, copper, tin, lead, nickel)."
 				"&7Flint mortars grind iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
 			]
-			id: "A938954098E8D840"
+			id: "271F6CBDB4715876"
 			rewards: [
 				{
 					count: 2
-					id: "875D8602531BA1B6"
+					id: "2CC954F3A82BB2DA"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -639,23 +639,23 @@
 			tasks: [
 				{
 					count: 16L
-					id: "9663AED88754E8FC"
+					id: "6A54F0B72376F8F1"
 					item: "chemlib:iron"
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "DC514BDF9E60CA6C"
+					id: "635FE53C507D96DD"
 					item: "chemlib:copper"
 					type: "item"
 				}
 			]
 			title: "Breaking Metal"
-			x: 6.0d
-			y: 1.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["BE97C804D6587521" "D055108009A1DF67"]
+			dependencies: ["556BA39D6B479B11" "5BF37B5D49C970E6"]
 			description: [
 				"&7[NCP Field Memo #0117: Automation]"
 				""
@@ -667,11 +667,11 @@
 				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
 				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]
-			id: "9AFE6843E27DA0C6"
+			id: "0788A02A25C2D582"
 			rewards: [
 				{
 					count: 2
-					id: "E2F6EEB491476664"
+					id: "384E4812D9FF15B8"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -689,17 +689,17 @@
 				}
 				{
 					count: 128L
-					id: "D0DA52F09E5592C5"
+					id: "305E27A2048E248A"
 					item: "chemlib:hydrogen"
 					type: "item"
 				}
 			]
 			title: "Hands Off"
-			x: 18.0d
-			y: 1.5d
+			x: 12.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["9AFE6843E27DA0C6"]
+			dependencies: ["0788A02A25C2D582" "5BF37B5D49C970E6"]
 			description: [
 				"&7[NCP Field Memo #0113: Capacitors]"
 				""
@@ -708,7 +708,7 @@
 				"Plants grow, atoms fall, the star fills: EMC with nobody at the bench."
 				"Combine 4 stars into the next size; the charge carries over."
 			]
-			id: "B00ED02E41DE2C48"
+			id: "3F19BE1DC07334EB"
 			rewards: [
 				{
 					count: 2
@@ -730,18 +730,18 @@
 				}
 			]
 			title: "The Beam Capacitor"
-			x: 20.0d
-			y: 1.5d
+			x: 20.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["B00ED02E41DE2C48" "473628F3957FFFB0"]
+			dependencies: ["473628F3957FFFB0"]
 			description: [
 				"&7[NCP Field Memo #0114: Charging]"
 				""
 				"A Klein Star Vier holds 3,200,000 EMC. Positronic Core I needs one filled to the brim."
 				"&7By hand this takes forever. With generators, machines and pipes feeding the capacitor, it takes an evening."
 			]
-			id: "E4741D5D55A1A684"
+			id: "73A4CD65D47CBF1A"
 			rewards: [
 				{
 					count: 2
@@ -758,11 +758,11 @@
 				}
 			]
 			title: "A Full Klein Star Vier"
-			x: 22.0d
+			x: 20.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["70EDF0098A06DF89"]
+			dependencies: ["3F19BE1DC07334EB" "73A4CD65D47CBF1A"]
 			description: [
 				"&7[NCP Field Memo #0115: Assembly]"
 				""
@@ -779,17 +779,17 @@
 			]
 			tasks: [
 				{
-					id: "F5ED5B7E90C10DA9"
+					id: "4C68DADC5FDEA171"
 					item: "avaritia:extreme_crafting_table"
 					type: "item"
 				}
 			]
 			title: "Extreme Crafting"
-			x: 14.0d
-			y: -1.5d
+			x: 22.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["E4741D5D55A1A684" "2E3B910B97656F21"]
+			dependencies: ["2E3B910B97656F21"]
 			description: [
 				"&7[NCP Field Memo #0116: Keystone]"
 				""
@@ -800,7 +800,7 @@
 			rewards: [
 				{
 					count: 10
-					id: "D314ED37635745F2"
+					id: "4F62050CFA7468B6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -809,7 +809,7 @@
 			size: 1.3d
 			tasks: [
 				{
-					id: "A672752C524FD19F"
+					id: "00E2F159DFE48B08"
 					item: "positronics:positronic_core_1"
 					type: "item"
 				}
@@ -830,7 +830,7 @@
 			rewards: [
 				{
 					count: 15
-					id: "9CC41C07AEC261FF"
+					id: "2ABD5C6F406E6155"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -849,7 +849,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["D055108009A1DF67" "10BB65E601DDE91E"]
+			dependencies: ["681A5E2D7CD1A735" "10BB65E601DDE91E"]
 			description: [
 				"&7[NCP Field Memo #0119: First Multiblock]"
 				""
@@ -869,14 +869,14 @@
 			shape: "square"
 			tasks: [
 				{
-					id: "DEDBFD00E148B835"
+					id: "08D977DE6FC92BD3"
 					item: "gtceu:reclamation_sifter_array"
 					type: "item"
 				}
 			]
 			title: "Reclamation Sifter Array"
-			x: 20.0d
-			y: -1.5d
+			x: 16.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["10BB65E601DDE91E"]
@@ -907,8 +907,8 @@
 				}
 			]
 			title: "Optional: Steam"
-			x: 20.0d
-			y: 3.0d
+			x: 14.5d
+			y: -4.5d
 		}
 	]
 	title: "River Crossing (ULV)"

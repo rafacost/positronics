@@ -20,8 +20,21 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "config", "ftbquests", "quests", "chapters")
 
 
+def hash_id(*parts):
+    # FTB ids are signed longs: an id with the top bit set (first hex digit 8-F) is invalid and FTB
+    # replaces it with a random one on load, which detached quest progress. Keep the top bit clear.
+    v = int(hashlib.sha1("/".join(parts).encode()).hexdigest()[:16], 16) & 0x7FFFFFFFFFFFFFFF
+    return f"{v or 1:016X}"
+
+
+# Ids and positions pulled from the in-game editor (tools/pull_quests.py). A quest re-created in the
+# editor keeps its new id, so the world's progress stays attached.
+_OVR_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools", "data", "quest_overrides.json")
+OVERRIDES = json.load(open(_OVR_PATH, encoding="utf-8")) if os.path.exists(_OVR_PATH) else {"ids": {}, "pos": {}}
+
+
 def qid(*parts):
-    return hashlib.sha1("/".join(parts).encode()).hexdigest()[:16].upper()
+    return OVERRIDES["ids"].get("/".join(parts)) or hash_id(*parts)
 
 
 def s(text):
@@ -104,8 +117,8 @@ def main():
         rows = {}
         pos = {}
         for q in quests:
-            if "pos" in q:
-                pos[q["key"]] = q["pos"]
+            if "pos" in q or f"{cid}/{q['key']}" in OVERRIDES["pos"]:
+                pos[q["key"]] = q.get("pos") or tuple(OVERRIDES["pos"][f"{cid}/{q['key']}"])
                 continue
             col = depth[q["key"]]
             n = rows.get(col, 0)

@@ -76,8 +76,8 @@
 				type: "item"
 			}]
 			title: "Reclamation Mk I"
-			x: 2.5d
-			y: -1.5d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["504F530000001009"]
@@ -102,8 +102,8 @@
 				type: "item"
 			}]
 			title: "Water Is Life"
-			x: 10.0d
-			y: -1.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["504F530000001003"]
@@ -168,8 +168,8 @@
 				type: "item"
 			}]
 			title: "Pot Luck"
-			x: 2.5d
-			y: 4.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["504F530000001006"]
@@ -203,8 +203,8 @@
 				}
 			]
 			title: "Variety Is the Spice"
-			x: 5.0d
-			y: 4.0d
+			x: 10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["504F530000001001"]
@@ -230,8 +230,8 @@
 				type: "item"
 			}]
 			title: "Timber"
-			x: 5.0d
-			y: -1.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["504F53000000100B"]
@@ -259,13 +259,20 @@
 				}
 				{
 					id: "504F530000002011"
-					item: "gtceu:flint_mortar"
+					item: {
+						Count: 1
+						id: "gtceu:flint_mortar"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
 					type: "item"
 				}
 			]
 			title: "The Flint Mortar"
-			x: 7.5d
-			y: -3.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -310,8 +317,8 @@
 				}
 			]
 			title: "Glass and Bottles"
-			x: 7.5d
-			y: -1.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["504F530000001002"]
@@ -337,7 +344,13 @@
 			tasks: [
 				{
 					id: "504F53000000200C"
-					item: "positronics:reclamation_hammer"
+					item: {
+						Count: 1
+						id: "positronics:reclamation_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -354,8 +367,8 @@
 				}
 			]
 			title: "Hammer Time"
-			x: 5.0d
-			y: -3.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [

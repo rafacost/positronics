@@ -4,7 +4,7 @@
 	filename: "strata_index"
 	group: "080614699546E512"
 	icon: "positronics:cupric_stratum"
-	id: "E542D751488A71E7"
+	id: "5E2A043E036698B4"
 	order_index: 21
 	quest_links: [ ]
 	quests: [
@@ -17,7 +17,7 @@
 				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
 				"&7Furnace: 3 Iron Nuggets. Crusher: one whole dust."
 			]
-			id: "AE211E57DCD5A0A3"
+			id: "12295443D1BC75C0"
 			rewards: [
 				{
 					id: "2CA57229E196B3E3"
@@ -27,7 +27,7 @@
 			]
 			tasks: [
 				{
-					id: "85DD3A1117FA22E9"
+					id: "21A07C4A9222E4C0"
 					item: "positronics:ferrous_stratum"
 					type: "item"
 				}
@@ -45,10 +45,10 @@
 				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
 				"&7Furnace: 3 Copper Nuggets. Crusher: one whole dust."
 			]
-			id: "E7F2F2897A4DE9ED"
+			id: "039BB957FD3EC83C"
 			rewards: [
 				{
-					id: "F87827C875FD3C3D"
+					id: "24EC507BA29CB145"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -76,14 +76,14 @@
 			id: "1F2E7C145AF094E0"
 			rewards: [
 				{
-					id: "EED3ED2D5A1FF4C3"
+					id: "7EDF6DA7B2FFD214"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "A1EA6FC38239FA3E"
+					id: "63F812A8EF47A24B"
 					item: "positronics:stannic_stratum"
 					type: "item"
 				}
@@ -103,7 +103,7 @@
 			id: "08D25067D506A433"
 			rewards: [
 				{
-					id: "C25379FAF04903AA"
+					id: "2D122CBA4A55E442"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -128,10 +128,10 @@
 				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
 				"&7Furnace: 3 Lead Nuggets. Crusher: one whole dust."
 			]
-			id: "C9A601E8238E3BD4"
+			id: "4989E647427B8FDD"
 			rewards: [
 				{
-					id: "98191055D0699577"
+					id: "30DAE9C41464AECE"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -213,14 +213,14 @@
 			id: "2F68A60FCD9CE2B1"
 			rewards: [
 				{
-					id: "C5AE905182E17F03"
+					id: "67631CCA0A117430"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "8DC1A01769A63EF6"
+					id: "1D91D0CAF2E74F72"
 					item: "positronics:bauxitic_stratum"
 					type: "item"
 				}
@@ -237,17 +237,17 @@
 				"&bByproducts:&r Glass (20%)"
 				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
-			id: "EA5FEF0B3B6EB3D9"
+			id: "7E1B7C75052D093C"
 			rewards: [
 				{
-					id: "FF61EECE70255E30"
+					id: "6D1CD7AB2D0F7EF1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "9FA38D02A629D398"
+					id: "00D89508AA39E85A"
 					item: "positronics:siliceous_stratum"
 					type: "item"
 				}
@@ -294,14 +294,14 @@
 			id: "2E0E564E0779341F"
 			rewards: [
 				{
-					id: "B316880C10AAFE03"
+					id: "1C1D499F7CBA4CD1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "D1E266BD548B636B"
+					id: "48637D59A33BA288"
 					item: "positronics:precious_stratum"
 					type: "item"
 				}
@@ -321,7 +321,7 @@
 			id: "22911CD03DE86F98"
 			rewards: [
 				{
-					id: "816416B25F9B5520"
+					id: "4D9E498E8F36985C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -345,10 +345,10 @@
 				"&bByproducts:&r Pyrite (20%)"
 				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
-			id: "DB55907FA49D8EA7"
+			id: "704C5C76015E276B"
 			rewards: [
 				{
-					id: "A9D0AA1979328EAE"
+					id: "239DD195EA20B3F2"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -372,10 +372,10 @@
 				"&bByproducts:&r Cobalt (10%)"
 				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
-			id: "8438EF8B391662BD"
+			id: "329E86855974E819"
 			rewards: [
 				{
-					id: "A5FFA1146412900B"
+					id: "65C128D974C3C8F4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -399,7 +399,7 @@
 				"&bByproducts:&r Nether Quartz (30%)"
 				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
-			id: "860F84B16A7258E6"
+			id: "1AA1C09DA6828797"
 			rewards: [
 				{
 					id: "259E53C5A106AF37"
@@ -429,14 +429,14 @@
 			id: "131A31A4AC1454FC"
 			rewards: [
 				{
-					id: "C92DE9D99E82851C"
+					id: "6E586C63EFDEE99E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "C998EA4EEB86C838"
+					id: "639FBCF2A1A85CD4"
 					item: "positronics:titanic_stratum"
 					type: "item"
 				}
@@ -453,10 +453,10 @@
 				"&bByproducts:&r Magnesium (10%)"
 				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
-			id: "B87B14CFA478F51C"
+			id: "04E5D74DD77CE617"
 			rewards: [
 				{
-					id: "AAD056F3751D7214"
+					id: "4087AC45DE48F1FB"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -480,10 +480,10 @@
 				"&bByproducts:&r Magnetite (20%)"
 				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
-			id: "963376777EF08413"
+			id: "6F60866E2C81EDB7"
 			rewards: [
 				{
-					id: "E4ED7C7A30CDFCC1"
+					id: "1C3D27D7E1CBE969"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -507,7 +507,7 @@
 				"&bByproducts:&r Emerald (10%), Sapphire (10%), Ruby (10%)"
 				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
-			id: "8B7F63393C1188BE"
+			id: "04711B1E7AF7D88F"
 			rewards: [
 				{
 					id: "75FAB7DCF069D005"
@@ -534,10 +534,10 @@
 				"&bByproducts:&r Lepidolite (20%)"
 				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
-			id: "88AFA58DB5ED4AA7"
+			id: "177B742EEE555F89"
 			rewards: [
 				{
-					id: "CEB8010F17A3E385"
+					id: "793033B28B356E1F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -561,7 +561,7 @@
 				"&bByproducts:&r Calcite (20%)"
 				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
-			id: "A42B5E6322A72E25"
+			id: "652F56F96EC41D90"
 			rewards: [
 				{
 					id: "4AA87B79D4003E37"
@@ -598,7 +598,7 @@
 			]
 			tasks: [
 				{
-					id: "F25BB134F4FBF1DD"
+					id: "31328623303D5ABB"
 					item: "positronics:bituminous_stratum"
 					type: "item"
 				}
@@ -642,7 +642,7 @@
 				"&bByproducts:&r Tungstate (30%)"
 				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
-			id: "AFEE66EF2FDF72A5"
+			id: "37DC6ECAD2EEAEE0"
 			rewards: [
 				{
 					id: "76EF2972D8DFCB6A"
@@ -669,17 +669,17 @@
 				"&bByproducts:&r Wulfenite (15%)"
 				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
-			id: "BA7FEBA6AD89CF1A"
+			id: "3D1E4881464B2BB9"
 			rewards: [
 				{
-					id: "B8813C755DF3F131"
+					id: "50C521ED2C9C48F6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "D1F30CBE83B3B3C3"
+					id: "345CDB0D0E1AF1AF"
 					item: "positronics:molybdic_stratum"
 					type: "item"
 				}
@@ -699,14 +699,14 @@
 			id: "7DD649B4BA9DB372"
 			rewards: [
 				{
-					id: "F9F0ECD7CFBA5E39"
+					id: "48224BEE0129E52B"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "DDF293A94E837BB6"
+					id: "03127831FD1B9EF7"
 					item: "positronics:platinic_stratum"
 					type: "item"
 				}
@@ -723,17 +723,17 @@
 				"&bByproducts:&r Bastnasite (30%)"
 				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
-			id: "D5A5CE3182413286"
+			id: "769CEBFE27450D35"
 			rewards: [
 				{
-					id: "D9AEA1468A941786"
+					id: "4CB13F8FBC5D847C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F18037E5EEAE29F8"
+					id: "6796FF074DC5BA9A"
 					item: "positronics:lanthanic_stratum"
 					type: "item"
 				}
@@ -780,7 +780,7 @@
 			id: "7607BD300512776D"
 			rewards: [
 				{
-					id: "E8575960B9EE68FA"
+					id: "351F4C027744779A"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -814,7 +814,7 @@
 			]
 			tasks: [
 				{
-					id: "BBC742DE1C37763F"
+					id: "21E13724F433861A"
 					item: "positronics:beryllic_stratum"
 					type: "item"
 				}
@@ -831,7 +831,7 @@
 				"&bByproducts:&r Osmium (30%)"
 				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
-			id: "F9121AB908950852"
+			id: "6E6058DFD89CAB4C"
 			rewards: [
 				{
 					id: "687875F34E098E60"
@@ -841,7 +841,7 @@
 			]
 			tasks: [
 				{
-					id: "CEAAFC1E2C2AD67E"
+					id: "6D683554C74D02E5"
 					item: "positronics:osmic_stratum"
 					type: "item"
 				}
@@ -858,17 +858,17 @@
 				"&bByproducts:&r Enriched Naquadah (10%)"
 				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
-			id: "BFD667A472730562"
+			id: "7C24F3E36FC63113"
 			rewards: [
 				{
-					id: "BFAFBF387B2DD946"
+					id: "5D75E5E873F93AD3"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "DA6CC5E721BAECA3"
+					id: "61F207AB1BCCE5A6"
 					item: "positronics:naquadic_stratum"
 					type: "item"
 				}
@@ -885,7 +885,7 @@
 				"&bByproducts:&r Samarium (20%)"
 				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
-			id: "F205A8B79372DE5D"
+			id: "11BC6296B941058C"
 			rewards: [
 				{
 					id: "24DC35B08B07D9A2"
@@ -915,14 +915,14 @@
 			id: "18D190F026F4ABF4"
 			rewards: [
 				{
-					id: "DA080D6C7C97946F"
+					id: "714E1942813D707C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "BA031AFCD378E139"
+					id: "7C76361D9A46FC4A"
 					item: "positronics:triniac_stratum"
 					type: "item"
 				}
@@ -939,7 +939,7 @@
 				"&bByproducts:&r Tritanium (5%)"
 				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
-			id: "9CD254E498058789"
+			id: "20BD384B80FEEF13"
 			rewards: [
 				{
 					id: "2E3BCA70415C9270"
@@ -949,7 +949,7 @@
 			]
 			tasks: [
 				{
-					id: "E5A9DCA51BA72292"
+					id: "48F835B3615EEB82"
 					item: "positronics:duranic_stratum"
 					type: "item"
 				}
@@ -969,14 +969,14 @@
 			id: "4FE1C0FA4D94CB43"
 			rewards: [
 				{
-					id: "E2D16F7FC44A2BEC"
+					id: "3E4FBCE207A04BF5"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "97D6A971AB4D8CAF"
+					id: "5101831EB607B3DF"
 					item: "positronics:actinic_stratum"
 					type: "item"
 				}
@@ -996,14 +996,14 @@
 			id: "4A8F72394EC5F0F8"
 			rewards: [
 				{
-					id: "FC0D422B64909AF9"
+					id: "29C0CD738D247FD5"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "966648F4288E7839"
+					id: "6283C80AACBFE864"
 					item: "positronics:neutronic_stratum"
 					type: "item"
 				}

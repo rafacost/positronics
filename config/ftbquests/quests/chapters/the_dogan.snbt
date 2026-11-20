@@ -4,19 +4,19 @@
 	filename: "the_dogan"
 	group: ""
 	icon: "gtceu:ev_machine_hull"
-	id: "D0F875DBC87E2B3A"
+	id: "1ACCCAA8A36EF817"
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["C4AEF99915A9BBC9"]
+			dependencies: ["74726E133799D18A"]
 			description: [
 				"&7[NCP Field Memo #0501: Posting]"
 				""
 				"Dogans were NCP's control bunkers: screens, consoles and old procedures."
 				"Goal: &bClearance Level 5&r."
 			]
-			id: "B85D7C4C66D2C306"
+			id: "4464C958924B8E91"
 			rewards: [
 				{
 					count: 6
@@ -29,7 +29,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "8ACC20E4E4C6B965"
+					id: "27604045785F6778"
 					item: "positronics:clearance_card_4"
 					type: "item"
 				}
@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B85D7C4C66D2C306" "D9F0FA7579486978"]
+			dependencies: ["4464C958924B8E91" "4488DDDF712A5C93"]
 			description: [
 				"&7[NCP Field Memo #0502: Titanium]"
 				""
@@ -62,7 +62,7 @@
 				}
 				{
 					count: 16L
-					id: "B166FCEA5AB8A4F6"
+					id: "575DA3B0FFD54644"
 					item: "gtceu:titanium_ingot"
 					type: "item"
 				}
@@ -82,14 +82,14 @@
 			rewards: [
 				{
 					count: 6
-					id: "CA389E78DCBDBAA0"
+					id: "6FC553F0EF841B6F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F2D8510CEE788435"
+					id: "5D95693C4CE00DD3"
 					item: "gtceu:ev_machine_hull"
 					type: "item"
 				}
@@ -117,7 +117,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "B827B3E11B43053F"
+					id: "38652AE439289BA6"
 					item: "gtceu:nichrome_coil_block"
 					type: "item"
 				}
@@ -133,18 +133,18 @@
 				""
 				"Split oil into everything at once."
 			]
-			id: "F12F33E405BA7658"
+			id: "66E986A4489A0BEF"
 			rewards: [
 				{
 					count: 6
-					id: "CB50DB8988C885B0"
+					id: "509704D0956E7CF5"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "8A81F072FD5511AE"
+					id: "635CC1A12FACA554"
 					item: "gtceu:distillation_tower"
 					type: "item"
 				}
@@ -171,7 +171,7 @@
 			]
 			tasks: [
 				{
-					id: "AFBFB123474C382F"
+					id: "313BA27C5548F820"
 					item: "gtceu:vacuum_freezer"
 					type: "item"
 				}
@@ -181,13 +181,13 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["F12F33E405BA7658"]
+			dependencies: ["66E986A4489A0BEF"]
 			description: [
 				"&7[NCP Field Memo #0507: Rubber]"
 				""
 				"Better rubber for better cables."
 			]
-			id: "94A062831D67EB77"
+			id: "3B18C6835A130702"
 			rewards: [
 				{
 					count: 6
@@ -219,11 +219,11 @@
 				""
 				"Every reaction, in parallel, in one place. The Dogan's control room."
 			]
-			id: "A9ADAE36E64D7363"
+			id: "17DF79AF94C5C161"
 			rewards: [
 				{
 					count: 6
-					id: "862748F715BB82FC"
+					id: "3B1E9DD0DAA2A73E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -240,7 +240,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["A9ADAE36E64D7363"]
+			dependencies: ["17DF79AF94C5C161"]
 			description: [
 				"&7[NCP Field Memo #0509: Nano]"
 				""
@@ -250,7 +250,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "E7467B7ABFD2CDA5"
+					id: "3253A8413D8BA01E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -258,7 +258,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "CF75D4468C4A9149"
+					id: "395F0803B6BCB523"
 					item: "gtceu:nano_processor"
 					type: "item"
 				}
@@ -279,7 +279,7 @@
 				""
 				"209,715,200,000 EMC. The Dogan's chemical complex, piped into capacitors."
 			]
-			id: "CAD8171A21075328"
+			id: "37BB45932FE347EA"
 			rewards: [
 				{
 					count: 6
@@ -300,7 +300,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["CAD8171A21075328" "755FBD7E2E24798C"]
+			dependencies: ["37BB45932FE347EA" "755FBD7E2E24798C"]
 			description: [
 				"&7[NCP Field Memo #0512: Keystone]"
 				""
@@ -336,28 +336,28 @@
 				""
 				"The rare metals of the old world."
 			]
-			id: "CB596557E8F6C5A5"
+			id: "4C34E43C3A1A938F"
 			rewards: [
 				{
 					count: 6
-					id: "C11F458D36575B57"
+					id: "5B04166AD42C6742"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "8322A0A9DB9090E1"
+					id: "732367BF368F8BD6"
 					item: "positronics:tungstic_stratum"
 					type: "item"
 				}
 				{
-					id: "95C0EF0E40EF9FAD"
+					id: "4308C38B75CF49C4"
 					item: "positronics:platinic_stratum"
 					type: "item"
 				}
 				{
-					id: "E7E286A845261C49"
+					id: "7AC45403E7F0883C"
 					item: "positronics:lanthanic_stratum"
 					type: "item"
 				}
@@ -367,17 +367,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["45C5B750D77F099C" "1F7DBB52B6FBE8EC" "CB596557E8F6C5A5"]
+			dependencies: ["45C5B750D77F099C" "1F7DBB52B6FBE8EC" "4C34E43C3A1A938F"]
 			description: [
 				"&7[NCP Field Memo #0510: Clearance]"
 				""
 				"&bClearance Level 5&r. Next posting: &bFedic&r."
 			]
-			id: "E22643604378FE3A"
+			id: "4BC69184D21CDC99"
 			rewards: [
 				{
 					count: 35
-					id: "B9A6B9A00EEAFF83"
+					id: "3D99F35A080634E2"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -386,7 +386,7 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "F80C8805E4041A11"
+					id: "540DEEA9B4224764"
 					item: "positronics:clearance_card_5"
 					type: "item"
 				}

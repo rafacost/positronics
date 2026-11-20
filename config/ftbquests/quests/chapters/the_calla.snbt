@@ -4,7 +4,7 @@
 	filename: "the_calla"
 	group: ""
 	icon: "gtceu:lv_machine_hull"
-	id: "AF6C1802B5EE06C1"
+	id: "3BCB03CDABA9DA2B"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -45,18 +45,18 @@
 				""
 				"Hand-assembled with your Clearance Card (it is not consumed). After this, an LV assembler does it."
 			]
-			id: "FFF036F838824615"
+			id: "46F8BC980BF71870"
 			rewards: [
 				{
 					count: 3
-					id: "F6DDF78D9AF126F7"
+					id: "1EBCA4CE31760654"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "A8AB6B9B90F2046D"
+					id: "42FEDF32B0A9517B"
 					item: "gtceu:lv_machine_hull"
 					type: "item"
 				}
@@ -66,17 +66,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FFF036F838824615"]
+			dependencies: ["46F8BC980BF71870"]
 			description: [
 				"&7[NCP Field Memo #0203: Circuits]"
 				""
 				"Resistors, vacuum tubes, a circuit board. The LV circuit."
 			]
-			id: "CA1B81514B7D3E28"
+			id: "05BE200FD27CB53F"
 			rewards: [
 				{
 					count: 3
-					id: "E7CE4EAD63D84216"
+					id: "07762F21180E28FA"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -84,7 +84,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "FDE9A7FF87DD84E4"
+					id: "668249EEE8900FA0"
 					item: "gtceu:basic_electronic_circuit"
 					type: "item"
 				}
@@ -94,7 +94,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["CA1B81514B7D3E28"]
+			dependencies: ["05BE200FD27CB53F"]
 			description: [
 				"&7[NCP Field Memo #0204: Components]"
 				""
@@ -104,7 +104,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "B64228789DF9AF3D"
+					id: "6069C26D48CD92B9"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -116,17 +116,17 @@
 					type: "item"
 				}
 				{
-					id: "9E88BB536C20ACA9"
+					id: "7640F3B8B87252C1"
 					item: "gtceu:lv_electric_piston"
 					type: "item"
 				}
 				{
-					id: "E753A27B8BC90898"
+					id: "4B8867C63ED6AEFF"
 					item: "gtceu:lv_electric_pump"
 					type: "item"
 				}
 				{
-					id: "EA8EB28DE0488ECD"
+					id: "1F94E48B48BF9C18"
 					item: "gtceu:lv_conveyor_module"
 					type: "item"
 				}
@@ -158,12 +158,12 @@
 			]
 			tasks: [
 				{
-					id: "926A6AE9EFEFA847"
+					id: "2A37240EFE979512"
 					item: "gtceu:lv_macerator"
 					type: "item"
 				}
 				{
-					id: "92174B261940BB45"
+					id: "402B0788F3752C0D"
 					item: "gtceu:lv_assembler"
 					type: "item"
 				}
@@ -173,7 +173,7 @@
 					type: "item"
 				}
 				{
-					id: "B67A656F8D12ADE2"
+					id: "2A061687A2345093"
 					item: "gtceu:lv_bender"
 					type: "item"
 				}
@@ -205,7 +205,7 @@
 			]
 			tasks: [
 				{
-					id: "D537089B5CE99FCD"
+					id: "16E2997A82065A24"
 					item: "gtceu:lv_mixer"
 					type: "item"
 				}
@@ -215,12 +215,12 @@
 					type: "item"
 				}
 				{
-					id: "B4C1D36D6621614B"
+					id: "5FB5F80F64B41EB0"
 					item: "gtceu:lv_electrolyzer"
 					type: "item"
 				}
 				{
-					id: "98BE60D15A8A9639"
+					id: "060CFC16353949D3"
 					item: "gtceu:lv_chemical_reactor"
 					type: "item"
 				}
@@ -241,11 +241,11 @@
 				""
 				"Sulfur, oxygen, water. Sulfuric acid is the solvent for &bSeed II enrichment&r."
 			]
-			id: "B15400B833B8B163"
+			id: "4714C5660CC4815D"
 			rewards: [
 				{
 					count: 3
-					id: "E0CCC8EEEC55485D"
+					id: "092FD7161B881B53"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -272,7 +272,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "EB0109C9CB4E16D9"
+					id: "65B6E8C31FCB1F05"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -295,23 +295,23 @@
 				""
 				"Multiblocks need buses, hatches and a maintenance hatch. They need glue too."
 			]
-			id: "91F7A2545C9D1EBB"
+			id: "23959B9E619112CD"
 			rewards: [
 				{
 					count: 3
-					id: "DECA4AFA05DB3F50"
+					id: "67716C51BB67A77E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "D18CA99EFF6694C8"
+					id: "2FCBBA8A1F0562D9"
 					item: "gtceu:lv_input_bus"
 					type: "item"
 				}
 				{
-					id: "B77506BD2A56D809"
+					id: "74A7FE8FF5AD228F"
 					item: "gtceu:lv_output_bus"
 					type: "item"
 				}
@@ -321,7 +321,7 @@
 					type: "item"
 				}
 				{
-					id: "9B7AC1C09433EDF0"
+					id: "4D06CE0A2C95830B"
 					item: "gtceu:maintenance_hatch"
 					type: "item"
 				}
@@ -341,7 +341,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "87E144DE5519B750"
+					id: "062D6210E0DB99EE"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -349,12 +349,12 @@
 			tasks: [
 				{
 					count: 16L
-					id: "955AB5CB4AB13327"
+					id: "43034443DDC88804"
 					item: "gtceu:cupronickel_coil_block"
 					type: "item"
 				}
 				{
-					id: "98C12B01CC2BC56C"
+					id: "5A9B003F71A4BED8"
 					item: "gtceu:tin_alloy_bucket"
 					type: "item"
 				}
@@ -364,17 +364,17 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5BDECB449BAD33CC" "91F7A2545C9D1EBB"]
+			dependencies: ["5BDECB449BAD33CC" "23959B9E619112CD"]
 			description: [
 				"&7[NCP Field Memo #0211: Blast Furnace]"
 				""
 				"The first great multiblock. Aluminium and silicon need it."
 			]
-			id: "A82BF2A1F92BA144"
+			id: "3B799683FA4DC808"
 			rewards: [
 				{
 					count: 6
-					id: "8D0CCE51B0A40B6C"
+					id: "0D5633A814E250CF"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -391,7 +391,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["CA1B81514B7D3E28" "4974C9AD411962B7"]
+			dependencies: ["05BE200FD27CB53F" "4974C9AD411962B7"]
 			description: [
 				"&7[NCP Field Memo #0212: Better Circuits]"
 				""
@@ -409,7 +409,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "EE472A68BF85A96C"
+					id: "27C955FC08C56460"
 					item: "gtceu:good_electronic_circuit"
 					type: "item"
 				}
@@ -425,7 +425,7 @@
 				""
 				"Automate your food: hopper botany pots over chests. Variety keeps you strong."
 			]
-			id: "E12B3F5F5CE6A22A"
+			id: "1845323CB80C94E1"
 			rewards: [
 				{
 					count: 3
@@ -442,7 +442,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "C68121A7BBD79F71"
+					id: "55A368D3BB80C37E"
 					item: "pamhc2crops:tomatoitem"
 					type: "item"
 				}
@@ -454,7 +454,7 @@
 				}
 				{
 					count: 16L
-					id: "9EC2EFBC5CBDCB21"
+					id: "43AA95A33B466710"
 					item: "pamhc2crops:onionitem"
 					type: "item"
 				}
@@ -464,7 +464,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["E12B3F5F5CE6A22A" "91F7A2545C9D1EBB"]
+			dependencies: ["1845323CB80C94E1" "23959B9E619112CD"]
 			description: [
 				"&7[NCP Field Memo #0218: Glasshouse]"
 				""
@@ -472,11 +472,11 @@
 				"Put a seed in the input bus (it is never used up), pipe in water, and it grows that crop. Fertilizer doubles the harvest."
 				"&7Cotton gives string; flax, jute and sisal give fibre. No spiders required."
 			]
-			id: "A13B1B3E561D401C"
+			id: "1C0DD05DB1EF60F2"
 			rewards: [
 				{
 					count: 8
-					id: "B28BB08E9ECFA8F8"
+					id: "2974A274A117F607"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -494,7 +494,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["A82BF2A1F92BA144"]
+			dependencies: ["3B799683FA4DC808"]
 			description: [
 				"&7[NCP Field Memo #0214: Charging]"
 				""
@@ -511,7 +511,7 @@
 			]
 			tasks: [
 				{
-					id: "F551FD8D2AA21441"
+					id: "4071ADC966CAEA60"
 					item: "projecte:klein_star_omega"
 					type: "item"
 				}
@@ -528,7 +528,7 @@
 				"Core II catalyses &bSeed II&r: enrich Seed I strata in a mixer with sulfuric acid."
 				"Seed II brings bauxite, silicon, gallium, gold, salt, sulfur, antimony and certus quartz."
 			]
-			id: "8FEAC04C566758E8"
+			id: "13174DD001A57611"
 			rewards: [
 				{
 					count: 12
@@ -551,17 +551,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8FEAC04C566758E8" "B15400B833B8B163"]
+			dependencies: ["13174DD001A57611" "4714C5660CC4815D"]
 			description: [
 				"&7[NCP Field Memo #0216: Enrichment]"
 				""
 				"Four of a lower stratum, acid, and the Core as catalyst. Choose what you enrich into."
 			]
-			id: "8D46019E1BF5964F"
+			id: "70B5506B5FAD2B04"
 			rewards: [
 				{
 					count: 3
-					id: "C0EDBA730E6D8BD4"
+					id: "5B16650715268378"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -573,7 +573,7 @@
 					type: "item"
 				}
 				{
-					id: "ECE2E5B48A7DE98E"
+					id: "170F011E0AE0F1F8"
 					item: "positronics:siliceous_stratum"
 					type: "item"
 				}
@@ -588,13 +588,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8FEAC04C566758E8" "142FF47CDA283F7B"]
+			dependencies: ["13174DD001A57611" "142FF47CDA283F7B"]
 			description: [
 				"&7[NCP Field Memo #0217: Clearance]"
 				""
 				"&bClearance Level 2&r: MV hulls are yours. Next posting: &bLud&r."
 			]
-			id: "F09FB7C206A69621"
+			id: "7A49CA598D083678"
 			rewards: [
 				{
 					count: 20
@@ -607,7 +607,7 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "EF779BEE4A7F100D"
+					id: "7BF037387688D8FA"
 					item: "positronics:clearance_card_2"
 					type: "item"
 				}

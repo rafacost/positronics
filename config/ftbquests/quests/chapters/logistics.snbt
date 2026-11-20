@@ -4,7 +4,7 @@
 	filename: "logistics"
 	group: "7189CCE6C12A632F"
 	icon: "pipez:item_pipe"
-	id: "BD343A4500907F62"
+	id: "2616C32A75397D87"
 	order_index: 30
 	quest_links: [ ]
 	quests: [
@@ -16,11 +16,11 @@
 				"Item pipes pull from a generator and push into a chest. Shift-right-click with the wrench to set which side extracts."
 				"Fluid and energy pipes work the same way. Upgrades make them faster and add filters."
 			]
-			id: "F3014744165A41A8"
+			id: "50CDFE83969A739F"
 			rewards: [
 				{
 					count: 2
-					id: "F6E7537650427042"
+					id: "130E0DF1279480F3"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -33,7 +33,7 @@
 					type: "item"
 				}
 				{
-					id: "AE3AD1627C180919"
+					id: "7323F28BA84B59E5"
 					item: "pipez:wrench"
 					type: "item"
 				}
@@ -43,7 +43,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F3014744165A41A8"]
+			dependencies: ["50CDFE83969A739F"]
 			description: [
 				"&7[NCP Field Memo #3002: Pipes]"
 				""
@@ -53,19 +53,19 @@
 			rewards: [
 				{
 					count: 2
-					id: "DD42FD9A3AD19018"
+					id: "32523448E43756D6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "95AB794285A12C56"
+					id: "76B250C91A78B14F"
 					item: "pipez:fluid_pipe"
 					type: "item"
 				}
 				{
-					id: "9066DF5F9103A311"
+					id: "7B908B87FDE38433"
 					item: "pipez:energy_pipe"
 					type: "item"
 				}
@@ -86,7 +86,7 @@
 				""
 				"Drawers hold huge amounts of one item. Perfect for cobblestone, gravel and dust."
 			]
-			id: "A015B06B45EF7545"
+			id: "0DCACCA06866AA06"
 			rewards: [
 				{
 					count: 2
@@ -98,7 +98,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "A1E612059DABBB6F"
+					id: "32DE2C3A110CBE18"
 					item: "functionalstorage:oak_1"
 					type: "item"
 				}
@@ -108,13 +108,13 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["A015B06B45EF7545"]
+			dependencies: ["0DCACCA06866AA06"]
 			description: [
 				"&7[NCP Field Memo #3004: Compacting]"
 				""
 				"Put nuggets in, take ingots out. Smelted strata give nuggets: this turns them into ingots automatically."
 			]
-			id: "972F74CB9CF71BCE"
+			id: "1ED938E8E29F0C86"
 			rewards: [
 				{
 					count: 2
@@ -125,7 +125,7 @@
 			]
 			tasks: [
 				{
-					id: "9279FBA49D58AD24"
+					id: "213928C9B56EA551"
 					item: "functionalstorage:compacting_drawer"
 					type: "item"
 				}
@@ -135,17 +135,17 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["972F74CB9CF71BCE"]
+			dependencies: ["1ED938E8E29F0C86"]
 			description: [
 				"&7[NCP Field Memo #3005: Controller]"
 				""
 				"One block that inserts into every drawer around it. Pusher and puller upgrades move items for you."
 			]
-			id: "8C1FAEE2E095EE57"
+			id: "6175C1319BD5FAD6"
 			rewards: [
 				{
 					count: 2
-					id: "BD4CE1A236E5B9C0"
+					id: "721BA8B99F785DF8"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -177,7 +177,7 @@
 			rewards: [
 				{
 					count: 2
-					id: "83AC88622679296D"
+					id: "14335DA51B1D9C0D"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -238,14 +238,14 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8C1FAEE2E095EE57"]
+			dependencies: ["6175C1319BD5FAD6"]
 			description: [
 				"&7[NCP Field Memo #3008: AE2]"
 				""
 				"There are no meteorites here: NCP assembles the four presses in an LV assembler from steel and a sample."
 				"Certus quartz crystals grow from Crystalline Stratum dust in an autoclave. Diamonds can be synthesised from graphite (Carbonic Stratum)."
 			]
-			id: "B64D79A331C06718"
+			id: "5ECC7924EC9A43D9"
 			rewards: [
 				{
 					count: 6
@@ -266,7 +266,7 @@
 					type: "item"
 				}
 				{
-					id: "E48D468CEED3F685"
+					id: "103D74298BE6C864"
 					item: "ae2:logic_processor_press"
 					type: "item"
 				}
@@ -276,7 +276,7 @@
 					type: "item"
 				}
 				{
-					id: "A23FC88F97AD91BC"
+					id: "3416F716383CF36C"
 					item: "ae2:engineering_processor_press"
 					type: "item"
 				}
@@ -286,13 +286,13 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["B64D79A331C06718"]
+			dependencies: ["5ECC7924EC9A43D9"]
 			description: [
 				"&7[NCP Field Memo #3009: Fluix]"
 				""
 				"Charge certus in a charger (it takes GT power), drop it in water with redstone and quartz: fluix."
 			]
-			id: "AEC423028200A3E0"
+			id: "6960B68DB39CBE72"
 			rewards: [
 				{
 					count: 2
@@ -303,7 +303,7 @@
 			]
 			tasks: [
 				{
-					id: "F29353871A8BB04E"
+					id: "24765C998735D933"
 					item: "ae2:charger"
 					type: "item"
 				}
@@ -319,7 +319,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["AEC423028200A3E0"]
+			dependencies: ["6960B68DB39CBE72"]
 			description: [
 				"&7[NCP Field Memo #3010: Storage]"
 				""
@@ -347,12 +347,12 @@
 					type: "item"
 				}
 				{
-					id: "F704C2313114CCB6"
+					id: "13E42E713F902A47"
 					item: "ae2:terminal"
 					type: "item"
 				}
 				{
-					id: "90F82FF8A55873EC"
+					id: "57D748B0B7DE791F"
 					item: "ae2:energy_acceptor"
 					type: "item"
 				}
@@ -385,17 +385,17 @@
 					type: "item"
 				}
 				{
-					id: "E91AA0FDC3EC965E"
+					id: "62F45686439DC358"
 					item: "ae2:pattern_provider"
 					type: "item"
 				}
 				{
-					id: "975E8FD38139E80C"
+					id: "62D730E6243B2244"
 					item: "ae2:molecular_assembler"
 					type: "item"
 				}
 				{
-					id: "DB9AC84C7D52EAEE"
+					id: "00D5DE2C94ADC6D9"
 					item: "ae2:crafting_unit"
 					type: "item"
 				}
@@ -411,7 +411,7 @@
 				""
 				"More pattern slots, more sides, less cable."
 			]
-			id: "F97B0F0A4081FE77"
+			id: "4BDCB0A0A33D29D6"
 			rewards: [
 				{
 					count: 2
@@ -427,7 +427,7 @@
 					type: "item"
 				}
 				{
-					id: "BB34522FD70940AC"
+					id: "1DBAAF204EF0951C"
 					item: "expatternprovider:ex_interface"
 					type: "item"
 				}
@@ -437,13 +437,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F97B0F0A4081FE77"]
+			dependencies: ["4BDCB0A0A33D29D6"]
 			description: [
 				"&7[NCP Field Memo #3013: Matrix]"
 				""
 				"A multiblock molecular assembler for thousands of crafts at once."
 			]
-			id: "ED2E6B2953CB262D"
+			id: "16CC96C70B800E1D"
 			rewards: [
 				{
 					count: 2
@@ -464,7 +464,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["F97B0F0A4081FE77"]
+			dependencies: ["4BDCB0A0A33D29D6"]
 			description: [
 				"&7[NCP Field Memo #3014: Capacity]"
 				""
@@ -534,18 +534,18 @@
 				""
 				"AdvancedAE's quantum computer: crafting CPUs at a scale even NCP finds excessive."
 			]
-			id: "D02F9D04ACDBD415"
+			id: "1624217FCDE59D42"
 			rewards: [
 				{
 					count: 2
-					id: "C2183E12FF9D3B1A"
+					id: "4ECD5E4A34EBA947"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "85852930AAB70AFF"
+					id: "1D5D3F42520C4ACD"
 					item: "advanced_ae:quantum_core"
 					type: "item"
 				}

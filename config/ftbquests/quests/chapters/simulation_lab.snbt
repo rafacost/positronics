@@ -4,12 +4,12 @@
 	filename: "simulation_lab"
 	group: "7189CCE6C12A632F"
 	icon: "hostilenetworks:sim_chamber"
-	id: "C26FF34076ADFA51"
+	id: "1F174841286B65AA"
 	order_index: 32
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["FFF036F838824615"]
+			dependencies: ["46F8BC980BF71870"]
 			description: [
 				"&7[NCP Field Memo #3201: Andy Units]"
 				""
@@ -18,11 +18,11 @@
 				"Every simulation teaches the model a little more: Basic models are inaccurate, but they improve with use."
 				"&7Here is your first model. NCP hands out trained models as you earn clearance: never the best, always useful."
 			]
-			id: "99DEF8B24EF3E293"
+			id: "23AB818033C1684E"
 			rewards: [
 				{
 					count: 5
-					id: "CAA683EA90D1EC8B"
+					id: "230F3F48A9FA0ECE"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -45,7 +45,7 @@
 			size: 1.4d
 			tasks: [
 				{
-					id: "BD1673542D7EF256"
+					id: "4D54E1B063DFB297"
 					item: "hostilenetworks:sim_chamber"
 					type: "item"
 				}
@@ -56,7 +56,7 @@
 				}
 				{
 					count: 16L
-					id: "886AA5B9496897BB"
+					id: "57B2CB984687232E"
 					item: "hostilenetworks:prediction_matrix"
 					type: "item"
 				}
@@ -66,7 +66,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["99DEF8B24EF3E293"]
+			dependencies: ["23AB818033C1684E"]
 			description: [
 				"&7[NCP Field Memo #3201: Bones]"
 				""
@@ -74,11 +74,11 @@
 				"Bones become bone meal: your crops will thank you. Arrows and skulls too."
 				"&7Reward: the next data model."
 			]
-			id: "902D29C9D99A0C7F"
+			id: "2FA1AFA982C0117E"
 			rewards: [
 				{
 					count: 3
-					id: "B4F95EA994F87054"
+					id: "2116AD01EED1AAFF"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -100,7 +100,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "93FACA90B10E60F1"
+					id: "6F14FE40B6952A39"
 					item: "minecraft:bone"
 					type: "item"
 				}
@@ -110,7 +110,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["902D29C9D99A0C7F"]
+			dependencies: ["2FA1AFA982C0117E"]
 			description: [
 				"&7[NCP Field Memo #3202: Leather]"
 				""
@@ -118,7 +118,7 @@
 				"Leather means canteens, books and leather armour."
 				"&7Reward: the next data model."
 			]
-			id: "8042CBBF2F5F2119"
+			id: "77A7C2884E6BCE54"
 			rewards: [
 				{
 					count: 3
@@ -127,7 +127,7 @@
 					type: "item"
 				}
 				{
-					id: "F1A221536A7F3CB0"
+					id: "29EA5F282491CD2B"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -144,7 +144,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "A519296C93323BDA"
+					id: "4347FB0A85D47B25"
 					item: "minecraft:leather"
 					type: "item"
 				}
@@ -154,7 +154,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["8042CBBF2F5F2119"]
+			dependencies: ["77A7C2884E6BCE54"]
 			description: [
 				"&7[NCP Field Memo #3203: Wool]"
 				""
@@ -166,12 +166,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "AFC882714476557B"
+					id: "00C8C9457ED6B174"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "81799B4927BB0E8D"
+					id: "06BC39496C267358"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -188,7 +188,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "88672590437FDA05"
+					id: "179E77667BD5B6EA"
 					item: "minecraft:white_wool"
 					type: "item"
 				}
@@ -210,12 +210,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "E0A8F2559B466346"
+					id: "162DF4D4E18E8E78"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "A964747281DBA5FA"
+					id: "02F01B9F61B536B3"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -232,7 +232,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "C83FC06BD98D1304"
+					id: "72E14C775CDEF005"
 					item: "minecraft:feather"
 					type: "item"
 				}
@@ -250,11 +250,11 @@
 				"String by the stack, and spider eyes for brewing."
 				"&7That's every model at this grade."
 			]
-			id: "8BD14EAF6778099A"
+			id: "2DFE29879A8C3ECC"
 			rewards: [
 				{
 					count: 3
-					id: "C3C11AF46920C84C"
+					id: "7FE04DE2CCDC2533"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -262,7 +262,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "BF48E700BE25A990"
+					id: "4E26AC202B7F6192"
 					item: "minecraft:string"
 					type: "item"
 				}
@@ -272,23 +272,23 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["8BD14EAF6778099A" "EF9B476473A6D772"]
+			dependencies: ["2DFE29879A8C3ECC" "7880EA8B44DE6CEA"]
 			description: [
 				"&7[NCP Field Memo #3210: Requisition]"
 				""
 				"Your clearance now covers MV-grade simulations."
 				"Here is the next model."
 			]
-			id: "84D2B1BC59F0A733"
+			id: "204A8D9FA32547DF"
 			rewards: [
 				{
 					count: 3
-					id: "BB1858705B74072A"
+					id: "09FEF846EF15F82F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "B38A2469AD0669CA"
+					id: "5524CECF6AE19A1D"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -305,7 +305,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "FB01E1107C17B07C"
+					id: "331B67EE148A9922"
 					title: "Requisition models"
 					type: "checkmark"
 				}
@@ -315,7 +315,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["84D2B1BC59F0A733"]
+			dependencies: ["204A8D9FA32547DF"]
 			description: [
 				"&7[NCP Field Memo #3211: Rotten Flesh]"
 				""
@@ -332,7 +332,7 @@
 					type: "item"
 				}
 				{
-					id: "C1999BC82D1C5DE9"
+					id: "5DC21FBE97270980"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -349,7 +349,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "8848AA24DFEC78B5"
+					id: "42FA600F38D760C9"
 					item: "minecraft:rotten_flesh"
 					type: "item"
 				}
@@ -367,11 +367,11 @@
 				"Slime balls for sticky pistons and GT's rubber alternatives."
 				"&7Reward: the next data model."
 			]
-			id: "D61B47B37289A8F5"
+			id: "3A709D057CA9BE92"
 			rewards: [
 				{
 					count: 3
-					id: "D976E8FBBCABE275"
+					id: "6877E8E7C5E91D2F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -403,7 +403,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["D61B47B37289A8F5"]
+			dependencies: ["3A709D057CA9BE92"]
 			description: [
 				"&7[NCP Field Memo #3213: Gunpowder]"
 				""
@@ -415,12 +415,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "DFC04898A6C40201"
+					id: "16A399EC4ADE216D"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "F31ACD11FD2E42A0"
+					id: "3382B9C50D27ACD8"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -437,7 +437,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "A6D2F90E21C9F591"
+					id: "7DC65829EB7F99A4"
 					item: "minecraft:gunpowder"
 					type: "item"
 				}
@@ -477,18 +477,18 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1D032E845854B761" "FCBA41022669D42D"]
+			dependencies: ["1D032E845854B761" "2B380FF9E5AB61AF"]
 			description: [
 				"&7[NCP Field Memo #3220: Requisition]"
 				""
 				"Your clearance now covers HV-grade simulations."
 				"Here is the next model."
 			]
-			id: "C8863EF697495B6B"
+			id: "4550C76CB236814A"
 			rewards: [
 				{
 					count: 3
-					id: "CEA74C5903BDCB6D"
+					id: "725F2CE640B411B1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -510,7 +510,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "A1EC238BB7AE75CA"
+					id: "4AD6B9D2799BB59D"
 					title: "Requisition models"
 					type: "checkmark"
 				}
@@ -520,7 +520,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["C8863EF697495B6B"]
+			dependencies: ["4550C76CB236814A"]
 			description: [
 				"&7[NCP Field Memo #3221: Blaze Rods]"
 				""
@@ -532,7 +532,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "E794C420A5ED60D5"
+					id: "35D48D1DCE01A88B"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -554,7 +554,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "8634586D8FF14900"
+					id: "78E2C6275EA25188"
 					item: "minecraft:blaze_rod"
 					type: "item"
 				}
@@ -576,7 +576,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "A0F1F9201CC45056"
+					id: "6EC918CA199353F7"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -620,7 +620,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "BD256CEBA39A2063"
+					id: "6702AB82EF7A1AE1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -638,7 +638,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["12007B4347EDAE48" "B85D7C4C66D2C306"]
+			dependencies: ["12007B4347EDAE48" "4464C958924B8E91"]
 			description: [
 				"&7[NCP Field Memo #3230: Requisition]"
 				""
@@ -649,12 +649,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "C1C065067C0A4072"
+					id: "3940FB1D119AB407"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "DCFF338FB9DECD4D"
+					id: "376EDF5F2183B686"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -693,7 +693,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "AAC492BA0DA40B22"
+					id: "4BECF13AF187DE87"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -737,12 +737,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "C2C0248AB12F01A1"
+					id: "577E92FDE3E0DADA"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 				{
-					id: "AF350874CE7CFC10"
+					id: "51F25FE4558B74E8"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -781,7 +781,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "87B57DA0676FD218"
+					id: "35B52FD0593C37CA"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -789,7 +789,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "FF7D3EE4976E5FC6"
+					id: "1F1D3F399E2494D0"
 					item: "minecraft:prismarine_crystals"
 					type: "item"
 				}
@@ -799,7 +799,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["24D513AE8A1E9B68" "FF0C2EAC1358C7FF"]
+			dependencies: ["24D513AE8A1E9B68" "28D3E2E88A03453A"]
 			description: [
 				"&7[NCP Field Memo #3240: Requisition]"
 				""
@@ -815,7 +815,7 @@
 					type: "item"
 				}
 				{
-					id: "AEB9F423C3C38B7E"
+					id: "449E797CBFF6F874"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -832,7 +832,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "B0C5A19057F9E6BB"
+					id: "3E2D6AD2555D4F31"
 					title: "Requisition models"
 					type: "checkmark"
 				}
@@ -850,7 +850,7 @@
 				"Shulker shells: portable storage."
 				"&7Reward: the next data model."
 			]
-			id: "BEEC933AFCB4644B"
+			id: "1B7719A40FBCEFFC"
 			rewards: [
 				{
 					count: 3
@@ -886,7 +886,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BEEC933AFCB4644B"]
+			dependencies: ["1B7719A40FBCEFFC"]
 			description: [
 				"&7[NCP Field Memo #3242: Totems]"
 				""
@@ -894,7 +894,7 @@
 				"Totems of undying, and emeralds."
 				"&7That's every model at this grade."
 			]
-			id: "D688BCD8D93D2714"
+			id: "0D380C1B7B631B83"
 			rewards: [
 				{
 					count: 3
@@ -905,7 +905,7 @@
 			]
 			tasks: [
 				{
-					id: "F40126CC6F583962"
+					id: "3BF37A3014B9CEC9"
 					item: "minecraft:totem_of_undying"
 					type: "item"
 				}
@@ -915,14 +915,14 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["D688BCD8D93D2714" "1B8F37F4F9A066DF"]
+			dependencies: ["0D380C1B7B631B83" "1B8F37F4F9A066DF"]
 			description: [
 				"&7[NCP Field Memo #3250: Requisition]"
 				""
 				"Your clearance now covers LuV-grade simulations."
 				"Here is the next model. Advanced grade, this time."
 			]
-			id: "CAC590D154079D3A"
+			id: "40DF785C4EEF05E5"
 			rewards: [
 				{
 					count: 3
@@ -931,7 +931,7 @@
 					type: "item"
 				}
 				{
-					id: "BE34CA9C5ADA7719"
+					id: "3A86F2B115F0A702"
 					item: {
 											Count: 1
 											id: "hostilenetworks:data_model"
@@ -948,7 +948,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "8782E8E67820DC77"
+					id: "2DEF2CB40B2FEFB4"
 					title: "Requisition models"
 					type: "checkmark"
 				}
@@ -958,7 +958,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["CAC590D154079D3A"]
+			dependencies: ["40DF785C4EEF05E5"]
 			description: [
 				"&7[NCP Field Memo #3251: Nether Stars]"
 				""
@@ -966,7 +966,7 @@
 				"A simulated Wither. The star it leaves is very real."
 				"&7That's every model at this grade."
 			]
-			id: "D6E01EB38FBCB01E"
+			id: "1481AEDBE3DC0FE8"
 			rewards: [
 				{
 					count: 3
@@ -977,7 +977,7 @@
 			]
 			tasks: [
 				{
-					id: "8698363B4075AFC6"
+					id: "3D9DB70A4C14892E"
 					item: "minecraft:nether_star"
 					type: "item"
 				}

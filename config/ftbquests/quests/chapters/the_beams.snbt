@@ -4,23 +4,23 @@
 	filename: "the_beams"
 	group: ""
 	icon: "gtceu:uv_machine_hull"
-	id: "D37D7B33EB5BAE69"
+	id: "05EFC043801F1C4F"
 	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["AA9462A7D8EBEB0E"]
+			dependencies: ["1D72610E0ED2C7B4"]
 			description: [
 				"&7[NCP Field Memo #0901: Posting]"
 				""
 				"The Beams hold the world together. NCP built the machines that hold the Beams."
 				"Goal: &bClearance Level 9&r."
 			]
-			id: "AA801F73A6B95A91"
+			id: "4F43F6864F47391C"
 			rewards: [
 				{
 					count: 10
-					id: "C79A9C7D9CF81B02"
+					id: "1848DB9555BF5AC0"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -29,7 +29,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "C775FC14D21C0486"
+					id: "0884F6C87D807420"
 					item: "positronics:clearance_card_8"
 					type: "item"
 				}
@@ -39,17 +39,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["AA801F73A6B95A91"]
+			dependencies: ["4F43F6864F47391C"]
 			description: [
 				"&7[NCP Field Memo #0902: Hull]"
 				""
 				"Darmstadtium. Assembled with Clearance Level 8."
 			]
-			id: "C2E69566E10961FD"
+			id: "1446E1FDEC67717D"
 			rewards: [
 				{
 					count: 10
-					id: "EDB8C4B01DD03DD2"
+					id: "673D4A659C99035F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -62,7 +62,7 @@
 				}
 				{
 					count: 8L
-					id: "F800127AC97F651A"
+					id: "49A59DBB3FBA2696"
 					item: "gtceu:darmstadtium_ingot"
 					type: "item"
 				}
@@ -72,13 +72,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["AA801F73A6B95A91"]
+			dependencies: ["4F43F6864F47391C"]
 			description: [
 				"&7[NCP Field Memo #0903: Fusion]"
 				""
 				"Hotter fusion for heavier elements."
 			]
-			id: "FC2B626EE6A9B8C8"
+			id: "7A061889F0427182"
 			rewards: [
 				{
 					count: 25
@@ -89,7 +89,7 @@
 			]
 			tasks: [
 				{
-					id: "A1C552866B5C4E0E"
+					id: "3636857F2B6A4414"
 					item: "gtceu:zpm_fusion_reactor"
 					type: "item"
 				}
@@ -99,17 +99,17 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["FC2B626EE6A9B8C8"]
+			dependencies: ["7A061889F0427182"]
 			description: [
 				"&7[NCP Field Memo #0904: Tritanium]"
 				""
 				"The hottest coils NCP ever certified."
 			]
-			id: "FBCB4D867E89F59A"
+			id: "676C9D244A477CB4"
 			rewards: [
 				{
 					count: 10
-					id: "A8ADFD96068A440D"
+					id: "76D507AC5D0458A4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -133,24 +133,24 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["C2E69566E10961FD"]
+			dependencies: ["1446E1FDEC67717D"]
 			description: [
 				"&7[NCP Field Memo #0905: Wetware]"
 				""
 				"Living circuits: sterile growth medium, stem cells, neuro processing units."
 			]
-			id: "C49B9316E3EF4732"
+			id: "6D46273DF9CFDFE7"
 			rewards: [
 				{
 					count: 10
-					id: "C180D64685CE39AF"
+					id: "42B82E3236902147"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "AF3A216EFD8F2983"
+					id: "397D10FAD1C65373"
 					item: "gtceu:stem_cells"
 					type: "item"
 				}
@@ -161,7 +161,7 @@
 					type: "item"
 				}
 				{
-					id: "816A7359D611EADA"
+					id: "2A1AF3CBE3816B87"
 					item: "gtceu:wetware_processor_computer"
 					type: "item"
 				}
@@ -171,7 +171,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["C49B9316E3EF4732"]
+			dependencies: ["6D46273DF9CFDFE7"]
 			description: [
 				"&7[NCP Field Memo #0906: Mainframe]"
 				""
@@ -181,14 +181,14 @@
 			rewards: [
 				{
 					count: 10
-					id: "A090C478F1FADE49"
+					id: "5651AFD4F124CFD4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "8550527D60FFBF86"
+					id: "5F80154DCC1216E3"
 					item: "gtceu:wetware_processor_mainframe"
 					type: "item"
 				}
@@ -198,7 +198,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["473456C30CB159C1" "FBCB4D867E89F59A"]
+			dependencies: ["473456C30CB159C1" "676C9D244A477CB4"]
 			description: [
 				"&7[NCP Field Memo #0907: Clearance]"
 				""
@@ -217,7 +217,7 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "D64ADEFCE7074E9F"
+					id: "27306BDF84BBF972"
 					item: "positronics:clearance_card_9"
 					type: "item"
 				}

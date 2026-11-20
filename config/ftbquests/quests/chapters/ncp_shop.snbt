@@ -4,7 +4,7 @@
 	filename: "ncp_shop"
 	group: "54FF0D80BA2ED911"
 	icon: "positronics:ncp_scrip"
-	id: "AFA32446E8B697F5"
+	id: "4EE4334D44C4089C"
 	order_index: 40
 	quest_links: [ ]
 	quests: [
@@ -47,11 +47,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:carrot"
-			id: "AFB2F51453D5F4B5"
+			id: "1A4F111AFF7A37E7"
 			rewards: [
 				{
 					count: 6
-					id: "DF916000CCC541EE"
+					id: "268874135837862F"
 					item: "minecraft:carrot"
 					type: "item"
 				}
@@ -78,7 +78,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:potato"
-			id: "AEDBC08A035C624A"
+			id: "5D689221F3EEBC52"
 			rewards: [
 				{
 					count: 6
@@ -91,7 +91,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "BA2AC99DCBDA3312"
+					id: "4DFDF4CD24B4B7D6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -109,7 +109,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:pumpkin_seeds"
-			id: "936A57348912152A"
+			id: "155ECE61E7ACFDFE"
 			rewards: [
 				{
 					count: 4
@@ -122,7 +122,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "D8A4B91D72025348"
+					id: "0EB3D1D2D7478BD4"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -140,11 +140,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:melon_seeds"
-			id: "D1344C3666FA2F88"
+			id: "3BC0A5504C24C7B8"
 			rewards: [
 				{
 					count: 4
-					id: "F96A6139FFDA3536"
+					id: "4C40646ED7AC69E5"
 					item: "minecraft:melon_seeds"
 					type: "item"
 				}
@@ -175,7 +175,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "D2BE0C7AF3F22153"
+					id: "63B40BB41459E3E1"
 					item: "minecraft:sugar_cane"
 					type: "item"
 				}
@@ -184,7 +184,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "8EAD8E4645ED871D"
+					id: "431AD502298C1DA6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -233,7 +233,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:apple"
-			id: "9321D3B2FCC0540C"
+			id: "00664CDF8C3758F0"
 			rewards: [
 				{
 					count: 4
@@ -245,7 +245,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "CD9E3A75C6187D1E"
+					id: "522BC6C286C92738"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -263,7 +263,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:oak_sapling"
-			id: "FD33D31D9390C2B4"
+			id: "652B0E83298359BC"
 			rewards: [
 				{
 					count: 3
@@ -276,7 +276,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "C7A7BE8D63652C0F"
+					id: "74C1EA800DF2D9F6"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -325,7 +325,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:spruce_sapling"
-			id: "EA7C61EEEC42DB49"
+			id: "2FC47C10507F1373"
 			rewards: [
 				{
 					count: 3
@@ -338,7 +338,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "E111A5FBE7850D20"
+					id: "1174EF2C0D341303"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -360,7 +360,7 @@
 			rewards: [
 				{
 					count: 2
-					id: "87A07C0F25BF710E"
+					id: "434DC8F2C08209AC"
 					item: "gtceu:rubber_sapling"
 					type: "item"
 				}
@@ -387,7 +387,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2trees:apple_sapling"
-			id: "83799D6A6D6FE7DF"
+			id: "28D54461A21221B0"
 			rewards: [
 				{
 					id: "1CE87CDD807EB5C7"
@@ -399,7 +399,7 @@
 				{
 					consume_items: true
 					count: 4L
-					id: "C9BFE0FBBE6D60FF"
+					id: "376C00BDFE3E9E09"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -417,7 +417,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2trees:cherry_sapling"
-			id: "BB9ECD0C7B5A5D7A"
+			id: "0994DB32C8DB807B"
 			rewards: [
 				{
 					id: "51DAB83D1AA58513"
@@ -429,7 +429,7 @@
 				{
 					consume_items: true
 					count: 4L
-					id: "B6366CD7A84FF7A5"
+					id: "745B2F5EC5388265"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -447,11 +447,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:bone_meal"
-			id: "D1181E7A2017D268"
+			id: "0516FB560BE0AE56"
 			rewards: [
 				{
 					count: 16
-					id: "981F92BA473E00F6"
+					id: "18ABA1FF0C65BC77"
 					item: "minecraft:bone_meal"
 					type: "item"
 				}
@@ -460,7 +460,7 @@
 				{
 					consume_items: true
 					count: 2L
-					id: "91D4BDEEDDF97C65"
+					id: "606D3DBC18D001E9"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -512,7 +512,7 @@
 			id: "259ABF5384FC04C3"
 			rewards: [
 				{
-					id: "FBD6E432E4632E52"
+					id: "527FB55ED6640D3D"
 					item: "botanypots:terracotta_botany_pot"
 					type: "item"
 				}
@@ -551,7 +551,7 @@
 				{
 					consume_items: true
 					count: 8L
-					id: "CC17EA6C2A74EEA3"
+					id: "66A1A9A24C7BF218"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -581,7 +581,7 @@
 				{
 					consume_items: true
 					count: 6L
-					id: "DDAC5A551CB67473"
+					id: "5A97D717F8E82B0C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -611,7 +611,7 @@
 				{
 					consume_items: true
 					count: 8L
-					id: "CD7608FA99BD9BEE"
+					id: "51C56BE253FD3FE7"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -632,7 +632,7 @@
 			id: "4505288B8DD743E8"
 			rewards: [
 				{
-					id: "B6D4231B6783B4AD"
+					id: "40E7331F85FF5AA7"
 					item: "productivebees:spawn_egg_blue_banded_bee"
 					type: "item"
 				}
@@ -693,7 +693,7 @@
 			rewards: [
 				{
 					count: 4
-					id: "C6496FEA1E12EC3E"
+					id: "0CDFD11242225DE9"
 					item: "pamhc2crops:lettuceseeditem"
 					type: "item"
 				}
@@ -731,7 +731,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "8BAE951F3A165259"
+					id: "2AD9BA8AE827B605"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -779,7 +779,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:riceseeditem"
-			id: "9177B60D31ABD580"
+			id: "6F8415C45F181502"
 			rewards: [
 				{
 					count: 6
@@ -791,7 +791,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "A442F6053EE5C193"
+					id: "30175C7301BD105B"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -813,7 +813,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "EA359E78316E53FE"
+					id: "7A138C4C349BD34A"
 					item: "pamhc2crops:beanseeditem"
 					type: "item"
 				}
@@ -821,7 +821,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "C838A9CCB6E974B6"
+					id: "7F74B6BD5CC09C54"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -851,7 +851,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "82792801CA499BF9"
+					id: "104124B7B5A40849"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -869,7 +869,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:strawberryseeditem"
-			id: "DA503D669EB91A03"
+			id: "7B415205CB9502C9"
 			rewards: [
 				{
 					count: 2
@@ -899,11 +899,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:bellpepperseeditem"
-			id: "DAA02D615C398948"
+			id: "2AC177E0DE2D1E60"
 			rewards: [
 				{
 					count: 4
-					id: "8BECB691BDF97471"
+					id: "4BAD401A96D8EC2F"
 					item: "pamhc2crops:bellpepperseeditem"
 					type: "item"
 				}
@@ -929,7 +929,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:broccoliseeditem"
-			id: "A3FEE6E14F7BD77E"
+			id: "51385F0C575C19B8"
 			rewards: [
 				{
 					count: 4
@@ -959,11 +959,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:spinachseeditem"
-			id: "DA7B22699AE53CCA"
+			id: "200395E12D01FE36"
 			rewards: [
 				{
 					count: 4
-					id: "E67705D3C839C39C"
+					id: "77233C39DFF7CEB9"
 					item: "pamhc2crops:spinachseeditem"
 					type: "item"
 				}
@@ -971,7 +971,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "C9C9695492AD05FE"
+					id: "6054B946E05A53A2"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1001,7 +1001,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "F280E34A64BF8174"
+					id: "7F8473C7804D4957"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1019,7 +1019,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:cottonseeditem"
-			id: "DAA7B20E8A13F057"
+			id: "161B37DB926EA5DA"
 			rewards: [
 				{
 					count: 6
@@ -1031,7 +1031,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "FFF4E9A27F02030C"
+					id: "466D720380117C94"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1053,7 +1053,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "ADD039666188F2F1"
+					id: "124B29CF6925F348"
 					item: "pamhc2crops:flaxseeditem"
 					type: "item"
 				}
@@ -1061,7 +1061,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "AB1D7BE115FC9FF8"
+					id: "1B4FEB0EB4723ACE"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1079,7 +1079,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:garlicseeditem"
-			id: "EE2B93928D001E78"
+			id: "485A9BECD6F2F8F3"
 			rewards: [
 				{
 					count: 4
@@ -1113,7 +1113,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "8640991E3ABAA640"
+					id: "5C44FBA2D3D85D0E"
 					item: "pamhc2crops:peasseeditem"
 					type: "item"
 				}
@@ -1139,11 +1139,11 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:soybeanseeditem"
-			id: "D657DB2E13930139"
+			id: "4D55B88087B43809"
 			rewards: [
 				{
 					count: 6
-					id: "CD59FC70A677A0A3"
+					id: "316B8207E1DA939F"
 					item: "pamhc2crops:soybeanseeditem"
 					type: "item"
 				}
@@ -1151,7 +1151,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "E185DBEABFF0FCD4"
+					id: "370C76B784590B86"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1169,7 +1169,7 @@
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:papyrusseeditem"
-			id: "E678A47C346F0FAB"
+			id: "7EAD4FF4CE11B5DA"
 			rewards: [
 				{
 					count: 6
@@ -1181,7 +1181,7 @@
 			tasks: [
 				{
 					consume_items: true
-					id: "B9DA2F146EC10E39"
+					id: "7198FD75B0C736F1"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1233,10 +1233,10 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:wrought_iron_wrench"
-			id: "FFB830C2EF1463DC"
+			id: "0A3724B5C2997E35"
 			rewards: [
 				{
-					id: "A7B82B1C57533577"
+					id: "757E664477FF5399"
 					item: "gtceu:wrought_iron_wrench"
 					type: "item"
 				}
@@ -1297,7 +1297,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:wrought_iron_screwdriver"
-			id: "8403A53AA93E4A1E"
+			id: "7305DA314620A58A"
 			rewards: [
 				{
 					id: "38E969803FF76418"
@@ -1309,7 +1309,7 @@
 				{
 					consume_items: true
 					count: 10L
-					id: "969EF3829E99C016"
+					id: "6A628781701EC350"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1361,10 +1361,10 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:wrought_iron_saw"
-			id: "EA6B9015EE97341E"
+			id: "4FB4EED0C4C5D421"
 			rewards: [
 				{
-					id: "E2602EB48B49F989"
+					id: "1B320D8B7FA65395"
 					item: "gtceu:wrought_iron_saw"
 					type: "item"
 				}
@@ -1373,7 +1373,7 @@
 				{
 					consume_items: true
 					count: 10L
-					id: "CCA14F45105112FE"
+					id: "218FAE01132560D9"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1396,7 +1396,7 @@
 			id: "02EA8D7CDCF7630C"
 			rewards: [
 				{
-					id: "A008E6EC886E3EC2"
+					id: "1748022D211E957C"
 					item: "gtceu:wrought_iron_mortar"
 					type: "item"
 				}
@@ -1405,7 +1405,7 @@
 				{
 					consume_items: true
 					count: 10L
-					id: "ED36AAE9F8565230"
+					id: "6147956BD595F899"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1425,7 +1425,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:wrought_iron_knife"
-			id: "E1A533ECC71A0ED4"
+			id: "7B40EBB6AAF8EB26"
 			rewards: [
 				{
 					id: "71E5D706C6B1FDB9"
@@ -1437,7 +1437,7 @@
 				{
 					consume_items: true
 					count: 10L
-					id: "8ECA840F0EA40284"
+					id: "76696279F7FB2E62"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1448,7 +1448,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1460,7 +1460,7 @@
 			id: "526121DA2432E734"
 			rewards: [
 				{
-					id: "E6645726A5C82F08"
+					id: "3E7A76ABC6EEB322"
 					item: "gtceu:steel_hammer"
 					type: "item"
 				}
@@ -1480,7 +1480,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1512,7 +1512,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1533,7 +1533,7 @@
 				{
 					consume_items: true
 					count: 15L
-					id: "BE8D92709630F874"
+					id: "12495CCC1D670D8F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1544,7 +1544,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1553,7 +1553,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:steel_screwdriver"
-			id: "DAAD9CC878144145"
+			id: "774053E15F6DDDC9"
 			rewards: [
 				{
 					id: "75F1A36406A35865"
@@ -1576,7 +1576,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1585,7 +1585,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:steel_wire_cutter"
-			id: "84CD9B16AF7FFE76"
+			id: "70AA515FB45C10D4"
 			rewards: [
 				{
 					id: "377045250EB356AF"
@@ -1608,7 +1608,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1640,7 +1640,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1661,7 +1661,7 @@
 				{
 					consume_items: true
 					count: 15L
-					id: "F06A4ACCBB761C30"
+					id: "72D2152B70F51969"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -1672,7 +1672,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["E166F900C4358044"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Shop]"
 				""
@@ -1681,7 +1681,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "gtceu:steel_knife"
-			id: "C86B11BA6E693CD6"
+			id: "46817D8F176462E8"
 			rewards: [
 				{
 					id: "0DBDD5015BD8742C"
@@ -1713,7 +1713,7 @@
 				"&7Replacement only: unlocked once you have crafted one yourself."
 			]
 			icon: "minecraft:shears"
-			id: "8D10DB401CE02FAF"
+			id: "036C86AA9A792A2A"
 			rewards: [
 				{
 					id: "7BFB18F6DC003504"

@@ -4,7 +4,7 @@
 	filename: "the_doors"
 	group: ""
 	icon: "projectexpansion:final_star"
-	id: "FAC28489FD6172DC"
+	id: "3CF228E0AA6FEF58"
 	order_index: 10
 	quest_links: [ ]
 	quests: [
@@ -20,7 +20,7 @@
 			rewards: [
 				{
 					count: 12
-					id: "B60C9F303A5467F8"
+					id: "4F20FF0E3B925939"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -49,14 +49,14 @@
 			rewards: [
 				{
 					count: 30
-					id: "9BBBBA3CD86B7A5C"
+					id: "7F251D3F1F028EAB"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "B650841DA06B60E5"
+					id: "271E1DF0B702B6E3"
 					item: "gtceu:uv_fusion_reactor"
 					type: "item"
 				}
@@ -72,7 +72,7 @@
 				""
 				"Assembled with Clearance Level 9."
 			]
-			id: "8B3FB809CA8239CC"
+			id: "279656AB7AE7D247"
 			rewards: [
 				{
 					count: 12
@@ -83,7 +83,7 @@
 			]
 			tasks: [
 				{
-					id: "C0F88E168B5DE213"
+					id: "5159B9EF9356F56A"
 					item: "gtceu:uhv_machine_hull"
 					type: "item"
 				}
@@ -99,11 +99,11 @@
 				""
 				"The Neutronic Stratum, a fusion reactor, and nerves of steel."
 			]
-			id: "87878A9AA86B98D3"
+			id: "32F02EDCE9BC52F9"
 			rewards: [
 				{
 					count: 12
-					id: "AE5F0BEBF0E9886C"
+					id: "3A7365C775D0A32C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -121,7 +121,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["87878A9AA86B98D3"]
+			dependencies: ["32F02EDCE9BC52F9"]
 			description: [
 				"&7[NCP Field Memo #1005: Superconductor]"
 				""
@@ -131,7 +131,7 @@
 			rewards: [
 				{
 					count: 12
-					id: "E75770657C9125EE"
+					id: "3D14248F6D4FFF96"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -149,7 +149,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8B3FB809CA8239CC"]
+			dependencies: ["279656AB7AE7D247"]
 			description: [
 				"&7[NCP Field Memo #1006: Charging]"
 				""
@@ -186,7 +186,7 @@
 			rewards: [
 				{
 					count: 100
-					id: "D638AE36E1239990"
+					id: "76099DC951FB9D4F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -242,7 +242,7 @@
 				"&8(Stargate Journey and space travel arrive in a later update: this is where they will begin.)"
 			]
 			icon: "projectexpansion:final_star"
-			id: "89651FE649BC1D02"
+			id: "53C0A875C476C8E8"
 			shape: "gear"
 			size: 2.0d
 			tasks: [

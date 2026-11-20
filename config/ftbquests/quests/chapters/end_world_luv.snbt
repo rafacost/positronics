@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["AE771EC7FAE7E99E"]
+			dependencies: ["4084F6A63BF3B621"]
 			description: [
 				"&7[NCP Field Memo #0701: Posting]"
 				""
@@ -20,7 +20,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "82A555AFEFDDF056"
+					id: "19445B874E6954D9"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -29,7 +29,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "82D7CEA4DB3A3D47"
+					id: "0E19EF743097649E"
 					item: "positronics:clearance_card_6"
 					type: "item"
 				}
@@ -49,7 +49,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "F1D9EC52440E1563"
+					id: "30F3892409B73974"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -62,7 +62,7 @@
 				}
 				{
 					count: 8L
-					id: "C6F82A4129E59CBD"
+					id: "711D4D5D47963926"
 					item: "gtceu:rhodium_plated_palladium_ingot"
 					type: "item"
 				}
@@ -78,11 +78,11 @@
 				""
 				"High-speed steel, grade G."
 			]
-			id: "C00106857B6C6C39"
+			id: "78E42A5CD5A7607C"
 			rewards: [
 				{
 					count: 8
-					id: "E1EAF31BD688ED8D"
+					id: "32DBAB27B52649DD"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -90,7 +90,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "FEBC28B84948CAA7"
+					id: "5072C132D124FDB2"
 					item: "gtceu:hssg_coil_block"
 					type: "item"
 				}
@@ -117,7 +117,7 @@
 			]
 			tasks: [
 				{
-					id: "E9487646E81E9C37"
+					id: "49B9AC441616FFE6"
 					item: "gtceu:assembly_line"
 					type: "item"
 				}
@@ -138,7 +138,7 @@
 				""
 				"Parallel everything."
 			]
-			id: "E99E59DAB0B36610"
+			id: "79FF8A91E1ACD9D1"
 			rewards: [
 				{
 					count: 8
@@ -154,12 +154,12 @@
 					type: "item"
 				}
 				{
-					id: "A094220DBE59CCA1"
+					id: "220C8254FC55B6E5"
 					item: "gtceu:large_centrifuge"
 					type: "item"
 				}
 				{
-					id: "864B1940493E8DF3"
+					id: "27E13471AA69504A"
 					item: "gtceu:large_mixer"
 					type: "item"
 				}
@@ -175,11 +175,11 @@
 				""
 				"Ruthenium and iridium. LuV components need it."
 			]
-			id: "D924B5A9A9EFE8CC"
+			id: "0E5F4138667268E8"
 			rewards: [
 				{
 					count: 8
-					id: "8D90F6994F4DDD51"
+					id: "7475F3C874F6C6E3"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -187,7 +187,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "DCEB036B25F3DBF6"
+					id: "674F402BE59677A1"
 					item: "gtceu:ruridit_ingot"
 					type: "item"
 				}
@@ -203,7 +203,7 @@
 				""
 				"The LuV circuit, and the boards for the next one."
 			]
-			id: "DA96C8778949856F"
+			id: "7D0DF6E93944430F"
 			rewards: [
 				{
 					count: 8
@@ -229,13 +229,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["20D76E1A660429B0" "E99E59DAB0B36610"]
+			dependencies: ["20D76E1A660429B0" "79FF8A91E1ACD9D1"]
 			description: [
 				"&7[NCP Field Memo #0709: Charging]"
 				""
 				"53,687,091,200,000 EMC. Only parallel industry gets here."
 			]
-			id: "C6B17FBC272C8D75"
+			id: "02FEEC55D7D93451"
 			rewards: [
 				{
 					count: 8
@@ -246,7 +246,7 @@
 			]
 			tasks: [
 				{
-					id: "EC2AF46C7B137A52"
+					id: "5D581A266C146006"
 					item: "projectexpansion:colossal_star_vier"
 					type: "item"
 				}
@@ -256,7 +256,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["C6B17FBC272C8D75" "C00106857B6C6C39"]
+			dependencies: ["02FEEC55D7D93451" "78E42A5CD5A7607C"]
 			description: [
 				"&7[NCP Field Memo #0710: Keystone]"
 				""
@@ -296,14 +296,14 @@
 			rewards: [
 				{
 					count: 8
-					id: "ADB4592391B88221"
+					id: "20816ADAE1081885"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "F90BCE97C1B588E0"
+					id: "7FEBA91BD6D07316"
 					item: "positronics:naquadic_stratum"
 					type: "item"
 				}
@@ -318,13 +318,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["DA96C8778949856F" "D924B5A9A9EFE8CC" "4DED5855BA1744E2"]
+			dependencies: ["7D0DF6E93944430F" "0E5F4138667268E8" "4DED5855BA1744E2"]
 			description: [
 				"&7[NCP Field Memo #0708: Clearance]"
 				""
 				"&bClearance Level 7&r."
 			]
-			id: "8E9B6498C93AAF6C"
+			id: "676E664608D63792"
 			rewards: [
 				{
 					count: 45
@@ -337,7 +337,7 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "E4E6048BD3E84B1C"
+					id: "0817FEE0299986AD"
 					item: "positronics:clearance_card_7"
 					type: "item"
 				}

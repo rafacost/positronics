@@ -9,18 +9,18 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["E22643604378FE3A"]
+			dependencies: ["4BC69184D21CDC99"]
 			description: [
 				"&7[NCP Field Memo #0601: Posting]"
 				""
 				"Fedic sits at the edge of End-World. NCP built it to last; it almost did."
 				"Goal: &bClearance Level 6&r."
 			]
-			id: "FF0C2EAC1358C7FF"
+			id: "28D3E2E88A03453A"
 			rewards: [
 				{
 					count: 7
-					id: "8DEF958AC40224F3"
+					id: "71836B45B2B7B811"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["FF0C2EAC1358C7FF" "2FC189C3A8E90004"]
+			dependencies: ["28D3E2E88A03453A" "2FC189C3A8E90004"]
 			description: [
 				"&7[NCP Field Memo #0602: Tungsten]"
 				""
@@ -49,7 +49,7 @@
 			rewards: [
 				{
 					count: 7
-					id: "AD265B5415EB9BDC"
+					id: "1ACAC2043E639D7C"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -57,7 +57,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "9AB045743824CBE8"
+					id: "3FF73E5A1D2CD396"
 					item: "gtceu:tungsten_ingot"
 					type: "item"
 				}
@@ -83,7 +83,7 @@
 			rewards: [
 				{
 					count: 7
-					id: "C50114F8A0DAAD17"
+					id: "04BD5FC68BBF4439"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -118,7 +118,7 @@
 			tasks: [
 				{
 					count: 16L
-					id: "C383030B0C30BAB0"
+					id: "097A5CBAEFF15319"
 					item: "gtceu:rtm_alloy_coil_block"
 					type: "item"
 				}
@@ -138,14 +138,14 @@
 			rewards: [
 				{
 					count: 7
-					id: "95C038324386861D"
+					id: "12AC5274DA738081"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "B4DF87B404512C52"
+					id: "15B9C5C253E00B82"
 					item: "gtceu:hydrofluoric_acid_bucket"
 					type: "item"
 				}
@@ -166,11 +166,11 @@
 				""
 				"Platinum group sludge, aqua regia and a long chain. The Platinic Stratum starts it."
 			]
-			id: "937BC9069994331F"
+			id: "0B6E72310FE067BB"
 			rewards: [
 				{
 					count: 7
-					id: "9BD757E2D2A28BD3"
+					id: "73412E6338F2BEA5"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -178,7 +178,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "E74F30D00C202C0A"
+					id: "5683946A52929811"
 					item: "gtceu:platinum_ingot"
 					type: "item"
 				}
@@ -190,7 +190,7 @@
 				}
 				{
 					count: 4L
-					id: "BD8BE91B765CD194"
+					id: "382C880F7F6709F7"
 					item: "gtceu:iridium_ingot"
 					type: "item"
 				}
@@ -200,7 +200,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["937BC9069994331F" "274EE7BF6F9F3B52"]
+			dependencies: ["0B6E72310FE067BB" "274EE7BF6F9F3B52"]
 			description: [
 				"&7[NCP Field Memo #0607: Quantum]"
 				""
@@ -223,7 +223,7 @@
 					type: "item"
 				}
 				{
-					id: "A09FB76370053E35"
+					id: "17C2B213AFA3E42D"
 					item: "gtceu:nano_processor_computer"
 					type: "item"
 				}
@@ -239,7 +239,7 @@
 				""
 				"Assembled at IV with Positronic Core IV. Sixteen items a second, Seed IV from the Ore Generator."
 			]
-			id: "C26B19FF3DF61C0C"
+			id: "0EB2D7B8082DD377"
 			rewards: [
 				{
 					count: 7
@@ -260,17 +260,17 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5E037A30BF0AD0CB" "C26B19FF3DF61C0C"]
+			dependencies: ["5E037A30BF0AD0CB" "0EB2D7B8082DD377"]
 			description: [
 				"&7[NCP Field Memo #0611: Clearance]"
 				""
 				"&bClearance Level 6&r. Next posting: &bEnd-World&r."
 			]
-			id: "AE771EC7FAE7E99E"
+			id: "4084F6A63BF3B621"
 			rewards: [
 				{
 					count: 40
-					id: "FF29921B72502911"
+					id: "01FDB987249DC85E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -279,7 +279,7 @@
 			size: 1.6d
 			tasks: [
 				{
-					id: "899F6A57EA329B69"
+					id: "2AA7AD304584356F"
 					item: "positronics:clearance_card_6"
 					type: "item"
 				}

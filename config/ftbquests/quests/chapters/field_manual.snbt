@@ -4,7 +4,7 @@
 	filename: "field_manual"
 	group: "080614699546E512"
 	icon: "gtceu:terminal"
-	id: "CB05D57A65B95900"
+	id: "3A579F0F350579E0"
 	order_index: 20
 	quest_links: [ ]
 	quests: [
@@ -20,7 +20,7 @@
 				"Transformers step voltage up or down by one tier."
 			]
 			icon: "gtceu:lv_transformer_1a"
-			id: "A9494C2E1F87E7B6"
+			id: "0DFB950BBF36A27B"
 			rewards: [
 				{
 					id: "45485A62FA2DD06B"
@@ -40,7 +40,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A9494C2E1F87E7B6"]
+			dependencies: ["0DFB950BBF36A27B"]
 			description: [
 				"&7[NCP Field Manual, Section 2: Amps]"
 				""
@@ -59,7 +59,7 @@
 			]
 			tasks: [
 				{
-					id: "8651648FC5783F0B"
+					id: "561DA461C8B7CFBB"
 					title: "Understood"
 					type: "checkmark"
 				}
@@ -80,17 +80,17 @@
 				"Thicker cables (2x, 4x, 8x, 16x) carry more amps. Too many amps and a cable burns."
 			]
 			icon: "gtceu:tin_single_cable"
-			id: "A508E74C763A3DDD"
+			id: "7CC2756AB01D2D2F"
 			rewards: [
 				{
-					id: "E5718A13513FC42C"
+					id: "2B56FB3273CF99E8"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "EE195A189DF0BA9E"
+					id: "7BB0356542C9F420"
 					title: "Understood"
 					type: "checkmark"
 				}
@@ -100,7 +100,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A508E74C763A3DDD"]
+			dependencies: ["7CC2756AB01D2D2F"]
 			description: [
 				"&7[NCP Field Manual, Section 4: Overclocking]"
 				""
@@ -111,7 +111,7 @@
 			id: "2E1802380ED2AF92"
 			rewards: [
 				{
-					id: "9DA1B92AF05F7105"
+					id: "4C7C88245A175C38"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -137,10 +137,10 @@
 				"Maintenance problems slow a multiblock: fix them with the right tools, or use an auto-maintenance hatch later."
 			]
 			icon: "gtceu:electric_blast_furnace"
-			id: "C1A7F80566923295"
+			id: "2BE8CFB825E94B1A"
 			rewards: [
 				{
-					id: "F4EBEDCDDEE60848"
+					id: "356673646EE4A841"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -157,7 +157,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["A9494C2E1F87E7B6"]
+			dependencies: ["0DFB950BBF36A27B"]
 			description: [
 				"&7[NCP Field Manual, Section 6: Tools]"
 				""
@@ -222,7 +222,7 @@
 				"See the &bStrata Index&r chapter for what every stratum gives."
 			]
 			icon: "positronics:ferrous_stratum"
-			id: "942E49208872126F"
+			id: "3360AE124C8DC6C6"
 			rewards: [
 				{
 					id: "00A069806576C985"
@@ -242,7 +242,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["942E49208872126F"]
+			dependencies: ["3360AE124C8DC6C6"]
 			description: [
 				"&7[NCP Field Manual, Section 9: EMC]"
 				""
@@ -251,7 +251,7 @@
 				"Stars charged in a Beam Capacitor (Antimatter Relay) are the keys to the Positronic Cores."
 			]
 			icon: "projecte:transmutation_tablet"
-			id: "8CDE228A125639A5"
+			id: "42E91BC20D87B3EA"
 			rewards: [
 				{
 					id: "6EF19528D3CDAD60"
@@ -261,7 +261,7 @@
 			]
 			tasks: [
 				{
-					id: "B316FAF19F542CE8"
+					id: "6F7D1267A9BD8642"
 					title: "Understood"
 					type: "checkmark"
 				}
@@ -271,7 +271,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["8CDE228A125639A5"]
+			dependencies: ["42E91BC20D87B3EA"]
 			description: [
 				"&7[NCP Field Manual, Section 10: Gates]"
 				""
@@ -284,7 +284,7 @@
 			id: "7AA929DC3F594686"
 			rewards: [
 				{
-					id: "D73A22A6A9E807CA"
+					id: "2A4D30E32BF02820"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -312,7 +312,7 @@
 				"&7Enclosed: two cotton seeds. Clothes start in a botany pot."
 			]
 			icon: "toughasnails:thermometer"
-			id: "EE3299A3722AA35C"
+			id: "23D182FC53BDB29F"
 			rewards: [
 				{
 					id: "1A4C7258EEBD2066"
@@ -328,7 +328,7 @@
 			]
 			tasks: [
 				{
-					id: "AFA106092CA957A9"
+					id: "57674DCECBC7CF58"
 					title: "Understood"
 					type: "checkmark"
 				}
@@ -338,7 +338,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["EE3299A3722AA35C"]
+			dependencies: ["23D182FC53BDB29F"]
 			description: [
 				"&7[NCP Field Manual, Section 13: Seasons]"
 				""
@@ -348,10 +348,10 @@
 				"&7Enclosed: one more botany pot, for a crop that grows all year."
 			]
 			icon: "sereneseasons:calendar"
-			id: "EBA64C715E798335"
+			id: "5A5C965A925BE6F2"
 			rewards: [
 				{
-					id: "E6BDF517775EE0D4"
+					id: "489ADB7D0AC90151"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -373,7 +373,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["7AA929DC3F594686" "C1A7F80566923295"]
+			dependencies: ["7AA929DC3F594686" "2BE8CFB825E94B1A"]
 			description: [
 				"&7[NCP Field Manual, Section 11: Survival]"
 				""

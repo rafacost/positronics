@@ -76,11 +76,31 @@ ServerEvents.recipes(event => {
     bridge('methane', 'gtceu:methane', 250)
     bridge('ethanol', 'gtceu:ethanol', 250)
 
-    // ---- Isoprene by hand, atom for atom (decided 2026-11-20): C5H8 is 13 atoms, too many for 9 slots,
-    // so it goes through ChemLib methane: 1 C + 4 H = CH4; 2 CH4 + 3 C = C5H8 (natural rubber's monomer).
+    // ---- Compounds by hand (decided 2026-11-20): every ChemLib compound whose atoms fit a 3x3 grid is a
+    // shapeless craft from exactly those atoms (formulas: tools/make_compounds.py). Same EMC both ways,
+    // so it is freedom, not profit. Bigger molecules stay with the Alchemistry Combiner.
+    let compounds = global.POSITRONICS_COMPOUNDS || {}
+    let byFormula = {}
+    let handMade = 0
+    Object.keys(compounds).sort().forEach(name => {
+        let atoms = compounds[name]
+        let els = Object.keys(atoms).sort()
+        let total = 0
+        els.forEach(el => { total += atoms[el] })
+        if (total < 2 || total > 9) return
+        if (!Item.exists(`chemlib:${name}`) || els.some(el => !Item.exists(`chemlib:${el}`))) return
+        let formula = els.map(el => `${el}${atoms[el]}`).join(' ')
+        if (byFormula[formula]) return   // isomers share a formula: the first name keeps the hand recipe
+        byFormula[formula] = name
+        event.shapeless(`chemlib:${name}`, els.map(el => `${atoms[el]}x chemlib:${el}`))
+            .id(`positronics:chemistry/compound/${name}`)
+        handMade++
+    })
+    console.info(`[Positronics] ${handMade} compounds craftable by hand from their atoms`)
+
+    // ---- Isoprene, atom for atom: C5H8 is 13 atoms, too many for 9 slots, so it goes through methane
+    // (CH4, one of the hand compounds above): 2 CH4 + 3 C = C5H8, natural rubber's monomer.
     // Breaks the rubber loop (no resin without rubber trees, no saplings without resin) with elements only.
-    event.shapeless('chemlib:methane', ['chemlib:carbon', '4x chemlib:hydrogen'])
-        .id('positronics:chemistry/methane_by_hand')
     event.shapeless('2x gtceu:sticky_resin', ['2x chemlib:methane', '3x chemlib:carbon'])
         .id('positronics:chemistry/isoprene_resin')
 

@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
     ], {
         B: 'minecraft:stone_bricks',
         I: '#forge:storage_blocks/iron',
-        C: '#forge:ingots/copper',
+        C: '#forge:ingots/steel',
         G: 'usrg:cobblegenerator'
     }).id('positronics:gates/ore_generator')
 

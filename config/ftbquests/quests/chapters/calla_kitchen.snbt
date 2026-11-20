@@ -15,18 +15,18 @@
 				""
 				"Pam's cooking tools are reusable crafting ingredients. Start with a cutting board, a pot and a skillet."
 			]
-			id: "E57635F9F8F9353C"
+			id: "6626B97A3DCFF4D2"
 			rewards: [
 				{
 					count: 2
-					id: "B0404A9B23883EDB"
+					id: "4B5471D771EC1B52"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "E89DFBC75720E275"
+					id: "76BC065E835766EF"
 					item: "pamhc2foodcore:cuttingboarditem"
 					type: "item"
 				}
@@ -46,7 +46,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["E57635F9F8F9353C"]
+			dependencies: ["6626B97A3DCFF4D2"]
 			description: [
 				"&7[NCP Field Memo #3102: Kitchen]"
 				""
@@ -78,7 +78,7 @@
 					type: "item"
 				}
 				{
-					id: "9CFFFBDCD9300638"
+					id: "4145C2A4074D274B"
 					item: "pamhc2foodcore:juiceritem"
 					type: "item"
 				}
@@ -93,7 +93,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["E57635F9F8F9353C"]
+			dependencies: ["6626B97A3DCFF4D2"]
 			description: [
 				"&7[NCP Field Memo #3103: Cooking]"
 				""
@@ -103,24 +103,24 @@
 			rewards: [
 				{
 					count: 2
-					id: "A90F4CA711FF2120"
+					id: "3F30121774375F22"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "BCE03D9C5A85A5F1"
+					id: "2F9FA271E5B7A737"
 					item: "pamhc2foodcore:toastitem"
 					type: "item"
 				}
 				{
-					id: "E1B875B6BC271C02"
+					id: "031661D1D266D7C5"
 					item: "pamhc2foodcore:carrotsoupitem"
 					type: "item"
 				}
 				{
-					id: "9A336D7DDD96C18B"
+					id: "2B8AA8648290B9E0"
 					item: "pamhc2foodcore:mashedpotatoesitem"
 					type: "item"
 				}
@@ -152,12 +152,12 @@
 					type: "item"
 				}
 				{
-					id: "E4D39F34450E583D"
+					id: "65AB5E6E734F97CA"
 					item: "pamhc2foodcore:pumpkinsoupitem"
 					type: "item"
 				}
 				{
-					id: "B34FEC37C0B4C1B5"
+					id: "230E0A63205FC249"
 					item: "pamhc2foodcore:applejuiceitem"
 					type: "item"
 				}
@@ -195,22 +195,22 @@
 					type: "item"
 				}
 				{
-					id: "8426DC331FE18650"
+					id: "0735ABEFFE453CF7"
 					item: "pamhc2crops:onionitem"
 					type: "item"
 				}
 				{
-					id: "9BA952FD9A9CE7C0"
+					id: "5CB378AE4121FC04"
 					item: "pamhc2crops:cornitem"
 					type: "item"
 				}
 				{
-					id: "B3BBB2552A876689"
+					id: "4C4599EDFDB7691A"
 					item: "pamhc2crops:riceitem"
 					type: "item"
 				}
 				{
-					id: "974A3B70B0FDB883"
+					id: "70322BE83246B233"
 					item: "pamhc2crops:beanitem"
 					type: "item"
 				}
@@ -230,7 +230,7 @@
 			rewards: [
 				{
 					count: 5
-					id: "E438843BA56230FE"
+					id: "7016642E2C1DE123"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
@@ -242,7 +242,7 @@
 					type: "item"
 				}
 				{
-					id: "EFCF440C9D4FE035"
+					id: "71C295958B9A62C7"
 					item: "pamhc2crops:cucumberitem"
 					type: "item"
 				}
@@ -262,7 +262,7 @@
 					type: "item"
 				}
 				{
-					id: "B0FC37C771B48B0C"
+					id: "708C00811C1CD46D"
 					item: "pamhc2crops:grapeitem"
 					type: "item"
 				}
@@ -272,7 +272,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["E57635F9F8F9353C"]
+			dependencies: ["6626B97A3DCFF4D2"]
 			description: [
 				"&7[NCP Field Memo #3107: Water]"
 				""
@@ -289,7 +289,7 @@
 			]
 			tasks: [
 				{
-					id: "B0D439839CEE0EC0"
+					id: "6D5E7AAFC2E934B2"
 					item: "toughasnails:water_purifier"
 					type: "item"
 				}
@@ -316,7 +316,7 @@
 			]
 			tasks: [
 				{
-					id: "F7AC4BE88FF83EE4"
+					id: "38DA9F680A43E270"
 					item: "toughasnails:rain_collector"
 					type: "item"
 				}
@@ -332,7 +332,7 @@
 				""
 				"Juices quench thirst better than water."
 			]
-			id: "F2AC9E47C7C0D30A"
+			id: "2989F76CD60CEA97"
 			rewards: [
 				{
 					count: 2
@@ -343,7 +343,7 @@
 			]
 			tasks: [
 				{
-					id: "D84A572012A55932"
+					id: "09B0B4D21FB89779"
 					item: "toughasnails:apple_juice"
 					type: "item"
 				}
@@ -368,19 +368,19 @@
 			rewards: [
 				{
 					count: 2
-					id: "B68DB8A4FFE52A86"
+					id: "698BBA8CCFCC0ECC"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "96156F1F273851DD"
+					id: "4482A2D7BDB9661F"
 					item: "toughasnails:wool_chestplate"
 					type: "item"
 				}
 				{
-					id: "8B8AC2C23CF99E34"
+					id: "13339FDDAF20403C"
 					item: "toughasnails:thermoregulator"
 					type: "item"
 				}
@@ -396,7 +396,7 @@
 				""
 				"Hopper botany pots over chests, or the Calla Paddy multiblock, mean you never farm by hand again."
 			]
-			id: "83DF4A10A412AE80"
+			id: "7400E0FA997E4A83"
 			rewards: [
 				{
 					count: 2
@@ -408,7 +408,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "D70D8AF030DB7E53"
+					id: "26C0D6C4CB9DF1AC"
 					item: "botanypots:terracotta_hopper_botany_pot"
 					type: "item"
 				}
