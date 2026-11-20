@@ -1,13 +1,13 @@
 // Positronics starter kit: "NCP Emergency Reclamation Kit". Hardcore: only what the island can't give you.
 // - The cobblestone generator needs an iron block to craft, and there is no iron yet.
 // - Gravel, sand and dust come from hammering placed blocks (Reclamation Hammer).
-// - Water: the island spring + the kiosk campfire (boil bottles). Purified water is learned, not given.
+// - Water: no bottles in the kit. Earn them: flint mortar -> glass dust -> glass -> bottles,
+//   then dirty water from the spring, boiled on the kiosk campfire. Until then, drink from the spring.
 // - USRG 1.1.1: right-click a generator to collect a stack, left-click for one item (no hopper needed).
 // Format: https://wiki.chaotictrials.de/docs/1.20.x/wiki/skyblock-builder/packdev/config/inventory#starting-inventory
 {
   "items": [
     { "item": "usrg:cobblegenerator", "count": 1 },
-    { "item": "minecraft:glass_bottle", "count": 2 },
     { "item": "botanypots:terracotta_botany_pot", "count": 1 },
     { "item": "pamhc2crops:tomatoseeditem", "count": 2 },
     { "item": "minecraft:oak_sapling", "count": 1 },

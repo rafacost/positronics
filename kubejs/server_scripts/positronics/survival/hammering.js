@@ -44,10 +44,13 @@ ServerEvents.recipes(event => {
         S: '#forge:rods/wooden'
     }).id('positronics:tools/reclamation_hammer')
 
-    // Dust + water = clay. The bottle comes back.
+    // Dust + water (dirty is fine) = clay. The bottle comes back.
+    event.shapeless('minecraft:clay_ball', ['2x positronics:dust', 'toughasnails:dirty_water_bottle'])
+        .replaceIngredient('toughasnails:dirty_water_bottle', 'minecraft:glass_bottle')
+        .id('positronics:hammering/dust_to_clay')
     event.shapeless('minecraft:clay_ball', [
         '2x positronics:dust',
         Ingredient.of(Item.of('minecraft:potion', '{Potion:"minecraft:water"}').strongNBT())
     ]).replaceIngredient('minecraft:potion', 'minecraft:glass_bottle')
-        .id('positronics:hammering/dust_to_clay')
+        .id('positronics:hammering/dust_to_clay_water')
 })

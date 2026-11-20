@@ -11,7 +11,7 @@
 		{
 			dependencies: ["504F530000001001"]
 			description: [
-				"&7[NCP Field Manual §1: Voltage]"
+				"&7[NCP Field Manual, Section 1: Voltage]"
 				""
 				"Every machine, cable and generator has a tier. Each tier is 4x the voltage of the last:"
 				"&7ULV&r 8 · &fLV&r 32 · &6MV&r 128 · &eHV&r 512 · &8EV&r 2,048 · &fIV&r 8,192"
@@ -42,7 +42,7 @@
 		{
 			dependencies: ["A9494C2E1F87E7B6"]
 			description: [
-				"&7[NCP Field Manual §2: Amps]"
+				"&7[NCP Field Manual, Section 2: Amps]"
 				""
 				"Power travels in packets: voltage is the size of a packet, amps is how many per tick."
 				"A machine pulls only the amps it needs. Battery buffers and generators push as many amps as they have slots or output."
@@ -71,7 +71,7 @@
 		{
 			dependencies: ["04EEE372A5572E9C"]
 			description: [
-				"&7[NCP Field Manual §3: Cables]"
+				"&7[NCP Field Manual, Section 3: Cables]"
 				""
 				"Each material carries a maximum voltage:"
 				"&7ULV&r red alloy / lead · &fLV&r tin · &6MV&r copper · &eHV&r gold · &8EV&r aluminium · &fIV&r platinum"
@@ -102,7 +102,7 @@
 		{
 			dependencies: ["A508E74C763A3DDD"]
 			description: [
-				"&7[NCP Field Manual §4: Overclocking]"
+				"&7[NCP Field Manual, Section 4: Overclocking]"
 				""
 				"A recipe has a minimum tier. A machine one tier higher runs it twice as fast for four times the power (overclocking)."
 				"Higher-tier machines also get more slots, so byproducts (chanced outputs) appear only in better machines."
@@ -130,7 +130,7 @@
 		{
 			dependencies: ["2E1802380ED2AF92"]
 			description: [
-				"&7[NCP Field Manual §5: Multiblocks]"
+				"&7[NCP Field Manual, Section 5: Multiblocks]"
 				""
 				"A controller plus a structure of casings. Replace casings with &bbuses&r (items), &bhatches&r (fluids, energy) and a &bmaintenance hatch&r."
 				"Right-click the controller with the &bGT Terminal&r to preview and even auto-build the structure."
@@ -159,7 +159,7 @@
 		{
 			dependencies: ["A9494C2E1F87E7B6"]
 			description: [
-				"&7[NCP Field Manual §6: Tools]"
+				"&7[NCP Field Manual, Section 6: Tools]"
 				""
 				"Tools are crafting ingredients that lose durability: hammer (plates), wrench (casings, machines), file, saw,"
 				"screwdriver, wire cutter, knife and mortar. Keep a full set in your toolbelt."
@@ -187,7 +187,7 @@
 		{
 			dependencies: ["23B0AB8212D91E8C"]
 			description: [
-				"&7[NCP Field Manual §7: Circuit Numbers]"
+				"&7[NCP Field Manual, Section 7: Circuit Numbers]"
 				""
 				"Some recipes need a &bprogrammed circuit&r set to a number. It is never consumed; it just tells the machine which recipe you want."
 				"Strata enrichment uses them when two recipes share the same input."
@@ -215,7 +215,7 @@
 		{
 			dependencies: ["129516A74765B7C2"]
 			description: [
-				"&7[NCP Field Manual §8: Strata]"
+				"&7[NCP Field Manual, Section 8: Strata]"
 				""
 				"This world has no ores, and ore blocks drop nothing. Everything comes from &bStrata&r: layers of the old world."
 				"Seed I comes from hammering gravel and the Ore Generator. Seed II-V come from enrichment (Positronic Cores) and upgraded generators."
@@ -244,7 +244,7 @@
 		{
 			dependencies: ["942E49208872126F"]
 			description: [
-				"&7[NCP Field Manual §9: EMC]"
+				"&7[NCP Field Manual, Section 9: EMC]"
 				""
 				"Only processed raw materials (dusts and their ingots) have EMC, valued by seed tier. Strata, gates and crafted parts have none."
 				"There are no collectors or condensers: EMC comes only from burning your own production."
@@ -273,7 +273,7 @@
 		{
 			dependencies: ["8CDE228A125639A5"]
 			description: [
-				"&7[NCP Field Manual §10: Gates]"
+				"&7[NCP Field Manual, Section 10: Gates]"
 				""
 				"&bClearance Card N&r is needed to assemble machine hulls of tier N+1. Cards are made at their own tier."
 				"From Level 3 on, each card also needs a &bchemistry sample&r (see The Periodic Table)."
@@ -301,9 +301,81 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Manual, Section 12: Temperature]"
+				""
+				"Your body has a &btemperature&r. Nights, rain and winter push it down; heat sources push it up."
+				"Stand near a campfire at night and keep dry; a roof over your head helps."
+				"&aDress for it:&r cotton (and flax, jute, sisal or kenaf) makes string, string makes wool, wool makes warm armour."
+				"Later, a thermometer (copper + redstone) shows trouble coming, and a Thermoregulator heats a whole room."
+				"&7Enclosed: two cotton seeds. Clothes start in a botany pot."
+			]
+			icon: "toughasnails:thermometer"
+			id: "EE3299A3722AA35C"
+			rewards: [
+				{
+					id: "1A4C7258EEBD2066"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6DBB0055CB07CA57"
+					item: "pamhc2crops:cottonseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "AFA106092CA957A9"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Thermal Comfort"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["EE3299A3722AA35C"]
+			description: [
+				"&7[NCP Field Manual, Section 13: Seasons]"
+				""
+				"Time passes in &bseasons&r: spring, summer, autumn, winter. Crops in the open grow only in the seasons they like,"
+				"and winter is cold. Store food before winter and keep a warm place to stand."
+				"&aBotany pots don't care about the weather.&r A calendar (paper around a clock) shows the season, once you have gold and redstone."
+				"&7Enclosed: one more botany pot, for a crop that grows all year."
+			]
+			icon: "sereneseasons:calendar"
+			id: "EBA64C715E798335"
+			rewards: [
+				{
+					id: "E6BDF517775EE0D4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "0C6B1E9B0B8FFF12"
+					item: "botanypots:terracotta_botany_pot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0F5636578AFA76DC"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Four Seasons"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
 			dependencies: ["7AA929DC3F594686" "C1A7F80566923295"]
 			description: [
-				"&7[NCP Field Manual §11: Survival]"
+				"&7[NCP Field Manual, Section 11: Survival]"
 				""
 				"Thirst: drink purified water. Temperature: heat sources, armour, shade. Seasons: winter is cold, crops follow seasons."
 				"Variety: every few new foods grant a heart. Nothing spawns: mob drops come from technology."

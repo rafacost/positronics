@@ -11,7 +11,7 @@ def memo(n, title, *lines):
 
 
 def guide(n, title, *lines):
-    return [f"&7[NCP Field Manual §{n}: {title}]", ""] + list(lines)
+    return [f"&7[NCP Field Manual, Section {n}: {title}]", ""] + list(lines)
 
 
 def nice(item_id):
@@ -80,6 +80,21 @@ FIELD_MANUAL = {
                        "From Level 3 on, each card also needs a &bchemistry sample&r (see The Periodic Table).",
                        "&bPositronic Cores&r I-V are never consumed: they catalyse strata enrichment, generator upgrades and some cards.",
                        "Each Core is built one tier before its strata are needed.")},
+        {"key": "thermal", "title": "Thermal Comfort", "icon": "toughasnails:thermometer", "tasks": ["check"], "pos": (0, 4),
+         "external_deps": [WASTE_LANDS_START], "rewards": [("pamhc2crops:cottonseeditem", 2)],
+         "desc": guide("12", "Temperature",
+                       "Your body has a &btemperature&r. Nights, rain and winter push it down; heat sources push it up.",
+                       "Stand near a campfire at night and keep dry; a roof over your head helps.",
+                       "&aDress for it:&r cotton (and flax, jute, sisal or kenaf) makes string, string makes wool, wool makes warm armour.",
+                       "Later, a thermometer (copper + redstone) shows trouble coming, and a Thermoregulator heats a whole room.",
+                       "&7Enclosed: two cotton seeds. Clothes start in a botany pot.")},
+        {"key": "seasons", "title": "Four Seasons", "icon": "sereneseasons:calendar", "tasks": ["check"], "pos": (2, 4), "deps": ["thermal"],
+         "rewards": ["botanypots:terracotta_botany_pot"],
+         "desc": guide("13", "Seasons",
+                       "Time passes in &bseasons&r: spring, summer, autumn, winter. Crops in the open grow only in the seasons they like,",
+                       "and winter is cold. Store food before winter and keep a warm place to stand.",
+                       "&aBotany pots don't care about the weather.&r A calendar (paper around a clock) shows the season, once you have gold and redstone.",
+                       "&7Enclosed: one more botany pot, for a crop that grows all year.")},
         {"key": "survival", "title": "Staying Alive", "icon": "toughasnails:thermometer", "tasks": ["check"], "pos": (10, 1), "deps": ["clearance", "multis"],
          "desc": guide("11", "Survival",
                        "Thirst: drink purified water. Temperature: heat sources, armour, shade. Seasons: winter is cold, crops follow seasons.",
@@ -117,7 +132,7 @@ def strata_index():
 # ------------------------------------------------------------------ LOGISTICS & AUTOMATION
 LOGISTICS = {
     "id": "logistics", "filename": "logistics", "order": 30, "group": "Side Paths", "scrip": 2,
-    "title": "Logistics & Automation", "icon": "pipez:item_pipe",
+    "title": "Logistics and Automation", "icon": "pipez:item_pipe",
     "quests": [
         {"key": "pipes", "title": "Pipez", "external_deps": [WASTE_LANDS_START], "tasks": [("pipez:item_pipe", 8), "pipez:wrench"],
          "desc": memo("3001", "Pipes", "Item pipes pull from a generator and push into a chest. Shift-right-click with the wrench to set which side extracts.",
