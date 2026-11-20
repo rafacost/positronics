@@ -405,8 +405,8 @@ APIARY = {
          "desc": memo("3503", "Centrifuge", "Resource combs are processed only in a &bGregTech centrifuge&r. A metal or gem comb gives",
                       "the matching &bStratum&r (iron bee: Ferrous Stratum), plus wax and honey, at that stratum's tier voltage.",
                       "Bees are a full alternative strata stream: no Positronic Core needed for the bee's own tier.")},
-        {"key": "resource", "title": "Resource Bees", "deps": ["processing"], "tasks": ["positronics:ferrous_stratum", "positronics:cupric_stratum"],
-         "scrip": 6, "desc": memo("3504", "Metal Bees", "Breed your way to an iron and a copper bee, and centrifuge their combs into strata.",
+        {"key": "resource", "title": "Resource Bees", "deps": ["processing"], "tasks": [{"id": "productivebees:configurable_honeycomb", "tag": {"EntityTag": {"type": "productivebees:iron"}}}, {"id": "productivebees:configurable_honeycomb", "tag": {"EntityTag": {"type": "productivebees:copper"}}}],
+         "scrip": 6, "desc": memo("3504", "Metal Bees", "Breed your way to an iron and a copper bee and bring back one comb of each. Centrifuge them into strata.",
                                   "Higher-tier bees give higher-tier strata, but need a centrifuge of that tier.")},
         {"key": "honey", "title": "Honey Boosters", "deps": ["processing", "the_calla:paddy"], "tasks": [("productivebees:honey_bucket", 2)],
          "desc": memo("3505", "Boosters", "Honey is a booster: the &bCalla Paddy&r with honey piped in beside the water gives a 12x harvest",
@@ -449,7 +449,7 @@ def periodic_table():
                "desc": memo("3601", "Chemistry",
                             "The &bDissolver&r breaks almost anything solid into its &belements&r (ChemLib). The &bCombiner&r builds compounds;",
                             "the &bAtomizer&r and &bLiquifier&r handle gases and liquids; &bFusion&r and &bFission&r transmute elements.",
-                            "Chemistry is its own currency: elements never turn into GregTech metals (no shortcuts past the planets),",
+                            "Elements are the only thing &bPositronic Memory&r learns. 16 elements compress into one GregTech dust, one tier late (no shortcut past the planets),",
                             "but GregTech needs them: every Clearance Card from Level 3 asks for a chemistry sample.",
                             "&7Every row of the table you complete earns samples and Scrip.")}]
     prev = "lab"

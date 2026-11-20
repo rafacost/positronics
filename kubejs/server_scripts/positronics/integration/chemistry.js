@@ -6,7 +6,10 @@
 //   1. ChemLib's metal forms (ingots, dusts, nuggets, plates, blocks) lose their shared forge tags,
 //      so a ChemLib titanium ingot is NOT a GT titanium ingot.
 //   2. The Combiner and Compactor only make ChemLib items (their recipes for vanilla/GT items go).
-//   3. Elements and compounds have no EMC (Positronic Memory starts empty).
+//   3. Positronic Memory (EMC) learns ELEMENTS ONLY (projecte/emc.js): dissolve your production into
+//      elements to store it; transmute elements and compress 16 of them into one GregTech dust to get it back.
+//      The element -> dust compressor runs one tier AFTER the material is first needed, so the planets
+//      and machines still have to be done once by hand (titanium: EV compressor, after Mars).
 // Chemistry FEEDS GregTech on purpose:
 //   - Clearance Cards 3-10 each need a compound or element sample (gates.js).
 //   - Acids, ammonia and organics extract into GT fluids.
@@ -72,4 +75,23 @@ ServerEvents.recipes(event => {
     bridge('ammonia', 'gtceu:ammonia', 250)
     bridge('methane', 'gtceu:methane', 250)
     bridge('ethanol', 'gtceu:ethanol', 250)
+
+    // ---- Bridge: element -> GregTech dust (16:1, matching the Dissolver's 16 elements per ingot, so no loop).
+    let known = {}
+    Ingredient.all.itemIds.forEach(id => { known[String(id)] = true })
+    let gtName = { aluminum: 'aluminium', cesium: 'caesium' }
+    let tierVoltage = { 1: GTValues.LV, 2: GTValues.MV, 3: GTValues.EV, 4: GTValues.IV, 5: GTValues.LuV }
+    let tiers = global.POSITRONICS_ELEMENT_TIERS || {}
+    let made = 0
+    Object.keys(tiers).forEach(el => {
+        let dust = `gtceu:${gtName[el] || el}_dust`
+        if (!known[dust] || !known[`chemlib:${el}`]) return
+        event.recipes.gtceu.compressor(`positronics:chemistry/element_to_dust/${el}`)
+            .itemInputs(`16x chemlib:${el}`)
+            .itemOutputs(dust)
+            .duration(100)
+            .EUt(GTValues.VA[tierVoltage[tiers[el]]])
+        made++
+    })
+    console.info(`[Positronics] Chemistry: ${made} element -> GregTech dust compressor recipes.`)
 })

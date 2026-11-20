@@ -120,7 +120,7 @@
 			description: [
 				"&7[NCP Field Memo #3504: Metal Bees]"
 				""
-				"Breed your way to an iron and a copper bee, and centrifuge their combs into strata."
+				"Breed your way to an iron and a copper bee and bring back one comb of each. Centrifuge them into strata."
 				"Higher-tier bees give higher-tier strata, but need a centrifuge of that tier."
 			]
 			id: "048735C0CE36DCBF"
@@ -135,12 +135,28 @@
 			tasks: [
 				{
 					id: "4718B7711FEBE3B0"
-					item: "positronics:ferrous_stratum"
+					item: {
+											Count: 1
+											id: "productivebees:configurable_honeycomb"
+											tag: {
+												EntityTag: {
+													type: "productivebees:iron"
+												}
+											}
+										}
 					type: "item"
 				}
 				{
 					id: "1D60FC6013AC5A5C"
-					item: "positronics:cupric_stratum"
+					item: {
+											Count: 1
+											id: "productivebees:configurable_honeycomb"
+											tag: {
+												EntityTag: {
+													type: "productivebees:copper"
+												}
+											}
+										}
 					type: "item"
 				}
 			]

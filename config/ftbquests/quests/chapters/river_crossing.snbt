@@ -53,7 +53,7 @@
 				"&7[NCP Field Memo #0102: Strata]"
 				""
 				"Hammer gravel by hand and, now and then, the void gives something back: a &bStratum&r."
-				"Strata are layers of the old world. Smelt one for a few nuggets; crush it later for a whole dust."
+				"Strata are layers of the old world. Smelt one for a few nuggets (nine nuggets make an ingot); crush it later for a whole dust."
 				"&7Iron, copper, tin, coal, lead, nickel and redstone all start here."
 			]
 			id: "CFDF70CCAFE922AC"
@@ -116,7 +116,7 @@
 			description: [
 				"&7[NCP Field Memo #0104: Tooling]"
 				""
-				"GregTech parts are made with GregTech tools. Plates need a hammer; casings need a wrench."
+				"GregTech parts are made with GregTech tools. Plates need a hammer, casings a wrench, and the hull's cables a wire cutter."
 			]
 			id: "076E7CC3AFDAC867"
 			rewards: [
@@ -141,6 +141,11 @@
 				{
 					id: "528CE9A5AF1FF612"
 					item: "gtceu:wrought_iron_file"
+					type: "item"
+				}
+				{
+					id: "BDEA1C4A679A00F2"
+					item: "gtceu:wrought_iron_wire_cutter"
 					type: "item"
 				}
 			]
@@ -348,12 +353,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["398DA3318FB70483"]
+			dependencies: ["BD916EB4DA72382D"]
 			description: [
 				"&7[NCP Field Memo #0111: Rubber]"
 				""
-				"Here are two rubber saplings. Rubber trees give sticky resin; resin insulates wire and makes circuits."
-				"&7Grow them in the open or in a botany pot."
+				"No rubber trees, no resin; no resin, no rubber trees. Positronic Memory breaks the loop:"
+				"transmute &bslime balls&r and smelt them into &bsticky resin&r. Eight resin earn two rubber saplings,"
+				"and from then on the trees do the work. Resin insulates wire and makes circuit boards."
 			]
 			id: "D17A59BE9671EB7D"
 			rewards: [
@@ -379,16 +385,20 @@
 				}
 			]
 			title: "Rubber"
-			x: 2.0d
+			x: 6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["F059AF61195C81A9"]
+			dependencies: ["CFDF70CCAFE922AC"]
 			description: [
 				"&7[NCP Field Memo #0112: Memory]"
 				""
-				"The Transmutation Tablet reads and writes &bPositronic Memory&r (EMC). Burn processed resources into it to learn them."
-				"&cNothing in this world has EMC until it is processed.&r Strata themselves never do."
+				"Your first ingot. Now meet the &bTransmutation Tablet&r: four iron, four glass and your NCP Scrip as a login."
+				"It reads and writes &bPositronic Memory&r (EMC). Memory only understands &bchemical elements&r: an iron ingot means"
+				"nothing to it, but sixteen &biron atoms&r (ChemLib) do. Burn an element into the tablet to learn it; spend EMC to make more."
+				"Later, the &bDissolver&r (LV) turns your production into elements, and a GregTech compressor packs 16 elements"
+				"back into one dust, one tier after the metal is first needed. The planets still have to be done by hand."
+				"&7Enclosed: one slime ball (learnable: burn it, then make more) and eight carbon atoms to pay for them."
 			]
 			id: "BD916EB4DA72382D"
 			rewards: [
@@ -398,16 +408,32 @@
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
+				{
+					id: "EACD513E4AABF5ED"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "08C5A3FDDFE4E313"
+					item: "chemlib:carbon"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
 					id: "FB452DC21F5D2F72"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "CEE83668DAC04D82"
 					item: "projecte:transmutation_tablet"
 					type: "item"
 				}
 			]
 			title: "Positronic Memory"
-			x: 12.0d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -440,8 +466,8 @@
 				}
 			]
 			title: "The Beam Capacitor"
-			x: 14.0d
-			y: 1.5d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["B00ED02E41DE2C48" "473628F3957FFFB0"]

@@ -165,14 +165,15 @@ def main():
                     lines.append(f"\t\t\t\t\tid: {tid}")
                     lines.append('\t\t\t\t\ttype: "dimension"')
                 else:
-                    item, count = (t, 1) if isinstance(t, str) else t
-                    check(item, f"{cid}/{k} task")
+                    item, count = (t, 1) if isinstance(t, (str, dict)) and not (isinstance(t, dict) and "dimension" in t) else t
+                    check(item_id(item), f"{cid}/{k} task")
                     if q.get("consume"):
                         lines.append("\t\t\t\t\tconsume_items: true")
                     if count > 1:
                         lines.append(f"\t\t\t\t\tcount: {count}L")
                     lines.append(f"\t\t\t\t\tid: {tid}")
-                    lines.append(f"\t\t\t\t\titem: {s(item)}")
+                    for line in item_field(item, 5):
+                        lines.append("\t\t\t\t\t" + line)
                     lines.append('\t\t\t\t\ttype: "item"')
                 lines.append("\t\t\t\t}")
             lines.append("\t\t\t]")

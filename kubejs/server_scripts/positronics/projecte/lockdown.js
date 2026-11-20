@@ -23,15 +23,16 @@ ServerEvents.recipes(event => {
     // your own production into a Klein Star for the Positronic Cores (see seed-chains-draft.md).
     // Gate it behind Clearance 1 once the ULV content exists.
 
-    // Transmutation Tablet: first access to Positronic Memory needs a ULV circuit.
+    // Transmutation Tablet: introduced with the first iron ingot (River Crossing). Iron, glass and
+    // an NCP Scrip (your employee ID) to log in to Positronic Memory.
     event.remove({ output: 'projecte:transmutation_tablet' })
     event.shaped('projecte:transmutation_tablet', [
-        'PGP',
-        'GCG',
-        'PGP'
+        'IGI',
+        'GSG',
+        'IGI'
     ], {
-        P: '#forge:plates/iron',
+        I: 'minecraft:iron_ingot',
         G: '#forge:glass',
-        C: '#gtceu:circuits/ulv'
-    })
+        S: 'positronics:ncp_scrip'
+    }).id('positronics:projecte/transmutation_tablet')
 })

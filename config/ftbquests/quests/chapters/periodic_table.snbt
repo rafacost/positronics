@@ -15,7 +15,7 @@
 				""
 				"The &bDissolver&r breaks almost anything solid into its &belements&r (ChemLib). The &bCombiner&r builds compounds;"
 				"the &bAtomizer&r and &bLiquifier&r handle gases and liquids; &bFusion&r and &bFission&r transmute elements."
-				"Chemistry is its own currency: elements never turn into GregTech metals (no shortcuts past the planets),"
+				"Elements are the only thing &bPositronic Memory&r learns. 16 elements compress into one GregTech dust, one tier late (no shortcut past the planets),"
 				"but GregTech needs them: every Clearance Card from Level 3 asks for a chemistry sample."
 				"&7Every row of the table you complete earns samples and Scrip."
 			]
