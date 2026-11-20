@@ -13,14 +13,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Wheat Seeds for 1 NCP Scrip."
+				"8x Wheat Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:wheat_seeds"
 			id: "620642A844EE3BDA"
 			rewards: [
 				{
-					count: 2
+					count: 8
 					id: "54F5469C710233A1"
 					item: "minecraft:wheat_seeds"
 					type: "item"
@@ -43,14 +43,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Carrots for 2 NCP Scrip."
+				"6x Carrots for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:carrot"
 			id: "AFB2F51453D5F4B5"
 			rewards: [
 				{
-					count: 2
+					count: 6
 					id: "DF916000CCC541EE"
 					item: "minecraft:carrot"
 					type: "item"
@@ -74,14 +74,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Potatoes for 2 NCP Scrip."
+				"6x Potatoes for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:potato"
 			id: "AEDBC08A035C624A"
 			rewards: [
 				{
-					count: 2
+					count: 6
 					id: "04FA78F09CFA1887"
 					item: "minecraft:potato"
 					type: "item"
@@ -105,14 +105,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Pumpkin Seeds for 2 NCP Scrip."
+				"4x Pumpkin Seeds for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:pumpkin_seeds"
 			id: "936A57348912152A"
 			rewards: [
 				{
-					count: 2
+					count: 4
 					id: "2D0C0C668C1906A2"
 					item: "minecraft:pumpkin_seeds"
 					type: "item"
@@ -136,14 +136,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Melon Seeds for 2 NCP Scrip."
+				"4x Melon Seeds for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:melon_seeds"
 			id: "D1344C3666FA2F88"
 			rewards: [
 				{
-					count: 2
+					count: 4
 					id: "F96A6139FFDA3536"
 					item: "minecraft:melon_seeds"
 					type: "item"
@@ -167,14 +167,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Sugar Cane for 2 NCP Scrip."
+				"6x Sugar Cane for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:sugar_cane"
 			id: "7E7E0F42C4C181B8"
 			rewards: [
 				{
-					count: 2
+					count: 6
 					id: "D2BE0C7AF3F22153"
 					item: "minecraft:sugar_cane"
 					type: "item"
@@ -198,14 +198,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"2x Cocoa Beans for 2 NCP Scrip."
+				"4x Cocoa Beans for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:cocoa_beans"
 			id: "6272DDB783FD8662"
 			rewards: [
 				{
-					count: 2
+					count: 4
 					id: "4FFFDD6159677D17"
 					item: "minecraft:cocoa_beans"
 					type: "item"
@@ -259,13 +259,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Oak Sapling for 2 NCP Scrip."
+				"3x Oak Sapling for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:oak_sapling"
 			id: "FD33D31D9390C2B4"
 			rewards: [
 				{
+					count: 3
 					id: "50E661AF1E58C73E"
 					item: "minecraft:oak_sapling"
 					type: "item"
@@ -289,13 +290,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Birch Sapling for 2 NCP Scrip."
+				"3x Birch Sapling for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:birch_sapling"
 			id: "05FB1D96F2318A55"
 			rewards: [
 				{
+					count: 3
 					id: "723AC1B568A2E212"
 					item: "minecraft:birch_sapling"
 					type: "item"
@@ -319,13 +321,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Spruce Sapling for 2 NCP Scrip."
+				"3x Spruce Sapling for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:spruce_sapling"
 			id: "EA7C61EEEC42DB49"
 			rewards: [
 				{
+					count: 3
 					id: "20DCAB45B1DBDB13"
 					item: "minecraft:spruce_sapling"
 					type: "item"
@@ -349,13 +352,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Rubber Sapling for 3 NCP Scrip."
+				"2x Rubber Sapling for 3 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "gtceu:rubber_sapling"
 			id: "0B4C511FB095D63B"
 			rewards: [
 				{
+					count: 2
 					id: "87A07C0F25BF710E"
 					item: "gtceu:rubber_sapling"
 					type: "item"
@@ -439,14 +443,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"8x Bone Meal for 2 NCP Scrip."
+				"16x Bone Meal for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:bone_meal"
 			id: "D1181E7A2017D268"
 			rewards: [
 				{
-					count: 8
+					count: 16
 					id: "981F92BA473E00F6"
 					item: "minecraft:bone_meal"
 					type: "item"
@@ -470,14 +474,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"4x Dirt for 2 NCP Scrip."
+				"8x Dirt for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "minecraft:dirt"
 			id: "5254B9D1C09F20EB"
 			rewards: [
 				{
-					count: 4
+					count: 8
 					id: "4C8E86C2405CFC89"
 					item: "minecraft:dirt"
 					type: "item"
@@ -651,13 +655,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Tomato Seeds for 1 NCP Scrip."
+				"4x Tomato Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:tomatoseeditem"
 			id: "28E9AF9B8CBCE738"
 			rewards: [
 				{
+					count: 4
 					id: "7A1BD50C881155BB"
 					item: "pamhc2crops:tomatoseeditem"
 					type: "item"
@@ -680,13 +685,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Lettuce Seeds for 1 NCP Scrip."
+				"4x Lettuce Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:lettuceseeditem"
 			id: "00A582ECFE418E48"
 			rewards: [
 				{
+					count: 4
 					id: "C6496FEA1E12EC3E"
 					item: "pamhc2crops:lettuceseeditem"
 					type: "item"
@@ -709,13 +715,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Onion Seeds for 1 NCP Scrip."
+				"4x Onion Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:onionseeditem"
 			id: "7946438DCB06EEB5"
 			rewards: [
 				{
+					count: 4
 					id: "3491079CBD1DF783"
 					item: "pamhc2crops:onionseeditem"
 					type: "item"
@@ -738,13 +745,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Corn Seeds for 1 NCP Scrip."
+				"6x Corn Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:cornseeditem"
 			id: "6B0F815030C89D2C"
 			rewards: [
 				{
+					count: 6
 					id: "0F9431C18E955143"
 					item: "pamhc2crops:cornseeditem"
 					type: "item"
@@ -767,13 +775,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Rice Seeds for 1 NCP Scrip."
+				"6x Rice Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:riceseeditem"
 			id: "9177B60D31ABD580"
 			rewards: [
 				{
+					count: 6
 					id: "181DCA96ABC13EF1"
 					item: "pamhc2crops:riceseeditem"
 					type: "item"
@@ -796,13 +805,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Bean Seeds for 1 NCP Scrip."
+				"6x Bean Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:beanseeditem"
 			id: "0CD216347EE64B92"
 			rewards: [
 				{
+					count: 6
 					id: "EA359E78316E53FE"
 					item: "pamhc2crops:beanseeditem"
 					type: "item"
@@ -825,13 +835,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Cucumber Seeds for 1 NCP Scrip."
+				"4x Cucumber Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:cucumberseeditem"
 			id: "5E7B1108696B0FB9"
 			rewards: [
 				{
+					count: 4
 					id: "746B2B503CB34344"
 					item: "pamhc2crops:cucumberseeditem"
 					type: "item"
@@ -854,13 +865,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Strawberry Seeds for 1 NCP Scrip."
+				"2x Strawberry Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:strawberryseeditem"
 			id: "DA503D669EB91A03"
 			rewards: [
 				{
+					count: 2
 					id: "45C02F115827117B"
 					item: "pamhc2crops:strawberryseeditem"
 					type: "item"
@@ -883,13 +895,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Bellpepper Seeds for 1 NCP Scrip."
+				"4x Bellpepper Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:bellpepperseeditem"
 			id: "DAA02D615C398948"
 			rewards: [
 				{
+					count: 4
 					id: "8BECB691BDF97471"
 					item: "pamhc2crops:bellpepperseeditem"
 					type: "item"
@@ -912,13 +925,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Broccoli Seeds for 1 NCP Scrip."
+				"4x Broccoli Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:broccoliseeditem"
 			id: "A3FEE6E14F7BD77E"
 			rewards: [
 				{
+					count: 4
 					id: "21588C499D2C2700"
 					item: "pamhc2crops:broccoliseeditem"
 					type: "item"
@@ -941,13 +955,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Spinach Seeds for 1 NCP Scrip."
+				"4x Spinach Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:spinachseeditem"
 			id: "DA7B22699AE53CCA"
 			rewards: [
 				{
+					count: 4
 					id: "E67705D3C839C39C"
 					item: "pamhc2crops:spinachseeditem"
 					type: "item"
@@ -970,13 +985,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Grape Seeds for 1 NCP Scrip."
+				"2x Grape Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:grapeseeditem"
 			id: "1505C367A611F42E"
 			rewards: [
 				{
+					count: 2
 					id: "543276092DA41A1F"
 					item: "pamhc2crops:grapeseeditem"
 					type: "item"
@@ -999,13 +1015,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Cotton Seeds for 1 NCP Scrip."
+				"6x Cotton Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:cottonseeditem"
 			id: "DAA7B20E8A13F057"
 			rewards: [
 				{
+					count: 6
 					id: "02D8A45ECE2F5122"
 					item: "pamhc2crops:cottonseeditem"
 					type: "item"
@@ -1028,13 +1045,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Flax Seeds for 1 NCP Scrip."
+				"6x Flax Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:flaxseeditem"
 			id: "4C58AD23552AB491"
 			rewards: [
 				{
+					count: 6
 					id: "ADD039666188F2F1"
 					item: "pamhc2crops:flaxseeditem"
 					type: "item"
@@ -1057,13 +1075,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Garlic Seeds for 1 NCP Scrip."
+				"4x Garlic Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:garlicseeditem"
 			id: "EE2B93928D001E78"
 			rewards: [
 				{
+					count: 4
 					id: "24E03967C528CC21"
 					item: "pamhc2crops:garlicseeditem"
 					type: "item"
@@ -1086,13 +1105,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Peas Seeds for 1 NCP Scrip."
+				"6x Peas Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:peasseeditem"
 			id: "0CDA1EDCCA2FA6B0"
 			rewards: [
 				{
+					count: 6
 					id: "8640991E3ABAA640"
 					item: "pamhc2crops:peasseeditem"
 					type: "item"
@@ -1115,13 +1135,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Soybean Seeds for 1 NCP Scrip."
+				"6x Soybean Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:soybeanseeditem"
 			id: "D657DB2E13930139"
 			rewards: [
 				{
+					count: 6
 					id: "CD59FC70A677A0A3"
 					item: "pamhc2crops:soybeanseeditem"
 					type: "item"
@@ -1144,13 +1165,14 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Papyrus Seeds for 1 NCP Scrip."
+				"6x Papyrus Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "pamhc2crops:papyrusseeditem"
 			id: "E678A47C346F0FAB"
 			rewards: [
 				{
+					count: 6
 					id: "7C50BAF4C248830B"
 					item: "pamhc2crops:papyrusseeditem"
 					type: "item"

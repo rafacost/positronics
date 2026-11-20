@@ -217,22 +217,22 @@ KITCHEN = {
 def shop():
     offers = [
         # key, title, price, reward, count
-        ("wheat", "Wheat Seeds", 1, "minecraft:wheat_seeds", 2),
-        ("carrot", "Carrots", 2, "minecraft:carrot", 2),
-        ("potato", "Potatoes", 2, "minecraft:potato", 2),
-        ("pumpkin", "Pumpkin Seeds", 2, "minecraft:pumpkin_seeds", 2),
-        ("melon", "Melon Seeds", 2, "minecraft:melon_seeds", 2),
-        ("cane", "Sugar Cane", 2, "minecraft:sugar_cane", 2),
-        ("cocoa", "Cocoa Beans", 2, "minecraft:cocoa_beans", 2),
+        ("wheat", "Wheat Seeds", 1, "minecraft:wheat_seeds", 8),
+        ("carrot", "Carrots", 2, "minecraft:carrot", 6),
+        ("potato", "Potatoes", 2, "minecraft:potato", 6),
+        ("pumpkin", "Pumpkin Seeds", 2, "minecraft:pumpkin_seeds", 4),
+        ("melon", "Melon Seeds", 2, "minecraft:melon_seeds", 4),
+        ("cane", "Sugar Cane", 2, "minecraft:sugar_cane", 6),
+        ("cocoa", "Cocoa Beans", 2, "minecraft:cocoa_beans", 4),
         ("apple", "Apples", 1, "minecraft:apple", 4),
-        ("oak", "Oak Sapling", 2, "minecraft:oak_sapling", 1),
-        ("birch", "Birch Sapling", 2, "minecraft:birch_sapling", 1),
-        ("spruce", "Spruce Sapling", 2, "minecraft:spruce_sapling", 1),
-        ("rubber", "Rubber Sapling", 3, "gtceu:rubber_sapling", 1),
+        ("oak", "Oak Sapling", 2, "minecraft:oak_sapling", 3),
+        ("birch", "Birch Sapling", 2, "minecraft:birch_sapling", 3),
+        ("spruce", "Spruce Sapling", 2, "minecraft:spruce_sapling", 3),
+        ("rubber", "Rubber Sapling", 3, "gtceu:rubber_sapling", 2),
         ("apple_tree", "Apple Tree Sapling", 4, "pamhc2trees:apple_sapling", 1),
         ("cherry_tree", "Cherry Tree Sapling", 4, "pamhc2trees:cherry_sapling", 1),
-        ("bonemeal", "Bone Meal", 2, "minecraft:bone_meal", 8),
-        ("dirt", "Dirt", 2, "minecraft:dirt", 4),
+        ("bonemeal", "Bone Meal", 2, "minecraft:bone_meal", 16),
+        ("dirt", "Dirt", 2, "minecraft:dirt", 8),
         ("pot", "Botany Pot", 3, "botanypots:terracotta_botany_pot", 1),
         ("hopper_pot", "Hopper Botany Pot", 8, "botanypots:terracotta_hopper_botany_pot", 1),
         ("bee", "Honey Bee (egg)", 6, "minecraft:bee_spawn_egg", 1),
@@ -252,8 +252,12 @@ def shop():
                                 f"gtceu:{mat}_{kind}", 1, unlock))
     seeds = ["tomato", "lettuce", "onion", "corn", "rice", "bean", "cucumber", "strawberry", "bellpepper", "broccoli",
              "spinach", "grape", "cotton", "flax", "garlic", "peas", "soybean", "papyrus"]
+    # Seed counts by product quality: staples and fibres plenty, vegetables fewer, fruit fewest.
+    seed_counts = {"cotton": 6, "flax": 6, "papyrus": 6, "rice": 6, "corn": 6, "soybean": 6, "bean": 6, "peas": 6,
+                   "tomato": 4, "lettuce": 4, "onion": 4, "cucumber": 4, "bellpepper": 4, "broccoli": 4, "spinach": 4, "garlic": 4,
+                   "strawberry": 2, "grape": 2}
     for c in seeds:
-        offers.append((f"seed_{c}", f"{nice('x:' + c)} Seeds", 1, f"pamhc2crops:{c}seeditem", 1))
+        offers.append((f"seed_{c}", f"{nice('x:' + c)} Seeds", 1, f"pamhc2crops:{c}seeditem", seed_counts.get(c, 4)))
     quests = []
     offers = [o + (None,) for o in offers] + tool_offers
     for i, (key, title, price, item, count, unlock) in enumerate(offers):
