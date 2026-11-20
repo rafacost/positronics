@@ -601,11 +601,11 @@ global.POSITRONICS_TRICKLE_STAGES = {
     "chances": [
       [
         "positronics:ferrous_stratum",
-        0.25
+        0.5
       ],
       [
         "positronics:cupric_stratum",
-        0.18
+        0.36
       ]
     ]
   },
@@ -614,15 +614,15 @@ global.POSITRONICS_TRICKLE_STAGES = {
     "chances": [
       [
         "positronics:stannic_stratum",
-        0.05
+        0.1
       ],
       [
         "positronics:carbonic_stratum",
-        0.06
+        0.12
       ],
       [
         "positronics:plumbic_stratum",
-        0.03
+        0.06
       ]
     ]
   },
