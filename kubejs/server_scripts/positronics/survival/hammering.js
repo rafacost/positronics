@@ -60,13 +60,14 @@ ServerEvents.recipes(event => {
         S: '#forge:rods/wooden'
     }).id('positronics:tools/reclamation_hammer')
 
-    // Dust + water (dirty is fine) = clay. The bottle comes back.
-    event.shapeless('minecraft:clay_ball', ['2x positronics:dust', 'toughasnails:dirty_water_bottle'])
-        .replaceIngredient('toughasnails:dirty_water_bottle', 'minecraft:glass_bottle')
+    // Dust + water (dirty is fine) = clay: 8 dust around one bottle makes a full stack. The bottle comes back.
+    // A PBF (24 firebricks blocks, 8 clay balls each) is 3 crafts.
+    event.shaped('64x minecraft:clay_ball', ['DDD', 'DWD', 'DDD'], {
+        D: 'positronics:dust', W: 'toughasnails:dirty_water_bottle'
+    }).replaceIngredient('toughasnails:dirty_water_bottle', 'minecraft:glass_bottle')
         .id('positronics:hammering/dust_to_clay')
-    event.shapeless('minecraft:clay_ball', [
-        '2x positronics:dust',
-        Ingredient.of(Item.of('minecraft:potion', '{Potion:"minecraft:water"}').strongNBT())
-    ]).replaceIngredient('minecraft:potion', 'minecraft:glass_bottle')
+    event.shaped('64x minecraft:clay_ball', ['DDD', 'DWD', 'DDD'], {
+        D: 'positronics:dust', W: Ingredient.of(Item.of('minecraft:potion', '{Potion:"minecraft:water"}').strongNBT())
+    }).replaceIngredient('minecraft:potion', 'minecraft:glass_bottle')
         .id('positronics:hammering/dust_to_clay_water')
 })
