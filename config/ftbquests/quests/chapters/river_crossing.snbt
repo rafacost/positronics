@@ -120,7 +120,8 @@
 			description: [
 				"&7[NCP Field Memo #0104: Tooling]"
 				""
-				"GregTech parts are made with GregTech tools. Plates need a hammer, casings a wrench, and the hull's cables a wire cutter."
+				"GregTech parts are made with GregTech tools. Plates need a hammer, casings a wrench, the hull's cables a wire cutter."
+				"The &bscrewdriver&r is part of the wire cutter, and the Primitive Blast Furnace needs one too."
 				"&aThe wrought iron hammer also digs deeper:&r break gravel with it to find &bStannic&r (tin), &bCarbonic&r (coal) and &bPlumbic&r (lead) strata."
 			]
 			id: "076E7CC3AFDAC867"
@@ -150,6 +151,11 @@
 				}
 				{
 					id: "BDEA1C4A679A00F2"
+					item: "gtceu:wrought_iron_screwdriver"
+					type: "item"
+				}
+				{
+					id: "90BB2039C8124335"
 					item: "gtceu:wrought_iron_wire_cutter"
 					type: "item"
 				}
