@@ -1,0 +1,21 @@
+# Never commit game binaries or runtime output
+*.jar
+*.disabled
+mods/
+saves/
+logs/
+crash-reports/
+screenshots/
+local/
+
+# KubeJS generated/runtime files
+kubejs/probe/
+kubejs/config/probejs.json
+kubejs/README.txt
+kubejs/**/example.js
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
