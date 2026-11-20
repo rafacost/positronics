@@ -274,8 +274,45 @@ def card_texture():
     return px
 
 
+def bowl_texture(fill_colors):
+    """A wooden bowl seen from the side, filled with a soup or salad."""
+    clear = (0, 0, 0, 0)
+    wood_d = (92, 62, 32, 255)
+    wood = (139, 97, 52, 255)
+    px = [[clear] * 16 for _ in range(16)]
+    # contents: a mound above the rim
+    for y in range(6, 10):
+        for x in range(3, 13):
+            if y == 6 and x in (3, 12):
+                continue
+            px[y][x] = fill_colors[(x * 3 + y) % len(fill_colors)]
+    # bowl body: rim at y=9..10, narrowing to the base
+    for y, (a, b) in zip(range(9, 14), [(2, 13), (2, 13), (3, 12), (4, 11), (5, 10)]):
+        for x in range(a, b + 1):
+            px[y][x] = wood_d if x in (a, b) or y == 13 else wood
+    return px
+
+
+def sandwich_texture():
+    """Two slices of bread with greens and tomato between them."""
+    clear = (0, 0, 0, 0)
+    crust = (156, 98, 42, 255)
+    bread = (222, 182, 110, 255)
+    green = (92, 168, 64, 255)
+    red = (200, 52, 40, 255)
+    px = [[clear] * 16 for _ in range(16)]
+    for y, row in [(4, crust), (5, bread), (6, bread), (7, green), (8, red), (9, green), (10, bread), (11, bread), (12, crust)]:
+        for x in range(2, 14):
+            px[y][x] = crust if x in (2, 13) else row
+    return px
+
+
 if __name__ == "__main__":
     tex = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item")
+    write_png(os.path.join(tex, "garden_salad.png"), bowl_texture([(92, 168, 64, 255), (126, 196, 82, 255), (200, 52, 40, 255), (70, 140, 50, 255)]))
+    write_png(os.path.join(tex, "vegetable_broth.png"), bowl_texture([(214, 120, 48, 255), (232, 150, 70, 255), (196, 100, 40, 255), (120, 170, 70, 255)]))
+    write_png(os.path.join(tex, "garden_sandwich.png"), sandwich_texture())
+    print("wrote food textures")
     for name, fn in [("stratum", stratum_texture), ("positronic_core", core_texture), ("clearance_card", card_texture)]:
         write_png(os.path.join(tex, name + ".png"), fn())
         print("wrote", f"kubejs/assets/positronics/textures/item/{name}.png")

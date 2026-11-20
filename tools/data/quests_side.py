@@ -235,4 +235,70 @@ def shop():
             "title": "NCP Shop", "icon": "positronics:ncp_scrip", "quests": quests}
 
 
-SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, shop()]
+# ------------------------------------------------------------------ SIMULATION LAB (Hostile Neural Networks)
+def model(mob, data=6):
+    """A pre-trained data model: 6 data = Basic tier, 54 = Advanced (HNN model_tiers)."""
+    return {"id": "hostilenetworks:data_model", "tag": {"data_model": {"id": f"hostilenetworks:{mob}", "data": data}}}
+
+
+def simulation_lab():
+    # (tier gate quest, [(mob, task item, count, title, memo text)...], model data)
+    tiers = [
+        ("the_calla:lvhull", "LV", 6, [
+            ("skeleton", "minecraft:bone", 16, "Bones", "Bones become bone meal: your crops will thank you. Arrows and skulls too."),
+            ("cow", "minecraft:leather", 8, "Leather", "Leather means canteens, books and leather armour."),
+            ("sheep", "minecraft:white_wool", 8, "Wool", "Wool for warm armour and beds. Every colour, no dye needed."),
+            ("chicken", "minecraft:feather", 8, "Feathers", "Feathers for arrows and books; chicken for dinner."),
+            ("spider", "minecraft:string", 16, "String", "String by the stack, and spider eyes for brewing.")]),
+        ("lud:arrival", "MV", 6, [
+            ("zombie", "minecraft:rotten_flesh", 16, "Rotten Flesh", "Rotten flesh, and occasionally iron, carrots and potatoes."),
+            ("slime", "minecraft:slime_ball", 16, "Slime", "Slime balls for sticky pistons and GT's rubber alternatives."),
+            ("creeper", "minecraft:gunpowder", 16, "Gunpowder", "Gunpowder means TNT, and TNT means the implosion compressor."),
+            ("enderman", "minecraft:ender_pearl", 8, "Ender Pearls", "Ender pearls for GregTech field generators and sensors.")]),
+        ("the_cradle:arrival", "HV", 6, [
+            ("blaze", "minecraft:blaze_rod", 8, "Blaze Rods", "Blaze rods and powder for HV chemistry."),
+            ("witch", "minecraft:glowstone_dust", 16, "Witch's Pantry", "Redstone, glowstone, sugar: a witch's pantry, minus the witch."),
+            ("ghast", "minecraft:ghast_tear", 8, "Ghast Tears", "Ghast tears, and more gunpowder.")]),
+        ("the_dogan:arrival", "EV", 54, [
+            ("wither_skeleton", "minecraft:wither_skeleton_skull", 3, "Wither Skulls", "Wither skeleton skulls. You know where this is going."),
+            ("magma_cube", "minecraft:magma_cream", 16, "Magma Cream", "Magma cream for heat-resistant chemistry."),
+            ("guardian", "minecraft:prismarine_crystals", 8, "Prismarine", "Prismarine crystals and fish.")]),
+        ("fedic:arrival", "IV", 54, [
+            ("shulker", "minecraft:shulker_shell", 4, "Shulker Shells", "Shulker shells: portable storage."),
+            ("evoker", "minecraft:totem_of_undying", 1, "Totems", "Totems of undying, and emeralds.")]),
+        ("end_world_luv:arrival", "LuV", 54, [
+            ("wither", "minecraft:nether_star", 1, "Nether Stars", "A simulated Wither. The star it leaves is very real.")]),
+    ]
+    quests = [{
+        "key": "lab", "title": "The Simulation Lab", "deps": ["the_calla:lvhull"],
+        "tasks": ["hostilenetworks:sim_chamber", "hostilenetworks:loot_fabricator", ("hostilenetworks:prediction_matrix", 16)],
+        "rewards": [model("skeleton")], "scrip": 5, "shape": "gear", "size": 1.4, "pos": (0, 0),
+        "desc": memo("3201", "Andy Units",
+                     "Nothing spawns in this world. NCP's answer: simulate it. A &bSim Chamber&r runs a &bdata model&r on prediction matrices",
+                     "and power; a &bLoot Fabricator&r turns the predictions into real drops.",
+                     "Every simulation teaches the model a little more: Basic models are inaccurate, but they improve with use.",
+                     "&7Here is your first model. NCP hands out trained models as you earn clearance: never the best, always useful.")}]
+    prev = "lab"
+    for ti, (gate, tier_name, data, mobs) in enumerate(tiers):
+        x = ti * 2.5
+        if ti > 0:
+            gate_key = f"tier_{tier_name.lower()}"
+            quests.append({"key": gate_key, "title": f"{tier_name} Simulations", "deps": [gate, prev], "tasks": ["check"],
+                           "check_title": "Requisition models", "rewards": [model(mobs[0][0], data)], "scrip": 3,
+                           "shape": "hexagon", "pos": (x, 0),
+                           "desc": memo(f"32{ti}0", "Requisition", f"Your clearance now covers {tier_name}-grade simulations.",
+                                        "Here is the next model." + (" Advanced grade, this time." if data > 6 else ""))})
+            prev = gate_key
+        for mi, (mob, item, count, title, text) in enumerate(mobs):
+            reward = [model(mobs[mi + 1][0], data)] if mi + 1 < len(mobs) else []
+            key = f"{mob}_drops"
+            quests.append({"key": key, "title": title, "deps": [prev], "tasks": [(item, count)], "rewards": reward,
+                           "pos": (x, 1.5 * (mi + 1)),
+                           "desc": memo(f"32{ti}{mi + 1}", title, f"Run the {mob.replace('_', ' ')} model and fabricate its drops.", text,
+                                        ("&7Reward: the next data model." if reward else "&7That's every model at this grade."))})
+            prev = key
+    return {"id": "simulation_lab", "filename": "simulation_lab", "order": 32, "group": "Side Paths", "scrip": 3,
+            "title": "Simulation Lab", "icon": "hostilenetworks:sim_chamber", "quests": quests}
+
+
+SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), shop()]

@@ -84,27 +84,27 @@
 			description: [
 				"&7[NCP Field Memo #0003: Hydration Policy]"
 				""
-				"You have a &bthirst&r bar now. Drinking raw water is a bad idea: it is dirty, and it will make you sick."
+				"You have a &bthirst&r bar now. The island's spring never runs dry, but its water is &cdirty&r."
 				""
-				"&aBoil it:&r fill a glass bottle at the island's spring, then place it on the kiosk's old campfire."
-				"After half a minute it is purified and safe to drink."
-				"Later, a &bWater Purifier&r does this much faster (it needs copper)."
-				""
-				"The spring never runs dry. Make more bottles once you have glass."
-				"&7NCP reminds you that dehydration is not covered by your contract."
+				"&aStep one:&r fill one of your glass bottles at the spring (right-click the water with it)."
+				"&7Do not drink it yet. NCP reminds you that dehydration is not covered by your contract, and neither is dysentery."
 			]
 			id: "504F530000001003"
 			rewards: [{
-				count: 2
 				id: "504F530000003003"
 				item: "positronics:ncp_scrip"
 				type: "item"
 			}]
-			subtitle: "Thirst, and how to survive it"
+			subtitle: "Thirst, part one"
 			tasks: [{
-				count: 2L
 				id: "504F530000002003"
-				item: "toughasnails:purified_water_bottle"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:water"
+					}
+				}
 				type: "item"
 			}]
 			title: "Water Is Life"
@@ -114,28 +114,48 @@
 		{
 			dependencies: ["504F530000001003"]
 			description: [
+				"&7[NCP Field Memo #0012: Purification]"
+				""
+				"&aStep two:&r place the bottle of dirty water on the kiosk's old campfire. After half a minute it is &bpurified&r."
+				"Purified water is safe to drink. Boil a few: you will be thirsty again soon."
+				""
+				"Later, a &bWater Purifier&r does this much faster (it needs copper)."
+			]
+			id: "504F53000000100D"
+			rewards: [{
+				count: 2
+				id: "504F530000003012"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Thirst, part two"
+			tasks: [{
+				count: 2L
+				id: "504F53000000200F"
+				item: "toughasnails:purified_water_bottle"
+				type: "item"
+			}]
+			title: "Boil It"
+			x: 3.75d
+			y: 2.75d
+		}
+		{
+			dependencies: ["504F53000000100D"]
+			description: [
 				"&7[NCP Field Memo #0004: Thermal Comfort]"
 				""
 				"Your body has a &btemperature&r. Nights, rain and winter push it down; heat sources push it up."
 				""
-				"&aStay warm:&r stand near the kiosk campfire, keep dry, and craft &bleaf armor&r from leaves for mild weather."
-				"Later, wool armor and a Thermoregulator will keep a whole room comfortable."
-				""
-				"Here is a thermometer, so you can see trouble before it finds you."
+				"&aStay warm:&r stand near the kiosk campfire at night and keep dry. A roof over your head helps."
+				"Later: wool armour (string from fibre crops), a &bthermometer&r (copper + redstone) to see trouble coming,"
+				"and a Thermoregulator to keep a whole room comfortable."
 			]
 			id: "504F530000001004"
-			rewards: [
-				{
-					id: "504F530000003004"
-					item: "toughasnails:thermometer"
-					type: "item"
-				}
-				{
-					id: "504F530000003005"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "504F530000003005"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
 			subtitle: "Body temperature"
 			tasks: [{
 				id: "504F530000002004"
@@ -155,21 +175,15 @@
 				"Crops planted in the world grow only in the seasons they like, and winter is cold."
 				""
 				"&aPlan ahead:&r store food before winter and keep a warm place to stand."
-				"Take this calendar so you always know what is coming."
+				"Botany pots don't care about the weather; crops in the open do."
+				"&7A calendar (paper around a clock) shows the season, once you have gold and redstone."
 			]
 			id: "504F530000001005"
-			rewards: [
-				{
-					id: "504F530000003006"
-					item: "sereneseasons:calendar"
-					type: "item"
-				}
-				{
-					id: "504F530000003007"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "504F530000003007"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
 			subtitle: "Spring, summer, autumn, winter"
 			tasks: [{
 				id: "504F530000002005"
@@ -226,32 +240,26 @@
 				"Eating the same meal every day keeps you alive. Eating &bmany different foods&r makes you stronger:"
 				"every few new foods you try grants you an extra heart, permanently."
 				""
-				"Grow a variety, cook a variety. The Food Book tracks what you have already tried."
+				"&aNo kitchen needed:&r a &bGarden Salad&r (bowl, tomato, lettuce) and a &bVegetable Broth&r"
+				"(bowl, tomato, onion, a bottle of purified water) are crafted by hand. Bread, tomato and lettuce make a &bGarden Sandwich&r."
 			]
 			id: "504F530000001007"
-			rewards: [
-				{
-					id: "504F53000000300B"
-					item: "solcarrot:food_book"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "504F53000000300C"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "504F53000000300C"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
 			subtitle: "Variety is the spice of life"
 			tasks: [
 				{
 					id: "504F530000002007"
-					item: "pamhc2crops:lettuceitem"
+					item: "positronics:garden_salad"
 					type: "item"
 				}
 				{
 					id: "504F530000002008"
-					item: "pamhc2crops:onionitem"
+					item: "positronics:vegetable_broth"
 					type: "item"
 				}
 			]

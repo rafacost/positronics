@@ -8,6 +8,15 @@ ServerEvents.recipes(event => {
         .xp(0.1)
         .id('positronics:early/dust_to_glass')
 
+    // Simple meals by hand (Spice of Life variety before any Pam's kitchen tools).
+    event.shapeless('positronics:garden_salad', ['minecraft:bowl', 'pamhc2crops:tomatoitem', 'pamhc2crops:lettuceitem'])
+        .id('positronics:food/garden_salad')
+    event.shapeless('positronics:vegetable_broth', [
+        'minecraft:bowl', 'pamhc2crops:tomatoitem', 'pamhc2crops:onionitem', 'toughasnails:purified_water_bottle'
+    ]).replaceIngredient('toughasnails:purified_water_bottle', 'minecraft:glass_bottle').id('positronics:food/vegetable_broth')
+    event.shapeless('positronics:garden_sandwich', ['minecraft:bread', 'pamhc2crops:tomatoitem', 'pamhc2crops:lettuceitem'])
+        .id('positronics:food/garden_sandwich')
+
     // No spiders, so string comes from fibre crops (Pam's cotton, flax, jute, sisal, kenaf).
     ;['cotton', 'flax', 'jute', 'sisal', 'kenaf'].forEach(c => {
         event.shapeless('minecraft:string', [`3x pamhc2crops:${c}item`]).id(`positronics:early/string_from_${c}`)

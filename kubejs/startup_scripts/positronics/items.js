@@ -11,10 +11,29 @@ StartupEvents.registry('item', event => {
 
     // The first tool. A stone-tier pickaxe, so it mines at a normal speed. Breaking PLACED
     // cobblestone, gravel or sand with it crushes them one step down (server_scripts hammering.js).
+    // Built on GregTech's own hammer textures (wooden handle + head tinted stone grey).
     event.create('positronics:reclamation_hammer', 'pickaxe')
         .displayName('Reclamation Hammer')
-        .texture('positronics:item/reclamation_hammer')
+        .texture('layer0', 'gtceu:item/tools/handle_hammer')
+        .texture('layer1', 'gtceu:item/tools/hammer')
+        .color(1, 0x8f8f8f)
         .tier('stone')
+
+    // Simple hand-made meals: no Pam's kitchen tools needed (Spice of Life variety from day one).
+    event.create('positronics:garden_salad')
+        .displayName('Garden Salad')
+        .texture('positronics:item/garden_salad')
+        .maxStackSize(16)
+        .food(f => f.hunger(6).saturation(0.6).eaten(e => e.player.give('minecraft:bowl')))
+    event.create('positronics:vegetable_broth')
+        .displayName('Vegetable Broth')
+        .texture('positronics:item/vegetable_broth')
+        .maxStackSize(16)
+        .food(f => f.hunger(7).saturation(0.7).eaten(e => e.player.give('minecraft:bowl')))
+    event.create('positronics:garden_sandwich')
+        .displayName('Garden Sandwich')
+        .texture('positronics:item/garden_sandwich')
+        .food(f => f.hunger(8).saturation(0.8))
 })
 
 StartupEvents.registry('block', event => {

@@ -1,0 +1,991 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simulation_lab"
+	group: "7189CCE6C12A632F"
+	icon: "hostilenetworks:sim_chamber"
+	id: "C26FF34076ADFA51"
+	order_index: 32
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["FFF036F838824615"]
+			description: [
+				"&7[NCP Field Memo #3201: Andy Units]"
+				""
+				"Nothing spawns in this world. NCP's answer: simulate it. A &bSim Chamber&r runs a &bdata model&r on prediction matrices"
+				"and power; a &bLoot Fabricator&r turns the predictions into real drops."
+				"Every simulation teaches the model a little more: Basic models are inaccurate, but they improve with use."
+				"&7Here is your first model. NCP hands out trained models as you earn clearance: never the best, always useful."
+			]
+			id: "99DEF8B24EF3E293"
+			rewards: [
+				{
+					count: 5
+					id: "CAA683EA90D1EC8B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "04EAA9AD6E627904"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:skeleton"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.4d
+			tasks: [
+				{
+					id: "BD1673542D7EF256"
+					item: "hostilenetworks:sim_chamber"
+					type: "item"
+				}
+				{
+					id: "282E8AF467246F7B"
+					item: "hostilenetworks:loot_fabricator"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "886AA5B9496897BB"
+					item: "hostilenetworks:prediction_matrix"
+					type: "item"
+				}
+			]
+			title: "The Simulation Lab"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["99DEF8B24EF3E293"]
+			description: [
+				"&7[NCP Field Memo #3201: Bones]"
+				""
+				"Run the skeleton model and fabricate its drops."
+				"Bones become bone meal: your crops will thank you. Arrows and skulls too."
+				"&7Reward: the next data model."
+			]
+			id: "902D29C9D99A0C7F"
+			rewards: [
+				{
+					count: 3
+					id: "B4F95EA994F87054"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "023B245BB0E2005D"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:cow"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "93FACA90B10E60F1"
+					item: "minecraft:bone"
+					type: "item"
+				}
+			]
+			title: "Bones"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["902D29C9D99A0C7F"]
+			description: [
+				"&7[NCP Field Memo #3202: Leather]"
+				""
+				"Run the cow model and fabricate its drops."
+				"Leather means canteens, books and leather armour."
+				"&7Reward: the next data model."
+			]
+			id: "8042CBBF2F5F2119"
+			rewards: [
+				{
+					count: 3
+					id: "57A3466515D707DF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "F1A221536A7F3CB0"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:sheep"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "A519296C93323BDA"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			title: "Leather"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["8042CBBF2F5F2119"]
+			description: [
+				"&7[NCP Field Memo #3203: Wool]"
+				""
+				"Run the sheep model and fabricate its drops."
+				"Wool for warm armour and beds. Every colour, no dye needed."
+				"&7Reward: the next data model."
+			]
+			id: "0C937FCE2C4BD7B1"
+			rewards: [
+				{
+					count: 3
+					id: "AFC882714476557B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "81799B4927BB0E8D"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:chicken"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "88672590437FDA05"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+			]
+			title: "Wool"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C937FCE2C4BD7B1"]
+			description: [
+				"&7[NCP Field Memo #3204: Feathers]"
+				""
+				"Run the chicken model and fabricate its drops."
+				"Feathers for arrows and books; chicken for dinner."
+				"&7Reward: the next data model."
+			]
+			id: "3982A5E521F0BA0C"
+			rewards: [
+				{
+					count: 3
+					id: "E0A8F2559B466346"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "A964747281DBA5FA"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:spider"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "C83FC06BD98D1304"
+					item: "minecraft:feather"
+					type: "item"
+				}
+			]
+			title: "Feathers"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3982A5E521F0BA0C"]
+			description: [
+				"&7[NCP Field Memo #3205: String]"
+				""
+				"Run the spider model and fabricate its drops."
+				"String by the stack, and spider eyes for brewing."
+				"&7That's every model at this grade."
+			]
+			id: "8BD14EAF6778099A"
+			rewards: [
+				{
+					count: 3
+					id: "C3C11AF46920C84C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "BF48E700BE25A990"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			title: "String"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["8BD14EAF6778099A" "EF9B476473A6D772"]
+			description: [
+				"&7[NCP Field Memo #3210: Requisition]"
+				""
+				"Your clearance now covers MV-grade simulations."
+				"Here is the next model."
+			]
+			id: "84D2B1BC59F0A733"
+			rewards: [
+				{
+					count: 3
+					id: "BB1858705B74072A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "B38A2469AD0669CA"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:zombie"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "FB01E1107C17B07C"
+					title: "Requisition models"
+					type: "checkmark"
+				}
+			]
+			title: "MV Simulations"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["84D2B1BC59F0A733"]
+			description: [
+				"&7[NCP Field Memo #3211: Rotten Flesh]"
+				""
+				"Run the zombie model and fabricate its drops."
+				"Rotten flesh, and occasionally iron, carrots and potatoes."
+				"&7Reward: the next data model."
+			]
+			id: "26A45B3D28127763"
+			rewards: [
+				{
+					count: 3
+					id: "25499886D3CC9DE1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "C1999BC82D1C5DE9"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:slime"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "8848AA24DFEC78B5"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+			]
+			title: "Rotten Flesh"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["26A45B3D28127763"]
+			description: [
+				"&7[NCP Field Memo #3212: Slime]"
+				""
+				"Run the slime model and fabricate its drops."
+				"Slime balls for sticky pistons and GT's rubber alternatives."
+				"&7Reward: the next data model."
+			]
+			id: "D61B47B37289A8F5"
+			rewards: [
+				{
+					count: 3
+					id: "D976E8FBBCABE275"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "61CCBF9F0CE4A198"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:creeper"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2218F659620205F7"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+			]
+			title: "Slime"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["D61B47B37289A8F5"]
+			description: [
+				"&7[NCP Field Memo #3213: Gunpowder]"
+				""
+				"Run the creeper model and fabricate its drops."
+				"Gunpowder means TNT, and TNT means the implosion compressor."
+				"&7Reward: the next data model."
+			]
+			id: "19D265FC4642271D"
+			rewards: [
+				{
+					count: 3
+					id: "DFC04898A6C40201"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "F31ACD11FD2E42A0"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:enderman"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "A6D2F90E21C9F591"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			title: "Gunpowder"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["19D265FC4642271D"]
+			description: [
+				"&7[NCP Field Memo #3214: Ender Pearls]"
+				""
+				"Run the enderman model and fabricate its drops."
+				"Ender pearls for GregTech field generators and sensors."
+				"&7That's every model at this grade."
+			]
+			id: "1D032E845854B761"
+			rewards: [
+				{
+					count: 3
+					id: "7723891E8AB16E32"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "38F430E1BEA393EE"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			title: "Ender Pearls"
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1D032E845854B761" "FCBA41022669D42D"]
+			description: [
+				"&7[NCP Field Memo #3220: Requisition]"
+				""
+				"Your clearance now covers HV-grade simulations."
+				"Here is the next model."
+			]
+			id: "C8863EF697495B6B"
+			rewards: [
+				{
+					count: 3
+					id: "CEA74C5903BDCB6D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "2863E757429B9855"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:blaze"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "A1EC238BB7AE75CA"
+					title: "Requisition models"
+					type: "checkmark"
+				}
+			]
+			title: "HV Simulations"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C8863EF697495B6B"]
+			description: [
+				"&7[NCP Field Memo #3221: Blaze Rods]"
+				""
+				"Run the blaze model and fabricate its drops."
+				"Blaze rods and powder for HV chemistry."
+				"&7Reward: the next data model."
+			]
+			id: "587B3943786601A1"
+			rewards: [
+				{
+					count: 3
+					id: "E794C420A5ED60D5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "32677BCE2DDC9DED"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:witch"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "8634586D8FF14900"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			title: "Blaze Rods"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["587B3943786601A1"]
+			description: [
+				"&7[NCP Field Memo #3222: Witch's Pantry]"
+				""
+				"Run the witch model and fabricate its drops."
+				"Redstone, glowstone, sugar: a witch's pantry, minus the witch."
+				"&7Reward: the next data model."
+			]
+			id: "67FAEF8DFC9BA7C9"
+			rewards: [
+				{
+					count: 3
+					id: "A0F1F9201CC45056"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "51684FA5B5F98AC1"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:ghast"
+													data: 6
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "512FAFFB6A2DB662"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+			]
+			title: "Witch's Pantry"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["67FAEF8DFC9BA7C9"]
+			description: [
+				"&7[NCP Field Memo #3223: Ghast Tears]"
+				""
+				"Run the ghast model and fabricate its drops."
+				"Ghast tears, and more gunpowder."
+				"&7That's every model at this grade."
+			]
+			id: "12007B4347EDAE48"
+			rewards: [
+				{
+					count: 3
+					id: "BD256CEBA39A2063"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1C955D2F19B66C4A"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+			]
+			title: "Ghast Tears"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["12007B4347EDAE48" "B85D7C4C66D2C306"]
+			description: [
+				"&7[NCP Field Memo #3230: Requisition]"
+				""
+				"Your clearance now covers EV-grade simulations."
+				"Here is the next model. Advanced grade, this time."
+			]
+			id: "34B9184C7C299935"
+			rewards: [
+				{
+					count: 3
+					id: "C1C065067C0A4072"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "DCFF338FB9DECD4D"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:wither_skeleton"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "68DB95DA740082DF"
+					title: "Requisition models"
+					type: "checkmark"
+				}
+			]
+			title: "EV Simulations"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34B9184C7C299935"]
+			description: [
+				"&7[NCP Field Memo #3231: Wither Skulls]"
+				""
+				"Run the wither skeleton model and fabricate its drops."
+				"Wither skeleton skulls. You know where this is going."
+				"&7Reward: the next data model."
+			]
+			id: "61D7ADE3C5C88733"
+			rewards: [
+				{
+					count: 3
+					id: "AAC492BA0DA40B22"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "1FC5815DFCFE5952"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:magma_cube"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "7E3B668BFB97A05D"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+			]
+			title: "Wither Skulls"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["61D7ADE3C5C88733"]
+			description: [
+				"&7[NCP Field Memo #3232: Magma Cream]"
+				""
+				"Run the magma cube model and fabricate its drops."
+				"Magma cream for heat-resistant chemistry."
+				"&7Reward: the next data model."
+			]
+			id: "0AEE5683AF935E63"
+			rewards: [
+				{
+					count: 3
+					id: "C2C0248AB12F01A1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "AF350874CE7CFC10"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:guardian"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5DAB88489CF6E071"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+			]
+			title: "Magma Cream"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0AEE5683AF935E63"]
+			description: [
+				"&7[NCP Field Memo #3233: Prismarine]"
+				""
+				"Run the guardian model and fabricate its drops."
+				"Prismarine crystals and fish."
+				"&7That's every model at this grade."
+			]
+			id: "24D513AE8A1E9B68"
+			rewards: [
+				{
+					count: 3
+					id: "87B57DA0676FD218"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "FF7D3EE4976E5FC6"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+			]
+			title: "Prismarine"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["24D513AE8A1E9B68" "FF0C2EAC1358C7FF"]
+			description: [
+				"&7[NCP Field Memo #3240: Requisition]"
+				""
+				"Your clearance now covers IV-grade simulations."
+				"Here is the next model. Advanced grade, this time."
+			]
+			id: "7AF4682D0203D5F0"
+			rewards: [
+				{
+					count: 3
+					id: "02C5ECE8DC8668C9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "AEB9F423C3C38B7E"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:shulker"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "B0C5A19057F9E6BB"
+					title: "Requisition models"
+					type: "checkmark"
+				}
+			]
+			title: "IV Simulations"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AF4682D0203D5F0"]
+			description: [
+				"&7[NCP Field Memo #3241: Shulker Shells]"
+				""
+				"Run the shulker model and fabricate its drops."
+				"Shulker shells: portable storage."
+				"&7Reward: the next data model."
+			]
+			id: "BEEC933AFCB4644B"
+			rewards: [
+				{
+					count: 3
+					id: "10E315BBC8F099EA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "4A21DA1CD02D271F"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:evoker"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2629C36C7C13A87B"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+			]
+			title: "Shulker Shells"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["BEEC933AFCB4644B"]
+			description: [
+				"&7[NCP Field Memo #3242: Totems]"
+				""
+				"Run the evoker model and fabricate its drops."
+				"Totems of undying, and emeralds."
+				"&7That's every model at this grade."
+			]
+			id: "D688BCD8D93D2714"
+			rewards: [
+				{
+					count: 3
+					id: "6775083A98261775"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F40126CC6F583962"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+			]
+			title: "Totems"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["D688BCD8D93D2714" "1B8F37F4F9A066DF"]
+			description: [
+				"&7[NCP Field Memo #3250: Requisition]"
+				""
+				"Your clearance now covers LuV-grade simulations."
+				"Here is the next model. Advanced grade, this time."
+			]
+			id: "CAC590D154079D3A"
+			rewards: [
+				{
+					count: 3
+					id: "12FAA58C7B7769DF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "BE34CA9C5ADA7719"
+					item: {
+											Count: 1
+											id: "hostilenetworks:data_model"
+											tag: {
+												data_model: {
+													id: "hostilenetworks:wither"
+													data: 54
+												}
+											}
+										}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "8782E8E67820DC77"
+					title: "Requisition models"
+					type: "checkmark"
+				}
+			]
+			title: "LuV Simulations"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CAC590D154079D3A"]
+			description: [
+				"&7[NCP Field Memo #3251: Nether Stars]"
+				""
+				"Run the wither model and fabricate its drops."
+				"A simulated Wither. The star it leaves is very real."
+				"&7That's every model at this grade."
+			]
+			id: "D6E01EB38FBCB01E"
+			rewards: [
+				{
+					count: 3
+					id: "59477EC0239570FE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8698363B4075AFC6"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Nether Stars"
+			x: 12.5d
+			y: 1.5d
+		}
+	]
+	title: "Simulation Lab"
+}

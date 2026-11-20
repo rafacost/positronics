@@ -28,6 +28,37 @@ def s(text):
     return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def snbt_lines(value, indent):
+    """Structured SNBT for an item with NBT: dicts become compounds, ints stay ints, strings are quoted."""
+    pad = "\t" * indent
+    if isinstance(value, dict):
+        out = ["{"]
+        for k, v in value.items():
+            inner = snbt_lines(v, indent + 1)
+            out.append(f"{pad}\t{k}: {inner[0]}")
+            out += inner[1:]
+        out.append(f"{pad}}}")
+        return out
+    if isinstance(value, bool):
+        return ["1b" if value else "0b"]
+    if isinstance(value, int):
+        return [str(value)]
+    return [s(str(value))]
+
+
+def item_field(item, indent):
+    """'item: "id"' for plain items, or a compound for {"id":..., "tag":{...}}."""
+    if isinstance(item, str):
+        return [f"item: {s(item)}"]
+    comp = {"Count": 1, "id": item["id"], "tag": item["tag"]}
+    lines = snbt_lines(comp, indent)
+    return [f"item: {lines[0]}"] + lines[1:]
+
+
+def item_id(item):
+    return item if isinstance(item, str) else item["id"]
+
+
 def load_data():
     spec = importlib.util.spec_from_file_location("quests", os.path.join(ROOT, "tools", "data", "quests.py"))
     mod = importlib.util.module_from_spec(spec)
@@ -101,16 +132,17 @@ def main():
             scrip = q.get("scrip", ch.get("scrip", 2))
             if scrip:
                 rewards.append(("positronics:ncp_scrip", scrip))
-            rewards += [(r, 1) if isinstance(r, str) else tuple(r) for r in q.get("rewards", [])]
+            rewards += [(r, 1) if isinstance(r, (str, dict)) else tuple(r) for r in q.get("rewards", [])]
             if rewards:
                 lines.append("\t\t\trewards: [")
                 for i, (item, count) in enumerate(rewards):
-                    check(item, f"{cid}/{k} reward")
+                    check(item_id(item), f"{cid}/{k} reward")
                     lines.append("\t\t\t\t{")
                     if count > 1:
                         lines.append(f"\t\t\t\t\tcount: {count}")
                     lines.append(f"\t\t\t\t\tid: {s(qid(cid, k, 'reward', str(i)))}")
-                    lines.append(f"\t\t\t\t\titem: {s(item)}")
+                    for line in item_field(item, 5):
+                        lines.append("\t\t\t\t\t" + line)
                     lines.append('\t\t\t\t\ttype: "item"')
                     lines.append("\t\t\t\t}")
                 lines.append("\t\t\t]")
