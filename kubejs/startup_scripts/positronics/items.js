@@ -1,5 +1,5 @@
-// Positronics: our own items. IDs use the "positronics" namespace so they can move
-// into the Positronics Core companion mod later without renaming.
+// Positronics: our own items and blocks. IDs use the "positronics" namespace so they can
+// move into the Positronics Core companion mod later without renaming.
 
 StartupEvents.registry('item', event => {
     // Quest currency, spent at the (future) NCP Vending Terminal.
@@ -9,10 +9,21 @@ StartupEvents.registry('item', event => {
         .maxStackSize(64)
         .rarity('uncommon')
 
-    // The first tool: crushes cobblestone into gravel and gravel into sand, by hand.
-    // A crude stone hammer, because there is no iron for a GregTech hammer yet.
-    event.create('positronics:reclamation_hammer')
+    // The first tool. A stone-tier pickaxe, so it mines at a normal speed. Breaking PLACED
+    // cobblestone, gravel or sand with it crushes them one step down (server_scripts hammering.js).
+    event.create('positronics:reclamation_hammer', 'pickaxe')
         .displayName('Reclamation Hammer')
         .texture('positronics:item/reclamation_hammer')
-        .maxDamage(64)
+        .tier('stone')
+})
+
+StartupEvents.registry('block', event => {
+    // The step after sand: fine dust. Feeds clay now, and the Seed I trickle later.
+    event.create('positronics:dust')
+        .displayName('Dust')
+        .textureAll('positronics:block/dust')
+        .soundType('sand')
+        .hardness(0.4)
+        .resistance(0.4)
+        .tagBlock('minecraft:mineable/shovel')
 })

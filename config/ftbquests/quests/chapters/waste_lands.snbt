@@ -19,15 +19,25 @@
 				"Nothing here has ore. Nothing here spawns. Everything you will ever own, you will &areclaim&r, &aprocess&r or &aremember&r."
 				""
 				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
+				""
+				"&7Enclosed: two blocks of dirt for your botany pot. Do not dig up the island to get more."
 			]
 			icon: "minecraft:lantern"
 			id: "504F530000001001"
-			rewards: [{
-				count: 3
-				id: "504F530000003001"
-				item: "positronics:ncp_scrip"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "504F530000003001"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "504F530000003011"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "Welcome to the Waste Lands"
@@ -177,7 +187,7 @@
 				""
 				"There is no farmland to spare on a floating rock, so we grow food in &bBotany Pots&r."
 				""
-				"&aHow:&r place a pot, put a &bdirt&r block in it (your dirt generator makes plenty), then a seed."
+				"&aHow:&r place the pot on solid ground, put a &bdirt&r block in it (from the welcome memo), then a seed."
 				"Wait, and right-click to harvest. Later, a &bhopper botany pot&r over a chest harvests on its own."
 			]
 			id: "504F530000001006"
@@ -311,8 +321,9 @@
 				""
 				"No iron, no machines, no problem. Build a &bReclamation Hammer&r from cobblestone and sticks."
 				""
-				"&aIn a crafting grid:&r hammer + cobblestone = gravel. Hammer + gravel = sand."
-				"The hammer wears out, so build a spare. Once you have a GregTech hammer, it works too."
+				"&aPlace a block and break it with the hammer:&r cobblestone becomes gravel, gravel becomes sand, sand becomes &bdust&r."
+				"Two dust and a water bottle make clay, and clay makes more botany pots."
+				"The hammer wears out, so build a spare. Work over solid ground: this island is all you have."
 				""
 				"&7Slow? Yes. Character-building? NCP's lawyers say yes."
 			]

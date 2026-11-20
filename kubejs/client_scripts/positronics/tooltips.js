@@ -6,8 +6,11 @@ ItemEvents.tooltip(event => {
         Text.darkGray('Valid at any NCP Vending Terminal. Non-refundable.')
     ])
     event.add('positronics:reclamation_hammer', [
-        Text.gray('Craft with cobblestone to get gravel,'),
-        Text.gray('or with gravel to get sand.'),
+        Text.gray('Place a block and break it with this hammer:'),
+        Text.gray('cobblestone > gravel > sand > dust.'),
         Text.darkGray('NCP-approved. Barely.')
+    ])
+    event.add('positronics:dust', [
+        Text.gray('2 dust + a water bottle = clay.')
     ])
 })

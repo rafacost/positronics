@@ -1,15 +1,33 @@
-// Positronics: hand-hammering. Cobblestone -> gravel -> sand, one block at a time.
-// Works with our stone Reclamation Hammer (loses durability) and with any GregTech
-// hammer later (GT tools take their own crafting damage).
+// Positronics: hammering in the world (no crafting grid).
+// Place the block, break it with the Reclamation Hammer, and it drops the next step:
+//   cobblestone -> gravel -> sand -> dust
+// Dust + a water bottle makes clay (for terracotta and botany pots).
 
-ServerEvents.tags('item', event => {
-    event.add('positronics:hand_hammers', 'positronics:reclamation_hammer')
-    event.add('positronics:hand_hammers', '#forge:tools/hammers')
+const POSITRONICS_HAMMER = 'positronics:reclamation_hammer'
+const POSITRONICS_HAMMER_STEPS = {
+    'minecraft:cobblestone': 'minecraft:gravel',
+    'minecraft:gravel': 'minecraft:sand',
+    'minecraft:sand': 'positronics:dust'
+}
+
+BlockEvents.broken(event => {
+    const { block, player } = event
+    if (!player || player.isCreative()) return
+    const held = player.mainHandItem
+    if (held.id != POSITRONICS_HAMMER) return
+
+    const next = POSITRONICS_HAMMER_STEPS[block.id]
+    if (!next) return
+
+    block.set('minecraft:air')
+    block.popItem(Item.of(next))
+    held.damage(1, player)
+    event.cancel()
 })
 
 ServerEvents.recipes(event => {
     // The tool itself: a stone head on two sticks.
-    event.shaped('positronics:reclamation_hammer', [
+    event.shaped(POSITRONICS_HAMMER, [
         'CCC',
         'CSC',
         ' S '
@@ -18,13 +36,10 @@ ServerEvents.recipes(event => {
         S: '#forge:rods/wooden'
     }).id('positronics:tools/reclamation_hammer')
 
-    const hammer = '#positronics:hand_hammers'
-
-    event.shapeless('minecraft:gravel', ['minecraft:cobblestone', hammer])
-        .damageIngredient('positronics:reclamation_hammer')
-        .id('positronics:hammering/cobblestone_to_gravel')
-
-    event.shapeless('minecraft:sand', ['minecraft:gravel', hammer])
-        .damageIngredient('positronics:reclamation_hammer')
-        .id('positronics:hammering/gravel_to_sand')
+    // Dust + water = clay. The bottle comes back.
+    event.shapeless('minecraft:clay_ball', [
+        '2x positronics:dust',
+        Ingredient.of(Item.of('minecraft:potion', '{Potion:"minecraft:water"}').strongNBT())
+    ]).replaceIngredient('minecraft:potion', 'minecraft:glass_bottle')
+        .id('positronics:hammering/dust_to_clay')
 })

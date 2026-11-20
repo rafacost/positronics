@@ -206,7 +206,24 @@ def hammer_texture():
     return px
 
 
+def dust_texture():
+    """Fine pale dust (the step after sand). Deterministic speckle, placeholder art."""
+    base = [(214, 204, 178, 255), (200, 190, 162, 255), (226, 218, 194, 255), (188, 178, 150, 255)]
+    px = []
+    seed = 1234567
+    for y in range(16):
+        row = []
+        for x in range(16):
+            seed = (seed * 1103515245 + 12345) & 0x7FFFFFFF
+            row.append(base[(seed >> 16) % len(base)])
+        px.append(row)
+    return px
+
+
 if __name__ == "__main__":
+    dust_path = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "block", "dust.png")
+    write_png(dust_path, dust_texture())
+    print("wrote", os.path.relpath(dust_path, ROOT))
     hammer_path = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item", "reclamation_hammer.png")
     write_png(hammer_path, hammer_texture())
     print("wrote", os.path.relpath(hammer_path, ROOT))
