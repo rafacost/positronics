@@ -1,0 +1,422 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "calla_kitchen"
+	group: "7189CCE6C12A632F"
+	icon: "pamhc2foodcore:skilletitem"
+	id: "1082A10755EBD019"
+	order_index: 31
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #3101: Kitchen]"
+				""
+				"Pam's cooking tools are reusable crafting ingredients. Start with a cutting board, a pot and a skillet."
+			]
+			id: "E57635F9F8F9353C"
+			rewards: [
+				{
+					count: 2
+					id: "B0404A9B23883EDB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "E89DFBC75720E275"
+					item: "pamhc2foodcore:cuttingboarditem"
+					type: "item"
+				}
+				{
+					id: "201A2DA09E45882E"
+					item: "pamhc2foodcore:potitem"
+					type: "item"
+				}
+				{
+					id: "6D095F2CC3F483CC"
+					item: "pamhc2foodcore:skilletitem"
+					type: "item"
+				}
+			]
+			title: "Kitchen Tools"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E57635F9F8F9353C"]
+			description: [
+				"&7[NCP Field Memo #3102: Kitchen]"
+				""
+				"Saucepan, bakeware, mixing bowl, juicer and grinder: everything a Calla kitchen needs."
+			]
+			id: "220C4A264B5F77D3"
+			rewards: [
+				{
+					count: 2
+					id: "7201B524796FBA5B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "587D26B976E24A44"
+					item: "pamhc2foodcore:saucepanitem"
+					type: "item"
+				}
+				{
+					id: "353E181705E3608E"
+					item: "pamhc2foodcore:bakewareitem"
+					type: "item"
+				}
+				{
+					id: "17129EC1FD01DD69"
+					item: "pamhc2foodcore:mixingbowlitem"
+					type: "item"
+				}
+				{
+					id: "9CFFFBDCD9300638"
+					item: "pamhc2foodcore:juiceritem"
+					type: "item"
+				}
+				{
+					id: "5983396C1B95E8A9"
+					item: "pamhc2foodcore:grinderitem"
+					type: "item"
+				}
+			]
+			title: "A Full Kitchen"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E57635F9F8F9353C"]
+			description: [
+				"&7[NCP Field Memo #3103: Cooking]"
+				""
+				"Cooked food fills you up for longer. Carrots, potatoes and wheat seeds are sold at the NCP Shop."
+			]
+			id: "34F3139E46C0B549"
+			rewards: [
+				{
+					count: 2
+					id: "A90F4CA711FF2120"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "BCE03D9C5A85A5F1"
+					item: "pamhc2foodcore:toastitem"
+					type: "item"
+				}
+				{
+					id: "E1B875B6BC271C02"
+					item: "pamhc2foodcore:carrotsoupitem"
+					type: "item"
+				}
+				{
+					id: "9A336D7DDD96C18B"
+					item: "pamhc2foodcore:mashedpotatoesitem"
+					type: "item"
+				}
+			]
+			title: "First Dishes"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["34F3139E46C0B549" "220C4A264B5F77D3"]
+			description: [
+				"&7[NCP Field Memo #3104: Cooking]"
+				""
+				"Soups and juices also count as new foods for Spice of Life."
+			]
+			id: "607D16CC7FF2D0EB"
+			rewards: [
+				{
+					count: 2
+					id: "64ADA64DF9917293"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "11234B9FBF457570"
+					item: "pamhc2foodcore:potatosoupitem"
+					type: "item"
+				}
+				{
+					id: "E4D39F34450E583D"
+					item: "pamhc2foodcore:pumpkinsoupitem"
+					type: "item"
+				}
+				{
+					id: "B34FEC37C0B4C1B5"
+					item: "pamhc2foodcore:applejuiceitem"
+					type: "item"
+				}
+			]
+			title: "Soups and Juice"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34F3139E46C0B549"]
+			description: [
+				"&7[NCP Field Memo #3105: Spice of Life]"
+				""
+				"Every few new foods you eat grant a permanent heart (the Food Book shows your progress)."
+				"Most Pam's crops can be eaten raw. Buy new seeds at the NCP Shop and grow them in pots or a Calla Paddy."
+			]
+			id: "04724F3E5C33BA04"
+			rewards: [
+				{
+					count: 2
+					id: "2B5CFBB085E7CAAD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "641FC8E0362DE350"
+					item: "pamhc2crops:tomatoitem"
+					type: "item"
+				}
+				{
+					id: "2FA9AC4A70D6EFBE"
+					item: "pamhc2crops:lettuceitem"
+					type: "item"
+				}
+				{
+					id: "8426DC331FE18650"
+					item: "pamhc2crops:onionitem"
+					type: "item"
+				}
+				{
+					id: "9BA952FD9A9CE7C0"
+					item: "pamhc2crops:cornitem"
+					type: "item"
+				}
+				{
+					id: "B3BBB2552A876689"
+					item: "pamhc2crops:riceitem"
+					type: "item"
+				}
+				{
+					id: "974A3B70B0FDB883"
+					item: "pamhc2crops:beanitem"
+					type: "item"
+				}
+			]
+			title: "A Varied Diet"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04724F3E5C33BA04" "607D16CC7FF2D0EB"]
+			description: [
+				"&7[NCP Field Memo #3106: Spice of Life]"
+				""
+				"Eat each of these at least once. Your hearts will thank you."
+			]
+			id: "610B614E07F84FCF"
+			rewards: [
+				{
+					count: 5
+					id: "E438843BA56230FE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "08D531C52FE850FC"
+					item: "pamhc2crops:strawberryitem"
+					type: "item"
+				}
+				{
+					id: "EFCF440C9D4FE035"
+					item: "pamhc2crops:cucumberitem"
+					type: "item"
+				}
+				{
+					id: "3DDF557F98452A13"
+					item: "pamhc2crops:bellpepperitem"
+					type: "item"
+				}
+				{
+					id: "69C4AB1E3844085C"
+					item: "pamhc2crops:broccoliitem"
+					type: "item"
+				}
+				{
+					id: "2347C04745CA5FA5"
+					item: "pamhc2crops:spinachitem"
+					type: "item"
+				}
+				{
+					id: "B0FC37C771B48B0C"
+					item: "pamhc2crops:grapeitem"
+					type: "item"
+				}
+			]
+			title: "A Gourmet's Diet"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E57635F9F8F9353C"]
+			description: [
+				"&7[NCP Field Memo #3107: Water]"
+				""
+				"Much faster than boiling bottles. It needs copper, so it comes after your first strata."
+			]
+			id: "6BFD17EEA606ADF1"
+			rewards: [
+				{
+					count: 2
+					id: "5BD6808BF0ABA47C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "B0D439839CEE0EC0"
+					item: "toughasnails:water_purifier"
+					type: "item"
+				}
+			]
+			title: "Water Purifier"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BFD17EEA606ADF1"]
+			description: [
+				"&7[NCP Field Memo #3108: Water]"
+				""
+				"Collects rain water. It needs string: three cotton, flax, jute, sisal or kenaf make one string."
+			]
+			id: "1135FD6EB9DEA103"
+			rewards: [
+				{
+					count: 2
+					id: "44F16EA2A3546191"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F7AC4BE88FF83EE4"
+					item: "toughasnails:rain_collector"
+					type: "item"
+				}
+			]
+			title: "Rain Collector"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BFD17EEA606ADF1"]
+			description: [
+				"&7[NCP Field Memo #3109: Thirst]"
+				""
+				"Juices quench thirst better than water."
+			]
+			id: "F2AC9E47C7C0D30A"
+			rewards: [
+				{
+					count: 2
+					id: "545E66F421543953"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D84A572012A55932"
+					item: "toughasnails:apple_juice"
+					type: "item"
+				}
+				{
+					id: "62E4309D3D2E29CF"
+					item: "toughasnails:melon_juice"
+					type: "item"
+				}
+			]
+			title: "Drinks"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1135FD6EB9DEA103"]
+			description: [
+				"&7[NCP Field Memo #3110: Temperature]"
+				""
+				"Wool armour for winter (string makes wool). A thermoregulator keeps a whole room comfortable."
+			]
+			id: "2F57CB34A2E3CC81"
+			rewards: [
+				{
+					count: 2
+					id: "B68DB8A4FFE52A86"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "96156F1F273851DD"
+					item: "toughasnails:wool_chestplate"
+					type: "item"
+				}
+				{
+					id: "8B8AC2C23CF99E34"
+					item: "toughasnails:thermoregulator"
+					type: "item"
+				}
+			]
+			title: "Thermal Comfort"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04724F3E5C33BA04"]
+			description: [
+				"&7[NCP Field Memo #3111: Automation]"
+				""
+				"Hopper botany pots over chests, or the Calla Paddy multiblock, mean you never farm by hand again."
+			]
+			id: "83DF4A10A412AE80"
+			rewards: [
+				{
+					count: 2
+					id: "3629002F555DA354"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "D70D8AF030DB7E53"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+			]
+			title: "Automated Food"
+			x: 6.0d
+			y: -1.5d
+		}
+	]
+	title: "The Calla Kitchen"
+}

@@ -185,11 +185,10 @@ CHAPTERS = [
              "desc": memo("0307", "Chips", "Engraved wafers, cut into chips.")},
             {"key": "ic", "title": "Integrated Circuits", "deps": ["chips"], "tasks": [("gtceu:basic_integrated_circuit", 4), ("gtceu:good_integrated_circuit", 4)],
              "desc": memo("0308", "Integration", "Smaller, cheaper circuits. Your factory just got denser.")},
-            {"key": "ae", "title": "Applied Energistics", "deps": ["machines"],
-             "tasks": ["ae2:controller", "ae2:drive", ("ae2:item_storage_cell_1k", 4), "ae2:terminal"],
-             "desc": memo("0309", "Storage", "Certus quartz from the Crystalline Stratum makes AE2 possible. Store everything in one network.")},
-            {"key": "autocraft", "title": "Autocrafting", "deps": ["ae"], "tasks": ["ae2:pattern_provider", "ae2:molecular_assembler", "ae2:crafting_unit"],
-             "scrip": 8, "desc": memo("0310", "Automation", "Patterns, providers, crafting CPUs. Lud's exam is automation.")},
+            {"key": "autocraft", "title": "Lud's Exam: Automation", "deps": ["machines", "logistics:ae_autocraft"], "tasks": ["check"],
+             "check_title": "Automated", "scrip": 8,
+             "desc": memo("0310", "Automation", "Lud's exam is automation. Finish &bAE2 Autocrafting&r in the &bLogistics & Automation&r chapter,",
+                          "then come back: everything from here on assumes you can autocraft.")},
             {"key": "upgrade", "title": "Reclamation Mk III", "deps": ["machines"], "tasks": ["usrg:tier_upgrade_2"],
              "desc": memo("0311", "Powered Generators",
                           "With Positronic Core II as catalyst, an assembler makes a &bTier 2 upgrade&r. Sneak-right-click a generator with it.",
@@ -197,6 +196,7 @@ CHAPTERS = [
             {"key": "kanthal", "title": "Kanthal Coils", "deps": ["alu"], "tasks": [("gtceu:kanthal_coil_block", 16)],
              "desc": memo("0312", "Heat", "Hotter coils, higher blast furnace recipes.")},
             {"key": "star", "title": "A Full Magnum Star Zwei", "deps": ["autocraft", "upgrade"], "tasks": ["projectexpansion:magnum_star_zwei"],
+             "icon": "projectexpansion:magnum_star_zwei",
              "desc": memo("0314", "Charging", "819,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge.",
                           "&7Lud's automation, piped into capacitors, fills it.")},
             {"key": "core", "title": "Positronic Core III", "deps": ["star", "kanthal"], "tasks": ["positronics:positronic_core_3"],
@@ -401,9 +401,21 @@ CHAPTERS = [
              "scrip": 150, "shape": "hexagon", "size": 2.0,
              "desc": memo("1008", "Clearance", "&bClearance Level 10&r. There is nothing left to clear.")},
             {"key": "door", "title": "Open a Door", "deps": ["card"], "tasks": ["check"], "check_title": "Step through",
+             "icon": "projectexpansion:final_star",
              "shape": "gear", "size": 2.0, "scrip": 0,
              "desc": memo("1009", "The Door", "The network is rebuilt. The Beams hold. The Door hums.",
                           "&8(Stargate Journey and space travel arrive in a later update: this is where they will begin.)")},
         ],
     },
 ]
+
+
+# ---- Side chapters (guides, side paths, shop) live in quests_side.py
+import importlib.util as _ilu
+import os as _os
+
+_spec = _ilu.spec_from_file_location("quests_side", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "quests_side.py"))
+_side = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_side)
+CHAPTERS += _side.SIDE_CHAPTERS
+GROUPS = _side.GROUPS

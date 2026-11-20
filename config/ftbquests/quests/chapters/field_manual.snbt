@@ -1,0 +1,332 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "field_manual"
+	group: "080614699546E512"
+	icon: "gtceu:terminal"
+	id: "CB05D57A65B95900"
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Manual §1: Voltage]"
+				""
+				"Every machine, cable and generator has a tier. Each tier is 4x the voltage of the last:"
+				"&7ULV&r 8 · &fLV&r 32 · &6MV&r 128 · &eHV&r 512 · &8EV&r 2,048 · &fIV&r 8,192"
+				"&dLuV&r 32,768 · &bZPM&r 131,072 · &aUV&r 524,288 · &9UHV&r 2,097,152 EU/t"
+				"&cA machine fed more voltage than its tier explodes.&r Feed it less and it simply can't run higher recipes."
+				"Transformers step voltage up or down by one tier."
+			]
+			icon: "gtceu:lv_transformer_1a"
+			id: "A9494C2E1F87E7B6"
+			rewards: [
+				{
+					id: "45485A62FA2DD06B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "538C40C4A7BB1605"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Voltage Tiers"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["A9494C2E1F87E7B6"]
+			description: [
+				"&7[NCP Field Manual §2: Amps]"
+				""
+				"Power travels in packets: voltage is the size of a packet, amps is how many per tick."
+				"A machine pulls only the amps it needs. Battery buffers and generators push as many amps as they have slots or output."
+				"Two energy hatches on a multiblock = twice the amps."
+			]
+			icon: "gtceu:ulv_battery_buffer_4x"
+			id: "04EEE372A5572E9C"
+			rewards: [
+				{
+					id: "5C1D8718CB0BE833"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8651648FC5783F0B"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Amperage"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04EEE372A5572E9C"]
+			description: [
+				"&7[NCP Field Manual §3: Cables]"
+				""
+				"Each material carries a maximum voltage:"
+				"&7ULV&r red alloy / lead · &fLV&r tin · &6MV&r copper · &eHV&r gold · &8EV&r aluminium · &fIV&r platinum"
+				"&dLuV&r niobium-titanium · &bZPM&r vanadium-gallium · &aUV&r yttrium barium cuprate · &9UHV&r europium"
+				"Bare &bwires&r shock you and lose more EU per block; &bcables&r (wire + rubber) are insulated and lose less."
+				"Thicker cables (2x, 4x, 8x, 16x) carry more amps. Too many amps and a cable burns."
+			]
+			icon: "gtceu:tin_single_cable"
+			id: "A508E74C763A3DDD"
+			rewards: [
+				{
+					id: "E5718A13513FC42C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "EE195A189DF0BA9E"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Wires and Cables"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["A508E74C763A3DDD"]
+			description: [
+				"&7[NCP Field Manual §4: Overclocking]"
+				""
+				"A recipe has a minimum tier. A machine one tier higher runs it twice as fast for four times the power (overclocking)."
+				"Higher-tier machines also get more slots, so byproducts (chanced outputs) appear only in better machines."
+			]
+			icon: "gtceu:lv_macerator"
+			id: "2E1802380ED2AF92"
+			rewards: [
+				{
+					id: "9DA1B92AF05F7105"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1B84537E6FE69144"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Machine Tiers and Overclocking"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E1802380ED2AF92"]
+			description: [
+				"&7[NCP Field Manual §5: Multiblocks]"
+				""
+				"A controller plus a structure of casings. Replace casings with &bbuses&r (items), &bhatches&r (fluids, energy) and a &bmaintenance hatch&r."
+				"Right-click the controller with the &bGT Terminal&r to preview and even auto-build the structure."
+				"Maintenance problems slow a multiblock: fix them with the right tools, or use an auto-maintenance hatch later."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "C1A7F80566923295"
+			rewards: [
+				{
+					id: "F4EBEDCDDEE60848"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0F3F1ACE55919004"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Multiblocks"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["A9494C2E1F87E7B6"]
+			description: [
+				"&7[NCP Field Manual §6: Tools]"
+				""
+				"Tools are crafting ingredients that lose durability: hammer (plates), wrench (casings, machines), file, saw,"
+				"screwdriver, wire cutter, knife and mortar. Keep a full set in your toolbelt."
+			]
+			icon: "gtceu:wrought_iron_hammer"
+			id: "23B0AB8212D91E8C"
+			rewards: [
+				{
+					id: "195A7A2C2D36A884"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6183ED54A505A4FB"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "GregTech Tools"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23B0AB8212D91E8C"]
+			description: [
+				"&7[NCP Field Manual §7: Circuit Numbers]"
+				""
+				"Some recipes need a &bprogrammed circuit&r set to a number. It is never consumed; it just tells the machine which recipe you want."
+				"Strata enrichment uses them when two recipes share the same input."
+			]
+			icon: "gtceu:programmed_circuit"
+			id: "129516A74765B7C2"
+			rewards: [
+				{
+					id: "24CD8F95313C0A6E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4867C51EA3C50955"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Programmed Circuits"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["129516A74765B7C2"]
+			description: [
+				"&7[NCP Field Manual §8: Strata]"
+				""
+				"This world has no ores, and ore blocks drop nothing. Everything comes from &bStrata&r: layers of the old world."
+				"Seed I comes from hammering gravel and the Ore Generator. Seed II-V come from enrichment (Positronic Cores) and upgraded generators."
+				"See the &bStrata Index&r chapter for what every stratum gives."
+			]
+			icon: "positronics:ferrous_stratum"
+			id: "942E49208872126F"
+			rewards: [
+				{
+					id: "00A069806576C985"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "50DC24660F5AE92B"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Strata, Not Ores"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["942E49208872126F"]
+			description: [
+				"&7[NCP Field Manual §9: EMC]"
+				""
+				"Only processed raw materials (dusts and their ingots) have EMC, valued by seed tier. Strata, gates and crafted parts have none."
+				"There are no collectors or condensers: EMC comes only from burning your own production."
+				"Stars charged in a Beam Capacitor (Antimatter Relay) are the keys to the Positronic Cores."
+			]
+			icon: "projecte:transmutation_tablet"
+			id: "8CDE228A125639A5"
+			rewards: [
+				{
+					id: "6EF19528D3CDAD60"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "B316FAF19F542CE8"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Positronic Memory Rules"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["8CDE228A125639A5"]
+			description: [
+				"&7[NCP Field Manual §10: Gates]"
+				""
+				"&bClearance Card N&r is needed to assemble machine hulls of tier N+1. Cards are made at their own tier."
+				"&bPositronic Cores&r I-V are never consumed: they catalyse strata enrichment, generator upgrades and some cards."
+				"Each Core is built one tier before its strata are needed."
+			]
+			icon: "positronics:clearance_card_1"
+			id: "7AA929DC3F594686"
+			rewards: [
+				{
+					id: "D73A22A6A9E807CA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "605353014211E388"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Clearance and Cores"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7AA929DC3F594686" "C1A7F80566923295"]
+			description: [
+				"&7[NCP Field Manual §11: Survival]"
+				""
+				"Thirst: drink purified water. Temperature: heat sources, armour, shade. Seasons: winter is cold, crops follow seasons."
+				"Variety: every few new foods grant a heart. Nothing spawns: mob drops come from technology."
+			]
+			icon: "toughasnails:thermometer"
+			id: "7FB7318C95CECB32"
+			rewards: [
+				{
+					id: "48ED5B6605562ED6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "501A5905765945A6"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Staying Alive"
+			x: 10.0d
+			y: 1.0d
+		}
+	]
+	title: "NCP Field Manual"
+}

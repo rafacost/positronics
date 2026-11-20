@@ -65,14 +65,18 @@ def main():
         rows = {}
         pos = {}
         for q in quests:
+            if "pos" in q:
+                pos[q["key"]] = q["pos"]
+                continue
             col = depth[q["key"]]
             n = rows.get(col, 0)
             rows[col] = n + 1
             y = (n + 1) // 2 * (1 if n % 2 else -1) * 1.5  # 0, +1.5, -1.5, +3, -3 ...
             pos[q["key"]] = (col * 2.0, y)
 
+        group = qid("group", ch["group"]) if ch.get("group") else ""
         lines = ["{", "\tdefault_hide_dependency_lines: false", '\tdefault_quest_shape: ""',
-                 f"\tfilename: {s(ch['filename'])}", '\tgroup: ""', f"\ticon: {s(ch['icon'])}",
+                 f"\tfilename: {s(ch['filename'])}", f"\tgroup: {s(group)}", f"\ticon: {s(ch['icon'])}",
                  f"\tid: {s(qid(cid))}", f"\torder_index: {ch['order']}", "\tquest_links: [ ]", "\tquests: ["]
         check(ch["icon"], f"{cid} icon")
         for q in quests:
@@ -81,6 +85,8 @@ def main():
             deps += [qid(*x.split(":")) for x in q.get("deps", []) if ":" in x]  # cross-chapter "chapter:key"
             deps += list(q.get("external_deps", []))
             lines.append("\t\t{")
+            if q.get("repeat"):
+                lines.append("\t\t\tcan_repeat: true")
             if deps:
                 lines.append("\t\t\tdependencies: [" + " ".join(s(x) for x in deps) + "]")
             lines.append("\t\t\tdescription: [")
@@ -125,6 +131,8 @@ def main():
                 else:
                     item, count = (t, 1) if isinstance(t, str) else t
                     check(item, f"{cid}/{k} task")
+                    if q.get("consume"):
+                        lines.append("\t\t\t\t\tconsume_items: true")
                     if count > 1:
                         lines.append(f"\t\t\t\t\tcount: {count}L")
                     lines.append(f"\t\t\t\t\tid: {tid}")
@@ -143,6 +151,17 @@ def main():
         with open(path, "w", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(lines))
         print(f"wrote {ch['filename']}.snbt: {len(quests)} quests")
+
+    # Chapter groups (main chapters stay ungrouped at the top).
+    groups = getattr(data, "GROUPS", [])
+    if groups:
+        glines = ["{", "\tchapter_groups: ["]
+        for g in groups:
+            glines += ["\t\t{", f"\t\t\tid: {s(qid('group', g))}", f"\t\t\ttitle: {s(g)}", "\t\t}"]
+        glines += ["\t]", "}", ""]
+        with open(os.path.join(os.path.dirname(OUT), "chapter_groups.snbt"), "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(glines))
+        print(f"wrote chapter_groups.snbt: {len(groups)} groups")
 
     if unknown:
         print(f"\n{len(unknown)} UNKNOWN ITEMS:")

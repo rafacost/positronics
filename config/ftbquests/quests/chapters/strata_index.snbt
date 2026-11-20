@@ -1,0 +1,1017 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "strata_index"
+	group: "080614699546E512"
+	icon: "positronics:cupric_stratum"
+	id: "E542D751488A71E7"
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Iron"
+				"&bByproducts:&r Nickel (10%), Manganese (5%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+				"&7Furnace: 3 Iron Nuggets. Crusher: one whole dust."
+			]
+			id: "AE211E57DCD5A0A3"
+			rewards: [
+				{
+					id: "2CA57229E196B3E3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "85DD3A1117FA22E9"
+					item: "positronics:ferrous_stratum"
+					type: "item"
+				}
+			]
+			title: "Ferrous Stratum"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Copper"
+				"&bByproducts:&r Gold (5%), Cobalt (3%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+				"&7Furnace: 3 Copper Nuggets. Crusher: one whole dust."
+			]
+			id: "E7F2F2897A4DE9ED"
+			rewards: [
+				{
+					id: "F87827C875FD3C3D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7FD61B1E9048EF32"
+					item: "positronics:cupric_stratum"
+					type: "item"
+				}
+			]
+			title: "Cupric Stratum"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Tin"
+				"&bByproducts:&r Zinc (10%), Antimony (3%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+				"&7Furnace: 3 Tin Nuggets. Crusher: one whole dust."
+			]
+			id: "1F2E7C145AF094E0"
+			rewards: [
+				{
+					id: "EED3ED2D5A1FF4C3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A1EA6FC38239FA3E"
+					item: "positronics:stannic_stratum"
+					type: "item"
+				}
+			]
+			title: "Stannic Stratum"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Coal"
+				"&bByproducts:&r Graphite (5%), Sulfur (8%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+			]
+			id: "08D25067D506A433"
+			rewards: [
+				{
+					id: "C25379FAF04903AA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4A93B0F05800CEA9"
+					item: "positronics:carbonic_stratum"
+					type: "item"
+				}
+			]
+			title: "Carbonic Stratum"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Lead"
+				"&bByproducts:&r Silver (5%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+				"&7Furnace: 3 Lead Nuggets. Crusher: one whole dust."
+			]
+			id: "C9A601E8238E3BD4"
+			rewards: [
+				{
+					id: "98191055D0699577"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0011A5D6D6297069"
+					item: "positronics:plumbic_stratum"
+					type: "item"
+				}
+			]
+			title: "Plumbic Stratum"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Nickel"
+				"&bByproducts:&r Cobalt (5%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+				"&7Furnace: 3 Nickel Nuggets. Crusher: one whole dust."
+			]
+			id: "3B599250D85154A2"
+			rewards: [
+				{
+					id: "217B791A1458BAAD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1D91B41934280109"
+					item: "positronics:nickelous_stratum"
+					type: "item"
+				}
+			]
+			title: "Nickelous Stratum"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed I]"
+				""
+				"&bMain:&r Redstone"
+				"&bByproducts:&r Glowstone (2%)"
+				"&bSource:&r hammered gravel (sometimes), the Sifter, and the Ore Generator (Tier 1)."
+			]
+			id: "628EF0B0EE7386BD"
+			rewards: [
+				{
+					id: "39C3DFEABE55F3A7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "07E7BC16184F6233"
+					item: "positronics:rubric_stratum"
+					type: "item"
+				}
+			]
+			title: "Rubric Stratum"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Bauxite"
+				"&bByproducts:&r Gallium (5%), Rutile (3%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "2F68A60FCD9CE2B1"
+			rewards: [
+				{
+					id: "C5AE905182E17F03"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8DC1A01769A63EF6"
+					item: "positronics:bauxitic_stratum"
+					type: "item"
+				}
+			]
+			title: "Bauxitic Stratum"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Silicon Dioxide"
+				"&bByproducts:&r Glass (20%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "EA5FEF0B3B6EB3D9"
+			rewards: [
+				{
+					id: "FF61EECE70255E30"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "9FA38D02A629D398"
+					item: "positronics:siliceous_stratum"
+					type: "item"
+				}
+			]
+			title: "Siliceous Stratum"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Gallium"
+				"&bByproducts:&r Arsenic (50%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "1050C8BEA329CBD8"
+			rewards: [
+				{
+					id: "30BBD86746682832"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78B4D2B514025519"
+					item: "positronics:semimetal_stratum"
+					type: "item"
+				}
+			]
+			title: "Semimetal Stratum"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Gold"
+				"&bByproducts:&r Silver (20%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "2E0E564E0779341F"
+			rewards: [
+				{
+					id: "B316880C10AAFE03"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D1E266BD548B636B"
+					item: "positronics:precious_stratum"
+					type: "item"
+				}
+			]
+			title: "Precious Stratum"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Salt"
+				"&bByproducts:&r Lithium (5%), Rock Salt (15%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "22911CD03DE86F98"
+			rewards: [
+				{
+					id: "816416B25F9B5520"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6FB9FD6856370AE4"
+					item: "positronics:saline_stratum"
+					type: "item"
+				}
+			]
+			title: "Saline Stratum"
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Sulfur"
+				"&bByproducts:&r Pyrite (20%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "DB55907FA49D8EA7"
+			rewards: [
+				{
+					id: "A9D0AA1979328EAE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62067A289DAB9F90"
+					item: "positronics:sulfuric_stratum"
+					type: "item"
+				}
+			]
+			title: "Sulfuric Stratum"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Antimony"
+				"&bByproducts:&r Cobalt (10%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "8438EF8B391662BD"
+			rewards: [
+				{
+					id: "A5FFA1146412900B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "75595D753094593D"
+					item: "positronics:antimonial_stratum"
+					type: "item"
+				}
+			]
+			title: "Antimonial Stratum"
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed II]"
+				""
+				"&bMain:&r Certus Quartz"
+				"&bByproducts:&r Nether Quartz (30%)"
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
+			]
+			id: "860F84B16A7258E6"
+			rewards: [
+				{
+					id: "259E53C5A106AF37"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "08E2A99066DA42FB"
+					item: "positronics:crystalline_stratum"
+					type: "item"
+				}
+			]
+			title: "Crystalline Stratum"
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Rutile"
+				"&bByproducts:&r Ilmenite (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "131A31A4AC1454FC"
+			rewards: [
+				{
+					id: "C92DE9D99E82851C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "C998EA4EEB86C838"
+					item: "positronics:titanic_stratum"
+					type: "item"
+				}
+			]
+			title: "Titanic Stratum"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Chromite"
+				"&bByproducts:&r Magnesium (10%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "B87B14CFA478F51C"
+			rewards: [
+				{
+					id: "AAD056F3751D7214"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "21FE086BE968F711"
+					item: "positronics:chromic_stratum"
+					type: "item"
+				}
+			]
+			title: "Chromic Stratum"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Vanadium Magnetite"
+				"&bByproducts:&r Magnetite (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "963376777EF08413"
+			rewards: [
+				{
+					id: "E4ED7C7A30CDFCC1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "48B47F9487013C29"
+					item: "positronics:vanadic_stratum"
+					type: "item"
+				}
+			]
+			title: "Vanadic Stratum"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Diamond"
+				"&bByproducts:&r Emerald (10%), Sapphire (10%), Ruby (10%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "8B7F63393C1188BE"
+			rewards: [
+				{
+					id: "75FAB7DCF069D005"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "199DAAF6F041F050"
+					item: "positronics:lustrous_stratum"
+					type: "item"
+				}
+			]
+			title: "Lustrous Stratum"
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Spodumene"
+				"&bByproducts:&r Lepidolite (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "88AFA58DB5ED4AA7"
+			rewards: [
+				{
+					id: "CEB8010F17A3E385"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4DA338A919E481AF"
+					item: "positronics:lithic_stratum"
+					type: "item"
+				}
+			]
+			title: "Lithic Stratum"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Topaz"
+				"&bByproducts:&r Calcite (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "A42B5E6322A72E25"
+			rewards: [
+				{
+					id: "4AA87B79D4003E37"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5B2911517CA88827"
+					item: "positronics:fluoric_stratum"
+					type: "item"
+				}
+			]
+			title: "Fluoric Stratum"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Oilsands"
+				"&bByproducts:&r Coal (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "30F2DE6C874FAC21"
+			rewards: [
+				{
+					id: "6FB5BBFDF4A2BA96"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F25BB134F4FBF1DD"
+					item: "positronics:bituminous_stratum"
+					type: "item"
+				}
+			]
+			title: "Bituminous Stratum"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed III]"
+				""
+				"&bMain:&r Pitchblende"
+				"&bByproducts:&r Uraninite (20%)"
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
+			]
+			id: "059CCDC0ADD9EAF6"
+			rewards: [
+				{
+					id: "39A1FE41BF70A2D2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "737AEDD0F2EABC24"
+					item: "positronics:uranic_stratum"
+					type: "item"
+				}
+			]
+			title: "Uranic Stratum"
+			x: 5.0d
+			y: 10.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Scheelite"
+				"&bByproducts:&r Tungstate (30%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "AFEE66EF2FDF72A5"
+			rewards: [
+				{
+					id: "76EF2972D8DFCB6A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1B38B1B8E26182E1"
+					item: "positronics:tungstic_stratum"
+					type: "item"
+				}
+			]
+			title: "Tungstic Stratum"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Molybdenite"
+				"&bByproducts:&r Wulfenite (15%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "BA7FEBA6AD89CF1A"
+			rewards: [
+				{
+					id: "B8813C755DF3F131"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D1F30CBE83B3B3C3"
+					item: "positronics:molybdic_stratum"
+					type: "item"
+				}
+			]
+			title: "Molybdic Stratum"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Cooperite"
+				"&bByproducts:&r Platinum Group Sludge (10%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "7DD649B4BA9DB372"
+			rewards: [
+				{
+					id: "F9F0ECD7CFBA5E39"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "DDF293A94E837BB6"
+					item: "positronics:platinic_stratum"
+					type: "item"
+				}
+			]
+			title: "Platinic Stratum"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Monazite"
+				"&bByproducts:&r Bastnasite (30%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "D5A5CE3182413286"
+			rewards: [
+				{
+					id: "D9AEA1468A941786"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F18037E5EEAE29F8"
+					item: "positronics:lanthanic_stratum"
+					type: "item"
+				}
+			]
+			title: "Lanthanic Stratum"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Pyrochlore"
+				"&bByproducts:&r Tantalite (20%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "3C20219F9784B476"
+			rewards: [
+				{
+					id: "19C6FD2392223D56"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3327669DA83E3D36"
+					item: "positronics:niobic_stratum"
+					type: "item"
+				}
+			]
+			title: "Niobic Stratum"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Sphalerite"
+				"&bByproducts:&r Indium (5%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "7607BD300512776D"
+			rewards: [
+				{
+					id: "E8575960B9EE68FA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4660560496D305DA"
+					item: "positronics:indic_stratum"
+					type: "item"
+				}
+			]
+			title: "Indic Stratum"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Beryllium"
+				"&bByproducts:&r Emerald (15%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "59E25FB2942EC0F0"
+			rewards: [
+				{
+					id: "42F559F46BFB7218"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "BBC742DE1C37763F"
+					item: "positronics:beryllic_stratum"
+					type: "item"
+				}
+			]
+			title: "Beryllic Stratum"
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed IV]"
+				""
+				"&bMain:&r Iridium"
+				"&bByproducts:&r Osmium (30%)"
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
+			]
+			id: "F9121AB908950852"
+			rewards: [
+				{
+					id: "687875F34E098E60"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "CEAAFC1E2C2AD67E"
+					item: "positronics:osmic_stratum"
+					type: "item"
+				}
+			]
+			title: "Osmic Stratum"
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Naquadah"
+				"&bByproducts:&r Enriched Naquadah (10%)"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "BFD667A472730562"
+			rewards: [
+				{
+					id: "BFAFBF387B2DD946"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "DA6CC5E721BAECA3"
+					item: "positronics:naquadic_stratum"
+					type: "item"
+				}
+			]
+			title: "Naquadic Stratum"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Europium"
+				"&bByproducts:&r Samarium (20%)"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "F205A8B79372DE5D"
+			rewards: [
+				{
+					id: "24DC35B08B07D9A2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "15EBBEE758A3AD6D"
+					item: "positronics:europic_stratum"
+					type: "item"
+				}
+			]
+			title: "Europic Stratum"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Trinium"
+				"&bByproducts:&r Naquadria (5%)"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "18D190F026F4ABF4"
+			rewards: [
+				{
+					id: "DA080D6C7C97946F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "BA031AFCD378E139"
+					item: "positronics:triniac_stratum"
+					type: "item"
+				}
+			]
+			title: "Triniac Stratum"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Duranium"
+				"&bByproducts:&r Tritanium (5%)"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "9CD254E498058789"
+			rewards: [
+				{
+					id: "2E3BCA70415C9270"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "E5A9DCA51BA72292"
+					item: "positronics:duranic_stratum"
+					type: "item"
+				}
+			]
+			title: "Duranic Stratum"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Plutonium"
+				"&bByproducts:&r Americium (10%)"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "4FE1C0FA4D94CB43"
+			rewards: [
+				{
+					id: "E2D16F7FC44A2BEC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "97D6A971AB4D8CAF"
+					item: "positronics:actinic_stratum"
+					type: "item"
+				}
+			]
+			title: "Actinic Stratum"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&7[Strata Index: Seed V]"
+				""
+				"&bMain:&r Neutronium"
+				"&bByproducts:&r none"
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
+			]
+			id: "4A8F72394EC5F0F8"
+			rewards: [
+				{
+					id: "FC0D422B64909AF9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "966648F4288E7839"
+					item: "positronics:neutronic_stratum"
+					type: "item"
+				}
+			]
+			title: "Neutronic Stratum"
+			x: 10.0d
+			y: 7.5d
+		}
+	]
+	title: "Strata Index"
+}

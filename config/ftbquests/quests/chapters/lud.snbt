@@ -286,54 +286,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6E954E802B091B06"]
-			description: [
-				"&7[NCP Field Memo #0309: Storage]"
-				""
-				"Certus quartz from the Crystalline Stratum makes AE2 possible. Store everything in one network."
-			]
-			id: "B2B83EF01DCED1D4"
-			rewards: [
-				{
-					count: 4
-					id: "048CD6BEE8069514"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "47B73FCFFB3EF4F1"
-					item: "ae2:controller"
-					type: "item"
-				}
-				{
-					id: "CA47477DC0279FF7"
-					item: "ae2:drive"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "D31956C0AAC9109D"
-					item: "ae2:item_storage_cell_1k"
-					type: "item"
-				}
-				{
-					id: "FBD684FAE9A0CB1E"
-					item: "ae2:terminal"
-					type: "item"
-				}
-			]
-			title: "Applied Energistics"
-			x: 8.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["B2B83EF01DCED1D4"]
+			dependencies: ["6E954E802B091B06" "688D6B9877860743"]
 			description: [
 				"&7[NCP Field Memo #0310: Automation]"
 				""
-				"Patterns, providers, crafting CPUs. Lud's exam is automation."
+				"Lud's exam is automation. Finish &bAE2 Autocrafting&r in the &bLogistics & Automation&r chapter,"
+				"then come back: everything from here on assumes you can autocraft."
 			]
 			id: "603A1EBE389415F0"
 			rewards: [
@@ -347,22 +305,12 @@
 			tasks: [
 				{
 					id: "A1B4C9B3E642B0A1"
-					item: "ae2:pattern_provider"
-					type: "item"
-				}
-				{
-					id: "0167D8F7EB3B10C5"
-					item: "ae2:molecular_assembler"
-					type: "item"
-				}
-				{
-					id: "329012056DA0D894"
-					item: "ae2:crafting_unit"
-					type: "item"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
-			title: "Autocrafting"
-			x: 10.0d
+			title: "Lud's Exam: Automation"
+			x: 8.0d
 			y: 1.5d
 		}
 		{
@@ -429,6 +377,7 @@
 				"819,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
 				"&7Lud's automation, piped into capacitors, fills it."
 			]
+			icon: "projectexpansion:magnum_star_zwei"
 			id: "49B96889FFBA43AD"
 			rewards: [
 				{
@@ -446,8 +395,8 @@
 				}
 			]
 			title: "A Full Magnum Star Zwei"
-			x: 12.0d
-			y: 0.0d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["49B96889FFBA43AD" "E33DAABE32AFEA4A"]
@@ -476,7 +425,7 @@
 				}
 			]
 			title: "Positronic Core III"
-			x: 14.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -513,7 +462,7 @@
 				}
 			]
 			title: "Seed III"
-			x: 16.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -542,7 +491,7 @@
 				}
 			]
 			title: "Clearance Level 3"
-			x: 18.0d
+			x: 16.0d
 			y: 0.0d
 		}
 	]

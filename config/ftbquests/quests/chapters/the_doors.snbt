@@ -241,6 +241,7 @@
 				"The network is rebuilt. The Beams hold. The Door hums."
 				"&8(Stargate Journey and space travel arrive in a later update: this is where they will begin.)"
 			]
+			icon: "projectexpansion:final_star"
 			id: "89651FE649BC1D02"
 			shape: "gear"
 			size: 2.0d

@@ -1,0 +1,559 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "logistics"
+	group: "7189CCE6C12A632F"
+	icon: "pipez:item_pipe"
+	id: "BD343A4500907F62"
+	order_index: 30
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #3001: Pipes]"
+				""
+				"Item pipes pull from a generator and push into a chest. Shift-right-click with the wrench to set which side extracts."
+				"Fluid and energy pipes work the same way. Upgrades make them faster and add filters."
+			]
+			id: "F3014744165A41A8"
+			rewards: [
+				{
+					count: 2
+					id: "F6E7537650427042"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "763F792876E15CB3"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "AE3AD1627C180919"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			title: "Pipez"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F3014744165A41A8"]
+			description: [
+				"&7[NCP Field Memo #3002: Pipes]"
+				""
+				"Pipe water from the spring, power from your panels. GT cables are better for EU; Pipez energy pipes carry FE."
+			]
+			id: "3A0A6C2952D4C227"
+			rewards: [
+				{
+					count: 2
+					id: "DD42FD9A3AD19018"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "95AB794285A12C56"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "9066DF5F9103A311"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+				{
+					id: "65A67FA17E5218A3"
+					item: "pipez:basic_upgrade"
+					type: "item"
+				}
+			]
+			title: "Fluids and Power"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Memo #3003: Drawers]"
+				""
+				"Drawers hold huge amounts of one item. Perfect for cobblestone, gravel and dust."
+			]
+			id: "A015B06B45EF7545"
+			rewards: [
+				{
+					count: 2
+					id: "12818FBC3CDC019E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "A1E612059DABBB6F"
+					item: "functionalstorage:oak_1"
+					type: "item"
+				}
+			]
+			title: "Functional Storage"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["A015B06B45EF7545"]
+			description: [
+				"&7[NCP Field Memo #3004: Compacting]"
+				""
+				"Put nuggets in, take ingots out. Smelted strata give nuggets: this turns them into ingots automatically."
+			]
+			id: "972F74CB9CF71BCE"
+			rewards: [
+				{
+					count: 2
+					id: "61C9971607B82146"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "9279FBA49D58AD24"
+					item: "functionalstorage:compacting_drawer"
+					type: "item"
+				}
+			]
+			title: "Compacting Drawers"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["972F74CB9CF71BCE"]
+			description: [
+				"&7[NCP Field Memo #3005: Controller]"
+				""
+				"One block that inserts into every drawer around it. Pusher and puller upgrades move items for you."
+			]
+			id: "8C1FAEE2E095EE57"
+			rewards: [
+				{
+					count: 2
+					id: "BD4CE1A236E5B9C0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6A2D0E5B7D82731F"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "76333C6E657ECFC0"
+					item: "functionalstorage:pusher_upgrade"
+					type: "item"
+				}
+			]
+			title: "Storage Controller"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A0A6C2952D4C227"]
+			description: [
+				"&7[NCP Field Memo #3006: Programming]"
+				""
+				"Write a tiny program on a disk to move items between any inventories on the cable. NCP approves of scripts."
+			]
+			id: "32FEBAA57F014C64"
+			rewards: [
+				{
+					count: 2
+					id: "83AC88622679296D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "714170B59B955083"
+					item: "sfm:manager"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4D9CDEAD9F8DC4E1"
+					item: "sfm:cable"
+					type: "item"
+				}
+				{
+					id: "7F52B817C3BFA2E5"
+					item: "sfm:disk"
+					type: "item"
+				}
+			]
+			title: "Super Factory Manager"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["32FEBAA57F014C64"]
+			description: [
+				"&7[NCP Field Memo #3007: Networks]"
+				""
+				"A controller and cables move items, fluids and energy by channel. Compact and fast."
+			]
+			id: "0429F4CB9D59D57C"
+			rewards: [
+				{
+					count: 2
+					id: "7DECA6952E743D67"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0F6227E8921B07A8"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "00A200187625C82B"
+					item: "xnet:netcable_blue"
+					type: "item"
+				}
+			]
+			title: "XNet"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8C1FAEE2E095EE57"]
+			description: [
+				"&7[NCP Field Memo #3008: AE2]"
+				""
+				"There are no meteorites here: NCP assembles the four presses in an LV assembler from steel and a sample."
+				"Certus quartz crystals grow from Crystalline Stratum dust in an autoclave. Diamonds can be synthesised from graphite (Carbonic Stratum)."
+			]
+			id: "B64D79A331C06718"
+			rewards: [
+				{
+					count: 6
+					id: "6E5318661B30CD6F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4D3E07BFC7BD0602"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "2E6C82ED51A61C68"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "E48D468CEED3F685"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "052EB510C24EC5C6"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "A23FC88F97AD91BC"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+			]
+			title: "Inscriber Presses"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["B64D79A331C06718"]
+			description: [
+				"&7[NCP Field Memo #3009: Fluix]"
+				""
+				"Charge certus in a charger (it takes GT power), drop it in water with redstone and quartz: fluix."
+			]
+			id: "AEC423028200A3E0"
+			rewards: [
+				{
+					count: 2
+					id: "2EE01735F759762B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F29353871A8BB04E"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "15265852B3CD8B56"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+			]
+			title: "Fluix"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AEC423028200A3E0"]
+			description: [
+				"&7[NCP Field Memo #3010: Storage]"
+				""
+				"One network, every item. The energy acceptor takes GT power."
+			]
+			id: "2ADEC9C6705C9431"
+			rewards: [
+				{
+					count: 6
+					id: "4D2297750F0C8E69"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "66EDA6620B951E79"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2852BFDE1F72EF88"
+					item: "ae2:item_storage_cell_1k"
+					type: "item"
+				}
+				{
+					id: "F704C2313114CCB6"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					id: "90F82FF8A55873EC"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+			]
+			title: "ME Storage"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ADEC9C6705C9431"]
+			description: [
+				"&7[NCP Field Memo #3011: Autocrafting]"
+				""
+				"Encode patterns, provide them to assemblers and machines, and let crafting CPUs do the rest."
+				"&bThis is Lud's exam.&r GT machines can be pattern-provided too."
+			]
+			id: "688D6B9877860743"
+			rewards: [
+				{
+					count: 10
+					id: "0A2DBF9575AD3C85"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6DD37032E863EA58"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "E91AA0FDC3EC965E"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "975E8FD38139E80C"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "DB9AC84C7D52EAEE"
+					item: "ae2:crafting_unit"
+					type: "item"
+				}
+			]
+			title: "AE2 Autocrafting"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["688D6B9877860743"]
+			description: [
+				"&7[NCP Field Memo #3012: Bigger]"
+				""
+				"More pattern slots, more sides, less cable."
+			]
+			id: "F97B0F0A4081FE77"
+			rewards: [
+				{
+					count: 2
+					id: "46EA2F5A04828281"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7EC2BBD70B51D854"
+					item: "expatternprovider:ex_pattern_provider"
+					type: "item"
+				}
+				{
+					id: "BB34522FD70940AC"
+					item: "expatternprovider:ex_interface"
+					type: "item"
+				}
+			]
+			title: "ExtendedAE"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F97B0F0A4081FE77"]
+			description: [
+				"&7[NCP Field Memo #3013: Matrix]"
+				""
+				"A multiblock molecular assembler for thousands of crafts at once."
+			]
+			id: "ED2E6B2953CB262D"
+			rewards: [
+				{
+					count: 2
+					id: "095C543837343391"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3A43DF6D3A788B16"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+			]
+			title: "Assembler Matrix"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["F97B0F0A4081FE77"]
+			description: [
+				"&7[NCP Field Memo #3014: Capacity]"
+				""
+				"Storage cells and crafting units measured in millions."
+			]
+			id: "57A4D33603153FCA"
+			rewards: [
+				{
+					count: 2
+					id: "5C99839BE64E18D4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3E18D7492EE79497"
+					item: "megacells:cell_component_1m"
+					type: "item"
+				}
+				{
+					id: "2D789F8EDB792E1F"
+					item: "megacells:mega_crafting_unit"
+					type: "item"
+				}
+			]
+			title: "MEGA Cells"
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["688D6B9877860743"]
+			description: [
+				"&7[NCP Field Memo #3015: EMC]"
+				""
+				"AppliedE lets your ME network read and write Positronic Memory: learned items become craftable from EMC."
+			]
+			id: "08CA10195AD4ECED"
+			rewards: [
+				{
+					count: 2
+					id: "24C3C5173B337830"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "30D9B8CC505B013C"
+					item: "appliede:emc_module"
+					type: "item"
+				}
+				{
+					id: "7996DE48E5432EAE"
+					item: "appliede:transmutation_terminal"
+					type: "item"
+				}
+			]
+			title: "Positronic Memory in ME"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57A4D33603153FCA"]
+			description: [
+				"&7[NCP Field Memo #3016: Late Game]"
+				""
+				"AdvancedAE's quantum computer: crafting CPUs at a scale even NCP finds excessive."
+			]
+			id: "D02F9D04ACDBD415"
+			rewards: [
+				{
+					count: 2
+					id: "C2183E12FF9D3B1A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "85852930AAB70AFF"
+					item: "advanced_ae:quantum_core"
+					type: "item"
+				}
+			]
+			title: "Quantum Computer"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Logistics & Automation"
+}

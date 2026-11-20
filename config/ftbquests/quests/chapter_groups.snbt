@@ -1,0 +1,16 @@
+{
+	chapter_groups: [
+		{
+			id: "080614699546E512"
+			title: "Field Manual"
+		}
+		{
+			id: "7189CCE6C12A632F"
+			title: "Side Paths"
+		}
+		{
+			id: "54FF0D80BA2ED911"
+			title: "NCP Shop"
+		}
+	]
+}

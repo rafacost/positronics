@@ -1,0 +1,1083 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ncp_shop"
+	group: "54FF0D80BA2ED911"
+	icon: "positronics:ncp_scrip"
+	id: "AFA32446E8B697F5"
+	order_index: 40
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Wheat Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:wheat_seeds"
+			id: "620642A844EE3BDA"
+			rewards: [
+				{
+					count: 2
+					id: "54F5469C710233A1"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "01A4437A54339386"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wheat Seeds"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Carrots for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:carrot"
+			id: "AFB2F51453D5F4B5"
+			rewards: [
+				{
+					count: 2
+					id: "DF916000CCC541EE"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "708A7700850262F5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Carrots"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Potatoes for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:potato"
+			id: "AEDBC08A035C624A"
+			rewards: [
+				{
+					count: 2
+					id: "04FA78F09CFA1887"
+					item: "minecraft:potato"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "BA2AC99DCBDA3312"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Potatoes"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Pumpkin Seeds for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:pumpkin_seeds"
+			id: "936A57348912152A"
+			rewards: [
+				{
+					count: 2
+					id: "2D0C0C668C1906A2"
+					item: "minecraft:pumpkin_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "D8A4B91D72025348"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pumpkin Seeds"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Melon Seeds for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:melon_seeds"
+			id: "D1344C3666FA2F88"
+			rewards: [
+				{
+					count: 2
+					id: "F96A6139FFDA3536"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "3E1DD2E0F730CB0B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Melon Seeds"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Sugar Cane for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:sugar_cane"
+			id: "7E7E0F42C4C181B8"
+			rewards: [
+				{
+					count: 2
+					id: "D2BE0C7AF3F22153"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "8EAD8E4645ED871D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sugar Cane"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"2x Cocoa Beans for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:cocoa_beans"
+			id: "6272DDB783FD8662"
+			rewards: [
+				{
+					count: 2
+					id: "4FFFDD6159677D17"
+					item: "minecraft:cocoa_beans"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "539364E80FA12FB3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cocoa Beans"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"4x Apples for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:apple"
+			id: "9321D3B2FCC0540C"
+			rewards: [
+				{
+					count: 4
+					id: "6ED5436C9E74CF29"
+					item: "minecraft:apple"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "CD9E3A75C6187D1E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Apples"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Oak Sapling for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:oak_sapling"
+			id: "FD33D31D9390C2B4"
+			rewards: [
+				{
+					id: "50E661AF1E58C73E"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "C7A7BE8D63652C0F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Oak Sapling"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Birch Sapling for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:birch_sapling"
+			id: "05FB1D96F2318A55"
+			rewards: [
+				{
+					id: "723AC1B568A2E212"
+					item: "minecraft:birch_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "4DAF616B1EEBAC3C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Birch Sapling"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Spruce Sapling for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:spruce_sapling"
+			id: "EA7C61EEEC42DB49"
+			rewards: [
+				{
+					id: "20DCAB45B1DBDB13"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "E111A5FBE7850D20"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Spruce Sapling"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Rubber Sapling for 3 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "gtceu:rubber_sapling"
+			id: "0B4C511FB095D63B"
+			rewards: [
+				{
+					id: "87A07C0F25BF710E"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "1B4F05C443CFE1EC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rubber Sapling"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Apple Tree Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2trees:apple_sapling"
+			id: "83799D6A6D6FE7DF"
+			rewards: [
+				{
+					id: "1CE87CDD807EB5C7"
+					item: "pamhc2trees:apple_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "C9BFE0FBBE6D60FF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Apple Tree Sapling"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Cherry Tree Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2trees:cherry_sapling"
+			id: "BB9ECD0C7B5A5D7A"
+			rewards: [
+				{
+					id: "51DAB83D1AA58513"
+					item: "pamhc2trees:cherry_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "B6366CD7A84FF7A5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cherry Tree Sapling"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"8x Bone Meal for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:bone_meal"
+			id: "D1181E7A2017D268"
+			rewards: [
+				{
+					count: 8
+					id: "981F92BA473E00F6"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "91D4BDEEDDF97C65"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bone Meal"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"4x Dirt for 2 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:dirt"
+			id: "5254B9D1C09F20EB"
+			rewards: [
+				{
+					count: 4
+					id: "4C8E86C2405CFC89"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "1A6620F5AF3FEE2F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Dirt"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Botany Pot for 3 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "botanypots:terracotta_botany_pot"
+			id: "259ABF5384FC04C3"
+			rewards: [
+				{
+					id: "FBD6E432E4632E52"
+					item: "botanypots:terracotta_botany_pot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "42BFDC56E73AB540"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Botany Pot"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Hopper Botany Pot for 8 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "botanypots:terracotta_hopper_botany_pot"
+			id: "2FF8D92AD4024FC4"
+			rewards: [
+				{
+					id: "4A6169BF15B4A329"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "CC17EA6C2A74EEA3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Hopper Botany Pot"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Tomato Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:tomatoseeditem"
+			id: "28E9AF9B8CBCE738"
+			rewards: [
+				{
+					id: "7A1BD50C881155BB"
+					item: "pamhc2crops:tomatoseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "147B4B82D98385E2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Tomato Seeds"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Lettuce Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:lettuceseeditem"
+			id: "00A582ECFE418E48"
+			rewards: [
+				{
+					id: "C6496FEA1E12EC3E"
+					item: "pamhc2crops:lettuceseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4FFE9F628B4BA8C2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lettuce Seeds"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Onion Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:onionseeditem"
+			id: "7946438DCB06EEB5"
+			rewards: [
+				{
+					id: "3491079CBD1DF783"
+					item: "pamhc2crops:onionseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "8BAE951F3A165259"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Onion Seeds"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Corn Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:cornseeditem"
+			id: "6B0F815030C89D2C"
+			rewards: [
+				{
+					id: "0F9431C18E955143"
+					item: "pamhc2crops:cornseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "60BFC29DB388311B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Corn Seeds"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Rice Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:riceseeditem"
+			id: "9177B60D31ABD580"
+			rewards: [
+				{
+					id: "181DCA96ABC13EF1"
+					item: "pamhc2crops:riceseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "A442F6053EE5C193"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rice Seeds"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Bean Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:beanseeditem"
+			id: "0CD216347EE64B92"
+			rewards: [
+				{
+					id: "EA359E78316E53FE"
+					item: "pamhc2crops:beanseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "C838A9CCB6E974B6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bean Seeds"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Cucumber Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:cucumberseeditem"
+			id: "5E7B1108696B0FB9"
+			rewards: [
+				{
+					id: "746B2B503CB34344"
+					item: "pamhc2crops:cucumberseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "82792801CA499BF9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cucumber Seeds"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Strawberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:strawberryseeditem"
+			id: "DA503D669EB91A03"
+			rewards: [
+				{
+					id: "45C02F115827117B"
+					item: "pamhc2crops:strawberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2ACF7BEC2B9D9450"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Strawberry Seeds"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Bellpepper Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:bellpepperseeditem"
+			id: "DAA02D615C398948"
+			rewards: [
+				{
+					id: "8BECB691BDF97471"
+					item: "pamhc2crops:bellpepperseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "68ECAEB6F1869CE0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bellpepper Seeds"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Broccoli Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:broccoliseeditem"
+			id: "A3FEE6E14F7BD77E"
+			rewards: [
+				{
+					id: "21588C499D2C2700"
+					item: "pamhc2crops:broccoliseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2F116A95CE9C7825"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Broccoli Seeds"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Spinach Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:spinachseeditem"
+			id: "DA7B22699AE53CCA"
+			rewards: [
+				{
+					id: "E67705D3C839C39C"
+					item: "pamhc2crops:spinachseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "C9C9695492AD05FE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Spinach Seeds"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Grape Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:grapeseeditem"
+			id: "1505C367A611F42E"
+			rewards: [
+				{
+					id: "543276092DA41A1F"
+					item: "pamhc2crops:grapeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "F280E34A64BF8174"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Grape Seeds"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Cotton Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:cottonseeditem"
+			id: "DAA7B20E8A13F057"
+			rewards: [
+				{
+					id: "02D8A45ECE2F5122"
+					item: "pamhc2crops:cottonseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "FFF4E9A27F02030C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cotton Seeds"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Flax Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:flaxseeditem"
+			id: "4C58AD23552AB491"
+			rewards: [
+				{
+					id: "ADD039666188F2F1"
+					item: "pamhc2crops:flaxseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "AB1D7BE115FC9FF8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Flax Seeds"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Garlic Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:garlicseeditem"
+			id: "EE2B93928D001E78"
+			rewards: [
+				{
+					id: "24E03967C528CC21"
+					item: "pamhc2crops:garlicseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0933090852505F3B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Garlic Seeds"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Peas Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:peasseeditem"
+			id: "0CDA1EDCCA2FA6B0"
+			rewards: [
+				{
+					id: "8640991E3ABAA640"
+					item: "pamhc2crops:peasseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "522A656C8DCA5155"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Peas Seeds"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Soybean Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:soybeanseeditem"
+			id: "D657DB2E13930139"
+			rewards: [
+				{
+					id: "CD59FC70A677A0A3"
+					item: "pamhc2crops:soybeanseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "E185DBEABFF0FCD4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Soybean Seeds"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Papyrus Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "pamhc2crops:papyrusseeditem"
+			id: "E678A47C346F0FAB"
+			rewards: [
+				{
+					id: "7C50BAF4C248830B"
+					item: "pamhc2crops:papyrusseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "B9DA2F146EC10E39"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Papyrus Seeds"
+			x: 7.5d
+			y: 7.5d
+		}
+	]
+	title: "NCP Shop"
+}
