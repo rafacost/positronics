@@ -89,6 +89,13 @@ ServerEvents.recipes(event => {
     // GregTech removes the vanilla 4 clay balls -> clay block; the mortar needs the block for clay dust.
     event.shaped('minecraft:clay', ['CC', 'CC'], { C: 'minecraft:clay_ball' })
         .id('positronics:foundation/clay_block_by_hand')
+    // Mortar a clay block or a brick block into 2 dust (GT's hand recipe gives 1; its macerator gives 2).
+    event.remove({ output: 'gtceu:clay_dust', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'gtceu:brick_dust', type: 'minecraft:crafting_shapeless' })
+    event.shapeless('2x gtceu:clay_dust', ['#gtceu:tools/crafting_mortars', 'minecraft:clay'])
+        .id('positronics:foundation/clay_dust_by_hand')
+    event.shapeless('2x gtceu:brick_dust', ['#gtceu:tools/crafting_mortars', 'minecraft:bricks'])
+        .id('positronics:foundation/brick_dust_by_hand')
     event.shapeless('gtceu:compressed_fireclay', ['gtceu:fireclay_dust'])
         .id('positronics:foundation/compressed_fireclay_by_hand')
 
