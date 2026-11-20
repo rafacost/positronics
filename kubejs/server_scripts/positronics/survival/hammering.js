@@ -21,6 +21,8 @@ BlockEvents.broken(event => {
 
     block.set('minecraft:air')
     block.popItem(Item.of(next))
+    // Crushing gravel sometimes leaves a flint (the first flint: for GregTech's flint mortar).
+    if (next == 'minecraft:sand' && Math.random() < 0.15) block.popItem(Item.of('minecraft:flint'))
     // The Waste Lands trickle: crushing gravel sometimes turns up a Seed I stratum.
     if (next == 'minecraft:sand') {
         global.POSITRONICS_TRICKLE.forEach(t => {

@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     let watch = ['gtceu:ulv_solar_panel', 'gtceu:ulv_1a_energy_converter', 'solarflux:sp_1', 'gtceu:ulv_machine_casing', 'gtceu:ulv_machine_hull',
         'gtceu:vacuum_tube', 'gtceu:glass_tube', 'gtceu:resistor', 'gtceu:basic_electronic_circuit', 'gtceu:lead_single_cable', 'gtceu:tin_single_cable',
         'gtceu:lv_machine_casing', 'gtceu:ulv_battery_buffer_4x', 'gtceu:wrought_iron_hammer', 'gtceu:wrought_iron_plate', 'gtceu:red_alloy_single_wire',
-        'gtceu:resin_circuit_board', 'gtceu:resin_printed_circuit_board', 'gtceu:lp_steam_solid_boiler', 'minecraft:hopper', 'minecraft:bucket']
+        'gtceu:resin_circuit_board', 'gtceu:resin_printed_circuit_board', 'gtceu:lp_steam_solid_boiler', 'minecraft:hopper', 'minecraft:bucket', 'gtceu:flint_dust', 'gtceu:quartz_sand_dust', 'gtceu:glass_dust', 'minecraft:glass', 'gtceu:flint_mortar', 'minecraft:flint', 'immersiveengineering:cloche']
     let out = {}
     watch.forEach(id => {
         out[id] = []

@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         P: '#forge:glass_panes'
     }).id('positronics:foundation/glass_tube_by_hand')
     event.recipes.gtceu.alloy_smelter('positronics:foundation/glass_tube_ulv')
-        .itemInputs('positronics:dust')
+        .itemInputs('gtceu:glass_dust')
         .notConsumable('gtceu:ball_casting_mold')
         .itemOutputs('gtceu:glass_tube')
         .duration(160)

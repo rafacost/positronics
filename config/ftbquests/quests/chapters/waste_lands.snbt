@@ -295,30 +295,74 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["504F53000000100B"]
+			description: [
+				"&7[NCP Field Memo #0013: Your First GregTech Tool]"
+				""
+				"Hammering gravel sometimes leaves a &bflint&r behind. Flint and a block of stone (smelt cobblestone) make a &bflint mortar&r."
+				""
+				"The mortar grinds things in the crafting grid: gravel into flint, flint into flint dust, sand into quartz sand."
+				"It wears out. Every GregTech operator keeps a spare."
+			]
+			id: "504F53000000100E"
+			rewards: [{
+				id: "504F530000003013"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Flint, stone, grind"
+			tasks: [
+				{
+					count: 2L
+					id: "504F530000002010"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "504F530000002011"
+					item: "gtceu:flint_mortar"
+					type: "item"
+				}
+			]
+			title: "The Flint Mortar"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
 			dependencies: [
-				"504F53000000100B"
+				"504F53000000100E"
 				"504F530000001008"
 			]
 			description: [
 				"&7[NCP Field Memo #0009: Glassworks]"
 				""
-				"Cobblestone makes a furnace. Plain sand won't melt into clear glass here; hammer it down to &bdust&r first."
-				"Smelt the dust and you get glass. Glass makes bottles, and bottles carry water. Everything connects."
+				"Plain sand won't melt into clear glass here. GregTech glass is made properly:"
+				"&asand&r + mortar = &bquartz sand&r; &aflint&r + mortar = &bflint dust&r; quartz sand + a little flint dust = &bglass dust&r."
+				"Smelt the glass dust in a furnace and you get glass. Glass makes bottles, and bottles carry water."
 				"&7No coal for a new campfire? Logs and sticks make a rough one."
 			]
 			id: "504F530000001009"
 			rewards: [{
+				count: 2
 				id: "504F53000000300E"
 				item: "positronics:ncp_scrip"
 				type: "item"
 			}]
-			subtitle: "Sand, fire, glass"
-			tasks: [{
-				count: 16L
-				id: "504F53000000200A"
-				item: "minecraft:glass"
-				type: "item"
-			}]
+			subtitle: "Sand, flint, fire, glass"
+			tasks: [
+				{
+					count: 4L
+					id: "504F530000002012"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "504F53000000200A"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
 			title: "Glass and Bottles"
 			x: 7.5d
 			y: -1.5d
