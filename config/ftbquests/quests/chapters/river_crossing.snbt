@@ -16,6 +16,7 @@
 				"Welcome to River Crossing: a handful of survivors and the first machines NCP ever let them keep."
 				"Your goal here is &bClearance Level 1&r: prove you can run a small, automated factory."
 				"&7Steam is allowed but never required. Everything here runs on ULV electricity."
+				"&7Enclosed: two sugar cane. Plant them next to the spring: paper is everywhere in GregTech."
 			]
 			id: "398DA3318FB70483"
 			rewards: [
@@ -23,6 +24,12 @@
 					count: 2
 					id: "623745498615BEEC"
 					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "ACE8B91F646015D4"
+					item: "minecraft:sugar_cane"
 					type: "item"
 				}
 			]
@@ -206,8 +213,8 @@
 			description: [
 				"&7[NCP Field Memo #0107: Power]"
 				""
-				"A ULV solar panel gives a trickle of EU in daylight. Store it in a battery buffer for the night."
-				"&7Alternatives: Solar Flux panels through a ULV energy converter, or the optional steam path."
+				"The NCP Emergency Solar (a ULV solar panel) gives a trickle of EU in daylight. Store it in a battery buffer for the night."
+				"&7Alternative: the optional steam path. Paper comes from sugar cane, if you grow some."
 			]
 			id: "37E06DD9764C4021"
 			rewards: [
