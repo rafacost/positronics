@@ -595,10 +595,12 @@
         "hammer_tier": 1,
         "chances": [
           [
-            "ferrous", 0.5
+            "ferrous",
+            0.3
           ],
           [
-            "cupric", 0.36
+            "cupric",
+            0.25
           ]
         ]
       },
@@ -606,13 +608,16 @@
         "hammer_tier": 2,
         "chances": [
           [
-            "stannic", 0.1
+            "stannic",
+            0.25
           ],
           [
-            "carbonic", 0.12
+            "carbonic",
+            0.3
           ],
           [
-            "plumbic", 0.06
+            "plumbic",
+            0.1
           ]
         ]
       },
@@ -621,11 +626,11 @@
         "chances": [
           [
             "rubric",
-            0.06
+            0.3
           ],
           [
             "nickelous",
-            0.03
+            0.1
           ]
         ]
       }
