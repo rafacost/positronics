@@ -110,6 +110,9 @@ def island():
     put(3, 2, 5, "minecraft:iron_bars",
         {"east": "false", "north": "false", "south": "false", "west": "false", "waterlogged": "false"})
     put(2, 4, 6, "minecraft:lantern", {"hanging": "false", "waterlogged": "false"})
+    # the kiosk's old campfire, still burning: warmth, and a way to boil water
+    put(4, 2, 6, "minecraft:campfire",
+        {"facing": "north", "lit": "true", "signal_fire": "false", "waterlogged": "false"})
 
     # a dead tree (two logs = your first wood) and a dead bush
     put(5, 2, 5, "minecraft:oak_log", {"axis": "y"})
@@ -177,7 +180,36 @@ def scrip_texture():
     return px
 
 
+def hammer_texture():
+    """A crude stone hammer on a wooden handle. Placeholder until real art."""
+    clear = (0, 0, 0, 0)
+    stone_d = (88, 88, 92, 255)
+    stone = (128, 128, 134, 255)
+    stone_l = (168, 168, 174, 255)
+    wood_d = (92, 62, 32, 255)
+    wood = (138, 98, 54, 255)
+    px = [[clear] * 16 for _ in range(16)]
+    # head: a block from (7,1) to (14,6)
+    for y in range(1, 7):
+        for x in range(7, 15):
+            edge = y in (1, 6) or x in (7, 14)
+            px[y][x] = stone_d if edge else stone
+    for x, y in [(8, 2), (9, 2), (8, 3)]:
+        px[y][x] = stone_l
+    # handle: a diagonal from the head down to the lower left
+    for i in range(9):
+        x, y = 10 - i, 7 + i
+        if 0 <= x < 16 and 0 <= y < 16:
+            px[y][x] = wood
+            if x + 1 < 16:
+                px[y][x + 1] = wood_d
+    return px
+
+
 if __name__ == "__main__":
+    hammer_path = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item", "reclamation_hammer.png")
+    write_png(hammer_path, hammer_texture())
+    print("wrote", os.path.relpath(hammer_path, ROOT))
     nbt_path = os.path.join(ROOT, "config", "skyblockbuilder", "templates", "waste_lands.nbt")
     write_nbt(nbt_path, island())
     png_path = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item", "ncp_scrip.png")

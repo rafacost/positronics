@@ -1,37 +1,20 @@
-// Positronics starter kit: "NCP Emergency Reclamation Kit".
-// Everything here bridges what a no-ore, no-mob world can't give you at the start:
-// USRG generators need an iron block, canteens need leather, so they come in the kit.
+// Positronics starter kit: "NCP Emergency Reclamation Kit". Hardcore: only what the island can't give you.
+// - The cobblestone generator needs an iron block to craft, and there is no iron yet.
+// - Gravel and sand come from hand-hammering cobblestone (Reclamation Hammer), not from more generators.
+// - Water: the island spring + the kiosk campfire (boil bottles). Purified water is learned, not given.
 // Format: https://wiki.chaotictrials.de/docs/1.20.x/wiki/skyblock-builder/packdev/config/inventory#starting-inventory
 {
   "items": [
-    // Reclamation Mk I generators (free, unpowered)
     { "item": "usrg:cobblegenerator", "count": 1 },
-    { "item": "usrg:dirtgenerator", "count": 1 },
-    { "item": "usrg:sandgenerator", "count": 1 },
-    { "item": "usrg:gravelgenerator", "count": 1 },
 
-    // Water: drink only purified water. Boil a water bottle on a campfire, or build a purifier later.
-    { "item": "minecraft:campfire", "count": 1 },
-    { "item": "minecraft:glass_bottle", "count": 4 },
-    { "item": "minecraft:water_bucket", "count": 1 },
-    { "item": "toughasnails:empty_leather_canteen", "count": 1 },
-    { "item": "toughasnails:purified_water_bottle", "count": 3 },
+    // TEMPORARY: USRG generators can't be emptied by hand yet. Remove once USRG supports
+    // right-click output (prompt: docs/prompts/usrg-right-click-output.md).
+    { "item": "minecraft:hopper", "count": 1 },
 
-    // Growing food without farmland
-    { "item": "botanypots:terracotta_botany_pot", "count": 2 },
+    { "item": "minecraft:glass_bottle", "count": 2 },
+    { "item": "botanypots:terracotta_botany_pot", "count": 1 },
     { "item": "pamhc2crops:tomatoseeditem", "count": 2 },
-    { "item": "pamhc2crops:lettuceseeditem", "count": 2 },
-    { "item": "pamhc2crops:cornseeditem", "count": 2 },
-    { "item": "minecraft:oak_sapling", "count": 2 },
-    { "item": "minecraft:bone_meal", "count": 8 },
-
-    // A few meals (variety matters: Spice of Life rewards new foods)
-    { "item": "minecraft:bread", "count": 4 },
-    { "item": "minecraft:apple", "count": 4 },
-    { "item": "minecraft:baked_potato", "count": 4 },
-
-    // Basics
-    { "item": "minecraft:crafting_table", "count": 1 },
-    { "item": "minecraft:chest", "count": 1 }
+    { "item": "minecraft:oak_sapling", "count": 1 },
+    { "item": "minecraft:bread", "count": 3 }
   ]
 }

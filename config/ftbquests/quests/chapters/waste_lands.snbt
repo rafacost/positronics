@@ -45,11 +45,11 @@
 			description: [
 				"&7[NCP Field Memo #0002: Reclamation Units]"
 				""
-				"Your kit holds four &bMk I Reclamation Generators&r: cobblestone, dirt, sand and gravel."
-				"Place one and it slowly pulls matter in from the void. No power needed at this grade."
+				"Your kit holds one &bMk I Reclamation Generator&r. Place it and it slowly pulls cobblestone in from the void."
+				"No power needed at this grade, and no, NCP will not be issuing you a second one."
 				""
-				"Take items out by hand, or let a hopper or pipe do it for you."
-				"&7Tip: a hopper into a chest means the generator keeps working while you are away."
+				"Put the hopper from your kit under it, and a chest under the hopper, so it keeps working while you are away."
+				"&7Everything else (gravel, sand, glass) starts as this cobblestone."
 			]
 			id: "504F530000001002"
 			rewards: [{
@@ -76,10 +76,11 @@
 				""
 				"You have a &bthirst&r bar now. Drinking raw water is a bad idea: it is dirty, and it will make you sick."
 				""
-				"&aBoil it:&r put a water bottle on the campfire from your kit. After half a minute it is purified."
+				"&aBoil it:&r fill a glass bottle at the island's spring, then place it on the kiosk's old campfire."
+				"After half a minute it is purified and safe to drink."
 				"Later, a &bWater Purifier&r does this much faster (it needs copper)."
 				""
-				"The little spring on the island never runs dry. Your canteen holds several drinks."
+				"The spring never runs dry. Make more bottles once you have glass."
 				"&7NCP reminds you that dehydration is not covered by your contract."
 			]
 			id: "504F530000001003"
@@ -107,7 +108,7 @@
 				""
 				"Your body has a &btemperature&r. Nights, rain and winter push it down; heat sources push it up."
 				""
-				"&aStay warm:&r stand near your campfire, keep dry, and craft &bleaf armor&r from leaves for mild weather."
+				"&aStay warm:&r stand near the kiosk campfire, keep dry, and craft &bleaf armor&r from leaves for mild weather."
 				"Later, wool armor and a Thermoregulator will keep a whole room comfortable."
 				""
 				"Here is a thermometer, so you can see trouble before it finds you."
@@ -182,15 +183,13 @@
 			id: "504F530000001006"
 			rewards: [
 				{
-					count: 2
 					id: "504F530000003008"
-					item: "pamhc2crops:onionseeditem"
+					item: "pamhc2crops:lettuceseeditem"
 					type: "item"
 				}
 				{
-					count: 2
 					id: "504F530000003009"
-					item: "pamhc2crops:beanseeditem"
+					item: "pamhc2crops:onionseeditem"
 					type: "item"
 				}
 				{
@@ -242,7 +241,7 @@
 				}
 				{
 					id: "504F530000002008"
-					item: "pamhc2crops:cornitem"
+					item: "pamhc2crops:onionitem"
 					type: "item"
 				}
 			]
@@ -255,7 +254,7 @@
 			description: [
 				"&7[NCP Field Memo #0008: Timber]"
 				""
-				"That dead tree on the island still has two good logs in it. Your kit has saplings and bone meal."
+				"That dead tree on the island still has two good logs in it. Your kit has one sapling: do not waste it."
 				""
 				"&aPlant, grow, harvest, replant.&r Wood is your first fuel, your first tools, and your first workbench."
 			]
@@ -279,13 +278,13 @@
 		}
 		{
 			dependencies: [
-				"504F530000001002"
+				"504F53000000100B"
 				"504F530000001008"
 			]
 			description: [
 				"&7[NCP Field Memo #0009: Glassworks]"
 				""
-				"Cobblestone makes a furnace. Sand from your generator, smelted, makes glass."
+				"Cobblestone makes a furnace. Hammered sand, smelted, makes glass."
 				"Glass makes bottles, and bottles carry water. Everything connects."
 			]
 			id: "504F530000001009"
@@ -304,6 +303,49 @@
 			title: "Glass and Bottles"
 			x: 7.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["504F530000001002"]
+			description: [
+				"&7[NCP Field Memo #0011: Manual Reclamation]"
+				""
+				"No iron, no machines, no problem. Build a &bReclamation Hammer&r from cobblestone and sticks."
+				""
+				"&aIn a crafting grid:&r hammer + cobblestone = gravel. Hammer + gravel = sand."
+				"The hammer wears out, so build a spare. Once you have a GregTech hammer, it works too."
+				""
+				"&7Slow? Yes. Character-building? NCP's lawyers say yes."
+			]
+			id: "504F53000000100B"
+			rewards: [{
+				count: 2
+				id: "504F530000003010"
+				item: "positronics:ncp_scrip"
+				type: "item"
+			}]
+			subtitle: "Cobblestone, gravel, sand"
+			tasks: [
+				{
+					id: "504F53000000200C"
+					item: "positronics:reclamation_hammer"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "504F53000000200D"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "504F53000000200E"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
+			title: "Hammer Time"
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
