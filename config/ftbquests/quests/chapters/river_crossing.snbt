@@ -580,7 +580,9 @@
 				""
 				"The &bAtomic Reclaimer&r breaks simple matter into its elements, and elements are what Positronic Memory learns."
 				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 8 wood pulp) is cellulose: 6 carbon, 10 hydrogen, 5 oxygen."
-				"&aRock dust&r is silica: 1 silicon and 2 oxygen per 2 dust. Honey and wax pay best of all."
+				"&aRock dust&r is silica: 1 silicon and 2 oxygen per dust. Honey and wax pay best of all."
+				"&7By hand, a mortar does the same, slowly: mortar + dust = silica atoms; mortar + 8 leaves (4 saplings, 8 crops or cane)"
+				"&7= plant mass; mortar + 2 plant mass = cellulose atoms."
 				"Hopper botany pots into a Reclaimer into a Beam Capacitor: your first EMC line."
 				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]

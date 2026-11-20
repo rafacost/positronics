@@ -1,6 +1,6 @@
 // Positronics: early EMC sources (decided 2026-11-20). EMC exists only on elements, so every source is a
 // real chemical breakdown. Balance levers: atoms per operation (yield), element EMC (emc.js) and EU cost.
-//   ULV  Atomic Reclaimer: biomass (cellulose, 21 atoms), rock dust (SiO2, 3 atoms), honey (glucose, 24),
+//   ULV  Atomic Reclaimer: biomass (cellulose, 21 atoms), rock dust (SiO2, 3 atoms per dust), honey (glucose, 24),
 //        wax (CH2 chains). Planting pays more than cobble; bees pay best per item.
 //   LV   Electrolyzer: water -> 2 H + 1 O (endless water, paid in EU).
 //   LV   Centrifuge: air -> nitrogen, oxygen, a little argon (endless air, paid in EU).
@@ -28,8 +28,8 @@ ServerEvents.recipes(event => {
     reclaim('biomass_wood_pulp', '8x gtceu:wood_dust', cellulose, 200)
 
     // Rock dust = silica (SiO2), now and then a trace of aluminium.
-    reclaim('rock_dust', '2x positronics:dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
-    reclaim('stone_dust', '2x gtceu:stone_dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
+    reclaim('rock_dust', 'positronics:dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
+    reclaim('stone_dust', 'gtceu:stone_dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
 
     // Bees: honey = glucose (C6H12O6, the bottle comes back); wax and combs = CH2 chains.
     reclaim('honey', 'minecraft:honey_bottle', ['6x chemlib:carbon', '12x chemlib:hydrogen', '6x chemlib:oxygen', 'minecraft:glass_bottle'], 160)
