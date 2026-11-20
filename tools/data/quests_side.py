@@ -77,6 +77,7 @@ FIELD_MANUAL = {
         {"key": "clearance", "title": "Clearance and Cores", "icon": "positronics:clearance_card_1", "tasks": ["check"], "pos": (8, 2), "deps": ["memory"],
          "desc": guide("10", "Gates",
                        "&bClearance Card N&r is needed to assemble machine hulls of tier N+1. Cards are made at their own tier.",
+                       "From Level 3 on, each card also needs a &bchemistry sample&r (see The Periodic Table).",
                        "&bPositronic Cores&r I-V are never consumed: they catalyse strata enrichment, generator upgrades and some cards.",
                        "Each Core is built one tier before its strata are needed.")},
         {"key": "survival", "title": "Staying Alive", "icon": "toughasnails:thermometer", "tasks": ["check"], "pos": (10, 1), "deps": ["clearance", "multis"],
@@ -219,6 +220,9 @@ def shop():
         ("dirt", "Dirt", 2, "minecraft:dirt", 4),
         ("pot", "Botany Pot", 3, "botanypots:terracotta_botany_pot", 1),
         ("hopper_pot", "Hopper Botany Pot", 8, "botanypots:terracotta_hopper_botany_pot", 1),
+        ("bee", "Honey Bee (egg)", 6, "minecraft:bee_spawn_egg", 1),
+        ("ashy_bee", "Ashy Mining Bee (egg)", 8, "productivebees:spawn_egg_ashy_mining_bee", 1),
+        ("blue_bee", "Blue Banded Bee (egg)", 8, "productivebees:spawn_egg_blue_banded_bee", 1),
     ]
     seeds = ["tomato", "lettuce", "onion", "corn", "rice", "bean", "cucumber", "strawberry", "bellpepper", "broccoli",
              "spinach", "grape", "cotton", "flax", "garlic", "peas", "soybean", "papyrus"]
@@ -369,4 +373,90 @@ SPACE = {
 }
 
 
-SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, shop()]
+# ------------------------------------------------------------------ THE APIARY (Productive Bees)
+APIARY = {
+    "id": "apiary", "filename": "apiary", "order": 34, "group": "Side Paths", "scrip": 3,
+    "title": "The Apiary", "icon": "productivebees:advanced_oak_beehive",
+    "quests": [
+        {"key": "hive", "title": "A Home for Bees", "deps": ["the_calla:arrival"], "tasks": ["productivebees:advanced_oak_beehive"],
+         "rewards": ["minecraft:bee_spawn_egg"],
+         "desc": memo("3501", "Bees", "Nothing spawns here, bees included. NCP's agricultural division ships the first one with your hive.",
+                      "An advanced beehive keeps bees working and collects their combs. Flowers nearby keep them happy.")},
+        {"key": "solitary", "title": "Solitary Bees", "deps": ["hive"], "tasks": [("minecraft:honeycomb", 8)],
+         "rewards": ["productivebees:spawn_egg_ashy_mining_bee", "productivebees:spawn_egg_blue_banded_bee"],
+         "desc": memo("3502", "Breeding Stock", "Two solitary bees for your breeding programme. More eggs are sold at the NCP Shop.",
+                      "Productive Bees' own guide (and EMI) shows which pairs and items lead to which bees.")},
+        {"key": "processing", "title": "Comb Processing", "deps": ["solitary"], "tasks": ["gtceu:lv_centrifuge", ("productivebees:wax", 8)],
+         "desc": memo("3503", "Centrifuge", "Resource combs are processed only in a &bGregTech centrifuge&r. A metal or gem comb gives",
+                      "the matching &bStratum&r (iron bee: Ferrous Stratum), plus wax and honey, at that stratum's tier voltage.",
+                      "Bees are a full alternative strata stream: no Positronic Core needed for the bee's own tier.")},
+        {"key": "resource", "title": "Resource Bees", "deps": ["processing"], "tasks": ["positronics:ferrous_stratum", "positronics:cupric_stratum"],
+         "scrip": 6, "desc": memo("3504", "Metal Bees", "Breed your way to an iron and a copper bee, and centrifuge their combs into strata.",
+                                  "Higher-tier bees give higher-tier strata, but need a centrifuge of that tier.")},
+        {"key": "honey", "title": "Honey Boosters", "deps": ["processing", "the_calla:paddy"], "tasks": [("productivebees:honey_bucket", 2)],
+         "desc": memo("3505", "Boosters", "Honey is a booster: the &bCalla Paddy&r with honey piped in beside the water gives a 12x harvest",
+                      "(4x plain, 8x with fertilizer). More honey boosters for GregTech machines will follow.")},
+    ],
+}
+
+
+# ------------------------------------------------------------------ THE PERIODIC TABLE (Alchemistry + ChemLib)
+PERIODS = [
+    ("p1", "Period 1", ["hydrogen", "helium"], "the_calla:arrival"),
+    ("p2", "Period 2", ["lithium", "beryllium", "boron", "carbon", "nitrogen", "oxygen", "fluorine", "neon"], None),
+    ("p3", "Period 3", ["sodium", "magnesium", "aluminum", "silicon", "phosphorus", "sulfur", "chlorine", "argon"], None),
+    ("p4a", "Period 4: Light Metals", ["potassium", "calcium", "scandium", "titanium", "vanadium", "chromium", "manganese", "iron", "cobalt"], "lud:arrival"),
+    ("p4b", "Period 4: The Rest", ["nickel", "copper", "zinc", "gallium", "germanium", "arsenic", "selenium", "bromine", "krypton"], None),
+    ("p5a", "Period 5: Transition", ["rubidium", "strontium", "yttrium", "zirconium", "niobium", "molybdenum", "technetium", "ruthenium", "rhodium"], "the_cradle:arrival"),
+    ("p5b", "Period 5: The Rest", ["palladium", "silver", "cadmium", "indium", "tin", "antimony", "tellurium", "iodine", "xenon"], None),
+    ("p6a", "The Lanthanides", ["lanthanum", "cerium", "praseodymium", "neodymium", "promethium", "samarium", "europium", "gadolinium",
+                                "terbium", "dysprosium", "holmium", "erbium", "thulium", "ytterbium", "lutetium"], "the_dogan:arrival"),
+    ("p6b", "Period 6: Heavy Metals", ["cesium", "barium", "hafnium", "tantalum", "tungsten", "rhenium", "osmium", "iridium", "platinum",
+                                       "gold", "mercury", "thallium", "lead", "bismuth", "polonium", "astatine", "radon"], None),
+    ("p7a", "The Actinides", ["francium", "radium", "actinium", "thorium", "protactinium", "uranium", "neptunium", "plutonium", "americium",
+                              "curium", "berkelium", "californium", "einsteinium", "fermium", "mendelevium", "nobelium", "lawrencium"], "fedic:arrival"),
+    ("p7b", "The Superheavies", ["rutherfordium", "dubnium", "seaborgium", "bohrium", "hassium", "meitnerium", "darmstadtium", "roentgenium",
+                                 "copernicium", "nihonium", "flerovium", "moscovium", "livermorium", "tennessine", "oganesson"], "end_world_luv:arrival"),
+]
+COMPOUNDS = [
+    ("c_basic", "Everyday Compounds", ["water", "carbon_dioxide", "sodium_chloride", "silicon_dioxide", "calcium_carbonate"], "p2"),
+    ("c_acids", "Acids", ["sulfuric_acid", "hydrochloric_acid", "nitric_acid", "phosphoric_acid"], "p3"),
+    ("c_bases", "Bases", ["sodium_hydroxide", "potassium_hydroxide", "calcium_hydroxide", "ammonia"], "p3"),
+    ("c_organic", "Organic Chemistry", ["methane", "ethanol", "cellulose", "sucrose", "starch"], "p2"),
+    ("c_oxides", "Metal Oxides and Salts", ["titanium_oxide", "aluminum_oxide", "iron_oxide", "potassium_dichromate", "barium_sulfate"], "p4a"),
+]
+
+
+def periodic_table():
+    quests = [{"key": "lab", "title": "The NCP Chemistry Lab", "deps": ["the_calla:arrival"],
+               "tasks": ["alchemistry:dissolver", "alchemistry:compactor"], "rewards": ["chemlib:periodic_table", ("chemlib:hydrogen", 8)],
+               "scrip": 5, "shape": "gear", "size": 1.4, "pos": (0, 0),
+               "desc": memo("3601", "Chemistry",
+                            "The &bDissolver&r breaks almost anything solid into its &belements&r (ChemLib). The &bCombiner&r builds compounds;",
+                            "the &bAtomizer&r and &bLiquifier&r handle gases and liquids; &bFusion&r and &bFission&r transmute elements.",
+                            "Chemistry is its own currency: elements never turn into GregTech metals (no shortcuts past the planets),",
+                            "but GregTech needs them: every Clearance Card from Level 3 asks for a chemistry sample.",
+                            "&7Every row of the table you complete earns samples and Scrip.")}]
+    prev = "lab"
+    for i, (key, title, elements, gate) in enumerate(PERIODS):
+        deps = [prev] + ([gate] if gate and gate != "the_calla:arrival" else [])
+        reward_el = PERIODS[i + 1][2][0] if i + 1 < len(PERIODS) else None
+        rewards = [(f"chemlib:{reward_el}", 4)] if reward_el else ["chemlib:periodic_table"]
+        quests.append({"key": key, "title": title, "deps": deps, "tasks": [f"chemlib:{e}" for e in elements],
+                       "rewards": rewards, "scrip": 2 + len(elements) // 3, "pos": (2 + i * 1.6, 0 if i % 2 == 0 else 1.2),
+                       "desc": [f"&7[Periodic Table: {title}]", "",
+                                "Collect one of each: " + ", ".join(e.capitalize() for e in elements) + ".",
+                                ("&7The heaviest elements come from Alchemistry fusion (LuV)." if key == "p7b" else
+                                 "&7Dissolve materials, run element bees, or fuse lighter elements.")]})
+        prev = key
+    for j, (key, title, comps, after) in enumerate(COMPOUNDS):
+        quests.append({"key": key, "title": title, "deps": [after], "tasks": [f"chemlib:{c}" for c in comps],
+                       "scrip": 3, "pos": (2 + j * 2.4, 3.2),
+                       "desc": [f"&7[Chemistry: {title}]", "",
+                                "Build them in the &bCombiner&r: " + ", ".join(c.replace('_', ' ') for c in comps) + ".",
+                                "&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."]})
+    return {"id": "periodic_table", "filename": "periodic_table", "order": 35, "group": "Side Paths", "scrip": 3,
+            "title": "The Periodic Table", "icon": "chemlib:periodic_table", "quests": quests}
+
+
+SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, APIARY, periodic_table(), shop()]

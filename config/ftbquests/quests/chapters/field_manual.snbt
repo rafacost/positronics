@@ -276,6 +276,7 @@
 				"&7[NCP Field Manual §10: Gates]"
 				""
 				"&bClearance Card N&r is needed to assemble machine hulls of tier N+1. Cards are made at their own tier."
+				"From Level 3 on, each card also needs a &bchemistry sample&r (see The Periodic Table)."
 				"&bPositronic Cores&r I-V are never consumed: they catalyse strata enrichment, generator upgrades and some cards."
 				"Each Core is built one tier before its strata are needed."
 			]

@@ -561,6 +561,96 @@
 			description: [
 				"&7[NCP Shop]"
 				""
+				"1x Honey Bee (egg) for 6 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "minecraft:bee_spawn_egg"
+			id: "34B21A03C8A6B76D"
+			rewards: [
+				{
+					id: "19BF8C1E1EE8E622"
+					item: "minecraft:bee_spawn_egg"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 6L
+					id: "DDAC5A551CB67473"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Honey Bee (egg)"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Ashy Mining Bee (egg) for 8 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "productivebees:spawn_egg_ashy_mining_bee"
+			id: "28C6F57E5D708FF9"
+			rewards: [
+				{
+					id: "7119953948479656"
+					item: "productivebees:spawn_egg_ashy_mining_bee"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "CD7608FA99BD9BEE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Ashy Mining Bee (egg)"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Blue Banded Bee (egg) for 8 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "productivebees:spawn_egg_blue_banded_bee"
+			id: "4505288B8DD743E8"
+			rewards: [
+				{
+					id: "B6D4231B6783B4AD"
+					item: "productivebees:spawn_egg_blue_banded_bee"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6705B38E272643BD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Blue Banded Bee (egg)"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[NCP Shop]"
+				""
 				"1x Tomato Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
@@ -582,7 +672,7 @@
 				}
 			]
 			title: "Tomato Seeds"
-			x: 0.0d
+			x: 4.5d
 			y: 4.5d
 		}
 		{
@@ -611,7 +701,7 @@
 				}
 			]
 			title: "Lettuce Seeds"
-			x: 1.5d
+			x: 6.0d
 			y: 4.5d
 		}
 		{
@@ -640,7 +730,7 @@
 				}
 			]
 			title: "Onion Seeds"
-			x: 3.0d
+			x: 7.5d
 			y: 4.5d
 		}
 		{
@@ -669,8 +759,8 @@
 				}
 			]
 			title: "Corn Seeds"
-			x: 4.5d
-			y: 4.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -698,8 +788,8 @@
 				}
 			]
 			title: "Rice Seeds"
-			x: 6.0d
-			y: 4.5d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -727,8 +817,8 @@
 				}
 			]
 			title: "Bean Seeds"
-			x: 7.5d
-			y: 4.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -756,7 +846,7 @@
 				}
 			]
 			title: "Cucumber Seeds"
-			x: 0.0d
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -785,7 +875,7 @@
 				}
 			]
 			title: "Strawberry Seeds"
-			x: 1.5d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -814,7 +904,7 @@
 				}
 			]
 			title: "Bellpepper Seeds"
-			x: 3.0d
+			x: 7.5d
 			y: 6.0d
 		}
 		{
@@ -843,8 +933,8 @@
 				}
 			]
 			title: "Broccoli Seeds"
-			x: 4.5d
-			y: 6.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -872,8 +962,8 @@
 				}
 			]
 			title: "Spinach Seeds"
-			x: 6.0d
-			y: 6.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -901,8 +991,8 @@
 				}
 			]
 			title: "Grape Seeds"
-			x: 7.5d
-			y: 6.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -930,7 +1020,7 @@
 				}
 			]
 			title: "Cotton Seeds"
-			x: 0.0d
+			x: 4.5d
 			y: 7.5d
 		}
 		{
@@ -959,7 +1049,7 @@
 				}
 			]
 			title: "Flax Seeds"
-			x: 1.5d
+			x: 6.0d
 			y: 7.5d
 		}
 		{
@@ -988,7 +1078,7 @@
 				}
 			]
 			title: "Garlic Seeds"
-			x: 3.0d
+			x: 7.5d
 			y: 7.5d
 		}
 		{
@@ -1017,8 +1107,8 @@
 				}
 			]
 			title: "Peas Seeds"
-			x: 4.5d
-			y: 7.5d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
 			can_repeat: true
@@ -1046,8 +1136,8 @@
 				}
 			]
 			title: "Soybean Seeds"
-			x: 6.0d
-			y: 7.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			can_repeat: true
@@ -1075,8 +1165,8 @@
 				}
 			]
 			title: "Papyrus Seeds"
-			x: 7.5d
-			y: 7.5d
+			x: 3.0d
+			y: 9.0d
 		}
 	]
 	title: "NCP Shop"

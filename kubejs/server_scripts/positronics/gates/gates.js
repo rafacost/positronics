@@ -133,11 +133,19 @@ ServerEvents.recipes(event => {
     }).keepIngredient('positronics:positronic_core_1').id('positronics:gates/clearance_card_1')
 
     // ---- Clearance Cards 2-10 (assembler at their own tier). Cores are catalysts.
+    // From card 3 on, each card also needs a chemistry sample (Alchemistry/ChemLib layer).
     let cardCores = { 2: 2, 4: 3, 6: 4, 8: 5 }
+    let cardChemistry = {
+        3: '4x chemlib:silicon_dioxide', 4: '4x chemlib:sodium_hydroxide', 5: '4x chemlib:titanium_oxide',
+        6: '4x chemlib:potassium_dichromate', 7: '8x chemlib:iridium', 8: '8x chemlib:europium',
+        9: '8x chemlib:americium', 10: '16x chemlib:oganesson'
+    }
     for (let n = 2; n <= 10; n++) {
         let t = POS_TIERS[n - 1]
+        let inputs = [`4x #gtceu:circuits/${t}`, `gtceu:${t}_machine_hull`, 'positronics:clearance_card_' + (n - 1)]
+        if (cardChemistry[n]) inputs.push(cardChemistry[n])
         let r = event.recipes.gtceu.assembler(`positronics:gates/clearance_card_${n}`)
-            .itemInputs(`4x #gtceu:circuits/${t}`, `gtceu:${t}_machine_hull`, 'positronics:clearance_card_' + (n - 1))
+            .itemInputs(inputs)
             .itemOutputs(`positronics:clearance_card_${n}`)
             .duration(400)
             .EUt(VA[n - 1])

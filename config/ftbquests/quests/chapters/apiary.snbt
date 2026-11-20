@@ -1,0 +1,182 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apiary"
+	group: "7189CCE6C12A632F"
+	icon: "productivebees:advanced_oak_beehive"
+	id: "571B404DD56800E8"
+	order_index: 34
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[NCP Field Memo #3501: Bees]"
+				""
+				"Nothing spawns here, bees included. NCP's agricultural division ships the first one with your hive."
+				"An advanced beehive keeps bees working and collects their combs. Flowers nearby keep them happy."
+			]
+			id: "AF76C9A5828C2EE3"
+			rewards: [
+				{
+					count: 3
+					id: "5F13A626FB31B08A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "2276AE70D49E4B78"
+					item: "minecraft:bee_spawn_egg"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1552821394B9FF4C"
+					item: "productivebees:advanced_oak_beehive"
+					type: "item"
+				}
+			]
+			title: "A Home for Bees"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AF76C9A5828C2EE3"]
+			description: [
+				"&7[NCP Field Memo #3502: Breeding Stock]"
+				""
+				"Two solitary bees for your breeding programme. More eggs are sold at the NCP Shop."
+				"Productive Bees' own guide (and EMI) shows which pairs and items lead to which bees."
+			]
+			id: "3C6607A53E878674"
+			rewards: [
+				{
+					count: 3
+					id: "840B962B92802304"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "4C6D2F8A131831F9"
+					item: "productivebees:spawn_egg_ashy_mining_bee"
+					type: "item"
+				}
+				{
+					id: "E9EA5D3FBD524BCB"
+					item: "productivebees:spawn_egg_blue_banded_bee"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4447F77DC28A2E12"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+			]
+			title: "Solitary Bees"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C6607A53E878674"]
+			description: [
+				"&7[NCP Field Memo #3503: Centrifuge]"
+				""
+				"Resource combs are processed only in a &bGregTech centrifuge&r. A metal or gem comb gives"
+				"the matching &bStratum&r (iron bee: Ferrous Stratum), plus wax and honey, at that stratum's tier voltage."
+				"Bees are a full alternative strata stream: no Positronic Core needed for the bee's own tier."
+			]
+			id: "DD7325D21C0242EA"
+			rewards: [
+				{
+					count: 3
+					id: "90BA2EF2B1BECFB2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "62B1CB43B948B808"
+					item: "gtceu:lv_centrifuge"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "67B2B946958F6B80"
+					item: "productivebees:wax"
+					type: "item"
+				}
+			]
+			title: "Comb Processing"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DD7325D21C0242EA"]
+			description: [
+				"&7[NCP Field Memo #3504: Metal Bees]"
+				""
+				"Breed your way to an iron and a copper bee, and centrifuge their combs into strata."
+				"Higher-tier bees give higher-tier strata, but need a centrifuge of that tier."
+			]
+			id: "048735C0CE36DCBF"
+			rewards: [
+				{
+					count: 6
+					id: "FFE9E7F367AEB5CC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4718B7711FEBE3B0"
+					item: "positronics:ferrous_stratum"
+					type: "item"
+				}
+				{
+					id: "1D60FC6013AC5A5C"
+					item: "positronics:cupric_stratum"
+					type: "item"
+				}
+			]
+			title: "Resource Bees"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DD7325D21C0242EA" "A13B1B3E561D401C"]
+			description: [
+				"&7[NCP Field Memo #3505: Boosters]"
+				""
+				"Honey is a booster: the &bCalla Paddy&r with honey piped in beside the water gives a 12x harvest"
+				"(4x plain, 8x with fertilizer). More honey boosters for GregTech machines will follow."
+			]
+			id: "647A9F38BEF74CD7"
+			rewards: [
+				{
+					count: 3
+					id: "A77C80112892B870"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2452E923ACAA817B"
+					item: "productivebees:honey_bucket"
+					type: "item"
+				}
+			]
+			title: "Honey Boosters"
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+	title: "The Apiary"
+}

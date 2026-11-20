@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('calla_paddy')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(3, 3, 1, 0)
+        .setMaxIOSize(3, 3, 2, 0)
         .setSlotOverlay(false, false, GuiTextures.BOX_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)

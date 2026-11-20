@@ -35,6 +35,13 @@ ServerEvents.recipes(event => {
             .itemOutputs(`4x pamhc2crops:${c}item`)
             .duration(600)
             .EUt(16)
+        // Honey booster (bee path): honey alongside the water gives the biggest harvest.
+        event.recipes.gtceu.calla_paddy(`positronics:paddy/${c}_honeyed`)
+            .notConsumable(`pamhc2crops:${c}seeditem`)
+            .inputFluids('minecraft:water 500', 'productivebees:honey 250')
+            .itemOutputs(`12x pamhc2crops:${c}item`)
+            .duration(600)
+            .EUt(16)
         event.recipes.gtceu.calla_paddy(`positronics:paddy/${c}_fertilized`)
             .notConsumable(`pamhc2crops:${c}seeditem`)
             .itemInputs('gtceu:fertilizer')
