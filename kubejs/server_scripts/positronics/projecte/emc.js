@@ -29,8 +29,8 @@ const POS_ELEMENT_TIER_OVERRIDES = {
     // Seed V and beyond
     europium: 5
 }
-// Organic exceptions: learnable so early problems have an EMC answer (slime -> sticky resin).
-const POS_EMC_EXCEPTIONS = { 'minecraft:slime_ball': 8 }
+// No exceptions: only elements. (Rubber comes from carbon + hydrogen on the crafting table, chemistry.js.)
+const POS_EMC_EXCEPTIONS = {}
 
 global.POSITRONICS_ELEMENT_TIERS = {}
 POS_ELEMENT_PERIODS.forEach((period, i) => period.forEach(el => {

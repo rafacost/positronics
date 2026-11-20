@@ -83,6 +83,12 @@ ServerEvents.recipes(event => {
         C: '#forge:dusts/coal'
     }).id('positronics:foundation/resistor_coal')
 
+    // 4. Steel without power: the Primitive Blast Furnace (iron + coal). Its firebricks needed a powered
+    //    compressor for compressed fireclay; pack it by hand instead. Chain: clay + bricks (mortar) ->
+    //    fireclay dust -> compressed fireclay -> furnace -> firebrick -> firebricks.
+    event.shapeless('gtceu:compressed_fireclay', ['gtceu:fireclay_dust'])
+        .id('positronics:foundation/compressed_fireclay_by_hand')
+
     // Wrought iron: just cook the iron again.
     event.smelting('gtceu:wrought_iron_ingot', '#forge:ingots/iron').xp(0.1).id('positronics:foundation/wrought_iron')
 

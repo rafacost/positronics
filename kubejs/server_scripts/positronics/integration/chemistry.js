@@ -76,6 +76,17 @@ ServerEvents.recipes(event => {
     bridge('methane', 'gtceu:methane', 250)
     bridge('ethanol', 'gtceu:ethanol', 250)
 
+    // ---- Isoprene by hand: C5H8 = 5 carbon + 4 hydrogen (H2), the monomer of natural rubber.
+    // Breaks the rubber loop (no resin without rubber trees, no saplings without resin) with elements only.
+    event.shaped('2x gtceu:sticky_resin', [
+        'CHC',
+        'HCH',
+        'CHC'
+    ], {
+        C: 'chemlib:carbon',
+        H: 'chemlib:hydrogen'
+    }).id('positronics:chemistry/isoprene_resin')
+
     // ---- Bridge: element -> GregTech dust (16:1, matching the Dissolver's 16 elements per ingot, so no loop).
     let known = {}
     Ingredient.all.itemIds.forEach(id => { known[String(id)] = true })

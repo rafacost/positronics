@@ -595,6 +595,51 @@ global.POSITRONICS_STRATA = [
   }
 ]
 global.POSITRONICS_TRICKLE = [["positronics:ferrous_stratum", 0.08], ["positronics:cupric_stratum", 0.05], ["positronics:stannic_stratum", 0.04], ["positronics:carbonic_stratum", 0.04], ["positronics:plumbic_stratum", 0.02], ["positronics:nickelous_stratum", 0.02], ["positronics:rubric_stratum", 0.03]]
+global.POSITRONICS_TRICKLE_STAGES = {
+  "minecraft:cobblestone": {
+    "hammer_tier": 1,
+    "chances": [
+      [
+        "positronics:ferrous_stratum",
+        0.08
+      ],
+      [
+        "positronics:cupric_stratum",
+        0.05
+      ]
+    ]
+  },
+  "minecraft:gravel": {
+    "hammer_tier": 2,
+    "chances": [
+      [
+        "positronics:stannic_stratum",
+        0.05
+      ],
+      [
+        "positronics:carbonic_stratum",
+        0.06
+      ],
+      [
+        "positronics:plumbic_stratum",
+        0.03
+      ]
+    ]
+  },
+  "minecraft:sand": {
+    "hammer_tier": 3,
+    "chances": [
+      [
+        "positronics:rubric_stratum",
+        0.06
+      ],
+      [
+        "positronics:nickelous_stratum",
+        0.03
+      ]
+    ]
+  }
+}
 global.POSITRONICS_EMC_VALUES = {
   "ae2:certus_quartz_dust": 1024,
   "gtceu:americium_dust": 524288,
