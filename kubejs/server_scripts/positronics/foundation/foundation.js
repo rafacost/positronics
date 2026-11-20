@@ -86,6 +86,9 @@ ServerEvents.recipes(event => {
     // 4. Steel without power: the Primitive Blast Furnace (iron + coal). Its firebricks needed a powered
     //    compressor for compressed fireclay; pack it by hand instead. Chain: clay + bricks (mortar) ->
     //    fireclay dust -> compressed fireclay -> furnace -> firebrick -> firebricks.
+    // GregTech removes the vanilla 4 clay balls -> clay block; the mortar needs the block for clay dust.
+    event.shaped('minecraft:clay', ['CC', 'CC'], { C: 'minecraft:clay_ball' })
+        .id('positronics:foundation/clay_block_by_hand')
     event.shapeless('gtceu:compressed_fireclay', ['gtceu:fireclay_dust'])
         .id('positronics:foundation/compressed_fireclay_by_hand')
 
