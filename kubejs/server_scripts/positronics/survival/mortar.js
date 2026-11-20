@@ -37,6 +37,18 @@ ServerEvents.recipes(event => {
             .id(`positronics:mortar/ingot_to_${el}`)
     })
 
+    // The way back, by hand, for the basic metals only: 8 atoms -> 4 nuggets (16 atoms = 8 nuggets, a 1/9 loss;
+    // the LV compressor's 16 -> 1 dust stays lossless). Lets Positronic Memory pay for early iron and copper
+    // without skipping anything: all of these come from the trickle anyway.
+    let nuggets = {
+        iron: 'minecraft:iron_nugget', copper: 'gtceu:copper_nugget', tin: 'gtceu:tin_nugget',
+        lead: 'gtceu:lead_nugget', nickel: 'gtceu:nickel_nugget'
+    }
+    Object.keys(nuggets).forEach(el => {
+        event.shaped(`4x ${nuggets[el]}`, ['EEE', 'E E', 'EEE'], { E: `chemlib:${el}` })
+            .id(`positronics:mortar/${el}_atoms_to_nuggets`)
+    })
+
     // Wood pulp (GregTech wood dust): paper, resin boards and more.
     event.shapeless('2x gtceu:wood_dust', [atLeast(1), '#minecraft:logs'])
         .id('positronics:mortar/wood_pulp_from_log')

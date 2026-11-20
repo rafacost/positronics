@@ -57,6 +57,9 @@ ServerEvents.loaded(event => {
         try { let st = Item.of(id); caps[id] = String(st.item.getMaximumEmc(st)) } catch (e) { caps[id] = 'error: ' + e }
     })
     JsonIO.write('kubejs/exported/positronics_star_caps.json', caps)
+    let byType = {}
+    event.server.recipeManager.getRecipes().forEach(rc => { let ty = String(rc.getType()); if (/atomic_reclaimer|electrolyzer|centrifuge/.test(ty) && /positronics/.test(String(rc.getId()))) byType[ty + ' ' + rc.getId()] = 1 })
+    console.info('[ServerTest] positronics machine recipes: ' + Object.keys(byType).join(', '))
     console.info('[ServerTest] item + star dumps written')
     event.server.runCommandSilent('execute in ad_astra:glacio run forceload add 0 0')
     event.server.scheduleInTicks(200, () => {
