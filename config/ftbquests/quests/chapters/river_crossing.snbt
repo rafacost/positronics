@@ -54,9 +54,7 @@
 				""
 				"Hammer cobblestone into gravel and, now and then, the void gives something back: a &bStratum&r."
 				"Strata are layers of the old world. Smelt one for a few nuggets (nine nuggets make an ingot); crush it later for a whole dust."
-				"&bMortar + stratum = 5 atoms&r of its element (mortar + ingot = 16): the way into Positronic Memory before the Dissolver."
-				"&bA ring of 8 atoms&r on the crafting table makes 4 nuggets again (iron, copper, tin, lead, nickel)."
-				"&7Flint mortars grind iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
+				"&7A mortar can also break strata into atoms: see Breaking Metal."
 				"&7The stone hammer only finds iron and copper. Better hammers dig deeper: an iron-grade hammer finds tin, coal and lead"
 				"&7in gravel; a steel hammer finds redstone and nickel in sand. After that, strata come from machines."
 			]
@@ -574,16 +572,98 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BD916EB4DA72382D" "D055108009A1DF67"]
+			dependencies: ["BD916EB4DA72382D"]
 			description: [
-				"&7[NCP Field Memo #0117: Atoms]"
+				"&7[NCP Field Memo #0118: Biomass]"
 				""
-				"The &bAtomic Reclaimer&r breaks simple matter into its elements, and elements are what Positronic Memory learns."
-				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 8 wood pulp) is cellulose: 6 carbon, 10 hydrogen, 5 oxygen."
-				"&aRock dust&r is silica: 1 silicon and 2 oxygen per dust. Honey and wax pay best of all."
-				"&7By hand, a mortar does the same, slowly: mortar + dust = silica atoms; mortar + 8 leaves (4 saplings, 8 crops or cane)"
-				"&7= plant mass; mortar + 2 plant mass = cellulose atoms."
-				"Hopper botany pots into a Reclaimer into a Beam Capacitor: your first EMC line."
+				"Positronic Memory only reads elements, and every plant is made of them. Plants are &bcellulose&r: C6H10O5, 21 atoms."
+				"&aMortar + 8 leaves&r (or 4 saplings, 8 crops, 8 sugar cane) = 1 &bplant mass&r."
+				"&aMortar + 2 plant mass&r = 6 carbon, 10 hydrogen and 5 oxygen."
+				"&aMortar + 1 rock dust&r (sand broken with a steel hammer) = 1 silicon and 2 oxygen. Stone pays less than plants."
+				"Burn each new element into the tablet once to learn it. Then every atom you grow is EMC."
+				"&7Enclosed: sugar cane. It grows in a botany pot and it is the fastest biomass you have."
+				"&7Leaves need shears; the NCP Shop sells a reinforced pair."
+			]
+			id: "BE97C804D6587521"
+			rewards: [
+				{
+					count: 2
+					id: "1AA4009389D0AE56"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "E8DC4BEBB822E3BA"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "FFDF34420BBC2F91"
+					item: "gtceu:plant_ball"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "88471759F14B899C"
+					item: "chemlib:oxygen"
+					type: "item"
+				}
+			]
+			title: "Green Atoms"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["BE97C804D6587521"]
+			description: [
+				"&7[NCP Field Memo #0119: Metal Atoms]"
+				""
+				"&bMortar + stratum = 5 atoms&r of its element; &bmortar + ingot = 16&r. Learn &biron&r and &bcopper&r in the tablet."
+				"A stratum smelts to 3 nuggets (about 5.3 atoms' worth), so the mortar loses a little. Memory is worth it."
+				"&bA ring of 8 atoms&r on the crafting table makes 4 nuggets again (iron, copper, tin, lead, nickel)."
+				"&7Flint mortars grind iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
+			]
+			id: "A938954098E8D840"
+			rewards: [
+				{
+					count: 2
+					id: "875D8602531BA1B6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "9663AED88754E8FC"
+					item: "chemlib:iron"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "DC514BDF9E60CA6C"
+					item: "chemlib:copper"
+					type: "item"
+				}
+			]
+			title: "Breaking Metal"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["A938954098E8D840" "D055108009A1DF67"]
+			description: [
+				"&7[NCP Field Memo #0117: Automation]"
+				""
+				"Grinding by hand pays, but it pays your time. The &bAtomic Reclaimer&r (ULV) does the same breakdown on power."
+				"&aThe simplest line:&r a &bhopper botany pot&r of sugar cane on top of a hopper, into the Reclaimer;"
+				"a hopper under the Reclaimer into a chest. No pipes, no wrench, no thinking."
+				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
+				"&aRock dust&r = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay best of all."
 				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]
 			id: "9AFE6843E27DA0C6"
@@ -602,23 +682,30 @@
 					type: "item"
 				}
 				{
-					count: 32L
 					id: "54CAEA897217627F"
-					item: "chemlib:oxygen"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "D0DA52F09E5592C5"
+					item: "chemlib:hydrogen"
 					type: "item"
 				}
 			]
-			title: "The Atomic Reclaimer"
+			title: "Hands Off"
 			x: 18.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["BD916EB4DA72382D"]
+			dependencies: ["9AFE6843E27DA0C6"]
 			description: [
 				"&7[NCP Field Memo #0113: Capacitors]"
 				""
 				"The Antimatter Relay (NCP calls it a Beam Capacitor) burns any item with EMC and stores it in a Klein Star."
-				"Feed it your production with pipes. Combine 4 stars into the next size; the charge carries over."
+				"&aClose the loop:&r point the Reclaimer's output hopper into the Capacitor instead of a chest, with a Klein Star inside."
+				"Plants grow, atoms fall, the star fills: EMC with nobody at the bench."
+				"Combine 4 stars into the next size; the charge carries over."
 			]
 			id: "B00ED02E41DE2C48"
 			rewards: [
@@ -642,8 +729,8 @@
 				}
 			]
 			title: "The Beam Capacitor"
-			x: 6.0d
-			y: -1.5d
+			x: 20.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["B00ED02E41DE2C48" "473628F3957FFFB0"]
@@ -788,7 +875,7 @@
 			]
 			title: "Reclamation Sifter Array"
 			x: 20.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["10BB65E601DDE91E"]
@@ -820,7 +907,7 @@
 			]
 			title: "Optional: Steam"
 			x: 20.0d
-			y: -1.5d
+			y: 3.0d
 		}
 	]
 	title: "River Crossing (ULV)"

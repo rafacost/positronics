@@ -39,6 +39,14 @@ def snbt_lines(value, indent):
             out += inner[1:]
         out.append(f"{pad}}}")
         return out
+    if isinstance(value, list):
+        out = ["["]
+        for v in value:
+            inner = snbt_lines(v, indent + 1)
+            out.append(f"{pad}\t{inner[0]}")
+            out += inner[1:]
+        out.append(f"{pad}]")
+        return out
     if isinstance(value, bool):
         return ["1b" if value else "0b"]
     if isinstance(value, int):

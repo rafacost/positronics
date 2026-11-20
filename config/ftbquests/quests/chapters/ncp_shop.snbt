@@ -1702,6 +1702,49 @@
 			x: 0.0d
 			y: 13.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x NCP-issue Shears for 8 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "minecraft:shears"
+			id: "8D10DB401CE02FAF"
+			rewards: [
+				{
+					id: "7BFB18F6DC003504"
+					item: {
+											Count: 1
+											id: "minecraft:shears"
+											tag: {
+												Enchantments: [
+													{
+														id: "minecraft:unbreaking"
+														lvl: 3
+													}
+												]
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "6B8A192D3A2205DB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "NCP-issue Shears"
+			x: 1.5d
+			y: 13.5d
+		}
 	]
 	title: "NCP Shop"
 }

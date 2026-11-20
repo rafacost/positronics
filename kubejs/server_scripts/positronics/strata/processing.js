@@ -18,7 +18,8 @@ ServerEvents.recipes(event => {
                 .EUt(tier.eut)
             s.by.forEach(b => { r = r.chancedOutput(b[0], Math.round(b[1] * 10000), 0) })
 
-            if (s.nugget) event.smelting(`3x ${s.nugget}`, s.id).xp(0.1).id(`positronics:strata/${s.key}_smelt_nuggets`)
+            // 3 nuggets = a third of an ingot: a third of the cooking time (and fuel). See survival/smelt_times.js.
+            if (s.nugget) event.smelting(`3x ${s.nugget}`, s.id).xp(0.1).cookingTime(67).id(`positronics:strata/${s.key}_smelt_nuggets`)
             else if (s.smelt) event.smelting(s.smelt, s.id).xp(0.1).id(`positronics:strata/${s.key}_smelt`)
         })
     })

@@ -250,6 +250,11 @@ def shop():
         for kind in tool_kinds:
             tool_offers.append((f"tool_{mat}_{kind}", f"{mat_name} {kind.replace('_', ' ').title()}", price,
                                 f"gtceu:{mat}_{kind}", 1, unlock))
+    # Shears wear out and leaves are biomass (Green Atoms). Plain shears are 2 iron; the shop sells a
+    # reinforced pair (Unbreaking III, ~4x the uses) so it is worth the Scrip without replacing the recipe.
+    tool_offers.append(("shears", "NCP-issue Shears", 8,
+                        {"id": "minecraft:shears", "tag": {"Enchantments": [{"id": "minecraft:unbreaking", "lvl": 3}]}},
+                        1, "river_crossing:tools"))
     seeds = ["tomato", "lettuce", "onion", "corn", "rice", "bean", "cucumber", "strawberry", "bellpepper", "broccoli",
              "spinach", "grape", "cotton", "flax", "garlic", "peas", "soybean", "papyrus"]
     # Seed counts by product quality: staples and fibres plenty, vegetables fewer, fruit fewest.
@@ -263,7 +268,7 @@ def shop():
     for i, (key, title, price, item, count, unlock) in enumerate(offers):
         quests.append({"key": key, "title": title, "repeat": True, "consume": True, "deps": [unlock] if unlock else [],
                        "tasks": [("positronics:ncp_scrip", price)], "rewards": [(item, count)], "scrip": 0,
-                       "icon": item, "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
+                       "icon": item if isinstance(item, str) else item["id"], "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
                        "desc": [f"&7[NCP Shop]", "", f"{count}x {title} for {price} NCP Scrip.",
                                 "&7Click 'Submit' on the task to pay. Repeatable."] + (["&7Replacement only: unlocked once you have crafted one yourself."] if unlock else [])})
     return {"id": "ncp_shop", "filename": "ncp_shop", "order": 40, "group": "NCP Shop",
