@@ -82,4 +82,13 @@ ServerEvents.recipes(event => {
         .id('positronics:mortar/wood_pulp_from_log')
     event.shapeless('gtceu:wood_dust', [atLeast(1), '#minecraft:planks'])
         .id('positronics:mortar/wood_pulp_from_planks')
+
+    // Wood plank (GT wood plate, the ULV hull's insulation) without the compressor: hammer 2 pulp flat,
+    // the same 2:1 hand loss as metal plates. Any GregTech hammer (not the forge hammer machines).
+    let hammers = ['iron', 'wrought_iron', 'bronze', 'invar', 'cobalt_brass', 'steel', 'damascus_steel', 'aluminium',
+        'stainless_steel', 'titanium', 'tungsten_steel', 'vanadium_steel', 'red_steel', 'blue_steel', 'rose_gold',
+        'sterling_silver', 'diamond', 'netherite', 'ultimet', 'hsse', 'tungsten_carbide', 'naquadah_alloy', 'duranium',
+        'neutronium'].map(m => `gtceu:${m}_hammer`)
+    event.shapeless('gtceu:wood_plate', [Ingredient.of(hammers), '2x gtceu:wood_dust'])
+        .id('positronics:mortar/wood_plate_by_hand')
 })
