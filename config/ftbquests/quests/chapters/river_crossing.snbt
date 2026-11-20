@@ -567,6 +567,43 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["BD916EB4DA72382D" "D055108009A1DF67"]
+			description: [
+				"&7[NCP Field Memo #0117: Atoms]"
+				""
+				"The &bAtomic Reclaimer&r breaks simple matter into its elements, and elements are what Positronic Memory learns."
+				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 8 wood pulp) is cellulose: 6 carbon, 10 hydrogen, 5 oxygen."
+				"&aRock dust&r is silica: 1 silicon and 2 oxygen per 2 dust. Honey and wax pay best of all."
+				"Hopper botany pots into a Reclaimer into a Beam Capacitor: your first EMC line."
+				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
+			]
+			id: "9AFE6843E27DA0C6"
+			rewards: [
+				{
+					count: 2
+					id: "E2F6EEB491476664"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "739849B36F6BEC2A"
+					item: "gtceu:ulv_atomic_reclaimer"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "54CAEA897217627F"
+					item: "chemlib:oxygen"
+					type: "item"
+				}
+			]
+			title: "The Atomic Reclaimer"
+			x: 18.0d
+			y: 1.5d
+		}
+		{
 			dependencies: ["BD916EB4DA72382D"]
 			description: [
 				"&7[NCP Field Memo #0113: Capacitors]"

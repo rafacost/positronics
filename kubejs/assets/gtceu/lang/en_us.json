@@ -8,5 +8,9 @@
   "block.gtceu.ulv_reclamation_sifter": "Reclamation Sifter",
   "block.gtceu.reclamation_sifter_array": "Reclamation Sifter Array",
   "block.gtceu.calla_paddy": "Calla Paddy",
-  "gtceu.calla_paddy": "Calla Paddy"
+  "gtceu.calla_paddy": "Calla Paddy",
+  "block.gtceu.ulv_atomic_reclaimer": "Atomic Reclaimer",
+  "block.gtceu.lv_atomic_reclaimer": "Basic Atomic Reclaimer",
+  "block.gtceu.mv_atomic_reclaimer": "Advanced Atomic Reclaimer",
+  "gtceu.atomic_reclaimer": "Atomic Reclaimer"
 }

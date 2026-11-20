@@ -3,6 +3,27 @@
 // a ULV machine accepts any recipe up to 8 EU/t (our Seed I recipes use 7 EU/t).
 // IDs become gtceu:ulv_<name>.
 
+// Atomic Reclaimer: breaks simple matter (biomass, rock dust, honey, wax) into its ChemLib elements:
+// the early, automatable feed for Positronic Memory (EMC = elements only). Yield follows the formula's
+// atom count, so richer molecules pay more (cellulose C6H10O5 = 21 atoms; stone SiO2 = 3).
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('atomic_reclaimer')
+        .category('electric')
+        .setEUIO('in')
+        .setMaxIOSize(1, 4, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.DUST_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL)
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('atomic_reclaimer', 'simple')
+        .tiers(GTValues.ULV, GTValues.LV, GTValues.MV)
+        .definition((tier, builder) => builder
+            .recipeType('atomic_reclaimer')
+            .workableTieredHullModel('gtceu:block/machines/electrolyzer'))
+})
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     let machines = [
         ['reclamation_crusher', 'macerator', 'macerator'],

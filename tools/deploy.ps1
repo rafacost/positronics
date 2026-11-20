@@ -24,7 +24,7 @@ foreach ($kind in 'startup_scripts', 'server_scripts', 'client_scripts') {
 }
 
 # 2) Other tracked kubejs content (assets, data, config) and tracked configs: copied over (no deletions).
-foreach ($dir in 'kubejs\assets', 'kubejs\data', 'kubejs\config', 'config', 'defaultconfigs') {
+foreach ($dir in 'kubejs\assets', 'kubejs\data', 'kubejs\config', 'config', 'defaultconfigs', 'journeymap\config') {
     $src = Join-Path $repo $dir
     if (Test-Path $src) {
         robocopy $src (Join-Path $Instance $dir) /E /NJH /NJS /NP /NDL | Out-Null
