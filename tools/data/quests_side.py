@@ -239,17 +239,29 @@ def shop():
         ("ashy_bee", "Ashy Mining Bee (egg)", 8, "productivebees:spawn_egg_ashy_mining_bee", 1),
         ("blue_bee", "Blue Banded Bee (egg)", 8, "productivebees:spawn_egg_blue_banded_bee", 1),
     ]
+    # Replacement tools (decided 2026-11-20): the shop sells only what WEARS OUT and is a pain to remake,
+    # never what would skip a quest. Each tool unlocks after the quest where you first craft that grade,
+    # and is priced high (about 1/7 of the chapter's Scrip for a wrought tool) so crafting stays the norm.
+    tool_grades = [("wrought_iron", "Wrought Iron", 10, "river_crossing:tools"),
+                   ("steel", "Steel", 15, "river_crossing:steelhammer")]
+    tool_kinds = ["hammer", "wrench", "file", "screwdriver", "wire_cutter", "saw", "mortar", "knife"]
+    tool_offers = []
+    for mat, mat_name, price, unlock in tool_grades:
+        for kind in tool_kinds:
+            tool_offers.append((f"tool_{mat}_{kind}", f"{mat_name} {kind.replace('_', ' ').title()}", price,
+                                f"gtceu:{mat}_{kind}", 1, unlock))
     seeds = ["tomato", "lettuce", "onion", "corn", "rice", "bean", "cucumber", "strawberry", "bellpepper", "broccoli",
              "spinach", "grape", "cotton", "flax", "garlic", "peas", "soybean", "papyrus"]
     for c in seeds:
         offers.append((f"seed_{c}", f"{nice('x:' + c)} Seeds", 1, f"pamhc2crops:{c}seeditem", 1))
     quests = []
-    for i, (key, title, price, item, count) in enumerate(offers):
-        quests.append({"key": key, "title": title, "repeat": True, "consume": True,
+    offers = [o + (None,) for o in offers] + tool_offers
+    for i, (key, title, price, item, count, unlock) in enumerate(offers):
+        quests.append({"key": key, "title": title, "repeat": True, "consume": True, "deps": [unlock] if unlock else [],
                        "tasks": [("positronics:ncp_scrip", price)], "rewards": [(item, count)], "scrip": 0,
                        "icon": item, "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
                        "desc": [f"&7[NCP Shop]", "", f"{count}x {title} for {price} NCP Scrip.",
-                                "&7Click 'Submit' on the task to pay. Repeatable."]})
+                                "&7Click 'Submit' on the task to pay. Repeatable."] + (["&7Replacement only: unlocked once you have crafted one yourself."] if unlock else [])})
     return {"id": "ncp_shop", "filename": "ncp_shop", "order": 40, "group": "NCP Shop",
             "title": "NCP Shop", "icon": "positronics:ncp_scrip", "quests": quests}
 

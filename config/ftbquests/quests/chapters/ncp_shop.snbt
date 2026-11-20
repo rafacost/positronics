@@ -1168,6 +1168,518 @@
 			x: 3.0d
 			y: 9.0d
 		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Hammer for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_hammer"
+			id: "2AE569DDAA16AC47"
+			rewards: [
+				{
+					id: "6FFD07A5C2D29200"
+					item: "gtceu:wrought_iron_hammer"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "47E216A61A5DF490"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Hammer"
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Wrench for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_wrench"
+			id: "FFB830C2EF1463DC"
+			rewards: [
+				{
+					id: "A7B82B1C57533577"
+					item: "gtceu:wrought_iron_wrench"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "0748812526C5B496"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Wrench"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron File for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_file"
+			id: "03B0F98C1A349D18"
+			rewards: [
+				{
+					id: "52D81649358F3B4A"
+					item: "gtceu:wrought_iron_file"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "130B9CCC626BDB23"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron File"
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Screwdriver for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_screwdriver"
+			id: "8403A53AA93E4A1E"
+			rewards: [
+				{
+					id: "38E969803FF76418"
+					item: "gtceu:wrought_iron_screwdriver"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "969EF3829E99C016"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Screwdriver"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Wire Cutter for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_wire_cutter"
+			id: "2D6E6FDFF8760962"
+			rewards: [
+				{
+					id: "289FA530F4632C70"
+					item: "gtceu:wrought_iron_wire_cutter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "661343AA3684CFC9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Wire Cutter"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Saw for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_saw"
+			id: "EA6B9015EE97341E"
+			rewards: [
+				{
+					id: "E2602EB48B49F989"
+					item: "gtceu:wrought_iron_saw"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "CCA14F45105112FE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Saw"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Mortar for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_mortar"
+			id: "02EA8D7CDCF7630C"
+			rewards: [
+				{
+					id: "A008E6EC886E3EC2"
+					item: "gtceu:wrought_iron_mortar"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "ED36AAE9F8565230"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Mortar"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["076E7CC3AFDAC867"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Wrought Iron Knife for 10 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:wrought_iron_knife"
+			id: "E1A533ECC71A0ED4"
+			rewards: [
+				{
+					id: "71E5D706C6B1FDB9"
+					item: "gtceu:wrought_iron_knife"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "8ECA840F0EA40284"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron Knife"
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Hammer for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_hammer"
+			id: "526121DA2432E734"
+			rewards: [
+				{
+					id: "E6645726A5C82F08"
+					item: "gtceu:steel_hammer"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "609056524150F428"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Hammer"
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Wrench for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_wrench"
+			id: "4BE7DDECE9275EEF"
+			rewards: [
+				{
+					id: "040D668E19B18082"
+					item: "gtceu:steel_wrench"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "7984F6852C80C4AF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Wrench"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel File for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_file"
+			id: "39F31DD920B9EC9B"
+			rewards: [
+				{
+					id: "5A99EB3439ABB98E"
+					item: "gtceu:steel_file"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "BE8D92709630F874"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel File"
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Screwdriver for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_screwdriver"
+			id: "DAAD9CC878144145"
+			rewards: [
+				{
+					id: "75F1A36406A35865"
+					item: "gtceu:steel_screwdriver"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "30A24E0FA4612B9A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Screwdriver"
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Wire Cutter for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_wire_cutter"
+			id: "84CD9B16AF7FFE76"
+			rewards: [
+				{
+					id: "377045250EB356AF"
+					item: "gtceu:steel_wire_cutter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "7742D04A12DD0CBF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Wire Cutter"
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Saw for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_saw"
+			id: "2414D22309310E02"
+			rewards: [
+				{
+					id: "4C8F699B977CF915"
+					item: "gtceu:steel_saw"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "6A98D98793604C38"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Saw"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Mortar for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_mortar"
+			id: "7B111BF94789FB79"
+			rewards: [
+				{
+					id: "28F316CB75EC17CC"
+					item: "gtceu:steel_mortar"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "F06A4ACCBB761C30"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Mortar"
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["E166F900C4358044"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Steel Knife for 15 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Replacement only: unlocked once you have crafted one yourself."
+			]
+			icon: "gtceu:steel_knife"
+			id: "C86B11BA6E693CD6"
+			rewards: [
+				{
+					id: "0DBDD5015BD8742C"
+					item: "gtceu:steel_knife"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "7CBE36CBF9BB69A4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Steel Knife"
+			x: 0.0d
+			y: 13.5d
+		}
 	]
 	title: "NCP Shop"
 }
