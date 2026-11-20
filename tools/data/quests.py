@@ -47,7 +47,7 @@ CHAPTERS = [
              "desc": memo("0114", "Gravel", "Gravel holds the next layer: tin for solder and bronze, coal for steel, lead for cables.",
                           "&7Only a GregTech hammer of iron grade or better finds them; the stone hammer just makes sand.")},
             {"key": "pbf", "title": "Steel Without Power", "deps": ["deeper"],
-             "tasks": ["gtceu:primitive_blast_furnace", ("gtceu:firebricks", 24), ("gtceu:steel_ingot", 4)],
+             "tasks": ["gtceu:primitive_blast_furnace", ("gtceu:firebricks", 33), ("gtceu:steel_ingot", 4)],
              "desc": memo("0115", "Blast Furnace",
                           "Redstone hides deeper than any iron hammer reaches, and every circuit needs it. You need &bsteel&r first.",
                           "The &bPrimitive Blast Furnace&r makes it from iron and coal, no power needed.",

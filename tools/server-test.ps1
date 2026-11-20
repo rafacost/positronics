@@ -58,7 +58,7 @@ ServerEvents.loaded(event => {
     })
     JsonIO.write('kubejs/exported/positronics_star_caps.json', caps)
     let byType = {}
-    event.server.recipeManager.getRecipes().forEach(rc => { let ty = String(rc.getType()); if ((/atomic_reclaimer|electrolyzer|centrifuge/.test(ty) && /positronics/.test(String(rc.getId()))) || /positronics:(mortar.(wood|raw_rubber|rubber_sheet|plant_mass_to|rock_dust)|chemistry.(compound.methane|isoprene)|foundation.(clay_block|clay_dust|brick_dust)|hammering.dust_to_clay|atomic_reclaimer.emc.(cellulose|silica|methane))/.test(String(rc.getId()))) byType[ty + ' ' + rc.getId()] = 1 })
+    event.server.recipeManager.getRecipes().forEach(rc => { let ty = String(rc.getType()); if ((/atomic_reclaimer|electrolyzer|centrifuge/.test(ty) && /positronics/.test(String(rc.getId()))) || /positronics:(mortar.(wood|raw_rubber|rubber_sheet|plant_mass_to|rock_dust)|chemistry.(compound.methane|isoprene)|foundation.(clay_block|clay_dust|brick_dust)|hammering.dust_to_clay|mortar.carbon_atoms_to_coal|atomic_reclaimer.emc.(cellulose|silica|methane))/.test(String(rc.getId()))) byType[ty + ' ' + rc.getId()] = 1 })
     console.info('[ServerTest] positronics machine recipes: ' + Object.keys(byType).join(', '))
     let smelt = []
     event.server.recipeManager.getRecipes().forEach(rc => {
