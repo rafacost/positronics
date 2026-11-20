@@ -76,16 +76,13 @@ ServerEvents.recipes(event => {
     bridge('methane', 'gtceu:methane', 250)
     bridge('ethanol', 'gtceu:ethanol', 250)
 
-    // ---- Isoprene by hand: C5H8 = 5 carbon + 4 hydrogen (H2), the monomer of natural rubber.
+    // ---- Isoprene by hand, atom for atom (decided 2026-11-20): C5H8 is 13 atoms, too many for 9 slots,
+    // so it goes through ChemLib methane: 1 C + 4 H = CH4; 2 CH4 + 3 C = C5H8 (natural rubber's monomer).
     // Breaks the rubber loop (no resin without rubber trees, no saplings without resin) with elements only.
-    event.shaped('2x gtceu:sticky_resin', [
-        'CHC',
-        'HCH',
-        'CHC'
-    ], {
-        C: 'chemlib:carbon',
-        H: 'chemlib:hydrogen'
-    }).id('positronics:chemistry/isoprene_resin')
+    event.shapeless('chemlib:methane', ['chemlib:carbon', '4x chemlib:hydrogen'])
+        .id('positronics:chemistry/methane_by_hand')
+    event.shapeless('2x gtceu:sticky_resin', ['2x chemlib:methane', '3x chemlib:carbon'])
+        .id('positronics:chemistry/isoprene_resin')
 
     // ---- Bridge: element -> GregTech dust (16:1, matching the Dissolver's 16 elements per ingot, so no loop).
     let known = {}

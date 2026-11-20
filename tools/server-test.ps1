@@ -35,7 +35,7 @@ foreach ($dir in 'config', 'defaultconfigs', 'kubejs') {
 $dump = Join-Path $ServerDir 'kubejs\server_scripts\zz_server_test_dump.js'
 @'
 ServerEvents.recipes(event => {
-    let watch = ['gtceu:ulv_solar_panel', 'gtceu:ulv_1a_energy_converter', 'solarflux:sp_1', 'gtceu:ulv_machine_casing', 'gtceu:ulv_machine_hull', 'gtceu:wood_plate', 'minecraft:shears', 'gtceu:red_alloy_dust', 'gtceu:wrought_iron_nugget', 'gtceu:copper_nugget',
+    let watch = ['gtceu:ulv_solar_panel', 'gtceu:ulv_1a_energy_converter', 'solarflux:sp_1', 'gtceu:ulv_machine_casing', 'gtceu:ulv_machine_hull', 'gtceu:wood_plate', 'gtceu:red_alloy_single_cable', 'gtceu:rubber_plate', 'gtceu:rubber_ingot', 'gtceu:raw_rubber_dust', 'gtceu:rubber_dust', 'gtceu:sticky_resin', 'minecraft:shears', 'gtceu:red_alloy_dust', 'gtceu:wrought_iron_nugget', 'gtceu:copper_nugget',
         'gtceu:vacuum_tube', 'gtceu:glass_tube', 'gtceu:resistor', 'gtceu:basic_electronic_circuit', 'gtceu:lead_single_cable', 'gtceu:tin_single_cable',
         'gtceu:lv_machine_casing', 'gtceu:ulv_battery_buffer_4x', 'gtceu:wrought_iron_hammer', 'gtceu:wrought_iron_plate', 'gtceu:red_alloy_single_wire',
         'gtceu:resin_circuit_board', 'gtceu:resin_printed_circuit_board', 'gtceu:lp_steam_solid_boiler', 'minecraft:hopper', 'minecraft:bucket', 'gtceu:flint_dust', 'gtceu:quartz_sand_dust', 'gtceu:glass_dust', 'minecraft:glass', 'gtceu:flint_mortar', 'minecraft:flint', 'immersiveengineering:cloche', 'gtceu:sticky_resin', 'gtceu:raw_rubber_dust', 'gtceu:rubber_plate', 'productivebees:advanced_oak_beehive', 'minecraft:beehive', 'projecte:transmutation_tablet', 'gtceu:primitive_blast_furnace', 'gtceu:firebricks', 'gtceu:firebrick', 'gtceu:fireclay_dust', 'gtceu:compressed_fireclay', 'gtceu:brick_dust', 'gtceu:clay_dust', 'gtceu:steel_ingot']
@@ -58,7 +58,7 @@ ServerEvents.loaded(event => {
     })
     JsonIO.write('kubejs/exported/positronics_star_caps.json', caps)
     let byType = {}
-    event.server.recipeManager.getRecipes().forEach(rc => { let ty = String(rc.getType()); if ((/atomic_reclaimer|electrolyzer|centrifuge/.test(ty) && /positronics/.test(String(rc.getId()))) || /positronics:mortar.wood/.test(String(rc.getId()))) byType[ty + ' ' + rc.getId()] = 1 })
+    event.server.recipeManager.getRecipes().forEach(rc => { let ty = String(rc.getType()); if ((/atomic_reclaimer|electrolyzer|centrifuge/.test(ty) && /positronics/.test(String(rc.getId()))) || /positronics:(mortar.(wood|raw_rubber|rubber_sheet|plant_mass_to|rock_dust)|chemistry.(methane_by|isoprene)|atomic_reclaimer.emc.(cellulose|silica|methane))/.test(String(rc.getId()))) byType[ty + ' ' + rc.getId()] = 1 })
     console.info('[ServerTest] positronics machine recipes: ' + Object.keys(byType).join(', '))
     let smelt = []
     event.server.recipeManager.getRecipes().forEach(rc => {

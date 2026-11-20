@@ -7,22 +7,6 @@
 // A stratum smelts into 3 nuggets (1/3 ingot, about 5.3 elements); by mortar it gives 5 (a small loss).
 // Also: wood pulp by hand.
 
-// A crafting recipe has one output; molecules have several elements. The rest of the molecule is
-// handed over when the craft is taken (the grid still holds the inputs at that moment).
-ItemEvents.crafted(event => {
-    let id = String(event.item.id)
-    if (id != 'chemlib:silicon' && id != 'chemlib:carbon') return
-    let inv = event.inventory
-    let player = event.player
-    if (!inv || !player) return
-    if (id == 'chemlib:silicon' && inv.count(Ingredient.of('positronics:dust')) > 0) {
-        player.give('2x chemlib:oxygen')
-    } else if (id == 'chemlib:carbon' && inv.count(Ingredient.of('gtceu:plant_ball')) > 0) {
-        player.give('10x chemlib:hydrogen')
-        player.give('5x chemlib:oxygen')
-    }
-})
-
 ServerEvents.recipes(event => {
     let mortars = {
         1: ['gtceu:flint_mortar'],
@@ -65,17 +49,26 @@ ServerEvents.recipes(event => {
             .id(`positronics:mortar/${el}_atoms_to_nuggets`)
     })
 
-    // Hand EMC (early, manual): the same yields as the Atomic Reclaimer, just slow.
-    //   rock dust -> silica: mortar + 1 dust = 1 silicon (+ 2 oxygen, given on craft below)
-    //   biomass -> plant mass (GT plant ball) -> cellulose atoms: mortar + 2 plant balls = 6 carbon (+ 10 H, 5 O)
-    event.shapeless('chemlib:silicon', [atLeast(1), 'positronics:dust'])
+    // Hand EMC (early, manual): the mortar makes the real ChemLib compounds, which Positronic Memory values
+    // at the sum of their atoms (projecte/emc.js). The Atomic Reclaimer splits them into elements.
+    //   rock dust -> silicon dioxide (SiO2)
+    //   biomass -> plant mass (GT plant ball) -> cellulose (C6H10O5)
+    event.shapeless('chemlib:silicon_dioxide', [atLeast(1), 'positronics:dust'])
         .id('positronics:mortar/rock_dust_to_silica')
     event.shapeless('gtceu:plant_ball', [atLeast(1), '8x #minecraft:leaves']).id('positronics:mortar/plant_mass_leaves')
     event.shapeless('gtceu:plant_ball', [atLeast(1), '4x #minecraft:saplings']).id('positronics:mortar/plant_mass_saplings')
     event.shapeless('gtceu:plant_ball', [atLeast(1), '8x #forge:crops']).id('positronics:mortar/plant_mass_crops')
     event.shapeless('gtceu:plant_ball', [atLeast(1), '8x minecraft:sugar_cane']).id('positronics:mortar/plant_mass_cane')
-    event.shapeless('6x chemlib:carbon', [atLeast(1), '2x gtceu:plant_ball'])
-        .id('positronics:mortar/plant_mass_to_cellulose_atoms')
+    event.shapeless('chemlib:cellulose', [atLeast(1), '2x gtceu:plant_ball'])
+        .id('positronics:mortar/plant_mass_to_cellulose')
+
+    // Rubber by hand (the ULV hull's cables need a rubber plate; GT only makes those in machines).
+    // Same resin cost as the machine route (extractor 1 resin = 3 raw rubber; 3 raw + sulfur = 1 ingot;
+    // 2 ingots = 1 plate), no sulfur, just slower.
+    event.shapeless('gtceu:raw_rubber_dust', [atLeast(1), '2x gtceu:sticky_resin'])
+        .id('positronics:mortar/raw_rubber_by_hand')
+    event.smelting('gtceu:rubber_plate', 'gtceu:raw_rubber_dust').xp(0.1)
+        .id('positronics:mortar/rubber_sheet_by_hand')
 
     // Wood pulp (GregTech wood dust): paper, resin boards and more.
     event.shapeless('2x gtceu:wood_dust', [atLeast(1), '#minecraft:logs'])

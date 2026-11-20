@@ -1,4 +1,4 @@
-// Positronics: Positronic Memory learns ELEMENTS, not ingots (decided 2026-11-20).
+// Positronics: Positronic Memory learns ELEMENTS and COMPOUNDS, not ingots (decided 2026-11-20).
 // Every item's EMC is cleared; only ChemLib elements (plus a few organic exceptions such as slime)
 // get values back. To turn production into EMC, dissolve it into elements (Alchemistry Dissolver);
 // to turn EMC back into materials, transmute elements and compress them into GregTech dust
@@ -42,6 +42,23 @@ ProjectEEvents.setEMC(event => {
     Object.keys(global.POSITRONICS_ELEMENT_TIERS).forEach(el => {
         values[`chemlib:${el}`] = POS_EMC_TIER_VALUE[global.POSITRONICS_ELEMENT_TIERS[el]]
     })
+    // Compounds (decided 2026-11-20): Memory understands chemistry, elements AND molecules. A compound is
+    // worth exactly the sum of its atoms (ChemLib formulas, tools/make_compounds.py), so splitting or
+    // combining never makes or loses EMC.
+    let compounds = global.POSITRONICS_COMPOUNDS || {}
+    let compoundCount = 0
+    Object.keys(compounds).forEach(name => {
+        let atoms = compounds[name]
+        let sum = 0, ok = true
+        Object.keys(atoms).forEach(el => {
+            let v = values[`chemlib:${el}`]
+            if (v === undefined) ok = false
+            else sum += v * atoms[el]
+        })
+        let id = `chemlib:${name}`
+        if (ok && sum > 0 && Item.exists(id)) { values[id] = sum; compoundCount++ }
+    })
+    console.info(`[Positronics] Positronic Memory: ${compoundCount} compounds valued by their atoms.`)
     Object.keys(POS_EMC_EXCEPTIONS).forEach(id => { values[id] = POS_EMC_EXCEPTIONS[id] })
 
     let cleared = 0

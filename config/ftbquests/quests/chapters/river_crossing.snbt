@@ -288,11 +288,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["076E7CC3AFDAC867"]
+			dependencies: ["076E7CC3AFDAC867" "D17A59BE9671EB7D"]
 			description: [
 				"&7[NCP Field Memo #0105: Hull]"
 				""
 				"Every machine starts as a hull. Build one; you will build hundreds."
+				"&7Wood planks: a GregTech hammer + 2 wood pulp. Cables: a wire + a rubber plate (see Rubber)."
 			]
 			id: "70EDF0098A06DF89"
 			rewards: [
@@ -316,7 +317,7 @@
 				}
 			]
 			title: "A ULV Hull"
-			x: 8.0d
+			x: 12.0d
 			y: 1.5d
 		}
 		{
@@ -344,8 +345,8 @@
 				}
 			]
 			title: "Vacuum Tubes"
-			x: 10.0d
-			y: 1.5d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["70EDF0098A06DF89" "E166F900C4358044"]
@@ -378,7 +379,7 @@
 			]
 			title: "Power"
 			x: 14.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["F059AF61195C81A9" "37E06DD9764C4021"]
@@ -487,13 +488,17 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["BD916EB4DA72382D"]
+			dependencies: ["BE97C804D6587521"]
 			description: [
 				"&7[NCP Field Memo #0111: Rubber]"
 				""
 				"No rubber trees, no resin; no resin, no rubber trees. Positronic Memory breaks the loop:"
-				"rubber is isoprene, C5H8. On a crafting table, &b5 carbon + 4 hydrogen (H2)&r in a checkerboard make two &bsticky resin&r."
-				"Eight resin earn two rubber saplings, and from then on the trees do the work. Resin insulates wire and makes circuit boards."
+				"rubber is isoprene, C5H8, atom for atom on the crafting table:"
+				"&b1 carbon + 4 hydrogen = 1 methane&r (CH4); &b2 methane + 3 carbon = 2 sticky resin&r."
+				"&aRubber plate by hand:&r mortar + 2 sticky resin = raw rubber dust; smelt it into a rubber plate."
+				"A wire + a rubber plate = a cable. The hull needs two."
+				"&aRubber trees:&r plant the saplings in dirt and let them grow. Break the tree's own logs: each one"
+				"drops sticky resin most of the time. Logs you placed yourself, or from a botany pot, give none."
 			]
 			id: "D17A59BE9671EB7D"
 			rewards: [
@@ -512,14 +517,14 @@
 			]
 			tasks: [
 				{
-					count: 8L
+					count: 2L
 					id: "9D80140F32934A45"
-					item: "gtceu:sticky_resin"
+					item: "gtceu:rubber_plate"
 					type: "item"
 				}
 			]
 			title: "Rubber"
-			x: 6.0d
+			x: 10.0d
 			y: 1.5d
 		}
 		{
@@ -528,11 +533,11 @@
 				"&7[NCP Field Memo #0112: Memory]"
 				""
 				"Your first ingot. Now meet the &bTransmutation Tablet&r: four iron, four glass and your NCP Scrip as a login."
-				"It reads and writes &bPositronic Memory&r (EMC). Memory only understands &bchemical elements&r: an iron ingot means"
-				"nothing to it, but sixteen &biron atoms&r (ChemLib) do. Burn an element into the tablet to learn it; spend EMC to make more."
+				"It reads and writes &bPositronic Memory&r (EMC). Memory only understands &bchemistry&r (elements and molecules): an iron"
+				"ingot means nothing to it, but sixteen &biron atoms&r (ChemLib) do. Burn an element into the tablet to learn it; spend EMC to make more."
 				"Later, the &bDissolver&r (LV) turns your production into elements, and a GregTech compressor packs 16 elements"
 				"back into one dust, one tier after the metal is first needed. The planets still have to be done by hand."
-				"&7Enclosed: 20 carbon and 16 hydrogen atoms. Burn one of each to learn them; the rest is your first rubber (see Rubber)."
+				"&7Enclosed: 20 carbon and 20 hydrogen atoms. Burn one of each to learn them; the rest is your first rubber (see Rubber)."
 			]
 			id: "BD916EB4DA72382D"
 			rewards: [
@@ -549,7 +554,7 @@
 					type: "item"
 				}
 				{
-					count: 16
+					count: 20
 					id: "08C5A3FDDFE4E313"
 					item: "chemlib:hydrogen"
 					type: "item"
@@ -572,15 +577,16 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["BD916EB4DA72382D"]
+			dependencies: ["A938954098E8D840"]
 			description: [
 				"&7[NCP Field Memo #0118: Biomass]"
 				""
-				"Positronic Memory only reads elements, and every plant is made of them. Plants are &bcellulose&r: C6H10O5, 21 atoms."
+				"Positronic Memory reads chemistry, and every plant is made of it. Plants are &bcellulose&r: C6H10O5, 21 atoms."
 				"&aMortar + 8 leaves&r (or 4 saplings, 8 crops, 8 sugar cane) = 1 &bplant mass&r."
-				"&aMortar + 2 plant mass&r = 6 carbon, 10 hydrogen and 5 oxygen."
-				"&aMortar + 1 rock dust&r (sand broken with a steel hammer) = 1 silicon and 2 oxygen. Stone pays less than plants."
-				"Burn each new element into the tablet once to learn it. Then every atom you grow is EMC."
+				"&aMortar + 2 plant mass&r = 1 &bcellulose&r, worth exactly its 6 carbon, 10 hydrogen and 5 oxygen."
+				"&aMortar + 1 rock dust&r (sand broken with a steel hammer) = 1 &bsilicon dioxide&r. Stone pays less than plants."
+				"Burn a cellulose into the tablet to learn it; then every one you grow is EMC."
+				"Need the atoms themselves (rubber needs carbon and hydrogen)? Spend that EMC on them in the tablet."
 				"&7Enclosed: sugar cane. It grows in a botany pot and it is the fastest biomass you have."
 				"&7Leaves need shears; the NCP Shop sells a reinforced pair."
 			]
@@ -601,24 +607,18 @@
 			]
 			tasks: [
 				{
-					count: 2L
+					count: 4L
 					id: "FFDF34420BBC2F91"
-					item: "gtceu:plant_ball"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "88471759F14B899C"
-					item: "chemlib:oxygen"
+					item: "chemlib:cellulose"
 					type: "item"
 				}
 			]
 			title: "Green Atoms"
-			x: 6.0d
-			y: -1.5d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["BE97C804D6587521"]
+			dependencies: ["BD916EB4DA72382D"]
 			description: [
 				"&7[NCP Field Memo #0119: Metal Atoms]"
 				""
@@ -651,11 +651,11 @@
 				}
 			]
 			title: "Breaking Metal"
-			x: 8.0d
-			y: -1.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["A938954098E8D840" "D055108009A1DF67"]
+			dependencies: ["BE97C804D6587521" "D055108009A1DF67"]
 			description: [
 				"&7[NCP Field Memo #0117: Automation]"
 				""
@@ -664,6 +664,7 @@
 				"a hopper under the Reclaimer into a chest. No pipes, no wrench, no thinking."
 				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
 				"&aRock dust&r = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay best of all."
+				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
 				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]
 			id: "9AFE6843E27DA0C6"
@@ -784,7 +785,7 @@
 				}
 			]
 			title: "Extreme Crafting"
-			x: 10.0d
+			x: 14.0d
 			y: -1.5d
 		}
 		{

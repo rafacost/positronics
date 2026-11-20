@@ -31,6 +31,11 @@ ServerEvents.recipes(event => {
     reclaim('rock_dust', 'positronics:dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
     reclaim('stone_dust', 'gtceu:stone_dust', ['chemlib:silicon', '2x chemlib:oxygen', ['chemlib:aluminum', 200]], 100)
 
+    // The compounds themselves (from the hand mortar) split into their atoms, for when you need the elements.
+    reclaim('cellulose', 'chemlib:cellulose', cellulose, 100)
+    reclaim('silica', 'chemlib:silicon_dioxide', ['chemlib:silicon', '2x chemlib:oxygen'], 60)
+    reclaim('methane', 'chemlib:methane', ['chemlib:carbon', '4x chemlib:hydrogen'], 60)
+
     // Bees: honey = glucose (C6H12O6, the bottle comes back); wax and combs = CH2 chains.
     reclaim('honey', 'minecraft:honey_bottle', ['6x chemlib:carbon', '12x chemlib:hydrogen', '6x chemlib:oxygen', 'minecraft:glass_bottle'], 160)
     reclaim('wax', 'productivebees:wax', ['4x chemlib:carbon', '8x chemlib:hydrogen'], 120)
