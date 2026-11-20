@@ -1,0 +1,400 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_dogan"
+	group: ""
+	icon: "gtceu:ev_machine_hull"
+	id: "D0F875DBC87E2B3A"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["C4AEF99915A9BBC9"]
+			description: [
+				"&7[NCP Field Memo #0501: Posting]"
+				""
+				"Dogans were NCP's control bunkers: screens, consoles and old procedures."
+				"Goal: &bClearance Level 5&r."
+			]
+			id: "B85D7C4C66D2C306"
+			rewards: [
+				{
+					count: 6
+					id: "39319AFB0CF1009E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "8ACC20E4E4C6B965"
+					item: "positronics:clearance_card_4"
+					type: "item"
+				}
+			]
+			title: "The Dogan"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B85D7C4C66D2C306"]
+			description: [
+				"&7[NCP Field Memo #0502: Titanium]"
+				""
+				"Rutile, chlorine, carbon, magnesium. The Kroll process, NCP edition."
+			]
+			id: "0D39446839870DE3"
+			rewards: [
+				{
+					count: 6
+					id: "68084929E5FF3EC1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3292A37FDC714631"
+					item: "gtceu:titanium_tetrachloride_bucket"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "B166FCEA5AB8A4F6"
+					item: "gtceu:titanium_ingot"
+					type: "item"
+				}
+			]
+			title: "Titanium"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D39446839870DE3"]
+			description: [
+				"&7[NCP Field Memo #0503: Hull]"
+				""
+				"Assembled with Clearance Level 4."
+			]
+			id: "22289E8809BF87AE"
+			rewards: [
+				{
+					count: 6
+					id: "CA389E78DCBDBAA0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F2D8510CEE788435"
+					item: "gtceu:ev_machine_hull"
+					type: "item"
+				}
+			]
+			title: "EV Machine Hull"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D39446839870DE3"]
+			description: [
+				"&7[NCP Field Memo #0504: Heat]"
+				""
+				"Titanium needs heat. Nichrome gives it."
+			]
+			id: "755FBD7E2E24798C"
+			rewards: [
+				{
+					count: 6
+					id: "685E7C6ED80C40FD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "B827B3E11B43053F"
+					item: "gtceu:nichrome_coil_block"
+					type: "item"
+				}
+			]
+			title: "Nichrome Coils"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22289E8809BF87AE"]
+			description: [
+				"&7[NCP Field Memo #0505: Petrochemistry]"
+				""
+				"Split oil into everything at once."
+			]
+			id: "F12F33E405BA7658"
+			rewards: [
+				{
+					count: 6
+					id: "CB50DB8988C885B0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8A81F072FD5511AE"
+					item: "gtceu:distillation_tower"
+					type: "item"
+				}
+			]
+			title: "Distillation Tower"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22289E8809BF87AE"]
+			description: [
+				"&7[NCP Field Memo #0506: Cold]"
+				""
+				"Hot ingots need cooling."
+			]
+			id: "1F7DBB52B6FBE8EC"
+			rewards: [
+				{
+					count: 6
+					id: "696450DA16AA5DEA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "AFBFB123474C382F"
+					item: "gtceu:vacuum_freezer"
+					type: "item"
+				}
+			]
+			title: "Vacuum Freezer"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["F12F33E405BA7658"]
+			description: [
+				"&7[NCP Field Memo #0507: Rubber]"
+				""
+				"Better rubber for better cables."
+			]
+			id: "94A062831D67EB77"
+			rewards: [
+				{
+					count: 6
+					id: "0ECE082FED00D4EF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55747452C3A86AE6"
+					item: "gtceu:benzene_bucket"
+					type: "item"
+				}
+				{
+					id: "6D665B85E9045E98"
+					item: "gtceu:styrene_butadiene_rubber_bucket"
+					type: "item"
+				}
+			]
+			title: "Synthetic Rubber"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22289E8809BF87AE"]
+			description: [
+				"&7[NCP Field Memo #0508: Chemistry]"
+				""
+				"Every reaction, in parallel, in one place. The Dogan's control room."
+			]
+			id: "A9ADAE36E64D7363"
+			rewards: [
+				{
+					count: 6
+					id: "862748F715BB82FC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "56DE583684E16748"
+					item: "gtceu:large_chemical_reactor"
+					type: "item"
+				}
+			]
+			title: "Large Chemical Reactor"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["A9ADAE36E64D7363"]
+			description: [
+				"&7[NCP Field Memo #0509: Nano]"
+				""
+				"Advanced SMDs, epoxy boards. EV and IV circuits."
+			]
+			id: "45C5B750D77F099C"
+			rewards: [
+				{
+					count: 6
+					id: "E7467B7ABFD2CDA5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "CF75D4468C4A9149"
+					item: "gtceu:nano_processor"
+					type: "item"
+				}
+				{
+					id: "556FC8A084767AAB"
+					item: "gtceu:micro_processor_computer"
+					type: "item"
+				}
+			]
+			title: "Nanoprocessors"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45C5B750D77F099C"]
+			description: [
+				"&7[NCP Field Memo #0511: Charging]"
+				""
+				"209,715,200,000 EMC. The Dogan's chemical complex, piped into capacitors."
+			]
+			id: "CAD8171A21075328"
+			rewards: [
+				{
+					count: 6
+					id: "37E1E7F96237CD81"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "39DADA7C0945CB13"
+					item: "projectexpansion:magnum_star_omega"
+					type: "item"
+				}
+			]
+			title: "A Full Magnum Star Omega"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CAD8171A21075328" "755FBD7E2E24798C"]
+			description: [
+				"&7[NCP Field Memo #0512: Keystone]"
+				""
+				"Core IV catalyses &bSeed IV&r (Seed III strata + hydrofluoric acid): tungsten, molybdenum,"
+				"platinum group, rare earths, niobium, indium, beryllium, iridium. IV hulls need tungstensteel, so get it here."
+			]
+			id: "551D2D7F46FCACF2"
+			rewards: [
+				{
+					count: 20
+					id: "183AE3C6510FAA4F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [
+				{
+					id: "4D5BF4AA1406D34B"
+					item: "positronics:positronic_core_4"
+					type: "item"
+				}
+			]
+			title: "Positronic Core IV"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["551D2D7F46FCACF2"]
+			description: [
+				"&7[NCP Field Memo #0513: Seed IV]"
+				""
+				"The rare metals of the old world."
+			]
+			id: "CB596557E8F6C5A5"
+			rewards: [
+				{
+					count: 6
+					id: "C11F458D36575B57"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8322A0A9DB9090E1"
+					item: "positronics:tungstic_stratum"
+					type: "item"
+				}
+				{
+					id: "95C0EF0E40EF9FAD"
+					item: "positronics:platinic_stratum"
+					type: "item"
+				}
+				{
+					id: "E7E286A845261C49"
+					item: "positronics:lanthanic_stratum"
+					type: "item"
+				}
+			]
+			title: "Seed IV"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45C5B750D77F099C" "1F7DBB52B6FBE8EC" "CB596557E8F6C5A5"]
+			description: [
+				"&7[NCP Field Memo #0510: Clearance]"
+				""
+				"&bClearance Level 5&r. Next posting: &bFedic&r."
+			]
+			id: "E22643604378FE3A"
+			rewards: [
+				{
+					count: 35
+					id: "B9A6B9A00EEAFF83"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "F80C8805E4041A11"
+					item: "positronics:clearance_card_5"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 5"
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+	title: "The Dogan (EV)"
+}

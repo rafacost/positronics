@@ -1,0 +1,351 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "end_world_luv"
+	group: ""
+	icon: "gtceu:luv_machine_hull"
+	id: "03CB10C61998DF37"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["AE771EC7FAE7E99E"]
+			description: [
+				"&7[NCP Field Memo #0701: Posting]"
+				""
+				"The far reaches. Heavy industry, heavy machines, heavy responsibility."
+				"Goal: &bClearance Level 7&r."
+			]
+			id: "1B8F37F4F9A066DF"
+			rewards: [
+				{
+					count: 8
+					id: "82A555AFEFDDF056"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "82D7CEA4DB3A3D47"
+					item: "positronics:clearance_card_6"
+					type: "item"
+				}
+			]
+			title: "End-World"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B8F37F4F9A066DF"]
+			description: [
+				"&7[NCP Field Memo #0702: Hull]"
+				""
+				"Rhodium-plated palladium. Assembled with Clearance Level 6."
+			]
+			id: "5855877033A1A4F5"
+			rewards: [
+				{
+					count: 8
+					id: "F1D9EC52440E1563"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "257E34EAC041E691"
+					item: "gtceu:luv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "C6F82A4129E59CBD"
+					item: "gtceu:rhodium_plated_palladium_ingot"
+					type: "item"
+				}
+			]
+			title: "LuV Machine Hull"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B8F37F4F9A066DF"]
+			description: [
+				"&7[NCP Field Memo #0703: Heat]"
+				""
+				"High-speed steel, grade G."
+			]
+			id: "C00106857B6C6C39"
+			rewards: [
+				{
+					count: 8
+					id: "E1EAF31BD688ED8D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "FEBC28B84948CAA7"
+					item: "gtceu:hssg_coil_block"
+					type: "item"
+				}
+			]
+			title: "HSS-G Coils"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5855877033A1A4F5"]
+			description: [
+				"&7[NCP Field Memo #0704: Assembly Line]"
+				""
+				"Everything from here needs research and the assembly line."
+			]
+			id: "20D76E1A660429B0"
+			rewards: [
+				{
+					count: 15
+					id: "46B42E54AF5970AF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "E9487646E81E9C37"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+				{
+					id: "12091259EE1DBDA7"
+					item: "gtceu:research_station"
+					type: "item"
+				}
+			]
+			title: "The Assembly Line"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5855877033A1A4F5"]
+			description: [
+				"&7[NCP Field Memo #0705: Scale]"
+				""
+				"Parallel everything."
+			]
+			id: "E99E59DAB0B36610"
+			rewards: [
+				{
+					count: 8
+					id: "1858AB2C15727D5D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1B362AE95F5D55A8"
+					item: "gtceu:large_assembler"
+					type: "item"
+				}
+				{
+					id: "A094220DBE59CCA1"
+					item: "gtceu:large_centrifuge"
+					type: "item"
+				}
+				{
+					id: "864B1940493E8DF3"
+					item: "gtceu:large_mixer"
+					type: "item"
+				}
+			]
+			title: "Large Machines"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B8F37F4F9A066DF"]
+			description: [
+				"&7[NCP Field Memo #0706: Ruridit]"
+				""
+				"Ruthenium and iridium. LuV components need it."
+			]
+			id: "D924B5A9A9EFE8CC"
+			rewards: [
+				{
+					count: 8
+					id: "8D90F6994F4DDD51"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "DCEB036B25F3DBF6"
+					item: "gtceu:ruridit_ingot"
+					type: "item"
+				}
+			]
+			title: "Ruridit"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20D76E1A660429B0"]
+			description: [
+				"&7[NCP Field Memo #0707: Mainframe]"
+				""
+				"The LuV circuit, and the boards for the next one."
+			]
+			id: "DA96C8778949856F"
+			rewards: [
+				{
+					count: 8
+					id: "328C72C7F7DECF16"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "53144CC2E5224AA6"
+					item: "gtceu:quantum_processor_mainframe"
+					type: "item"
+				}
+				{
+					id: "74192B393AB46FDD"
+					item: "gtceu:fiber_reinforced_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Quantum Mainframe"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20D76E1A660429B0" "E99E59DAB0B36610"]
+			description: [
+				"&7[NCP Field Memo #0709: Charging]"
+				""
+				"53,687,091,200,000 EMC. Only parallel industry gets here."
+			]
+			id: "C6B17FBC272C8D75"
+			rewards: [
+				{
+					count: 8
+					id: "60EDB95361568181"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "EC2AF46C7B137A52"
+					item: "projectexpansion:colossal_star_vier"
+					type: "item"
+				}
+			]
+			title: "A Full Colossal Star Vier"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["C6B17FBC272C8D75" "C00106857B6C6C39"]
+			description: [
+				"&7[NCP Field Memo #0710: Keystone]"
+				""
+				"The last Core. It catalyses &bSeed V&r (Seed IV strata + aqua regia): naquadah, europium,"
+				"trinium, duranium, actinides, neutronium. ZPM hulls need naquadah alloy, so get it here."
+			]
+			id: "1719234F4FFE383C"
+			rewards: [
+				{
+					count: 30
+					id: "24BB6C1ACA323FB3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [
+				{
+					id: "5789B932E4D79867"
+					item: "positronics:positronic_core_5"
+					type: "item"
+				}
+			]
+			title: "Positronic Core V"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1719234F4FFE383C"]
+			description: [
+				"&7[NCP Field Memo #0711: Seed V]"
+				""
+				"The deepest layer NCP ever reclaimed."
+			]
+			id: "4DED5855BA1744E2"
+			rewards: [
+				{
+					count: 8
+					id: "ADB4592391B88221"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F90BCE97C1B588E0"
+					item: "positronics:naquadic_stratum"
+					type: "item"
+				}
+				{
+					id: "7B7058F160991D95"
+					item: "positronics:europic_stratum"
+					type: "item"
+				}
+			]
+			title: "Seed V"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["DA96C8778949856F" "D924B5A9A9EFE8CC" "4DED5855BA1744E2"]
+			description: [
+				"&7[NCP Field Memo #0708: Clearance]"
+				""
+				"&bClearance Level 7&r."
+			]
+			id: "8E9B6498C93AAF6C"
+			rewards: [
+				{
+					count: 45
+					id: "6DE5B91B9CF750E5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "E4E6048BD3E84B1C"
+					item: "positronics:clearance_card_7"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 7"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "End-World I (LuV)"
+}

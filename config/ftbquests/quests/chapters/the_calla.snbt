@@ -1,0 +1,591 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_calla"
+	group: ""
+	icon: "gtceu:lv_machine_hull"
+	id: "AF6C1802B5EE06C1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["292DDC937D4EFC2A"]
+			description: [
+				"&7[NCP Field Memo #0201: Posting]"
+				""
+				"The Calla is a farming town with ambitions. Feed them, then build them a factory."
+				"Goal: &bClearance Level 2&r."
+			]
+			id: "05282D7A4CE074AA"
+			rewards: [
+				{
+					count: 3
+					id: "3DE08FE87AA6117D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5450C377B425EBE6"
+					item: "positronics:clearance_card_1"
+					type: "item"
+				}
+			]
+			title: "The Calla"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[NCP Field Memo #0202: Hull]"
+				""
+				"Hand-assembled with your Clearance Card (it is not consumed). After this, an LV assembler does it."
+			]
+			id: "FFF036F838824615"
+			rewards: [
+				{
+					count: 3
+					id: "F6DDF78D9AF126F7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A8AB6B9B90F2046D"
+					item: "gtceu:lv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "LV Machine Hull"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FFF036F838824615"]
+			description: [
+				"&7[NCP Field Memo #0203: Circuits]"
+				""
+				"Resistors, vacuum tubes, a circuit board. The LV circuit."
+			]
+			id: "CA1B81514B7D3E28"
+			rewards: [
+				{
+					count: 3
+					id: "E7CE4EAD63D84216"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "FDE9A7FF87DD84E4"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "Basic Electronic Circuit"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["CA1B81514B7D3E28"]
+			description: [
+				"&7[NCP Field Memo #0204: Components]"
+				""
+				"Motors drive everything. Learn these five; every tier has its own."
+			]
+			id: "62EF35FCB078C9A8"
+			rewards: [
+				{
+					count: 3
+					id: "B64228789DF9AF3D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "48E86F4A2267A982"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "9E88BB536C20ACA9"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "E753A27B8BC90898"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "EA8EB28DE0488ECD"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "614FAB93109D3C8B"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "LV Components"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62EF35FCB078C9A8"]
+			description: [
+				"&7[NCP Field Memo #0205: Workshop]"
+				""
+				"A real workshop. The assembler makes hulls from now on."
+			]
+			id: "5698A43B1860CDCF"
+			rewards: [
+				{
+					count: 3
+					id: "088A1EDEB9C43A4C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "926A6AE9EFEFA847"
+					item: "gtceu:lv_macerator"
+					type: "item"
+				}
+				{
+					id: "92174B261940BB45"
+					item: "gtceu:lv_assembler"
+					type: "item"
+				}
+				{
+					id: "33691E4A948066D9"
+					item: "gtceu:lv_wiremill"
+					type: "item"
+				}
+				{
+					id: "B67A656F8D12ADE2"
+					item: "gtceu:lv_bender"
+					type: "item"
+				}
+				{
+					id: "19D7423FB8C5C296"
+					item: "gtceu:lv_lathe"
+					type: "item"
+				}
+			]
+			title: "The LV Workshop"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5698A43B1860CDCF"]
+			description: [
+				"&7[NCP Field Memo #0206: Chemistry]"
+				""
+				"Mixers, centrifuges, electrolysis, reactions. Chemistry is how the Calla gets rich."
+			]
+			id: "4974C9AD411962B7"
+			rewards: [
+				{
+					count: 3
+					id: "0A85B731F9E0ED70"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D537089B5CE99FCD"
+					item: "gtceu:lv_mixer"
+					type: "item"
+				}
+				{
+					id: "3E1532D486BCE4FD"
+					item: "gtceu:lv_centrifuge"
+					type: "item"
+				}
+				{
+					id: "B4C1D36D6621614B"
+					item: "gtceu:lv_electrolyzer"
+					type: "item"
+				}
+				{
+					id: "98BE60D15A8A9639"
+					item: "gtceu:lv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "2D177D495B96ECD0"
+					item: "gtceu:lv_chemical_bath"
+					type: "item"
+				}
+			]
+			title: "LV Chemistry"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4974C9AD411962B7"]
+			description: [
+				"&7[NCP Field Memo #0207: Acids]"
+				""
+				"Sulfur, oxygen, water. Sulfuric acid is the solvent for &bSeed II enrichment&r."
+			]
+			id: "B15400B833B8B163"
+			rewards: [
+				{
+					count: 3
+					id: "E0CCC8EEEC55485D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0A61C65E3A3C8A0B"
+					item: "gtceu:sulfuric_acid_bucket"
+					type: "item"
+				}
+			]
+			title: "Sulfuric Acid"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62EF35FCB078C9A8"]
+			description: [
+				"&7[NCP Field Memo #0208: Generators]"
+				""
+				"Solar is not enough any more. Turbines, combustion generators, or many panels."
+			]
+			id: "0B36685DD948EDD5"
+			rewards: [
+				{
+					count: 3
+					id: "EB0109C9CB4E16D9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2A2005AC88D33C31"
+					item: "gtceu:lv_steam_turbine"
+					type: "item"
+				}
+			]
+			title: "Real Power"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5698A43B1860CDCF"]
+			description: [
+				"&7[NCP Field Memo #0209: Multiblocks]"
+				""
+				"Multiblocks need buses, hatches and a maintenance hatch. They need glue too."
+			]
+			id: "91F7A2545C9D1EBB"
+			rewards: [
+				{
+					count: 3
+					id: "DECA4AFA05DB3F50"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D18CA99EFF6694C8"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "B77506BD2A56D809"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "15171C3D4EF46E02"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "9B7AC1C09433EDF0"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+			]
+			title: "Buses and Hatches"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5698A43B1860CDCF"]
+			description: [
+				"&7[NCP Field Memo #0210: Coils]"
+				""
+				"Coils need molten tin alloy: extract tin alloy ingots in an LV extractor."
+			]
+			id: "5BDECB449BAD33CC"
+			rewards: [
+				{
+					count: 3
+					id: "87E144DE5519B750"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "955AB5CB4AB13327"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+				{
+					id: "98C12B01CC2BC56C"
+					item: "gtceu:tin_alloy_bucket"
+					type: "item"
+				}
+			]
+			title: "Cupronickel Coils"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BDECB449BAD33CC" "91F7A2545C9D1EBB"]
+			description: [
+				"&7[NCP Field Memo #0211: Blast Furnace]"
+				""
+				"The first great multiblock. Aluminium and silicon need it."
+			]
+			id: "A82BF2A1F92BA144"
+			rewards: [
+				{
+					count: 6
+					id: "8D0CCE51B0A40B6C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7F32DB44BAF65475"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+			]
+			title: "Electric Blast Furnace"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["CA1B81514B7D3E28" "4974C9AD411962B7"]
+			description: [
+				"&7[NCP Field Memo #0212: Better Circuits]"
+				""
+				"Diodes and phenolic boards. Good circuits are MV-grade, and they gate your next card."
+			]
+			id: "142FF47CDA283F7B"
+			rewards: [
+				{
+					count: 3
+					id: "26916001C1A1429D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "EE472A68BF85A96C"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "Good Electronic Circuit"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[NCP Field Memo #0213: Food]"
+				""
+				"Automate your food: hopper botany pots over chests. Variety keeps you strong."
+			]
+			id: "E12B3F5F5CE6A22A"
+			rewards: [
+				{
+					count: 3
+					id: "4F13E9798F07C3D3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "3DB688297CF8F7B6"
+					item: "botanypots:terracotta_hopper_botany_pot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "C68121A7BBD79F71"
+					item: "pamhc2crops:tomatoitem"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7C7E44A29D9DA217"
+					item: "pamhc2crops:lettuceitem"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "9EC2EFBC5CBDCB21"
+					item: "pamhc2crops:onionitem"
+					type: "item"
+				}
+			]
+			title: "Feeding the Calla"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["A82BF2A1F92BA144"]
+			description: [
+				"&7[NCP Field Memo #0214: Charging]"
+				""
+				"51,200,000 EMC. Your LV lines, piped into capacitors, can fill it."
+			]
+			id: "0869EFFA1D316A5E"
+			rewards: [
+				{
+					count: 3
+					id: "6F1035146A8A7FF4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F551FD8D2AA21441"
+					item: "projecte:klein_star_omega"
+					type: "item"
+				}
+			]
+			title: "A Full Klein Star Omega"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0869EFFA1D316A5E"]
+			description: [
+				"&7[NCP Field Memo #0215: Keystone]"
+				""
+				"Core II catalyses &bSeed II&r: enrich Seed I strata in a mixer with sulfuric acid."
+				"Seed II brings bauxite, silicon, gallium, gold, salt, sulfur, antimony and certus quartz."
+			]
+			id: "8FEAC04C566758E8"
+			rewards: [
+				{
+					count: 12
+					id: "745290FDCCB88411"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [
+				{
+					id: "01AC964C639D5026"
+					item: "positronics:positronic_core_2"
+					type: "item"
+				}
+			]
+			title: "Positronic Core II"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8FEAC04C566758E8" "B15400B833B8B163"]
+			description: [
+				"&7[NCP Field Memo #0216: Enrichment]"
+				""
+				"Four of a lower stratum, acid, and the Core as catalyst. Choose what you enrich into."
+			]
+			id: "8D46019E1BF5964F"
+			rewards: [
+				{
+					count: 3
+					id: "C0EDBA730E6D8BD4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "74AB02E5E03C032F"
+					item: "positronics:bauxitic_stratum"
+					type: "item"
+				}
+				{
+					id: "ECE2E5B48A7DE98E"
+					item: "positronics:siliceous_stratum"
+					type: "item"
+				}
+				{
+					id: "272AA7AA8F047111"
+					item: "positronics:crystalline_stratum"
+					type: "item"
+				}
+			]
+			title: "Seed II"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8FEAC04C566758E8" "142FF47CDA283F7B"]
+			description: [
+				"&7[NCP Field Memo #0217: Clearance]"
+				""
+				"&bClearance Level 2&r: MV hulls are yours. Next posting: &bLud&r."
+			]
+			id: "F09FB7C206A69621"
+			rewards: [
+				{
+					count: 20
+					id: "39B9F20C13611B39"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "EF779BEE4A7F100D"
+					item: "positronics:clearance_card_2"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 2"
+			x: 18.0d
+			y: 1.5d
+		}
+	]
+	title: "The Calla (LV)"
+}

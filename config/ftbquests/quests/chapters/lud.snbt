@@ -1,0 +1,550 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lud"
+	group: ""
+	icon: "gtceu:mv_machine_hull"
+	id: "CA046B094F2B6EA9"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["F09FB7C206A69621"]
+			description: [
+				"&7[NCP Field Memo #0301: Posting]"
+				""
+				"Lud is a city of machines in ruins. Here, automation stops being optional."
+				"Goal: &bClearance Level 3&r."
+			]
+			id: "EF9B476473A6D772"
+			rewards: [
+				{
+					count: 4
+					id: "B74ACEF5E3EB3D96"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "AB223E83A78F0C46"
+					item: "positronics:clearance_card_2"
+					type: "item"
+				}
+			]
+			title: "Lud"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["EF9B476473A6D772"]
+			description: [
+				"&7[NCP Field Memo #0302: Aluminium]"
+				""
+				"Bauxite, electrolysis, the blast furnace. The MV metal."
+			]
+			id: "368F1143967A8DF5"
+			rewards: [
+				{
+					count: 4
+					id: "1E742936F629E924"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4046769694F47622"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+			]
+			title: "Aluminium"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[NCP Field Memo #0303: Hull]"
+				""
+				"Assembled with Clearance Level 2 as a catalyst."
+			]
+			id: "D94F8F7610476EEB"
+			rewards: [
+				{
+					count: 4
+					id: "8469AEEF06E44955"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A88016AC1379725D"
+					item: "gtceu:mv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "MV Machine Hull"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[NCP Field Memo #0304: Silicon]"
+				""
+				"Grow a boule, cut it into wafers. Integrated circuits start here."
+			]
+			id: "C0EEC59A81F46E82"
+			rewards: [
+				{
+					count: 4
+					id: "DAD471B668EFDDE5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "B4747FB241834EC1"
+					item: "gtceu:silicon_ingot"
+					type: "item"
+				}
+				{
+					id: "C64D2EC14D9B60DD"
+					item: "gtceu:silicon_boule"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0643541255BDECE8"
+					item: "gtceu:silicon_wafer"
+					type: "item"
+				}
+			]
+			title: "Silicon"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["D94F8F7610476EEB"]
+			description: [
+				"&7[NCP Field Memo #0305: Plastics]"
+				""
+				"Ethylene from ethanol or from oil, then polymerised. Plastic insulates the future."
+			]
+			id: "2B27474F419A3776"
+			rewards: [
+				{
+					count: 4
+					id: "BB1687F4B6B81652"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6496CF4D37C6FEEA"
+					item: "gtceu:ethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "5520646D829B8A93"
+					item: "gtceu:polyethylene_bucket"
+					type: "item"
+				}
+			]
+			title: "Polyethylene"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["D94F8F7610476EEB"]
+			description: [
+				"&7[NCP Field Memo #0306: Workshop]"
+				""
+				"Laser engravers and circuit assemblers: the chip industry."
+			]
+			id: "6E954E802B091B06"
+			rewards: [
+				{
+					count: 4
+					id: "C271FE5EE8BF76BD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5C2A160AD2C83BAF"
+					item: "gtceu:mv_assembler"
+					type: "item"
+				}
+				{
+					id: "62CD86D3BC1A0813"
+					item: "gtceu:mv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "7CB36D7CF3F64540"
+					item: "gtceu:mv_cutter"
+					type: "item"
+				}
+				{
+					id: "7242E782E7D1FB55"
+					item: "gtceu:mv_laser_engraver"
+					type: "item"
+				}
+				{
+					id: "423BC2A6F0933A10"
+					item: "gtceu:lv_circuit_assembler"
+					type: "item"
+				}
+			]
+			title: "The MV Workshop"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E954E802B091B06" "C0EEC59A81F46E82"]
+			description: [
+				"&7[NCP Field Memo #0307: Chips]"
+				""
+				"Engraved wafers, cut into chips."
+			]
+			id: "E67DA0DF3798959D"
+			rewards: [
+				{
+					count: 4
+					id: "BCA985DC906E6E4C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "8917798331D59CB8"
+					item: "gtceu:ram_chip"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "437EB2B65EA6CA2F"
+					item: "gtceu:ilc_chip"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3FB766B58239A11C"
+					item: "gtceu:transistor"
+					type: "item"
+				}
+			]
+			title: "Chips"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E67DA0DF3798959D"]
+			description: [
+				"&7[NCP Field Memo #0308: Integration]"
+				""
+				"Smaller, cheaper circuits. Your factory just got denser."
+			]
+			id: "5C317BF303AF4250"
+			rewards: [
+				{
+					count: 4
+					id: "FCBE5857F601B12F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "8815D6649BEEED2E"
+					item: "gtceu:basic_integrated_circuit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "E2FF4F74CDD982F0"
+					item: "gtceu:good_integrated_circuit"
+					type: "item"
+				}
+			]
+			title: "Integrated Circuits"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E954E802B091B06"]
+			description: [
+				"&7[NCP Field Memo #0309: Storage]"
+				""
+				"Certus quartz from the Crystalline Stratum makes AE2 possible. Store everything in one network."
+			]
+			id: "B2B83EF01DCED1D4"
+			rewards: [
+				{
+					count: 4
+					id: "048CD6BEE8069514"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "47B73FCFFB3EF4F1"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "CA47477DC0279FF7"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "D31956C0AAC9109D"
+					item: "ae2:item_storage_cell_1k"
+					type: "item"
+				}
+				{
+					id: "FBD684FAE9A0CB1E"
+					item: "ae2:terminal"
+					type: "item"
+				}
+			]
+			title: "Applied Energistics"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["B2B83EF01DCED1D4"]
+			description: [
+				"&7[NCP Field Memo #0310: Automation]"
+				""
+				"Patterns, providers, crafting CPUs. Lud's exam is automation."
+			]
+			id: "603A1EBE389415F0"
+			rewards: [
+				{
+					count: 8
+					id: "7513613575252C71"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A1B4C9B3E642B0A1"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "0167D8F7EB3B10C5"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "329012056DA0D894"
+					item: "ae2:crafting_unit"
+					type: "item"
+				}
+			]
+			title: "Autocrafting"
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E954E802B091B06"]
+			description: [
+				"&7[NCP Field Memo #0311: Powered Generators]"
+				""
+				"With Positronic Core II as catalyst, an assembler makes a &bTier 2 upgrade&r. Sneak-right-click a generator with it."
+				"Tier 2 generators run on power, produce faster, push output out on their own, and the Ore Generator then yields &bSeed II&r directly."
+			]
+			id: "080EE3C2570CD9ED"
+			rewards: [
+				{
+					count: 4
+					id: "D389EBA887FC18B6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "AE06749CD7B52BE8"
+					item: "usrg:tier_upgrade_2"
+					type: "item"
+				}
+			]
+			title: "Reclamation Mk III"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[NCP Field Memo #0312: Heat]"
+				""
+				"Hotter coils, higher blast furnace recipes."
+			]
+			id: "E33DAABE32AFEA4A"
+			rewards: [
+				{
+					count: 4
+					id: "4FD81C34FB6A0E9B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3CECBD9CC1F1AE65"
+					item: "gtceu:kanthal_coil_block"
+					type: "item"
+				}
+			]
+			title: "Kanthal Coils"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["603A1EBE389415F0" "080EE3C2570CD9ED"]
+			description: [
+				"&7[NCP Field Memo #0314: Charging]"
+				""
+				"819,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
+				"&7Lud's automation, piped into capacitors, fills it."
+			]
+			id: "49B96889FFBA43AD"
+			rewards: [
+				{
+					count: 4
+					id: "1FD2BD659D95D9AA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0EC6561BCF4B7399"
+					item: "projectexpansion:magnum_star_zwei"
+					type: "item"
+				}
+			]
+			title: "A Full Magnum Star Zwei"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49B96889FFBA43AD" "E33DAABE32AFEA4A"]
+			description: [
+				"&7[NCP Field Memo #0315: Keystone]"
+				""
+				"Core III catalyses &bSeed III&r enrichment (Seed II strata + hydrochloric acid in a mixer)."
+				"You need Seed III &obefore&r HV: stainless steel needs chrome. Later it also catalyses Clearance Level 4."
+			]
+			id: "42DE50943B625D0B"
+			rewards: [
+				{
+					count: 15
+					id: "653EF4C1EA983F4F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [
+				{
+					id: "312AB0F0A89A50B4"
+					item: "positronics:positronic_core_3"
+					type: "item"
+				}
+			]
+			title: "Positronic Core III"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42DE50943B625D0B"]
+			description: [
+				"&7[NCP Field Memo #0316: Seed III]"
+				""
+				"Titanium, chrome, vanadium, gems, lithium, fluorine, oil sands and uranium."
+			]
+			id: "94BF86A086898EFF"
+			rewards: [
+				{
+					count: 4
+					id: "2CF28FA54B1658D4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0F22E3A960D49123"
+					item: "positronics:titanic_stratum"
+					type: "item"
+				}
+				{
+					id: "BFB701B7D1B55EED"
+					item: "positronics:chromic_stratum"
+					type: "item"
+				}
+				{
+					id: "93C6067DF070B639"
+					item: "positronics:bituminous_stratum"
+					type: "item"
+				}
+			]
+			title: "Seed III"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C317BF303AF4250" "603A1EBE389415F0" "94BF86A086898EFF"]
+			description: [
+				"&7[NCP Field Memo #0313: Clearance]"
+				""
+				"&bClearance Level 3&r. Next posting: &bThe Cradle&r."
+			]
+			id: "A5675780849BF9A2"
+			rewards: [
+				{
+					count: 25
+					id: "C5A08757927B040B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "3A9878DC37D547D8"
+					item: "positronics:clearance_card_3"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 3"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Lud (MV)"
+}

@@ -1,0 +1,294 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_cradle"
+	group: ""
+	icon: "gtceu:hv_machine_hull"
+	id: "F1BFAF7326DF9AA1"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["A5675780849BF9A2"]
+			description: [
+				"&7[NCP Field Memo #0401: Posting]"
+				""
+				"The Cradle was Lud's great station. Restore its power."
+				"Goal: &bClearance Level 4&r."
+			]
+			id: "FCBA41022669D42D"
+			rewards: [
+				{
+					count: 5
+					id: "19A9A696BB648327"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6B64F99EA029049C"
+					item: "positronics:clearance_card_3"
+					type: "item"
+				}
+			]
+			title: "The Cradle"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FCBA41022669D42D"]
+			description: [
+				"&7[NCP Field Memo #0402: Stainless]"
+				""
+				"Iron, nickel, chrome, manganese. Chrome comes from Seed III, so the first batches are precious."
+			]
+			id: "E24898A07A6CF886"
+			rewards: [
+				{
+					count: 5
+					id: "69246D15A28C4990"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "28444B594F7F4F15"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Stainless Steel"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["E24898A07A6CF886"]
+			description: [
+				"&7[NCP Field Memo #0403: Hull]"
+				""
+				"Assembled with Clearance Level 3."
+			]
+			id: "31783CA49496A5D1"
+			rewards: [
+				{
+					count: 5
+					id: "6A88CDD3006873FF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "F18719453727C751"
+					item: "gtceu:hv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "HV Machine Hull"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31783CA49496A5D1"]
+			description: [
+				"&7[NCP Field Memo #0404: Clean]"
+				""
+				"Microprocessors need clean air. Build a cleanroom around your chip lines."
+			]
+			id: "A7A0EC2728AE3A5A"
+			rewards: [
+				{
+					count: 5
+					id: "401152AAE8E031E9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "96250A693A313CCF"
+					item: "gtceu:cleanroom"
+					type: "item"
+				}
+			]
+			title: "Cleanroom"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31783CA49496A5D1"]
+			description: [
+				"&7[NCP Field Memo #0405: Chlorine]"
+				""
+				"Salt electrolysis gives chlorine; chlorine gives PVC and hydrochloric acid."
+			]
+			id: "3E29447B1BC3FAD3"
+			rewards: [
+				{
+					count: 5
+					id: "8F116B300C5DAEE9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "725455C2E4850594"
+					item: "gtceu:chlorine_bucket"
+					type: "item"
+				}
+				{
+					id: "2F67282804857375"
+					item: "gtceu:polyvinyl_chloride_bucket"
+					type: "item"
+				}
+			]
+			title: "PVC"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["31783CA49496A5D1"]
+			description: [
+				"&7[NCP Field Memo #0406: Workshop]"
+				""
+				"HV machines, and a distillery for the oil from the Bituminous Stratum."
+			]
+			id: "1A7F4A25FAD51EE0"
+			rewards: [
+				{
+					count: 5
+					id: "79D92C29F1F8D4BB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "23E401A3DEABCB4E"
+					item: "gtceu:hv_assembler"
+					type: "item"
+				}
+				{
+					id: "76255933B73E85E7"
+					item: "gtceu:hv_chemical_reactor"
+					type: "item"
+				}
+				{
+					id: "8FC770E5D28E5F9E"
+					item: "gtceu:mv_circuit_assembler"
+					type: "item"
+				}
+				{
+					id: "AB1104E002C9AC75"
+					item: "gtceu:hv_distillery"
+					type: "item"
+				}
+			]
+			title: "The HV Workshop"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["A7A0EC2728AE3A5A" "1A7F4A25FAD51EE0"]
+			description: [
+				"&7[NCP Field Memo #0407: Micro]"
+				""
+				"Plastic boards and SMD parts. HV and EV circuits."
+			]
+			id: "36EC39568E8EF167"
+			rewards: [
+				{
+					count: 5
+					id: "F4EFDBFF8F340160"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "F954D59F44092B50"
+					item: "gtceu:micro_processor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "B75F38B9694EF831"
+					item: "gtceu:micro_processor_assembly"
+					type: "item"
+				}
+				{
+					id: "5039D79D1C95C04E"
+					item: "gtceu:plastic_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Microprocessors"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A7F4A25FAD51EE0"]
+			description: [
+				"&7[NCP Field Memo #0411: Tier 3]"
+				""
+				"Assembled at HV with Positronic Core III. Tier 3 generators: four items a second, and the Ore Generator yields Seed III."
+			]
+			id: "8008AB950C5DA78B"
+			rewards: [
+				{
+					count: 5
+					id: "4F705BF793564A00"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A1CC964499137E4F"
+					item: "usrg:tier_upgrade_3"
+					type: "item"
+				}
+			]
+			title: "Reclamation Mk IV"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["36EC39568E8EF167" "8008AB950C5DA78B"]
+			description: [
+				"&7[NCP Field Memo #0412: Clearance]"
+				""
+				"&bClearance Level 4&r. Next posting: &bThe Dogan&r."
+			]
+			id: "C4AEF99915A9BBC9"
+			rewards: [
+				{
+					count: 30
+					id: "C550C01FBB351FCE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "7CFE4653BFD42BFA"
+					item: "positronics:clearance_card_4"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 4"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "The Cradle (HV)"
+}

@@ -1,0 +1,260 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_doors"
+	group: ""
+	icon: "projectexpansion:final_star"
+	id: "FAC28489FD6172DC"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1EDF8A5E2818C9C7"]
+			description: [
+				"&7[NCP Field Memo #1001: Posting]"
+				""
+				"NCP built Doors between worlds. One of them is still here, waiting for power."
+				"Goal: &bClearance Level 10&r, and the Final Star."
+			]
+			id: "6E02508979F19036"
+			rewards: [
+				{
+					count: 12
+					id: "B60C9F303A5467F8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "59D6D24B3DEF436B"
+					item: "positronics:clearance_card_9"
+					type: "item"
+				}
+			]
+			title: "The Doors"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E02508979F19036"]
+			description: [
+				"&7[NCP Field Memo #1002: Fusion]"
+				""
+				"The last fusion reactor."
+			]
+			id: "2241A346F153C4A4"
+			rewards: [
+				{
+					count: 30
+					id: "9BBBBA3CD86B7A5C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "B650841DA06B60E5"
+					item: "gtceu:uv_fusion_reactor"
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor Mk III"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E02508979F19036"]
+			description: [
+				"&7[NCP Field Memo #1003: Hull]"
+				""
+				"Assembled with Clearance Level 9."
+			]
+			id: "8B3FB809CA8239CC"
+			rewards: [
+				{
+					count: 12
+					id: "7D0804D238AE3FCD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "C0F88E168B5DE213"
+					item: "gtceu:uhv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "UHV Machine Hull"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2241A346F153C4A4"]
+			description: [
+				"&7[NCP Field Memo #1004: Neutronium]"
+				""
+				"The Neutronic Stratum, a fusion reactor, and nerves of steel."
+			]
+			id: "87878A9AA86B98D3"
+			rewards: [
+				{
+					count: 12
+					id: "AE5F0BEBF0E9886C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "195D2342E542A5B1"
+					item: "gtceu:neutronium_ingot"
+					type: "item"
+				}
+			]
+			title: "Neutronium"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["87878A9AA86B98D3"]
+			description: [
+				"&7[NCP Field Memo #1005: Superconductor]"
+				""
+				"Ruthenium, trinium, americium, neutronium."
+			]
+			id: "120AF8E01F8D5BE9"
+			rewards: [
+				{
+					count: 12
+					id: "E75770657C9125EE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6350D1B6B55274F6"
+					item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+					type: "item"
+				}
+			]
+			title: "The Last Superconductor"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8B3FB809CA8239CC"]
+			description: [
+				"&7[NCP Field Memo #1006: Charging]"
+				""
+				"3,518,437,208,883,200,000 EMC. Everything you have ever made, burned into one star."
+			]
+			id: "2FAC65EACDB77306"
+			rewards: [
+				{
+					count: 12
+					id: "5E89136AAFD5601E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1545A475AC686238"
+					item: "projectexpansion:gargantuan_star_omega"
+					type: "item"
+				}
+			]
+			title: "A Full Gargantuan Star Omega"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FAC65EACDB77306" "120AF8E01F8D5BE9"]
+			description: [
+				"&7[NCP Field Memo #1007: Final Star]"
+				""
+				"Assembled around a full Gargantuan Star Omega and Positronic Core V."
+			]
+			id: "53700744F7D299F6"
+			rewards: [
+				{
+					count: 100
+					id: "D638AE36E1239990"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.4d
+			tasks: [
+				{
+					id: "2DA2A60210E5AB3F"
+					item: "projectexpansion:final_star"
+					type: "item"
+				}
+			]
+			title: "The Final Star"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53700744F7D299F6"]
+			description: [
+				"&7[NCP Field Memo #1008: Clearance]"
+				""
+				"&bClearance Level 10&r. There is nothing left to clear."
+			]
+			id: "17930D5B3F6A6A34"
+			rewards: [
+				{
+					count: 150
+					id: "60889C8BF19CC545"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "62802DC9A1DEEBF6"
+					item: "positronics:clearance_card_10"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 10"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17930D5B3F6A6A34"]
+			description: [
+				"&7[NCP Field Memo #1009: The Door]"
+				""
+				"The network is rebuilt. The Beams hold. The Door hums."
+				"&8(Stargate Journey and space travel arrive in a later update: this is where they will begin.)"
+			]
+			id: "89651FE649BC1D02"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "3DBCF5D3F45B72DE"
+					title: "Step through"
+					type: "checkmark"
+				}
+			]
+			title: "Open a Door"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "The Doors (UHV)"
+}

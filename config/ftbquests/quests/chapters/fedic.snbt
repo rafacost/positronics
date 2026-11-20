@@ -1,0 +1,293 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fedic"
+	group: ""
+	icon: "gtceu:iv_machine_hull"
+	id: "45C7CEFA6A504798"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["E22643604378FE3A"]
+			description: [
+				"&7[NCP Field Memo #0601: Posting]"
+				""
+				"Fedic sits at the edge of End-World. NCP built it to last; it almost did."
+				"Goal: &bClearance Level 6&r."
+			]
+			id: "FF0C2EAC1358C7FF"
+			rewards: [
+				{
+					count: 7
+					id: "8DEF958AC40224F3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7935E19A8E10A7F2"
+					item: "positronics:clearance_card_5"
+					type: "item"
+				}
+			]
+			title: "Fedic"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["FF0C2EAC1358C7FF"]
+			description: [
+				"&7[NCP Field Memo #0602: Tungsten]"
+				""
+				"Scheelite and tungstate from Seed IV, tungstic acid, hydrogen, a lot of heat."
+			]
+			id: "4C6BB6EE45886768"
+			rewards: [
+				{
+					count: 7
+					id: "AD265B5415EB9BDC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "9AB045743824CBE8"
+					item: "gtceu:tungsten_ingot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "34379C0C7F261B54"
+					item: "gtceu:tungsten_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "Tungstensteel"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C6BB6EE45886768"]
+			description: [
+				"&7[NCP Field Memo #0603: Hull]"
+				""
+				"Assembled with Clearance Level 5."
+			]
+			id: "7A208231B53A18D1"
+			rewards: [
+				{
+					count: 7
+					id: "C50114F8A0DAAD17"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4CA66BCFCB19BA91"
+					item: "gtceu:iv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "IV Machine Hull"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C6BB6EE45886768"]
+			description: [
+				"&7[NCP Field Memo #0604: Heat]"
+				""
+				"Ruthenium, tungsten, molybdenum."
+			]
+			id: "3FE0937A57DD3ACD"
+			rewards: [
+				{
+					count: 7
+					id: "1912D386E97335B3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "C383030B0C30BAB0"
+					item: "gtceu:rtm_alloy_coil_block"
+					type: "item"
+				}
+			]
+			title: "RTM Alloy Coils"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A208231B53A18D1"]
+			description: [
+				"&7[NCP Field Memo #0605: Fluorine]"
+				""
+				"Fluorine from topaz, hydrofluoric acid, and PTFE: the plastic that takes no damage."
+			]
+			id: "274EE7BF6F9F3B52"
+			rewards: [
+				{
+					count: 7
+					id: "95C038324386861D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "B4DF87B404512C52"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "4ACA0F8E406BCC7C"
+					item: "gtceu:polytetrafluoroethylene_bucket"
+					type: "item"
+				}
+			]
+			title: "PTFE"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A208231B53A18D1"]
+			description: [
+				"&7[NCP Field Memo #0606: Precious]"
+				""
+				"Platinum group sludge, aqua regia and a long chain. The Platinic Stratum starts it."
+			]
+			id: "937BC9069994331F"
+			rewards: [
+				{
+					count: 7
+					id: "9BD757E2D2A28BD3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "E74F30D00C202C0A"
+					item: "gtceu:platinum_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1728528FD1564269"
+					item: "gtceu:palladium_ingot"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "BD8BE91B765CD194"
+					item: "gtceu:iridium_ingot"
+					type: "item"
+				}
+			]
+			title: "Platinum Group"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["937BC9069994331F" "274EE7BF6F9F3B52"]
+			description: [
+				"&7[NCP Field Memo #0607: Quantum]"
+				""
+				"IV and LuV circuits."
+			]
+			id: "5E037A30BF0AD0CB"
+			rewards: [
+				{
+					count: 7
+					id: "48885DCDA4675EA4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5FCF6082078EAEA2"
+					item: "gtceu:quantum_processor"
+					type: "item"
+				}
+				{
+					id: "A09FB76370053E35"
+					item: "gtceu:nano_processor_computer"
+					type: "item"
+				}
+			]
+			title: "Quantum Processors"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A208231B53A18D1"]
+			description: [
+				"&7[NCP Field Memo #0610: Tier 4]"
+				""
+				"Assembled at IV with Positronic Core IV. Sixteen items a second, Seed IV from the Ore Generator."
+			]
+			id: "C26B19FF3DF61C0C"
+			rewards: [
+				{
+					count: 7
+					id: "059C0AC4D95AAB7C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2E96AAF539915146"
+					item: "usrg:tier_upgrade_4"
+					type: "item"
+				}
+			]
+			title: "Reclamation Mk V"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E037A30BF0AD0CB" "C26B19FF3DF61C0C"]
+			description: [
+				"&7[NCP Field Memo #0611: Clearance]"
+				""
+				"&bClearance Level 6&r. Next posting: &bEnd-World&r."
+			]
+			id: "AE771EC7FAE7E99E"
+			rewards: [
+				{
+					count: 40
+					id: "FF29921B72502911"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "899F6A57EA329B69"
+					item: "positronics:clearance_card_6"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 6"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Fedic (IV)"
+}

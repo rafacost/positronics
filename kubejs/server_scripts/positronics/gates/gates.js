@@ -27,21 +27,23 @@ function posFullStar(id) {
 }
 
 // Which star each Positronic Core needs (tunable; see docs/seed-chains-draft.md).
+// Each Core is built ONE tier before its strata are needed (Seed III chrome is needed for HV
+// stainless steel, Seed IV tungsten for IV, Seed V naquadah for ZPM).
 const POS_CORE_STARS = {
-    1: 'projecte:klein_star_vier',            // ULV line
-    2: 'projecte:klein_star_omega',           // LV line
-    3: 'projectexpansion:magnum_star_zwei',   // HV line
-    4: 'projectexpansion:magnum_star_omega',  // IV line
-    5: 'projectexpansion:colossal_star_vier'  // ZPM line
+    1: 'projecte:klein_star_vier',            // built at ULV (River Crossing)
+    2: 'projecte:klein_star_omega',           // built at LV  (The Calla)
+    3: 'projectexpansion:magnum_star_zwei',   // built at MV  (Lud)
+    4: 'projectexpansion:magnum_star_omega',  // built at EV  (The Dogan)
+    5: 'projectexpansion:colossal_star_vier'  // built at LuV (End-World I)
 }
 
-// Mass ingredients around each core (tier materials, all GT stock items).
+// Mass ingredients around each core: the materials of the tier where it is built.
 const POS_CORE_PARTS = {
     1: { A: '#forge:storage_blocks/bronze', B: 'gtceu:ulv_machine_hull', C: '#forge:storage_blocks/steel', D: 'gtceu:vacuum_tube' },
     2: { A: '#forge:storage_blocks/steel', B: 'gtceu:lv_machine_hull', C: 'gtceu:cupronickel_coil_block', D: 'gtceu:lv_robot_arm' },
-    3: { A: '#forge:storage_blocks/stainless_steel', B: 'gtceu:hv_machine_hull', C: 'gtceu:kanthal_coil_block', D: 'gtceu:hv_field_generator' },
-    4: { A: '#forge:storage_blocks/tungsten_steel', B: 'gtceu:iv_machine_hull', C: 'gtceu:rtm_alloy_coil_block', D: 'gtceu:iv_field_generator' },
-    5: { A: '#forge:storage_blocks/naquadah_alloy', B: 'gtceu:zpm_machine_hull', C: 'gtceu:naquadah_coil_block', D: 'gtceu:zpm_field_generator' }
+    3: { A: '#forge:storage_blocks/aluminium', B: 'gtceu:mv_machine_hull', C: 'gtceu:kanthal_coil_block', D: 'gtceu:mv_robot_arm' },
+    4: { A: '#forge:storage_blocks/titanium', B: 'gtceu:ev_machine_hull', C: 'gtceu:nichrome_coil_block', D: 'gtceu:ev_robot_arm' },
+    5: { A: '#forge:storage_blocks/rhodium_plated_palladium', B: 'gtceu:luv_machine_hull', C: 'gtceu:hssg_coil_block', D: 'gtceu:luv_robot_arm' }
 }
 
 // GT voltage per tier index (0 = ULV).

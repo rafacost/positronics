@@ -1,0 +1,231 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_beams"
+	group: ""
+	icon: "gtceu:uv_machine_hull"
+	id: "D37D7B33EB5BAE69"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["AA9462A7D8EBEB0E"]
+			description: [
+				"&7[NCP Field Memo #0901: Posting]"
+				""
+				"The Beams hold the world together. NCP built the machines that hold the Beams."
+				"Goal: &bClearance Level 9&r."
+			]
+			id: "AA801F73A6B95A91"
+			rewards: [
+				{
+					count: 10
+					id: "C79A9C7D9CF81B02"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "C775FC14D21C0486"
+					item: "positronics:clearance_card_8"
+					type: "item"
+				}
+			]
+			title: "The Beams"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AA801F73A6B95A91"]
+			description: [
+				"&7[NCP Field Memo #0902: Hull]"
+				""
+				"Darmstadtium. Assembled with Clearance Level 8."
+			]
+			id: "C2E69566E10961FD"
+			rewards: [
+				{
+					count: 10
+					id: "EDB8C4B01DD03DD2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2DBC9ADE20224EF0"
+					item: "gtceu:uv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "F800127AC97F651A"
+					item: "gtceu:darmstadtium_ingot"
+					type: "item"
+				}
+			]
+			title: "UV Machine Hull"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AA801F73A6B95A91"]
+			description: [
+				"&7[NCP Field Memo #0903: Fusion]"
+				""
+				"Hotter fusion for heavier elements."
+			]
+			id: "FC2B626EE6A9B8C8"
+			rewards: [
+				{
+					count: 25
+					id: "49F4F647CC8E8CC1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "A1C552866B5C4E0E"
+					item: "gtceu:zpm_fusion_reactor"
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor Mk II"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["FC2B626EE6A9B8C8"]
+			description: [
+				"&7[NCP Field Memo #0904: Tritanium]"
+				""
+				"The hottest coils NCP ever certified."
+			]
+			id: "FBCB4D867E89F59A"
+			rewards: [
+				{
+					count: 10
+					id: "A8ADFD96068A440D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "36735B8FEADFF7DD"
+					item: "gtceu:tritanium_ingot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2D2C39C68DE768DF"
+					item: "gtceu:tritanium_coil_block"
+					type: "item"
+				}
+			]
+			title: "Tritanium"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["C2E69566E10961FD"]
+			description: [
+				"&7[NCP Field Memo #0905: Wetware]"
+				""
+				"Living circuits: sterile growth medium, stem cells, neuro processing units."
+			]
+			id: "C49B9316E3EF4732"
+			rewards: [
+				{
+					count: 10
+					id: "C180D64685CE39AF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "AF3A216EFD8F2983"
+					item: "gtceu:stem_cells"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "131E3A48DA972642"
+					item: "gtceu:wetware_processor"
+					type: "item"
+				}
+				{
+					id: "816A7359D611EADA"
+					item: "gtceu:wetware_processor_computer"
+					type: "item"
+				}
+			]
+			title: "Wetware"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["C49B9316E3EF4732"]
+			description: [
+				"&7[NCP Field Memo #0906: Mainframe]"
+				""
+				"The UHV circuit."
+			]
+			id: "473456C30CB159C1"
+			rewards: [
+				{
+					count: 10
+					id: "A090C478F1FADE49"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8550527D60FFBF86"
+					item: "gtceu:wetware_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "Wetware Mainframe"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473456C30CB159C1" "FBCB4D867E89F59A"]
+			description: [
+				"&7[NCP Field Memo #0907: Clearance]"
+				""
+				"&bClearance Level 9&r. Last posting: &bThe Doors&r."
+			]
+			id: "1EDF8A5E2818C9C7"
+			rewards: [
+				{
+					count: 60
+					id: "5059141E0BB1ED73"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			tasks: [
+				{
+					id: "D64ADEFCE7074E9F"
+					item: "positronics:clearance_card_9"
+					type: "item"
+				}
+			]
+			title: "Clearance Level 9"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "The Beams (UV)"
+}
