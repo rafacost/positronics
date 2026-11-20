@@ -20,7 +20,7 @@
 				""
 				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
 				""
-				"&7Enclosed: two blocks of dirt for your botany pot. Do not dig up the island to get more."
+				"&7Enclosed: one block of dirt for your botany pot. Do not dig up the island to get more."
 			]
 			icon: "minecraft:lantern"
 			id: "504F530000001001"
@@ -32,7 +32,6 @@
 					type: "item"
 				}
 				{
-					count: 2
 					id: "504F530000003011"
 					item: "minecraft:dirt"
 					type: "item"
