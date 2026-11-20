@@ -552,6 +552,36 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["D055108009A1DF67" "10BB65E601DDE91E"]
+			description: [
+				"&7[NCP Field Memo #0119: First Multiblock]"
+				""
+				"Your first multiblock: a 3x3x3 box of solid steel casings with a hollow centre, the controller in the middle of the front face."
+				"Swap casings for an input bus, an output bus, a maintenance hatch and an energy hatch."
+				"It sifts gravel and sand into strata far faster than single machines. Use the GT terminal to preview it."
+			]
+			id: "74C14908A195E46D"
+			rewards: [
+				{
+					count: 6
+					id: "3A4D518A937A96FC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "DEDBFD00E148B835"
+					item: "gtceu:reclamation_sifter_array"
+					type: "item"
+				}
+			]
+			title: "Reclamation Sifter Array"
+			x: 16.0d
+			y: 1.5d
+		}
+		{
 			dependencies: ["10BB65E601DDE91E"]
 			description: [
 				"&7[NCP Field Memo #0118: Optional]"
@@ -581,7 +611,7 @@
 			]
 			title: "Optional: Steam"
 			x: 16.0d
-			y: 1.5d
+			y: -1.5d
 		}
 	]
 	title: "River Crossing (ULV)"

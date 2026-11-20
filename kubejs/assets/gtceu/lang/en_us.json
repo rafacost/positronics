@@ -5,5 +5,8 @@
   "block.gtceu.ulv_reclamation_compressor": "Reclamation Compressor",
   "block.gtceu.ulv_reclamation_extractor": "Reclamation Extractor",
   "block.gtceu.ulv_reclamation_forge_hammer": "Reclamation Forge Hammer",
-  "block.gtceu.ulv_reclamation_sifter": "Reclamation Sifter"
+  "block.gtceu.ulv_reclamation_sifter": "Reclamation Sifter",
+  "block.gtceu.reclamation_sifter_array": "Reclamation Sifter Array",
+  "block.gtceu.calla_paddy": "Calla Paddy",
+  "gtceu.calla_paddy": "Calla Paddy"
 }

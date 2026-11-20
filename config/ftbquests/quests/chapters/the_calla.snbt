@@ -464,6 +464,36 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["E12B3F5F5CE6A22A" "91F7A2545C9D1EBB"]
+			description: [
+				"&7[NCP Field Memo #0218: Glasshouse]"
+				""
+				"A 5x5 glasshouse: steel casings around nine blocks of dirt, glass walls and roof two blocks high."
+				"Put a seed in the input bus (it is never used up), pipe in water, and it grows that crop. Fertilizer doubles the harvest."
+				"&7Cotton gives string; flax, jute and sisal give fibre. No spiders required."
+			]
+			id: "A13B1B3E561D401C"
+			rewards: [
+				{
+					count: 8
+					id: "B28BB08E9ECFA8F8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "4EDB83D3856B177D"
+					item: "gtceu:calla_paddy"
+					type: "item"
+				}
+			]
+			title: "The Calla Paddy"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
 			dependencies: ["A82BF2A1F92BA144"]
 			description: [
 				"&7[NCP Field Memo #0214: Charging]"

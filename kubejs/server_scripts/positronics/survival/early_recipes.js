@@ -8,6 +8,11 @@ ServerEvents.recipes(event => {
         .xp(0.1)
         .id('positronics:early/dust_to_glass')
 
+    // No spiders, so string comes from fibre crops (Pam's cotton, flax, jute, sisal, kenaf).
+    ;['cotton', 'flax', 'jute', 'sisal', 'kenaf'].forEach(c => {
+        event.shapeless('minecraft:string', [`3x pamhc2crops:${c}item`]).id(`positronics:early/string_from_${c}`)
+    })
+
     event.shaped('minecraft:campfire', [
         ' S ',
         'SLS',
