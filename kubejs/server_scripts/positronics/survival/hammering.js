@@ -3,7 +3,7 @@
 //   cobblestone -> gravel -> sand -> dust
 // Dust + a water bottle makes clay (for terracotta and botany pots).
 
-const POSITRONICS_HAMMER = 'positronics:reclamation_hammer'
+let POSITRONICS_HAMMER = 'positronics:reclamation_hammer'
 const POSITRONICS_HAMMER_STEPS = {
     'minecraft:cobblestone': 'minecraft:gravel',
     'minecraft:gravel': 'minecraft:sand',
@@ -11,16 +11,22 @@ const POSITRONICS_HAMMER_STEPS = {
 }
 
 BlockEvents.broken(event => {
-    const { block, player } = event
+    let { block, player } = event
     if (!player || player.isCreative()) return
-    const held = player.mainHandItem
+    let held = player.mainHandItem
     if (held.id != POSITRONICS_HAMMER) return
 
-    const next = POSITRONICS_HAMMER_STEPS[block.id]
+    let next = POSITRONICS_HAMMER_STEPS[block.id]
     if (!next) return
 
     block.set('minecraft:air')
     block.popItem(Item.of(next))
+    // The Waste Lands trickle: crushing gravel sometimes turns up a Seed I stratum.
+    if (next == 'minecraft:sand') {
+        global.POSITRONICS_TRICKLE.forEach(t => {
+            if (Math.random() < t[1]) block.popItem(Item.of(t[0]))
+        })
+    }
     held.damage(1, player)
     event.cancel()
 })

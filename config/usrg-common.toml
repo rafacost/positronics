@@ -1,18 +1,156 @@
 
+#Powered generator tier 5 defaults.
+[tier5]
+	#Range: > 0
+	feBuffer = 6553600
+	#Range: > 0
+	maxFeInputPerTick = 131072
+	autoPush = true
+	#Range: 1 ~ 64
+	itemsPerCycle = 16
+	#Range: 1 ~ 54
+	outputSlots = 27
+	#Range: 1 ~ 2000
+	ticksPerCycle = 5
+	#Range: > 0
+	fePerTick = 32768
+
 #General Settings
 [general]
 	#Clay, Glowstone, Quartz, Redstone and Snow Generators will generate dust items, not blocks.
 	generate_dust = false
+	#Pause generators while they receive a redstone signal.
+	redstoneDisables = true
 	#Enable the Ore Generator.
-	oreGeneratorEnable = false
-	#Ticks between each generation cycle.
+	oreGeneratorEnable = true
+	#Ticks between each tier 1 generation cycle. Kept for compatibility with existing configs.
 	#Range: 1 ~ 2000
 	blocks_per_tick = 40
 	#Enable the Dye Generator.
 	dyeGeneratorEnable = true
 
-#OreGenerator Probabilities
+#Powered generator tier 4 defaults.
+[tier4]
+	#Range: > 0
+	feBuffer = 819200
+	#Range: > 0
+	maxFeInputPerTick = 16384
+	autoPush = true
+	#Range: 1 ~ 64
+	itemsPerCycle = 4
+	#Range: 1 ~ 54
+	outputSlots = 9
+	#Range: 1 ~ 2000
+	ticksPerCycle = 5
+	#Range: > 0
+	fePerTick = 4096
+
+#Powered generator tier 3 defaults.
+[tier3]
+	#Range: > 0
+	feBuffer = 102400
+	#Range: > 0
+	maxFeInputPerTick = 2048
+	autoPush = true
+	#Range: 1 ~ 64
+	itemsPerCycle = 2
+	#Range: 1 ~ 54
+	outputSlots = 4
+	#Range: 1 ~ 2000
+	ticksPerCycle = 10
+	#Range: > 0
+	fePerTick = 512
+
+#Weighted output lists. Format: modid:item*weight. Empty T2-T5 lists fall back to T1.
+[dyegenerator]
+	dyeGeneratorItemsT1 = ["minecraft:white_dye*1.0", "minecraft:orange_dye*1.0", "minecraft:magenta_dye*1.0", "minecraft:light_blue_dye*1.0", "minecraft:yellow_dye*1.0", "minecraft:lime_dye*1.0", "minecraft:pink_dye*1.0", "minecraft:gray_dye*1.0", "minecraft:light_gray_dye*1.0", "minecraft:cyan_dye*1.0", "minecraft:purple_dye*1.0", "minecraft:blue_dye*1.0", "minecraft:brown_dye*1.0", "minecraft:green_dye*1.0", "minecraft:red_dye*1.0", "minecraft:black_dye*1.0"]
+	dyeGeneratorItemsT2 = []
+	dyeGeneratorItemsT5 = []
+	dyeGeneratorItemsT3 = []
+	dyeGeneratorItemsT4 = []
+
+#Weighted output lists. Format: modid:item*weight. Empty T2-T5 lists fall back to T1.
 [oregenerator]
-	#Comma separated list of the items and probabilities (probability value between 0.00 and 1.00) to be used in the Ore Generator, format to use: "modid:itemname*probability" e.g. "minecraft:iron_ore*0.45"
-	oreGeneratorItems = ["minecraft:coal_ore*0.50", "minecraft:iron_ore*0.45", "minecraft:gold_ore*0.25", "minecraft:lapis_ore*0.10", "minecraft:redstone_ore*0.10", "minecraft:diamond_ore*0.05", "minecraft:emerald_ore*0.02", "minecraft:nether_quartz_ore*0.00", "minecraft:ancient_debris*0.01", "minecraft:copper_ore*0.40", "minecraft:deepslate_coal_ore*0.49", "minecraft:deepslate_iron_ore*0.44", "minecraft:deepslate_copper_ore*0.39", "minecraft:deepslate_gold_ore*0.24", "minecraft:deepslate_lapis_ore*0.09", "minecraft:deepslate_redstone_ore*0.09", "minecraft:deepslate_diamond_ore*0.04", "minecraft:deepslate_emerald_ore*0.01"]
+	oreGeneratorItemsT5 = ["positronics:naquadic_stratum*0.30", "positronics:europic_stratum*0.15", "positronics:triniac_stratum*0.15", "positronics:duranic_stratum*0.12", "positronics:actinic_stratum*0.12", "positronics:neutronic_stratum*0.06"]
+	oreGeneratorItemsT4 = ["positronics:tungstic_stratum*0.20", "positronics:molybdic_stratum*0.12", "positronics:platinic_stratum*0.14", "positronics:lanthanic_stratum*0.12", "positronics:niobic_stratum*0.10", "positronics:indic_stratum*0.10", "positronics:beryllic_stratum*0.08", "positronics:osmic_stratum*0.06"]
+	oreGeneratorItemsT3 = ["positronics:titanic_stratum*0.22", "positronics:chromic_stratum*0.14", "positronics:vanadic_stratum*0.10", "positronics:lustrous_stratum*0.10", "positronics:lithic_stratum*0.10", "positronics:fluoric_stratum*0.08", "positronics:bituminous_stratum*0.16", "positronics:uranic_stratum*0.05"]
+	oreGeneratorItemsT2 = ["positronics:bauxitic_stratum*0.25", "positronics:siliceous_stratum*0.22", "positronics:semimetal_stratum*0.10", "positronics:precious_stratum*0.12", "positronics:saline_stratum*0.14", "positronics:sulfuric_stratum*0.10", "positronics:antimonial_stratum*0.06", "positronics:crystalline_stratum*0.10"]
+	oreGeneratorItemsT1 = ["positronics:ferrous_stratum*0.40", "positronics:cupric_stratum*0.30", "positronics:stannic_stratum*0.22", "positronics:carbonic_stratum*0.25", "positronics:plumbic_stratum*0.10", "positronics:nickelous_stratum*0.08", "positronics:rubric_stratum*0.12"]
+
+#Powered generator tier 2 defaults.
+[tier2]
+	#Range: > 0
+	feBuffer = 12800
+	#Range: > 0
+	maxFeInputPerTick = 256
+	autoPush = true
+	#Range: 1 ~ 64
+	itemsPerCycle = 1
+	#Range: 1 ~ 54
+	outputSlots = 1
+	#Range: 1 ~ 2000
+	ticksPerCycle = 20
+	#Range: > 0
+	fePerTick = 64
+
+#Maximum tier for each generator type.
+[generatorLimits]
+	#Range: 1 ~ 5
+	redstonegeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	endcrushedgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	sandgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	soulgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	dyegeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	endgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	icegeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	glowstonegeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	grassgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	cleangeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	cobblegeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	snowgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	obsidiangeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	oregeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	dirtgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	claygeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	nethergeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	nethercrushedgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	gravelgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	dustgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	quartzgeneratorMaxTier = 5
+	#Range: 1 ~ 5
+	fungusgeneratorMaxTier = 5
+
+#Powered generator tier 1 defaults.
+[tier1]
+	#Range: > 0
+	feBuffer = 0
+	#Range: > 0
+	maxFeInputPerTick = 0
+	autoPush = false
+	#Range: 1 ~ 64
+	itemsPerCycle = 1
+	#Range: 1 ~ 54
+	outputSlots = 1
+	#Range: > 0
+	fePerTick = 0
 

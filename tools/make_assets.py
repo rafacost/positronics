@@ -220,7 +220,65 @@ def dust_texture():
     return px
 
 
+def stratum_texture():
+    """Grayscale grit pile; tinted per stratum by KubeJS item color."""
+    clear = (0, 0, 0, 0)
+    shades = [(150, 150, 150, 255), (190, 190, 190, 255), (225, 225, 225, 255), (120, 120, 120, 255)]
+    px = [[clear] * 16 for _ in range(16)]
+    seed = 424242
+    for y in range(5, 14):
+        half = int((y - 4) * 0.9) + 2
+        for x in range(8 - half, 8 + half):
+            if 0 <= x < 16:
+                seed = (seed * 1103515245 + 12345) & 0x7FFFFFFF
+                px[y][x] = shades[(seed >> 16) % len(shades)]
+    return px
+
+
+def core_texture():
+    """A faceted positronic crystal in a frame; grayscale, tinted per tier."""
+    clear = (0, 0, 0, 0)
+    frame = (70, 70, 80, 255)
+    dark = (140, 140, 150, 255)
+    mid = (200, 200, 210, 255)
+    light = (250, 250, 255, 255)
+    px = [[clear] * 16 for _ in range(16)]
+    for y in range(16):
+        for x in range(16):
+            d = abs(x - 7.5) + abs(y - 7.5)
+            if d <= 6.5:
+                px[y][x] = mid if d > 3 else light
+            if 6.5 < d <= 7.5:
+                px[y][x] = frame
+    for x, y in [(5, 5), (6, 5), (5, 6), (10, 10), (9, 10)]:
+        px[y][x] = dark
+    return px
+
+
+def card_texture():
+    """An access card with a chip and a stripe; grayscale, tinted per level."""
+    clear = (0, 0, 0, 0)
+    edge = (90, 90, 95, 255)
+    body = (210, 210, 215, 255)
+    stripe = (120, 120, 125, 255)
+    chip = (235, 200, 90, 255)
+    px = [[clear] * 16 for _ in range(16)]
+    for y in range(3, 13):
+        for x in range(1, 15):
+            px[y][x] = edge if (y in (3, 12) or x in (1, 14)) else body
+    for x in range(2, 14):
+        px[10][x] = stripe
+    for y in range(5, 8):
+        for x in range(3, 6):
+            px[y][x] = chip
+    return px
+
+
 if __name__ == "__main__":
+    tex = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "item")
+    for name, fn in [("stratum", stratum_texture), ("positronic_core", core_texture), ("clearance_card", card_texture)]:
+        write_png(os.path.join(tex, name + ".png"), fn())
+        print("wrote", f"kubejs/assets/positronics/textures/item/{name}.png")
     dust_path = os.path.join(ROOT, "kubejs", "assets", "positronics", "textures", "block", "dust.png")
     write_png(dust_path, dust_texture())
     print("wrote", os.path.relpath(dust_path, ROOT))

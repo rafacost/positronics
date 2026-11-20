@@ -3,7 +3,7 @@
 
 ServerEvents.recipes(event => {
     // Passive EMC generation and storage that bypasses production.
-    const removedOutputs = [
+    let removedOutputs = [
         'projecte:collector_mk1', 'projecte:collector_mk2', 'projecte:collector_mk3',
         'projecte:condenser_mk1', 'projecte:condenser_mk2',
         'projecte:alchemical_chest',

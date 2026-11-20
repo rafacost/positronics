@@ -1,0 +1,88 @@
+{
+  "_doc": "Single source of truth for the Strata (seed grits). tools/make_strata.py turns this into KubeJS data (global.POSITRONICS_STRATA), the USRG ore-generator lists per tier, and the EMC whitelist. Weights are USRG weights; chances are 0-1; emc is per output unit.",
+  "tiers": [
+    {
+      "tier": 1,
+      "seed": "Seed I",
+      "usrg_tier": 1,
+      "eut": 7,
+      "color_hint": "earthy",
+      "strata": [
+        { "id": "ferrous",   "name": "Ferrous Stratum",   "color": "0x8a6f5c", "weight": 0.40, "main": "gtceu:iron_dust",     "nugget": "minecraft:iron_nugget", "by": [["gtceu:nickel_dust", 0.10], ["gtceu:manganese_dust", 0.05]] },
+        { "id": "cupric",    "name": "Cupric Stratum",    "color": "0xc0703a", "weight": 0.30, "main": "gtceu:copper_dust",   "nugget": "gtceu:copper_nugget",   "by": [["gtceu:gold_dust", 0.05], ["gtceu:cobalt_dust", 0.03]] },
+        { "id": "stannic",   "name": "Stannic Stratum",   "color": "0xb8b8c4", "weight": 0.22, "main": "gtceu:tin_dust",      "nugget": "gtceu:tin_nugget",      "by": [["gtceu:zinc_dust", 0.10], ["gtceu:antimony_dust", 0.03]] },
+        { "id": "carbonic",  "name": "Carbonic Stratum",  "color": "0x2e2e2e", "weight": 0.25, "main": "gtceu:coal_dust",     "smelt": "minecraft:coal",         "by": [["gtceu:graphite_dust", 0.05], ["gtceu:sulfur_dust", 0.08]] },
+        { "id": "plumbic",   "name": "Plumbic Stratum",   "color": "0x5b5670", "weight": 0.10, "main": "gtceu:lead_dust",     "nugget": "gtceu:lead_nugget",     "by": [["gtceu:silver_dust", 0.05]] },
+        { "id": "nickelous", "name": "Nickelous Stratum", "color": "0xb9b38a", "weight": 0.08, "main": "gtceu:nickel_dust",   "nugget": "gtceu:nickel_nugget",   "by": [["gtceu:cobalt_dust", 0.05]] },
+        { "id": "rubric",    "name": "Rubric Stratum",    "color": "0xa02020", "weight": 0.12, "main": "minecraft:redstone",  "smelt": "minecraft:redstone",     "by": [["minecraft:glowstone_dust", 0.02]] }
+      ]
+    },
+    {
+      "tier": 2,
+      "seed": "Seed II",
+      "usrg_tier": 2,
+      "eut": 30,
+      "strata": [
+        { "id": "bauxitic",    "name": "Bauxitic Stratum",    "color": "0xb5654a", "weight": 0.25, "main": "gtceu:bauxite_dust",         "by": [["gtceu:gallium_dust", 0.05], ["gtceu:rutile_dust", 0.03]] },
+        { "id": "siliceous",   "name": "Siliceous Stratum",   "color": "0xe6e0cc", "weight": 0.22, "main": "gtceu:silicon_dioxide_dust", "by": [["gtceu:glass_dust", 0.20]] },
+        { "id": "semimetal",   "name": "Semimetal Stratum",   "color": "0x9aa6b0", "weight": 0.10, "main": "gtceu:gallium_dust",         "by": [["gtceu:arsenic_dust", 0.50]] },
+        { "id": "precious",    "name": "Precious Stratum",    "color": "0xe8c34a", "weight": 0.12, "main": "gtceu:gold_dust",            "by": [["gtceu:silver_dust", 0.20]] },
+        { "id": "saline",      "name": "Saline Stratum",      "color": "0xf0f0f0", "weight": 0.14, "main": "gtceu:salt_dust",            "by": [["gtceu:lithium_dust", 0.05], ["gtceu:rock_salt_dust", 0.15]] },
+        { "id": "sulfuric",    "name": "Sulfuric Stratum",    "color": "0xd8d040", "weight": 0.10, "main": "gtceu:sulfur_dust",          "by": [["gtceu:pyrite_dust", 0.20]] },
+        { "id": "antimonial",  "name": "Antimonial Stratum",  "color": "0x6e7f86", "weight": 0.06, "main": "gtceu:antimony_dust",        "by": [["gtceu:cobalt_dust", 0.10]] },
+        { "id": "crystalline", "name": "Crystalline Stratum", "color": "0xa8c8e8", "weight": 0.10, "main": "ae2:certus_quartz_dust",     "by": [["gtceu:nether_quartz_dust", 0.30]] }
+      ]
+    },
+    {
+      "tier": 3,
+      "seed": "Seed III",
+      "usrg_tier": 3,
+      "eut": 120,
+      "strata": [
+        { "id": "titanic",   "name": "Titanic Stratum",   "color": "0xb090b0", "weight": 0.22, "main": "gtceu:rutile_dust",             "by": [["gtceu:ilmenite_dust", 0.20]] },
+        { "id": "chromic",   "name": "Chromic Stratum",   "color": "0x704858", "weight": 0.14, "main": "gtceu:chromite_dust",           "by": [["gtceu:magnesium_dust", 0.10]] },
+        { "id": "vanadic",   "name": "Vanadic Stratum",   "color": "0x4a4a5a", "weight": 0.10, "main": "gtceu:vanadium_magnetite_dust", "by": [["gtceu:magnetite_dust", 0.20]] },
+        { "id": "lustrous",  "name": "Lustrous Stratum",  "color": "0x9fe8e0", "weight": 0.10, "main": "gtceu:diamond_dust",            "by": [["gtceu:emerald_dust", 0.10], ["gtceu:sapphire_dust", 0.10], ["gtceu:ruby_dust", 0.10]] },
+        { "id": "lithic",    "name": "Lithic Stratum",    "color": "0xc8b8a8", "weight": 0.10, "main": "gtceu:spodumene_dust",          "by": [["gtceu:lepidolite_dust", 0.20]] },
+        { "id": "fluoric",   "name": "Fluoric Stratum",   "color": "0x7fb0ff", "weight": 0.08, "main": "gtceu:topaz_dust",           "by": [["gtceu:calcite_dust", 0.20]] },
+        { "id": "bituminous","name": "Bituminous Stratum","color": "0x2a2218", "weight": 0.16, "main": "gtceu:oilsands_dust",           "by": [["gtceu:coal_dust", 0.20]] },
+        { "id": "uranic",    "name": "Uranic Stratum",    "color": "0x3a6a2a", "weight": 0.05, "main": "gtceu:pitchblende_dust",        "by": [["gtceu:uraninite_dust", 0.20]] }
+      ]
+    },
+    {
+      "tier": 4,
+      "seed": "Seed IV",
+      "usrg_tier": 4,
+      "eut": 1920,
+      "strata": [
+        { "id": "tungstic",   "name": "Tungstic Stratum",   "color": "0x3c3c46", "weight": 0.20, "main": "gtceu:scheelite_dust",   "by": [["gtceu:tungstate_dust", 0.30]] },
+        { "id": "molybdic",   "name": "Molybdic Stratum",   "color": "0x8090a0", "weight": 0.12, "main": "gtceu:molybdenite_dust", "by": [["gtceu:wulfenite_dust", 0.15]] },
+        { "id": "platinic",   "name": "Platinic Stratum",   "color": "0xd8e0e8", "weight": 0.14, "main": "gtceu:cooperite_dust",   "by": [["gtceu:platinum_group_sludge_dust", 0.10]] },
+        { "id": "lanthanic",  "name": "Lanthanic Stratum",  "color": "0xb07ad8", "weight": 0.12, "main": "gtceu:monazite_dust",    "by": [["gtceu:bastnasite_dust", 0.30]] },
+        { "id": "niobic",     "name": "Niobic Stratum",     "color": "0x5a5a8a", "weight": 0.10, "main": "gtceu:pyrochlore_dust",  "by": [["gtceu:tantalite_dust", 0.20]] },
+        { "id": "indic",      "name": "Indic Stratum",      "color": "0x4a5aa0", "weight": 0.10, "main": "gtceu:sphalerite_dust",  "by": [["gtceu:indium_dust", 0.05]] },
+        { "id": "beryllic",   "name": "Beryllic Stratum",   "color": "0x60c080", "weight": 0.08, "main": "gtceu:beryllium_dust",   "by": [["gtceu:emerald_dust", 0.15]] },
+        { "id": "osmic",      "name": "Osmic Stratum",      "color": "0x5070c0", "weight": 0.06, "main": "gtceu:iridium_dust",     "by": [["gtceu:osmium_dust", 0.30]] }
+      ]
+    },
+    {
+      "tier": 5,
+      "seed": "Seed V",
+      "usrg_tier": 5,
+      "eut": 30720,
+      "strata": [
+        { "id": "naquadic",  "name": "Naquadic Stratum",  "color": "0x1a2a1a", "weight": 0.30, "main": "gtceu:naquadah_dust",   "by": [["gtceu:enriched_naquadah_dust", 0.10]] },
+        { "id": "europic",   "name": "Europic Stratum",   "color": "0x80d0e0", "weight": 0.15, "main": "gtceu:europium_dust",   "by": [["gtceu:samarium_dust", 0.20]] },
+        { "id": "triniac",   "name": "Triniac Stratum",   "color": "0x8a8aa0", "weight": 0.15, "main": "gtceu:trinium_dust",    "by": [["gtceu:naquadria_dust", 0.05]] },
+        { "id": "duranic",   "name": "Duranic Stratum",   "color": "0xe0e0a0", "weight": 0.12, "main": "gtceu:duranium_dust",   "by": [["gtceu:tritanium_dust", 0.05]] },
+        { "id": "actinic",   "name": "Actinic Stratum",   "color": "0x70a050", "weight": 0.12, "main": "gtceu:plutonium_dust",  "by": [["gtceu:americium_dust", 0.10]] },
+        { "id": "neutronic", "name": "Neutronic Stratum", "color": "0xf0f0f8", "weight": 0.06, "main": "gtceu:neutronium_dust", "by": [] }
+      ]
+    }
+  ],
+  "trickle": {
+    "_doc": "In-world hammering of gravel (Waste Lands): besides sand, a small chance to pop a Seed I stratum. Forge hammer machines later automate it.",
+    "chances": [["ferrous", 0.08], ["cupric", 0.05], ["stannic", 0.04], ["carbonic", 0.04], ["plumbic", 0.02], ["nickelous", 0.02], ["rubric", 0.03]]
+  },
+  "emc_per_tier": { "1": 128, "2": 1024, "3": 8192, "4": 65536, "5": 524288 }
+}

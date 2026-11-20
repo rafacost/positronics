@@ -57,8 +57,9 @@
 				"Your kit holds one &bMk I Reclamation Generator&r. Place it and it slowly pulls cobblestone in from the void."
 				"No power needed at this grade, and no, NCP will not be issuing you a second one."
 				""
-				"Put the hopper from your kit under it, and a chest under the hopper, so it keeps working while you are away."
-				"&7Everything else (gravel, sand, glass) starts as this cobblestone."
+				"&aRight-click&r it to collect a stack, &aleft-click&r for a single block. It holds what you don't take."
+				"Later, a hopper or pipe underneath keeps it emptied while you are away."
+				"&7Everything else (gravel, sand, dust, glass) starts as this cobblestone."
 			]
 			id: "504F530000001002"
 			rewards: [{
@@ -293,8 +294,9 @@
 			description: [
 				"&7[NCP Field Memo #0009: Glassworks]"
 				""
-				"Cobblestone makes a furnace. Hammered sand, smelted, makes glass."
-				"Glass makes bottles, and bottles carry water. Everything connects."
+				"Cobblestone makes a furnace. Plain sand won't melt into clear glass here; hammer it down to &bdust&r first."
+				"Smelt the dust and you get glass. Glass makes bottles, and bottles carry water. Everything connects."
+				"&7No coal for a new campfire? Logs and sticks make a rough one."
 			]
 			id: "504F530000001009"
 			rewards: [{

@@ -3,13 +3,14 @@
 # The repo is the source of truth for everything it tracks. Untracked instance files are left alone.
 
 param(
-    [string]$Instance = 'D:\Minecraft\Instances\Positronics'
+    [string]$Instance = 'D:\Minecraft\Instances\Positronics',
+    [switch]$SkipModsCheck
 )
 
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
 
-if (-not (Test-Path "$Instance\mods")) { throw "Instance not found or has no mods folder: $Instance" }
+if (-not $SkipModsCheck -and -not (Test-Path "$Instance\mods")) { throw "Instance not found or has no mods folder: $Instance" }
 
 # 1) Our KubeJS script folders are mirrored exactly (deleted scripts are removed in the instance too).
 foreach ($kind in 'startup_scripts', 'server_scripts', 'client_scripts') {

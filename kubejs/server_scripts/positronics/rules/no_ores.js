@@ -12,7 +12,7 @@ const POSITRONICS_ORE_WHITELIST_MODS = []
 
 LootJS.modifiers(event => {
     Ingredient.of('#forge:ores').itemIds.forEach(id => {
-        const modId = String(id).split(':')[0]
+        let modId = String(id).split(':')[0]
         if (POSITRONICS_ORE_WHITELIST_MODS.includes(modId)) return
         event.addBlockLootModifier(id).removeLoot(Ingredient.all)
     })

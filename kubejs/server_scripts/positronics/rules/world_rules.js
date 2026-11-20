@@ -2,10 +2,10 @@
 // No natural mob spawning of any kind: mobs only ever come from tech.
 
 ServerEvents.loaded(event => {
-    const data = event.server.persistentData
+    let data = event.server.persistentData
     if (data.getBoolean('positronics_rules_v1')) return
 
-    const rules = event.server.gameRules
+    let rules = event.server.gameRules
     rules.set('doMobSpawning', false)     // no natural spawns (hostile or passive)
     rules.set('doPatrolSpawning', false)  // no pillager patrols
     rules.set('doTraderSpawning', false)  // no wandering traders

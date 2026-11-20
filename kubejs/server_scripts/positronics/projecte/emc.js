@@ -4,9 +4,9 @@
 // Rationale: EMC is earned through processing lines (see docs/seed-chains-draft.md §4),
 // never from basic world blocks.
 
-const POSITRONICS_EMC = {
-    // 'gtceu:iron_dust': 128,   // example: added when the Seed I line exists
-}
+// Raw outputs of the Strata lines (dusts and their ingots), valued per seed tier.
+// Generated from tools/data/strata.json (emc_per_tier) by tools/make_strata.py.
+const POSITRONICS_EMC = global.POSITRONICS_EMC_VALUES || {}
 
 ProjectEEvents.setEMC(event => {
     let cleared = 0
