@@ -88,6 +88,8 @@ All magic or occult mods (Botania family, Blood Magic, Sanguine Neural Networks,
 
 ## 3. Tier skeleton
 
+> **Implementation update (2026-11-20):** each Positronic Core is now built **one tier before** its strata are needed: Core III at MV, IV at EV, V at LuV (HV hulls need Seed III chrome, IV needs Seed IV tungsten, ZPM needs Seed V naquadah). The implemented progression is described in `docs/overnight-report-2026-11-20.md`; the table below is the original plan.
+
 Placeholder names (**Seed I–V**, **Key LV**, …) get renamed once the theme and book are chosen. Nothing here reuses Greg-E content.
 
 | Era / GT tier | USRG | Seed material | Tier key (gates the next tier) | Side mod unlocked | Survival / food | EMC |
