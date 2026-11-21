@@ -20,8 +20,7 @@
 				""
 				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
 				""
-				"&7Enclosed: one block of dirt for your botany pot. Do not dig up the island to get more."
-				"&7Also enclosed: a thermometer and a season calendar. The weather out here will try to kill you; know it first."
+				"&7Enclosed: a thermometer and a season calendar. The weather out here will try to kill you; know it first."
 			]
 			icon: "minecraft:lantern"
 			id: "504F530000001001"
@@ -30,11 +29,6 @@
 					count: 3
 					id: "504F530000003001"
 					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-				{
-					id: "504F530000003011"
-					item: "minecraft:dirt"
 					type: "item"
 				}
 				{
@@ -151,11 +145,18 @@
 				""
 				"There is no farmland to spare on a floating rock, so we grow food in &bBotany Pots&r."
 				""
-				"&aHow:&r place the pot on solid ground, put a &bdirt&r block in it (from the welcome memo), then a seed."
+				"&aHow:&r craft a pot and claim the dirt below. Place the pot on solid ground, put the enclosed &bdirt&r block in it, then a seed."
 				"Wait, and right-click to harvest. Later, a &bhopper botany pot&r over a chest harvests on its own."
+				""
+				"&7Enclosed: one block of dirt and two seeds. Do not dig up the island to get more dirt."
 			]
 			id: "504F530000001006"
 			rewards: [
+				{
+					id: "504F530000003022"
+					item: "minecraft:dirt"
+					type: "item"
+				}
 				{
 					id: "504F530000003008"
 					item: "pamhc2crops:lettuceseeditem"
@@ -174,8 +175,8 @@
 			]
 			subtitle: "Farming without a farm"
 			tasks: [{
-				id: "504F530000002006"
-				item: "pamhc2crops:tomatoitem"
+				id: "504F530000002020"
+				item: "botanypots:terracotta_botany_pot"
 				type: "item"
 			}]
 			title: "Pot Luck"
