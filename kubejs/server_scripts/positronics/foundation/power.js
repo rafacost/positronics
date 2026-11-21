@@ -5,7 +5,9 @@
 //       sp_1 16 FE/t (ULV), sp_2 64 (LV), sp_3 256 (MV), sp_4 1024 (HV), sp_5 4096 (EV), sp_6 16384 (IV),
 //       sp_7 65536 (LuV), sp_8 262144 (ZPM). Each tier is 4 of the one below + that tier's circuit + plates,
 //       so compacting never gains or loses power: it only saves space.
-//   - One GregTech Energy Converter (starts in FE -> EU mode, 4 FE = 1 EU) feeds the machines. Only it needs a hull.
+//   - A GregTech Energy Converter (starts in FE -> EU mode, 4 FE = 1 EU) feeds the machines. Only it needs a hull.
+//     It is required: config/gtceu.yaml nativeEUToFE is false, so GT machines and cables refuse raw FE.
+//     That keeps GregTech's own solar worth building: 8 EU/t straight onto cable, no converter, no 4:1 loss.
 //   - Powah's starter Energy Cell stores the day for the night; the starter Furnator burns coal (carbon) as backup.
 //     Powah's own chain (dielectric paste needs lava, capacitors need energized steel) is skipped at ULV.
 
