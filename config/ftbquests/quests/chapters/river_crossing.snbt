@@ -679,6 +679,7 @@
 				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
 				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]
+			icon: "gtceu:ulv_atomic_reclaimer"
 			id: "0788A02A25C2D582"
 			rewards: [
 				{
@@ -691,13 +692,17 @@
 			tasks: [
 				{
 					id: "739849B36F6BEC2A"
-					item: "gtceu:ulv_atomic_reclaimer"
-					type: "item"
+					observe_type: 0
+					timer: 0L
+					to_observe: "gtceu:ulv_atomic_reclaimer"
+					type: "observation"
 				}
 				{
 					id: "54CAEA897217627F"
-					item: "botanypots:terracotta_hopper_botany_pot"
-					type: "item"
+					observe_type: 0
+					timer: 0L
+					to_observe: "botanypots:terracotta_hopper_botany_pot"
+					type: "observation"
 				}
 				{
 					count: 128L

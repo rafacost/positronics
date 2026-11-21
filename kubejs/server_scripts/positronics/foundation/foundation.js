@@ -26,6 +26,13 @@ ServerEvents.recipes(event => {
         }).id(`positronics:foundation/${name}`)
     })
 
+    // Early storage blocks by hand (GregTech leaves 9 ingots -> block to the compressor). Power, the forge
+    // hammer and Core I need iron, bronze and steel blocks before any compressor runs. Later metals keep GT's way.
+    ;[['iron', 'minecraft:iron_block'], ['bronze', 'gtceu:bronze_block'], ['steel', 'gtceu:steel_block']].forEach(b => {
+        event.shaped(b[1], ['III', 'III', 'III'], { I: `#forge:ingots/${b[0]}` })
+            .id(`positronics:foundation/${b[0]}_block_by_hand`)
+    })
+
     // ULV alloys (7 EU/t) in any alloy smelter. GT's own 16 EU/t versions of bronze and
     // tin alloy have the same inputs, so they are replaced (otherwise ours never register).
     event.remove({ type: 'gtceu:alloy_smelter', output: 'gtceu:bronze_ingot' })

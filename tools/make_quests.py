@@ -185,6 +185,14 @@ def main():
                     lines.append(f"\t\t\t\t\tdimension: {s(t['dimension'])}")
                     lines.append(f"\t\t\t\t\tid: {tid}")
                     lines.append('\t\t\t\t\ttype: "dimension"')
+                elif isinstance(t, dict) and "observe" in t:
+                    # Look at a placed block (item tasks miss blocks placed while the quest was locked).
+                    check(t["observe"], f"{cid}/{k} observe task")
+                    lines.append(f"\t\t\t\t\tid: {tid}")
+                    lines.append("\t\t\t\t\tobserve_type: 0")
+                    lines.append("\t\t\t\t\ttimer: 0L")
+                    lines.append(f"\t\t\t\t\tto_observe: {s(t['observe'])}")
+                    lines.append('\t\t\t\t\ttype: "observation"')
                 else:
                     item, count = (t, 1) if isinstance(t, (str, dict)) and not (isinstance(t, dict) and "dimension" in t) else t
                     check(item_id(item), f"{cid}/{k} task")
