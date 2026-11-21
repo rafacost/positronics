@@ -14,10 +14,11 @@
 				"&7[NCP Field Memo #3601: Chemistry]"
 				""
 				"The &bDissolver&r breaks almost anything solid into its &belements&r (ChemLib). The &bCombiner&r builds compounds;"
-				"the &bAtomizer&r and &bLiquifier&r handle gases and liquids; &bFusion&r and &bFission&r transmute elements."
-				"Elements are the only thing &bPositronic Memory&r learns. 16 elements compress into one GregTech dust, one tier late (no shortcut past the planets),"
-				"but GregTech needs them: every Clearance Card from Level 3 asks for a chemistry sample."
-				"&7Every row of the table you complete earns samples and Scrip."
+				"the &bAtomizer&r and &bLiquifier&r handle gases and liquids; &bFusion&r and &bFission&r turn one element into another."
+				"&bPositronic Memory&r learns elements, and the compounds built from them. 16 elements compress into one GregTech dust, one tier late"
+				"(no shortcut past the planets), and GregTech needs them: every Clearance Card from Level 3 asks for a chemistry sample."
+				"&7Every row of the table you finish earns samples and Scrip. The old world had a name for every one of these."
+				"&7Now you will too."
 			]
 			id: "111ACFB0D4DD4436"
 			rewards: [
@@ -62,7 +63,8 @@
 			description: [
 				"&7[Periodic Table: Period 1]"
 				""
-				"Collect one of each: Hydrogen, Helium."
+				"Collect one of each:"
+				"Hydrogen, Helium."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "08B120B45703BABE"
@@ -101,7 +103,9 @@
 			description: [
 				"&7[Periodic Table: Period 2]"
 				""
-				"Collect one of each: Lithium, Beryllium, Boron, Carbon, Nitrogen, Oxygen, Fluorine, Neon."
+				"Collect one of each:"
+				"Lithium, Beryllium, Boron, Carbon, Nitrogen, Oxygen,"
+				"Fluorine, Neon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "78F73D8FB719CCD9"
@@ -170,7 +174,9 @@
 			description: [
 				"&7[Periodic Table: Period 3]"
 				""
-				"Collect one of each: Sodium, Magnesium, Aluminum, Silicon, Phosphorus, Sulfur, Chlorine, Argon."
+				"Collect one of each:"
+				"Sodium, Magnesium, Aluminium, Silicon, Phosphorus, Sulfur,"
+				"Chlorine, Argon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "6FF37CA4763CA663"
@@ -239,7 +245,9 @@
 			description: [
 				"&7[Periodic Table: Period 4: Light Metals]"
 				""
-				"Collect one of each: Potassium, Calcium, Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt."
+				"Collect one of each:"
+				"Potassium, Calcium, Scandium, Titanium, Vanadium, Chromium,"
+				"Manganese, Iron, Cobalt."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "1E37B67F87D215E2"
@@ -313,7 +321,9 @@
 			description: [
 				"&7[Periodic Table: Period 4: The Rest]"
 				""
-				"Collect one of each: Nickel, Copper, Zinc, Gallium, Germanium, Arsenic, Selenium, Bromine, Krypton."
+				"Collect one of each:"
+				"Nickel, Copper, Zinc, Gallium, Germanium, Arsenic,"
+				"Selenium, Bromine, Krypton."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "074DC8E631C16DEB"
@@ -387,7 +397,9 @@
 			description: [
 				"&7[Periodic Table: Period 5: Transition]"
 				""
-				"Collect one of each: Rubidium, Strontium, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium."
+				"Collect one of each:"
+				"Rubidium, Strontium, Yttrium, Zirconium, Niobium, Molybdenum,"
+				"Technetium, Ruthenium, Rhodium."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "59D33C86A9A6925C"
@@ -461,7 +473,9 @@
 			description: [
 				"&7[Periodic Table: Period 5: The Rest]"
 				""
-				"Collect one of each: Palladium, Silver, Cadmium, Indium, Tin, Antimony, Tellurium, Iodine, Xenon."
+				"Collect one of each:"
+				"Palladium, Silver, Cadmium, Indium, Tin, Antimony,"
+				"Tellurium, Iodine, Xenon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "7322A56F5FA4AF40"
@@ -535,7 +549,10 @@
 			description: [
 				"&7[Periodic Table: The Lanthanides]"
 				""
-				"Collect one of each: Lanthanum, Cerium, Praseodymium, Neodymium, Promethium, Samarium, Europium, Gadolinium, Terbium, Dysprosium, Holmium, Erbium, Thulium, Ytterbium, Lutetium."
+				"Collect one of each:"
+				"Lanthanum, Cerium, Praseodymium, Neodymium, Promethium, Samarium,"
+				"Europium, Gadolinium, Terbium, Dysprosium, Holmium, Erbium,"
+				"Thulium, Ytterbium, Lutetium."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "4415181E990E60A0"
@@ -639,7 +656,10 @@
 			description: [
 				"&7[Periodic Table: Period 6: Heavy Metals]"
 				""
-				"Collect one of each: Cesium, Barium, Hafnium, Tantalum, Tungsten, Rhenium, Osmium, Iridium, Platinum, Gold, Mercury, Thallium, Lead, Bismuth, Polonium, Astatine, Radon."
+				"Collect one of each:"
+				"Cesium, Barium, Hafnium, Tantalum, Tungsten, Rhenium,"
+				"Osmium, Iridium, Platinum, Gold, Mercury, Thallium,"
+				"Lead, Bismuth, Polonium, Astatine, Radon."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "1815DD25F9252121"
@@ -753,7 +773,10 @@
 			description: [
 				"&7[Periodic Table: The Actinides]"
 				""
-				"Collect one of each: Francium, Radium, Actinium, Thorium, Protactinium, Uranium, Neptunium, Plutonium, Americium, Curium, Berkelium, Californium, Einsteinium, Fermium, Mendelevium, Nobelium, Lawrencium."
+				"Collect one of each:"
+				"Francium, Radium, Actinium, Thorium, Protactinium, Uranium,"
+				"Neptunium, Plutonium, Americium, Curium, Berkelium, Californium,"
+				"Einsteinium, Fermium, Mendelevium, Nobelium, Lawrencium."
 				"&7Dissolve materials, run element bees, or fuse lighter elements."
 			]
 			id: "43F57DD3EDDC26A0"
@@ -867,8 +890,12 @@
 			description: [
 				"&7[Periodic Table: The Superheavies]"
 				""
-				"Collect one of each: Rutherfordium, Dubnium, Seaborgium, Bohrium, Hassium, Meitnerium, Darmstadtium, Roentgenium, Copernicium, Nihonium, Flerovium, Moscovium, Livermorium, Tennessine, Oganesson."
-				"&7The heaviest elements come from Alchemistry fusion (LuV)."
+				"Collect one of each:"
+				"Rutherfordium, Dubnium, Seaborgium, Bohrium, Hassium, Meitnerium,"
+				"Darmstadtium, Roentgenium, Copernicium, Nihonium, Flerovium, Moscovium,"
+				"Livermorium, Tennessine, Oganesson."
+				"&7The heaviest elements only come from Alchemistry fusion (LuV)."
+				"&7They don't last long. Neither did the people who named them."
 			]
 			id: "5A71D2A84DCDCF14"
 			rewards: [
@@ -970,8 +997,9 @@
 			description: [
 				"&7[Chemistry: Everyday Compounds]"
 				""
-				"Build them in the &bCombiner&r: water, carbon dioxide, sodium chloride, silicon dioxide, calcium carbonate."
-				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
+				"Make one of each: water, carbon dioxide, sodium chloride, silicon dioxide, calcium carbonate."
+				"Small molecules craft by hand from their atoms (shapeless). Big ones need the &bCombiner&r."
+				"&7Sulfuric, hydrochloric and nitric acid, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
 			id: "736B1585B1F804E2"
 			rewards: [
@@ -1018,8 +1046,9 @@
 			description: [
 				"&7[Chemistry: Acids]"
 				""
-				"Build them in the &bCombiner&r: sulfuric acid, hydrochloric acid, nitric acid, phosphoric acid."
-				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
+				"Make one of each: sulfuric acid, hydrochloric acid, nitric acid, phosphoric acid."
+				"Small molecules craft by hand from their atoms (shapeless). Big ones need the &bCombiner&r."
+				"&7Sulfuric, hydrochloric and nitric acid, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
 			id: "0A1F15325B1AD7FC"
 			rewards: [
@@ -1061,8 +1090,9 @@
 			description: [
 				"&7[Chemistry: Bases]"
 				""
-				"Build them in the &bCombiner&r: sodium hydroxide, potassium hydroxide, calcium hydroxide, ammonia."
-				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
+				"Make one of each: sodium hydroxide, potassium hydroxide, calcium hydroxide, ammonia."
+				"Small molecules craft by hand from their atoms (shapeless). Big ones need the &bCombiner&r."
+				"&7Sulfuric, hydrochloric and nitric acid, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
 			id: "12596AA3AF0FCEC1"
 			rewards: [
@@ -1104,8 +1134,9 @@
 			description: [
 				"&7[Chemistry: Organic Chemistry]"
 				""
-				"Build them in the &bCombiner&r: methane, ethanol, cellulose, sucrose, starch."
-				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
+				"Make one of each: methane, ethanol, cellulose, sucrose, starch."
+				"Small molecules craft by hand from their atoms (shapeless). Big ones need the &bCombiner&r."
+				"&7Sulfuric, hydrochloric and nitric acid, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
 			id: "2C2485B9222B683E"
 			rewards: [
@@ -1152,8 +1183,9 @@
 			description: [
 				"&7[Chemistry: Metal Oxides and Salts]"
 				""
-				"Build them in the &bCombiner&r: titanium oxide, aluminum oxide, iron oxide, potassium dichromate, barium sulfate."
-				"&7Acids, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
+				"Make one of each: titanium oxide, aluminium oxide, iron oxide, potassium dichromate, barium sulfate."
+				"Small molecules craft by hand from their atoms (shapeless). Big ones need the &bCombiner&r."
+				"&7Sulfuric, hydrochloric and nitric acid, ammonia, methane and ethanol extract into GregTech fluids (LV extractor)."
 			]
 			id: "15C1E87B588FD14B"
 			rewards: [

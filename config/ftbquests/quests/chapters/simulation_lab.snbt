@@ -11,11 +11,12 @@
 		{
 			dependencies: ["46F8BC980BF71870"]
 			description: [
-				"&7[NCP Field Memo #3201: Andy Units]"
+				"&7[NCP Field Memo #3200: Simulations]"
 				""
-				"Nothing spawns in this world. NCP's answer: simulate it. A &bSim Chamber&r runs a &bdata model&r on prediction matrices"
-				"and power; a &bLoot Fabricator&r turns the predictions into real drops."
-				"Every simulation teaches the model a little more: Basic models are inaccurate, but they improve with use."
+				"Nothing spawns in this world. Not a cow, not a creeper, not a bird. NCP's answer: simulate them."
+				"A &bSim Chamber&r runs a &bdata model&r on prediction matrices and power;"
+				"a &bLoot Fabricator&r turns the predictions into real drops."
+				"Every run teaches the model a little more. Basic models get it wrong a lot, but they learn."
 				"&7Here is your first model. NCP hands out trained models as you earn clearance: never the best, always useful."
 			]
 			id: "23AB818033C1684E"
@@ -71,7 +72,7 @@
 				"&7[NCP Field Memo #3201: Bones]"
 				""
 				"Run the skeleton model and fabricate its drops."
-				"Bones become bone meal: your crops will thank you. Arrows and skulls too."
+				"Bones grind into bone meal for your crops. Arrows and skulls come along too."
 				"&7Reward: the next data model."
 			]
 			id: "2FA1AFA982C0117E"
@@ -115,7 +116,7 @@
 				"&7[NCP Field Memo #3202: Leather]"
 				""
 				"Run the cow model and fabricate its drops."
-				"Leather means canteens, books and leather armour."
+				"Leather for canteens, books and armour. Nobody's milked a real cow in a hundred years."
 				"&7Reward: the next data model."
 			]
 			id: "77A7C2884E6BCE54"
@@ -159,7 +160,7 @@
 				"&7[NCP Field Memo #3203: Wool]"
 				""
 				"Run the sheep model and fabricate its drops."
-				"Wool for warm armour and beds. Every colour, no dye needed."
+				"Wool for warm armour and beds, in every colour, no dye needed."
 				"&7Reward: the next data model."
 			]
 			id: "0C937FCE2C4BD7B1"
@@ -203,7 +204,7 @@
 				"&7[NCP Field Memo #3204: Feathers]"
 				""
 				"Run the chicken model and fabricate its drops."
-				"Feathers for arrows and books; chicken for dinner."
+				"Feathers for arrows and books, and chicken for dinner. Don't think too hard about where it came from."
 				"&7Reward: the next data model."
 			]
 			id: "3982A5E521F0BA0C"
@@ -247,7 +248,7 @@
 				"&7[NCP Field Memo #3205: String]"
 				""
 				"Run the spider model and fabricate its drops."
-				"String by the stack, and spider eyes for brewing."
+				"String by the stack, and spider eyes for brewing. The spider isn't real. The eyes are."
 				"&7That's every model at this grade."
 			]
 			id: "2DFE29879A8C3ECC"
@@ -277,7 +278,7 @@
 				"&7[NCP Field Memo #3210: Requisition]"
 				""
 				"Your clearance now covers MV-grade simulations."
-				"Here is the next model."
+				"Here's the next model."
 			]
 			id: "204A8D9FA32547DF"
 			rewards: [
@@ -320,7 +321,7 @@
 				"&7[NCP Field Memo #3211: Rotten Flesh]"
 				""
 				"Run the zombie model and fabricate its drops."
-				"Rotten flesh, and occasionally iron, carrots and potatoes."
+				"Rotten flesh, and now and then iron, carrots and potatoes. Don't ask where it keeps them."
 				"&7Reward: the next data model."
 			]
 			id: "26A45B3D28127763"
@@ -364,7 +365,7 @@
 				"&7[NCP Field Memo #3212: Slime]"
 				""
 				"Run the slime model and fabricate its drops."
-				"Slime balls for sticky pistons and GT's rubber alternatives."
+				"Slime balls for sticky pistons and GregTech's rubber alternatives."
 				"&7Reward: the next data model."
 			]
 			id: "3A709D057CA9BE92"
@@ -408,7 +409,7 @@
 				"&7[NCP Field Memo #3213: Gunpowder]"
 				""
 				"Run the creeper model and fabricate its drops."
-				"Gunpowder means TNT, and TNT means the implosion compressor."
+				"Gunpowder means TNT, and TNT means the implosion compressor. Stand back."
 				"&7Reward: the next data model."
 			]
 			id: "19D265FC4642271D"
@@ -452,7 +453,7 @@
 				"&7[NCP Field Memo #3214: Ender Pearls]"
 				""
 				"Run the enderman model and fabricate its drops."
-				"Ender pearls for GregTech field generators and sensors."
+				"Ender pearls for GregTech field generators and sensors. Don't look the model in the eye."
 				"&7That's every model at this grade."
 			]
 			id: "1D032E845854B761"
@@ -482,7 +483,7 @@
 				"&7[NCP Field Memo #3220: Requisition]"
 				""
 				"Your clearance now covers HV-grade simulations."
-				"Here is the next model."
+				"Here's the next model."
 			]
 			id: "4550C76CB236814A"
 			rewards: [
@@ -525,7 +526,7 @@
 				"&7[NCP Field Memo #3221: Blaze Rods]"
 				""
 				"Run the blaze model and fabricate its drops."
-				"Blaze rods and powder for HV chemistry."
+				"Blaze rods and powder for HV chemistry. The chamber runs warm for a while afterwards."
 				"&7Reward: the next data model."
 			]
 			id: "587B3943786601A1"
@@ -613,7 +614,7 @@
 				"&7[NCP Field Memo #3223: Ghast Tears]"
 				""
 				"Run the ghast model and fabricate its drops."
-				"Ghast tears, and more gunpowder."
+				"Ghast tears, and more gunpowder. Something in there is crying. It's only data."
 				"&7That's every model at this grade."
 			]
 			id: "12007B4347EDAE48"
@@ -643,7 +644,7 @@
 				"&7[NCP Field Memo #3230: Requisition]"
 				""
 				"Your clearance now covers EV-grade simulations."
-				"Here is the next model. Advanced grade, this time."
+				"Here's the next model. Advanced grade, this time. It remembers more."
 			]
 			id: "34B9184C7C299935"
 			rewards: [
@@ -774,7 +775,7 @@
 				"&7[NCP Field Memo #3233: Prismarine]"
 				""
 				"Run the guardian model and fabricate its drops."
-				"Prismarine crystals and fish."
+				"Prismarine crystals, and fish from an ocean that isn't there."
 				"&7That's every model at this grade."
 			]
 			id: "24D513AE8A1E9B68"
@@ -804,7 +805,7 @@
 				"&7[NCP Field Memo #3240: Requisition]"
 				""
 				"Your clearance now covers IV-grade simulations."
-				"Here is the next model. Advanced grade, this time."
+				"Here's the next model. Advanced grade, this time. It remembers more."
 			]
 			id: "7AF4682D0203D5F0"
 			rewards: [
@@ -847,7 +848,7 @@
 				"&7[NCP Field Memo #3241: Shulker Shells]"
 				""
 				"Run the shulker model and fabricate its drops."
-				"Shulker shells: portable storage."
+				"Shulker shells: portable storage, grown in a box."
 				"&7Reward: the next data model."
 			]
 			id: "1B7719A40FBCEFFC"
@@ -891,7 +892,7 @@
 				"&7[NCP Field Memo #3242: Totems]"
 				""
 				"Run the evoker model and fabricate its drops."
-				"Totems of undying, and emeralds."
+				"Totems of undying, and emeralds. Death, simulated, gives you a way out of the real thing."
 				"&7That's every model at this grade."
 			]
 			id: "0D380C1B7B631B83"
@@ -920,7 +921,7 @@
 				"&7[NCP Field Memo #3250: Requisition]"
 				""
 				"Your clearance now covers LuV-grade simulations."
-				"Here is the next model. Advanced grade, this time."
+				"Here's the next model. Advanced grade, this time. It remembers more."
 			]
 			id: "40DF785C4EEF05E5"
 			rewards: [
@@ -963,7 +964,7 @@
 				"&7[NCP Field Memo #3251: Nether Stars]"
 				""
 				"Run the wither model and fabricate its drops."
-				"A simulated Wither. The star it leaves is very real."
+				"A simulated Wither. The star it leaves behind is very real."
 				"&7That's every model at this grade."
 			]
 			id: "1481AEDBE3DC0FE8"

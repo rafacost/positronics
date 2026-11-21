@@ -10,17 +10,18 @@
 	quests: [
 		{
 			description: [
-				"&7[NCP Field Memo #0001]"
+				"&7[NCP Field Memo #0001: Orientation]"
 				""
-				"Good morning, Reclamation Operator. The world has moved on, and most of it moved away."
-				"What remains is this fragment, one ruined NCP kiosk, and you."
+				"Good morning, Reclamation Operator."
+				"The world has moved on, and most of it moved away. What's left is this rock, one ruined NCP kiosk, and you."
 				""
 				"Your assignment: rebuild the North Central Positronics network, one tier at a time."
-				"Nothing here has ore. Nothing here spawns. Everything you will ever own, you will &areclaim&r, &aprocess&r or &aremember&r."
+				"Nothing here has ore. Nothing here spawns. Nobody is coming."
+				"Everything you will ever own, you will &areclaim&r, &aprocess&r or &aremember&r."
 				""
-				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
+				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest.&r"
 				""
-				"&7Enclosed: a thermometer and a season calendar. The weather out here will try to kill you; know it first."
+				"&7Enclosed: a thermometer and a season calendar. The weather out here will try to kill you. Know it first."
 			]
 			icon: "minecraft:lantern"
 			id: "504F530000001001"
@@ -59,12 +60,13 @@
 			description: [
 				"&7[NCP Field Memo #0002: Reclamation Units]"
 				""
-				"Your kit holds one &bMk I Reclamation Generator&r. Place it and it slowly pulls cobblestone in from the void."
-				"No power needed at this grade, and no, NCP will not be issuing you a second one."
+				"Your kit holds one &bMk I Reclamation Generator&r. Set it down and it pulls cobblestone out of the void:"
+				"slowly. Very slowly. NCP calls this 'sustainable'."
+				"It needs no power at this grade. And no, NCP will not be issuing you a second one."
 				""
-				"&aRight-click&r it to collect a stack, &aleft-click&r for a single block. It holds what you don't take."
-				"Later, a hopper or pipe underneath keeps it emptied while you are away."
-				"&7Everything else (gravel, sand, dust, glass) starts as this cobblestone."
+				"&aRight-click&r it for a stack, &aleft-click&r for a single block. It holds what you don't take."
+				"Later, a hopper or a pipe underneath keeps it empty while you're away."
+				"&7Gravel, sand, dust, glass: all of it starts as this cobblestone. Treat it kindly."
 			]
 			id: "504F530000001002"
 			rewards: [{
@@ -90,9 +92,10 @@
 				"&7[NCP Field Memo #0003: Hydration Policy]"
 				""
 				"You have a &bthirst&r bar. The island's spring never runs dry, but its water is &cdirty&r."
+				"It looks clean. That's how it gets you."
 				""
 				"&aStep one:&r fill one of your new glass bottles at the spring (right-click the water with it): &cdirty water&r."
-				"&7Do not drink it. NCP reminds you that dehydration is not covered by your contract, and neither is dysentery."
+				"&7Don't drink it. NCP reminds you that dehydration is not covered by your contract, and neither is dysentery."
 			]
 			id: "504F530000001003"
 			rewards: [{
@@ -115,10 +118,10 @@
 			description: [
 				"&7[NCP Field Memo #0012: Purification]"
 				""
-				"&aStep two:&r place the bottle of dirty water on the kiosk's old campfire. After half a minute it is &bpurified&r."
-				"Purified water is safe to drink. Boil a few: you will be thirsty again soon."
+				"&aStep two:&r set the bottle of dirty water on the kiosk's old campfire. Half a minute later it's &bpurified&r."
+				"Purified water is safe to drink. Boil a few. You'll be thirsty again sooner than you think."
 				""
-				"Later, a &bWater Purifier&r does this much faster (it needs copper)."
+				"&7Later, a &bWater Purifier&7 does this much faster. It needs copper, so not today."
 			]
 			id: "504F53000000100D"
 			rewards: [{
@@ -143,12 +146,15 @@
 			description: [
 				"&7[NCP Field Memo #0006: Food Security]"
 				""
-				"There is no farmland to spare on a floating rock, so we grow food in &bBotany Pots&r."
+				"There's no farmland to spare on a floating rock, so we grow food in &bBotany Pots&r."
 				""
-				"&aHow:&r craft a pot and claim the dirt below. Place the pot on solid ground, put the enclosed &bdirt&r block in it, then a seed."
-				"Wait, and right-click to harvest. Later, a &bhopper botany pot&r over a chest harvests on its own."
+				"&aHow:&r craft a pot, then claim the dirt below. Set the pot on solid ground, put the &bdirt&r in it, then a seed."
+				"Wait. Right-click to harvest. Later, a &bhopper botany pot&r over a chest harvests on its own."
 				""
-				"&7Enclosed: one block of dirt and two seeds. Do not dig up the island to get more dirt."
+				"&7Clay comes from dust (see Hammer Time): smelt a clay block into terracotta, and bake bricks for the flower pot."
+				"&7Enclosed: one block of dirt and two seeds. Tomato seeds are 1 Scrip at the NCP Shop."
+				"&7Don't dig up the island for more dirt."
+				"&7The island is the only thing between you and a very long fall."
 			]
 			id: "504F530000001006"
 			rewards: [
@@ -188,11 +194,12 @@
 			description: [
 				"&7[NCP Field Memo #0007: Nutrition]"
 				""
-				"Eating the same meal every day keeps you alive. Eating &bmany different foods&r makes you stronger:"
-				"every few new foods you try grants you an extra heart, permanently."
+				"The same meal every day keeps you alive. &bMany different foods&r make you stronger:"
+				"every few new foods you try grant you an extra heart, for good."
 				""
 				"&aNo kitchen needed:&r a &bGarden Salad&r (bowl, tomato, lettuce) and a &bVegetable Broth&r"
 				"(bowl, tomato, onion, a bottle of purified water) are crafted by hand. Bread, tomato and lettuce make a &bGarden Sandwich&r."
+				"&7It isn't much. Out here, it's a feast."
 			]
 			id: "504F530000001007"
 			rewards: [{
@@ -223,9 +230,10 @@
 			description: [
 				"&7[NCP Field Memo #0008: Timber]"
 				""
-				"That dead tree on the island still has two good logs in it. Your kit has one sapling: do not waste it."
+				"That dead tree on the island still has two good logs in it. Your kit has one sapling. Don't waste it."
 				""
-				"&aPlant, grow, harvest, replant.&r Wood is your first fuel, your first tools, and your first workbench."
+				"&aPlant, grow, cut, replant.&r Wood is your first fuel, your first tools and your first workbench."
+				"&7Somebody planted that dead tree once, too. Do better than they did."
 			]
 			id: "504F530000001008"
 			rewards: [{
@@ -250,10 +258,11 @@
 			description: [
 				"&7[NCP Field Memo #0013: Your First GregTech Tool]"
 				""
-				"Hammering gravel sometimes leaves a &bflint&r behind. Flint and a block of stone (smelt cobblestone) make a &bflint mortar&r."
+				"Hammering gravel sometimes leaves a &bflint&r behind. Flint and stone (smelt cobblestone) make a &bflint mortar&r."
+				"&7EMI shows the shape."
 				""
 				"The mortar grinds things in the crafting grid: gravel into flint, flint into flint dust, sand into quartz sand."
-				"It wears out. Every GregTech operator keeps a spare."
+				"It wears out. Every GregTech operator keeps a spare, and every one of them learned why the hard way."
 			]
 			id: "504F53000000100E"
 			rewards: [{
@@ -294,10 +303,10 @@
 			description: [
 				"&7[NCP Field Memo #0009: Glassworks]"
 				""
-				"Plain sand won't melt into clear glass here. GregTech glass is made properly:"
+				"Plain sand won't melt into clear glass here. GregTech makes glass the proper way:"
 				"&asand&r + mortar = &bquartz sand&r; &aflint&r + mortar = &bflint dust&r; quartz sand + a little flint dust = &bglass dust&r."
 				"Smelt the glass dust in a furnace and you get glass. Three glass in a V make three &bglass bottles&r."
-				"&7Until you have bottles, crouch and drink straight from the spring: risky, but better than nothing."
+				"&7Until you have bottles, crouch and drink straight from the spring. It's a gamble. Sometimes you lose."
 				"&7No coal for a new campfire? Logs and sticks make a rough one."
 			]
 			id: "504F530000001009"
@@ -339,11 +348,11 @@
 				""
 				"No iron, no machines, no problem. Build a &bReclamation Hammer&r from cobblestone and sticks."
 				""
-				"&aPlace a block and break it with the hammer:&r cobblestone becomes gravel, gravel becomes sand, sand becomes &bdust&r."
-				"Two dust and a water bottle make clay, and clay makes more botany pots."
+				"&aSet a block down and break it with the hammer:&r cobblestone becomes gravel, gravel becomes sand, sand becomes &bdust&r."
+				"&a8 dust around a water bottle&r make a whole stack of clay, and you get the bottle back. Clay makes more botany pots."
 				"The hammer wears out, so build a spare. Work over solid ground: this island is all you have."
 				""
-				"&7Slow? Yes. Character-building? NCP's lawyers say yes."
+				"&7Slow? Yes. Character-building? NCP Legal confirms that it is."
 			]
 			id: "504F53000000100B"
 			rewards: [{
@@ -390,11 +399,13 @@
 			description: [
 				"&7[NCP Field Memo #0010: Next Assignment]"
 				""
-				"You can drink, eat and reclaim matter. You are, officially, &aalive&r."
+				"You can drink, eat and reclaim matter. You are, officially, &aalive&r. Plenty of operators never got this far."
 				"&7(Temperature and seasons are covered in the NCP Field Manual.)"
 				""
 				"Your next posting is &bRiver Crossing&r: the first powered machines, the first Clearance Card,"
-				"and your first access to &bPositronic Memory&r."
+				"and your first access to &bPositronic Memory&r. There's a road. It's mostly still there."
+				""
+				"&7From here on, the memos are mine. NCP stopped writing them a long time ago."
 			]
 			icon: "minecraft:compass"
 			id: "504F53000000100A"

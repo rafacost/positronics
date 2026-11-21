@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0801: Posting]"
 				""
-				"Fusion, naquadah and crystals."
-				"Goal: &bClearance Level 8&r."
+				"Fusion, naquadah and crystals. This deep in End-World, the old company stopped writing memos for people"
+				"and started writing them for whatever would come after. You're what came after."
+				"Your goal: &bClearance Level 8&r."
 			]
 			id: "2BC79305DD46B17E"
 			rewards: [
@@ -43,7 +44,9 @@
 			description: [
 				"&7[NCP Field Memo #0802: Fusion]"
 				""
-				"Stars on the ground. Europium and more come from fusing light elements."
+				"A star on the ground, in a ring of magnets, held down by nothing but power."
+				"Light elements go in, heavier ones come out: europium, americium, faster than any stratum gives them."
+				"Don't stand too close when it starts."
 			]
 			id: "508A18BF39F6C2EA"
 			rewards: [
@@ -70,7 +73,7 @@
 			description: [
 				"&7[NCP Field Memo #0803: Naquadah]"
 				""
-				"The Naquadic Stratum, an acid bath, and great care."
+				"The Naquadic Stratum, an acid bath, and great care. It's heavy, it's dark, and it's warm in your hand when it shouldn't be."
 			]
 			id: "4523F49ED4C84B59"
 			rewards: [
@@ -104,7 +107,7 @@
 			description: [
 				"&7[NCP Field Memo #0804: Hull]"
 				""
-				"Assembled with Clearance Level 7."
+				"Your Level 7 card, a ZPM casing and two vanadium-gallium cables. The card has a few scratches on it by now. So do you."
 			]
 			id: "301C7ED45585B133"
 			rewards: [
@@ -131,7 +134,7 @@
 			description: [
 				"&7[NCP Field Memo #0805: Crystals]"
 				""
-				"Grown, engraved, assembled."
+				"Grown, engraved, assembled. The circuits grow now. You just help."
 			]
 			id: "1F83C7C86DAD8900"
 			rewards: [
@@ -164,7 +167,8 @@
 			description: [
 				"&7[NCP Field Memo #0806: Research]"
 				""
-				"Research at this tier needs computation."
+				"Research at this tier needs computation: data banks, a computation array, a network switch."
+				"The machines are thinking about the machines now."
 			]
 			id: "1C49AA1EEF8F7373"
 			rewards: [
@@ -199,9 +203,10 @@
 		{
 			dependencies: ["301C7ED45585B133"]
 			description: [
-				"&7[NCP Field Memo #0809: Tier 5]"
+				"&7[NCP Field Memo #0807: Tier 5]"
 				""
-				"Assembled at ZPM with Positronic Core V. Sixty-four items a second, Seed V from the Ore Generator."
+				"A ZPM assembler and Positronic Core V. Sixty-four items a second, and Seed V straight out of the Ore Generator."
+				"&7Somewhere back on the island, the Mk I is still pulling cobblestone, one block at a time."
 			]
 			id: "42762359B648AF33"
 			rewards: [
@@ -226,9 +231,10 @@
 		{
 			dependencies: ["1F83C7C86DAD8900" "508A18BF39F6C2EA" "42762359B648AF33"]
 			description: [
-				"&7[NCP Field Memo #0810: Clearance]"
+				"&7[NCP Field Memo #0808: Clearance]"
 				""
-				"&bClearance Level 8&r. Next posting: &bThe Beams&r."
+				"&bClearance Level 8&r. Your next posting is &bthe Beams&r. Listen when you get there. You'll hear them."
+				"&7The card wants 8 europium atoms, ZPM circuits, a ZPM hull, your Level 7 card, and Core V as catalyst."
 			]
 			id: "1D72610E0ED2C7B4"
 			rewards: [

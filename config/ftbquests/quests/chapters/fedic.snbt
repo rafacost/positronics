@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0601: Posting]"
 				""
-				"Fedic sits at the edge of End-World. NCP built it to last; it almost did."
-				"Goal: &bClearance Level 6&r."
+				"Fedic sits at the edge of End-World. NCP built it to last forever, and it very nearly did."
+				"The streets are empty and clean, like the people just stepped out for a minute. A long minute."
+				"Your goal: &bClearance Level 6&r."
 			]
 			id: "28D3E2E88A03453A"
 			rewards: [
@@ -43,7 +44,8 @@
 			description: [
 				"&7[NCP Field Memo #0602: Tungsten]"
 				""
-				"Scheelite and tungstate from Seed IV, tungstic acid, hydrogen, a lot of heat."
+				"Scheelite and tungstate from Venus or the Tungstic Stratum, tungstic acid, hydrogen, and a great deal of heat."
+				"Tungstensteel doesn't bend. Neither will the recipes after it."
 			]
 			id: "4C6BB6EE45886768"
 			rewards: [
@@ -77,7 +79,7 @@
 			description: [
 				"&7[NCP Field Memo #0603: Hull]"
 				""
-				"Assembled with Clearance Level 5."
+				"Your Level 5 card, a casing and two platinum cables, in an EV assembler. Fedic's machines were built just like this."
 			]
 			id: "7A208231B53A18D1"
 			rewards: [
@@ -104,7 +106,7 @@
 			description: [
 				"&7[NCP Field Memo #0604: Heat]"
 				""
-				"Ruthenium, tungsten, molybdenum."
+				"Ruthenium, tungsten and molybdenum. Hotter coils, for metals that don't want to melt."
 			]
 			id: "3FE0937A57DD3ACD"
 			rewards: [
@@ -132,7 +134,8 @@
 			description: [
 				"&7[NCP Field Memo #0605: Fluorine]"
 				""
-				"Fluorine from topaz, hydrofluoric acid, and PTFE: the plastic that takes no damage."
+				"Fluorine from topaz, then hydrofluoric acid, then PTFE: the plastic nothing sticks to and nothing hurts."
+				"&7Hydrofluoric acid eats glass. Don't keep it in a jar."
 			]
 			id: "274EE7BF6F9F3B52"
 			rewards: [
@@ -164,7 +167,8 @@
 			description: [
 				"&7[NCP Field Memo #0606: Precious]"
 				""
-				"Platinum group sludge, aqua regia and a long chain. The Platinic Stratum starts it."
+				"Platinum group sludge, aqua regia, and a long chain of patience. The Platinic Stratum starts it."
+				"&7The longest recipe chain you've seen yet. It won't be the longest you'll see."
 			]
 			id: "0B6E72310FE067BB"
 			rewards: [
@@ -204,7 +208,7 @@
 			description: [
 				"&7[NCP Field Memo #0607: Quantum]"
 				""
-				"IV and LuV circuits."
+				"EV circuits first; the line runs all the way to ZPM. They work by being two things at once. Try not to think about it."
 			]
 			id: "5E037A30BF0AD0CB"
 			rewards: [
@@ -235,9 +239,10 @@
 		{
 			dependencies: ["7A208231B53A18D1"]
 			description: [
-				"&7[NCP Field Memo #0610: Tier 4]"
+				"&7[NCP Field Memo #0608: Tier 4]"
 				""
-				"Assembled at IV with Positronic Core IV. Sixteen items a second, Seed IV from the Ore Generator."
+				"An IV assembler and Positronic Core IV. Sixteen items a second, and Seed IV straight out of the Ore Generator."
+				"&7The generator gets louder every tier. This one you can hear from the next room."
 			]
 			id: "0EB2D7B8082DD377"
 			rewards: [
@@ -262,9 +267,12 @@
 		{
 			dependencies: ["5E037A30BF0AD0CB" "0EB2D7B8082DD377"]
 			description: [
-				"&7[NCP Field Memo #0611: Clearance]"
+				"&7[NCP Field Memo #0609: Clearance]"
 				""
-				"&bClearance Level 6&r. Next posting: &bEnd-World&r."
+				"&bClearance Level 6&r. Past Fedic the roads stop pretending to go anywhere."
+				"&7The card wants 4 potassium dichromate, IV circuits, an IV hull, your Level 5 card, and Core IV as catalyst."
+				"&7Potassium dichromate is eleven atoms: that one's the Combiner's job, not your hands'."
+				"Your next posting is &bEnd-World&r."
 			]
 			id: "4084F6A63BF3B621"
 			rewards: [

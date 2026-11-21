@@ -14,7 +14,8 @@
 				"&7[NCP Field Memo #0901: Posting]"
 				""
 				"The Beams hold the world together. NCP built the machines that hold the Beams."
-				"Goal: &bClearance Level 9&r."
+				"Most of those machines have stopped. The ones that haven't are tired. You know the feeling."
+				"Your goal: &bClearance Level 9&r."
 			]
 			id: "4F43F6864F47391C"
 			rewards: [
@@ -43,7 +44,7 @@
 			description: [
 				"&7[NCP Field Memo #0902: Hull]"
 				""
-				"Darmstadtium. Assembled with Clearance Level 8."
+				"Darmstadtium, the UV metal. Assembled with your Clearance Level 8 card."
 			]
 			id: "1446E1FDEC67717D"
 			rewards: [
@@ -76,7 +77,7 @@
 			description: [
 				"&7[NCP Field Memo #0903: Fusion]"
 				""
-				"Hotter fusion for heavier elements."
+				"Hotter fusion, for heavier elements. The ring is bigger. Stand further back."
 			]
 			id: "7A061889F0427182"
 			rewards: [
@@ -103,7 +104,7 @@
 			description: [
 				"&7[NCP Field Memo #0904: Tritanium]"
 				""
-				"The hottest coils NCP ever certified."
+				"The hottest coils NCP ever certified. Nobody certified anything after these."
 			]
 			id: "676C9D244A477CB4"
 			rewards: [
@@ -138,6 +139,7 @@
 				"&7[NCP Field Memo #0905: Wetware]"
 				""
 				"Living circuits: sterile growth medium, stem cells, neuro processing units."
+				"&7They're alive. They're not awake. Keep it that way."
 			]
 			id: "6D46273DF9CFDFE7"
 			rewards: [
@@ -175,7 +177,7 @@
 			description: [
 				"&7[NCP Field Memo #0906: Mainframe]"
 				""
-				"The UHV circuit."
+				"The UHV circuit. It dreams, a little, when it's idle. Keep it busy."
 			]
 			id: "473456C30CB159C1"
 			rewards: [
@@ -202,7 +204,9 @@
 			description: [
 				"&7[NCP Field Memo #0907: Clearance]"
 				""
-				"&bClearance Level 9&r. Last posting: &bThe Doors&r."
+				"&bClearance Level 9&r. The Beams are holding again."
+				"&7The card wants 8 americium atoms, UV circuits, a UV hull and your Level 8 card."
+				"There's one posting left: &bthe Doors&r."
 			]
 			id: "1EDF8A5E2818C9C7"
 			rewards: [

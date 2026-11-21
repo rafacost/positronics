@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0701: Posting]"
 				""
-				"The far reaches. Heavy industry, heavy machines, heavy responsibility."
-				"Goal: &bClearance Level 7&r."
+				"The far reaches. Heavy industry, heavy machines, heavy silence."
+				"Out here the sky is the wrong colour at dusk, and the old machines drone in a key you can feel in your teeth."
+				"Your goal: &bClearance Level 7&r."
 			]
 			id: "1B8F37F4F9A066DF"
 			rewards: [
@@ -43,7 +44,7 @@
 			description: [
 				"&7[NCP Field Memo #0702: Hull]"
 				""
-				"Rhodium-plated palladium. Assembled with Clearance Level 6."
+				"Rhodium-plated palladium, the LuV metal. Assembled with your Clearance Level 6 card."
 			]
 			id: "5855877033A1A4F5"
 			rewards: [
@@ -76,7 +77,7 @@
 			description: [
 				"&7[NCP Field Memo #0703: Heat]"
 				""
-				"High-speed steel, grade G."
+				"High-speed steel, grade G. The coils glow even when they're cold. They aren't cold."
 			]
 			id: "78E42A5CD5A7607C"
 			rewards: [
@@ -104,7 +105,9 @@
 			description: [
 				"&7[NCP Field Memo #0704: Assembly Line]"
 				""
-				"Everything from here needs research and the assembly line."
+				"Everything from here on needs research and the assembly line."
+				"One long hall, one part at a time, in exactly the right order."
+				"Get one step wrong and the whole line sits there, waiting for you to notice."
 			]
 			id: "20D76E1A660429B0"
 			rewards: [
@@ -136,7 +139,7 @@
 			description: [
 				"&7[NCP Field Memo #0705: Scale]"
 				""
-				"Parallel everything."
+				"Parallel everything. One machine doing the work of sixteen, and never once complaining."
 			]
 			id: "79FF8A91E1ACD9D1"
 			rewards: [
@@ -173,7 +176,7 @@
 			description: [
 				"&7[NCP Field Memo #0706: Ruridit]"
 				""
-				"Ruthenium and iridium. LuV components need it."
+				"Ruthenium and iridium. LuV components won't go together without it."
 			]
 			id: "0E5F4138667268E8"
 			rewards: [
@@ -201,7 +204,7 @@
 			description: [
 				"&7[NCP Field Memo #0707: Mainframe]"
 				""
-				"The LuV circuit, and the boards for the next one."
+				"The ZPM circuit, and the boards for the next one. It's the size of a wardrobe and it thinks faster than you."
 			]
 			id: "7D0DF6E93944430F"
 			rewards: [
@@ -231,9 +234,10 @@
 		{
 			dependencies: ["20D76E1A660429B0" "79FF8A91E1ACD9D1"]
 			description: [
-				"&7[NCP Field Memo #0709: Charging]"
+				"&7[NCP Field Memo #0708: Charging]"
 				""
-				"3,355,443,200,000 EMC. Only parallel industry gets here."
+				"&b3,355,443,200,000 EMC&r. Only parallel industry gets here."
+				"&7Write the number down. Then write down how long it took. You'll want to remember both."
 			]
 			id: "02FEEC55D7D93451"
 			rewards: [
@@ -258,9 +262,10 @@
 		{
 			dependencies: ["1B8F37F4F9A066DF"]
 			description: [
-				"&7[NCP Field Memo #0711: Assembly]"
+				"&7[NCP Field Memo #0709: Assembly]"
 				""
-				"The full 9x9 grid: your End Crafting Table rebuilt with LuV parts. Core V and, one day, the Final Star."
+				"The full 9x9 grid: your End Crafting Table, rebuilt with LuV parts."
+				"Core V is assembled here. So, one day, is the Final Star."
 			]
 			id: "4FB0D27761F8B0E1"
 			rewards: [
@@ -287,8 +292,9 @@
 			description: [
 				"&7[NCP Field Memo #0710: Keystone]"
 				""
-				"The last Core. It catalyses &bSeed V&r (Seed IV strata + aqua regia): naquadah, europium,"
-				"trinium, duranium, actinides, neutronium. ZPM hulls need naquadah alloy, so get it here."
+				"The last Core. It's the catalyst for &bSeed V&r (Seed IV strata and aqua regia): naquadah, europium,"
+				"trinium, duranium, the actinides and neutronium. ZPM hulls need naquadah alloy, so get it here."
+				"&7The first one hummed. This one sings."
 			]
 			id: "1719234F4FFE383C"
 			rewards: [
@@ -317,7 +323,7 @@
 			description: [
 				"&7[NCP Field Memo #0711: Seed V]"
 				""
-				"The deepest layer NCP ever reclaimed."
+				"The deepest layer NCP ever reclaimed. Below this there's nothing. Or nothing NCP wrote down."
 			]
 			id: "4DED5855BA1744E2"
 			rewards: [
@@ -347,9 +353,10 @@
 		{
 			dependencies: ["7D0DF6E93944430F" "0E5F4138667268E8" "4DED5855BA1744E2"]
 			description: [
-				"&7[NCP Field Memo #0708: Clearance]"
+				"&7[NCP Field Memo #0712: Clearance]"
 				""
-				"&bClearance Level 7&r."
+				"&bClearance Level 7&r. Keep going. The road gets narrower from here, but it goes on."
+				"&7The card wants 8 iridium atoms, LuV circuits, a LuV hull and your Level 6 card."
 			]
 			id: "676E664608D63792"
 			rewards: [

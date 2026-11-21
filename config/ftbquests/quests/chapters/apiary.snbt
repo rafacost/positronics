@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #3501: Bees]"
 				""
-				"Nothing spawns here, bees included. NCP's agricultural division ships the first one with your hive."
-				"An advanced beehive keeps bees working and collects their combs. Flowers nearby keep them happy."
+				"Nothing spawns here, and that goes for bees too. NCP's agricultural division ships the first one with your hive."
+				"An advanced beehive keeps the bees working and collects their combs. Flowers nearby keep them happy."
+				"&7Listen to them for a minute. It's the first thing that's buzzed around here that wasn't a machine."
 			]
 			id: "1E64986BC9048338"
 			rewards: [
@@ -85,9 +86,9 @@
 			description: [
 				"&7[NCP Field Memo #3503: Centrifuge]"
 				""
-				"Resource combs are processed only in a &bGregTech centrifuge&r. A metal or gem comb gives"
-				"the matching &bStratum&r (iron bee: Ferrous Stratum), plus wax and honey, at that stratum's tier voltage."
-				"Bees are a full alternative strata stream: no Positronic Core needed for the bee's own tier."
+				"Resource combs only open in a &bGregTech centrifuge&r. A metal or gem comb gives the matching"
+				"&bstratum&r (an iron bee gives Ferrous Stratum), plus wax and honey, at that stratum's tier voltage."
+				"Bees are a whole second strata stream: no Positronic Core needed for the bee's own tier."
 			]
 			id: "4E9691DFB82975BD"
 			rewards: [
@@ -120,8 +121,9 @@
 			description: [
 				"&7[NCP Field Memo #3504: Metal Bees]"
 				""
-				"Breed your way to an iron and a copper bee and bring back one comb of each. Centrifuge them into strata."
-				"Higher-tier bees give higher-tier strata, but need a centrifuge of that tier."
+				"Breed your way to an iron bee and a copper bee, and bring back one comb of each. Centrifuge them into strata."
+				"Higher-tier bees give higher-tier strata, but they need a centrifuge of that tier."
+				"&7A bee that makes iron. The old world would've called that a miracle. You'll call it a slow week."
 			]
 			id: "048735C0CE36DCBF"
 			rewards: [
@@ -169,8 +171,8 @@
 			description: [
 				"&7[NCP Field Memo #3505: Boosters]"
 				""
-				"Honey is a booster: the &bCalla Paddy&r with honey piped in beside the water gives a 12x harvest"
-				"(4x plain, 8x with fertilizer). More honey boosters for GregTech machines will follow."
+				"Honey is a booster: pipe it into the &bCalla Paddy&r beside the water and the harvest goes up to 12 crops a cycle"
+				"(4 plain, 8 with fertiliser)."
 			]
 			id: "647A9F38BEF74CD7"
 			rewards: [

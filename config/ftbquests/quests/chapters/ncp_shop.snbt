@@ -14,7 +14,7 @@
 				"&7[NCP Shop]"
 				""
 				"8x Wheat Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:wheat_seeds"
 			id: "620642A844EE3BDA"
@@ -44,7 +44,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Carrots for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:carrot"
 			id: "1A4F111AFF7A37E7"
@@ -75,7 +75,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Potatoes for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:potato"
 			id: "5D689221F3EEBC52"
@@ -106,7 +106,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Pumpkin Seeds for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:pumpkin_seeds"
 			id: "155ECE61E7ACFDFE"
@@ -137,7 +137,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Melon Seeds for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:melon_seeds"
 			id: "3BC0A5504C24C7B8"
@@ -168,7 +168,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Sugar Cane for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:sugar_cane"
 			id: "7E7E0F42C4C181B8"
@@ -199,7 +199,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Cocoa Beans for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:cocoa_beans"
 			id: "6272DDB783FD8662"
@@ -230,7 +230,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Apples for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:apple"
 			id: "00664CDF8C3758F0"
@@ -260,7 +260,7 @@
 				"&7[NCP Shop]"
 				""
 				"3x Oak Sapling for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:oak_sapling"
 			id: "652B0E83298359BC"
@@ -291,7 +291,7 @@
 				"&7[NCP Shop]"
 				""
 				"3x Birch Sapling for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:birch_sapling"
 			id: "05FB1D96F2318A55"
@@ -322,7 +322,7 @@
 				"&7[NCP Shop]"
 				""
 				"3x Spruce Sapling for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:spruce_sapling"
 			id: "2FC47C10507F1373"
@@ -353,7 +353,7 @@
 				"&7[NCP Shop]"
 				""
 				"2x Rubber Sapling for 3 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "gtceu:rubber_sapling"
 			id: "0B4C511FB095D63B"
@@ -384,7 +384,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Apple Tree Sapling for 4 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2trees:apple_sapling"
 			id: "28D54461A21221B0"
@@ -414,7 +414,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Cherry Tree Sapling for 4 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2trees:cherry_sapling"
 			id: "0994DB32C8DB807B"
@@ -444,7 +444,7 @@
 				"&7[NCP Shop]"
 				""
 				"16x Bone Meal for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:bone_meal"
 			id: "0516FB560BE0AE56"
@@ -475,7 +475,7 @@
 				"&7[NCP Shop]"
 				""
 				"8x Dirt for 2 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:dirt"
 			id: "5254B9D1C09F20EB"
@@ -506,7 +506,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Botany Pot for 3 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "botanypots:terracotta_botany_pot"
 			id: "259ABF5384FC04C3"
@@ -536,7 +536,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Hopper Botany Pot for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "botanypots:terracotta_hopper_botany_pot"
 			id: "2FF8D92AD4024FC4"
@@ -566,7 +566,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Honey Bee (egg) for 6 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "minecraft:bee_spawn_egg"
 			id: "34B21A03C8A6B76D"
@@ -596,7 +596,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Ashy Mining Bee (egg) for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "productivebees:spawn_egg_ashy_mining_bee"
 			id: "28C6F57E5D708FF9"
@@ -626,7 +626,7 @@
 				"&7[NCP Shop]"
 				""
 				"1x Blue Banded Bee (egg) for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "productivebees:spawn_egg_blue_banded_bee"
 			id: "4505288B8DD743E8"
@@ -656,7 +656,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Tomato Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:tomatoseeditem"
 			id: "28E9AF9B8CBCE738"
@@ -686,7 +686,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Lettuce Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:lettuceseeditem"
 			id: "00A582ECFE418E48"
@@ -716,7 +716,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Onion Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:onionseeditem"
 			id: "7946438DCB06EEB5"
@@ -746,7 +746,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Corn Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:cornseeditem"
 			id: "6B0F815030C89D2C"
@@ -776,7 +776,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Rice Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:riceseeditem"
 			id: "6F8415C45F181502"
@@ -806,7 +806,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Bean Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:beanseeditem"
 			id: "0CD216347EE64B92"
@@ -836,7 +836,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Cucumber Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:cucumberseeditem"
 			id: "5E7B1108696B0FB9"
@@ -866,7 +866,7 @@
 				"&7[NCP Shop]"
 				""
 				"2x Strawberry Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:strawberryseeditem"
 			id: "7B415205CB9502C9"
@@ -896,7 +896,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Bellpepper Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:bellpepperseeditem"
 			id: "2AC177E0DE2D1E60"
@@ -926,7 +926,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Broccoli Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:broccoliseeditem"
 			id: "51385F0C575C19B8"
@@ -956,7 +956,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Spinach Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:spinachseeditem"
 			id: "200395E12D01FE36"
@@ -986,7 +986,7 @@
 				"&7[NCP Shop]"
 				""
 				"2x Grape Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:grapeseeditem"
 			id: "1505C367A611F42E"
@@ -1016,7 +1016,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Cotton Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:cottonseeditem"
 			id: "161B37DB926EA5DA"
@@ -1046,7 +1046,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Flax Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:flaxseeditem"
 			id: "4C58AD23552AB491"
@@ -1076,7 +1076,7 @@
 				"&7[NCP Shop]"
 				""
 				"4x Garlic Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:garlicseeditem"
 			id: "485A9BECD6F2F8F3"
@@ -1106,7 +1106,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Peas Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:peasseeditem"
 			id: "0CDA1EDCCA2FA6B0"
@@ -1136,7 +1136,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Soybean Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:soybeanseeditem"
 			id: "4D55B88087B43809"
@@ -1166,7 +1166,7 @@
 				"&7[NCP Shop]"
 				""
 				"6x Papyrus Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
 			icon: "pamhc2crops:papyrusseeditem"
 			id: "7EAD4FF4CE11B5DA"
@@ -1197,8 +1197,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Hammer for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_hammer"
 			id: "2AE569DDAA16AC47"
@@ -1229,8 +1229,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Wrench for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_wrench"
 			id: "0A3724B5C2997E35"
@@ -1261,8 +1261,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron File for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_file"
 			id: "03B0F98C1A349D18"
@@ -1293,8 +1293,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Screwdriver for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_screwdriver"
 			id: "7305DA314620A58A"
@@ -1325,8 +1325,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Wire Cutter for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_wire_cutter"
 			id: "2D6E6FDFF8760962"
@@ -1357,8 +1357,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Saw for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_saw"
 			id: "4FB4EED0C4C5D421"
@@ -1389,8 +1389,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Mortar for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_mortar"
 			id: "02EA8D7CDCF7630C"
@@ -1421,8 +1421,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Wrought Iron Knife for 10 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:wrought_iron_knife"
 			id: "7B40EBB6AAF8EB26"
@@ -1453,8 +1453,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Hammer for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_hammer"
 			id: "526121DA2432E734"
@@ -1485,8 +1485,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Wrench for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_wrench"
 			id: "4BE7DDECE9275EEF"
@@ -1517,8 +1517,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel File for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_file"
 			id: "39F31DD920B9EC9B"
@@ -1549,8 +1549,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Screwdriver for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_screwdriver"
 			id: "774053E15F6DDDC9"
@@ -1581,8 +1581,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Wire Cutter for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_wire_cutter"
 			id: "70AA515FB45C10D4"
@@ -1613,8 +1613,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Saw for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_saw"
 			id: "2414D22309310E02"
@@ -1645,8 +1645,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Mortar for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_mortar"
 			id: "7B111BF94789FB79"
@@ -1677,8 +1677,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x Steel Knife for 15 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "gtceu:steel_knife"
 			id: "46817D8F176462E8"
@@ -1709,8 +1709,8 @@
 				"&7[NCP Shop]"
 				""
 				"1x NCP-issue Shears for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable."
-				"&7Replacement only: unlocked once you have crafted one yourself."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
 			icon: "minecraft:shears"
 			id: "036C86AA9A792A2A"

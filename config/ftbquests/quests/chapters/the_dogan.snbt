@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0501: Posting]"
 				""
-				"Dogans were NCP's control bunkers: screens, consoles and old procedures."
-				"Goal: &bClearance Level 5&r."
+				"Dogans were NCP's control bunkers: screens, consoles, and procedures nobody living has read."
+				"The lights come on when you walk in. A voice welcomes you by a title you've never had."
+				"Don't answer it. Your goal: &bClearance Level 5&r."
 			]
 			id: "4464C958924B8E91"
 			rewards: [
@@ -43,7 +44,8 @@
 			description: [
 				"&7[NCP Field Memo #0502: Titanium]"
 				""
-				"Rutile, chlorine, carbon, magnesium. The Kroll process, NCP edition."
+				"Rutile, chlorine, carbon and magnesium: the Kroll process, NCP edition."
+				"Mars has rutile by the sackful; the Titanic Stratum has it too, slower. Titanium is the EV metal."
 			]
 			id: "0D39446839870DE3"
 			rewards: [
@@ -76,7 +78,7 @@
 			description: [
 				"&7[NCP Field Memo #0503: Hull]"
 				""
-				"Assembled with Clearance Level 4."
+				"Your Level 4 card goes in the assembler and comes back warm."
 			]
 			id: "22289E8809BF87AE"
 			rewards: [
@@ -103,7 +105,7 @@
 			description: [
 				"&7[NCP Field Memo #0504: Heat]"
 				""
-				"Titanium needs heat. Nichrome gives it."
+				"Tungstensteel wants more heat than kanthal can give. Nichrome gives it."
 			]
 			id: "755FBD7E2E24798C"
 			rewards: [
@@ -131,7 +133,7 @@
 			description: [
 				"&7[NCP Field Memo #0505: Petrochemistry]"
 				""
-				"Split oil into everything at once."
+				"A tower that splits oil into everything it is, all at once. It's tall. You'll need a ladder."
 			]
 			id: "66E986A4489A0BEF"
 			rewards: [
@@ -158,7 +160,7 @@
 			description: [
 				"&7[NCP Field Memo #0506: Cold]"
 				""
-				"Hot ingots need cooling."
+				"Some ingots come out of the furnace too hot to touch, and they stay that way. The freezer fixes that."
 			]
 			id: "1F7DBB52B6FBE8EC"
 			rewards: [
@@ -185,7 +187,8 @@
 			description: [
 				"&7[NCP Field Memo #0507: Rubber]"
 				""
-				"Better rubber for better cables."
+				"Benzene, then styrene-butadiene. Better rubber for better cables."
+				"&7A long way from bleeding trees for resin back in River Crossing."
 			]
 			id: "3B18C6835A130702"
 			rewards: [
@@ -217,7 +220,7 @@
 			description: [
 				"&7[NCP Field Memo #0508: Chemistry]"
 				""
-				"Every reaction, in parallel, in one place. The Dogan's control room."
+				"Every reaction, in parallel, in one place. This is the Dogan's real control room."
 			]
 			id: "17DF79AF94C5C161"
 			rewards: [
@@ -244,7 +247,8 @@
 			description: [
 				"&7[NCP Field Memo #0509: Nano]"
 				""
-				"Advanced SMDs, epoxy boards. EV and IV circuits."
+				"Advanced SMDs and epoxy boards. HV circuits first; the line runs all the way to LuV."
+				"You can't see the parts any more. You just have to trust they're there."
 			]
 			id: "45C5B750D77F099C"
 			rewards: [
@@ -275,10 +279,10 @@
 		{
 			dependencies: ["45C5B750D77F099C"]
 			description: [
-				"&7[NCP Field Memo #0511: Charging]"
+				"&7[NCP Field Memo #0510: Charging]"
 				""
-				"13,107,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
-				"&7The Dogan's chemical complex, piped into capacitors."
+				"&b13,107,200,000 EMC&r. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
+				"&7The Dogan's chemical complex, piped into capacitors, fills it. Give it time. Give it a lot of time."
 			]
 			id: "37BB45932FE347EA"
 			rewards: [
@@ -303,9 +307,9 @@
 		{
 			dependencies: ["22289E8809BF87AE"]
 			description: [
-				"&7[NCP Field Memo #0513: Assembly]"
+				"&7[NCP Field Memo #0511: Assembly]"
 				""
-				"A 7x7 grid: your Nether Crafting Table rebuilt with EV parts. Positronic Core IV is assembled here."
+				"A 7x7 grid: your Nether Crafting Table, rebuilt with EV parts. Positronic Core IV is assembled here."
 			]
 			id: "61088813BEE63811"
 			rewards: [
@@ -332,8 +336,10 @@
 			description: [
 				"&7[NCP Field Memo #0512: Keystone]"
 				""
-				"Core IV catalyses &bSeed IV&r (Seed III strata + hydrofluoric acid): tungsten, molybdenum,"
-				"platinum group, rare earths, niobium, indium, beryllium, iridium. IV hulls need tungstensteel, so get it here."
+				"Core IV is the catalyst for &bSeed IV&r (Seed III strata and hydrofluoric acid): tungsten, molybdenum,"
+				"the platinum group, rare earths, niobium, indium, beryllium and iridium."
+				"IV hulls need tungstensteel, so get your Seed IV here."
+				"&7Hydrofluoric acid is hydrogen and fluorine, and Seed III gives you the fluorine. Make it before you need it."
 			]
 			id: "551D2D7F46FCACF2"
 			rewards: [
@@ -362,7 +368,7 @@
 			description: [
 				"&7[NCP Field Memo #0513: Seed IV]"
 				""
-				"The rare metals of the old world."
+				"The rare metals of the old world. People fought wars over less."
 			]
 			id: "4C34E43C3A1A938F"
 			rewards: [
@@ -397,9 +403,11 @@
 		{
 			dependencies: ["45C5B750D77F099C" "1F7DBB52B6FBE8EC" "4C34E43C3A1A938F"]
 			description: [
-				"&7[NCP Field Memo #0510: Clearance]"
+				"&7[NCP Field Memo #0514: Clearance]"
 				""
-				"&bClearance Level 5&r. Next posting: &bFedic&r."
+				"&bClearance Level 5&r. The voice in the Dogan reads your name off a list. It pauses before the next one."
+				"&7The card wants 4 titanium oxide, EV circuits, an EV hull and your Level 4 card."
+				"Your next posting is &bFedic&r."
 			]
 			id: "4BC69184D21CDC99"
 			rewards: [

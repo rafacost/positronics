@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #3401: Space]"
 				""
-				"Everything above HV is made of things this world no longer has. The Moon, Mars, Venus and Mercury still do."
-				"The NASA Workbench needs your Clearance Card (Level 2, kept) and an MV hull."
+				"Everything from HV up is made of things this world doesn't have any more."
+				"The Moon, Mars, Venus and Mercury still do. Nothing happened to them. They just waited."
+				"The NASA Workbench needs your Clearance Card (Level 2, it comes back) and an MV hull."
 			]
 			id: "163A2519AF47868C"
 			rewards: [
@@ -41,7 +42,7 @@
 			description: [
 				"&7[NCP Field Memo #3402: Life Support]"
 				""
-				"No air out there. Fill your suit with oxygen at an oxygen loader."
+				"There's no air out there. Fill your suit with oxygen at an oxygen loader, and check it twice."
 			]
 			id: "656BDD5BB26FA08C"
 			rewards: [
@@ -116,7 +117,8 @@
 			description: [
 				"&7[NCP Field Memo #3404: Launch]"
 				""
-				"Build it at the NASA Workbench, place it on a launch pad, fuel it, and go."
+				"Build it at the NASA Workbench, set it on a launch pad, fuel it, and go."
+				"&7Don't look down. Actually, do look down, once. You'll never forget it."
 			]
 			id: "795082C560B87FE6"
 			rewards: [
@@ -148,7 +150,7 @@
 			description: [
 				"&7[NCP Field Memo #3405: The Moon]"
 				""
-				"One small step. Bring a lot of chests."
+				"Bring a lot of chests. It's quiet up there, quieter than home, and home is very quiet."
 			]
 			id: "3DCC64121D13E4FF"
 			rewards: [
@@ -177,8 +179,8 @@
 			description: [
 				"&7[NCP Field Memo #3406: Chrome]"
 				""
-				"Sift moon sand in an MV sifter: &bchromite&r, cobaltite and vanadium magnetite."
-				"Chrome means kanthal and stainless steel: &bthis unlocks HV&r. Moon stone crushes into moon sand."
+				"Sift moon sand in an MV sifter for &bchromite&r, cobaltite and vanadium magnetite. Moon stone crushes into moon sand."
+				"Chrome means kanthal and stainless steel: &bthis is what unlocks HV&r."
 			]
 			id: "3F9FC3DB1395B210"
 			rewards: [
@@ -212,7 +214,7 @@
 			description: [
 				"&7[NCP Field Memo #3407: Desh]"
 				""
-				"Moon desh ore: the metal of the tier 2 rocket."
+				"Moon desh ore, the Tier 2 rocket's metal. The Moon kept its ore. There was nobody here to dig it out."
 			]
 			id: "69BF824A18194099"
 			rewards: [
@@ -240,7 +242,7 @@
 			description: [
 				"&7[NCP Field Memo #3408: Launch]"
 				""
-				"Desh engines and tanks, built at HV."
+				"Desh engines and desh tanks, built at HV."
 			]
 			id: "713E98558A939CEE"
 			rewards: [
@@ -267,7 +269,7 @@
 			description: [
 				"&7[NCP Field Memo #3409: Mars]"
 				""
-				"Red, cold and full of titanium."
+				"Red, cold and full of titanium. The dust gets into everything. Everything."
 			]
 			id: "21BF91EF5B960DB1"
 			rewards: [
@@ -296,7 +298,8 @@
 			description: [
 				"&7[NCP Field Memo #3410: Titanium]"
 				""
-				"Sift mars sand at HV: &brutile&r, ilmenite, magnesite. Titanium: &bthis unlocks EV&r."
+				"Sift mars sand at HV for &brutile&r, ilmenite and magnesite."
+				"Titanium: &bthis is what unlocks EV&r."
 			]
 			id: "4488DDDF712A5C93"
 			rewards: [
@@ -330,7 +333,7 @@
 			description: [
 				"&7[NCP Field Memo #3411: Ostrum]"
 				""
-				"Mars ostrum ore: the metal of the tier 3 rocket."
+				"Mars ostrum ore, the Tier 3 rocket's metal. It's darker than it should be, and heavier."
 			]
 			id: "00BE5E6C875B0433"
 			rewards: [
@@ -385,7 +388,7 @@
 			description: [
 				"&7[NCP Field Memo #3413: Venus]"
 				""
-				"464 degrees. Bring heat protection."
+				"464 degrees at the surface. Bring heat protection. The suit holds. Don't test for how long."
 			]
 			id: "45C45ECE02A3C5D2"
 			rewards: [
@@ -414,7 +417,8 @@
 			description: [
 				"&7[NCP Field Memo #3414: Tungsten]"
 				""
-				"Sift venus sand at EV: &bscheelite&r, tungstate, molybdenite, sulfur. Tungsten: &bthis unlocks IV&r."
+				"Sift venus sand at EV for &bscheelite&r, tungstate, molybdenite and sulfur."
+				"Tungsten: &bthis is what unlocks IV&r."
 			]
 			id: "2FC189C3A8E90004"
 			rewards: [
@@ -448,7 +452,7 @@
 			description: [
 				"&7[NCP Field Memo #3415: Mercury]"
 				""
-				"Closest to the sun, richest in platinum."
+				"Closest to the sun and richest in platinum. The sun looks enormous from here. It looks hungry."
 			]
 			id: "407D280136FA3793"
 			rewards: [
@@ -477,7 +481,7 @@
 			description: [
 				"&7[NCP Field Memo #3416: Platinum]"
 				""
-				"Sift mercury cobblestone at EV: &bcooperite&r (the platinum group), tantalite, pyrochlore."
+				"Sift mercury cobblestone at EV for &bcooperite&r (the platinum group), tantalite and pyrochlore."
 			]
 			id: "26ED7FF269C5598E"
 			rewards: [
@@ -511,7 +515,7 @@
 			description: [
 				"&7[NCP Field Memo #3417: Calorite]"
 				""
-				"Venus calorite ore: the metal of the tier 4 rocket."
+				"Venus calorite ore, the Tier 4 rocket's metal. It stays warm long after you bring it home."
 			]
 			id: "4F6972DD7B119EA8"
 			rewards: [
@@ -539,7 +543,7 @@
 			description: [
 				"&7[NCP Field Memo #3418: Launch]"
 				""
-				"Calorite engines, built at IV. Proxima Centauri is in range."
+				"Calorite engines, built at IV. Proxima Centauri is in range. Another star. Think about that."
 			]
 			id: "1050F409A806F89F"
 			rewards: [
@@ -566,7 +570,8 @@
 			description: [
 				"&7[NCP Field Memo #3419: Another Star]"
 				""
-				"A frozen world around another star. NCP records mention a gate site here."
+				"A frozen world around another sun. NCP records mention a gate site here."
+				"NCP got here first. Of course it did."
 			]
 			id: "3156E4EF067C881C"
 			rewards: [
@@ -596,8 +601,9 @@
 				"&7[NCP Field Memo #3420: The Door]"
 				""
 				"Somewhere in Glacio's snowy barrens and ice peaks stands a broken ring of naquadah: an NCP gate site."
-				"Sites are scattered about every four hundred blocks. Under the ring, a chest: &bthe first Stargate&r and its DHD."
-				"&aBring them home.&r Ships got you here; from now on, gates take you further."
+				"The sites are scattered about every four hundred blocks. Under each ring there's a chest:"
+				"&bthe first Stargate&r and its DHD, packed by somebody who expected to come back."
+				"&aBring them home.&r Ships got you here. From now on, gates take you further."
 			]
 			id: "761D8F57D4ED4352"
 			rewards: [
@@ -632,7 +638,7 @@
 				"&7[NCP Field Memo #3421: Naquadah]"
 				""
 				"Sift glacio cobblestone at IV for monazite, pyrochlore, iridium, osmium and a little &bnaquadah&r."
-				"Raw naquadah from the gate site macerates into GregTech naquadah too. Naquadah: &bthis unlocks ZPM&r."
+				"Raw naquadah from the gate site macerates into GregTech naquadah too. Naquadah: &bthis is what unlocks ZPM&r."
 			]
 			id: "4EF0932A9045F8BB"
 			rewards: [
@@ -660,8 +666,8 @@
 			description: [
 				"&7[NCP Field Memo #3422: Abydos]"
 				""
-				"Set up the gate and its DHD at home, power it, and dial. The first world beyond the ships."
-				"&7Further gate worlds (Chulak, Lantea, Athos...) become the resource regions of the last tiers."
+				"Set the gate and its DHD up at home, power it, and dial. The first world beyond the ships."
+				"&7There are more gate worlds out there. NCP's maps of them stop at the edges."
 			]
 			id: "643D2AFC0670846D"
 			rewards: [

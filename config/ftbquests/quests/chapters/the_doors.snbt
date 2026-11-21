@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #1001: Posting]"
 				""
-				"NCP built Doors between worlds. One of them is still here, waiting for power."
-				"Goal: &bClearance Level 10&r, and the Final Star."
+				"NCP built Doors between worlds. Most of them are gone. One of them is still here, waiting for power."
+				"It's been waiting a long time. It can wait a little longer, but not much."
+				"Your goal: &bClearance Level 10&r, and the Final Star."
 			]
 			id: "6E02508979F19036"
 			rewards: [
@@ -43,7 +44,7 @@
 			description: [
 				"&7[NCP Field Memo #1002: Fusion]"
 				""
-				"The last fusion reactor."
+				"The last fusion reactor. After this one, there's nothing hotter to build."
 			]
 			id: "2241A346F153C4A4"
 			rewards: [
@@ -70,7 +71,7 @@
 			description: [
 				"&7[NCP Field Memo #1003: Hull]"
 				""
-				"Assembled with Clearance Level 9."
+				"Assembled with your Clearance Level 9 card. The casing is neutronium. The last hull. Remember the first one?"
 			]
 			id: "279656AB7AE7D247"
 			rewards: [
@@ -97,7 +98,7 @@
 			description: [
 				"&7[NCP Field Memo #1004: Neutronium]"
 				""
-				"The Neutronic Stratum, a fusion reactor, and nerves of steel."
+				"The Neutronic Stratum, a fusion reactor, and nerves of steel. A thimble of it weighs more than your house."
 			]
 			id: "32F02EDCE9BC52F9"
 			rewards: [
@@ -125,7 +126,7 @@
 			description: [
 				"&7[NCP Field Memo #1005: Superconductor]"
 				""
-				"Ruthenium, trinium, americium, neutronium."
+				"Ruthenium, trinium, americium, neutronium. Power goes through it like it isn't there. Nothing is lost. Nothing."
 			]
 			id: "120AF8E01F8D5BE9"
 			rewards: [
@@ -153,7 +154,8 @@
 			description: [
 				"&7[NCP Field Memo #1006: Charging]"
 				""
-				"3,518,437,208,883,200,000 EMC. Everything you have ever made, burned into one star."
+				"&b3,518,437,208,883,200,000 EMC&r. Everything you've ever made, burned into one star."
+				"&7Every cane, every stratum, every atom. It's all in there."
 			]
 			id: "2FAC65EACDB77306"
 			rewards: [
@@ -180,7 +182,10 @@
 			description: [
 				"&7[NCP Field Memo #1007: Final Star]"
 				""
-				"Assembled around a full Gargantuan Star Omega and Positronic Core V."
+				"Assembled on the Extreme Crafting Table around a full Gargantuan Star Omega, with eight Positronic Core V,"
+				"32 neutronium blocks, 24 UHV hulls and 16 UV field generators."
+				"&cThe eight Cores go into it and don't come back.&r The only recipe that ever asks that of a Core."
+				"It doesn't hum. It doesn't sing. It's quiet, the way a held breath is quiet."
 			]
 			id: "53700744F7D299F6"
 			rewards: [
@@ -210,6 +215,10 @@
 				"&7[NCP Field Memo #1008: Clearance]"
 				""
 				"&bClearance Level 10&r. There is nothing left to clear."
+				"&7The card wants 16 oganesson atoms (only Alchemistry's Fusion Chamber, at LuV, makes them), UHV circuits,"
+				"&7a UHV hull, your Level 9 card,"
+				"&7and the Final Star as catalyst. The Star comes back."
+				"&7NCP thanks you for your service. This time, somebody means it."
 			]
 			id: "17930D5B3F6A6A34"
 			rewards: [
@@ -238,8 +247,9 @@
 			description: [
 				"&7[NCP Field Memo #1009: The Door]"
 				""
-				"The network is rebuilt. The Beams hold. The Door hums."
-				"&8(Stargate Journey and space travel arrive in a later update: this is where they will begin.)"
+				"The network is rebuilt. The Beams hold. The Door stands open."
+				"Everything stopped, once. You started some of it again. Go on. Step through."
+				"&8(More gate worlds, and what lies past them, arrive in a later update.)"
 			]
 			icon: "projectexpansion:final_star"
 			id: "53C0A875C476C8E8"

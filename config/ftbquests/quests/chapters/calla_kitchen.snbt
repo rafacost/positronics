@@ -13,7 +13,8 @@
 			description: [
 				"&7[NCP Field Memo #3101: Kitchen]"
 				""
-				"Pam's cooking tools are reusable crafting ingredients. Start with a cutting board, a pot and a skillet."
+				"Pam's cooking tools go in the crafting grid and come back out again. Start with a cutting board, a pot and a skillet."
+				"&7Every kitchen in the Calla started with those three. Most of them still have them."
 			]
 			id: "6626B97A3DCFF4D2"
 			rewards: [
@@ -50,7 +51,7 @@
 			description: [
 				"&7[NCP Field Memo #3102: Kitchen]"
 				""
-				"Saucepan, bakeware, mixing bowl, juicer and grinder: everything a Calla kitchen needs."
+				"Saucepan, bakeware, mixing bowl, juicer and grinder: everything a Calla kitchen needs, and a few things it brags about."
 			]
 			id: "220C4A264B5F77D3"
 			rewards: [
@@ -97,7 +98,8 @@
 			description: [
 				"&7[NCP Field Memo #3103: Cooking]"
 				""
-				"Cooked food fills you up for longer. Carrots, potatoes and wheat seeds are sold at the NCP Shop."
+				"Cooked food keeps you full for longer. A hot meal also reminds you you're a person, which matters more than it should."
+				"Carrots, potatoes and wheat seeds are sold at the NCP Shop."
 			]
 			id: "34F3139E46C0B549"
 			rewards: [
@@ -134,7 +136,7 @@
 			description: [
 				"&7[NCP Field Memo #3104: Cooking]"
 				""
-				"Soups and juices also count as new foods for Spice of Life."
+				"Soups and juices count as new foods for Spice of Life. Your stomach keeps score."
 			]
 			id: "607D16CC7FF2D0EB"
 			rewards: [
@@ -171,8 +173,8 @@
 			description: [
 				"&7[NCP Field Memo #3105: Spice of Life]"
 				""
-				"Every few new foods you eat grant a permanent heart (the Food Book shows your progress)."
-				"Most Pam's crops can be eaten raw. Buy new seeds at the NCP Shop and grow them in pots or a Calla Paddy."
+				"Every few new foods you eat grant you a permanent heart. The Food Book shows how far you've got."
+				"Most of Pam's crops can be eaten raw. Buy new seeds at the NCP Shop and grow them in pots or a Calla Paddy."
 			]
 			id: "04724F3E5C33BA04"
 			rewards: [
@@ -224,7 +226,8 @@
 			description: [
 				"&7[NCP Field Memo #3106: Spice of Life]"
 				""
-				"Eat each of these at least once. Your hearts will thank you."
+				"Eat each of these at least once. Strawberries at the end of the world."
+				"&7Each one tastes like a summer you don't quite remember."
 			]
 			id: "610B614E07F84FCF"
 			rewards: [
@@ -276,7 +279,7 @@
 			description: [
 				"&7[NCP Field Memo #3107: Water]"
 				""
-				"Much faster than boiling bottles. It needs copper, so it comes after your first strata."
+				"Much faster than boiling bottles one at a time. It needs copper, so it comes after your first strata."
 			]
 			id: "6BFD17EEA606ADF1"
 			rewards: [
@@ -303,7 +306,8 @@
 			description: [
 				"&7[NCP Field Memo #3108: Water]"
 				""
-				"Collects rain water. It needs string: three cotton, flax, jute, sisal or kenaf make one string."
+				"It catches the rain, so the sky finally gives you something for free."
+				"It needs string: three cotton, flax, jute, sisal or kenaf make one."
 			]
 			id: "1135FD6EB9DEA103"
 			rewards: [
@@ -330,7 +334,7 @@
 			description: [
 				"&7[NCP Field Memo #3109: Thirst]"
 				""
-				"Juices quench thirst better than water."
+				"Juice quenches thirst better than water. Tastes better too, not that anyone's asking."
 			]
 			id: "2989F76CD60CEA97"
 			rewards: [
@@ -363,6 +367,7 @@
 				"&7[NCP Field Memo #3110: Temperature]"
 				""
 				"Wool armour for winter (string makes wool). A thermoregulator keeps a whole room comfortable."
+				"&7Winter out here doesn't care how tough you are."
 			]
 			id: "2F57CB34A2E3CC81"
 			rewards: [
@@ -394,7 +399,8 @@
 			description: [
 				"&7[NCP Field Memo #3111: Automation]"
 				""
-				"Hopper botany pots over chests, or the Calla Paddy multiblock, mean you never farm by hand again."
+				"Hopper botany pots over chests, or the Calla Paddy multiblock, and you never farm by hand again."
+				"The Calla would call that cheating. The Calla would also ask you to build them one."
 			]
 			id: "7400E0FA997E4A83"
 			rewards: [

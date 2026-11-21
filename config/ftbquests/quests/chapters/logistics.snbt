@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #3001: Pipes]"
 				""
-				"Item pipes pull from a generator and push into a chest. Shift-right-click with the wrench to set which side extracts."
-				"Fluid and energy pipes work the same way. Upgrades make them faster and add filters."
+				"You can carry things from one box to another for the rest of your life, or you can build a pipe."
+				"Item pipes pull from a generator and push into a chest. &aSneak-right-click with the wrench&r to choose which side extracts."
+				"Fluid and energy pipes work the same way. An upgrade in the pipe makes it faster, and lets you filter what goes through."
 			]
 			id: "50CDFE83969A739F"
 			rewards: [
@@ -47,7 +48,8 @@
 			description: [
 				"&7[NCP Field Memo #3002: Pipes]"
 				""
-				"Pipe water from the spring, power from your panels. GT cables are better for EU; Pipez energy pipes carry FE."
+				"Pipe water from the spring and power from your panels."
+				"GT cables are better for EU. Pipez energy pipes carry FE, and only FE."
 			]
 			id: "3A0A6C2952D4C227"
 			rewards: [
@@ -84,7 +86,8 @@
 			description: [
 				"&7[NCP Field Memo #3003: Drawers]"
 				""
-				"Drawers hold huge amounts of one item. Perfect for cobblestone, gravel and dust."
+				"A drawer holds a ridiculous amount of one thing. Cobblestone, gravel, dust: you'll have mountains of all three."
+				"Give each mountain a drawer."
 			]
 			id: "0DCACCA06866AA06"
 			rewards: [
@@ -112,7 +115,7 @@
 			description: [
 				"&7[NCP Field Memo #3004: Compacting]"
 				""
-				"Put nuggets in, take ingots out. Smelted strata give nuggets: this turns them into ingots automatically."
+				"Nuggets in, ingots out. Smelted strata give nuggets, so this one turns them into ingots without you counting to nine."
 			]
 			id: "1ED938E8E29F0C86"
 			rewards: [
@@ -139,7 +142,8 @@
 			description: [
 				"&7[NCP Field Memo #3005: Controller]"
 				""
-				"One block that inserts into every drawer around it. Pusher and puller upgrades move items for you."
+				"One block that puts things into every drawer around it. Pusher and puller upgrades move items for you."
+				"&7Your back stops hurting somewhere around the third one."
 			]
 			id: "6175C1319BD5FAD6"
 			rewards: [
@@ -171,7 +175,8 @@
 			description: [
 				"&7[NCP Field Memo #3006: Programming]"
 				""
-				"Write a tiny program on a disk to move items between any inventories on the cable. NCP approves of scripts."
+				"Write a tiny program on a disk and it moves items between any inventories on the cable."
+				"NCP approves of scripts. NCP was mostly scripts, at the end."
 			]
 			id: "32FEBAA57F014C64"
 			rewards: [
@@ -209,7 +214,7 @@
 			description: [
 				"&7[NCP Field Memo #3007: Networks]"
 				""
-				"A controller and cables move items, fluids and energy by channel. Compact and fast."
+				"A controller and its cables move items, fluids and energy by channel. Compact, fast, and quiet about it."
 			]
 			id: "0429F4CB9D59D57C"
 			rewards: [
@@ -242,8 +247,11 @@
 			description: [
 				"&7[NCP Field Memo #3008: AE2]"
 				""
-				"There are no meteorites here: NCP assembles the four presses in an LV assembler from steel and a sample."
-				"Certus quartz crystals grow from Crystalline Stratum dust in an autoclave. Diamonds can be synthesised from graphite (Carbonic Stratum)."
+				"Somewhere else, people find these presses in meteorites. Nothing falls from the sky here."
+				"NCP assembles the four presses in an LV assembler: four steel plates, an LV circuit, and one of what"
+				"each press prints (silicon, a gold plate, certus or a diamond)."
+				"Certus quartz crystals grow from Crystalline Stratum dust in an autoclave."
+				"Diamonds can be made from graphite (Carbonic Stratum), if you're patient and have the power."
 			]
 			id: "5ECC7924EC9A43D9"
 			rewards: [
@@ -290,7 +298,9 @@
 			description: [
 				"&7[NCP Field Memo #3009: Fluix]"
 				""
-				"Charge certus in a charger (it takes GT power), drop it in water with redstone and quartz: fluix."
+				"Charge certus in a charger (it takes GT power), then drop it in water with redstone and quartz."
+				"It fizzes, and comes out purple. That's fluix."
+				"&7Nether quartz: autoclave its dust (a Crystalline Stratum byproduct)."
 			]
 			id: "6960B68DB39CBE72"
 			rewards: [
@@ -323,7 +333,8 @@
 			description: [
 				"&7[NCP Field Memo #3010: Storage]"
 				""
-				"One network, every item. The energy acceptor takes GT power."
+				"One network, every item, one screen. The energy acceptor takes GT power."
+				"&7After this you'll never open a chest again. You'll feel strange about it for a week."
 			]
 			id: "2ADEC9C6705C9431"
 			rewards: [
@@ -366,7 +377,7 @@
 			description: [
 				"&7[NCP Field Memo #3011: Autocrafting]"
 				""
-				"Encode patterns, provide them to assemblers and machines, and let crafting CPUs do the rest."
+				"Encode patterns, hand them to assemblers and machines, and let the crafting CPUs do the rest."
 				"&bThis is Lud's exam.&r GT machines can be pattern-provided too."
 			]
 			id: "688D6B9877860743"
@@ -409,7 +420,7 @@
 			description: [
 				"&7[NCP Field Memo #3012: Bigger]"
 				""
-				"More pattern slots, more sides, less cable."
+				"More pattern slots, more sides, less cable. Bigger is better, for once."
 			]
 			id: "4BDCB0A0A33D29D6"
 			rewards: [
@@ -441,7 +452,7 @@
 			description: [
 				"&7[NCP Field Memo #3013: Matrix]"
 				""
-				"A multiblock molecular assembler for thousands of crafts at once."
+				"A molecular assembler the size of a room, doing thousands of crafts at once."
 			]
 			id: "16CC96C70B800E1D"
 			rewards: [
@@ -468,7 +479,7 @@
 			description: [
 				"&7[NCP Field Memo #3014: Capacity]"
 				""
-				"Storage cells and crafting units measured in millions."
+				"Storage cells and crafting units measured in millions. You'll fill them. Everyone does."
 			]
 			id: "57A4D33603153FCA"
 			rewards: [
@@ -500,7 +511,8 @@
 			description: [
 				"&7[NCP Field Memo #3015: EMC]"
 				""
-				"AppliedE lets your ME network read and write Positronic Memory: learned items become craftable from EMC."
+				"AppliedE lets your ME network read and write Positronic Memory."
+				"Anything you've taught the tablet becomes craftable straight from EMC. The tablet and the network finally talk."
 			]
 			id: "08CA10195AD4ECED"
 			rewards: [
@@ -532,7 +544,7 @@
 			description: [
 				"&7[NCP Field Memo #3016: Late Game]"
 				""
-				"AdvancedAE's quantum computer: crafting CPUs at a scale even NCP finds excessive."
+				"AdvancedAE's quantum computer: crafting CPUs at a scale even NCP found excessive."
 			]
 			id: "1624217FCDE59D42"
 			rewards: [

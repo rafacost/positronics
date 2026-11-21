@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0301: Posting]"
 				""
-				"Lud is a city of machines in ruins. Here, automation stops being optional."
-				"Goal: &bClearance Level 3&r."
+				"Lud was a city of machines. Most of them still run. Nobody remembers what for."
+				"The people who could fix them are long gone, and the people who stayed learned not to touch anything."
+				"Here, automation stops being a choice. Your goal: &bClearance Level 3&r."
 			]
 			id: "7880EA8B44DE6CEA"
 			rewards: [
@@ -43,7 +44,8 @@
 			description: [
 				"&7[NCP Field Memo #0302: Aluminium]"
 				""
-				"Bauxite, electrolysis, the blast furnace. The MV metal."
+				"Bauxite, electrolysis and the blast furnace. Light enough to carry, strong enough to trust."
+				"Aluminium is the MV metal."
 			]
 			id: "368F1143967A8DF5"
 			rewards: [
@@ -71,7 +73,7 @@
 			description: [
 				"&7[NCP Field Memo #0303: Hull]"
 				""
-				"Assembled with Clearance Level 2 as a catalyst."
+				"Assembled with your Clearance Level 2 card and two copper cables."
 			]
 			id: "4E4FE4D9F25A12DF"
 			rewards: [
@@ -98,7 +100,8 @@
 			description: [
 				"&7[NCP Field Memo #0304: Silicon]"
 				""
-				"Grow a boule, cut it into wafers. Integrated circuits start here."
+				"Grow a boule, slow and perfect, then cut it into wafers."
+				"Integrated circuits start here. Everything Lud ever thought with started here."
 			]
 			id: "3F0EA2CEA0F52FCE"
 			rewards: [
@@ -137,7 +140,8 @@
 			description: [
 				"&7[NCP Field Memo #0305: Plastics]"
 				""
-				"Ethylene from ethanol or from oil, then polymerised. Plastic insulates the future."
+				"Ethylene, from ethanol or from oil, then polymerised."
+				"Plastic insulates the future. It also outlives it, which is why there's so much of it lying around."
 			]
 			id: "2B27474F419A3776"
 			rewards: [
@@ -169,7 +173,7 @@
 			description: [
 				"&7[NCP Field Memo #0306: Workshop]"
 				""
-				"Laser engravers and circuit assemblers: the chip industry."
+				"Laser engravers and circuit assemblers: the chip industry, in a room you could walk across in ten steps."
 			]
 			id: "6E954E802B091B06"
 			rewards: [
@@ -216,7 +220,8 @@
 			description: [
 				"&7[NCP Field Memo #0307: Chips]"
 				""
-				"Engraved wafers, cut into chips."
+				"Engrave the wafers, cut them into chips. Each one is smaller than a fingernail."
+				"You'll make thousands and never once see what they do."
 			]
 			id: "25F1387242514BF6"
 			rewards: [
@@ -256,7 +261,7 @@
 			description: [
 				"&7[NCP Field Memo #0308: Integration]"
 				""
-				"Smaller, cheaper circuits. Your factory just got denser."
+				"Smaller circuits, cheaper circuits. Your factory just got denser."
 			]
 			id: "5C317BF303AF4250"
 			rewards: [
@@ -288,10 +293,11 @@
 		{
 			dependencies: ["6E954E802B091B06" "688D6B9877860743"]
 			description: [
-				"&7[NCP Field Memo #0310: Automation]"
+				"&7[NCP Field Memo #0309: Automation]"
 				""
-				"Lud's exam is automation. Finish &bAE2 Autocrafting&r in the &bLogistics & Automation&r chapter,"
-				"then come back: everything from here on assumes you can autocraft."
+				"Lud's exam is automation, and it doesn't grade on a curve."
+				"Finish &bAE2 Autocrafting&r in the &bLogistics and Automation&r chapter, then come back."
+				"Everything from here on assumes you can autocraft."
 			]
 			id: "603A1EBE389415F0"
 			rewards: [
@@ -316,10 +322,12 @@
 		{
 			dependencies: ["6E954E802B091B06"]
 			description: [
-				"&7[NCP Field Memo #0311: Powered Generators]"
+				"&7[NCP Field Memo #0310: Powered Generators]"
 				""
-				"With Positronic Core II as catalyst, an assembler makes a &bTier 2 upgrade&r. Sneak-right-click a generator with it."
-				"Tier 2 generators run on power, produce faster, push output out on their own, and the Ore Generator then yields &bSeed II&r directly."
+				"With Positronic Core II as the catalyst, an assembler makes a &bTier 2 upgrade&r."
+				"&aSneak-right-click a generator with it.&r"
+				"Tier 2 generators run on FE (64 FE/t), produce faster and push their output out on their own."
+				"An upgraded Ore Generator gives &bSeed II&r instead of Seed I. Keep one Mk II as it is, for your Seed I."
 			]
 			id: "080EE3C2570CD9ED"
 			rewards: [
@@ -344,9 +352,9 @@
 		{
 			dependencies: ["368F1143967A8DF5" "3F9FC3DB1395B210"]
 			description: [
-				"&7[NCP Field Memo #0312: Heat]"
+				"&7[NCP Field Memo #0311: Heat]"
 				""
-				"Hotter coils, higher blast furnace recipes."
+				"Hotter coils, hotter blast furnace recipes. Kanthal needs chrome, and the chrome is on the Moon."
 			]
 			id: "00A371B7C11A3AE0"
 			rewards: [
@@ -372,10 +380,10 @@
 		{
 			dependencies: ["603A1EBE389415F0" "080EE3C2570CD9ED"]
 			description: [
-				"&7[NCP Field Memo #0314: Charging]"
+				"&7[NCP Field Memo #0312: Charging]"
 				""
-				"51,200,000 EMC, the biggest Klein Star. Core III is a 5x5 recipe on the Nether Crafting Table."
-				"&7Lud's automation, piped into capacitors, fills it."
+				"&b51,200,000 EMC&r, the biggest Klein Star there is. Core III is a 5x5 recipe on the Nether Crafting Table."
+				"&7Lud's automation, piped into capacitors, fills it. You'll sleep through most of it. That's the point."
 			]
 			icon: "projecte:klein_star_omega"
 			id: "49B96889FFBA43AD"
@@ -401,10 +409,11 @@
 		{
 			dependencies: ["49B96889FFBA43AD" "00A371B7C11A3AE0"]
 			description: [
-				"&7[NCP Field Memo #0315: Keystone]"
+				"&7[NCP Field Memo #0313: Keystone]"
 				""
-				"Core III catalyses &bSeed III&r enrichment (Seed II strata + hydrochloric acid in a mixer)."
-				"You need Seed III &obefore&r HV: stainless steel needs chrome. Later it also catalyses Clearance Level 4."
+				"Core III is the catalyst for &bSeed III&r enrichment: Seed II strata and hydrochloric acid, in a mixer."
+				"HV runs on chrome. The Moon gives you your first; Seed III makes it at home, for good."
+				"Later, Core III also catalyses Clearance Level 4."
 			]
 			id: "42DE50943B625D0B"
 			rewards: [
@@ -431,9 +440,11 @@
 		{
 			dependencies: ["42DE50943B625D0B"]
 			description: [
-				"&7[NCP Field Memo #0316: Seed III]"
+				"&7[NCP Field Memo #0314: Seed III]"
 				""
 				"Titanium, chrome, vanadium, gems, lithium, fluorine, oil sands and uranium."
+				"The old world kept its good things deep. Now you know how deep."
+				"&7Hydrochloric acid: electrolyse salt (Saline Stratum) for chlorine, then burn it with hydrogen."
 			]
 			id: "447C69A64A753BD2"
 			rewards: [
@@ -468,9 +479,11 @@
 		{
 			dependencies: ["5C317BF303AF4250" "603A1EBE389415F0" "447C69A64A753BD2"]
 			description: [
-				"&7[NCP Field Memo #0313: Clearance]"
+				"&7[NCP Field Memo #0315: Clearance]"
 				""
-				"&bClearance Level 3&r. Next posting: &bThe Cradle&r."
+				"&bClearance Level 3&r. You walked through Lud and the machines let you leave. Not everyone can say that."
+				"&7The card wants a chemistry sample: 4 silicon dioxide, on top of MV circuits, an MV hull and your Level 2 card."
+				"Your next posting is &bthe Cradle&r."
 			]
 			id: "5E90CEF477576E09"
 			rewards: [

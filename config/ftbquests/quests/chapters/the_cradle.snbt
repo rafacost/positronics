@@ -13,8 +13,9 @@
 			description: [
 				"&7[NCP Field Memo #0401: Posting]"
 				""
-				"The Cradle was Lud's great station. Restore its power."
-				"Goal: &bClearance Level 4&r."
+				"The Cradle was Lud's great hall: so big it has its own weather."
+				"Whatever used to leave from here isn't coming back. The power went out a long time ago."
+				"Turn it back on. Your goal: &bClearance Level 4&r."
 			]
 			id: "2B380FF9E5AB61AF"
 			rewards: [
@@ -43,7 +44,8 @@
 			description: [
 				"&7[NCP Field Memo #0402: Stainless]"
 				""
-				"Iron, nickel, chrome, manganese. Chrome comes from the Moon (Space Program); later Seed III automates it at home."
+				"Iron, nickel, chrome and manganese. Steel that doesn't rust, for a world that rusted."
+				"The chrome comes from the Moon (Space Program). Seed III makes it at home too."
 			]
 			id: "5ABFB335F19B4F7E"
 			rewards: [
@@ -71,7 +73,7 @@
 			description: [
 				"&7[NCP Field Memo #0403: Hull]"
 				""
-				"Assembled with Clearance Level 3."
+				"Your Level 3 card goes in the assembler beside the casing and two gold cables. It comes back."
 			]
 			id: "31783CA49496A5D1"
 			rewards: [
@@ -98,7 +100,8 @@
 			description: [
 				"&7[NCP Field Memo #0404: Clean]"
 				""
-				"Microprocessors need clean air. Build a cleanroom around your chip lines."
+				"Microprocessors need clean air, cleaner than anything that's blown through here in a hundred years."
+				"Build a cleanroom around your chip lines and keep the door shut."
 			]
 			id: "2652E45AD9C46545"
 			rewards: [
@@ -125,7 +128,8 @@
 			description: [
 				"&7[NCP Field Memo #0405: Chlorine]"
 				""
-				"Salt electrolysis gives chlorine; chlorine gives PVC and hydrochloric acid."
+				"Run salt through electrolysis and you get chlorine. Chlorine gives you PVC and hydrochloric acid."
+				"&7It also gives you a headache if you breathe it. Don't."
 			]
 			id: "3E29447B1BC3FAD3"
 			rewards: [
@@ -157,7 +161,8 @@
 			description: [
 				"&7[NCP Field Memo #0406: Workshop]"
 				""
-				"HV machines, and a distillery for the oil from the Bituminous Stratum."
+				"HV machines, and a distillery for the oil you squeeze out of the Bituminous Stratum."
+				"&7The floor here was built for heavier machines than yours. You'll get there."
 			]
 			id: "1A7F4A25FAD51EE0"
 			rewards: [
@@ -199,7 +204,8 @@
 			description: [
 				"&7[NCP Field Memo #0407: Micro]"
 				""
-				"Plastic boards and SMD parts. HV and EV circuits."
+				"Plastic boards and SMD parts, made in a room where you can hear your own heartbeat."
+				"MV and HV circuits now; the same line runs all the way up to IV."
 			]
 			id: "36EC39568E8EF167"
 			rewards: [
@@ -236,9 +242,10 @@
 		{
 			dependencies: ["1A7F4A25FAD51EE0"]
 			description: [
-				"&7[NCP Field Memo #0411: Tier 3]"
+				"&7[NCP Field Memo #0408: Tier 3]"
 				""
-				"Assembled at HV with Positronic Core III. Tier 3 generators: four items a second, and the Ore Generator yields Seed III."
+				"An HV assembler and Positronic Core III. Sneak-right-click a Tier 2 generator with it."
+				"Tier 3 generators make four items a second, and the Ore Generator starts giving you Seed III."
 			]
 			id: "7EDE7A02EE69280E"
 			rewards: [
@@ -263,9 +270,11 @@
 		{
 			dependencies: ["36EC39568E8EF167" "7EDE7A02EE69280E"]
 			description: [
-				"&7[NCP Field Memo #0412: Clearance]"
+				"&7[NCP Field Memo #0409: Clearance]"
 				""
-				"&bClearance Level 4&r. Next posting: &bThe Dogan&r."
+				"&bClearance Level 4&r. The Cradle's lights are on again. Somewhere down the line, something noticed."
+				"&7The card wants 4 sodium hydroxide, HV circuits, an HV hull, your Level 3 card, and Core III as catalyst."
+				"Your next posting is &bthe Dogan&r."
 			]
 			id: "74726E133799D18A"
 			rewards: [

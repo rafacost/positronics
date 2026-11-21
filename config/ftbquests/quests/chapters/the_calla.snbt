@@ -13,8 +13,10 @@
 			description: [
 				"&7[NCP Field Memo #0201: Posting]"
 				""
-				"The Calla is a farming town with ambitions. Feed them, then build them a factory."
-				"Goal: &bClearance Level 2&r."
+				"The Calla is a farming town that remembers being more than that."
+				"Good soil, long rows, and people who look up at the sky a little too often."
+				"Feed them first. Then build them a factory. They'll trust the second because you did the first."
+				"Your goal here: &bClearance Level 2&r."
 			]
 			id: "05282D7A4CE074AA"
 			rewards: [
@@ -43,7 +45,8 @@
 			description: [
 				"&7[NCP Field Memo #0202: Hull]"
 				""
-				"Hand-assembled with your Clearance Card (it is not consumed). After this, an LV assembler does it."
+				"The first LV hull goes together by hand, with your Clearance Card in the grid. The card comes back; it always does."
+				"After this one, an LV assembler builds them for you."
 			]
 			id: "46F8BC980BF71870"
 			rewards: [
@@ -70,7 +73,8 @@
 			description: [
 				"&7[NCP Field Memo #0203: Circuits]"
 				""
-				"Resistors, vacuum tubes, a circuit board. The LV circuit."
+				"Resistors, vacuum tubes and a circuit board: the LV circuit."
+				"It's ugly and it's slow and it works. Most of the old world ran on things like that."
 			]
 			id: "05BE200FD27CB53F"
 			rewards: [
@@ -98,7 +102,8 @@
 			description: [
 				"&7[NCP Field Memo #0204: Components]"
 				""
-				"Motors drive everything. Learn these five; every tier has its own."
+				"Motor, piston, pump, conveyor, robot arm. Learn these five by heart."
+				"Every tier has its own set, and every machine you build from here on is made of them."
 			]
 			id: "62EF35FCB078C9A8"
 			rewards: [
@@ -145,7 +150,8 @@
 			description: [
 				"&7[NCP Field Memo #0205: Workshop]"
 				""
-				"A real workshop. The assembler makes hulls from now on."
+				"Macerator, assembler, wiremill, bender, lathe. That's not a shed with tools in it any more. That's a workshop."
+				"The assembler builds your hulls from now on."
 			]
 			id: "5698A43B1860CDCF"
 			rewards: [
@@ -192,7 +198,8 @@
 			description: [
 				"&7[NCP Field Memo #0206: Chemistry]"
 				""
-				"Mixers, centrifuges, electrolysis, reactions. Chemistry is how the Calla gets rich."
+				"Mixer, centrifuge, electrolyser, chemical reactor, chemical bath."
+				"Farmers grow food. Chemists grow everything else. This is how the Calla gets rich."
 			]
 			id: "4974C9AD411962B7"
 			rewards: [
@@ -239,7 +246,8 @@
 			description: [
 				"&7[NCP Field Memo #0207: Acids]"
 				""
-				"Sulfur, oxygen, water. Sulfuric acid is the solvent for &bSeed II enrichment&r."
+				"Sulfur, oxygen and water, and a reactor to marry them. Mind your hands."
+				"Sulfuric acid is the solvent for &bSeed II enrichment&r. You'll go through barrels of it."
 			]
 			id: "4714C5660CC4815D"
 			rewards: [
@@ -266,9 +274,10 @@
 			description: [
 				"&7[NCP Field Memo #0208: Generators]"
 				""
-				"LV machines draw 32 EU/t = 128 FE/t. Eight ULV panels and an LV circuit make two &bLV panels&r"
-				"(64 FE/t each): the same power in a quarter of the space. An LV converter takes up to 128 FE/t per amp."
-				"&7Turbines and combustion generators are GregTech's way, if you would rather burn fuel."
+				"LV machines draw 32 EU/t, which is 128 FE/t. Your old panels won't keep up."
+				"&aEight ULV panels and an LV circuit&r make two &bLV panels&r (64 FE/t each): the same power in a quarter of the space."
+				"An LV converter takes up to 128 FE/t per amp."
+				"&7Turbines and combustion generators are GregTech's way, if you'd rather burn something."
 			]
 			id: "0B36685DD948EDD5"
 			rewards: [
@@ -299,10 +308,11 @@
 		{
 			dependencies: ["5698A43B1860CDCF"]
 			description: [
-				"&7[NCP Field Memo #0216: Assembly]"
+				"&7[NCP Field Memo #0209: Assembly]"
 				""
 				"A 5x5 crafting grid, built around a plain crafting table with LV parts."
-				"Positronic Core II is a 4x4 recipe and Core III a 5x5: both are assembled here."
+				"Some things are too big to make on a 3x3. Positronic Core II is a 4x4 recipe and Core III a 5x5;"
+				"both are assembled here."
 			]
 			id: "57B1D419E3BC4109"
 			rewards: [
@@ -327,9 +337,10 @@
 		{
 			dependencies: ["5698A43B1860CDCF"]
 			description: [
-				"&7[NCP Field Memo #0209: Multiblocks]"
+				"&7[NCP Field Memo #0210: Multiblocks]"
 				""
-				"Multiblocks need buses, hatches and a maintenance hatch. They need glue too."
+				"A multiblock is a building that works. It needs doors: input and output buses, an energy hatch,"
+				"and a maintenance hatch, because big machines break in big ways."
 			]
 			id: "23959B9E619112CD"
 			rewards: [
@@ -369,9 +380,10 @@
 		{
 			dependencies: ["5698A43B1860CDCF"]
 			description: [
-				"&7[NCP Field Memo #0210: Coils]"
+				"&7[NCP Field Memo #0211: Coils]"
 				""
-				"Coils need molten tin alloy: extract tin alloy ingots in an LV extractor."
+				"Heating coils for a furnace that doesn't burn anything. They need molten tin alloy:"
+				"&aextract tin alloy ingots in an LV extractor&r and catch it in a bucket from the output tank."
 			]
 			id: "5BDECB449BAD33CC"
 			rewards: [
@@ -402,9 +414,10 @@
 		{
 			dependencies: ["5BDECB449BAD33CC" "23959B9E619112CD"]
 			description: [
-				"&7[NCP Field Memo #0211: Blast Furnace]"
+				"&7[NCP Field Memo #0212: Blast Furnace]"
 				""
-				"The first great multiblock. Aluminium and silicon need it."
+				"The first of the great multiblocks. When it lights up, you'll feel the heat through the casings."
+				"Aluminium and silicon need it. So does nearly everything after them."
 			]
 			id: "3B799683FA4DC808"
 			rewards: [
@@ -429,9 +442,9 @@
 		{
 			dependencies: ["05BE200FD27CB53F" "4974C9AD411962B7"]
 			description: [
-				"&7[NCP Field Memo #0212: Better Circuits]"
+				"&7[NCP Field Memo #0213: Better Circuits]"
 				""
-				"Diodes and phenolic boards. Good circuits are MV-grade, and they gate your next card."
+				"Diodes and phenolic boards. Good circuits are MV grade. Lud's Clearance Card won't take less, so start now."
 			]
 			id: "142FF47CDA283F7B"
 			rewards: [
@@ -457,9 +470,12 @@
 		{
 			dependencies: ["05282D7A4CE074AA"]
 			description: [
-				"&7[NCP Field Memo #0213: Food]"
+				"&7[NCP Field Memo #0214: Food]"
 				""
-				"Automate your food: hopper botany pots over chests. Variety keeps you strong."
+				"People who are hungry don't build factories. Grow the food, and grow it without you:"
+				"&ahopper botany pots over chests.&r Eat a little of everything; variety keeps you strong."
+				"Seeds are 1 Scrip a packet at the NCP Shop."
+				"&7Reward: one hopper botany pot, so the next crop grows itself."
 			]
 			id: "1845323CB80C94E1"
 			rewards: [
@@ -502,11 +518,12 @@
 		{
 			dependencies: ["1845323CB80C94E1" "23959B9E619112CD"]
 			description: [
-				"&7[NCP Field Memo #0218: Glasshouse]"
+				"&7[NCP Field Memo #0215: Glasshouse]"
 				""
-				"A 5x5 glasshouse: steel casings around nine blocks of dirt, glass walls and roof two blocks high."
-				"Put a seed in the input bus (it is never used up), pipe in water, and it grows that crop. Fertilizer doubles the harvest."
-				"&7Cotton gives string; flax, jute and sisal give fibre. No spiders required."
+				"A 5x5 glasshouse, three layers tall: steel casings around nine blocks of dirt, glass walls one block high,"
+				"and a flat glass roof on top. Put a seed in the input bus (it is never used up), pipe water into an input hatch,"
+				"and it grows that crop. Fertiliser doubles the harvest."
+				"&7Cotton, flax, jute, sisal and kenaf all give string (three crops make one). No spiders required, which is just as well."
 			]
 			id: "1C0DD05DB1EF60F2"
 			rewards: [
@@ -532,9 +549,10 @@
 		{
 			dependencies: ["3B799683FA4DC808"]
 			description: [
-				"&7[NCP Field Memo #0214: Charging]"
+				"&7[NCP Field Memo #0216: Charging]"
 				""
-				"3,200,000 EMC (four Drei stars). Your LV lines, piped into capacitors, can fill it."
+				"&b3,200,000 EMC&r: four Drei stars, combined. Sixteen times what Core I asked of you."
+				"Your LV lines, piped into capacitors, can fill it. Not quickly. Nothing out here is quick."
 			]
 			id: "0869EFFA1D316A5E"
 			rewards: [
@@ -559,10 +577,11 @@
 		{
 			dependencies: ["0869EFFA1D316A5E" "57B1D419E3BC4109"]
 			description: [
-				"&7[NCP Field Memo #0215: Keystone]"
+				"&7[NCP Field Memo #0217: Keystone]"
 				""
-				"Core II catalyses &bSeed II&r: enrich Seed I strata in a mixer with sulfuric acid."
-				"Seed II brings bauxite, silicon, gallium, gold, salt, sulfur, antimony and certus quartz."
+				"Core II is a catalyst for &bSeed II&r: enrich Seed I strata in a mixer with sulfuric acid."
+				"Seed II brings bauxite, silica, gallium, gold, salt, sulfur, antimony and certus quartz."
+				"&7It's also the catalyst for Clearance Card 2 and the Tier 2 generator upgrade, and it's never used up."
 			]
 			id: "13174DD001A57611"
 			rewards: [
@@ -589,9 +608,11 @@
 		{
 			dependencies: ["13174DD001A57611" "4714C5660CC4815D"]
 			description: [
-				"&7[NCP Field Memo #0216: Enrichment]"
+				"&7[NCP Field Memo #0218: Enrichment]"
 				""
-				"Four of a lower stratum, acid, and the Core as catalyst. Choose what you enrich into."
+				"Four of one Seed I stratum, sulfuric acid, a programmed circuit, and the Core as catalyst, in an LV mixer."
+				"Each Seed II stratum has its own source and circuit number: EMI shows which."
+				"The old world had these layers all along. You're just asking nicely."
 			]
 			id: "70B5506B5FAD2B04"
 			rewards: [
@@ -626,9 +647,10 @@
 		{
 			dependencies: ["13174DD001A57611" "142FF47CDA283F7B"]
 			description: [
-				"&7[NCP Field Memo #0217: Clearance]"
+				"&7[NCP Field Memo #0219: Clearance]"
 				""
-				"&bClearance Level 2&r: MV hulls are yours. Next posting: &bLud&r."
+				"&bClearance Level 2&r: MV hulls are yours."
+				"The Calla will miss you. Your next posting is &bLud&r. Lud won't."
 			]
 			id: "7A49CA598D083678"
 			rewards: [

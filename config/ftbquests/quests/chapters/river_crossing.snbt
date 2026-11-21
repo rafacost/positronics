@@ -13,10 +13,11 @@
 			description: [
 				"&7[NCP Field Memo #0101: Posting]"
 				""
-				"Welcome to River Crossing: a handful of survivors and the first machines NCP ever let them keep."
-				"Your goal here is &bClearance Level 1&r: prove you can run a small, automated factory."
-				"&7Steam is allowed but never required. Everything here runs on ULV electricity."
-				"&7Enclosed: two sugar cane. Plant them next to the spring: paper is everywhere in GregTech."
+				"There used to be a town here. There's still a sign, if you squint."
+				"NCP left a few machines behind when it pulled out, and nobody ever came back for them."
+				"Get them running, then get them running &owithout&r you, and NCP will hand you &bClearance Level 1&r."
+				"&7Steam works, if you're the sentimental kind. You won't need it: everything here runs on ULV power."
+				"&7Enclosed: two sugar cane. Plant them by the spring. GregTech eats paper like a goat."
 			]
 			id: "398DA3318FB70483"
 			rewards: [
@@ -52,11 +53,12 @@
 			description: [
 				"&7[NCP Field Memo #0102: Strata]"
 				""
-				"Hammer cobblestone into gravel and, now and then, the void gives something back: a &bStratum&r."
-				"Strata are layers of the old world. Smelt one for a few nuggets (nine nuggets make an ingot); crush it later for a whole dust."
-				"&7A mortar can also break strata into atoms: see Breaking Metal."
-				"&7The stone hammer only finds iron and copper. Better hammers dig deeper: an iron-grade hammer finds tin, coal and lead"
-				"&7in gravel; a steel hammer finds redstone and nickel in sand. After that, strata come from machines."
+				"Hit cobblestone hard enough and it turns to gravel. Hit it enough times and, once in a while,"
+				"the void coughs something up: a &bstratum&r. A layer of the old world, pressed thin."
+				"Smelt one for a few nuggets (nine to an ingot). Crush it later for a whole dust."
+				"&7A mortar pulls atoms out of it too: see Breaking Metal."
+				"&7The stone hammer only finds iron and copper. An iron-grade hammer finds tin, coal and lead in gravel;"
+				"&7a steel one finds redstone and nickel in sand. After that it's machines, and your arms can rest."
 			]
 			id: "646ADF5E2F61D70F"
 			rewards: [
@@ -90,7 +92,8 @@
 			description: [
 				"&7[NCP Field Memo #0103: Metalwork]"
 				""
-				"Cook an iron ingot a second time and it becomes wrought iron: the ULV metal."
+				"Put an iron ingot back in the fire. It comes out darker, tougher, a little meaner: &bwrought iron&r."
+				"Everything at ULV is made of it. Make eight. You'll want eighty."
 			]
 			id: "0E9A732B4BBA6767"
 			rewards: [
@@ -118,9 +121,10 @@
 			description: [
 				"&7[NCP Field Memo #0104: Tooling]"
 				""
-				"GregTech parts are made with GregTech tools. Plates need a hammer, casings a wrench, the hull's cables a wire cutter."
-				"The &bscrewdriver&r is part of the wire cutter, and the Primitive Blast Furnace needs one too."
-				"&aThe wrought iron hammer also digs deeper:&r break gravel with it to find &bStannic&r (tin), &bCarbonic&r (coal) and &bPlumbic&r (lead) strata."
+				"GregTech doesn't let you cheat. Plates want a hammer. Casings want a wrench."
+				"Cables want a wire cutter, and the wire cutter wants a &bscrewdriver&r inside it. So does the blast furnace."
+				"Make the set. Then look at that hammer again:"
+				"&abreak gravel with it&r and it finds what the stone one couldn't. &bStannic&r for tin, &bCarbonic&r for coal, &bPlumbic&r for lead."
 			]
 			id: "076E7CC3AFDAC867"
 			rewards: [
@@ -165,10 +169,11 @@
 		{
 			dependencies: ["076E7CC3AFDAC867"]
 			description: [
-				"&7[NCP Field Memo #0114: Gravel]"
+				"&7[NCP Field Memo #0105: Gravel]"
 				""
-				"Gravel holds the next layer: tin for solder and bronze, coal for steel, lead for cables."
-				"&7Only a GregTech hammer of iron grade or better finds them; the stone hammer just makes sand."
+				"Under the gravel there's another layer, and you'll need every bit of it."
+				"Tin for solder and bronze. Coal for steel. Lead for cable."
+				"&7The stone hammer won't find any of it. It just makes sand, and God knows you have enough sand."
 			]
 			id: "33CDAA74B84BB5D0"
 			rewards: [
@@ -206,13 +211,14 @@
 		{
 			dependencies: ["33CDAA74B84BB5D0"]
 			description: [
-				"&7[NCP Field Memo #0115: Blast Furnace]"
+				"&7[NCP Field Memo #0106: Blast Furnace]"
 				""
-				"Redstone hides deeper than any iron hammer reaches, and every circuit needs it. You need &bsteel&r first."
-				"The &bPrimitive Blast Furnace&r makes it from iron and coal, no power needed."
-				"&aFirebricks:&r mortar clay into clay dust and bricks into brick dust; mix them into fireclay dust;"
-				"pack it into compressed fireclay (by hand); fire it in a furnace. Four firebrick make a firebricks block."
-				"&7Check the multiblock shape in EMI. Slow, hot, and worth it."
+				"Every circuit needs redstone, and redstone sits deeper than iron can dig."
+				"So you need &bsteel&r, and you need it without a single machine. The &bPrimitive Blast Furnace&r will do it:"
+				"iron, coal and time."
+				"&aFirebricks are a chore:&r mortar clay into clay dust and bricks into brick dust; mix them into fireclay dust;"
+				"press it into compressed fireclay by hand; fire it in a furnace. Four firebrick make a firebricks block."
+				"&7EMI shows the shape. It's slow and hot and it smells like a blacksmith's apron. It's worth it."
 			]
 			id: "254E5FE186B806B8"
 			rewards: [
@@ -249,11 +255,12 @@
 		{
 			dependencies: ["254E5FE186B806B8"]
 			description: [
-				"&7[NCP Field Memo #0116: Sand]"
+				"&7[NCP Field Memo #0107: Sand]"
 				""
-				"A steel hammer cracks sand down to dust, and sometimes finds &bRubric&r (redstone) and &bNickelous&r strata."
-				"This is the last layer a hand tool can reach. From here on, strata come from powered machines:"
-				"sifters, Ore Generators and bees, each at its own voltage."
+				"Steel goes through sand like it isn't there, and sometimes there's something in it:"
+				"&bRubric&r (redstone) and &bNickelous&r strata."
+				"Enjoy it. This is as deep as a hand tool will ever go. From here on the strata come from machines"
+				"(sifters, Ore Generators, bees), and every one of them is hungry for its own voltage."
 			]
 			id: "0E9ACE22AA8BA4F2"
 			rewards: [
@@ -290,10 +297,11 @@
 		{
 			dependencies: ["076E7CC3AFDAC867" "45ED338A938645F1" "254E5FE186B806B8" "0E9ACE22AA8BA4F2"]
 			description: [
-				"&7[NCP Field Memo #0105: Hull]"
+				"&7[NCP Field Memo #0108: Hull]"
 				""
-				"Every machine starts as a hull. Build one; you will build hundreds."
-				"&7Wood planks: a GregTech hammer + 2 wood pulp. Cables: a wire + a rubber plate (see Rubber)."
+				"Every machine you'll ever own starts as one of these: an empty box, waiting to be told what it is."
+				"Build your first. You'll build hundreds."
+				"&7Wood planks: a GregTech hammer and two wood pulp. Cables: a wire and a rubber plate (see Rubber)."
 			]
 			id: "70EDF0098A06DF89"
 			rewards: [
@@ -323,9 +331,11 @@
 		{
 			dependencies: ["70EDF0098A06DF89"]
 			description: [
-				"&7[NCP Field Memo #0106: Circuitry]"
+				"&7[NCP Field Memo #0109: Circuitry]"
 				""
-				"The ULV circuit. Glass, wire and patience."
+				"The old people built these before everything stopped."
+				"They glow a little when they work, like they're remembering something."
+				"The ULV circuit: glass, wire and patience. Mostly patience."
 			]
 			id: "5BF37B5D49C970E6"
 			rewards: [
@@ -351,17 +361,22 @@
 		{
 			dependencies: ["70EDF0098A06DF89"]
 			description: [
-				"&7[NCP Field Memo #0107: Power]"
+				"&7[NCP Field Memo #0110: Power]"
 				""
-				"GregTech machines and cables take only &bEU&r; cheap generators make &bFE&r. Only a converter bridges the two:"
-				"&aSolar panels&r (Solar Flux, 16 FE/t each in daylight, no hull) -> an &bEnergy Cell&r (Powah, stores the day"
-				"for the night) -> a &bULV Energy Converter&r (4 FE = 1 EU, placed in FE to EU mode) -> GregTech cable -> machines."
-				"A ULV machine draws up to 8 EU/t = 32 FE/t: two panels per machine in daylight, more to fill the cell."
-				"A &b1A&r converter passes 1 amp: 8 EU/t at ULV (32 FE/t). More machines, more converters (or a 4A one)."
-				"Panels and cells push into whatever touches them; Pipez energy pipes carry FE further."
-				"&aBackup:&r the Powah &bFurnator&r burns coal (8 carbon atoms = 1 coal). Every panel tier is 4 of the last plus that tier's circuit."
-				"&7The NCP Emergency Solar (GregTech's ULV panel) makes 8 EU/t straight onto cable, no converter and no 4:1 loss,"
-				"&7but it costs a hull per panel."
+				"Here's what nobody tells you: GregTech drinks &bEU&r and nothing else. Cheap generators make &bFE&r."
+				"They don't speak the same language, and a converter is the only translator."
+				"&aThe chain:&r &bsolar panels&r (Solar Flux, 16 FE/t each in daylight, no hull) -> a Powah &bEnergy Cell&r"
+				"(it keeps the day for the night) -> a &bULV Energy Converter&r (4 FE make 1 EU; it sets itself to FE to EU"
+				"when you place it) -> GregTech cable -> machines."
+				"A ULV machine pulls up to 8 EU/t, which is 32 FE/t: two panels per machine while the sun's up,"
+				"more if you want the cell full by dark. A &b1A&r converter passes one amp, 8 EU/t at ULV."
+				"More machines, more converters (or a 4A one). Panels and cells push into whatever touches them;"
+				"Pipez energy pipes carry FE further."
+				"&aWhen the sun quits on you:&r the Powah &bFurnator&r burns coal (8 carbon atoms make one)."
+				"Panels compact without loss: eight ULV panels and an LV circuit make two LV panels;"
+				"from MV up it's four of the last, that tier's circuit and two plates, in an assembler."
+				"&7NCP's Emergency Solar (GregTech's ULV panel) puts 8 EU/t straight onto the cable: no converter, no 4:1 loss."
+				"&7It costs a hull per panel. There's always a catch."
 			]
 			id: "37E06DD9764C4021"
 			rewards: [
@@ -397,10 +412,11 @@
 		{
 			dependencies: ["5BF37B5D49C970E6" "37E06DD9764C4021"]
 			description: [
-				"&7[NCP Field Memo #0108: Machine Shop]"
+				"&7[NCP Field Memo #0111: Machine Shop]"
 				""
-				"NCP's ULV machines run GregTech recipes up to 8 EU/t. Crusher: one stratum, one whole dust."
-				"Smelter: bronze, red alloy, tin alloy and &bsteel without a coke oven&r. Sifter: automates the trickle."
+				"NCP left seven machines for people like you, each good for its own GregTech recipes up to 8 EU/t. Start with these three."
+				"The &bCrusher&r turns one stratum into one whole dust. The &bSmelter&r does bronze, red alloy, tin alloy"
+				"and &bsteel without a coke oven&r. The &bSifter&r works the trickle while you sleep."
 			]
 			id: "681A5E2D7CD1A735"
 			rewards: [
@@ -435,9 +451,10 @@
 		{
 			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
-				"&7[NCP Field Memo #0109: Alloys]"
+				"&7[NCP Field Memo #0112: Alloys]"
 				""
-				"Bronze for gears, red alloy for wires, steel for everything that matters."
+				"Bronze for gears. Red alloy for wires. Steel for everything that matters."
+				"Make eight of each, and you'll start to believe you know what you're doing."
 			]
 			id: "10BB65E601DDE91E"
 			rewards: [
@@ -475,12 +492,14 @@
 		{
 			dependencies: ["10BB65E601DDE91E" "3F19BE1DC07334EB"]
 			description: [
-				"&7[NCP Field Memo #0110: Ore Generator]"
+				"&7[NCP Field Memo #0113: Ore Generator]"
 				""
-				"The Ore Generator pulls &bSeed I strata&r from the void, steadily. Build it from iron blocks, steel and a &bfull Klein Star Ein&r."
-				"&7Your Mk I cobblestone generator stays where it is: it is not part of the recipe."
+				"The Mk I gives you cobblestone. The Mk II gives you the old world, one stratum at a time,"
+				"steady as a heartbeat: &bSeed I strata&r, straight out of the void."
+				"It costs stone bricks, iron blocks, steel and a &bfull Klein Star Ein&r. Your Mk I isn't part of the deal:"
+				"it stays where it is and keeps working."
 				"&aFill the star&r in your Beam Capacitor: Reclaimer atoms in, 50,000 EMC out."
-				"Build more of them. Then build more machines to eat what they make."
+				"Then build another Ore Generator, and more machines to eat what they make. That's the whole job, really."
 			]
 			id: "473628F3957FFFB0"
 			rewards: [
@@ -505,15 +524,15 @@
 		{
 			dependencies: ["076E7CC3AFDAC867"]
 			description: [
-				"&7[NCP Field Memo #0111: Rubber]"
+				"&7[NCP Field Memo #0114: Rubber]"
 				""
-				"No rubber trees, no resin; no resin, no rubber trees. Positronic Memory breaks the loop:"
-				"rubber is isoprene, C5H8, atom for atom on the crafting table:"
-				"&b1 carbon + 4 hydrogen = 1 methane&r (CH4); &b2 methane + 3 carbon = 2 sticky resin&r."
-				"&aRubber plate by hand:&r mortar + 2 sticky resin = raw rubber dust; smelt it into a rubber plate."
-				"A wire + a rubber plate = a cable. The hull needs two."
-				"&aRubber trees:&r plant the saplings in dirt and let them grow. Break the tree's own logs: each one"
-				"drops sticky resin most of the time. Logs you placed yourself, or from a botany pot, give none."
+				"No rubber trees, no resin. No resin, no rubber trees. You see the problem."
+				"Positronic Memory sees the way out: rubber is isoprene, C5H8, and you can build it atom by atom on the crafting table."
+				"&b1 carbon + 4 hydrogen = 1 methane&r (CH4). &b2 methane + 3 carbon = 2 sticky resin&r."
+				"&aRubber plate by hand:&r mortar + 2 sticky resin = raw rubber dust; smelt it into a plate."
+				"Wire + plate = cable, and the hull needs two."
+				"&aThe saplings&r grow real rubber trees. Break the tree's own logs and they bleed resin most of the time."
+				"&7Logs you placed yourself, or logs from a botany pot, won't. The tree knows. Don't ask me how."
 			]
 			id: "45ED338A938645F1"
 			rewards: [
@@ -545,14 +564,16 @@
 		{
 			dependencies: ["271F6CBDB4715876"]
 			description: [
-				"&7[NCP Field Memo #0112: Memory]"
+				"&7[NCP Field Memo #0115: Memory]"
 				""
-				"Your first ingot. Now meet the &bTransmutation Tablet&r: four iron, four glass and your NCP Scrip as a login."
-				"It reads and writes &bPositronic Memory&r (EMC). Memory only understands &bchemistry&r (elements and molecules): an iron"
-				"ingot means nothing to it, but sixteen &biron atoms&r (ChemLib) do. Burn an element into the tablet to learn it; spend EMC to make more."
-				"Later, the &bDissolver&r (LV) turns your production into elements, and a GregTech compressor packs 16 elements"
-				"back into one dust, one tier after the metal is first needed. The planets still have to be done by hand."
-				"&7Enclosed: 20 carbon and 20 hydrogen atoms. Burn one of each to learn them; the rest is your first rubber (see Rubber)."
+				"There it is: your first ingot. Hold it a second."
+				"Then meet the &bTransmutation Tablet&r: four iron, four glass, and your NCP Scrip to log you in."
+				"It reads and writes &bPositronic Memory&r (EMC), and Memory is picky. It only understands &bchemistry&r:"
+				"elements and molecules. An iron ingot means nothing to it. Sixteen &biron atoms&r (ChemLib) mean everything."
+				"Burn an element into the tablet and it remembers. After that, spend EMC and it makes more."
+				"At LV the &bDissolver&r turns your production into elements, and a GregTech compressor packs 16 of them"
+				"back into one dust, one tier after you first need that metal. The planets you'll still do by hand."
+				"&7Enclosed: 20 carbon and 20 hydrogen atoms. Burn one of each to teach it. The rest is your first rubber."
 			]
 			id: "69ADFFCDC361D941"
 			rewards: [
@@ -594,16 +615,17 @@
 		{
 			dependencies: ["69ADFFCDC361D941"]
 			description: [
-				"&7[NCP Field Memo #0118: Biomass]"
+				"&7[NCP Field Memo #0116: Biomass]"
 				""
-				"Positronic Memory reads chemistry, and every plant is made of it. Plants are &bcellulose&r: C6H10O5, 21 atoms."
+				"Every plant is chemistry, and Memory reads chemistry. A plant is &bcellulose&r: C6H10O5, twenty-one atoms."
 				"&aMortar + 8 leaves&r (or 4 saplings, 8 crops, 8 sugar cane) = 1 &bplant mass&r."
 				"&aMortar + 2 plant mass&r = 1 &bcellulose&r, worth exactly its 6 carbon, 10 hydrogen and 5 oxygen."
-				"&aMortar + 1 rock dust&r (sand broken with a steel hammer) = 1 &bsilicon dioxide&r. Stone pays less than plants."
-				"Burn a cellulose into the tablet to learn it; then every one you grow is EMC."
-				"Need the atoms themselves (rubber needs carbon and hydrogen)? Spend that EMC on them in the tablet."
-				"&7Enclosed: sugar cane. It grows in a botany pot and it is the fastest biomass you have."
-				"&7Leaves need shears; the NCP Shop sells a reinforced pair."
+				"&aMortar + 1 rock dust&r (sand broken with any hammer) = 1 &bsilicon dioxide&r."
+				"Stone pays less than green things. It usually does."
+				"Burn one cellulose to teach it, and everything you grow after that is money."
+				"Need the atoms themselves (rubber wants carbon and hydrogen)? Buy them back in the tablet."
+				"&7Enclosed: sugar cane. It grows in a botany pot, and it's the fastest biomass you've got."
+				"&7Leaves need shears (two iron). Once you have proper tools, the NCP Shop sells a reinforced pair."
 			]
 			id: "556BA39D6B479B11"
 			rewards: [
@@ -635,12 +657,13 @@
 		{
 			dependencies: ["646ADF5E2F61D70F"]
 			description: [
-				"&7[NCP Field Memo #0119: Metal Atoms]"
+				"&7[NCP Field Memo #0117: Metal Atoms]"
 				""
-				"&bMortar + stratum = 5 atoms&r of its element; &bmortar + ingot = 16&r. Learn &biron&r and &bcopper&r in the tablet."
-				"A stratum smelts to 3 nuggets (about 5.3 atoms' worth), so the mortar loses a little. Memory is worth it."
-				"&bA ring of 8 atoms&r on the crafting table makes 4 nuggets again (iron, copper, tin, lead, nickel)."
-				"&7Flint mortars grind iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
+				"&bMortar + stratum = 5 atoms&r of its metal. &bMortar + ingot = 16&r. Make sixteen &biron&r and sixteen &bcopper&r:"
+				"the tablet you build next will want to learn them."
+				"A stratum smelts to 3 nuggets, about 5.3 atoms' worth, so the mortar loses a little. Memory's worth the loss."
+				"&bA ring of 8 atoms&r on the crafting table turns back into 4 nuggets (iron, copper, tin, lead, nickel)."
+				"&7Flint mortars handle iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
 			]
 			id: "271F6CBDB4715876"
 			rewards: [
@@ -672,18 +695,21 @@
 		{
 			dependencies: ["556BA39D6B479B11" "5BF37B5D49C970E6"]
 			description: [
-				"&7[NCP Field Memo #0117: Automation]"
+				"&7[NCP Field Memo #0118: Automation]"
 				""
-				"Grinding by hand pays, but it pays your time. The &bAtomic Reclaimer&r (ULV) does the same breakdown on power."
-				"&aThe simplest line:&r a &bhopper botany pot&r of sugar cane on top of a hopper, into the Reclaimer;"
-				"a hopper under the Reclaimer into a chest. No pipes, no wrench, no thinking."
+				"Grinding by hand pays, but it pays you in your own hours, and you only get so many."
+				"The &bAtomic Reclaimer&r (ULV) does the same work on power."
+				"&aThe simplest line there is:&r a &bhopper botany pot&r of cane on top of a hopper, feeding the Reclaimer;"
+				"another hopper under the Reclaimer, into a chest. No pipes. No wrench. No thinking."
+				"&7Craft the hopper pot, or buy one at the NCP Shop (8 Scrip). Keep 128 of the hydrogen it makes for this memo."
 				"A pot of cane grows &b8 a minute&r (about 5,000 EMC an hour). One Reclaimer keeps up with 12 pots."
-				"&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
-				"&aRock dust&r = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well."
-				"&aSeed I strata&r = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, this is your best EMC."
+				"&aWhat it eats:&r biomass (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
+				"Rock dust = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well."
+				"Seed I strata = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, that's your best EMC."
+				"&cIt can't break Rubric strata.&r The Ore Generator makes them too: filter them out, or the line clogs."
 				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
-				"&aInto Positronic Memory:&r pipe the atoms into a &bBasic EMC Link&r (ProjectExpansion). It banks their EMC on your tablet."
-				"&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU."
+				"&aTo bank it:&r pipe the atoms into a &bBasic EMC Link&r (ProjectExpansion), and the EMC lands on your tablet."
+				"&7At LV, electrolysis (water) and the centrifuge (air) bring hydrogen, oxygen, nitrogen and argon, paid in EU."
 			]
 			icon: "gtceu:ulv_atomic_reclaimer"
 			id: "0788A02A25C2D582"
@@ -726,12 +752,13 @@
 		{
 			dependencies: ["0788A02A25C2D582" "5BF37B5D49C970E6"]
 			description: [
-				"&7[NCP Field Memo #0113: Capacitors]"
+				"&7[NCP Field Memo #0119: Capacitors]"
 				""
-				"The Antimatter Relay (NCP calls it a Beam Capacitor) burns any item with EMC and stores it in a Klein Star."
-				"&aClose the loop:&r point the Reclaimer's output hopper into the Capacitor instead of a chest, with a Klein Star inside."
-				"Plants grow, atoms fall, the star fills: EMC with nobody at the bench."
-				"Combine 4 stars into the next size; the charge carries over."
+				"NCP calls it a Beam Capacitor. The people who built it called it an Antimatter Relay, and I'd believe either one."
+				"It takes anything with EMC, burns it, and pours what's left into a &bKlein Star&r."
+				"&aClose the loop:&r point the Reclaimer's output hopper at the Capacitor instead of the chest, with a star inside."
+				"The plants grow, the atoms fall, the star fills up, and nobody has to be at the bench."
+				"Four stars combine into the next size up, and the charge comes along."
 			]
 			id: "3F19BE1DC07334EB"
 			rewards: [
@@ -761,12 +788,14 @@
 		{
 			dependencies: ["473628F3957FFFB0"]
 			description: [
-				"&7[NCP Field Memo #0114: Charging]"
+				"&7[NCP Field Memo #0120: Charging]"
 				""
-				"A Klein Star Zwei holds 200,000 EMC (four Ein stars combined). Positronic Core I needs one filled to the brim."
-				"&aThe engine:&r the Ore Generator makes 30 Seed I strata a minute, and the Atomic Reclaimer breaks each one"
-				"into 5 atoms (40 EMC). Ore Generator -> 2 Reclaimers -> Capacitor: about 58,000 EMC an hour, with nobody at the bench."
-				"&7Plants alone are slow: a botany pot grows one cane a minute, about 600 EMC an hour."
+				"A Klein Star Zwei holds &b200,000 EMC&r (four Ein stars, combined). Core I wants one full to the brim."
+				"Not almost full. Full."
+				"&aThe engine:&r an Ore Generator makes 30 Seed I strata a minute, and an Atomic Reclaimer breaks each one"
+				"into 5 atoms (40 EMC). Ore Generator -> 2 Reclaimers -> Capacitor is about 58,000 EMC an hour, with nobody watching."
+				"&7Pull the Rubric strata out before the Reclaimers: they can't break those, and keep them for your redstone."
+				"&7Plants alone are slower: a pot of cane is about 5,000 EMC an hour."
 			]
 			id: "73A4CD65D47CBF1A"
 			rewards: [
@@ -791,12 +820,14 @@
 		{
 			dependencies: ["73A4CD65D47CBF1A"]
 			description: [
-				"&7[NCP Field Memo #0116: Keystone]"
+				"&7[NCP Field Memo #0121: Keystone]"
 				""
-				"A full star at the centre, the tier's best materials around it, on a plain &bcrafting table&r:"
-				"4 bronze blocks, 2 ULV hulls, 2 vacuum tubes. The Core is never used up:"
-				"it is the catalyst for your Clearance Card and, later, for new strata."
-				"&7Each later Core needs a bigger grid: 4x4 at LV, 5x5 at MV, 7x7 at EV, 9x9 at LuV."
+				"A full star in the middle and the best of this tier around it, on a plain &bcrafting table&r:"
+				"4 bronze blocks, 2 ULV hulls, 2 vacuum tubes."
+				"It looks like a toy. It isn't. Hold it near your ear and it hums, like something in there is thinking."
+				"Maybe something is."
+				"The Core is never used up: it's the catalyst for your first Clearance Card."
+				"&7Every Core after this wants a bigger grid: 4x4 at LV, 5x5 at MV, 7x7 at EV, 9x9 at LuV."
 			]
 			id: "7169DFA510435F8A"
 			rewards: [
@@ -823,10 +854,12 @@
 		{
 			dependencies: ["7169DFA510435F8A"]
 			description: [
-				"&7[NCP Field Memo #0117: Clearance]"
+				"&7[NCP Field Memo #0122: Clearance]"
 				""
-				"Congratulations. &bClearance Level 1&r is required to assemble LV machine hulls."
-				"Your next posting: &bThe Calla&r."
+				"Congratulations, Operator. &bClearance Level 1&r lets you assemble LV machine hulls."
+				"North Central Positronics thanks you for your service."
+				"&7(NCP thanks everybody. It's a recording.)"
+				"Your next posting is &bthe Calla&r."
 			]
 			id: "292DDC937D4EFC2A"
 			rewards: [
@@ -853,11 +886,13 @@
 		{
 			dependencies: ["681A5E2D7CD1A735" "10BB65E601DDE91E"]
 			description: [
-				"&7[NCP Field Memo #0119: First Multiblock]"
+				"&7[NCP Field Memo #0123: First Multiblock]"
 				""
-				"Your first multiblock: a 3x3x3 box of solid steel casings with a hollow centre, the controller in the middle of the front face."
+				"Your first multiblock: a 3x3x3 box of solid steel casings, hollow in the middle,"
+				"with the controller at the bottom centre of the front face."
 				"Swap casings for an input bus, an output bus, a maintenance hatch and an energy hatch."
-				"It sifts gravel and sand into strata far faster than single machines. Use the GT terminal to preview it."
+				"It sifts the same as the single machine, until you give it an LV energy hatch: then it overclocks, twice the speed."
+				"&7The GT terminal shows you the shape before you build it wrong."
 			]
 			id: "74C14908A195E46D"
 			rewards: [
@@ -883,9 +918,10 @@
 		{
 			dependencies: ["10BB65E601DDE91E"]
 			description: [
-				"&7[NCP Field Memo #0118: Optional]"
+				"&7[NCP Field Memo #0124: Optional]"
 				""
-				"Some operators like steam. It runs the same recipes without circuits. Entirely optional."
+				"Some operators like steam. It hisses, it leaks, and it runs the same recipes without circuits."
+				"Nobody's going to make you."
 			]
 			id: "7025B4CD40646C4E"
 			rewards: [
