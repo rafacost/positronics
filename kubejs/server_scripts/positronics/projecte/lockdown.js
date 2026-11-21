@@ -35,4 +35,19 @@ ServerEvents.recipes(event => {
         G: '#forge:glass',
         S: 'positronics:ncp_scrip'
     }).id('positronics:projecte/transmutation_tablet')
+
+    // Basic EMC Link: the automated "deposit" into Positronic Memory. Pipe items in and their EMC goes to
+    // the owner's network (it can also export one chosen item). Not a generator: it only moves what you made.
+    // The Beam Capacitor (relay) stays the way to fill Klein Stars for the cores.
+    event.remove({ output: 'projectexpansion:basic_emc_link' })
+    event.shaped('projectexpansion:basic_emc_link', [
+        'PCP',
+        'HTH',
+        'PCP'
+    ], {
+        P: '#forge:plates/wrought_iron',
+        C: '#gtceu:circuits/ulv',
+        H: 'minecraft:hopper',
+        T: 'projecte:transmutation_tablet'
+    }).id('positronics:projecte/basic_emc_link')
 })

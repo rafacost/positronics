@@ -141,6 +141,7 @@ CHAPTERS = [
                           "&aRock dust&r = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well.",
                           "&aSeed I strata&r = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, this is your best EMC.",
                           "It also splits your hand-made cellulose and silicon dioxide back into atoms.",
+                          "&aInto Positronic Memory:&r pipe the atoms into a &bBasic EMC Link&r (ProjectExpansion). It banks their EMC on your tablet.",
                           "&7At LV, electrolysis (water) and the centrifuge (air) add hydrogen, oxygen, nitrogen and argon, paid in EU.")},
             {"key": "capacitor", "title": "The Beam Capacitor", "deps": ["reclaimer", "tube"],
              "tasks": ["projecte:relay_mk1", "projecte:klein_star_ein"],
