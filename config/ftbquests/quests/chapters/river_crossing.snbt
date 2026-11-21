@@ -473,12 +473,13 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["10BB65E601DDE91E"]
+			dependencies: ["10BB65E601DDE91E" "3F19BE1DC07334EB"]
 			description: [
 				"&7[NCP Field Memo #0110: Ore Generator]"
 				""
 				"The Ore Generator pulls &bSeed I strata&r from the void, steadily. Build it from iron blocks, steel and a &bfull Klein Star Ein&r."
 				"&7Your Mk I cobblestone generator stays where it is: it is not part of the recipe."
+				"&aFill the star&r in your Beam Capacitor: Reclaimer atoms in, 50,000 EMC out."
 				"Build more of them. Then build more machines to eat what they make."
 			]
 			id: "473628F3957FFFB0"
@@ -723,7 +724,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["473628F3957FFFB0" "0788A02A25C2D582" "5BF37B5D49C970E6"]
+			dependencies: ["0788A02A25C2D582" "5BF37B5D49C970E6"]
 			description: [
 				"&7[NCP Field Memo #0113: Capacitors]"
 				""
