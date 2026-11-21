@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             .id(`positronics:mortar/${el}_atoms_to_nuggets`)
     })
     // Carbon back to fuel: 8 atoms -> 1 coal (the PBF's steel fuel; no charcoal, no coke ovens).
-    event.shapeless('minecraft:coal', ['8x chemlib:carbon']).id('positronics:mortar/carbon_atoms_to_coal')
+    event.shaped('minecraft:coal', ['EEE', 'E E', 'EEE'], { E: 'chemlib:carbon' }).id('positronics:mortar/carbon_atoms_to_coal')
 
     // Hand EMC (early, manual): the mortar makes the real ChemLib compounds, which Positronic Memory values
     // at the sum of their atoms (projecte/emc.js). The Atomic Reclaimer splits them into elements.
