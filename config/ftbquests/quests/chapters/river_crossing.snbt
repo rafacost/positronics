@@ -477,7 +477,8 @@
 			description: [
 				"&7[NCP Field Memo #0110: Ore Generator]"
 				""
-				"The Ore Generator pulls &bSeed I strata&r from the void, steadily. Build it from an iron block and your cobblestone generator."
+				"The Ore Generator pulls &bSeed I strata&r from the void, steadily. Build it from iron blocks, steel and a &bfull Klein Star Ein&r."
+				"&7Your Mk I cobblestone generator stays where it is: it is not part of the recipe."
 				"Build more of them. Then build more machines to eat what they make."
 			]
 			id: "473628F3957FFFB0"
@@ -722,7 +723,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["0788A02A25C2D582" "5BF37B5D49C970E6"]
+			dependencies: ["473628F3957FFFB0" "0788A02A25C2D582" "5BF37B5D49C970E6"]
 			description: [
 				"&7[NCP Field Memo #0113: Capacitors]"
 				""
@@ -753,7 +754,7 @@
 				}
 			]
 			title: "The Beam Capacitor"
-			x: 20.5d
+			x: 16.5d
 			y: 4.0d
 		}
 		{
@@ -787,7 +788,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3F19BE1DC07334EB" "73A4CD65D47CBF1A"]
+			dependencies: ["73A4CD65D47CBF1A"]
 			description: [
 				"&7[NCP Field Memo #0116: Keystone]"
 				""

@@ -208,16 +208,20 @@ ServerEvents.recipes(event => {
     })
 
     // ---- USRG Ore Generator: the first real reclamation unit (Seed I stream).
+    // A FULL Klein Star Ein in the centre, not the cobblestone generator: the Mk I is the only one
+    // (its own recipe needs lava), so it stays running and Ore Generators can be built again and again.
     event.remove({ output: 'usrg:oregenerator' })
-    event.shaped('usrg:oregenerator', [
-        'BIB',
-        'CGC',
-        'BIB'
-    ], {
-        B: 'minecraft:stone_bricks',
-        I: '#forge:storage_blocks/iron',
-        C: '#forge:ingots/steel',
-        G: 'usrg:cobblegenerator'
+    event.custom({
+        type: 'minecraft:crafting_shaped',
+        category: 'misc',
+        pattern: ['BIB', 'CSC', 'BIB'],
+        key: {
+            B: { item: 'minecraft:stone_bricks' },
+            I: { tag: 'forge:storage_blocks/iron' },
+            C: { tag: 'forge:ingots/steel' },
+            S: posFullStar('projecte:klein_star_ein')
+        },
+        result: { item: 'usrg:oregenerator' }
     }).id('positronics:gates/ore_generator')
 
     // ---- The Final Star (endgame): replaces ProjectExpansion's power-flower recipe.
