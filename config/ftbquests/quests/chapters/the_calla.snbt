@@ -645,7 +645,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["13174DD001A57611" "142FF47CDA283F7B"]
+			dependencies: ["13174DD001A57611"]
 			description: [
 				"&7[NCP Field Memo #0219: Clearance]"
 				""

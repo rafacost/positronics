@@ -706,7 +706,7 @@
 				"&aWhat it eats:&r biomass (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
 				"Rock dust = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well."
 				"Seed I strata = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, that's your best EMC."
-				"&cIt can't break Rubric strata.&r The Ore Generator makes them too: filter them out, or the line clogs."
+				"Rubric strata give only their 5 silicon atoms here. Want the redstone? Crush those instead."
 				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
 				"&aTo bank it:&r pipe the atoms into a &bBasic EMC Link&r (ProjectExpansion), and the EMC lands on your tablet."
 				"&7At LV, electrolysis (water) and the centrifuge (air) bring hydrogen, oxygen, nitrogen and argon, paid in EU."
@@ -794,7 +794,7 @@
 				"Not almost full. Full."
 				"&aThe engine:&r an Ore Generator makes 30 Seed I strata a minute, and an Atomic Reclaimer breaks each one"
 				"into 5 atoms (40 EMC). Ore Generator -> 2 Reclaimers -> Capacitor is about 58,000 EMC an hour, with nobody watching."
-				"&7Pull the Rubric strata out before the Reclaimers: they can't break those, and keep them for your redstone."
+				"&7Pull some Rubric strata out before the Reclaimers and crush them: circuits still want redstone."
 				"&7Plants alone are slower: a pot of cane is about 5,000 EMC an hour."
 			]
 			id: "73A4CD65D47CBF1A"

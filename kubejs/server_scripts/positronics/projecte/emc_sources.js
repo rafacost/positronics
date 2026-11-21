@@ -42,6 +42,10 @@ ServerEvents.recipes(event => {
       ['plumbic', 'lead'], ['nickelous', 'nickel']].forEach(s => {
         reclaim(`stratum_${s[0]}`, `positronics:${s[0]}_stratum`, [`5x chemlib:${s[1]}`], 100)
     })
+    // Rubric (redstone) is not an element. GregTech's redstone is silicon, pyrite, ruby and mercury; the Reclaimer
+    // keeps only the silicon (5 atoms, 40 EMC, like every Seed I stratum). Without this an Ore Generator line clogs
+    // on Rubric. Redstone itself still comes from the Crusher (one whole dust).
+    reclaim('stratum_rubric', 'positronics:rubric_stratum', ['5x chemlib:silicon'], 100)
 
     // Bees: honey = glucose (C6H12O6, the bottle comes back); wax and combs = CH2 chains.
     reclaim('honey', 'minecraft:honey_bottle', ['6x chemlib:carbon', '12x chemlib:hydrogen', '6x chemlib:oxygen', 'minecraft:glass_bottle'], 160)

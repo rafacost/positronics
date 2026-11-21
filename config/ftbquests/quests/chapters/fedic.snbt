@@ -134,8 +134,8 @@
 			description: [
 				"&7[NCP Field Memo #0605: Fluorine]"
 				""
-				"Fluorine from topaz, then hydrofluoric acid, then PTFE: the plastic nothing sticks to and nothing hurts."
-				"&7Hydrofluoric acid eats glass. Don't keep it in a jar."
+				"You've made hydrofluoric acid before, for Seed IV. Now make PTFE from it:"
+				"the plastic nothing sticks to and nothing hurts."
 			]
 			id: "274EE7BF6F9F3B52"
 			rewards: [

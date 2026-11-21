@@ -339,7 +339,6 @@
 				"Core IV is the catalyst for &bSeed IV&r (Seed III strata and hydrofluoric acid): tungsten, molybdenum,"
 				"the platinum group, rare earths, niobium, indium, beryllium and iridium."
 				"IV hulls need tungstensteel, so get your Seed IV here."
-				"&7Hydrofluoric acid is hydrogen and fluorine, and Seed III gives you the fluorine. Make it before you need it."
 			]
 			id: "551D2D7F46FCACF2"
 			rewards: [
@@ -364,7 +363,36 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["551D2D7F46FCACF2"]
+			dependencies: ["4464C958924B8E91"]
+			description: [
+				"&7[NCP Field Memo #0515: Fluorine]"
+				""
+				"Seed IV dissolves in &bhydrofluoric acid&r, and nothing else will do."
+				"It's hydrogen and fluorine, married in a chemical reactor. Seed III's Fluoric Stratum gives you the fluorine."
+				"&7It eats glass and it eats you. Keep it in the machines, where it belongs."
+			]
+			id: "0AA413E5582A7CAD"
+			rewards: [
+				{
+					count: 6
+					id: "567E79C8B42973BE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "04C5CB9DECBB34A0"
+					item: "gtceu:hydrofluoric_acid_bucket"
+					type: "item"
+				}
+			]
+			title: "Hydrofluoric Acid"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["551D2D7F46FCACF2" "0AA413E5582A7CAD"]
 			description: [
 				"&7[NCP Field Memo #0513: Seed IV]"
 				""

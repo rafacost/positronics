@@ -67,7 +67,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6E02508979F19036"]
+			dependencies: ["6E02508979F19036" "32F02EDCE9BC52F9"]
 			description: [
 				"&7[NCP Field Memo #1003: Hull]"
 				""
