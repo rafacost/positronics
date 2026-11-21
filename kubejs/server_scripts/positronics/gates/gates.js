@@ -1,5 +1,8 @@
 // Positronics: tier gates.
-//  1. Positronic Cores I-V: Extreme Crafting (9x9) with a FULLY charged star in the centre.
+//  1. Positronic Cores I-V: a FULLY charged star in the centre of a grid that grows with the tier
+//     (decided 2026-11-20): Core I 3x3 (crafting table, ULV), II 4x4 and III 5x5 (Nether Crafting Table,
+//     LV/MV), IV 7x7 (End Crafting Table, EV), V 9x9 (Extreme Crafting Table, LuV). Avaritia tables only
+//     come in 3/5/7/9, and a smaller pattern fits a bigger table.
 //     Stars are charged by the Antimatter Relay ("Beam Capacitor") burning your own production.
 //  2. NCP Clearance Cards 1-10: card N is made at tier N; it gates tier N+1 machine hulls.
 //  3. USRG tier upgrades need that tier's Positronic Core as a catalyst.
@@ -29,12 +32,24 @@ function posFullStar(id) {
 // Which star each Positronic Core needs (tunable; see docs/seed-chains-draft.md).
 // Each Core is built ONE tier before its strata are needed (Seed III chrome is needed for HV
 // stainless steel, Seed IV tungsten for IV, Seed V naquadah for ZPM).
+// Rebalanced 2026-11-20: every star one size down (/16). Measured ULV rate: one Ore Generator (30 strata/min)
+// into two Atomic Reclaimers is ~58k EMC/h, so Core I's 200k is an evening, not 3.2M (55 hours).
+// Each step after is x16 per tier: element value x8 per tier (emc.js) and about x2 throughput.
 const POS_CORE_STARS = {
-    1: 'projecte:klein_star_vier',            // built at ULV (River Crossing)
-    2: 'projecte:klein_star_omega',           // built at LV  (The Calla)
-    3: 'projectexpansion:magnum_star_zwei',   // built at MV  (Lud)
-    4: 'projectexpansion:magnum_star_omega',  // built at EV  (The Dogan)
-    5: 'projectexpansion:colossal_star_vier'  // built at LuV (End-World I)
+    1: 'projecte:klein_star_zwei',            // built at ULV (River Crossing)      200,000
+    2: 'projecte:klein_star_vier',            // built at LV  (The Calla)         3,200,000
+    3: 'projecte:klein_star_omega',           // built at MV  (Lud)              51,200,000
+    4: 'projectexpansion:magnum_star_vier',   // built at EV  (The Dogan)    13,107,200,000
+    5: 'projectexpansion:colossal_star_zwei'  // built at LuV (End-World I) 3,355,443,200,000
+}
+
+// Grid per core: [table tier (0 = vanilla crafting table), pattern]. A, B, C, D = POS_CORE_PARTS, S = the star.
+const POS_CORE_GRIDS = {
+    1: [0, ['ADA', 'BSB', 'ADA']],
+    2: [2, ['ABBA', 'CSDC', 'CDDC', 'ABBA']],
+    3: [2, ['ABBBA', 'BCDCB', 'BDSDB', 'BCDCB', 'ABBBA']],
+    4: [3, ['AABBBAA', 'ACCDCCA', 'BCDDDCB', 'BDDSDDB', 'BCDDDCB', 'ACCDCCA', 'AABBBAA']],
+    5: [4, ['AABBBBBAA', 'ACCDDDCCA', 'BCDDDDDCB', 'BDDCCCDDB', 'BDDCSCDDB', 'BDDCCCDDB', 'BCDDDDDCB', 'ACCDDDCCA', 'AABBBBBAA']]
 }
 
 // Mass ingredients around each core: the materials of the tier where it is built.
@@ -53,18 +68,25 @@ const POS_CABLES = ['lead', 'tin', 'copper', 'gold', 'aluminium', 'platinum', 'n
 ServerEvents.recipes(event => {
     let VA = GTValues.VA
 
-    // ---- Extreme Crafting Table: available at ULV (it's how Positronic Cores are assembled).
-    event.remove({ output: 'avaritia:extreme_crafting_table' })
-    event.shaped('avaritia:extreme_crafting_table', [
-        'PCP',
-        'THT',
-        'PCP'
-    ], {
-        P: '#forge:plates/wrought_iron',
-        C: '#gtceu:circuits/ulv',
-        T: 'minecraft:crafting_table',
-        H: 'gtceu:ulv_machine_hull'
-    }).id('positronics:gates/extreme_crafting_table')
+    // ---- Avaritia tables, one per size step, each from the one before (vanilla's need the Nether and the End).
+    let tables = [
+        ['avaritia:nether_crafting_table', 'minecraft:crafting_table', 'lv', 'steel'],             // 5x5 for Cores II-III
+        ['avaritia:end_crafting_table', 'avaritia:nether_crafting_table', 'ev', 'titanium'],     // 7x7 for Core IV
+        ['avaritia:extreme_crafting_table', 'avaritia:end_crafting_table', 'luv', 'rhodium_plated_palladium'] // 9x9 for Core V
+    ]
+    tables.forEach(t => {
+        event.remove({ output: t[0] })
+        event.shaped(t[0], [
+            'PCP',
+            'THT',
+            'PCP'
+        ], {
+            P: `#forge:plates/${t[3]}`,
+            C: `#gtceu:circuits/${t[2]}`,
+            T: t[1],
+            H: `gtceu:${t[2]}_machine_hull`
+        }).id(`positronics:gates/${t[0].split(':')[1]}`)
+    })
 
     // ---- Klein Star Ein (ProjectE's recipe needs Mobius Fuel, which needs the removed stone).
     event.remove({ output: 'projecte:klein_star_ein' })
@@ -91,34 +113,24 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/ulv'
     }).id('positronics:gates/beam_capacitor')
 
-    // ---- Positronic Cores I-V (Extreme Crafting, 9x9, table tier 4).
+    // ---- Positronic Cores I-V (grid grows with the tier, see POS_CORE_GRIDS).
+    let ing = v => v.startsWith('#') ? { tag: v.substring(1) } : { item: v }
     for (let n = 1; n <= 5; n++) {
         let p = POS_CORE_PARTS[n]
-        event.custom({
-            type: 'avaritia:shaped_table',
+        let grid = POS_CORE_GRIDS[n]
+        let all = { A: ing(p.A), B: ing(p.B), C: ing(p.C), D: ing(p.D), S: posFullStar(POS_CORE_STARS[n]) }
+        let key = {}  // only the symbols the pattern uses (vanilla rejects unused keys)
+        Object.keys(all).forEach(k => { if (grid[1].join('').indexOf(k) >= 0) key[k] = all[k] })
+        let recipe = {
+            type: grid[0] == 0 ? 'minecraft:crafting_shaped' : 'avaritia:shaped_table',
             category: 'misc',
-            tier: 4,
-            pattern: [
-                'AABBBBBAA',
-                'ACCDDDCCA',
-                'BCDDDDDCB',
-                'BDDCCCDDB',
-                'BDDCSCDDB',
-                'BDDCCCDDB',
-                'BCDDDDDCB',
-                'ACCDDDCCA',
-                'AABBBBBAA'
-            ],
-            key: {
-                A: p.A.startsWith('#') ? { tag: p.A.substring(1) } : { item: p.A },
-                B: { item: p.B },
-                C: p.C.startsWith('#') ? { tag: p.C.substring(1) } : { item: p.C },
-                D: { item: p.D },
-                S: posFullStar(POS_CORE_STARS[n])
-            },
+            pattern: grid[1],
+            key: key,
             result: { item: `positronics:positronic_core_${n}` },
             show_notification: true
-        }).id(`positronics:gates/positronic_core_${n}`)
+        }
+        if (grid[0] > 0) recipe.tier = grid[0]
+        event.custom(recipe).id(`positronics:gates/positronic_core_${n}`)
     }
 
     // ---- Clearance Card 1 (ULV): hand-crafted around Positronic Core I (the core is kept).

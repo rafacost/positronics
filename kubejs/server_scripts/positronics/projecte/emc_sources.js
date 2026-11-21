@@ -36,6 +36,13 @@ ServerEvents.recipes(event => {
     reclaim('silica', 'chemlib:silicon_dioxide', ['chemlib:silicon', '2x chemlib:oxygen'], 60)
     reclaim('methane', 'chemlib:methane', ['chemlib:carbon', '4x chemlib:hydrogen'], 60)
 
+    // Seed I strata = 5 atoms of their element, the same as the hand mortar. This is what makes the Ore
+    // Generator (30 strata a minute) an EMC engine at ULV: one Reclaimer eats 12 a minute, ~29k EMC an hour.
+    ;[['ferrous', 'iron'], ['cupric', 'copper'], ['stannic', 'tin'], ['carbonic', 'carbon'],
+      ['plumbic', 'lead'], ['nickelous', 'nickel']].forEach(s => {
+        reclaim(`stratum_${s[0]}`, `positronics:${s[0]}_stratum`, [`5x chemlib:${s[1]}`], 100)
+    })
+
     // Bees: honey = glucose (C6H12O6, the bottle comes back); wax and combs = CH2 chains.
     reclaim('honey', 'minecraft:honey_bottle', ['6x chemlib:carbon', '12x chemlib:hydrogen', '6x chemlib:oxygen', 'minecraft:glass_bottle'], 160)
     reclaim('wax', 'productivebees:wax', ['4x chemlib:carbon', '8x chemlib:hydrogen'], 120)

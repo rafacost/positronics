@@ -374,10 +374,10 @@
 			description: [
 				"&7[NCP Field Memo #0314: Charging]"
 				""
-				"819,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
+				"51,200,000 EMC, the biggest Klein Star. Core III is a 5x5 recipe on the Nether Crafting Table."
 				"&7Lud's automation, piped into capacitors, fills it."
 			]
-			icon: "projectexpansion:magnum_star_zwei"
+			icon: "projecte:klein_star_omega"
 			id: "49B96889FFBA43AD"
 			rewards: [
 				{
@@ -390,11 +390,11 @@
 			tasks: [
 				{
 					id: "0EC6561BCF4B7399"
-					item: "projectexpansion:magnum_star_zwei"
+					item: "projecte:klein_star_omega"
 					type: "item"
 				}
 			]
-			title: "A Full Magnum Star Zwei"
+			title: "A Full Klein Star Omega"
 			x: 10.0d
 			y: 1.5d
 		}

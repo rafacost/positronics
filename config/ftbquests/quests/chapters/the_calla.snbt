@@ -266,7 +266,9 @@
 			description: [
 				"&7[NCP Field Memo #0208: Generators]"
 				""
-				"Solar is not enough any more. Turbines, combustion generators, or many panels."
+				"LV machines draw 32 EU/t = 128 FE/t. Eight ULV panels and an LV circuit make two &bLV panels&r"
+				"(64 FE/t each): the same power in a quarter of the space. An LV converter takes up to 128 FE/t per amp."
+				"&7Turbines and combustion generators are GregTech's way, if you would rather burn fuel."
 			]
 			id: "0B36685DD948EDD5"
 			rewards: [
@@ -279,13 +281,47 @@
 			]
 			tasks: [
 				{
+					count: 4L
 					id: "2A2005AC88D33C31"
-					item: "gtceu:lv_steam_turbine"
+					item: "solarflux:sp_2"
+					type: "item"
+				}
+				{
+					id: "249F9D5891D5A4DF"
+					item: "gtceu:lv_1a_energy_converter"
 					type: "item"
 				}
 			]
 			title: "Real Power"
 			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5698A43B1860CDCF"]
+			description: [
+				"&7[NCP Field Memo #0216: Assembly]"
+				""
+				"A 5x5 crafting grid, built around a plain crafting table with LV parts."
+				"Positronic Core II is a 4x4 recipe and Core III a 5x5: both are assembled here."
+			]
+			id: "57B1D419E3BC4109"
+			rewards: [
+				{
+					count: 3
+					id: "7F00510AE9923C8F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "30B3D43B994F4F72"
+					item: "avaritia:nether_crafting_table"
+					type: "item"
+				}
+			]
+			title: "The Nether Crafting Table"
+			x: 10.0d
 			y: 1.5d
 		}
 		{
@@ -328,7 +364,7 @@
 			]
 			title: "Buses and Hatches"
 			x: 10.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5698A43B1860CDCF"]
@@ -361,7 +397,7 @@
 			]
 			title: "Cupronickel Coils"
 			x: 10.0d
-			y: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BDECB449BAD33CC" "23959B9E619112CD"]
@@ -498,7 +534,7 @@
 			description: [
 				"&7[NCP Field Memo #0214: Charging]"
 				""
-				"51,200,000 EMC. Your LV lines, piped into capacitors, can fill it."
+				"3,200,000 EMC (four Drei stars). Your LV lines, piped into capacitors, can fill it."
 			]
 			id: "0869EFFA1D316A5E"
 			rewards: [
@@ -512,16 +548,16 @@
 			tasks: [
 				{
 					id: "4071ADC966CAEA60"
-					item: "projecte:klein_star_omega"
+					item: "projecte:klein_star_vier"
 					type: "item"
 				}
 			]
-			title: "A Full Klein Star Omega"
+			title: "A Full Klein Star Vier"
 			x: 14.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0869EFFA1D316A5E"]
+			dependencies: ["0869EFFA1D316A5E" "57B1D419E3BC4109"]
 			description: [
 				"&7[NCP Field Memo #0215: Keystone]"
 				""

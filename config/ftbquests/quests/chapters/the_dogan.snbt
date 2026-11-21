@@ -277,7 +277,8 @@
 			description: [
 				"&7[NCP Field Memo #0511: Charging]"
 				""
-				"209,715,200,000 EMC. The Dogan's chemical complex, piped into capacitors."
+				"13,107,200,000 EMC. ProjectExpansion's Magnum Stars are where NCP keeps the heavy charge."
+				"&7The Dogan's chemical complex, piped into capacitors."
 			]
 			id: "37BB45932FE347EA"
 			rewards: [
@@ -291,16 +292,43 @@
 			tasks: [
 				{
 					id: "39DADA7C0945CB13"
-					item: "projectexpansion:magnum_star_omega"
+					item: "projectexpansion:magnum_star_vier"
 					type: "item"
 				}
 			]
-			title: "A Full Magnum Star Omega"
+			title: "A Full Magnum Star Vier"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["37BB45932FE347EA" "755FBD7E2E24798C"]
+			dependencies: ["22289E8809BF87AE"]
+			description: [
+				"&7[NCP Field Memo #0513: Assembly]"
+				""
+				"A 7x7 grid: your Nether Crafting Table rebuilt with EV parts. Positronic Core IV is assembled here."
+			]
+			id: "61088813BEE63811"
+			rewards: [
+				{
+					count: 6
+					id: "67E5311FC1A50592"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "512C9241E0D59CFE"
+					item: "avaritia:end_crafting_table"
+					type: "item"
+				}
+			]
+			title: "The End Crafting Table"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37BB45932FE347EA" "755FBD7E2E24798C" "61088813BEE63811"]
 			description: [
 				"&7[NCP Field Memo #0512: Keystone]"
 				""
