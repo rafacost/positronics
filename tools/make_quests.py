@@ -188,6 +188,7 @@ def main():
                 elif isinstance(t, dict) and "observe" in t:
                     # Look at a placed block (item tasks miss blocks placed while the quest was locked).
                     check(t["observe"], f"{cid}/{k} observe task")
+                    lines.append(f"\t\t\t\t\ticon: {s(t.get('icon', t['observe']))}")
                     lines.append(f"\t\t\t\t\tid: {tid}")
                     lines.append("\t\t\t\t\tobserve_type: 0")
                     lines.append("\t\t\t\t\ttimer: 0L")

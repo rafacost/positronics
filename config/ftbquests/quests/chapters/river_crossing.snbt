@@ -691,6 +691,7 @@
 			]
 			tasks: [
 				{
+					icon: "gtceu:ulv_atomic_reclaimer"
 					id: "739849B36F6BEC2A"
 					observe_type: 0
 					timer: 0L
@@ -698,6 +699,7 @@
 					type: "observation"
 				}
 				{
+					icon: "botanypots:terracotta_hopper_botany_pot"
 					id: "54CAEA897217627F"
 					observe_type: 0
 					timer: 0L
