@@ -137,6 +137,7 @@ CHAPTERS = [
                           "Grinding by hand pays, but it pays your time. The &bAtomic Reclaimer&r (ULV) does the same breakdown on power.",
                           "&aThe simplest line:&r a &bhopper botany pot&r of sugar cane on top of a hopper, into the Reclaimer;",
                           "a hopper under the Reclaimer into a chest. No pipes, no wrench, no thinking.",
+                          "A pot of cane grows &b8 a minute&r (about 5,000 EMC an hour). One Reclaimer keeps up with 12 pots.",
                           "&aBiomass&r (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O.",
                           "&aRock dust&r = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well.",
                           "&aSeed I strata&r = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, this is your best EMC.",

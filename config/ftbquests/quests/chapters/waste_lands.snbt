@@ -21,6 +21,7 @@
 				"&eOpen this book any time with the quest key. Claim rewards with the button on each quest."
 				""
 				"&7Enclosed: one block of dirt for your botany pot. Do not dig up the island to get more."
+				"&7Also enclosed: a thermometer and a season calendar. The weather out here will try to kill you; know it first."
 			]
 			icon: "minecraft:lantern"
 			id: "504F530000001001"
@@ -34,6 +35,16 @@
 				{
 					id: "504F530000003011"
 					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "504F530000003020"
+					item: "toughasnails:thermometer"
+					type: "item"
+				}
+				{
+					id: "504F530000003021"
+					item: "sereneseasons:calendar"
 					type: "item"
 				}
 			]
