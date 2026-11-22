@@ -13,6 +13,9 @@ ServerEvents.recipes(event => {
         reclamation_forge_hammer: '#forge:storage_blocks/iron',
         reclamation_sifter: 'minecraft:iron_bars'
     }
+    // The furnace only smelts, so it is the cheap one: redstone where the others take ULV circuits.
+    // (It used to share the smelter's exact grid, which made one of the two uncraftable.)
+    let cheap = { reclamation_furnace: 'minecraft:redstone' }
     Object.keys(machineParts).forEach(name => {
         event.shaped(`gtceu:ulv_${name}`, [
             'WCW',
@@ -20,7 +23,7 @@ ServerEvents.recipes(event => {
             'WCW'
         ], {
             W: '#forge:plates/wrought_iron',
-            C: '#gtceu:circuits/ulv',
+            C: cheap[name] || '#gtceu:circuits/ulv',
             X: machineParts[name],
             H: 'gtceu:ulv_machine_hull'
         }).id(`positronics:foundation/${name}`)
