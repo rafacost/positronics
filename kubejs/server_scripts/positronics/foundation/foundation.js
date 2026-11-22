@@ -29,6 +29,26 @@ ServerEvents.recipes(event => {
         }).id(`positronics:foundation/${name}`)
     })
 
+    // Multiblock parts by hand at ULV, for the Sifter Array. GregTech makes ULV buses and the ULV voltage coil
+    // only in an (LV) assembler, and its maintenance hatch needs an LV hull (Clearance 1). The assembler
+    // versions stay; these cost the same parts with rubber in place of glue. GT's screwdriver flips a bus.
+    event.shaped('gtceu:ulv_input_bus', ['C', 'H', 'R'], {
+        C: '#forge:chests/wooden', H: 'gtceu:ulv_machine_hull', R: 'gtceu:rubber_plate'
+    }).id('positronics:foundation/ulv_input_bus_by_hand')
+    event.shaped('gtceu:ulv_output_bus', ['R', 'H', 'C'], {
+        C: '#forge:chests/wooden', H: 'gtceu:ulv_machine_hull', R: 'gtceu:rubber_plate'
+    }).id('positronics:foundation/ulv_output_bus_by_hand')
+    // The coil feeds GT's own shaped ULV energy hatch (hull, coil, two red alloy cables).
+    event.shaped('gtceu:ulv_voltage_coil', ['WWW', 'WRW', 'WWW'], {
+        W: '#forge:fine_wires/lead', R: '#forge:rods/magnetic_iron'
+    }).id('positronics:foundation/ulv_voltage_coil_by_hand')
+    event.shaped('gtceu:maintenance_hatch', ['dwx', 'hHc', 'fsr'], {
+        H: 'gtceu:ulv_machine_hull',
+        d: '#gtceu:tools/crafting_screwdrivers', w: '#gtceu:tools/crafting_wrenches', x: '#gtceu:tools/crafting_wire_cutters',
+        h: '#gtceu:tools/crafting_hammers', c: '#gtceu:tools/crafting_crowbars', f: '#gtceu:tools/crafting_files',
+        s: '#gtceu:tools/crafting_saws', r: '#gtceu:tools/crafting_mallets'
+    }).id('positronics:foundation/maintenance_hatch_ulv')
+
     // Early storage blocks by hand (GregTech leaves 9 ingots -> block to the compressor). Power, the forge
     // hammer and Core I need iron, bronze and steel blocks before any compressor runs. Later metals keep GT's way.
     ;[['iron', 'minecraft:iron_block'], ['bronze', 'gtceu:bronze_block'], ['steel', 'gtceu:steel_block']].forEach(b => {

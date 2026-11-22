@@ -418,7 +418,7 @@
 				"The &bCrusher&r gets a whole dust: a whole ingot. &aThree times the metal&r from the same pile."
 				"One Crusher eats about 8 strata a minute. One Ore Generator makes 30. Do the arithmetic and build accordingly."
 				"The &bSmelter&r does bronze, red alloy, tin alloy and &bsteel without a coke oven&r: no fuel, thirty seconds an ingot."
-				"The &bSifter&r on its own is a slow thing. Four of them are the start of something much bigger."
+				"The &bSifter&r on its own is a slow thing. Make &bfour&r: they're the start of something much bigger."
 			]
 			id: "681A5E2D7CD1A735"
 			rewards: [
@@ -441,6 +441,7 @@
 					type: "item"
 				}
 				{
+					count: 4L
 					id: "0E197A04FBEB24B4"
 					item: "gtceu:ulv_reclamation_sifter"
 					type: "item"
@@ -924,6 +925,10 @@
 				"The rest is a 3x3x3 box of solid steel casings, hollow in the middle, controller at the bottom centre"
 				"of the front face. Swap casings for an input bus, a maintenance hatch, an energy hatch and the output buses:"
 				"seven strata come out, and a ULV bus holds one stack, so &bseven output buses&r (it takes up to eight)."
+				"That's &b15 casings&r, 1 input bus, 7 output buses, 1 maintenance hatch and 1 ULV energy hatch."
+				"All of it comes off a crafting table at ULV. A bus is a hull, a chest and a rubber plate: chest on top"
+				"for input, underneath for output. The energy hatch wants a &bULV voltage coil&r: eight fine lead wires"
+				"round a magnetic iron rod. The maintenance hatch is a hull and every tool you own."
 				"&aIt sifts deep:&r one gravel gives &b4 strata&r on circuit 1. Add a fluid hatch and &bhoney&r"
 				"(50 mB a run, circuit 11) and it's &b8&r. An LV energy hatch and circuit 2 make it 16 (12: 32 with honey);"
 				"MV and circuit 3, 64 (13: 128). Same mix as the Ore Generator."
@@ -943,6 +948,33 @@
 				{
 					id: "08D977DE6FC92BD3"
 					item: "gtceu:reclamation_sifter_array"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "45809BAA4A7841E2"
+					item: "gtceu:solid_machine_casing"
+					type: "item"
+				}
+				{
+					id: "4D8706EE80DB175D"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "50550CBC3EE940C0"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					id: "49128C70AD2946A2"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "239CECB085336796"
+					item: "gtceu:ulv_energy_input_hatch"
 					type: "item"
 				}
 			]

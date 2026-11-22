@@ -33,7 +33,7 @@ Rules:
   Quartzite is the only source for LV emitters and sensors; glowstone dust is the only source for AE2 terminals and blank patterns (GT makes it only from ores). Two Rough Diamonds and a hammer make one diamond. None of these items has EMC.
 - **Feed:** the USRG **Gravel Generator** (a full Ein star). Generators are the raw stream (USRG tiers: 30 / 60 / 240 / 960 / 3,840 items a minute); the Array is the yield multiplier. The two multiply.
 - **Throttle:** downstream. Reclaimers (12 strata a minute each at ULV) and Crushers (about 8) have to eat it, and bees have to make the honey.
-- **Hatches:** up to 8 output buses (seven strata, and a ULV bus holds one stack), 2 fluid inputs, 2 item inputs, 1–2 energy hatches.
+- **Hatches:** up to 8 output buses (seven strata, and a ULV bus holds one stack), 2 fluid inputs, 2 item inputs, 1–2 energy hatches. A basic working build is 15 casings, 1 input bus, 7 output buses, 1 maintenance hatch and 1 ULV energy hatch. All of these are hand-craftable at ULV (`foundation.js`): GregTech only makes ULV buses and the ULV voltage coil in the LV assembler, and puts its maintenance hatch on an LV hull.
 - **Teaches:** hatches, buses, circuits, the GT terminal preview. Then it teaches that the bottleneck moves.
 
 ### The booster ladder (plan; build each with its tier)
