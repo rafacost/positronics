@@ -53,16 +53,21 @@ ServerEvents.recipes(event => {
     reclaim('honeycomb', 'minecraft:honeycomb', ['4x chemlib:carbon', '8x chemlib:hydrogen'], 120)
 
     // The machine itself.
-    let hullRecipe = (tier, circuit, plate, id) => event.shaped(`gtceu:${tier}_atomic_reclaimer`, [
-        'PCP',
-        'MHM',
-        'PCP'
-    ], {
-        P: `#forge:plates/${plate}`,
-        C: `#gtceu:circuits/${circuit}`,
-        M: tier == 'ulv' ? 'gtceu:flint_mortar' : `gtceu:${tier}_electric_motor`,
-        H: `gtceu:${tier}_machine_hull`
-    }).id(`positronics:emc/${id}`)
+    let hullRecipe = (tier, circuit, plate, id) => {
+        let r = event.shaped(`gtceu:${tier}_atomic_reclaimer`, [
+            'PCP',
+            'MHM',
+            'PCP'
+        ], {
+            P: `#forge:plates/${plate}`,
+            C: `#gtceu:circuits/${circuit}`,
+            M: tier == 'ulv' ? 'gtceu:flint_mortar' : `gtceu:${tier}_electric_motor`,
+            H: `gtceu:${tier}_machine_hull`
+        }).id(`positronics:emc/${id}`)
+        // The two flint mortars are built INTO the ULV machine. GT tools normally come back damaged
+        // from a crafting grid, so they are replaced with nothing here.
+        if (tier == 'ulv') r.replaceIngredient('gtceu:flint_mortar', 'minecraft:air')
+    }
     hullRecipe('ulv', 'ulv', 'wrought_iron', 'reclaimer_ulv')
     hullRecipe('lv', 'lv', 'steel', 'reclaimer_lv')
     hullRecipe('mv', 'mv', 'aluminium', 'reclaimer_mv')
