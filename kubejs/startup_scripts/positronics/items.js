@@ -19,6 +19,15 @@ StartupEvents.registry('item', event => {
         .color(1, 0x8f8f8f)
         .tier('stone')
 
+    // Rough Diamond: the Sifter Array's dust-sifting gem. GregTech has no flawed diamond, so this is
+    // ours: two of them and a hammer make one minecraft:diamond (multiblocks.js).
+    event.create('positronics:rough_diamond')
+        .displayName('Rough Diamond')
+        .texture('layer0', 'gtceu:item/material_sets/diamond/gem_chipped')
+        .texture('layer1', 'gtceu:item/material_sets/diamond/gem_chipped_overlay')
+        .color(0, 0xB8E8E4)
+        .tooltip('§7Industrial grade. Two of them and a hammer make one.')
+
     // Simple hand-made meals: no Pam's kitchen tools needed (Spice of Life variety from day one).
     event.create('positronics:garden_salad')
         .displayName('Garden Salad')

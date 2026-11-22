@@ -243,15 +243,136 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6175C1319BD5FAD6"]
+			dependencies: ["066B06E7AEFFCADD"]
+			description: [
+				"&7[NCP Field Memo #3019: One Window]"
+				""
+				"Every chest and drawer touching an &bInventory Connector&r shows up in one &bStorage Terminal&r."
+				"Inventory cables carry the reach further; a cable connector at the far end picks up one more chest."
+				"The connector wants a diamond and a comparator, the terminal a comparator and a ULV circuit."
+				"That's why it waits for the dust: the Array is where the quartz and the diamonds come from."
+				"&7It doesn't craft for you. It just stops you opening forty chests to find one screw."
+			]
+			id: "75B27088B24F4B4B"
+			rewards: [
+				{
+					count: 2
+					id: "4B4D131C2587EDBF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "24C1B9F9A7E9483C"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "0B8176E3EF03AE13"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			title: "Tom's Simple Storage"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75B27088B24F4B4B"]
+			description: [
+				"&7[NCP Field Memo #3020: One Grid]"
+				""
+				"A storage terminal, four crafting tables and four diamonds (eight Rough Diamonds)."
+				"The grid pulls straight from the network, and EMI's recipe transfer fills it for you."
+			]
+			id: "23989D09BFB1E0D1"
+			rewards: [
+				{
+					count: 2
+					id: "204A72700787936F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "328422E0B815914B"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Crafting Terminal"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75B27088B24F4B4B" "1D032E845854B761"]
+			description: [
+				"&7[NCP Field Memo #3021: Sixteen Blocks]"
+				""
+				"Planks, a comparator, a gold plate, an LV circuit, glass and an ender pearl from the Simulation Lab."
+				"Shift-click it on a terminal to bind it. It reaches &b16 blocks&r."
+			]
+			id: "0D396C68EB6D765C"
+			rewards: [
+				{
+					count: 2
+					id: "2540FF72157F6722"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0E9EB01DF3930899"
+					item: "toms_storage:ts.wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Wireless Terminal (Tom's)"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D396C68EB6D765C"]
+			description: [
+				"&7[NCP Field Memo #3022: Sixty-Four Blocks]"
+				""
+				"Four steel plates and two LV circuits around the wireless terminal. It reaches &b64 blocks&r."
+				"&7After that, the network that follows you everywhere is AE2's."
+			]
+			id: "51682E110653339F"
+			rewards: [
+				{
+					count: 2
+					id: "0E84C4DDC3F4B150"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2DEAADADCF513192"
+					item: "toms_storage:ts.adv_wireless_terminal"
+					type: "item"
+				}
+			]
+			title: "Advanced Wireless Terminal"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["066B06E7AEFFCADD" "70B5506B5FAD2B04"]
 			description: [
 				"&7[NCP Field Memo #3008: AE2]"
 				""
 				"Somewhere else, people find these presses in meteorites. Nothing falls from the sky here."
 				"NCP assembles the four presses in an LV assembler: four steel plates, an LV circuit, and one of what"
 				"each press prints (silicon, a gold plate, certus or a diamond)."
-				"Certus quartz crystals grow from Crystalline Stratum dust in an autoclave."
-				"Diamonds can be made from graphite (Carbonic Stratum), if you're patient and have the power."
+				"Certus quartz crystals grow from certus dust in an autoclave: the Array sifts it out of rock dust,"
+				"and Crystalline Stratum dust works too. The gold plate is what waits for Seed II."
+				"Diamonds: two Rough Diamonds and a hammer, or graphite (Carbonic Stratum) in an autoclave."
 			]
 			id: "5ECC7924EC9A43D9"
 			rewards: [

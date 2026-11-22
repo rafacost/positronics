@@ -951,6 +951,45 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["74C14908A195E46D"]
+			description: [
+				"&7[NCP Field Memo #0126: Rock Dust]"
+				""
+				"You've been sweeping it up for weeks. The pale stuff a hammer leaves behind sand, the stuff strata"
+				"leave behind when they break. You made clay out of it and threw the rest away."
+				"Put &bDust&r in the Array instead. Same circuits as gravel, same honey. On circuit 1, every dust gives"
+				"&b30%&r nether quartz, &b20%&r certus quartz dust, &b15%&r lapis and &b2%&r a &bRough Diamond&r."
+				"LV (circuit 2) roughly doubles it and adds &b10%&r sky stone dust; MV (circuit 3) doubles it again."
+				"Honey doubles all of it (circuits 11, 12, 13)."
+				"Two Rough Diamonds and a hammer make a diamond. Quartz makes comparators."
+				"&7NCP never threw anything away. That was the one thing they got right."
+			]
+			id: "066B06E7AEFFCADD"
+			rewards: [
+				{
+					count: 2
+					id: "250A1983A81F3EBE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4545ADCD46C51A18"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "3BD5281A81C0F43C"
+					item: "positronics:rough_diamond"
+					type: "item"
+				}
+			]
+			title: "Rock Dust"
+			x: 24.5d
+			y: -2.5d
+		}
+		{
 			dependencies: ["10BB65E601DDE91E"]
 			description: [
 				"&7[NCP Field Memo #0124: Optional]"

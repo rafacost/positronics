@@ -47,6 +47,40 @@ ServerEvents.recipes(event => {
         sift(`${t[0]}_honey`, t[1] + 10, t[2], t[3] * 2, true)
     })
 
+    // Dust sifting (the Array only): rock dust (positronics:dust, from hammered sand and strata
+    // processing) -> the early gems other mods need: quartz (comparators, Tom's, AE2), lapis, certus
+    // and sky dust (AE2, MEGA cells), rough diamonds. Same circuits, same honey (x2) as deep sifting.
+    // Values = expected items per dust; whole counts are fixed, the remainder is a chance.
+    let dustYield = {
+        ulv: { 'minecraft:quartz': 0.30, 'ae2:certus_quartz_dust': 0.20, 'minecraft:lapis_lazuli': 0.15, 'positronics:rough_diamond': 0.02 },
+        lv: { 'minecraft:quartz': 0.50, 'ae2:certus_quartz_dust': 0.40, 'minecraft:lapis_lazuli': 0.30, 'ae2:sky_dust': 0.10, 'positronics:rough_diamond': 0.05 },
+        mv: { 'minecraft:quartz': 1.00, 'ae2:certus_quartz_dust': 0.80, 'minecraft:lapis_lazuli': 0.60, 'ae2:sky_dust': 0.25, 'positronics:rough_diamond': 0.10 }
+    }
+    let dustSift = (tier, circuit, eut, factor, honey) => {
+        let r = event.recipes.gtceu.reclamation_sifting(`positronics:multiblocks/dust_sift_${tier}${honey ? '_honey' : ''}`)
+            .itemInputs('positronics:dust')
+            .circuit(circuit)
+        if (honey) r = r.inputFluids('productivebees:honey 50')
+        let fixed = [], chanced = []
+        Object.keys(dustYield[tier]).forEach(item => {
+            let n = dustYield[tier][item] * factor
+            let whole = Math.floor(n), frac = Math.round((n - whole) * 10000)
+            if (whole > 0) fixed.push(`${whole}x ${item}`)
+            if (frac > 0) chanced.push([item, frac])
+        })
+        if (fixed.length) r = r.itemOutputs(fixed)
+        chanced.forEach(c => { r = r.chancedOutput(c[0], c[1], 0) })
+        r.duration(40).EUt(eut)
+    }
+    ;[['ulv', 1, 7], ['lv', 2, 30], ['mv', 3, 120]].forEach(t => {
+        dustSift(t[0], t[1], t[2], 1, false)
+        dustSift(t[0], t[1] + 10, t[2], 2, true)
+    })
+
+    // Two rough diamonds and a hammer: one diamond (the hammer takes the damage).
+    event.shapeless('minecraft:diamond', ['2x positronics:rough_diamond', '#gtceu:tools/crafting_hammers'])
+        .id('positronics:multiblocks/rough_diamond_to_diamond')
+
     event.shaped('gtceu:calla_paddy', [
         'PCP',
         'MHM',

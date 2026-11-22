@@ -22,6 +22,15 @@ Rules:
   | 2 | LV (30 EU/t) | 16 | 32 |
   | 3 | MV (120 EU/t) | 64 | 128 |
 
+- **Dust sifting** (built 2026-11-22): rock dust (`positronics:dust`) on the same circuits and honey. The early source of what other mods need (Tom's, AE2). Expected items per dust, honey doubles every row:
+
+  | Circuit | Quartz | Certus dust | Lapis | Sky dust | Rough Diamond |
+  |---|---|---|---|---|---|
+  | 1 (ULV) | 0.30 | 0.20 | 0.15 | none | 0.02 |
+  | 2 (LV) | 0.50 | 0.40 | 0.30 | 0.10 | 0.05 |
+  | 3 (MV) | 1.00 | 0.80 | 0.60 | 0.25 | 0.10 |
+
+  Two Rough Diamonds and a hammer make one diamond. None of these items has EMC.
 - **Feed:** the USRG **Gravel Generator** (a full Ein star). Generators are the raw stream (USRG tiers: 30 / 60 / 240 / 960 / 3,840 items a minute); the Array is the yield multiplier. The two multiply.
 - **Throttle:** downstream. Reclaimers (12 strata a minute each at ULV) and Crushers (about 8) have to eat it, and bees have to make the honey.
 - **Hatches:** up to 8 output buses (seven strata, and a ULV bus holds one stack), 2 fluid inputs, 2 item inputs, 1–2 energy hatches.

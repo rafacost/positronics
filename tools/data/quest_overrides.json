@@ -953,6 +953,10 @@
    16.0,
    1.5
   ],
+  "logistics/pccard": [
+   12.0,
+   -1.5
+  ],
   "logistics/pipes": [
    0.0,
    0.0
@@ -967,6 +971,10 @@
   ],
   "logistics/sfm": [
    4.0,
+   1.5
+  ],
+  "logistics/wireless": [
+   12.0,
    1.5
   ],
   "logistics/xnet": [
@@ -1355,6 +1363,10 @@
   ],
   "river_crossing/deeper": [
    10.5,
+   -2.5
+  ],
+  "river_crossing/dustsift": [
+   24.5,
    -2.5
   ],
   "river_crossing/gravelgen": [

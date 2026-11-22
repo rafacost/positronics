@@ -55,6 +55,7 @@ Versions marked **(Greg-E)** are the exact files Greg-E runs together on Forge 4
 | AppliedE | 0.14.3 (Greg-E) |
 | Programmed Circuit Card | 1.20.1-1.2.9 (Greg-E) |
 | Functional Storage | 1.20.1-1.2.10 (Greg-E) |
+| Tom's Simple Storage | 1.20-1.7.1 (ULV/LV storage before AE2, as in Star Technology) |
 | XNet | 1.20-6.1.7 (Greg-E) |
 | Pipez | 1.20.1-1.2.26 (Greg-E) |
 | Super Factory Manager | 4.32.0 (Greg-E) |
