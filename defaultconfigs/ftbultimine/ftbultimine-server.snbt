@@ -1,0 +1,6 @@
+# Default config file that will be copied to saves/<world>/serverconfig/ftbultimine-server.snbt if it does not exist!
+# Positronics: ultimine costs 5 exhaustion per block (default 20); metabolism.js adds the steady burn.
+
+{
+	exhaustion_per_block: 5.0d
+}
