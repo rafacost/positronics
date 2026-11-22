@@ -1196,7 +1196,7 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Wrought Iron Hammer for 10 NCP Scrip."
+				"1x Wrought Iron Hammer (Unbreaking I) for 10 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
@@ -1205,7 +1205,18 @@
 			rewards: [
 				{
 					id: "6FFD07A5C2D29200"
-					item: "gtceu:wrought_iron_hammer"
+					item: {
+											Count: 1
+											id: "gtceu:wrought_iron_hammer"
+											tag: {
+												Enchantments: [
+													{
+														id: "minecraft:unbreaking"
+														lvl: 1
+													}
+												]
+											}
+										}
 					type: "item"
 				}
 			]
@@ -1218,7 +1229,7 @@
 					type: "item"
 				}
 			]
-			title: "Wrought Iron Hammer"
+			title: "Wrought Iron Hammer (Unbreaking I)"
 			x: 4.5d
 			y: 9.0d
 		}
@@ -1452,7 +1463,7 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Steel Hammer for 15 NCP Scrip."
+				"1x Steel Hammer (Unbreaking II) for 15 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
 			]
@@ -1461,7 +1472,18 @@
 			rewards: [
 				{
 					id: "3E7A76ABC6EEB322"
-					item: "gtceu:steel_hammer"
+					item: {
+											Count: 1
+											id: "gtceu:steel_hammer"
+											tag: {
+												Enchantments: [
+													{
+														id: "minecraft:unbreaking"
+														lvl: 2
+													}
+												]
+											}
+										}
 					type: "item"
 				}
 			]
@@ -1474,7 +1496,7 @@
 					type: "item"
 				}
 			]
-			title: "Steel Hammer"
+			title: "Steel Hammer (Unbreaking II)"
 			x: 7.5d
 			y: 10.5d
 		}
@@ -1704,6 +1726,49 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["066B06E7AEFFCADD"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"1x Diamond Hammer (Unbreaking III) for 25 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+				"&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."
+			]
+			icon: "gtceu:diamond_hammer"
+			id: "39C71172D93E3B21"
+			rewards: [
+				{
+					id: "1D8E13B1A01C13DA"
+					item: {
+											Count: 1
+											id: "gtceu:diamond_hammer"
+											tag: {
+												Enchantments: [
+													{
+														id: "minecraft:unbreaking"
+														lvl: 3
+													}
+												]
+											}
+										}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 25L
+					id: "5DA58BFCFBBBDA7B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Diamond Hammer (Unbreaking III)"
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
 			dependencies: ["076E7CC3AFDAC867"]
 			description: [
 				"&7[NCP Shop]"
@@ -1742,7 +1807,7 @@
 				}
 			]
 			title: "NCP-issue Shears"
-			x: 1.5d
+			x: 3.0d
 			y: 13.5d
 		}
 	]

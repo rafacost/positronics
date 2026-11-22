@@ -343,10 +343,21 @@ def shop():
                    ("steel", "Steel", 15, "river_crossing:steelhammer")]
     tool_kinds = ["hammer", "wrench", "file", "screwdriver", "wire_cutter", "saw", "mortar", "knife"]
     tool_offers = []
+    # Hammers are the tool you burn through, so the shop's hammers come reinforced: Unbreaking I (wrought
+    # iron), II (steel), III (diamond). The diamond hammer costs 10 more than steel and unlocks with the
+    # first diamond you can make (Rock Dust: Rough Diamonds from the Array).
+    hammer_unbreaking = {"wrought_iron": 1, "steel": 2, "diamond": 3}
+    def tool_reward(mat, kind):
+        if kind != "hammer":
+            return f"gtceu:{mat}_{kind}"
+        return {"id": f"gtceu:{mat}_hammer",
+                "tag": {"Enchantments": [{"id": "minecraft:unbreaking", "lvl": hammer_unbreaking[mat]}]}}
     for mat, mat_name, price, unlock in tool_grades:
         for kind in tool_kinds:
-            tool_offers.append((f"tool_{mat}_{kind}", f"{mat_name} {kind.replace('_', ' ').title()}", price,
-                                f"gtceu:{mat}_{kind}", 1, unlock))
+            title = f"{mat_name} {kind.replace('_', ' ').title()}" + (f" (Unbreaking {'I' * hammer_unbreaking[mat]})" if kind == "hammer" else "")
+            tool_offers.append((f"tool_{mat}_{kind}", title, price, tool_reward(mat, kind), 1, unlock))
+    tool_offers.append(("tool_diamond_hammer", "Diamond Hammer (Unbreaking III)", 25,
+                        tool_reward("diamond", "hammer"), 1, "river_crossing:dustsift"))
     # Shears wear out and leaves are biomass (Green Atoms). Plain shears are 2 iron; the shop sells a
     # reinforced pair (Unbreaking III, ~4x the uses) so it is worth the Scrip without replacing the recipe.
     tool_offers.append(("shears", "NCP-issue Shears", 8,
