@@ -7,7 +7,7 @@ Added 2026-11-20: **Alchemistry** (+ ChemLib, AlchemyLib, KubeJS Alchemistry, AE
 | Mod | Decision | Status |
 |---|---|---|
 | **Immersive Engineering** | **Garden Cloche only.** | ✅ Done: every other IE recipe removed (excavator/veins, coke oven, blast furnace, wires); the cloche has a GT recipe at LV; the IE bee-processing add-on's recipes are removed. |
-| **Productive Bees** | Keep resource bees: "if one likes the bee path, it deserves to *bee* rewarded". **Balance instead of removal.** | ✅ Done (Proposal B): 51 resource combs → Strata via GT centrifuge; Apiary chapter; honey booster in the Calla Paddy |
+| **Productive Bees** | Honey, atoms and worker bees; **never a metal or ore source** (revised 2026-11-22). | ✅ Done: every resource comb gives only wax and honey (GT centrifuge); Apiary tutorial to the first honey bucket; honey booster in the Array and the Calla Paddy |
 | **Ad Astra + Stargate Journey** | **HV and higher are gated by ores found only on other planets.** Ships first, then stargates: a distant planet holds naquadah and the first Stargate, which you bring home. | ✅ Done (Proposal A, mapping approved): planet ground sifted at home; Glacio Stargate ruin (worldgen, verified); Space Program chapter |
 | **Alchemistry** | **Make it shine:** elements as quest rewards, crafting with real chemical components, chemistry fully integrated with GregTech. | ✅ Done (Proposal C): separate chemistry layer with guard rails, GT-tiered machines, fluid bridges, chemistry samples on Clearance Cards 3-10, Periodic Table chapter |
 
@@ -33,6 +33,7 @@ How this fits what already exists:
 Open details for you: planet ore lists are a first pass (we can make the Moon fancier); and is the Glacio Stargate a structure you find (needs a small datapack), or parts you dig up and assemble?
 
 ## Proposal B: Bees rewarded, but inside the system
+**Superseded 2026-11-22:** resource bees all trace back to a Crystalline bee, which nests only in the Nether (out of scope: the pack treats the Nether and End as magic). Their combs now give only wax and honey. Bees make honey (booster), atoms (Reclaimer) and worker-bee utility. Whether bees get one custom rare-item line is still open. The original proposal, kept for the record:
 - **Resource bees stay**, but their combs **centrifuge (GT centrifuge only) into Strata of the matching tier**, not raw metals. An iron bee gives Ferrous Stratum; a titanium bee gives Titanic Stratum. Bees become a strong, *alternative* strata stream (no core needed for the bees' own tier), so the bee player is rewarded and the processing lines stay meaningful.
 - **Bee tiers follow Clearance:** you can only breed or obtain a resource bee whose tier you've reached (catalyst items or eggs gated by the Clearance Card or Core).
 - **Nature bees** (honey, wax, pollen) feed the **booster path**: special honeys as optional inputs that speed up GT machines and the Calla Paddy.
@@ -51,7 +52,7 @@ Open details for you: planet ore lists are a first pass (we can make the Moon fa
 
 ## Next steps
 Once you confirm A (planet mapping), B and C, I'll implement in this order:
-1. **Locks:** planet ores only off-Earth; bee comb → strata.
+1. **Locks:** planet ores only off-Earth; resource bee combs → wax and honey only.
 2. **Space:** veins, rockets and quests.
 3. **Chemistry:** unification, the Periodic Table chapter, then GT recipes using compounds.
 4. **Bees:** chapter.

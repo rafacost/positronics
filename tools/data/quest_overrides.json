@@ -671,8 +671,36 @@
   "the_doors/uhvhull/task/0": "5159B9EF9356F56A"
  },
  "pos": {
+  "apiary/boost": [
+   10.0,
+   -1.5
+  ],
+  "apiary/bottler": [
+   6.0,
+   0.0
+  ],
+  "apiary/centrifuge": [
+   4.0,
+   0.0
+  ],
+  "apiary/comb": [
+   2.0,
+   0.0
+  ],
   "apiary/hive": [
    0.0,
+   0.0
+  ],
+  "apiary/honey": [
+   8.0,
+   0.0
+  ],
+  "apiary/more": [
+   10.0,
+   1.5
+  ],
+  "apiary/sugar": [
+   10.0,
    0.0
   ],
   "calla_kitchen/autofood": [
@@ -1168,12 +1196,16 @@
    4.5
   ],
   "ncp_shop/shears": [
-   1.5,
+   3.0,
    13.5
   ],
   "ncp_shop/spruce": [
    6.0,
    1.5
+  ],
+  "ncp_shop/tool_diamond_hammer": [
+   1.5,
+   13.5
   ],
   "ncp_shop/tool_steel_file": [
    1.5,

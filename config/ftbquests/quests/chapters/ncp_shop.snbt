@@ -595,66 +595,6 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Ashy Mining Bee (egg) for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "productivebees:spawn_egg_ashy_mining_bee"
-			id: "28C6F57E5D708FF9"
-			rewards: [
-				{
-					id: "7119953948479656"
-					item: "productivebees:spawn_egg_ashy_mining_bee"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					count: 8L
-					id: "51C56BE253FD3FE7"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Ashy Mining Bee (egg)"
-			x: 1.5d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"1x Blue Banded Bee (egg) for 8 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "productivebees:spawn_egg_blue_banded_bee"
-			id: "4505288B8DD743E8"
-			rewards: [
-				{
-					id: "40E7331F85FF5AA7"
-					item: "productivebees:spawn_egg_blue_banded_bee"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					count: 8L
-					id: "6705B38E272643BD"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Blue Banded Bee (egg)"
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
 				"4x Tomato Seeds for 1 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
@@ -677,7 +617,7 @@
 				}
 			]
 			title: "Tomato Seeds"
-			x: 4.5d
+			x: 1.5d
 			y: 4.5d
 		}
 		{
@@ -707,7 +647,7 @@
 				}
 			]
 			title: "Lettuce Seeds"
-			x: 6.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
@@ -737,7 +677,7 @@
 				}
 			]
 			title: "Onion Seeds"
-			x: 7.5d
+			x: 4.5d
 			y: 4.5d
 		}
 		{
@@ -767,8 +707,8 @@
 				}
 			]
 			title: "Corn Seeds"
-			x: 0.0d
-			y: 6.0d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -797,8 +737,8 @@
 				}
 			]
 			title: "Rice Seeds"
-			x: 1.5d
-			y: 6.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -827,7 +767,7 @@
 				}
 			]
 			title: "Bean Seeds"
-			x: 3.0d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -857,7 +797,7 @@
 				}
 			]
 			title: "Cucumber Seeds"
-			x: 4.5d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
@@ -887,7 +827,7 @@
 				}
 			]
 			title: "Strawberry Seeds"
-			x: 6.0d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -917,7 +857,7 @@
 				}
 			]
 			title: "Bellpepper Seeds"
-			x: 7.5d
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -947,8 +887,8 @@
 				}
 			]
 			title: "Broccoli Seeds"
-			x: 0.0d
-			y: 7.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -977,8 +917,8 @@
 				}
 			]
 			title: "Spinach Seeds"
-			x: 1.5d
-			y: 7.5d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1007,7 +947,7 @@
 				}
 			]
 			title: "Grape Seeds"
-			x: 3.0d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -1037,7 +977,7 @@
 				}
 			]
 			title: "Cotton Seeds"
-			x: 4.5d
+			x: 1.5d
 			y: 7.5d
 		}
 		{
@@ -1067,7 +1007,7 @@
 				}
 			]
 			title: "Flax Seeds"
-			x: 6.0d
+			x: 3.0d
 			y: 7.5d
 		}
 		{
@@ -1097,7 +1037,7 @@
 				}
 			]
 			title: "Garlic Seeds"
-			x: 7.5d
+			x: 4.5d
 			y: 7.5d
 		}
 		{
@@ -1127,8 +1067,8 @@
 				}
 			]
 			title: "Peas Seeds"
-			x: 0.0d
-			y: 9.0d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1157,8 +1097,8 @@
 				}
 			]
 			title: "Soybean Seeds"
-			x: 1.5d
-			y: 9.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1187,7 +1127,7 @@
 				}
 			]
 			title: "Papyrus Seeds"
-			x: 3.0d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -1230,7 +1170,7 @@
 				}
 			]
 			title: "Wrought Iron Hammer (Unbreaking I)"
-			x: 4.5d
+			x: 1.5d
 			y: 9.0d
 		}
 		{
@@ -1262,7 +1202,7 @@
 				}
 			]
 			title: "Wrought Iron Wrench"
-			x: 6.0d
+			x: 3.0d
 			y: 9.0d
 		}
 		{
@@ -1294,7 +1234,7 @@
 				}
 			]
 			title: "Wrought Iron File"
-			x: 7.5d
+			x: 4.5d
 			y: 9.0d
 		}
 		{
@@ -1326,8 +1266,8 @@
 				}
 			]
 			title: "Wrought Iron Screwdriver"
-			x: 0.0d
-			y: 10.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
 			can_repeat: true
@@ -1358,8 +1298,8 @@
 				}
 			]
 			title: "Wrought Iron Wire Cutter"
-			x: 1.5d
-			y: 10.5d
+			x: 7.5d
+			y: 9.0d
 		}
 		{
 			can_repeat: true
@@ -1390,7 +1330,7 @@
 				}
 			]
 			title: "Wrought Iron Saw"
-			x: 3.0d
+			x: 0.0d
 			y: 10.5d
 		}
 		{
@@ -1422,7 +1362,7 @@
 				}
 			]
 			title: "Wrought Iron Mortar"
-			x: 4.5d
+			x: 1.5d
 			y: 10.5d
 		}
 		{
@@ -1454,7 +1394,7 @@
 				}
 			]
 			title: "Wrought Iron Knife"
-			x: 6.0d
+			x: 3.0d
 			y: 10.5d
 		}
 		{
@@ -1497,7 +1437,7 @@
 				}
 			]
 			title: "Steel Hammer (Unbreaking II)"
-			x: 7.5d
+			x: 4.5d
 			y: 10.5d
 		}
 		{
@@ -1529,8 +1469,8 @@
 				}
 			]
 			title: "Steel Wrench"
-			x: 0.0d
-			y: 12.0d
+			x: 6.0d
+			y: 10.5d
 		}
 		{
 			can_repeat: true
@@ -1561,8 +1501,8 @@
 				}
 			]
 			title: "Steel File"
-			x: 1.5d
-			y: 12.0d
+			x: 7.5d
+			y: 10.5d
 		}
 		{
 			can_repeat: true
@@ -1593,7 +1533,7 @@
 				}
 			]
 			title: "Steel Screwdriver"
-			x: 3.0d
+			x: 0.0d
 			y: 12.0d
 		}
 		{
@@ -1625,7 +1565,7 @@
 				}
 			]
 			title: "Steel Wire Cutter"
-			x: 4.5d
+			x: 1.5d
 			y: 12.0d
 		}
 		{
@@ -1657,7 +1597,7 @@
 				}
 			]
 			title: "Steel Saw"
-			x: 6.0d
+			x: 3.0d
 			y: 12.0d
 		}
 		{
@@ -1689,7 +1629,7 @@
 				}
 			]
 			title: "Steel Mortar"
-			x: 7.5d
+			x: 4.5d
 			y: 12.0d
 		}
 		{
@@ -1721,8 +1661,8 @@
 				}
 			]
 			title: "Steel Knife"
-			x: 0.0d
-			y: 13.5d
+			x: 6.0d
+			y: 12.0d
 		}
 		{
 			can_repeat: true
@@ -1764,8 +1704,8 @@
 				}
 			]
 			title: "Diamond Hammer (Unbreaking III)"
-			x: 1.5d
-			y: 13.5d
+			x: 7.5d
+			y: 12.0d
 		}
 		{
 			can_repeat: true
@@ -1807,7 +1747,7 @@
 				}
 			]
 			title: "NCP-issue Shears"
-			x: 3.0d
+			x: 0.0d
 			y: 13.5d
 		}
 	]

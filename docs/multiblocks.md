@@ -42,7 +42,7 @@ The Array, and later multiblocks, take one optional booster fluid. Plain honey w
 | Tier | Array sifts | Booster | Source |
 |---|---|---|---|
 | ULV | gravel → Seed I | honey ×2 (built) | `productivebees:honey` |
-| LV | gravel → Seed I | **Strata Honey** ×4 | Seed I resource-bee combs, centrifuged |
+| LV | gravel → Seed I | **Strata Honey** ×4 | source to decide (resource bees were shut off 2026-11-22) |
 | MV | gravel → Seed I | **Royal Honey** ×4 | the Calla Apiary Hall |
 | HV | moon sand | **Lunar Lubricant** ×4 | GT lubricant + moon dust, mixer |
 | EV | mars sand | **Martian Lubricant** ×4 | GT lubricant + mars dust |

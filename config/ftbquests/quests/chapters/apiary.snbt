@@ -252,8 +252,7 @@
 				"&bBee cages&r (a honey bottle between two planks, four at a time) carry a bee: right-click it to catch,"
 				"right-click the ground to let it go. Sneak to let it go on a hive and that hive becomes its home."
 				"A &bhoney treat&r (comb and honey bottle) calms an angry bee and grows a baby faster."
-				"&7Solitary bees from the Shop won't live in a hive. They want a nest: an Ashy Mining bee takes a coarse dirt"
-				"&7nest (a wooden sword and coarse dirt). Pretty, but they make nothing you need yet."
+				"&7Bees that work for you instead of for honey start further down: solitary nests and worker bees."
 			]
 			id: "3AE416EDEA558437"
 			rewards: [
@@ -274,6 +273,177 @@
 			title: "More Bees"
 			x: 10.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3AE416EDEA558437"]
+			description: [
+				"&7[NCP Field Memo #3509: Solitary]"
+				""
+				"Not every bee keeps a hive. &bSolitary bees&r live alone in a nest, make no honey and won't move into"
+				"your beehive. What they're good for is &bbreeding&r: the right two make a worker bee."
+				"A crafted nest is empty. Place it, right-click it with a &bhoney treat&r, and after a while a bee moves in."
+				"Which bee depends on the nest:"
+				"&bOak Nest&r (wooden sword, oak log): a Green Carpenter or a Yellow-Black Carpenter bee."
+				"&bDirt Nest&r (wooden sword, coarse dirt): a Chocolate Mining, Ashy Mining or Leafcutter bee."
+				"&bStone Nest&r (iron sword, stone): a Digger or a Mason bee."
+				"Wrong one? Craft the nest with itself to empty it and try again. Break a nest to carry it, bee and all."
+				"&7Glass box rules still apply. A solitary bee is just as good at finding the void."
+			]
+			id: "4B900A3C1EF3FE40"
+			rewards: [
+				{
+					count: 3
+					id: "731C7C6C39152FDE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "352A2CB5B58D349F"
+					item: "productivebees:oak_wood_nest"
+					type: "item"
+				}
+				{
+					id: "2226841A2096A9B7"
+					item: "productivebees:coarse_dirt_nest"
+					type: "item"
+				}
+				{
+					id: "4FBE2B8669740841"
+					item: "productivebees:stone_nest"
+					type: "item"
+				}
+			]
+			title: "Solitary Nests"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B900A3C1EF3FE40"]
+			description: [
+				"&7[NCP Field Memo #3510: Worker]"
+				""
+				"Bring a &bGreen Carpenter&r and a &bYellow-Black Carpenter&r together (bee cages help) and feed each"
+				"one a flower. Their baby is a &bLumber Bee&r: it lives in an advanced beehive like a honey bee does."
+				"Instead of flowers it visits &blogs&r near the hive, and what it brings home is whatever that block"
+				"would drop: a log for a log. A &bFeeding Slab&r (a smooth stone slab on a chest) holds three blocks for it."
+				"&7Logs are atoms for the Reclaimer, and these never need replanting."
+			]
+			icon: "productivebees:spawn_egg_lumber_bee"
+			id: "5D08333AD2479F03"
+			rewards: [
+				{
+					count: 3
+					id: "74F124628EE188B7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "723A11DE87970A7F"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Lumber Bee"
+			x: 14.0d
+			y: 0.8d
+		}
+		{
+			dependencies: ["4B900A3C1EF3FE40"]
+			description: [
+				"&7[NCP Field Memo #3511: Worker]"
+				""
+				"A &bChocolate Mining&r bee and a &bDigger&r bee, each fed a flower, make a &bQuarry Bee&r."
+				"It works &bstone, sand and gravel&r near its hive (or in a Feeding Slab) and brings home that block's"
+				"drop: cobblestone from stone, sand from sand, gravel (now and then flint) from gravel."
+				"&7A cobblestone generator that hums. Sand and gravel too, without a hammer."
+			]
+			icon: "productivebees:spawn_egg_quarry_bee"
+			id: "1D2C3E1681EADF8B"
+			rewards: [
+				{
+					count: 3
+					id: "409588CBA6974963"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6D173EF60741DBD1"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Quarry Bee"
+			x: 14.0d
+			y: 2.2d
+		}
+		{
+			dependencies: ["3AE416EDEA558437"]
+			description: [
+				"&7[NCP Field Memo #3512: Worker]"
+				""
+				"Feed a &bhopper&r to a grown honey bee: right-click the bee with it. It turns into a &bCollector Bee&r."
+				"Living in an advanced beehive, it picks up items lying on the ground within &b4 blocks&r"
+				"(one more per range upgrade) and puts them in the hive. Leave the hive some room."
+				"&7Put one next to anything that drops things. Saplings, mostly."
+			]
+			icon: "minecraft:hopper"
+			id: "3D856055F59F02EE"
+			rewards: [
+				{
+					count: 3
+					id: "76F6B76C57029F43"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "05A3E11BF7591A76"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Collector Bee"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3AE416EDEA558437" "66E986A4489A0BEF"]
+			description: [
+				"&7[NCP Field Memo #3513: Hazard]"
+				""
+				"Feed a &bblock of TNT&r to a honey bee and it becomes a &bCreeBee&r. Here TNT comes only from"
+				"chemistry (toluene, from your oil, and sulfuric acid in a chemical reactor), so this one waits."
+				"Its &bpowdery comb&r goes in the bee centrifuge: half the time &bgunpowder&r, always wax and 50 mB of honey."
+				"&cIt explodes when angered.&r Give it a hive of its own, far from anything you like."
+				"&7NCP's Agricultural Division filed this under 'pest control'. Nobody asked which pest."
+			]
+			id: "34E82D3FA2ADE942"
+			rewards: [
+				{
+					count: 3
+					id: "4F964078F268CD44"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "169C5BB42EDA61AB"
+					item: "productivebees:honeycomb_powdery"
+					type: "item"
+				}
+			]
+			title: "CreeBee"
+			x: 12.0d
+			y: -3.0d
 		}
 	]
 	title: "The Apiary"

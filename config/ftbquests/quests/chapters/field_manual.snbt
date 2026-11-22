@@ -227,8 +227,8 @@
 				"This world has no ores, and the ore blocks you find drop nothing. Whatever was in them is gone."
 				"Everything comes from &bstrata&r instead: layers of the old world, pressed thin."
 				"Seed I comes from hammering (cobblestone, gravel and sand each hide different ones), the Sifter,"
-				"the Ore Generator and bees. Seeds II-V come from enrichment (with a Positronic Core),"
-				"from upgraded generators, and from bees of that tier."
+				"the Ore Generator and the Sifter Array. Seeds II-V come from enrichment (with a Positronic Core)"
+				"and from upgraded generators."
 				"&7The &bStrata Index&7 chapter lists what every stratum gives."
 			]
 			icon: "positronics:ferrous_stratum"

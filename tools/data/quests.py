@@ -74,7 +74,7 @@ CHAPTERS = [
                           "Steel goes through sand like it isn't there, and sometimes there's something in it:",
                           "&bRubric&r (redstone) and &bNickelous&r strata.",
                           "Enjoy it. This is as deep as a hand tool will ever go. From here on the strata come from machines",
-                          "(sifters, Ore Generators, bees), and every one of them is hungry for its own voltage.")},
+                          "(sifters, Ore Generators, the Array), and every one of them is hungry for its own voltage.")},
             {"key": "hull", "title": "A ULV Hull", "deps": ["tools", "rubber", "pbf", "steelhammer"],
              "tasks": ["gtceu:ulv_machine_casing", "gtceu:ulv_machine_hull"],
              "desc": memo("0108", "Hull",

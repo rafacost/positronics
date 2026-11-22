@@ -14,7 +14,7 @@
 				""
 				"&bMain:&r Iron"
 				"&bByproducts:&r Nickel (10%), Manganese (5%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 				"&7Furnace: 3 Iron Nuggets. Crusher: one whole dust."
 			]
 			id: "12295443D1BC75C0"
@@ -42,7 +42,7 @@
 				""
 				"&bMain:&r Copper"
 				"&bByproducts:&r Gold (5%), Cobalt (3%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 				"&7Furnace: 3 Copper Nuggets. Crusher: one whole dust."
 			]
 			id: "039BB957FD3EC83C"
@@ -70,7 +70,7 @@
 				""
 				"&bMain:&r Tin"
 				"&bByproducts:&r Zinc (10%), Antimony (3%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 				"&7Furnace: 3 Tin Nuggets. Crusher: one whole dust."
 			]
 			id: "1F2E7C145AF094E0"
@@ -98,7 +98,7 @@
 				""
 				"&bMain:&r Coal"
 				"&bByproducts:&r Graphite (5%), Sulfur (8%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 			]
 			id: "08D25067D506A433"
 			rewards: [
@@ -125,7 +125,7 @@
 				""
 				"&bMain:&r Lead"
 				"&bByproducts:&r Silver (5%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 				"&7Furnace: 3 Lead Nuggets. Crusher: one whole dust."
 			]
 			id: "4989E647427B8FDD"
@@ -153,7 +153,7 @@
 				""
 				"&bMain:&r Nickel"
 				"&bByproducts:&r Cobalt (5%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 				"&7Furnace: 3 Nickel Nuggets. Crusher: one whole dust."
 			]
 			id: "3B599250D85154A2"
@@ -181,7 +181,7 @@
 				""
 				"&bMain:&r Redstone"
 				"&bByproducts:&r Glowstone (2%)"
-				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and resource bees."
+				"&bSource:&r hand hammering (sometimes), the Sifter, the Ore Generator (Tier 1) and the Sifter Array."
 			]
 			id: "628EF0B0EE7386BD"
 			rewards: [
@@ -208,7 +208,7 @@
 				""
 				"&bMain:&r Bauxite"
 				"&bByproducts:&r Gallium (5%), Rutile (3%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "2F68A60FCD9CE2B1"
 			rewards: [
@@ -235,7 +235,7 @@
 				""
 				"&bMain:&r Silicon Dioxide"
 				"&bByproducts:&r Glass (20%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "7E1B7C75052D093C"
 			rewards: [
@@ -262,7 +262,7 @@
 				""
 				"&bMain:&r Gallium"
 				"&bByproducts:&r Arsenic (50%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "1050C8BEA329CBD8"
 			rewards: [
@@ -289,7 +289,7 @@
 				""
 				"&bMain:&r Gold"
 				"&bByproducts:&r Silver (20%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "2E0E564E0779341F"
 			rewards: [
@@ -316,7 +316,7 @@
 				""
 				"&bMain:&r Salt"
 				"&bByproducts:&r Lithium (5%), Rock Salt (15%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "22911CD03DE86F98"
 			rewards: [
@@ -343,7 +343,7 @@
 				""
 				"&bMain:&r Sulfur"
 				"&bByproducts:&r Pyrite (20%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "704C5C76015E276B"
 			rewards: [
@@ -370,7 +370,7 @@
 				""
 				"&bMain:&r Antimony"
 				"&bByproducts:&r Cobalt (10%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "329E86855974E819"
 			rewards: [
@@ -397,7 +397,7 @@
 				""
 				"&bMain:&r Certus Quartz"
 				"&bByproducts:&r Nether Quartz (30%)"
-				"&bSource:&r Seed I strata enriched with Positronic Core II, a Tier 2 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed I strata enriched with Positronic Core II, or a Tier 2 Ore Generator."
 			]
 			id: "1AA1C09DA6828797"
 			rewards: [
@@ -424,7 +424,7 @@
 				""
 				"&bMain:&r Rutile"
 				"&bByproducts:&r Ilmenite (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "131A31A4AC1454FC"
 			rewards: [
@@ -451,7 +451,7 @@
 				""
 				"&bMain:&r Chromite"
 				"&bByproducts:&r Magnesium (10%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "04E5D74DD77CE617"
 			rewards: [
@@ -478,7 +478,7 @@
 				""
 				"&bMain:&r Vanadium Magnetite"
 				"&bByproducts:&r Magnetite (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "6F60866E2C81EDB7"
 			rewards: [
@@ -505,7 +505,7 @@
 				""
 				"&bMain:&r Diamond"
 				"&bByproducts:&r Emerald (10%), Sapphire (10%), Ruby (10%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "04711B1E7AF7D88F"
 			rewards: [
@@ -532,7 +532,7 @@
 				""
 				"&bMain:&r Spodumene"
 				"&bByproducts:&r Lepidolite (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "177B742EEE555F89"
 			rewards: [
@@ -559,7 +559,7 @@
 				""
 				"&bMain:&r Topaz"
 				"&bByproducts:&r Calcite (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "652F56F96EC41D90"
 			rewards: [
@@ -586,7 +586,7 @@
 				""
 				"&bMain:&r Oilsands"
 				"&bByproducts:&r Coal (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "30F2DE6C874FAC21"
 			rewards: [
@@ -613,7 +613,7 @@
 				""
 				"&bMain:&r Pitchblende"
 				"&bByproducts:&r Uraninite (20%)"
-				"&bSource:&r Seed II strata enriched with Positronic Core III, a Tier 3 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed II strata enriched with Positronic Core III, or a Tier 3 Ore Generator."
 			]
 			id: "059CCDC0ADD9EAF6"
 			rewards: [
@@ -640,7 +640,7 @@
 				""
 				"&bMain:&r Scheelite"
 				"&bByproducts:&r Tungstate (30%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "37DC6ECAD2EEAEE0"
 			rewards: [
@@ -667,7 +667,7 @@
 				""
 				"&bMain:&r Molybdenite"
 				"&bByproducts:&r Wulfenite (15%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "3D1E4881464B2BB9"
 			rewards: [
@@ -694,7 +694,7 @@
 				""
 				"&bMain:&r Cooperite"
 				"&bByproducts:&r Platinum Group Sludge (10%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "7DD649B4BA9DB372"
 			rewards: [
@@ -721,7 +721,7 @@
 				""
 				"&bMain:&r Monazite"
 				"&bByproducts:&r Bastnasite (30%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "769CEBFE27450D35"
 			rewards: [
@@ -748,7 +748,7 @@
 				""
 				"&bMain:&r Pyrochlore"
 				"&bByproducts:&r Tantalite (20%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "3C20219F9784B476"
 			rewards: [
@@ -775,7 +775,7 @@
 				""
 				"&bMain:&r Sphalerite"
 				"&bByproducts:&r Indium (5%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "7607BD300512776D"
 			rewards: [
@@ -802,7 +802,7 @@
 				""
 				"&bMain:&r Beryllium"
 				"&bByproducts:&r Emerald (15%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "59E25FB2942EC0F0"
 			rewards: [
@@ -829,7 +829,7 @@
 				""
 				"&bMain:&r Iridium"
 				"&bByproducts:&r Osmium (30%)"
-				"&bSource:&r Seed III strata enriched with Positronic Core IV, a Tier 4 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed III strata enriched with Positronic Core IV, or a Tier 4 Ore Generator."
 			]
 			id: "6E6058DFD89CAB4C"
 			rewards: [
@@ -856,7 +856,7 @@
 				""
 				"&bMain:&r Naquadah"
 				"&bByproducts:&r Enriched Naquadah (10%)"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "7C24F3E36FC63113"
 			rewards: [
@@ -883,7 +883,7 @@
 				""
 				"&bMain:&r Europium"
 				"&bByproducts:&r Samarium (20%)"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "11BC6296B941058C"
 			rewards: [
@@ -910,7 +910,7 @@
 				""
 				"&bMain:&r Trinium"
 				"&bByproducts:&r Naquadria (5%)"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "18D190F026F4ABF4"
 			rewards: [
@@ -937,7 +937,7 @@
 				""
 				"&bMain:&r Duranium"
 				"&bByproducts:&r Tritanium (5%)"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "20BD384B80FEEF13"
 			rewards: [
@@ -964,7 +964,7 @@
 				""
 				"&bMain:&r Plutonium"
 				"&bByproducts:&r Americium (10%)"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "4FE1C0FA4D94CB43"
 			rewards: [
@@ -991,7 +991,7 @@
 				""
 				"&bMain:&r Neutronium"
 				"&bByproducts:&r none"
-				"&bSource:&r Seed IV strata enriched with Positronic Core V, a Tier 5 Ore Generator, or resource bees of that tier."
+				"&bSource:&r Seed IV strata enriched with Positronic Core V, or a Tier 5 Ore Generator."
 			]
 			id: "4A8F72394EC5F0F8"
 			rewards: [
