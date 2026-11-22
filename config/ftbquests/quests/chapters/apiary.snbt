@@ -14,7 +14,13 @@
 				"&7[NCP Field Memo #3501: Bees]"
 				""
 				"Nothing spawns here, and that goes for bees too. NCP's agricultural division ships the first one with your hive."
-				"An advanced beehive keeps the bees working and collects their combs. Flowers nearby keep them happy."
+				"&aThe hive, in two steps:&r a plain &bbeehive&r (six planks, three string: NCP swapped the honeycomb"
+				"for string, since you have no bees yet), then the &badvanced beehive&r: three oak planks on top,"
+				"string, beehive, string in the middle, a campfire, a plank and shears along the bottom."
+				"&aWhere it goes:&r outside, front face open to the sky. Bees work by day and stay in when it rains."
+				"&aFlowers:&r a bee with nothing to pollinate makes nothing. Bone meal (NCP Shop) on the island's grass"
+				"grows plains flowers; a Botany Pot grows more from one. Plant a few within a few blocks of the hive."
+				"Then use the egg near the hive. A homeless bee finds an empty hive by itself."
 				"&7Listen to them for a minute. It's the first thing that's buzzed around here that wasn't a machine."
 			]
 			id: "1E64986BC9048338"
@@ -45,155 +51,226 @@
 		{
 			dependencies: ["1E64986BC9048338"]
 			description: [
-				"&7[NCP Field Memo #3502: Breeding Stock]"
+				"&7[NCP Field Memo #3502: Comb]"
 				""
-				"Two solitary bees for your breeding programme. More eggs are sold at the NCP Shop."
-				"Productive Bees' own guide (and EMI) shows which pairs and items lead to which bees."
+				"The bee goes out, finds a flower, comes back and spends a while inside. When it leaves again,"
+				"there's a &bhoneycomb&r in the hive. Right-click the advanced beehive: you can see who's home and take"
+				"the combs out of its slots. A hopper underneath does it for you."
+				"Nothing coming? Check the obvious: daylight, no rain, flowers close by, the hive's front not blocked."
+				"&7In a hurry, you can whack the hive with a stick to throw a bee out. It loses its trip. So do you."
 			]
-			id: "3C6607A53E878674"
+			id: "665C6224699B504A"
 			rewards: [
 				{
 					count: 3
-					id: "7D5A1172D8A61360"
+					id: "79D61F32BF605241"
 					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-				{
-					id: "4C6D2F8A131831F9"
-					item: "productivebees:spawn_egg_ashy_mining_bee"
-					type: "item"
-				}
-				{
-					id: "6F8B880BD45F487B"
-					item: "productivebees:spawn_egg_blue_banded_bee"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					count: 8L
-					id: "4447F77DC28A2E12"
+					count: 4L
+					id: "5AE1A1D0BE4E7902"
 					item: "minecraft:honeycomb"
 					type: "item"
 				}
 			]
-			title: "Solitary Bees"
+			title: "First Comb"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C6607A53E878674" "5698A43B1860CDCF"]
+			dependencies: ["665C6224699B504A"]
 			description: [
-				"&7[NCP Field Memo #3503: Centrifuge]"
+				"&7[NCP Field Memo #3503: Spin]"
 				""
-				"Resource combs only open in a &bGregTech centrifuge&r. A metal or gem comb gives the matching"
-				"&bstratum&r (an iron bee gives Ferrous Stratum), plus wax and honey, at that stratum's tier voltage."
-				"Bees are a whole second strata stream: no Positronic Core needed for the bee's own tier."
+				"A comb is wax holding honey. The Productive Bees &bCentrifuge&r (seven iron ingots round a grindstone)"
+				"spins them apart: every honeycomb gives &bwax&r and &b100 mB of honey&r, kept in its tank (10 buckets)."
+				"It needs no power: &b15 seconds&r a comb. A hopper feeds it, or just drop combs on top."
+				"&7Don't bother eating the combs. You'll see."
 			]
-			id: "4E9691DFB82975BD"
+			id: "1CB383807D8DDD83"
 			rewards: [
 				{
 					count: 3
-					id: "09D94040DC9535FE"
+					id: "695A01F711FED77F"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "62B1CB43B948B808"
-					item: "gtceu:lv_centrifuge"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "67B2B946958F6B80"
-					item: "productivebees:wax"
+					id: "795391C43F6937E0"
+					item: "productivebees:centrifuge"
 					type: "item"
 				}
 			]
-			title: "Comb Processing"
+			title: "The Centrifuge"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4E9691DFB82975BD"]
+			dependencies: ["1CB383807D8DDD83"]
 			description: [
-				"&7[NCP Field Memo #3504: Metal Bees]"
+				"&7[NCP Field Memo #3504: Bottler]"
 				""
-				"Breed your way to an iron bee and a copper bee, and bring back one comb of each. Centrifuge them into strata."
-				"Higher-tier bees give higher-tier strata, but they need a centrifuge of that tier."
-				"&7A bee that makes iron. The old world would've called that a miracle. You'll call it a slow week."
+				"Honey in a tank is no use to you yet. Put a &bBottler&r (iron ingots, glass, a smooth stone slab)"
+				"right next to the centrifuge and it fills itself. Give it glass bottles: &b250 mB&r a bottle,"
+				"so two and a half combs make one &bhoney bottle&r."
 			]
-			id: "048735C0CE36DCBF"
+			id: "278E2B578F380076"
 			rewards: [
 				{
-					count: 6
-					id: "2658C07F61224005"
+					count: 3
+					id: "2186C50A680DA54E"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "4718B7711FEBE3B0"
-					item: {
-											Count: 1
-											id: "productivebees:configurable_honeycomb"
-											tag: {
-												EntityTag: {
-													type: "productivebees:iron"
-												}
-											}
-										}
+					id: "352CCC74CE66FC79"
+					item: "productivebees:bottler"
 					type: "item"
 				}
 				{
-					id: "1D60FC6013AC5A5C"
-					item: {
-											Count: 1
-											id: "productivebees:configurable_honeycomb"
-											tag: {
-												EntityTag: {
-													type: "productivebees:copper"
-												}
-											}
-										}
+					count: 4L
+					id: "5503351956199AFC"
+					item: "minecraft:honey_bottle"
 					type: "item"
 				}
 			]
-			title: "Resource Bees"
+			title: "Bottled"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4E9691DFB82975BD"]
+			dependencies: ["278E2B578F380076"]
 			description: [
-				"&7[NCP Field Memo #3505: Boosters]"
+				"&7[NCP Field Memo #3505: Honey]"
 				""
-				"Honey is a booster. In the &bSifter Array&r (circuit 11, 12 or 13, 50 mB a run) it doubles the strata."
-				"In the &bCalla Paddy&r, beside the water, the harvest goes up to 12 crops a cycle (4 plain, 8 with fertiliser)."
-				"&7Every bee you keep is a little more of everything else."
+				"Four honey bottles and a bucket make a &bbucket of honey&r: ten combs' worth, a full 1,000 mB."
+				"That's the whole trick. Everything after this is doing it more, and deciding where it goes:"
+				"the &bSifter Array&r, the &bAtomic Reclaimer&r, or more bees. The quests below point the way."
+				"&7Bees won't make you metal here; the strata do that. Bees make everything else go further."
 			]
 			id: "647A9F38BEF74CD7"
 			rewards: [
 				{
-					count: 3
-					id: "2A7036542964E227"
+					count: 4
+					id: "277C80112892B870"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
+			shape: "gear"
 			tasks: [
 				{
-					count: 2L
 					id: "2452E923ACAA817B"
 					item: "productivebees:honey_bucket"
 					type: "item"
 				}
 			]
-			title: "Honey Boosters"
-			x: 6.0d
+			title: "A Bucket of Honey"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["647A9F38BEF74CD7" "74C14908A195E46D"]
+			description: [
+				"&7[NCP Field Memo #3506: Booster]"
+				""
+				"Swap one Array casing for a &bULV input hatch&r (by hand: glass, a ULV hull and a rubber plate,"
+				"top to bottom) and empty your honey into it. Circuit &b11&r instead of 1: every gravel gives &b8&r strata, not 4."
+				"Circuits 12 and 13 do the same at LV and MV. Rock dust doubles the same way."
+				"It costs &b50 mB a run&r, and a run is two seconds: about a bucket every 40 seconds while it works."
+				"That's the real job for your bees. Later, the &bCalla Paddy&r takes honey too, beside the water."
+				"&7A machine that runs better on honey. NCP would have put that in a brochure."
+			]
+			id: "4B2A9702E15972D8"
+			rewards: [
+				{
+					count: 3
+					id: "05DDD35663B5E9CE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1B580EE766F3559F"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+			]
+			title: "Honey in the Array"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["647A9F38BEF74CD7" "0788A02A25C2D582"]
+			description: [
+				"&7[NCP Field Memo #3507: Atoms]"
+				""
+				"The &bAtomic Reclaimer&r takes bee products too. A honey bottle is glucose: &b6 carbon, 12 hydrogen&r,"
+				"&b6 oxygen&r, and you get the bottle back. A honeycomb or a piece of wax is &b4 carbon, 8 hydrogen&r."
+				"So centrifuge first: one comb as wax plus its 100 mB of honey is about &b22 atoms&r; the bare comb is 12."
+				"&7Per item, nothing on the island pays better than a bee."
+			]
+			icon: "minecraft:honey_bottle"
+			id: "504045B292D62FC4"
+			rewards: [
+				{
+					count: 3
+					id: "3F321E2F568D5D58"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5D3DB6F4CD695C91"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Sugar Atoms"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["647A9F38BEF74CD7"]
+			description: [
+				"&7[NCP Field Memo #3508: Colony]"
+				""
+				"One bee is a hobby. An &bexpansion box&r (eight oak planks round a honeycomb) on top of the advanced"
+				"beehive takes it from 3 bees to &b5&r, and opens the upgrade slots (productivity, speed)."
+				"&aMore bees:&r feed two grown honey bees a flower each and they breed. Honey eggs are also in the NCP Shop."
+				"&bBee cages&r (a honey bottle between two planks, four at a time) carry a bee: right-click it to catch,"
+				"right-click the ground to let it go. Sneak to let it go on a hive and that hive becomes its home."
+				"A &bhoney treat&r (comb and honey bottle) calms an angry bee and grows a baby faster."
+				"&7Solitary bees from the Shop won't live in a hive. They want a nest: an Ashy Mining bee takes a coarse dirt"
+				"&7nest (a wooden sword and coarse dirt). Pretty, but they make nothing you need yet."
+			]
+			id: "3AE416EDEA558437"
+			rewards: [
+				{
+					count: 3
+					id: "19CF49697660EB11"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "11AEABBCB80E3135"
+					item: "productivebees:expansion_box_oak"
+					type: "item"
+				}
+			]
+			title: "More Bees"
+			x: 10.0d
 			y: 1.5d
 		}
 	]

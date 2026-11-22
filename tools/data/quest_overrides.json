@@ -1,12 +1,6 @@
 {
  "ids": {
   "apiary/hive": "1E64986BC9048338",
-  "apiary/honey/reward/0": "2A7036542964E227",
-  "apiary/processing": "4E9691DFB82975BD",
-  "apiary/processing/reward/0": "09D94040DC9535FE",
-  "apiary/resource/reward/0": "2658C07F61224005",
-  "apiary/solitary/reward/0": "7D5A1172D8A61360",
-  "apiary/solitary/reward/2": "6F8B880BD45F487B",
   "calla_kitchen/autofood": "7400E0FA997E4A83",
   "calla_kitchen/autofood/task/0": "26C0D6C4CB9DF1AC",
   "calla_kitchen/comfort/reward/0": "698BBA8CCFCC0ECC",
@@ -679,22 +673,6 @@
  "pos": {
   "apiary/hive": [
    0.0,
-   0.0
-  ],
-  "apiary/honey": [
-   6.0,
-   1.5
-  ],
-  "apiary/processing": [
-   4.0,
-   0.0
-  ],
-  "apiary/resource": [
-   6.0,
-   0.0
-  ],
-  "apiary/solitary": [
-   2.0,
    0.0
   ],
   "calla_kitchen/autofood": [

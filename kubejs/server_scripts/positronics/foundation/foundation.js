@@ -38,6 +38,10 @@ ServerEvents.recipes(event => {
     event.shaped('gtceu:ulv_output_bus', ['R', 'H', 'C'], {
         C: '#forge:chests/wooden', H: 'gtceu:ulv_machine_hull', R: 'gtceu:rubber_plate'
     }).id('positronics:foundation/ulv_output_bus_by_hand')
+    // The Array's honey booster needs a fluid input hatch: glass, hull, rubber (GT: assembler only).
+    event.shaped('gtceu:ulv_input_hatch', ['G', 'H', 'R'], {
+        G: '#forge:glass', H: 'gtceu:ulv_machine_hull', R: 'gtceu:rubber_plate'
+    }).id('positronics:foundation/ulv_input_hatch_by_hand')
     // The coil feeds GT's own shaped ULV energy hatch (hull, coil, two red alloy cables).
     event.shaped('gtceu:ulv_voltage_coil', ['WWW', 'WRW', 'WWW'], {
         W: '#forge:fine_wires/lead', R: '#forge:rods/magnetic_iron'
