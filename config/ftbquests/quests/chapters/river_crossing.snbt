@@ -410,13 +410,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["5BF37B5D49C970E6" "37E06DD9764C4021"]
+			dependencies: ["473628F3957FFFB0"]
 			description: [
 				"&7[NCP Field Memo #0111: Machine Shop]"
 				""
-				"NCP left seven machines for people like you, each good for its own GregTech recipes up to 8 EU/t. Start with these three."
-				"The &bCrusher&r turns one stratum into one whole dust. The &bSmelter&r does bronze, red alloy, tin alloy"
-				"and &bsteel without a coke oven&r. The &bSifter&r works the trickle while you sleep."
+				"By now the Mk II is burying you in strata, and a furnace only gets &b3 nuggets&r out of each one."
+				"The &bCrusher&r gets a whole dust: a whole ingot. &aThree times the metal&r from the same pile."
+				"One Crusher eats about 8 strata a minute. One Ore Generator makes 30. Do the arithmetic and build accordingly."
+				"The &bSmelter&r does bronze, red alloy, tin alloy and &bsteel without a coke oven&r: no fuel, thirty seconds an ingot."
+				"The &bSifter&r on its own is a slow thing. Four of them are the start of something much bigger."
 			]
 			id: "681A5E2D7CD1A735"
 			rewards: [
@@ -445,8 +447,8 @@
 				}
 			]
 			title: "Reclamation Machines"
-			x: 16.5d
-			y: 0.0d
+			x: 18.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0E9ACE22AA8BA4F2"]
@@ -884,15 +886,48 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["681A5E2D7CD1A735" "10BB65E601DDE91E"]
+			dependencies: ["473628F3957FFFB0"]
+			description: [
+				"&7[NCP Field Memo #0125: Gravel Generator]"
+				""
+				"Every generator NCP ever built runs on a &bfull Klein star&r now. Nobody here has seen lava in years."
+				"This one wants a full &bKlein Star Ein&r, stone bricks, an iron block, two gravel and glass,"
+				"and it gives you &b30 gravel a minute&r, forever. Tier upgrades make it faster."
+				"&7Gravel on its own is nothing much. Feed it to the Sifter Array and watch what happens."
+			]
+			id: "7D9B0344375B1DE2"
+			rewards: [
+				{
+					count: 2
+					id: "18CC769AA87C600F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4806E7FF1F4A2C99"
+					item: "usrg:gravelgenerator"
+					type: "item"
+				}
+			]
+			title: "Reclamation Gravel"
+			x: 20.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["681A5E2D7CD1A735" "7D9B0344375B1DE2"]
 			description: [
 				"&7[NCP Field Memo #0123: First Multiblock]"
 				""
-				"Your first multiblock: a 3x3x3 box of solid steel casings, hollow in the middle,"
-				"with the controller at the bottom centre of the front face."
-				"Swap casings for an input bus, an output bus, a maintenance hatch and an energy hatch."
-				"It sifts the same as the single machine, until you give it an LV energy hatch: then it overclocks, twice the speed."
-				"&7The GT terminal shows you the shape before you build it wrong."
+				"Four Sifters, two steel plates, a ULV circuit, a hull and a &bfull Klein Star Ein&r make the controller."
+				"The rest is a 3x3x3 box of solid steel casings, hollow in the middle, controller at the bottom centre"
+				"of the front face. Swap casings for an input bus, a maintenance hatch, an energy hatch and the output buses:"
+				"seven strata come out, and a ULV bus holds one stack, so &bseven output buses&r (it takes up to eight)."
+				"&aIt sifts deep:&r one gravel gives &b4 strata&r on circuit 1. Add a fluid hatch and &bhoney&r"
+				"(50 mB a run, circuit 11) and it's &b8&r. An LV energy hatch and circuit 2 make it 16 (12: 32 with honey);"
+				"MV and circuit 3, 64 (13: 128). Same mix as the Ore Generator."
+				"&7Your problem stops being strata. It becomes Reclaimers, Crushers and bees. The GT terminal shows the shape."
 			]
 			id: "74C14908A195E46D"
 			rewards: [
@@ -912,7 +947,7 @@
 				}
 			]
 			title: "Reclamation Sifter Array"
-			x: 16.5d
+			x: 22.5d
 			y: -2.5d
 		}
 		{

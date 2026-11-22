@@ -12,11 +12,39 @@ Rules:
 ---
 
 ## Clearance 1 · River Crossing (ULV)
-### Reclamation Sifter: 5×5×4
-- **What:** processes Strata grits (Seed I) with **4 parallel** and LV-style byproducts **early**, as the reward for the first multiblock.
-- **Inputs:** grits + water. **Power:** ULV (2 energy hatches allowed, so 1A LV fits too).
-- **Lore:** "River Crossing's first rebuilt machine: it sifts the void-dust that the generators pull in."
-- **Teaches:** hatches, buses, and the multiblock preview with the GT terminal.
+### Reclamation Sifter Array: 3×3×3 (built, 2026-11-21)
+- **Why build it:** a multiblock must beat copying single machines. It costs a one-shot unique item (a **full Klein Star Ein**, plus 4 ULV Sifters) and gives an **exponential return**.
+- **Deep sifting** (its own recipe type, `gtceu:reclamation_sifting`): 1 gravel → Seed I strata in the Ore Generator's own mix, 40 ticks a run.
+
+  | Circuit | Energy | Strata per gravel | With honey (circuit +10, 50 mB) |
+  |---|---|---|---|
+  | 1 | ULV (7 EU/t) | 4 | 8 |
+  | 2 | LV (30 EU/t) | 16 | 32 |
+  | 3 | MV (120 EU/t) | 64 | 128 |
+
+- **Feed:** the USRG **Gravel Generator** (a full Ein star). Generators are the raw stream (USRG tiers: 30 / 60 / 240 / 960 / 3,840 items a minute); the Array is the yield multiplier. The two multiply.
+- **Throttle:** downstream. Reclaimers (12 strata a minute each at ULV) and Crushers (about 8) have to eat it, and bees have to make the honey.
+- **Hatches:** up to 8 output buses (seven strata, and a ULV bus holds one stack), 2 fluid inputs, 2 item inputs, 1–2 energy hatches.
+- **Teaches:** hatches, buses, circuits, the GT terminal preview. Then it teaches that the bottleneck moves.
+
+### The booster ladder (plan; build each with its tier)
+The Array, and later multiblocks, take one optional booster fluid. Plain honey works at every tier (×2); each tier's own booster replaces it (×4).
+
+| Tier | Array sifts | Booster | Source |
+|---|---|---|---|
+| ULV | gravel → Seed I | honey ×2 (built) | `productivebees:honey` |
+| LV | gravel → Seed I | **Strata Honey** ×4 | Seed I resource-bee combs, centrifuged |
+| MV | gravel → Seed I | **Royal Honey** ×4 | the Calla Apiary Hall |
+| HV | moon sand | **Lunar Lubricant** ×4 | GT lubricant + moon dust, mixer |
+| EV | mars sand | **Martian Lubricant** ×4 | GT lubricant + mars dust |
+| IV | venus sand, mercury cobblestone | **Venusian / Mercurial Lubricant** ×4 | the same, per planet |
+| LuV | glacio cobblestone | **Glacian Lubricant** ×4 | the same, iridium/osmium-laced |
+
+- Planet rows: the Array gets regolith recipes at 4× the single sifter (`space.js`), ×16 with the planet's lube. Seed II–V stay gated by the Cores and the Ore Generator tiers.
+- Planet regolith comes from **USRG generators placed on the planet** (per-dimension outputs, `docs/usrg-dimension-outputs.md`), with FTB Chunks and an AE2 Quantum Network Bridge home. No quarry mod.
+
+### USRG generators (built, 2026-11-21)
+No water, no lava: every copy eats a full Klein star, by chapter. Ein (River Crossing): Cobblestone, Gravel, Sand, Dirt and the Ore Generator. Zwei (the Calla): Clay, Grass, Fungus, Dye. Drei (Lud): Snow, Ice, Obsidian. Planets: dimension outputs, gated by generator tier. Off: Redstone (it skips Rubric), Quartz, Glowstone, Nether, Soul, End, the Crushed ones, Dust, Clean.
 
 ## Clearance 2 · The Calla (LV)
 ### Calla Paddy: 9×9×3 (flat field)

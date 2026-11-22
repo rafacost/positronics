@@ -4,17 +4,48 @@
 const POS_PADDY_CROPS = ["agave", "alfalfa", "aloe", "amaranth", "arrowroot", "artichoke", "asparagus", "barley", "barrelcactus", "bean", "bellpepper", "blackberry", "blueberry", "bokchoy", "broccoli", "brusselsprout", "cabbage", "cactusfruit", "calabash", "candleberry", "canola", "cantaloupe", "cassava", "cattail", "cauliflower", "celery", "chia", "chickpea", "chilipepper", "cloudberry", "coffeebean", "corn", "cotton", "cranberry", "cucumber", "eggplant", "elderberry", "flax", "garlic", "ginger", "grape", "greengrape", "guarana", "huckleberry", "jicama", "juniperberry", "jute", "kale", "kenaf", "kiwi", "kohlrabi", "leek", "lentil", "lettuce", "lotus", "millet", "mulberry", "mustardseeds", "nettles", "nopales", "oats", "okra", "onion", "papyrus", "parsnip", "peanut", "peas", "pineapple", "quinoa", "radish", "raspberry", "rhubarb", "rice", "rutabaga", "rye", "scallion", "sesameseeds", "sisal", "sorghum", "soybean", "spiceleaf", "spinach", "strawberry", "sunchoke", "sweetpotato", "taro", "tealeaf", "tomatillo", "tomato", "truffle", "turnip", "waterchestnut", "whitemushroom", "wintersquash", "wolfberry", "yucca", "zucchini"]
 
 ServerEvents.recipes(event => {
-    // Multiblock controllers.
-    event.shaped('gtceu:reclamation_sifter_array', [
-        'SCS',
-        'XHX',
-        'SCS'
-    ], {
-        S: 'gtceu:ulv_reclamation_sifter',
-        C: '#gtceu:circuits/ulv',
-        X: '#forge:plates/steel',
-        H: 'gtceu:ulv_machine_hull'
+    // Multiblock controllers. The Array eats four Sifters and a FULL Klein Star Ein: one big buy.
+    event.custom({
+        type: 'minecraft:crafting_shaped',
+        category: 'misc',
+        pattern: ['SCS', 'XKX', 'SHS'],
+        key: {
+            S: { item: 'gtceu:ulv_reclamation_sifter' },
+            C: { tag: 'gtceu:circuits/ulv' },
+            X: { tag: 'forge:plates/steel' },
+            K: global.posFullStar('projecte:klein_star_ein'),
+            H: { item: 'gtceu:ulv_machine_hull' }
+        },
+        result: { item: 'gtceu:reclamation_sifter_array' }
     }).id('positronics:multiblocks/reclamation_sifter_array')
+
+    // Deep sifting (the Array only): one gravel -> Y Seed I strata in the Ore Generator's own mix
+    // (config/usrg-common.toml oreGeneratorItemsT1). Y = 4 / 16 / 64 at ULV / LV / MV (circuit 1 / 2 / 3);
+    // honey doubles it (circuit 11 / 12 / 13, 50 mB a run). Circuits keep plain and honeyed runs apart.
+    // The throttle is downstream: Reclaimers and Crushers to eat it, gravel and honey to feed it.
+    let mix = [['ferrous', 0.40], ['cupric', 0.30], ['stannic', 0.22], ['carbonic', 0.25],
+               ['plumbic', 0.10], ['nickelous', 0.08], ['rubric', 0.12]]
+    let total = mix.reduce((a, m) => a + m[1], 0)
+    let sift = (id, circuit, eut, perGravel, honey) => {
+        let r = event.recipes.gtceu.reclamation_sifting(`positronics:multiblocks/deep_sift_${id}`)
+            .itemInputs('minecraft:gravel')
+            .circuit(circuit)
+        if (honey) r = r.inputFluids('productivebees:honey 50')
+        let fixed = [], chanced = []
+        mix.forEach(m => {
+            let n = perGravel * m[1] / total
+            let whole = Math.floor(n), frac = Math.round((n - whole) * 10000)
+            if (whole > 0) fixed.push(`${whole}x positronics:${m[0]}_stratum`)
+            if (frac > 0) chanced.push([`positronics:${m[0]}_stratum`, frac])
+        })
+        if (fixed.length) r = r.itemOutputs(fixed)
+        chanced.forEach(c => { r = r.chancedOutput(c[0], c[1], 0) })
+        r.duration(40).EUt(eut)
+    }
+    ;[['ulv', 1, 7, 4], ['lv', 2, 30, 16], ['mv', 3, 120, 64]].forEach(t => {
+        sift(t[0], t[1], t[2], t[3], false)
+        sift(`${t[0]}_honey`, t[1] + 10, t[2], t[3] * 2, true)
+    })
 
     event.shaped('gtceu:calla_paddy', [
         'PCP',

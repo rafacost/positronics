@@ -28,6 +28,7 @@ function posStarCap(id) {
 function posFullStar(id) {
     return { type: 'forge:partial_nbt', item: id, nbt: `{StoredEMC:${posStarCap(id)}L}` }
 }
+global.posFullStar = posFullStar // multiblocks.js (the Sifter Array controller) uses it too
 
 // Which star each Positronic Core needs (tunable; see docs/seed-chains-draft.md).
 // Each Core is built ONE tier before its strata are needed (Seed III chrome is needed for HV
@@ -208,8 +209,8 @@ ServerEvents.recipes(event => {
     })
 
     // ---- USRG Ore Generator: the first real reclamation unit (Seed I stream).
-    // A FULL Klein Star Ein in the centre, not the cobblestone generator: the Mk I is the only one
-    // (its own recipe needs lava), so it stays running and Ore Generators can be built again and again.
+    // A FULL Klein Star Ein in the centre, not the cobblestone generator: the Mk I from the kit stays
+    // running and Ore Generators can be built again and again.
     event.remove({ output: 'usrg:oregenerator' })
     event.custom({
         type: 'minecraft:crafting_shaped',
@@ -223,6 +224,53 @@ ServerEvents.recipes(event => {
         },
         result: { item: 'usrg:oregenerator' }
     }).id('positronics:gates/ore_generator')
+
+    // ---- The other USRG generators (decided 2026-11-21): no water, no lava. Every copy eats a FULL
+    // Klein star, the rank by chapter: Ein = River Crossing (ULV), Zwei = the Calla (LV), Drei = Lud (MV).
+    // Stone bricks, that rank's metal block, two of the thing it makes, glass. The Mk I (cobblestone)
+    // still comes in the kit; these are the copies. Planet generators come with USRG's per-dimension
+    // output lists (docs/usrg-dimension-outputs.md), at Vier and up.
+    let genRanks = {
+        ein: { block: 'forge:storage_blocks/iron', gens: {
+            cobblegenerator: { item: 'minecraft:cobblestone' },
+            gravelgenerator: { item: 'minecraft:gravel' },
+            sandgenerator: { tag: 'forge:sand/colorless' },
+            dirtgenerator: { item: 'minecraft:dirt' } } },
+        zwei: { block: 'forge:storage_blocks/steel', gens: {
+            claygenerator: { item: 'minecraft:clay_ball' },
+            grassgenerator: { item: 'minecraft:dirt' },
+            fungusgenerator: { tag: 'forge:mushrooms' },
+            dyegenerator: { tag: 'forge:dyes' } } },
+        drei: { block: 'forge:storage_blocks/aluminium', gens: {
+            snowgenerator: { item: 'minecraft:snowball' },
+            icegenerator: { item: 'minecraft:snow_block' },
+            // No lava, so no obsidian to start one: the star is the heat, the ice is the water.
+            obsidiangenerator: { item: 'minecraft:ice' } } }
+    }
+    Object.keys(genRanks).forEach(rank => {
+        let r = genRanks[rank]
+        Object.keys(r.gens).forEach(gen => {
+            event.remove({ output: `usrg:${gen}` })
+            event.custom({
+                type: 'minecraft:crafting_shaped',
+                category: 'misc',
+                pattern: ['STS', 'IKI', 'SGS'],
+                key: {
+                    S: { item: 'minecraft:stone_bricks' },
+                    T: { tag: r.block },
+                    I: r.gens[gen],
+                    K: posFullStar(`projecte:klein_star_${rank}`),
+                    G: { tag: 'forge:glass/colorless' }
+                },
+                result: { item: `usrg:${gen}` }
+            }).id(`positronics:gates/generator_${gen}`)
+        })
+    })
+    // Off-theme or progression-breaking: Redstone skips Rubric, the Nether and End ones belong to
+    // worlds this pack doesn't have, Dust needs Ex Nihilo. No recipe at all.
+    ;['redstonegenerator', 'quartzgenerator', 'glowstonegenerator', 'nethergenerator', 'soulgenerator',
+      'endgenerator', 'endcrushedgenerator', 'nethercrushedgenerator', 'dustgenerator', 'cleangenerator']
+        .forEach(g => event.remove({ output: `usrg:${g}` }))
 
     // ---- The Final Star (endgame): replaces ProjectExpansion's power-flower recipe.
     event.remove({ output: 'projectexpansion:final_star' })
