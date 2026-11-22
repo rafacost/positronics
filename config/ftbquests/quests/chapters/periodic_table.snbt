@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["05282D7A4CE074AA"]
+			dependencies: ["62EF35FCB078C9A8"]
 			description: [
 				"&7[NCP Field Memo #3601: Chemistry]"
 				""

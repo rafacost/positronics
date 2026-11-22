@@ -320,6 +320,35 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[NCP Field Memo #0316: Generators, Drei]"
+				""
+				"A full &bKlein Star Drei&r and an aluminium block buy the cold ones: Snow, Ice and Obsidian."
+				"There's no lava anywhere, so the Obsidian Generator starts from ice. The star is the heat."
+				"&7Black glass out of ice. Don't ask NCP how. They won't tell you either."
+			]
+			id: "4EA6E90722082A47"
+			rewards: [
+				{
+					count: 4
+					id: "3526C2255F173416"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5DF46375D163A99A"
+					item: "usrg:obsidiangenerator"
+					type: "item"
+				}
+			]
+			title: "Cold Storage"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
 			dependencies: ["6E954E802B091B06"]
 			description: [
 				"&7[NCP Field Memo #0310: Powered Generators]"

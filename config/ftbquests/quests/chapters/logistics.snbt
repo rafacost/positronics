@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["504F530000001001"]
+			dependencies: ["0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Field Memo #3001: Pipes]"
 				""
@@ -44,7 +44,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["50CDFE83969A739F"]
+			dependencies: ["50CDFE83969A739F" "37E06DD9764C4021"]
 			description: [
 				"&7[NCP Field Memo #3002: Pipes]"
 				""
@@ -82,7 +82,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["504F530000001001"]
+			dependencies: ["504F530000001008"]
 			description: [
 				"&7[NCP Field Memo #3003: Drawers]"
 				""
@@ -111,7 +111,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0DCACCA06866AA06"]
+			dependencies: ["0DCACCA06866AA06" "0E9ACE22AA8BA4F2"]
 			description: [
 				"&7[NCP Field Memo #3004: Compacting]"
 				""
@@ -138,7 +138,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["1ED938E8E29F0C86"]
+			dependencies: ["1ED938E8E29F0C86" "70B5506B5FAD2B04"]
 			description: [
 				"&7[NCP Field Memo #3005: Controller]"
 				""
@@ -171,7 +171,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3A0A6C2952D4C227"]
+			dependencies: ["3A0A6C2952D4C227" "70B5506B5FAD2B04" "5BEF8AFF4CD15F03"]
 			description: [
 				"&7[NCP Field Memo #3006: Programming]"
 				""
@@ -538,6 +538,63 @@
 			title: "Positronic Memory in ME"
 			x: 14.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["688D6B9877860743" "1D032E845854B761"]
+			description: [
+				"&7[NCP Field Memo #3017: Wireless]"
+				""
+				"A fluix pearl is an ender pearl that learned AE2. Put it in a wireless receiver and your terminal leaves the wall."
+				"&7Now you can stand in the middle of the factory and order a stack of plates. It feels like cheating. It isn't."
+			]
+			id: "5002E2BDD6AEFA9C"
+			rewards: [
+				{
+					count: 2
+					id: "4066B395AF9041F1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "24CE7EA6C5E34821"
+					item: "ae2:wireless_crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Wireless Terminal"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["688D6B9877860743"]
+			description: [
+				"&7[NCP Field Memo #3018: Circuit Card]"
+				""
+				"GregTech wants a programmed circuit in the machine; a pattern provider can't put one there."
+				"This card can. A crafting card and a programmed circuit, and the provider sets the circuit itself."
+				"&7One card per provider. It's the cheapest fix in this whole book."
+			]
+			id: "33713EEE1EB38F01"
+			rewards: [
+				{
+					count: 2
+					id: "5E36C51066703F6D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "796AA7B78B49A317"
+					item: "pccard:card_programmed_circuit"
+					type: "item"
+				}
+			]
+			title: "Programmed Circuit Card"
+			x: 12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["57A4D33603153FCA"]

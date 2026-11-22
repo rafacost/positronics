@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46F8BC980BF71870"]
+			dependencies: ["70B5506B5FAD2B04"]
 			description: [
 				"&7[NCP Field Memo #3200: Simulations]"
 				""

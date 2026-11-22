@@ -516,6 +516,36 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[NCP Field Memo #0220: Generators, Zwei]"
+				""
+				"The next generators want a full &bKlein Star Zwei&r and a steel block: Clay, Grass, Fungus and Dye."
+				"The &bDye Generator&r matters most. It's the only place blue and black dye come from out here,"
+				"and Super Factory Manager and XNet are built out of colours."
+				"&7Sixteen dyes out of nothing. Somewhere, a painter is very confused."
+			]
+			id: "5BEF8AFF4CD15F03"
+			rewards: [
+				{
+					count: 3
+					id: "1F5D10FE418EB0DC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2801C52B70121B52"
+					item: "usrg:dyegenerator"
+					type: "item"
+				}
+			]
+			title: "Colour"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
 			dependencies: ["1845323CB80C94E1" "23959B9E619112CD"]
 			description: [
 				"&7[NCP Field Memo #0215: Glasshouse]"

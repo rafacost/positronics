@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["05282D7A4CE074AA"]
+			dependencies: ["646ADF5E2F61D70F"]
 			description: [
 				"&7[NCP Field Memo #3501: Bees]"
 				""
@@ -82,7 +82,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C6607A53E878674"]
+			dependencies: ["3C6607A53E878674" "5698A43B1860CDCF"]
 			description: [
 				"&7[NCP Field Memo #3503: Centrifuge]"
 				""
@@ -167,12 +167,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4E9691DFB82975BD" "1C0DD05DB1EF60F2"]
+			dependencies: ["4E9691DFB82975BD"]
 			description: [
 				"&7[NCP Field Memo #3505: Boosters]"
 				""
-				"Honey is a booster: pipe it into the &bCalla Paddy&r beside the water and the harvest goes up to 12 crops a cycle"
-				"(4 plain, 8 with fertiliser)."
+				"Honey is a booster. In the &bSifter Array&r (circuit 11, 12 or 13, 50 mB a run) it doubles the strata."
+				"In the &bCalla Paddy&r, beside the water, the harvest goes up to 12 crops a cycle (4 plain, 8 with fertiliser)."
+				"&7Every bee you keep is a little more of everything else."
 			]
 			id: "647A9F38BEF74CD7"
 			rewards: [

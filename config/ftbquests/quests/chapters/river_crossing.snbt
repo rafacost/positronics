@@ -927,7 +927,7 @@
 				"&aIt sifts deep:&r one gravel gives &b4 strata&r on circuit 1. Add a fluid hatch and &bhoney&r"
 				"(50 mB a run, circuit 11) and it's &b8&r. An LV energy hatch and circuit 2 make it 16 (12: 32 with honey);"
 				"MV and circuit 3, 64 (13: 128). Same mix as the Ore Generator."
-				"&7Your problem stops being strata. It becomes Reclaimers, Crushers and bees. The GT terminal shows the shape."
+				"&7Your problem stops being strata. It becomes Reclaimers, Crushers and bees. EMI shows the shape."
 			]
 			id: "74C14908A195E46D"
 			rewards: [

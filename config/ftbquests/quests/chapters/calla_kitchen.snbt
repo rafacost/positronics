@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["504F530000001001"]
+			dependencies: ["646ADF5E2F61D70F"]
 			description: [
 				"&7[NCP Field Memo #3101: Kitchen]"
 				""
@@ -275,7 +275,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6626B97A3DCFF4D2"]
+			dependencies: ["646ADF5E2F61D70F" "504F530000001009"]
 			description: [
 				"&7[NCP Field Memo #3107: Water]"
 				""
@@ -302,7 +302,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6BFD17EEA606ADF1"]
+			dependencies: ["23D182FC53BDB29F" "504F530000001008"]
 			description: [
 				"&7[NCP Field Memo #3108: Water]"
 				""
@@ -362,7 +362,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["1135FD6EB9DEA103"]
+			dependencies: ["1135FD6EB9DEA103" "646ADF5E2F61D70F"]
 			description: [
 				"&7[NCP Field Memo #3110: Temperature]"
 				""
@@ -395,7 +395,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["04724F3E5C33BA04"]
+			dependencies: ["04724F3E5C33BA04" "076E7CC3AFDAC867"]
 			description: [
 				"&7[NCP Field Memo #3111: Automation]"
 				""

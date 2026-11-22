@@ -1,0 +1,212 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "operators_kit"
+	group: "7189CCE6C12A632F"
+	icon: "constructionwand:iron_wand"
+	id: "3A93B61827F40144"
+	order_index: 36
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["504F530000001008"]
+			description: [
+				"&7[NCP Field Memo #3701: Waste]"
+				""
+				"Cobblestone, stone and a chest. Whatever goes in doesn't come out."
+				"&7The void out there took the whole world. It can take your extra gravel."
+			]
+			id: "629F46C297F42E3A"
+			rewards: [
+				{
+					count: 2
+					id: "51636D14B9BC87A2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3A61F511D1C59140"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+			]
+			title: "Trash Cans"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["504F530000001008"]
+			description: [
+				"&7[NCP Field Memo #3702: Building]"
+				""
+				"Point it at a wall and it lays the next row for you, out of whatever's in your pockets."
+				"A stone one wears out fast. Iron lasts; a diamond one (synthetic, from the Calla's autoclave) lasts longer."
+			]
+			id: "544D640AAFDC9C1F"
+			rewards: [
+				{
+					count: 2
+					id: "3D5E8353F24F2FFC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7D85A4C4AC4D002E"
+					item: "constructionwand:stone_wand"
+					type: "item"
+				}
+			]
+			title: "Construction Wand"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["544D640AAFDC9C1F" "646ADF5E2F61D70F"]
+			description: [
+				"&7[NCP Field Memo #3703: Building]"
+				""
+				"Same trick, more rows before it breaks."
+			]
+			id: "0C56292A9D2467B1"
+			rewards: [
+				{
+					count: 2
+					id: "4CE927A72FBFC1C9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7F047FA272305D25"
+					item: "constructionwand:iron_wand"
+					type: "item"
+				}
+			]
+			title: "Iron Wand"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C56292A9D2467B1" "5698A43B1860CDCF"]
+			description: [
+				"&7[NCP Field Memo #3704: Building]"
+				""
+				"Eight graphite dust and a bucket of water in an LV autoclave make a diamond. NCP called it synthetic."
+				"&7The wand can't tell the difference. Neither can anyone else."
+			]
+			id: "49ACB9346F42EEB9"
+			rewards: [
+				{
+					count: 2
+					id: "7D19AADF519FE699"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "25EBB96EFF828F94"
+					item: "constructionwand:diamond_wand"
+					type: "item"
+				}
+			]
+			title: "Diamond Wand"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["77A7C2884E6BCE54"]
+			description: [
+				"&7[NCP Field Memo #3705: Carrying]"
+				""
+				"Leather, string and iron: a backpack for the things you need, a tool belt for the things you need right now."
+				"&7There are no cows. The leather comes out of the Simulation Lab. Try not to think about it."
+			]
+			id: "64B835ADDB7A1EB8"
+			rewards: [
+				{
+					count: 2
+					id: "40A0D9F3B338BDFE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "45B38076A981C271"
+					item: "backpacked:backpack"
+					type: "item"
+				}
+				{
+					id: "03F8F33F250433B9"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+			]
+			title: "Pack and Belt"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77A7C2884E6BCE54"]
+			description: [
+				"&7[NCP Field Memo #3706: Multiblocks]"
+				""
+				"A book (paper and leather), wrought iron and red alloy wire. Right-click a controller and it shows,"
+				"or builds, the whole structure from what you carry."
+			]
+			id: "7695BCA622920E49"
+			rewards: [
+				{
+					count: 2
+					id: "6B7578E8E512D0A3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "639BF032D10DF0D4"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
+			title: "GregTech Terminal"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3982A5E521F0BA0C"]
+			description: [
+				"&7[NCP Field Memo #3707: Building]"
+				""
+				"Feathers and sticks: a block you can place in mid-air. On an island over nothing, that's not a toy."
+			]
+			id: "65652E5585FE7EFE"
+			rewards: [
+				{
+					count: 2
+					id: "34F83A7EF8CCD840"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "36430ADE5385FBF5"
+					item: "angelblockrenewed:angel_block"
+					type: "item"
+				}
+			]
+			title: "Angel Block"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "The Operator's Kit"
+}

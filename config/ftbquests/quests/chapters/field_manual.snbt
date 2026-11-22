@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["504F530000001001"]
+			dependencies: ["37E06DD9764C4021" "504F530000001001"]
 			description: [
 				"&7[NCP Field Manual, Section 1: Voltage]"
 				""
@@ -131,7 +131,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E1802380ED2AF92"]
+			dependencies: ["254E5FE186B806B8"]
 			description: [
 				"&7[NCP Field Manual, Section 5: Multiblocks]"
 				""
@@ -162,7 +162,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0DFB950BBF36A27B"]
+			dependencies: ["076E7CC3AFDAC867"]
 			description: [
 				"&7[NCP Field Manual, Section 6: Tools]"
 				""
@@ -191,7 +191,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["23B0AB8212D91E8C"]
+			dependencies: ["23B0AB8212D91E8C" "681A5E2D7CD1A735"]
 			description: [
 				"&7[NCP Field Manual, Section 7: Circuit Numbers]"
 				""
@@ -220,7 +220,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["129516A74765B7C2"]
+			dependencies: ["646ADF5E2F61D70F"]
 			description: [
 				"&7[NCP Field Manual, Section 8: Strata]"
 				""
@@ -252,7 +252,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3360AE124C8DC6C6"]
+			dependencies: ["3360AE124C8DC6C6" "69ADFFCDC361D941"]
 			description: [
 				"&7[NCP Field Manual, Section 9: EMC]"
 				""
@@ -284,7 +284,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["42E91BC20D87B3EA"]
+			dependencies: ["42E91BC20D87B3EA" "7169DFA510435F8A"]
 			description: [
 				"&7[NCP Field Manual, Section 10: Gates]"
 				""
