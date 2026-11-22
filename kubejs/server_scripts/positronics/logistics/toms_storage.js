@@ -1,42 +1,42 @@
 // requires: toms_storage
-// Positronics: Tom's Simple Storage, the ULV/LV storage step before AE2 (the Star Technology idea).
-// Its own recipes stay where every ingredient exists in River Crossing: planks, chests, trapdoors,
-// redstone (Rubric), comparators and diamonds (the Sifter Array's dust sifting). Only the parts made
-// from things this world never has are swapped: ender pearls, glowstone, spyglass, netherite, name tags.
+// Positronics: Tom's Simple Storage is the storage network from early ULV to the end of LV; AE2 takes
+// over at MV. The timeline its recipes follow:
+//   first redstone (Steel Hammer) : connector, terminal, cables, cable connector (iron, redstone, tin)
+//   end of ULV (Sifter Array)     : crafting terminal (Rough Diamonds), comparator parts (sifted quartz)
+//   LV (the Calla)                : wireless terminal, 16 blocks (an LV emitter, steel)
+//   end of LV (Seed II)           : advanced wireless, 64 blocks (gold, an LV sensor)
+// LV emitters and sensors need quartzite, which only the Array's circuit 2 drops (multiblocks.js).
+// Untouched defaults already fit: trim, crate, proxy, cable, hopper, filters, level emitter, crafting terminal.
 
 ServerEvents.recipes(event => {
     let tom = id => `toms_storage:ts.${id}`
-    let swap = (id, pattern, key, count) => {
+    let swap = (id, pattern, key) => {
         event.remove({ id: `toms_storage:${id}` })
-        event.shaped(`${count || 1}x ${tom(id)}`, pattern, key).id(`positronics:toms_storage/${id}`)
+        event.shaped(tom(id), pattern, key).id(`positronics:toms_storage/${id}`)
     }
 
-    // The connector reads every inventory touching it. A ULV circuit stands in for the ender pearl.
-    swap('inventory_connector', ['PCP', 'cDc', 'PEP'], {
-        P: '#minecraft:planks', C: 'minecraft:comparator', c: '#forge:chests/wooden',
-        D: '#forge:gems/diamond', E: '#gtceu:circuits/ulv'
+    // No comparator, diamond or ender pearl: iron and redstone, so it lands with the first redstone.
+    swap('inventory_connector', ['PRP', 'cIc', 'PRP'], {
+        P: '#minecraft:planks', R: 'minecraft:redstone', c: '#forge:chests/wooden', I: '#forge:ingots/iron'
     })
-    // Cable connectors: one per remote chest, so no diamond and no pearl. Tin and redstone instead.
-    swap('inventory_cable_connector', [' qP', 'CcE', ' DP'], {
-        q: 'minecraft:quartz', P: '#minecraft:planks', C: tom('inventory_cable'),
-        c: '#forge:chests/wooden', E: 'minecraft:redstone', D: '#forge:plates/tin'
+    swap('storage_terminal', ['PRP', 'cIg', 'PRP'], {
+        P: '#minecraft:planks', R: 'minecraft:redstone', c: '#forge:chests/wooden', I: '#forge:ingots/iron', g: '#forge:glass'
     })
-    // The terminal's screen is a vacuum-tube circuit, not glowstone.
-    swap('storage_terminal', ['PCP', 'cGg', 'PCP'], {
-        P: '#minecraft:planks', C: 'minecraft:comparator', c: '#forge:chests/wooden',
-        G: '#gtceu:circuits/ulv', g: '#forge:glass'
+    swap('inventory_cable_connector', [' RP', 'CcE', ' TP'], {
+        R: 'minecraft:redstone_torch', P: '#minecraft:planks', C: tom('inventory_cable'),
+        c: '#forge:chests/wooden', E: 'minecraft:redstone', T: '#forge:plates/tin'
     })
-    // Wireless (16 blocks): still an ender pearl (the Simulation Lab enderman), an LV circuit and gold.
-    swap('wireless_terminal', ['PCP', 'aGg', 'PEP'], {
-        P: '#minecraft:planks', C: 'minecraft:comparator', a: '#forge:plates/gold',
-        G: '#gtceu:circuits/lv', g: '#forge:glass', E: '#forge:ender_pearls'
+    // Wireless (16 blocks): an LV emitter where the ender pearl was, steel for the spyglass, an LV circuit for glowstone.
+    swap('wireless_terminal', ['PCP', 'sGg', 'PEP'], {
+        P: '#minecraft:planks', C: 'minecraft:comparator', s: '#forge:plates/steel',
+        G: '#gtceu:circuits/lv', g: '#forge:glass', E: 'gtceu:lv_emitter'
     })
-    // Advanced wireless (64 blocks): steel and two LV circuits instead of netherite.
+    // Advanced wireless (64 blocks): gold (Seed II) and an LV sensor instead of netherite.
     event.remove({ id: 'toms_storage:adv_wireless_terminal' })
-    event.shaped(tom('adv_wireless_terminal'), ['PCP', 'PTP', 'PCP'], {
-        P: '#forge:plates/steel', C: '#gtceu:circuits/lv', T: tom('wireless_terminal')
+    event.shaped(tom('adv_wireless_terminal'), ['PCP', 'PTP', 'PSP'], {
+        P: '#forge:plates/gold', C: '#gtceu:circuits/lv', T: tom('wireless_terminal'), S: 'gtceu:lv_sensor'
     }).id('positronics:toms_storage/adv_wireless_terminal')
-    // Tag filter: lapis instead of a name tag (name tags can't be crafted).
+    // Tag filter: lapis (sifted) instead of a name tag, which can't be crafted.
     event.remove({ id: 'toms_storage:tag_item_filter' })
     event.shapeless(tom('tag_item_filter'), [tom('item_filter'), 'minecraft:comparator', 'minecraft:lapis_lazuli'])
         .id('positronics:toms_storage/tag_item_filter')

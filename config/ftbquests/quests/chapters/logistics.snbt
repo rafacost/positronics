@@ -243,15 +243,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["066B06E7AEFFCADD"]
+			dependencies: ["0E9ACE22AA8BA4F2" "504F530000001009"]
 			description: [
 				"&7[NCP Field Memo #3019: One Window]"
 				""
 				"Every chest and drawer touching an &bInventory Connector&r shows up in one &bStorage Terminal&r."
 				"Inventory cables carry the reach further; a cable connector at the far end picks up one more chest."
-				"The connector wants a diamond and a comparator, the terminal a comparator and a ULV circuit."
-				"That's why it waits for the dust: the Array is where the quartz and the diamonds come from."
+				"Both want planks, chests, an iron ingot and redstone (the terminal also wants glass). The cable connector"
+				"wants tin and a redstone torch. So it starts the day your steel hammer gets redstone out of Rubric."
 				"&7It doesn't craft for you. It just stops you opening forty chests to find one screw."
+				"&7This is your network until the end of LV. AE2 takes over at MV."
 			]
 			id: "75B27088B24F4B4B"
 			rewards: [
@@ -279,12 +280,13 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["75B27088B24F4B4B"]
+			dependencies: ["75B27088B24F4B4B" "066B06E7AEFFCADD"]
 			description: [
 				"&7[NCP Field Memo #3020: One Grid]"
 				""
-				"A storage terminal, four crafting tables and four diamonds (eight Rough Diamonds)."
+				"A storage terminal, four crafting tables and four diamonds (eight Rough Diamonds from the Array)."
 				"The grid pulls straight from the network, and EMI's recipe transfer fills it for you."
+				"Sifted quartz also opens the comparator parts: the level emitter and the filters."
 			]
 			id: "23989D09BFB1E0D1"
 			rewards: [
@@ -307,11 +309,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["75B27088B24F4B4B" "1D032E845854B761"]
+			dependencies: ["23989D09BFB1E0D1" "23959B9E619112CD"]
 			description: [
 				"&7[NCP Field Memo #3021: Sixteen Blocks]"
 				""
-				"Planks, a comparator, a gold plate, an LV circuit, glass and an ender pearl from the Simulation Lab."
+				"Planks, a comparator, a steel plate, an LV circuit, glass and an &bLV emitter&r."
+				"The emitter needs quartzite, and only the Array on an LV energy hatch (circuit 2) sifts it out of dust."
 				"Shift-click it on a terminal to bind it. It reaches &b16 blocks&r."
 			]
 			id: "0D396C68EB6D765C"
@@ -335,11 +338,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0D396C68EB6D765C"]
+			dependencies: ["0D396C68EB6D765C" "70B5506B5FAD2B04"]
 			description: [
 				"&7[NCP Field Memo #3022: Sixty-Four Blocks]"
 				""
-				"Four steel plates and two LV circuits around the wireless terminal. It reaches &b64 blocks&r."
+				"Six gold plates, an LV circuit and an &bLV sensor&r around the wireless terminal. It reaches &b64 blocks&r."
 				"&7After that, the network that follows you everywhere is AE2's."
 			]
 			id: "51682E110653339F"
@@ -363,15 +366,15 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["066B06E7AEFFCADD" "70B5506B5FAD2B04"]
+			dependencies: ["4E4FE4D9F25A12DF"]
 			description: [
 				"&7[NCP Field Memo #3008: AE2]"
 				""
 				"Somewhere else, people find these presses in meteorites. Nothing falls from the sky here."
 				"NCP assembles the four presses in an LV assembler: four steel plates, an LV circuit, and one of what"
 				"each press prints (silicon, a gold plate, certus or a diamond)."
-				"Certus quartz crystals grow from certus dust in an autoclave: the Array sifts it out of rock dust,"
-				"and Crystalline Stratum dust works too. The gold plate is what waits for Seed II."
+				"Certus quartz crystals grow from certus dust in an autoclave. The Array sifts it out of rock dust on an"
+				"MV energy hatch (circuit 3), with the sky stone dust and glowstone dust AE2 also needs."
 				"Diamonds: two Rough Diamonds and a hammer, or graphite (Carbonic Stratum) in an autoclave."
 			]
 			id: "5ECC7924EC9A43D9"

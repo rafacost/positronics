@@ -48,13 +48,17 @@ ServerEvents.recipes(event => {
     })
 
     // Dust sifting (the Array only): rock dust (positronics:dust, from hammered sand and strata
-    // processing) -> the early gems other mods need: quartz (comparators, Tom's, AE2), lapis, certus
-    // and sky dust (AE2, MEGA cells), rough diamonds. Same circuits, same honey (x2) as deep sifting.
+    // processing) -> the gems other mods need, gated by circuit. Same circuits, same honey (x2) as deep sifting.
+    //   circuit 1 (ULV) = Tom's era: quartz (comparators), lapis (tag filter), Rough Diamonds
+    //   circuit 2 (LV)  = adds quartzite (LV emitters and sensors; nothing else in the pack drops it)
+    //   circuit 3 (MV)  = AE2 era: adds certus, sky dust and glowstone (presses, fluix, controller,
+    //                     terminals, blank patterns, MEGA). GT only makes glowstone from ores we don't have.
     // Values = expected items per dust; whole counts are fixed, the remainder is a chance.
     let dustYield = {
-        ulv: { 'minecraft:quartz': 0.30, 'ae2:certus_quartz_dust': 0.20, 'minecraft:lapis_lazuli': 0.15, 'positronics:rough_diamond': 0.02 },
-        lv: { 'minecraft:quartz': 0.50, 'ae2:certus_quartz_dust': 0.40, 'minecraft:lapis_lazuli': 0.30, 'ae2:sky_dust': 0.10, 'positronics:rough_diamond': 0.05 },
-        mv: { 'minecraft:quartz': 1.00, 'ae2:certus_quartz_dust': 0.80, 'minecraft:lapis_lazuli': 0.60, 'ae2:sky_dust': 0.25, 'positronics:rough_diamond': 0.10 }
+        ulv: { 'minecraft:quartz': 0.30, 'minecraft:lapis_lazuli': 0.15, 'positronics:rough_diamond': 0.02 },
+        lv: { 'minecraft:quartz': 0.50, 'minecraft:lapis_lazuli': 0.30, 'positronics:rough_diamond': 0.05, 'gtceu:quartzite_gem': 0.20 },
+        mv: { 'minecraft:quartz': 1.00, 'minecraft:lapis_lazuli': 0.60, 'positronics:rough_diamond': 0.10, 'gtceu:quartzite_gem': 0.40,
+              'ae2:certus_quartz_dust': 0.80, 'ae2:sky_dust': 0.25, 'minecraft:glowstone_dust': 0.20 }
     }
     let dustSift = (tier, circuit, eut, factor, honey) => {
         let r = event.recipes.gtceu.reclamation_sifting(`positronics:multiblocks/dust_sift_${tier}${honey ? '_honey' : ''}`)
