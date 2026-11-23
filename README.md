@@ -1,5 +1,7 @@
 # Positronics
 
+![Positronics](branding/banner.jpg)
+
 *The world has moved on. Rebuild the North Central Positronics network, tier by tier, and open a Door.*
 
 A tech-only **GregTech + ProjectE skyblock** for **Minecraft 1.20.1 · Forge 47.4.0**.
@@ -7,8 +9,8 @@ You start on a small island in a dead world: no ores, no mobs, no villagers, no 
 make comes from rock, water, sunlight and atoms, and every tier has to be earned.
 
 **Status: beta `0.1.0-beta`** ([changelog](CHANGELOG.md)) · single player
-- **Supported:** The Waste Lands to the end of River Crossing (ULV).
-- **Preview:** The Calla (LV) and everything after it. Playable, but not yet played through. You're the survey team.
+The whole pack is playable, ULV to UHV. It's a work in progress: so far it has been played through to the end of
+River Crossing (ULV), so reports from The Calla (LV) onward are especially welcome.
 
 ## What makes it different
 - **Strata, not ores.** Resources come from Strata: hammered out of gravel, sifted, then made by the

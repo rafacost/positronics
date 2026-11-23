@@ -5,9 +5,8 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
 
 ## 0.1.0-beta (unreleased)
 
-The first public beta. **Supported: The Waste Lands to the end of River Crossing (ULV).** The Calla (LV) and
-everything after it is a **preview**: playable, but not yet played through, so expect gaps and report them.
-Single player only. Minecraft 1.20.1, Forge 47.4.0.
+The first public beta. The whole pack is playable, ULV to UHV. So far it has been played through to the end of
+River Crossing (ULV); from The Calla (LV) on, expect rough edges and please report them. Single player only. Minecraft 1.20.1, Forge 47.4.0.
 
 ### The world
 - A skyblock island in a dead world. No ores, no natural mobs, no villager trading.

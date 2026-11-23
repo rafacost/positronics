@@ -1,0 +1,180 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 0
+  is_enabled = true
+  widget_identifier_revision = 2
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = true
+}
+
+menu_background {
+  instance_identifier = positronics_menu_background
+  background_type = image
+  show_background = true
+  image_path = [source:local]/config/fancymenu/assets/positronics/menu_background.jpg
+  slide = false
+  repeat_texture = false
+  parallax = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_logo_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_splash_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_realms_notification_icons_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_realms_button
+  is_hidden = true
+}
+
+element {
+  element_type = image
+  instance_identifier = positronics_logo
+  anchor_point = mid-left
+  x = 40
+  y = -140
+  width = 300
+  height = 108
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  source = [source:local]/config/fancymenu/assets/positronics/logo.png
+  repeat_texture = false
+  nine_slice_texture = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = positronics_version
+  anchor_point = mid-left
+  x = 42
+  y = -29
+  width = 200
+  height = 14
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  source = **v0.1.0-beta**
+  source_mode = direct
+  interactable = false
+  auto_line_wrapping = false
+  user_scrolling = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_singleplayer_button
+  anchor_point = mid-left
+  x = 90
+  y = -8
+  width = 200
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_multiplayer_button
+  anchor_point = mid-left
+  x = 90
+  y = 16
+  width = 200
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:titlescreen_mods_button
+  anchor_point = mid-left
+  x = 90
+  y = 40
+  width = 200
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_options_button
+  anchor_point = mid-left
+  x = 90
+  y = 64
+  width = 98
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_quit_button
+  anchor_point = mid-left
+  x = 192
+  y = 64
+  width = 98
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_language_button
+  anchor_point = mid-left
+  x = 66
+  y = 64
+  width = 20
+  height = 20
+  stay_on_screen = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mc_titlescreen_accessibility_button
+  anchor_point = mid-left
+  x = 294
+  y = 64
+  width = 20
+  height = 20
+  stay_on_screen = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = positronics_report_bug
+  anchor_point = mid-left
+  x = 90
+  y = 88
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  label = Report a Bug
+  buttonaction = openlink
+  value = https://github.com/rafacost/positronics/issues/new/choose
+  description = Opens the GitHub issues page in your browser.
+}

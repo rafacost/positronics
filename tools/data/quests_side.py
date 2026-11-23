@@ -123,7 +123,7 @@ FIELD_MANUAL = {
                        "&bgithub.com/rafacost/positronics/issues&r",
                        "Say which version you run (the main menu shows it), what you did, and what happened instead.",
                        "Attach &blogs/latest.log&r and &blogs/kubejs/server.log&r from your game folder.",
-                       "&7Supported: the island to the end of River Crossing. Past that, you're the survey team.")},
+                       "&7The survey crews have walked the line as far as River Crossing. Past that, your reports count double.&r")},
         {"key": "survival", "title": "Staying Alive", "icon": "toughasnails:thermometer", "tasks": ["check"], "pos": (10, 1), "deps": ["clearance", "multis"],
          "desc": guide("11", "Survival",
                        "Drink clean water. Stay warm, or at least dry. Winter comes every year whether you're ready or not,",
