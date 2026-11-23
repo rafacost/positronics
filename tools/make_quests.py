@@ -154,8 +154,19 @@ def main():
             if scrip:
                 rewards.append(("positronics:ncp_scrip", scrip))
             rewards += [(r, 1) if isinstance(r, (str, dict)) else tuple(r) for r in q.get("rewards", [])]
-            if rewards:
+            commands = q.get("commands", [])   # [(command, title)]: run by the server, {p} = the player's name
+            if rewards or commands:
                 lines.append("\t\t\trewards: [")
+                for i, (command, ctitle) in enumerate(commands):
+                    lines.append("\t\t\t\t{")
+                    lines.append(f"\t\t\t\t\tcommand: {s(command)}")
+                    lines.append("\t\t\t\t\televate_perms: true")
+                    lines.append(f"\t\t\t\t\tid: {s(qid(cid, k, 'command', str(i)))}")
+                    lines.append("\t\t\t\t\tplayer_command: false")
+                    lines.append("\t\t\t\t\tsilent: true")
+                    lines.append(f"\t\t\t\t\ttitle: {s(ctitle)}")
+                    lines.append('\t\t\t\t\ttype: "command"')
+                    lines.append("\t\t\t\t}")
                 for i, (item, count) in enumerate(rewards):
                     check(item_id(item), f"{cid}/{k} reward")
                     lines.append("\t\t\t\t{")

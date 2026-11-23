@@ -1750,6 +1750,43 @@
 			x: 0.0d
 			y: 13.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["1E64986BC9048338"]
+			description: [
+				"&7[NCP Shop]"
+				""
+				"Every bee more than 24 blocks from its hive goes home, for 2 NCP Scrip."
+				"A bee whose hive is gone comes to you instead."
+				"&7Only bees in loaded chunks can hear it. Nothing to recall, and the Scrip comes back."
+				"&7Click 'Submit' on the task to pay. Repeatable."
+			]
+			icon: "productivebees:advanced_oak_beehive"
+			id: "025EE68888A1DBDD"
+			rewards: [
+				{
+					command: "/execute as {p} at {p} run positronics_recallbees"
+					elevate_perms: true
+					id: "3D5BF6F339C10A67"
+					player_command: false
+					silent: true
+					title: "Recall your strays"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "35A2E84F42D9CCE9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bee Recall"
+			x: 1.5d
+			y: 13.5d
+		}
 	]
 	title: "NCP Shop"
 }

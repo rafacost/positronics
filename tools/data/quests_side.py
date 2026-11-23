@@ -376,6 +376,17 @@ def shop():
                        "desc": [f"&7[NCP Shop]", "", f"{count}x {title} for {price} NCP Scrip.",
                                 "&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."]
                                + (["&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."] if unlock else [])})
+    # Bee recall (decided 2026-11-23): a service, not an item. kubejs/.../integration/bee_rescue.js registers
+    # positronics_recallbees; it refunds the 2 Scrip itself when no bee needed recalling.
+    i = len(offers)
+    quests.append({"key": "bee_recall", "title": "Bee Recall", "repeat": True, "consume": True, "deps": ["apiary:hive"],
+                   "tasks": [("positronics:ncp_scrip", 2)], "rewards": [], "scrip": 0,
+                   "commands": [("/execute as {p} at {p} run positronics_recallbees", "Recall your strays")],
+                   "icon": "productivebees:advanced_oak_beehive", "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
+                   "desc": ["&7[NCP Shop]", "", "Every bee more than 24 blocks from its hive goes home, for 2 NCP Scrip.",
+                            "A bee whose hive is gone comes to you instead.",
+                            "&7Only bees in loaded chunks can hear it. Nothing to recall, and the Scrip comes back.",
+                            "&7Click 'Submit' on the task to pay. Repeatable."]})
     return {"id": "ncp_shop", "filename": "ncp_shop", "order": 40, "group": "NCP Shop",
             "title": "NCP Shop", "icon": "positronics:ncp_scrip", "quests": quests}
 

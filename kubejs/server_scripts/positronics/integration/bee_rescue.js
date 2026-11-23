@@ -38,3 +38,65 @@ EntityEvents.hurt(event => {
     if (BEE_RESCUE_LOG) console.info(`[positronics] bee rescue: ${bee.getEncodeId()} pulled out of the void to ${where} (${Math.floor(x)}, ${Math.floor(y)}, ${Math.floor(z)})`)
     event.cancel()   // KubeJS 6: cancel() ends the handler, so it goes last
 })
+
+// ---- Bee Recall (NCP Shop, 2 Scrip; decided 2026-11-23). The shop quest runs
+// `execute as <player> at <player> run positronics_recallbees`. Every loaded bee in the player's dimension that is more than 24 blocks from its hive is put back
+// above it; a bee whose hive is gone (or never had one) and is more than 8 blocks away comes to the player.
+// Bees in unloaded chunks aren't ticking and can't be found. When nothing moved, the 2 Scrip go back.
+const BEE_RECALL_HOME = 24
+const BEE_RECALL_TO_PLAYER = 8
+const BEE_RECALL_PRICE = 2
+
+function positronicsDist2(e, x, y, z) {
+    let dx = e.x - x, dy = e.y - y, dz = e.z - z
+    return dx * dx + dy * dy + dz * dz
+}
+
+function positronicsRecallBeesAt(level, px, py, pz) {
+    let home = 0, toYou = 0
+    level.getEntities().forEach(bee => {
+        if (!positronicsIsBee(bee) || !bee.isAlive()) return
+        let hive = null
+        try { hive = bee.getHivePos() } catch (e) { hive = null }
+        if (hive && level.getBlockEntity(hive) == null) hive = null   // the hive was broken
+        if (hive) {
+            let hx = hive.x + 0.5, hy = hive.y + 1.2, hz = hive.z + 0.5
+            if (positronicsDist2(bee, hx, hy, hz) <= BEE_RECALL_HOME * BEE_RECALL_HOME) return
+            bee.setMotion(0, 0, 0)
+            bee.teleportTo(hx, hy, hz)
+            home++
+        } else {
+            if (positronicsDist2(bee, px, py, pz) <= BEE_RECALL_TO_PLAYER * BEE_RECALL_TO_PLAYER) return
+            bee.setMotion(0, 0, 0)
+            bee.teleportTo(px, py + 1, pz)
+            toYou++
+        }
+    })
+    return { home: home, toYou: toYou }
+}
+
+function positronicsRecallBees(player) {
+    let r = positronicsRecallBeesAt(player.level, player.x, player.y, player.z)
+    if (r.home + r.toYou === 0) {
+        player.give(Item.of('positronics:ncp_scrip', BEE_RECALL_PRICE))
+        player.tell(Text.gray(`[NCP] Every bee within earshot is already home. ${BEE_RECALL_PRICE} Scrip returned.`))
+    } else {
+        player.tell(Text.gold(`[NCP] Recall: ${r.home} bee(s) sent back to their hives, ${r.toYou} homeless bee(s) brought to you.`))
+    }
+    console.info(`[positronics] bee recall for ${player.username}: home=${r.home} toPlayer=${r.toYou}`)
+    return r.home + r.toYou
+}
+
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands } = event
+    event.register(Commands.literal('positronics_recallbees')
+        .requires(src => src.hasPermission(2))
+        .executes(ctx => {
+            let player = ctx.source.getPlayer()
+            if (!player) {
+                console.info('[positronics] bee recall: run it as a player (execute as <player> run positronics_recallbees)')
+                return 0
+            }
+            return positronicsRecallBees(player)
+        }))
+})
