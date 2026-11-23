@@ -57,8 +57,7 @@
 				"the void coughs something up: a &bstratum&r. A layer of the old world, pressed thin."
 				"Smelt one for a few nuggets (nine to an ingot). Crush it later for a whole dust."
 				"&7A mortar pulls atoms out of it too: see Breaking Metal."
-				"&7The stone hammer only finds iron and copper. An iron-grade hammer finds tin, coal and lead in gravel;"
-				"&7a steel one finds redstone and nickel in sand. After that it's machines, and your arms can rest."
+				"&7The stone hammer is a stone hammer. It finds what a stone hammer deserves."
 			]
 			id: "646ADF5E2F61D70F"
 			rewards: [
@@ -215,10 +214,8 @@
 				""
 				"Every circuit needs redstone, and redstone sits deeper than iron can dig."
 				"So you need &bsteel&r, and you need it without a single machine. The &bPrimitive Blast Furnace&r will do it:"
-				"iron, coal and time."
-				"&aFirebricks are a chore:&r mortar clay into clay dust and bricks into brick dust; mix them into fireclay dust;"
-				"press it into compressed fireclay by hand; fire it in a furnace. Four firebrick make a firebricks block."
-				"&7EMI shows the shape. It's slow and hot and it smells like a blacksmith's apron. It's worth it."
+				"iron, coal and time. The firebricks are a chore, and EMI knows every step of it."
+				"&7It's slow and hot and it smells like a blacksmith's apron. It's worth it."
 			]
 			id: "254E5FE186B806B8"
 			rewards: [
@@ -301,7 +298,6 @@
 				""
 				"Every machine you'll ever own starts as one of these: an empty box, waiting to be told what it is."
 				"Build your first. You'll build hundreds."
-				"&7Wood planks: a GregTech hammer and two wood pulp. Cables: a wire and a rubber plate (see Rubber)."
 			]
 			id: "70EDF0098A06DF89"
 			rewards: [
@@ -368,15 +364,8 @@
 				"&aThe chain:&r &bsolar panels&r (Solar Flux, 16 FE/t each in daylight, no hull) -> a Powah &bEnergy Cell&r"
 				"(it keeps the day for the night) -> a &bULV Energy Converter&r (4 FE make 1 EU; it sets itself to FE to EU"
 				"when you place it) -> GregTech cable -> machines."
-				"A ULV machine pulls up to 8 EU/t, which is 32 FE/t: two panels per machine while the sun's up,"
-				"more if you want the cell full by dark. A &b1A&r converter passes one amp, 8 EU/t at ULV."
-				"More machines, more converters (or a 4A one). Panels and cells push into whatever touches them;"
-				"Pipez energy pipes carry FE further."
-				"&aWhen the sun quits on you:&r the Powah &bFurnator&r burns coal (8 carbon atoms make one)."
-				"Panels compact without loss: eight ULV panels and an LV circuit make two LV panels;"
-				"from MV up it's four of the last, that tier's circuit and two plates, in an assembler."
-				"&7NCP's Emergency Solar (GregTech's ULV panel) puts 8 EU/t straight onto the cable: no converter, no 4:1 loss."
-				"&7It costs a hull per panel. There's always a catch."
+				"How many panels, how many converters, what to do at night: that's arithmetic, and it's yours now."
+				"&7The sun goes down every evening. Plan for it."
 			]
 			id: "37E06DD9764C4021"
 			rewards: [
@@ -416,7 +405,6 @@
 				""
 				"By now the Mk II is burying you in strata, and a furnace only gets &b3 nuggets&r out of each one."
 				"The &bCrusher&r gets a whole dust: a whole ingot. &aThree times the metal&r from the same pile."
-				"One Crusher eats about 8 strata a minute. One Ore Generator makes 30. Do the arithmetic and build accordingly."
 				"The &bSmelter&r does bronze, red alloy, tin alloy and &bsteel without a coke oven&r: no fuel, thirty seconds an ingot."
 				"The &bSifter&r on its own is a slow thing. Make &bfour&r: they're the start of something much bigger."
 			]
@@ -500,8 +488,7 @@
 				"The Mk I gives you cobblestone. The Mk II gives you the old world, one stratum at a time,"
 				"steady as a heartbeat: &bSeed I strata&r, straight out of the void."
 				"It costs stone bricks, iron blocks, steel and a &bfull Klein Star Ein&r. Your Mk I isn't part of the deal:"
-				"it stays where it is and keeps working."
-				"&aFill the star&r in your Beam Capacitor: Reclaimer atoms in, 50,000 EMC out."
+				"it stays where it is and keeps working. The star holds &b50,000 EMC&r; how you fill it is up to you."
 				"Then build another Ore Generator, and more machines to eat what they make. That's the whole job, really."
 			]
 			id: "473628F3957FFFB0"
@@ -532,10 +519,8 @@
 				"No rubber trees, no resin. No resin, no rubber trees. You see the problem."
 				"Positronic Memory sees the way out: rubber is isoprene, C5H8, and you can build it atom by atom on the crafting table."
 				"&b1 carbon + 4 hydrogen = 1 methane&r (CH4). &b2 methane + 3 carbon = 2 sticky resin&r."
-				"&aRubber plate by hand:&r mortar + 2 sticky resin = raw rubber dust; smelt it into a plate."
-				"Wire + plate = cable, and the hull needs two."
-				"&aThe saplings&r grow real rubber trees. Break the tree's own logs and they bleed resin most of the time."
-				"&7Logs you placed yourself, or logs from a botany pot, won't. The tree knows. Don't ask me how."
+				"Resin becomes a plate, a plate and a wire become a cable, and the hull needs two."
+				"&7The saplings grow real rubber trees. They bleed, if you treat them right."
 			]
 			id: "45ED338A938645F1"
 			rewards: [
@@ -621,14 +606,11 @@
 				"&7[NCP Field Memo #0116: Biomass]"
 				""
 				"Every plant is chemistry, and Memory reads chemistry. A plant is &bcellulose&r: C6H10O5, twenty-one atoms."
-				"&aMortar + 8 leaves&r (or 4 saplings, 8 crops, 8 sugar cane) = 1 &bplant mass&r."
-				"&aMortar + 2 plant mass&r = 1 &bcellulose&r, worth exactly its 6 carbon, 10 hydrogen and 5 oxygen."
-				"&aMortar + 1 rock dust&r (sand broken with any hammer) = 1 &bsilicon dioxide&r."
-				"Stone pays less than green things. It usually does."
+				"A mortar turns green things into &bplant mass&r, and plant mass into &bcellulose&r,"
+				"worth exactly its 6 carbon, 10 hydrogen and 5 oxygen."
 				"Burn one cellulose to teach it, and everything you grow after that is money."
 				"Need the atoms themselves (rubber wants carbon and hydrogen)? Buy them back in the tablet."
-				"&7Enclosed: sugar cane. It grows in a botany pot, and it's the fastest biomass you've got."
-				"&7Leaves need shears (two iron). Once you have proper tools, the NCP Shop sells a reinforced pair."
+				"&7Enclosed: sugar cane. Find it some dirt."
 			]
 			id: "556BA39D6B479B11"
 			rewards: [
@@ -665,8 +647,7 @@
 				"&bMortar + stratum = 5 atoms&r of its metal. &bMortar + ingot = 16&r. Make sixteen &biron&r and sixteen &bcopper&r:"
 				"the tablet you build next will want to learn them."
 				"A stratum smelts to 3 nuggets, about 5.3 atoms' worth, so the mortar loses a little. Memory's worth the loss."
-				"&bA ring of 8 atoms&r on the crafting table turns back into 4 nuggets (iron, copper, tin, lead, nickel)."
-				"&7Flint mortars handle iron and copper; iron-grade mortars add tin, lead and carbon; steel adds nickel."
+				"&7A flint mortar won't break everything. Better mortars come with better metal."
 			]
 			id: "271F6CBDB4715876"
 			rewards: [
@@ -705,14 +686,8 @@
 				"&aThe simplest line there is:&r a &bhopper botany pot&r of cane on top of a hopper, feeding the Reclaimer;"
 				"another hopper under the Reclaimer, into a chest. No pipes. No wrench. No thinking."
 				"&7Craft the hopper pot, or buy one at the NCP Shop (8 Scrip). Keep 128 of the hydrogen it makes for this memo."
-				"A pot of cane grows &b8 a minute&r (about 5,000 EMC an hour). One Reclaimer keeps up with 12 pots."
-				"&aWhat it eats:&r biomass (16 leaves, 8 saplings, 16 crops or cane, 2 plant mass, 8 wood pulp) = 6 C, 10 H, 5 O."
-				"Rock dust = 1 Si + 2 O (and a trace of aluminium). Honey and wax pay well."
-				"Seed I strata = 5 atoms of their metal, like the mortar. Fed by an Ore Generator, that's your best EMC."
-				"Rubric strata give only their 5 silicon atoms here. Want the redstone? Crush those instead."
-				"It also splits your hand-made cellulose and silicon dioxide back into atoms."
-				"&aTo bank it:&r pipe the atoms into a &bBasic EMC Link&r (ProjectExpansion), and the EMC lands on your tablet."
-				"&7At LV, electrolysis (water) and the centrifuge (air) bring hydrogen, oxygen, nitrogen and argon, paid in EU."
+				"It eats what your mortar ate, and strata too: five atoms of their metal, like the mortar."
+				"EMI lists the rest. Where the atoms go after the chest is your problem, and a good one to have."
 			]
 			icon: "gtceu:ulv_atomic_reclaimer"
 			id: "0788A02A25C2D582"
@@ -759,10 +734,8 @@
 				""
 				"NCP calls it a Beam Capacitor. The people who built it called it an Antimatter Relay, and I'd believe either one."
 				"It takes anything with EMC, burns it, and pours what's left into a &bKlein Star&r."
-				"&aClose the loop:&r point the Reclaimer's output hopper at the Capacitor instead of the chest, with a star inside."
-				"The plants grow, the atoms fall, the star fills up, and nobody has to be at the bench."
+				"Feed it, and nobody has to be at the bench. How you feed it is the puzzle."
 				"Four stars combine into the next size up, and the charge comes along."
-				"&7In a hurry? Set a star in your tablet's input slots and it fills from your own EMC. Not the burn slot: that one eats the star."
 			]
 			id: "3F19BE1DC07334EB"
 			rewards: [
@@ -796,10 +769,8 @@
 				""
 				"A Klein Star Zwei holds &b200,000 EMC&r (four Ein stars, combined). Core I wants one full to the brim."
 				"Not almost full. Full."
-				"&aThe engine:&r an Ore Generator makes 30 Seed I strata a minute, and an Atomic Reclaimer breaks each one"
-				"into 5 atoms (40 EMC). Ore Generator -> 2 Reclaimers -> Capacitor is about 58,000 EMC an hour, with nobody watching."
-				"&7Pull some Rubric strata out before the Reclaimers and crush them: circuits still want redstone."
-				"&7Plants alone are slower: a pot of cane is about 5,000 EMC an hour."
+				"An Ore Generator makes 30 Seed I strata a minute, and each one is atoms waiting to happen."
+				"&7Circuits still want redstone. Don't burn all of it."
 			]
 			id: "73A4CD65D47CBF1A"
 			rewards: [
@@ -831,7 +802,7 @@
 				"It looks like a toy. It isn't. Hold it near your ear and it hums, like something in there is thinking."
 				"Maybe something is."
 				"The Core is never used up: it's the catalyst for your first Clearance Card."
-				"&7Every Core after this wants a bigger grid: 4x4 at LV, 5x5 at MV, 7x7 at EV, 9x9 at LuV."
+				"&7The next one is bigger. They all are."
 			]
 			id: "7169DFA510435F8A"
 			rewards: [
@@ -930,10 +901,9 @@
 				"All of it comes off a crafting table at ULV. A bus is a hull, a chest and a rubber plate: chest on top"
 				"for input, underneath for output. The energy hatch wants a &bULV voltage coil&r: eight fine lead wires"
 				"round a magnetic iron rod. The maintenance hatch is a hull and every tool you own."
-				"&aIt sifts deep:&r one gravel gives &b4 strata&r on circuit 1. Add a fluid hatch and &bhoney&r"
-				"(50 mB a run, circuit 11) and it's &b8&r. An LV energy hatch and circuit 2 make it 16 (12: 32 with honey);"
-				"MV and circuit 3, 64 (13: 128). Same mix as the Ore Generator."
-				"&7Your problem stops being strata. It becomes Reclaimers, Crushers and bees. EMI shows the shape."
+				"&aIt sifts deep:&r one gravel gives &b4 strata&r on circuit 1, the same mix as the Ore Generator."
+				"It gets better with voltage, and better again with honey. EMI shows the circuits."
+				"&7Your problem stops being strata. It becomes Reclaimers, Crushers and bees."
 			]
 			id: "74C14908A195E46D"
 			rewards: [
@@ -992,10 +962,7 @@
 				"leave behind when they break. You made clay out of it and threw the rest away."
 				"Put &bDust&r in the Array instead. Same circuits as gravel, same honey. On circuit 1, every dust gives"
 				"&b30%&r nether quartz, &b15%&r lapis and &b2%&r a &bRough Diamond&r. That's everything Tom's Storage wants."
-				"LV (circuit 2) raises those and adds &b20%&r quartzite, for LV emitters and sensors."
-				"MV (circuit 3) adds what AE2 needs: certus dust, sky stone dust and glowstone dust."
-				"Honey doubles all of it (circuits 11, 12, 13)."
-				"Two Rough Diamonds and a hammer make a diamond. Quartz makes comparators."
+				"Higher voltage finds more, and finds things a ULV Array never will."
 				"&7NCP never threw anything away. That was the one thing they got right."
 			]
 			id: "066B06E7AEFFCADD"

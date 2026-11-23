@@ -683,9 +683,17 @@
    4.0,
    0.0
   ],
+  "apiary/collector": [
+   12.0,
+   3.0
+  ],
   "apiary/comb": [
    2.0,
    0.0
+  ],
+  "apiary/creeper": [
+   12.0,
+   -3.0
   ],
   "apiary/hive": [
    0.0,
@@ -695,9 +703,21 @@
    8.0,
    0.0
   ],
+  "apiary/lumber": [
+   14.0,
+   0.8
+  ],
   "apiary/more": [
    10.0,
    1.5
+  ],
+  "apiary/nests": [
+   12.0,
+   1.5
+  ],
+  "apiary/quarry": [
+   14.0,
+   2.2
   ],
   "apiary/sugar": [
    10.0,

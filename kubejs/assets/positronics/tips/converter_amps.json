@@ -1,0 +1,8 @@
+{
+  "title": {
+    "text": "§3NCP Field Note"
+  },
+  "tip": {
+    "text": "A 1A converter passes one amp, 8 EU/t at ULV. Two machines want two amps: a second converter, or a 4A one."
+  }
+}
