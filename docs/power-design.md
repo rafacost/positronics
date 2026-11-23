@@ -86,14 +86,17 @@ From `docs/multiblocks.md`: a 15×15×15 multiblock that burns charged ProjectEx
 
 ## 4. What gets cut or left alone
 
-- **Powah past the starter tier.** Its chain needs dielectric paste (lava) and its reactors would be a second fuel line. I recommend removing Powah's higher generators (thermo, magmator, reactor, solar) and keeping only its cells, re-recipe'd per tier as night storage. *Open: confirm with the user.*
+- **Powah past the starter tier.** Its chain needs dielectric paste (lava) and its reactors would be a second fuel line. Confirmed and done: every generator past the starter Furnator is removed. The higher cells stay as Powah ships them (dielectric paste needs lava or blaze powder, so they're out of reach for now); re-recipe them per tier later if night storage needs them.
 - **GT steam turbines and boilers.** They stay as GT ships them. Water plus coal is already covered by the coal check above.
 - **GT plasma generators (LuV+).** These are endgame, from fusion. Nitrogen plasma is 1 mB → 64 t × 2,048 EU/t, about 131,000 EU/mB. They stay as GT's alternative to the Beam Reactor; check them against the Beam Reactor rate when it's built.
 
 ## Build order
 
-1. `power.js`: replace the methane and ethanol fuel recipes (section 2), then test on the server.
+1. ~~`power.js`: replace the methane and ethanol fuel recipes (section 2).~~ Done 2026-11-23. The new ids are
+   `positronics:gas_turbine/power/methane` and `positronics:combustion_generator/power/ethanol`; both were checked on the
+   test server (32 EU/t output, 7 and 6 ticks), and GT's originals are gone.
 2. Measure coal in game: the Furnator and an LP solid boiler. Fix it if it's above the rate.
 3. Write "The Gas Line" quest and its tip in Lud.
-4. Powah cut, once confirmed.
+4. ~~Powah cut.~~ Done 2026-11-23: every Powah generator past the starter Furnator (furnators, solar panels, magmators,
+   thermo generators, reactors) lost its recipe. Cells, cables, batteries and the rest are untouched for now.
 5. Beam Reactor, with the UV chapter.

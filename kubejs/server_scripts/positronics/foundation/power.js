@@ -9,7 +9,9 @@
 //     It is required: GT machines never accept raw FE (same as Greg-E; nativeEUToFE only lets GT cables feed FE blocks).
 //     That keeps GregTech's own solar worth building: 8 EU/t straight onto cable, no converter, no 4:1 loss.
 //   - Powah's starter Energy Cell stores the day for the night; the starter Furnator burns coal (carbon) as backup.
-//     Powah's own chain (dielectric paste needs lava, capacitors need energized steel) is skipped at ULV.
+//     Powah's own chain (dielectric paste needs lava, capacitors need energized steel) is skipped at ULV,
+//     and every Powah generator past the starter Furnator is removed (2026-11-23, see the end of this file).
+//   - Methane and ethanol burn at ~140 EU per EMC instead of GregTech's ~700 (2026-11-23, docs/power-design.md).
 
 ServerEvents.recipes(event => {
     // ---- Solar Flux panels
@@ -90,4 +92,31 @@ ServerEvents.recipes(event => {
         F: 'minecraft:furnace',
         R: '#forge:dusts/redstone'
     }).id('positronics:power/furnator_starter')
+
+    // ---- Powah cut (decided 2026-11-23, docs/power-design.md): every generator past the starter Furnator goes.
+    // Solar Flux is the solar line, GregTech fuels are the fuel line, so Powah's own panels, furnators, magmators,
+    // thermo generators and reactors would only be a second, unpriced path. Cells, cables and the rest stay.
+    ;['basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'].forEach(t => event.remove({ output: `powah:furnator_${t}` }))
+    ;['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'].forEach(t => {
+        ;['solar_panel', 'magmator', 'thermo_generator', 'reactor'].forEach(g => event.remove({ output: `powah:${g}_${t}` }))
+    })
+
+    // ---- Fuel priced as spending EMC (decided 2026-11-23, docs/power-design.md). Methane and ethanol can be
+    // hand-crafted from atoms and bridged to GregTech fluid (integration/chemistry.js: 250 mB per molecule), and atoms
+    // are 8 EMC each. GregTech's own burn values made that ~700 EU per EMC; these make it ~140, so a whole Ore
+    // Generator chain (~58,000 EMC/h) burned as fuel runs about one MV amp. The bridge itself is untouched, so
+    // rocket fuel (space.js) keeps its cost.
+    //   methane : 10 mB -> 7 ticks at 32 EU/t (22.4 EU/mB; 250 mB = 5,600 EU for 40 EMC = 140 EU/EMC)
+    //   ethanol :  5 mB -> 6 ticks at 32 EU/t (38.4 EU/mB; 250 mB = 9,600 EU for 72 EMC = 133 EU/EMC)
+    event.remove({ id: 'gtceu:gas_turbine/methane' })
+    event.recipes.gtceu.gas_turbine('positronics:power/methane')
+        .inputFluids('gtceu:methane 10')
+        .duration(7)
+        .EUt(-GTValues.V[GTValues.LV])
+    event.remove({ id: 'gtceu:combustion_generator/ethanol' })
+    event.recipes.gtceu.combustion_generator('positronics:power/ethanol')
+        .inputFluids('gtceu:ethanol 5')
+        .duration(6)
+        .EUt(-GTValues.V[GTValues.LV])
+
 })
