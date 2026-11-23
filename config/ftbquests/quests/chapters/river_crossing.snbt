@@ -762,6 +762,7 @@
 				"&aClose the loop:&r point the Reclaimer's output hopper at the Capacitor instead of the chest, with a star inside."
 				"The plants grow, the atoms fall, the star fills up, and nobody has to be at the bench."
 				"Four stars combine into the next size up, and the charge comes along."
+				"&7In a hurry? Set a star in your tablet's input slots and it fills from your own EMC. Not the burn slot: that one eats the star."
 			]
 			id: "3F19BE1DC07334EB"
 			rewards: [

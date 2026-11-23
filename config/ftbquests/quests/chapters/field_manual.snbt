@@ -261,7 +261,8 @@
 				"A molecule is worth the sum of its atoms (a cellulose is 168)."
 				"Ingots, strata, cards and crafted parts are worth nothing to it. Break them into atoms first."
 				"There are no collectors or condensers: EMC only comes from burning what you made yourself."
-				"Stars charged in a Beam Capacitor (Antimatter Relay) are the keys to the Positronic Cores."
+				"Full stars are the keys to the Positronic Cores. Fill one from your tablet (input slots, never the burn slot),"
+				"or let a Beam Capacitor (Antimatter Relay) fill it from a pipe while you sleep."
 			]
 			icon: "projecte:transmutation_tablet"
 			id: "42E91BC20D87B3EA"

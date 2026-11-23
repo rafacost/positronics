@@ -131,7 +131,7 @@ Why it's hard: the star is roughly 200M EMC (to be verified). That needs an LV p
 3. **ProjectExpansion star capacities** (Magnum, Colossal, Gargantuan) and what the **Final Star** does by default.
 4. Re-Avaritia **`avaritia:shaped_table`** accepts `forge:nbt` ingredients.
 5. GT 7.5.2 KubeJS: `notConsumable(...)` for the Seed II Core catalyst in a Chemical Bath recipe.
-6. **The Relay must not be usable as an EMC exploit with the tablet:** can a charged star in the tablet give its EMC back? That's acceptable (it's the player's own EMC), but confirm it doesn't duplicate.
+6. **Tablet and stars (settled 2026-11-23):** a star in the tablet's input slots fills from personal EMC (`SlotInput`: `removeEmc` from the player, `insertEmc` into the star); it moves EMC, never duplicates it. The user is fine with it: the tablet charges stars by hand, the Relay is only the automation.
 
 ## 6. Alpha 0.1 test plan for the seeds
 - Time from new world → Ore Generator (target 4–6 h), and Ore Generator → Seed II Core (target 10–15 h of active play).
