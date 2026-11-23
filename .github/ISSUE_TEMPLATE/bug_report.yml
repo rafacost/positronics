@@ -1,0 +1,47 @@
+name: Bug report
+description: Something broke, crashed, or a quest can't be finished.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Positronics. One problem per report, please.
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+      description: Shown on the main menu, e.g. 0.1.0-beta.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - Waste Lands / River Crossing (ULV, supported)
+        - The Calla or later (LV and up, preview)
+        - A side chapter (Apiary, Logistics, Kitchen, Space, ...)
+        - Crash or won't start
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. Quest names or memo numbers help.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Drag in `logs/latest.log` and `logs/kubejs/server.log` from your game folder (or a crash report from `crash-reports/`).
+    validations:
+      required: true
+  - type: checkboxes
+    id: clean
+    attributes:
+      label: Setup
+      options:
+        - label: Single player, installed from CurseForge, no mods added or removed.

@@ -388,6 +388,38 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["504F530000001001"]
+			description: [
+				"&7[NCP Field Manual, Section 14: Reports]"
+				""
+				"This network is a beta. Some of it was never switched on, and some of it will break under you."
+				"When it does, NCP wants to hear about it. Write it up at:"
+				"&bgithub.com/rafacost/positronics/issues&r"
+				"Say which version you run (the main menu shows it), what you did, and what happened instead."
+				"Attach &blogs/latest.log&r and &blogs/kubejs/server.log&r from your game folder."
+				"&7Supported: the island to the end of River Crossing. Past that, you're the survey team."
+			]
+			icon: "minecraft:writable_book"
+			id: "2D42B952993B38E8"
+			rewards: [
+				{
+					id: "595D1871048771F5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "29656E97526B38CF"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Field Reports"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
 			dependencies: ["7AA929DC3F594686" "2BE8CFB825E94B1A"]
 			description: [
 				"&7[NCP Field Manual, Section 11: Survival]"

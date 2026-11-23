@@ -1,27 +1,59 @@
 # Positronics
 
-A tech-only GregTech + ProjectE skyblock modpack for **Minecraft 1.20.1 · Forge 47.4.0**.
 *The world has moved on. Rebuild the North Central Positronics network, tier by tier, and open a Door.*
 
-Status: **beta**, version in [`VERSION`](VERSION), changes in [`CHANGELOG.md`](CHANGELOG.md). Supported: island → end of ULV; LV and up is a preview.
+A tech-only **GregTech + ProjectE skyblock** for **Minecraft 1.20.1 · Forge 47.4.0**.
+You start on a small island in a dead world: no ores, no mobs, no villagers, no Nether and no End. Everything you
+make comes from rock, water, sunlight and atoms, and every tier has to be earned.
 
-## Layout
+**Status: beta `0.1.0-beta`** ([changelog](CHANGELOG.md)) · single player
+- **Supported:** The Waste Lands to the end of River Crossing (ULV).
+- **Preview:** The Calla (LV) and everything after it. Playable, but not yet played through. You're the survey team.
+
+## What makes it different
+- **Strata, not ores.** Resources come from Strata: hammered out of gravel, sifted, then made by the
+  Ore Generator (USRG). Later the Reclamation Sifter Array mass-produces them.
+- **Atoms are the currency.** Positronic Memory (ProjectE) learns elements only. The Atomic Reclaimer breaks
+  biomass and rock into atoms, and the EMC fills Klein Stars. The stars run your generators and build the
+  Positronic Cores that open each tier.
+- **Power you have to plan.** Solar panels feed GregTech through energy converters, and the sun sets every
+  evening. Fuel burns too, but every bucket is EMC you didn't spend on iron.
+- **Survival that doesn't stop.** Thirst, body temperature, four seasons, and a hunger burn of about one bar an
+  hour, AFK included. Eat a variety and you're rewarded for it.
+- **A story in memos.** Ten chapters from ULV to UHV, written as North Central Positronics field memos.
+  Loading-screen tips carry the memo numbers they belong to.
+- **Side paths:** bees (Productive Bees), chemistry (Alchemistry), simulated mobs (Hostile Neural Networks),
+  rockets and a Stargate (Ad Astra, Stargate Journey), storage from drawers to AE2, and a shop paid in NCP Scrip.
+
+## Install
+1. Install the [CurseForge app](https://www.curseforge.com/download/app).
+2. Search for **Positronics** and install it. Give Minecraft at least **8 GB** of RAM.
+3. Start a **new single-player world**. Read the first quests: they teach you how to drink, eat and hammer.
+
+## Found a problem?
+That's what the beta is for. [Open an issue](https://github.com/rafacost/positronics/issues/new/choose) and tell us:
+- the pack version, shown on the main menu;
+- what you did, and what happened instead;
+- attach `logs/latest.log` and `logs/kubejs/server.log` from your game folder, or the crash report.
+
+The in-game Field Manual has the same instructions (Section 14, Field Reports).
+
+## For developers
 | Path | What |
 |---|---|
-| `docs/` | Design docs: skeleton, seed chains, multiblocks, story and naming, mod list, agent prompts |
-| `kubejs/*/positronics/` | Our KubeJS scripts (everything we write lives under a `positronics` folder) |
-| `config/`, `defaultconfigs/` | Only the config files we change; generated defaults are not tracked |
-| `tools/deploy.ps1` | Repo → test instance (`D:\Minecraft\Instances\Positronics`) |
-| `tools/pull.ps1` | Instance → repo for things authored in-game (FTB Quests, Skyblock Builder templates, tweaked configs) |
+| `kubejs/*/positronics/` | All our KubeJS scripts |
+| `config/`, `defaultconfigs/`, `journeymap/config/` | Only the configs we change |
+| `tools/data/quests.py`, `quests_side.py` | The questbook as data; `tools/make_quests.py` writes the FTB Quests chapters |
+| `tools/data/tips.py` | Loading-screen tips; `tools/make_tips.py` writes them |
+| `docs/` | Design docs: pack skeleton, power, multiblocks, seed chains, story and naming |
+| `tools/deploy.ps1` | Repo → game instance. Restart the game afterwards: `/reload` isn't enough in this stack. |
 
-## Workflow
-1. Edit in the repo, run `tools\deploy.ps1`, then **restart the game** (KubeJS recipe/startup changes need a full restart; `/reload` isn't enough in this stack).
-2. After editing quests or templates in-game, run `tools\pull.ps1`, review `git diff`, commit.
+Mod jars are never committed; the CurseForge profile manages them.
 
-## Mods
-The mod list lives in `docs/alpha-0.1-modlist.md`. Jars are never committed: the CurseForge profile manages them. Our own mods (USRG Forge port, later Via Aurea and Positronics Core) are added to the instance by hand.
-
-## Credits and rules
-- Our own content. Inspired by Greg-E's ideas (patterns only, no content reused).
-- Names inspired by Stephen King's *Dark Tower* (North Central Positronics). Names and premise only: no quoted text, logos or art.
-- No magic content, by design.
+## Credits
+- Built by [rafacost](https://github.com/rafacost), who also wrote
+  [USRG](https://www.curseforge.com/minecraft/mc-mods/ultimate-skyblock-generator).
+- Names and premise inspired by Stephen King's *The Dark Tower* (North Central Positronics). No quoted text,
+  logos or art.
+- Ideas inspired by the Greg-E pack. Patterns only, no content reused.
+- Tech only, no magic, by design.
