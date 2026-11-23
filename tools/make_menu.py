@@ -82,10 +82,10 @@ def main():
         hidden("minecraft_realms_notification_icons_widget"),
         hidden("vanillabtn:mc_titlescreen_realms_button"),
         # Left column over the empty sky; the island fills the right half of the background.
-        element("positronics_logo", "image", "mid-left", COL_X, -140, LOGO_W, LOGO_H,
+        element("positronics_logo", "image", "mid-left", COL_X, -130, LOGO_W, LOGO_H,
                 source=f"{ASSETS}/logo.png", repeat_texture="false", nine_slice_texture="false"),
-        element("positronics_version", "text_v2", "mid-left", COL_X + 2, -29, 200, 14,
-                source=f"**v{version}**",
+        element("positronics_version", "text_v2", "mid-left", BTN_X, 112, 200, 30,
+                source=f"^^^%n%v{version}%n%^^^",  # ^^^ lines open and close a centred block
                 source_mode="direct", interactable="false", auto_line_wrapping="false", user_scrolling="false"),
         moved("vanillabtn:mc_titlescreen_singleplayer_button", BTN_X, -8, 200),
         moved("vanillabtn:mc_titlescreen_multiplayer_button", BTN_X, 16, 200),

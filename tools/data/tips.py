@@ -41,7 +41,7 @@ TIPS = [
                             "Not the burn slot: that one eats the star."),
     ("0120", "oregen_rate", "Ore Generator -> 2 Atomic Reclaimers -> Beam Capacitor is about 58,000 EMC an hour, with nobody watching."),
     ("0120", "rubric_crush", "Rubric strata give only their 5 silicon atoms in a Reclaimer. Want the redstone? Crush those instead."),
-    ("0121", "core_grids", "Every Positronic Core after the first wants a bigger grid: 4x4 at LV, 5x5 at MV, 7x7 at EV, 9x9 at LuV."),
+    ("0121", "core_grids", "Every Positronic Core after the first wants a bigger grid: 5x5 at LV and MV, 7x7 at EV, 9x9 at LuV."),
     ("0123", "array_ladder", "Sifter Array: circuit 1 gives 4 strata a gravel at ULV. An LV energy hatch and circuit 2 make it 16; "
                              "MV and circuit 3, 64."),
     ("0123", "array_honey", "Honey in the Array doubles everything: circuits 11, 12 and 13 instead of 1, 2 and 3. 50 mB a run."),

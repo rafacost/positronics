@@ -310,8 +310,8 @@
 				"&7[NCP Field Memo #0209: Assembly]"
 				""
 				"A 5x5 crafting grid, built around a plain crafting table with LV parts."
-				"Some things are too big to make on a 3x3. Positronic Core II is a 4x4 recipe and Core III a 5x5;"
-				"both are assembled here."
+				"Some things are too big to make on a 3x3. Positronic Cores II and III both fill the 5x5,"
+				"star in the centre; both are assembled here."
 			]
 			id: "57B1D419E3BC4109"
 			rewards: [

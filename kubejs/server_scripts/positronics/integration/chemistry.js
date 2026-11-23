@@ -1,7 +1,8 @@
 // Positronics: chemistry that shines (Alchemistry + ChemLib + GregTech), decided 2026-11-20.
 //
 // Chemistry is its OWN layer and currency: elements and compounds (ChemLib) come from the
-// Dissolver (anything solid), element bees, Fusion and Fission. They can be plentiful because they can
+// Dissolver (metals and chemistry only, see the guard rail below), the Atomic Reclaimer, element bees,
+// Fusion and Fission. They can be plentiful because they can
 // never skip GregTech or the planets:
 //   1. ChemLib's metal forms (ingots, dusts, nuggets, plates, blocks) lose their shared forge tags,
 //      so a ChemLib titanium ingot is NOT a GT titanium ingot.
@@ -40,6 +41,28 @@ ServerEvents.recipes(event => {
     })
     drop.forEach(id => event.remove({ id: id }))
     console.info(`[Positronics] Chemistry: removed ${drop.length} combiner/compactor recipes that made non-chemistry items.`)
+
+    // ---- Guard rail (decided 2026-11-23, EMC audit): the Dissolver stores production, it doesn't mint atoms.
+    // It keeps (a) ChemLib items (compounds split into exactly their atoms) and (b) metal forms at
+    // 16 elements per ingot (ingots, dusts, plates, nuggets, blocks; alloys give less than they cost).
+    // Everything else goes: Alchemistry's defaults paid 248 EMC per stone (tungsten/dysprosium traces),
+    // 360 per sugar cane, 73,856 per ender pearl, an endless EMC and power loop from LV. New atoms come
+    // from the Atomic Reclaimer, Electrolyzer and Centrifuge (emc_sources.js), where the pack sets the rate.
+    // Quartz blocks (64 barium) and netherite dust (64 tungsten) are metal-form tags that still minted EMC.
+    let dissolverCut = []
+    let dissolverKept = 0
+    event.forEachRecipe({ type: 'alchemistry:dissolver' }, r => {
+        let ing = null
+        try { ing = r.json.get('input').getAsJsonObject().get('ingredient').getAsJsonObject() } catch (e) { return }
+        let item = ing.has('item') ? String(ing.get('item').getAsString()) : ''
+        let tag = ing.has('tag') ? String(ing.get('tag').getAsString()) : ''
+        let m = /^forge:(ingots|dusts|plates|nuggets|storage_blocks)\/(\w+)$/.exec(tag)
+        let keep = item.startsWith('chemlib:') || (m != null && m[2] != 'quartz' && m[2] != 'netherite')
+        if (keep) dissolverKept++
+        else dissolverCut.push(String(r.getId()))
+    })
+    dissolverCut.forEach(id => event.remove({ id: id }))
+    console.info(`[Positronics] Chemistry: Dissolver keeps ${dissolverKept} recipes (chemistry + metal forms), removed ${dissolverCut.length}.`)
 
     // ---- Alchemistry machines with GregTech parts, tiered.
     let machine = (out, tier, extra, key) => {

@@ -19,6 +19,8 @@ River Crossing (ULV); from The Calla (LV) on, expect rough edges and please repo
 - Resources come from Strata: USRG Ore Generators, hammering, mortars and the Reclamation Sifter Array.
 - Positronic Memory (ProjectE) learns elements only. Atoms come from the Atomic Reclaimer, and EMC fills Klein Stars,
   which power the generators and the Positronic Cores that open each tier.
+- The Alchemistry Dissolver breaks down metals and chemistry items only. New atoms come from the Atomic Reclaimer,
+  Electrolyzer and Centrifuge.
 - Power: Solar Flux panels through GregTech energy converters. Methane and ethanol burn too, priced as spending
   EMC. Powah is limited to its starter Energy Cell and Furnator.
 
@@ -37,6 +39,8 @@ River Crossing (ULV); from The Calla (LV) on, expect rough edges and please repo
 ### Known gaps
 - Untested past ULV. LV and later chapters may have missing recipes or impossible steps.
 - Not built yet: the Gas Line quest (fuel power at MV) and the Beam Reactor (endgame power from stars).
+- Alchemistry Fusion and Fission (LuV) can still turn cheap elements into valuable ones. Their energy and time
+  costs will be rebalanced.
 - Not tested in multiplayer.
 
 Report problems at https://github.com/rafacost/positronics/issues with the version, what you did, and your

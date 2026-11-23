@@ -44,10 +44,12 @@ const POS_CORE_STARS = {
     5: 'projectexpansion:colossal_star_zwei'  // built at LuV (End-World I) 3,355,443,200,000
 }
 
-// Grid per core: [table tier (0 = vanilla crafting table), pattern]. A, B, C, D = POS_CORE_PARTS, S = the star.
+// Grid per core: [table tier (0 = vanilla crafting table), pattern]. A, B, C, D = POS_CORE_PARTS, S = the star,
+// P = iron plate padding. Every pattern fills its table exactly, star in the centre.
 const POS_CORE_GRIDS = {
     1: [0, ['ADA', 'BSB', 'ADA']],
-    2: [2, ['ABBA', 'CSDC', 'CDDC', 'ABBA']],
+    // Core II fills the 5x5 table with iron plates (P) so the star sits in the centre; same parts as the old 4x4.
+    2: [2, ['PABAP', 'PCDCP', 'BDSDB', 'PCBCP', 'PAPAP']],
     3: [2, ['ABBBA', 'BCDCB', 'BDSDB', 'BCDCB', 'ABBBA']],
     4: [3, ['AABBBAA', 'ACCDCCA', 'BCDDDCB', 'BDDSDDB', 'BCDDDCB', 'ACCDCCA', 'AABBBAA']],
     5: [4, ['AABBBBBAA', 'ACCDDDCCA', 'BCDDDDDCB', 'BDDCCCDDB', 'BDDCSCDDB', 'BDDCCCDDB', 'BCDDDDDCB', 'ACCDDDCCA', 'AABBBBBAA']]
@@ -119,7 +121,7 @@ ServerEvents.recipes(event => {
     for (let n = 1; n <= 5; n++) {
         let p = POS_CORE_PARTS[n]
         let grid = POS_CORE_GRIDS[n]
-        let all = { A: ing(p.A), B: ing(p.B), C: ing(p.C), D: ing(p.D), S: posFullStar(POS_CORE_STARS[n]) }
+        let all = { A: ing(p.A), B: ing(p.B), C: ing(p.C), D: ing(p.D), P: { tag: 'forge:plates/iron' }, S: posFullStar(POS_CORE_STARS[n]) }
         let key = {}  // only the symbols the pattern uses (vanilla rejects unused keys)
         Object.keys(all).forEach(k => { if (grid[1].join('').indexOf(k) >= 0) key[k] = all[k] })
         let recipe = {
