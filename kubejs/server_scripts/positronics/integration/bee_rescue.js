@@ -42,10 +42,10 @@ EntityEvents.hurt(event => {
 // ---- Bee Recall (NCP Shop, 2 Scrip; decided 2026-11-23). The shop quest runs
 // `execute as <player> at <player> run positronics_recallbees`. Every loaded bee in the player's dimension that is more than 24 blocks from its hive is put back
 // above it; a bee whose hive is gone (or never had one) and is more than 8 blocks away comes to the player.
-// Bees in unloaded chunks aren't ticking and can't be found. When nothing moved, the 2 Scrip go back.
+// Bees in unloaded chunks aren't ticking and can't be found. The Scrip always goes back.
 const BEE_RECALL_HOME = 24
 const BEE_RECALL_TO_PLAYER = 8
-const BEE_RECALL_PRICE = 2
+const BEE_RECALL_PRICE = 1   // paid by the quest and always handed back: free for now (2026-11-23)
 
 function positronicsDist2(e, x, y, z) {
     let dx = e.x - x, dy = e.y - y, dz = e.z - z
@@ -77,11 +77,11 @@ function positronicsRecallBeesAt(level, px, py, pz) {
 
 function positronicsRecallBees(player) {
     let r = positronicsRecallBeesAt(player.level, player.x, player.y, player.z)
+    player.give(Item.of('positronics:ncp_scrip', BEE_RECALL_PRICE))
     if (r.home + r.toYou === 0) {
-        player.give(Item.of('positronics:ncp_scrip', BEE_RECALL_PRICE))
-        player.tell(Text.gray(`[NCP] Every bee within earshot is already home. ${BEE_RECALL_PRICE} Scrip returned.`))
+        player.tell(Text.gray(`[NCP] Every bee within earshot is already home. Scrip returned.`))
     } else {
-        player.tell(Text.gold(`[NCP] Recall: ${r.home} bee(s) sent back to their hives, ${r.toYou} homeless bee(s) brought to you.`))
+        player.tell(Text.gold(`[NCP] Recall: ${r.home} bee(s) sent back to their hives, ${r.toYou} homeless bee(s) brought to you. Scrip returned.`))
     }
     console.info(`[positronics] bee recall for ${player.username}: home=${r.home} toPlayer=${r.toYou}`)
     return r.home + r.toYou

@@ -165,9 +165,11 @@ LOGISTICS = {
                       "Pipe water from the spring and power from your panels.",
                       "GT cables are better for EU. Pipez energy pipes carry FE, and only FE.")},
         {"key": "drawers", "title": "Functional Storage", "external_deps": [WASTE_LANDS_TIMBER], "tasks": [("functionalstorage:oak_1", 4)],
+         "rewards": ["functionalstorage:configuration_tool"],   # user's call (2026-11-23), despite the no-craftables rule
          "desc": memo("3003", "Drawers",
                       "A drawer holds a ridiculous amount of one thing. Cobblestone, gravel, dust: you'll have mountains of all three.",
-                      "Give each mountain a drawer.")},
+                      "Give each mountain a drawer.",
+                      "&7NCP issues the configuration tool with the first set. Lock a drawer and it keeps its place even empty.")},
         {"key": "compacting", "title": "Compacting Drawers", "deps": ["drawers", "river_crossing:steelhammer"], "tasks": ["functionalstorage:compacting_drawer"],
          "desc": memo("3004", "Compacting",
                       "Nuggets in, ingots out. Smelted strata give nuggets, so this one turns them into ingots without you counting to nine.")},
@@ -377,15 +379,15 @@ def shop():
                                 "&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."]
                                + (["&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."] if unlock else [])})
     # Bee recall (decided 2026-11-23): a service, not an item. kubejs/.../integration/bee_rescue.js registers
-    # positronics_recallbees; it refunds the 2 Scrip itself when no bee needed recalling.
+    # positronics_recallbees; it always hands the 1 Scrip back, so the recall is free for now (bees wander too much).
     i = len(offers)
     quests.append({"key": "bee_recall", "title": "Bee Recall", "repeat": True, "consume": True, "deps": ["apiary:hive"],
-                   "tasks": [("positronics:ncp_scrip", 2)], "rewards": [], "scrip": 0,
+                   "tasks": [("positronics:ncp_scrip", 1)], "rewards": [], "scrip": 0,
                    "commands": [("/execute as {p} at {p} run positronics_recallbees", "Recall your strays")],
                    "icon": "productivebees:advanced_oak_beehive", "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
-                   "desc": ["&7[NCP Shop]", "", "Every bee more than 24 blocks from its hive goes home, for 2 NCP Scrip.",
+                   "desc": ["&7[NCP Shop]", "", "Every bee more than 24 blocks from its hive goes home. Free for now: hand over 1 NCP Scrip and you get it back.",
                             "A bee whose hive is gone comes to you instead.",
-                            "&7Only bees in loaded chunks can hear it. Nothing to recall, and the Scrip comes back.",
+                            "&7Only bees in loaded chunks can hear it.",
                             "&7Click 'Submit' on the task to pay. Repeatable."]})
     return {"id": "ncp_shop", "filename": "ncp_shop", "order": 40, "group": "NCP Shop",
             "title": "NCP Shop", "icon": "positronics:ncp_scrip", "quests": quests}

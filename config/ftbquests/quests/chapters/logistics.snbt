@@ -88,6 +88,7 @@
 				""
 				"A drawer holds a ridiculous amount of one thing. Cobblestone, gravel, dust: you'll have mountains of all three."
 				"Give each mountain a drawer."
+				"&7NCP issues the configuration tool with the first set. Lock a drawer and it keeps its place even empty."
 			]
 			id: "0DCACCA06866AA06"
 			rewards: [
@@ -95,6 +96,11 @@
 					count: 2
 					id: "12818FBC3CDC019E"
 					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+				{
+					id: "6CE1D759D01BDEFB"
+					item: "functionalstorage:configuration_tool"
 					type: "item"
 				}
 			]

@@ -1756,9 +1756,9 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"Every bee more than 24 blocks from its hive goes home, for 2 NCP Scrip."
+				"Every bee more than 24 blocks from its hive goes home. Free for now: hand over 1 NCP Scrip and you get it back."
 				"A bee whose hive is gone comes to you instead."
-				"&7Only bees in loaded chunks can hear it. Nothing to recall, and the Scrip comes back."
+				"&7Only bees in loaded chunks can hear it."
 				"&7Click 'Submit' on the task to pay. Repeatable."
 			]
 			icon: "productivebees:advanced_oak_beehive"
@@ -1777,7 +1777,6 @@
 			tasks: [
 				{
 					consume_items: true
-					count: 2L
 					id: "35A2E84F42D9CCE9"
 					item: "positronics:ncp_scrip"
 					type: "item"

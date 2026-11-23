@@ -165,6 +165,7 @@
   "ncp_shop/apple_tree/task/0": "376C00BDFE3E9E09",
   "ncp_shop/ashy_bee/task/0": "51C56BE253FD3FE7",
   "ncp_shop/bee/task/0": "5A97D717F8E82B0C",
+  "ncp_shop/bee_recall/reward/0": "3D5BF6F339C10A67",
   "ncp_shop/blue_bee/reward/0": "40E7331F85FF5AA7",
   "ncp_shop/bonemeal": "0516FB560BE0AE56",
   "ncp_shop/bonemeal/reward/0": "18ABA1FF0C65BC77",
@@ -1102,6 +1103,10 @@
   "ncp_shop/bee": [
    0.0,
    4.5
+  ],
+  "ncp_shop/bee_recall": [
+   1.5,
+   13.5
   ],
   "ncp_shop/birch": [
    4.5,
