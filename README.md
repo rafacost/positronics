@@ -3,7 +3,7 @@
 A tech-only GregTech + ProjectE skyblock modpack for **Minecraft 1.20.1 · Forge 47.4.0**.
 *The world has moved on. Rebuild the North Central Positronics network, tier by tier, and open a Door.*
 
-Status: **pre-alpha** (Alpha 0.1 = island → end of LV).
+Status: **beta**, version in [`VERSION`](VERSION), changes in [`CHANGELOG.md`](CHANGELOG.md). Supported: island → end of ULV; LV and up is a preview.
 
 ## Layout
 | Path | What |
