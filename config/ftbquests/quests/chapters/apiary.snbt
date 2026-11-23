@@ -23,6 +23,8 @@
 				"out here wandering ends in the void. Put a &bglass box&r round the hive and its flowers (a few blocks"
 				"each way, the hive's front face clear) and use the egg &binside&r it. Bees work by day, stay in when it rains."
 				"Once a bee has a hive, it comes home. Then you can open the box."
+				"&aThe crate also holds a &bSimulation Upgrade&r. In a hive's upgrade slot, its bees stop going out"
+				"at all: the hive works out their trips to the flowers by itself. Nobody gets lost that way."
 				"&7Listen to them for a minute. It's the first thing that's buzzed around here that wasn't a machine."
 			]
 			id: "1E64986BC9048338"
@@ -36,6 +38,11 @@
 				{
 					id: "2276AE70D49E4B78"
 					item: "minecraft:bee_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "7E3B17EBA00F41A4"
+					item: "productivebees:upgrade_simulator"
 					type: "item"
 				}
 			]

@@ -551,7 +551,9 @@ APIARY = {
         # Bees here make honey (the Array/Paddy booster) and atoms (Reclaimer), not metals: metal bees
         # need a Crystalline bee, which only nests in the Nether.
         {"key": "hive", "title": "A Home for Bees", "deps": ["river_crossing:trickle"], "tasks": ["productivebees:advanced_oak_beehive"],
-         "rewards": ["minecraft:bee_spawn_egg"], "pos": (0, 0),
+         # The Simulation upgrade (decided 2026-11-23): its own recipe needs ender pearls and blaze rods, so NCP
+         # issues one here. Bees in a simulated hive never leave it, so they can't wander into the void.
+         "rewards": ["minecraft:bee_spawn_egg", "productivebees:upgrade_simulator"], "pos": (0, 0),
          "desc": memo("3501", "Bees",
                       "Nothing spawns here, and that goes for bees too. NCP's agricultural division ships the first one with your hive.",
                       "&aThe hive, in two steps:&r a plain &bbeehive&r (six planks, three string: NCP swapped the honeycomb",
@@ -563,6 +565,8 @@ APIARY = {
                       "out here wandering ends in the void. Put a &bglass box&r round the hive and its flowers (a few blocks",
                       "each way, the hive's front face clear) and use the egg &binside&r it. Bees work by day, stay in when it rains.",
                       "Once a bee has a hive, it comes home. Then you can open the box.",
+                      "&aThe crate also holds a &bSimulation Upgrade&r. In a hive's upgrade slot, its bees stop going out",
+                      "at all: the hive works out their trips to the flowers by itself. Nobody gets lost that way.",
                       "&7Listen to them for a minute. It's the first thing that's buzzed around here that wasn't a machine.")},
         {"key": "comb", "title": "First Comb", "deps": ["hive"], "tasks": [("minecraft:honeycomb", 4)], "pos": (2, 0),
          "desc": memo("3502", "Comb",
