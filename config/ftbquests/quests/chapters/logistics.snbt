@@ -14,7 +14,7 @@
 				"&7[NCP Field Memo #3001: Pipes]"
 				""
 				"You can carry things from one box to another for the rest of your life, or you can build a pipe."
-				"Item pipes pull from a generator and push into a chest. &aSneak-right-click with the wrench&r to choose which side extracts."
+				"Item pipes pull from a generator and push into a chest. The wrench decides which end is which."
 				"Fluid and energy pipes work the same way. An upgrade in the pipe makes it faster, and lets you filter what goes through."
 			]
 			id: "50CDFE83969A739F"
@@ -286,7 +286,6 @@
 				""
 				"A storage terminal, four crafting tables and four diamonds (eight Rough Diamonds from the Array)."
 				"The grid pulls straight from the network, and EMI's recipe transfer fills it for you."
-				"Sifted quartz also opens the comparator parts: the level emitter and the filters."
 			]
 			id: "23989D09BFB1E0D1"
 			rewards: [
@@ -315,7 +314,7 @@
 				""
 				"Planks, a comparator, a steel plate, an LV circuit, glass and an &bLV emitter&r."
 				"The emitter needs quartzite, and only the Array on an LV energy hatch (circuit 2) sifts it out of dust."
-				"Shift-click it on a terminal to bind it. It reaches &b16 blocks&r."
+				"Bind it to a terminal and it reaches &b16 blocks&r."
 			]
 			id: "0D396C68EB6D765C"
 			rewards: [
@@ -375,7 +374,7 @@
 				"each press prints (silicon, a gold plate, certus or a diamond)."
 				"Certus quartz crystals grow from certus dust in an autoclave. The Array sifts it out of rock dust on an"
 				"MV energy hatch (circuit 3), with the sky stone dust and glowstone dust AE2 also needs."
-				"Diamonds: two Rough Diamonds and a hammer, or graphite (Carbonic Stratum) in an autoclave."
+				"&7The diamond press wants a diamond. There's more than one way to make one."
 			]
 			id: "5ECC7924EC9A43D9"
 			rewards: [
@@ -424,7 +423,6 @@
 				""
 				"Charge certus in a charger (it takes GT power), then drop it in water with redstone and quartz."
 				"It fizzes, and comes out purple. That's fluix."
-				"&7Nether quartz: autoclave its dust (a Crystalline Stratum byproduct)."
 			]
 			id: "6960B68DB39CBE72"
 			rewards: [

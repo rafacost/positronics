@@ -356,7 +356,7 @@
 				"With Positronic Core II as the catalyst, an assembler makes a &bTier 2 upgrade&r."
 				"&aSneak-right-click a generator with it.&r"
 				"Tier 2 generators run on FE (64 FE/t), produce faster and push their output out on their own."
-				"An upgraded Ore Generator gives &bSeed II&r instead of Seed I. Keep one Mk II as it is, for your Seed I."
+				"An upgraded Ore Generator gives &bSeed II&r instead of Seed I. Think before you upgrade all of them."
 			]
 			id: "080EE3C2570CD9ED"
 			rewards: [
@@ -473,7 +473,7 @@
 				""
 				"Titanium, chrome, vanadium, gems, lithium, fluorine, oil sands and uranium."
 				"The old world kept its good things deep. Now you know how deep."
-				"&7Hydrochloric acid: electrolyse salt (Saline Stratum) for chlorine, then burn it with hydrogen."
+				"&7The acid is your problem. Salt is a good place to start."
 			]
 			id: "447C69A64A753BD2"
 			rewards: [

@@ -999,6 +999,22 @@
    4.0,
    1.5
   ],
+  "logistics/toms": [
+   0.0,
+   3.0
+  ],
+  "logistics/toms_adv": [
+   6.0,
+   3.0
+  ],
+  "logistics/toms_craft": [
+   2.0,
+   3.0
+  ],
+  "logistics/toms_wireless": [
+   4.0,
+   3.0
+  ],
   "logistics/wireless": [
    12.0,
    1.5
@@ -1026,6 +1042,10 @@
   "lud/chips": [
    8.0,
    0.0
+  ],
+  "lud/coldgen": [
+   2.0,
+   -1.5
   ],
   "lud/core": [
    12.0,
@@ -1858,6 +1878,10 @@
   "the_calla/core": [
    16.0,
    0.0
+  ],
+  "the_calla/dyegen": [
+   4.0,
+   -1.5
   ],
   "the_calla/ebf": [
    12.0,

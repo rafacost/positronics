@@ -9,7 +9,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from data.tips import TIPS, TITLE  # noqa: E402
+from data.tips import TIPS, title  # noqa: E402
 
 OUT = os.path.join(ROOT, "kubejs", "assets", "positronics", "tips")
 
@@ -21,11 +21,12 @@ def text(s):
 def main():
     os.makedirs(OUT, exist_ok=True)
     keep = set()
-    for key, tip in TIPS.items():
+    for ref, key, tip in TIPS:
         name = f"{key}.json"
+        assert name not in keep, f"duplicate tip key {key}"
         keep.add(name)
         with open(os.path.join(OUT, name), "w", encoding="utf-8", newline="\n") as f:
-            json.dump({"title": text(TITLE), "tip": text(tip)}, f, ensure_ascii=False, indent=2)
+            json.dump({"title": text(title(ref)), "tip": text(tip)}, f, ensure_ascii=False, indent=2)
             f.write("\n")
     for name in os.listdir(OUT):
         if name.endswith(".json") and name not in keep:

@@ -274,8 +274,7 @@
 			description: [
 				"&7[NCP Field Memo #0208: Generators]"
 				""
-				"LV machines draw 32 EU/t, which is 128 FE/t. Your old panels won't keep up."
-				"&aEight ULV panels and an LV circuit&r make two &bLV panels&r (64 FE/t each): the same power in a quarter of the space."
+				"LV machines draw 32 EU/t, which is 128 FE/t. Your old panels won't keep up, but they don't go to waste."
 				"An LV converter takes up to 128 FE/t per amp."
 				"&7Turbines and combustion generators are GregTech's way, if you'd rather burn something."
 			]
@@ -382,8 +381,8 @@
 			description: [
 				"&7[NCP Field Memo #0211: Coils]"
 				""
-				"Heating coils for a furnace that doesn't burn anything. They need molten tin alloy:"
-				"&aextract tin alloy ingots in an LV extractor&r and catch it in a bucket from the output tank."
+				"Heating coils for a furnace that doesn't burn anything. They need molten tin alloy,"
+				"and no furnace you own gets that hot. Something in the workshop will."
 			]
 			id: "5BDECB449BAD33CC"
 			rewards: [
@@ -472,8 +471,8 @@
 			description: [
 				"&7[NCP Field Memo #0214: Food]"
 				""
-				"People who are hungry don't build factories. Grow the food, and grow it without you:"
-				"&ahopper botany pots over chests.&r Eat a little of everything; variety keeps you strong."
+				"People who are hungry don't build factories. Grow the food, and grow it without you."
+				"Eat a little of everything; variety keeps you strong."
 				"Seeds are 1 Scrip a packet at the NCP Shop."
 				"&7Reward: one hopper botany pot, so the next crop grows itself."
 			]
@@ -553,7 +552,7 @@
 				"A 5x5 glasshouse, three layers tall: steel casings around nine blocks of dirt, glass walls one block high,"
 				"and a flat glass roof on top. Put a seed in the input bus (it is never used up), pipe water into an input hatch,"
 				"and it grows that crop. Fertiliser doubles the harvest."
-				"&7Cotton, flax, jute, sisal and kenaf all give string (three crops make one). No spiders required, which is just as well."
+				"&7Fields of it, under glass. The Calla would weep."
 			]
 			id: "1C0DD05DB1EF60F2"
 			rewards: [
