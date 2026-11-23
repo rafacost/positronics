@@ -31,7 +31,7 @@ Status legend: ✅ verified on 1.20.1 Forge (running in Greg-E or confirmed onli
 AE2 + AdvancedAE, ExtendedAE, AE2-Things, MEGA Cells, ae2wtlib, AppliedE (EMC in ME, gated) · Functional Storage · XNet · Pipez · Super Factory Manager · PackagedAuto: all ✅ (Greg-E stack).
 
 ### Power
-Powah · Solar Flux Reborn · Flux Networks: ✅. GregTech generators are the main path. These are tier-gated side options.
+Powah · Solar Flux Reborn · Flux Networks: ✅. **Superseded 2026-11-23 by `docs/power-design.md`:** solar is the backbone, fuel from atoms is priced as spending EMC, and the Beam Reactor is the endgame.
 
 ### Side-tech (pinpoint use only)
 | Mod | Where it fits | Status |
