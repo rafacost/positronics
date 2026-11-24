@@ -3,7 +3,7 @@
 All notable changes to Positronics. The current version is in [`VERSION`](VERSION).
 Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may need a new world; a PATCH bump never does.
 
-## 0.1.0-beta (unreleased)
+## 0.1.0-beta (2026-11-23)
 
 The first public beta. The whole pack is playable, ULV to UHV. So far it has been played through to the end of
 River Crossing (ULV); from The Calla (LV) on, expect rough edges and please report them. Single player only. Minecraft 1.20.1, Forge 47.4.0.

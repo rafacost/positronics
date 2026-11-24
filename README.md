@@ -29,7 +29,7 @@ River Crossing (ULV), so reports from The Calla (LV) onward are especially welco
 
 ## Install
 1. Install the [CurseForge app](https://www.curseforge.com/download/app).
-2. Search for **Positronics** and install it. Give Minecraft at least **8 GB** of RAM.
+2. Search for **Positronics** and install it. Give Minecraft at least **6 GB** of RAM.
 3. Start a **new single-player world**. Read the first quests: they teach you how to drink, eat and hammer.
 
 ## Found a problem?
