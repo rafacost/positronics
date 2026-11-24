@@ -44,7 +44,7 @@ TIPS = [
     ("0121", "core_grids", "Every Positronic Core after the first wants a bigger grid: 5x5 at LV and MV, 7x7 at EV, 9x9 at LuV."),
     ("0123", "array_ladder", "Sifter Array: circuit 1 gives 4 strata a gravel at ULV. An LV energy hatch and circuit 2 make it 16; "
                              "MV and circuit 3, 64."),
-    ("0123", "array_honey", "Honey in the Array doubles everything: circuits 11, 12 and 13 instead of 1, 2 and 3. 50 mB a run."),
+    ("0123", "array_honey", "Honey in the Array doubles everything: circuits 11, 12 and 13 instead of 1, 2 and 3. 16 mB a run: about a stack of gravel per bucket."),
     ("0126", "dust_lv", "Rock dust in the Array at LV (circuit 2) adds 20% quartzite, the only source for LV emitters and sensors."),
     ("0126", "dust_mv", "Rock dust in the Array at MV (circuit 3) adds certus dust, sky stone dust and glowstone dust: what AE2 wants."),
     ("0126", "rough_diamond", "Two Rough Diamonds and a hammer make a diamond. Quartz makes comparators."),

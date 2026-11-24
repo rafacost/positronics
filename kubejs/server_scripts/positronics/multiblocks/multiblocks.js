@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 
     // Deep sifting (the Array only): one gravel -> Y Seed I strata in the Ore Generator's own mix
     // (config/usrg-common.toml oreGeneratorItemsT1). Y = 4 / 16 / 64 at ULV / LV / MV (circuit 1 / 2 / 3);
-    // honey doubles it (circuit 11 / 12 / 13, 50 mB a run). Circuits keep plain and honeyed runs apart.
+    // honey doubles it (circuit 11 / 12 / 13, 16 mB a run: about a stack of gravel per bucket). Circuits keep plain and honeyed runs apart.
     // The throttle is downstream: Reclaimers and Crushers to eat it, gravel and honey to feed it.
     let mix = [['ferrous', 0.40], ['cupric', 0.30], ['stannic', 0.22], ['carbonic', 0.25],
                ['plumbic', 0.10], ['nickelous', 0.08], ['rubric', 0.12]]
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         let r = event.recipes.gtceu.reclamation_sifting(`positronics:multiblocks/deep_sift_${id}`)
             .itemInputs('minecraft:gravel')
             .circuit(circuit)
-        if (honey) r = r.inputFluids('productivebees:honey 50')
+        if (honey) r = r.inputFluids('productivebees:honey 16')
         let fixed = [], chanced = []
         mix.forEach(m => {
             let n = perGravel * m[1] / total
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         let r = event.recipes.gtceu.reclamation_sifting(`positronics:multiblocks/dust_sift_${tier}${honey ? '_honey' : ''}`)
             .itemInputs('positronics:dust')
             .circuit(circuit)
-        if (honey) r = r.inputFluids('productivebees:honey 50')
+        if (honey) r = r.inputFluids('productivebees:honey 16')
         let fixed = [], chanced = []
         Object.keys(dustYield[tier]).forEach(item => {
             let n = dustYield[tier][item] * factor

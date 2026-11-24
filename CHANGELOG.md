@@ -20,6 +20,9 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
 - The Apiary memo (3501) now says where a simulated hive looks for its flower: in front of the hive and one block
   lower. EMI shows the Sifter Array's recipes as "Reclamation Sifting" instead of a raw key.
 - The first Tom's Simple Storage quest now rewards a Paint Kit, because dyes are scarce early on.
+- **Cheaper honey in the Array:** 16 mB a run instead of 50, so a bucket boosts about a stack of gravel (62.5 runs;
+  the remainder stays in the hatch). Same for dust and every tier.
+- The Productive Bees honey bucket is gold again (it rendered as a grey, almost empty bucket).
 
 ## 0.1.0-beta (2026-11-23)
 
