@@ -17,6 +17,8 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
   recipe had the wrong input format; it now works as the memo says (dirty water to purified, 10 s) and replaces
   Tough As Nails' two-step dirty-to-plain-water recipe.
 - **Server pack:** a dedicated-server zip for each release (`tools/make_server_pack.ps1`); tested with one player.
+- The Apiary memo (3501) now says where a simulated hive looks for its flower: in front of the hive and one block
+  lower. EMI shows the Sifter Array's recipes as "Reclamation Sifting" instead of a raw key.
 - The first Tom's Simple Storage quest now rewards a Paint Kit, because dyes are scarce early on.
 
 ## 0.1.0-beta (2026-11-23)

@@ -605,6 +605,8 @@ APIARY = {
                       "Once a bee has a hive, it comes home. Then you can open the box.",
                       "&aThe crate also holds a &bSimulation Upgrade&r. In a hive's upgrade slot, its bees stop going out",
                       "at all: the hive works out their trips to the flowers by itself. Nobody gets lost that way.",
+                      "&cBut it only looks one place:&r the block &bin front of the hive and one lower&r. Raise the hive a block",
+                      "so its flower (or a Feeding Slab with flowers in it) sits there, or a simulated bee makes nothing.",
                       "&7Listen to them for a minute. It's the first thing that's buzzed around here that wasn't a machine.")},
         {"key": "comb", "title": "First Comb", "deps": ["hive"], "tasks": [("minecraft:honeycomb", 4)], "pos": (2, 0),
          "desc": memo("3502", "Comb",

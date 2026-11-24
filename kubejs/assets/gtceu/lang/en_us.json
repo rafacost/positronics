@@ -12,5 +12,6 @@
   "block.gtceu.ulv_atomic_reclaimer": "Atomic Reclaimer",
   "block.gtceu.lv_atomic_reclaimer": "Basic Atomic Reclaimer",
   "block.gtceu.mv_atomic_reclaimer": "Advanced Atomic Reclaimer",
-  "gtceu.atomic_reclaimer": "Atomic Reclaimer"
+  "gtceu.atomic_reclaimer": "Atomic Reclaimer",
+  "gtceu.reclamation_sifting": "Reclamation Sifting"
 }
