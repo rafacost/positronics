@@ -4,6 +4,10 @@
 
 *The world has moved on. Rebuild the North Central Positronics network, tier by tier, and open a Door.*
 
+**[Download on CurseForge](https://www.curseforge.com/minecraft/modpacks/positronics)** ·
+[Report a problem](https://github.com/rafacost/positronics/issues/new/choose) ·
+[Changelog](CHANGELOG.md)
+
 A tech-only **GregTech + ProjectE skyblock** for **Minecraft 1.20.1 · Forge 47.4.0**.
 You start on a small island in a dead world: no ores, no mobs, no villagers, no Nether and no End. Everything you
 make comes from rock, water, sunlight and atoms, and every tier has to be earned.
@@ -29,7 +33,8 @@ River Crossing (ULV), so reports from The Calla (LV) onward are especially welco
 
 ## Install
 1. Install the [CurseForge app](https://www.curseforge.com/download/app).
-2. Search for **Positronics** and install it. Give Minecraft at least **6 GB** of RAM.
+2. Install **[Positronics](https://www.curseforge.com/minecraft/modpacks/positronics)** (or search for it in the
+   app). Prism Launcher can import it from CurseForge too. Give Minecraft at least **6 GB** of RAM.
 3. Start a **new single-player world**. Read the first quests: they teach you how to drink, eat and hammer.
 
 ## Found a problem?

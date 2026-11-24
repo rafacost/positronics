@@ -1,0 +1,30 @@
+name: Balance or exploit
+description: Too grindy, too easy, a dead end, or a loop that makes free EMC, power or items.
+labels: ["balance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nothing is broken, but something feels wrong. Exploits are welcome here too: if you found a way to make
+        EMC, power or items from nothing, say how. It gets fixed, not punished.
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+      placeholder: 0.1.0-beta
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Chapter, quest name, machine or recipe.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What feels off
+      description: What you did, how long it took or how much it made, and what you'd expect instead.
+    validations:
+      required: true

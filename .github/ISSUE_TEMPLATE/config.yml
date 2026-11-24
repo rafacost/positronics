@@ -1,1 +1,8 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
+contact_links:
+  - name: Download Positronics on CurseForge
+    url: https://www.curseforge.com/minecraft/modpacks/positronics
+    about: The pack itself, its changelog and the full mod list.
+  - name: How to report (in-game Field Manual, Section 14)
+    url: https://github.com/rafacost/positronics#found-a-problem
+    about: Which version to give, which logs to attach.

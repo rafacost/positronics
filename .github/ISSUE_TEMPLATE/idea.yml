@@ -1,0 +1,11 @@
+name: Idea
+description: A suggestion for the pack. Tech only, please; there is no magic in Positronics, by design.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What you'd add or change, and why it would make the pack better.
+    validations:
+      required: true
