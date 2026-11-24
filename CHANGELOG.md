@@ -10,6 +10,9 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
   (empty bucket, 4 beans, 1,000 mB water). It counts as milk in every Pam's dairy recipe. New Kitchen quest, memo 3112.
 - **Pam's Market**, a new chapter next to the NCP Shop, sells every Pam's seed (97, 1 Scrip a packet) and sapling
   (50, 4 Scrip each). The Pam's seeds and saplings moved there from the NCP Shop.
+- **Storage blocks by tier.** Copper, tin and redstone blocks now craft by hand, like iron, bronze and steel; the ULV
+  Reclamation Compressor packs all six. Every other ingot or gem block needs LV (compressor at 30 EU/t), and gold,
+  diamond and emerald blocks need MV (120 EU/t on every GregTech route).
 - The first Tom's Simple Storage quest now rewards a Paint Kit, because dyes are scarce early on.
 
 ## 0.1.0-beta (2026-11-23)

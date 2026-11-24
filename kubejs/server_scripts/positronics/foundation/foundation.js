@@ -54,9 +54,12 @@ ServerEvents.recipes(event => {
     }).id('positronics:foundation/maintenance_hatch_ulv')
 
     // Early storage blocks by hand (GregTech leaves 9 ingots -> block to the compressor). Power, the forge
-    // hammer and Core I need iron, bronze and steel blocks before any compressor runs. Later metals keep GT's way.
-    ;[['iron', 'minecraft:iron_block'], ['bronze', 'gtceu:bronze_block'], ['steel', 'gtceu:steel_block']].forEach(b => {
-        event.shaped(b[1], ['III', 'III', 'III'], { I: `#forge:ingots/${b[0]}` })
+    // hammer and Core I need iron, bronze and steel blocks before any compressor runs; copper, tin and
+    // redstone blocks feed early drawers and upgrades (user's call, 2026-11-24). Every other block is
+    // machine-made and gated by tier: see storage_blocks.js.
+    ;[['iron', 'minecraft:iron_block', 'ingots'], ['bronze', 'gtceu:bronze_block', 'ingots'], ['steel', 'gtceu:steel_block', 'ingots'],
+      ['copper', 'minecraft:copper_block', 'ingots'], ['tin', 'gtceu:tin_block', 'ingots'], ['redstone', 'minecraft:redstone_block', 'dusts']].forEach(b => {
+        event.shaped(b[1], ['III', 'III', 'III'], { I: `#forge:${b[2]}/${b[0]}` })
             .id(`positronics:foundation/${b[0]}_block_by_hand`)
     })
 
