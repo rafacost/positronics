@@ -268,6 +268,11 @@
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
+				{
+					id: "0180044BF7F62882"
+					item: "toms_storage:ts.paint_kit"
+					type: "item"
+				}
 			]
 			tasks: [
 				{

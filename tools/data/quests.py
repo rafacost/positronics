@@ -301,7 +301,7 @@ CHAPTERS = [
              "desc": memo("0214", "Food",
                           "People who are hungry don't build factories. Grow the food, and grow it without you.",
                           "Eat a little of everything; variety keeps you strong.",
-                          "Seeds are 1 Scrip a packet at the NCP Shop.",
+                          "Pam's seeds are 1 Scrip a packet at Pam's Market, next to the NCP Shop.",
                           "&7Reward: one hopper botany pot, so the next crop grows itself.")},
             {"key": "dyegen", "title": "Colour", "deps": ["arrival"], "tasks": ["usrg:dyegenerator"], "pos": (4, -1.5),
              "desc": memo("0220", "Generators, Zwei",

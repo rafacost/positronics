@@ -174,7 +174,7 @@
 				"&7[NCP Field Memo #3105: Spice of Life]"
 				""
 				"Every few new foods you eat grant you a permanent heart. The Food Book shows how far you've got."
-				"Most of Pam's crops can be eaten raw. Buy new seeds at the NCP Shop and grow them in pots or a Calla Paddy."
+				"Most of Pam's crops can be eaten raw. Buy new seeds at Pam's Market and grow them in pots or a Calla Paddy."
 			]
 			id: "04724F3E5C33BA04"
 			rewards: [
@@ -272,6 +272,39 @@
 			]
 			title: "A Gourmet's Diet"
 			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6626B97A3DCFF4D2"]
+			description: [
+				"&7[NCP Field Memo #3112: Dairy]"
+				""
+				"Two soybeans and a bottle of clean water make two &bSoy Milk&r, and you keep the bottle."
+				"Almonds and coconuts work too. Pam's Market sells soybean seeds and almond and coconut saplings."
+				"An LV Mixer gets twice the milk from each bean, and with an empty bucket and 1,000 mB of water it"
+				"fills a &bmilk bucket&r for cake. Drinking one clears your effects, the same as it always did."
+				"Soy Milk counts as milk in every recipe: butter, cheese, cream, yogurt, ice cream."
+				"&7The last cow in the Calla died before your grandfather was born. The bean never noticed."
+			]
+			id: "72C45013602333BB"
+			rewards: [
+				{
+					count: 2
+					id: "51C93CA29C393078"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "752945CB4D063A41"
+					item: "pamhc2foodcore:freshmilkitem"
+					type: "item"
+				}
+			]
+			title: "Soy Milk"
+			x: 2.0d
 			y: 0.0d
 		}
 		{

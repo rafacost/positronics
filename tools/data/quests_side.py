@@ -194,6 +194,7 @@ LOGISTICS = {
          "desc": memo("3007", "Networks",
                       "A controller and its cables move items, fluids and energy by channel. Compact, fast, and quiet about it.")},
         {"key": "toms", "title": "Tom's Simple Storage", "deps": ["river_crossing:steelhammer"], "external_deps": [WASTE_LANDS_GLASS],
+         "rewards": ["toms_storage:ts.paint_kit"],   # user's call (2026-11-24): dyes are scarce early, despite the no-craftables rule
          "tasks": ["toms_storage:ts.inventory_connector", "toms_storage:ts.storage_terminal"], "pos": (0, 3),
          "desc": memo("3019", "One Window",
                       "Every chest and drawer touching an &bInventory Connector&r shows up in one &bStorage Terminal&r.",
@@ -292,12 +293,20 @@ KITCHEN = {
          "tasks": ["pamhc2crops:tomatoitem", "pamhc2crops:lettuceitem", "pamhc2crops:onionitem", "pamhc2crops:cornitem", "pamhc2crops:riceitem", "pamhc2crops:beanitem"],
          "desc": memo("3105", "Spice of Life",
                       "Every few new foods you eat grant you a permanent heart. The Food Book shows how far you've got.",
-                      "Most of Pam's crops can be eaten raw. Buy new seeds at the NCP Shop and grow them in pots or a Calla Paddy.")},
+                      "Most of Pam's crops can be eaten raw. Buy new seeds at Pam's Market and grow them in pots or a Calla Paddy.")},
         {"key": "variety2", "title": "A Gourmet's Diet", "deps": ["variety", "soups"],
          "tasks": ["pamhc2crops:strawberryitem", "pamhc2crops:cucumberitem", "pamhc2crops:bellpepperitem", "pamhc2crops:broccoliitem", "pamhc2crops:spinachitem", "pamhc2crops:grapeitem"],
          "scrip": 5, "desc": memo("3106", "Spice of Life",
                                   "Eat each of these at least once. Strawberries at the end of the world.",
                                   "&7Each one tastes like a summer you don't quite remember.")},
+        {"key": "soymilk", "title": "Soy Milk", "deps": ["tools1"], "tasks": [("pamhc2foodcore:freshmilkitem", 4)],
+         "desc": memo("3112", "Dairy",
+                      "Two soybeans and a bottle of clean water make two &bSoy Milk&r, and you keep the bottle.",
+                      "Almonds and coconuts work too. Pam's Market sells soybean seeds and almond and coconut saplings.",
+                      "An LV Mixer gets twice the milk from each bean, and with an empty bucket and 1,000 mB of water it",
+                      "fills a &bmilk bucket&r for cake. Drinking one clears your effects, the same as it always did.",
+                      "Soy Milk counts as milk in every recipe: butter, cheese, cream, yogurt, ice cream.",
+                      "&7The last cow in the Calla died before your grandfather was born. The bean never noticed.")},
         {"key": "purifier", "title": "Water Purifier", "deps": ["river_crossing:trickle"], "external_deps": [WASTE_LANDS_GLASS], "tasks": ["toughasnails:water_purifier"],
          "desc": memo("3107", "Water",
                       "Much faster than boiling bottles one at a time. It needs copper, so it comes after your first strata.")},
@@ -320,6 +329,40 @@ KITCHEN = {
 
 
 # ------------------------------------------------------------------ NCP SHOP (repeatable, spends Scrip)
+def shop_offer(key, title, price, item, count, unlock, pos, header="NCP Shop"):
+    """One repeatable purchase: pay `price` Scrip, get `count` x `item`."""
+    return {"key": key, "title": title, "repeat": True, "consume": True, "deps": [unlock] if unlock else [],
+            "tasks": [("positronics:ncp_scrip", price)], "rewards": [(item, count)], "scrip": 0,
+            "icon": item if isinstance(item, str) else item["id"], "pos": pos,
+            "desc": [f"&7[{header}]", "", f"{count}x {title} for {price} NCP Scrip.",
+                     "&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."]
+                    + (["&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."] if unlock else [])}
+
+
+def market():
+    """Pam's Market (2026-11-24): every Pam's seed (1 Scrip) and sapling (4 Scrip). HarvestCraft 2 has no
+    market block, so NCP stocks the lot. Seeds in rows of 10, alphabetical; saplings below."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("pam_market", os.path.join(os.path.dirname(__file__), "pam_market.py"))
+    pam = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(pam)
+    # Seed counts by product quality: staples and fibres plenty, vegetables 4, fruit fewest.
+    seed_counts = {"cotton": 6, "flax": 6, "papyrus": 6, "rice": 6, "corn": 6, "soybean": 6, "bean": 6, "peas": 6,
+                   "strawberry": 2, "grape": 2}
+    quests = []
+    for i, (item, name) in enumerate(pam.SEEDS):
+        crop = item.split(":")[1][: -len("seeditem")]
+        quests.append(shop_offer(f"seed_{crop}", f"{name}s", 1, item, seed_counts.get(crop, 4), None,
+                                 ((i % 10) * 1.5, (i // 10) * 1.5), "Pam's Market"))
+    top = ((len(pam.SEEDS) + 9) // 10) * 1.5 + 1.5
+    for i, (item, name) in enumerate(pam.SAPLINGS):
+        tree = item.split(":")[1][: -len("_sapling")]
+        quests.append(shop_offer(f"sapling_{tree}", name, 4, item, 1, None,
+                                 ((i % 10) * 1.5, top + (i // 10) * 1.5), "Pam's Market"))
+    return {"id": "pams_market", "filename": "pams_market", "order": 41, "group": "NCP Shop",
+            "title": "Pam's Market", "icon": "pamhc2crops:soybeanseeditem", "quests": quests}
+
+
 def shop():
     offers = [
         # key, title, price, reward, count
@@ -335,8 +378,6 @@ def shop():
         ("birch", "Birch Sapling", 2, "minecraft:birch_sapling", 3),
         ("spruce", "Spruce Sapling", 2, "minecraft:spruce_sapling", 3),
         ("rubber", "Rubber Sapling", 3, "gtceu:rubber_sapling", 2),
-        ("apple_tree", "Apple Tree Sapling", 4, "pamhc2trees:apple_sapling", 1),
-        ("cherry_tree", "Cherry Tree Sapling", 4, "pamhc2trees:cherry_sapling", 1),
         ("bonemeal", "Bone Meal", 2, "minecraft:bone_meal", 16),
         ("dirt", "Dirt", 2, "minecraft:dirt", 8),
         ("pot", "Botany Pot", 3, "botanypots:terracotta_botany_pot", 1),
@@ -370,23 +411,11 @@ def shop():
     tool_offers.append(("shears", "NCP-issue Shears", 8,
                         {"id": "minecraft:shears", "tag": {"Enchantments": [{"id": "minecraft:unbreaking", "lvl": 3}]}},
                         1, "river_crossing:tools"))
-    seeds = ["tomato", "lettuce", "onion", "corn", "rice", "bean", "cucumber", "strawberry", "bellpepper", "broccoli",
-             "spinach", "grape", "cotton", "flax", "garlic", "peas", "soybean", "papyrus"]
-    # Seed counts by product quality: staples and fibres plenty, vegetables fewer, fruit fewest.
-    seed_counts = {"cotton": 6, "flax": 6, "papyrus": 6, "rice": 6, "corn": 6, "soybean": 6, "bean": 6, "peas": 6,
-                   "tomato": 4, "lettuce": 4, "onion": 4, "cucumber": 4, "bellpepper": 4, "broccoli": 4, "spinach": 4, "garlic": 4,
-                   "strawberry": 2, "grape": 2}
-    for c in seeds:
-        offers.append((f"seed_{c}", f"{nice('x:' + c)} Seeds", 1, f"pamhc2crops:{c}seeditem", seed_counts.get(c, 4)))
+    # Pam's seeds and saplings live in their own chapter, Pam's Market (market() below).
     quests = []
     offers = [o + (None,) for o in offers] + tool_offers
     for i, (key, title, price, item, count, unlock) in enumerate(offers):
-        quests.append({"key": key, "title": title, "repeat": True, "consume": True, "deps": [unlock] if unlock else [],
-                       "tasks": [("positronics:ncp_scrip", price)], "rewards": [(item, count)], "scrip": 0,
-                       "icon": item if isinstance(item, str) else item["id"], "pos": ((i % 6) * 1.5, (i // 6) * 1.5),
-                       "desc": [f"&7[NCP Shop]", "", f"{count}x {title} for {price} NCP Scrip.",
-                                "&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."]
-                               + (["&7Replacements only: unlocked once you reach that grade of tools. NCP doesn't sell shortcuts."] if unlock else [])})
+        quests.append(shop_offer(key, title, price, item, count, unlock, ((i % 6) * 1.5, (i // 6) * 1.5)))
     # Bee recall (decided 2026-11-23): a service, not an item. kubejs/.../integration/bee_rescue.js registers
     # positronics_recallbees; it always hands the 1 Scrip back, so the recall is free for now (bees wander too much).
     i = len(offers)
@@ -768,4 +797,4 @@ KIT = {
     ],
 }
 
-SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, APIARY, periodic_table(), KIT, shop()]
+SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, APIARY, periodic_table(), KIT, shop(), market()]

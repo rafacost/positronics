@@ -3,6 +3,15 @@
 All notable changes to Positronics. The current version is in [`VERSION`](VERSION).
 Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may need a new world; a PATCH bump never does.
 
+## Unreleased
+
+- **Soy Milk.** Pam's Fresh Milk is now Soy Milk, made from soybeans, almonds or coconuts: 2 beans and a purified
+  water bottle by hand (you keep the bottle), or twice as much in an LV Mixer. The Mixer also fills a milk bucket
+  (empty bucket, 4 beans, 1,000 mB water). It counts as milk in every Pam's dairy recipe. New Kitchen quest, memo 3112.
+- **Pam's Market**, a new chapter next to the NCP Shop, sells every Pam's seed (97, 1 Scrip a packet) and sapling
+  (50, 4 Scrip each). The Pam's seeds and saplings moved there from the NCP Shop.
+- The first Tom's Simple Storage quest now rewards a Paint Kit, because dyes are scarce early on.
+
 ## 0.1.0-beta (2026-11-23)
 
 The first public beta. The whole pack is playable, ULV to UHV. So far it has been played through to the end of

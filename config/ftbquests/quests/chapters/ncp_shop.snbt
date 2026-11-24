@@ -383,66 +383,6 @@
 			description: [
 				"&7[NCP Shop]"
 				""
-				"1x Apple Tree Sapling for 4 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2trees:apple_sapling"
-			id: "28D54461A21221B0"
-			rewards: [
-				{
-					id: "1CE87CDD807EB5C7"
-					item: "pamhc2trees:apple_sapling"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					count: 4L
-					id: "376C00BDFE3E9E09"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Apple Tree Sapling"
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"1x Cherry Tree Sapling for 4 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2trees:cherry_sapling"
-			id: "0994DB32C8DB807B"
-			rewards: [
-				{
-					id: "51DAB83D1AA58513"
-					item: "pamhc2trees:cherry_sapling"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					count: 4L
-					id: "745B2F5EC5388265"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Cherry Tree Sapling"
-			x: 1.5d
-			y: 3.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
 				"16x Bone Meal for 2 NCP Scrip."
 				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
 			]
@@ -466,7 +406,7 @@
 				}
 			]
 			title: "Bone Meal"
-			x: 3.0d
+			x: 0.0d
 			y: 3.0d
 		}
 		{
@@ -497,7 +437,7 @@
 				}
 			]
 			title: "Dirt"
-			x: 4.5d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -527,7 +467,7 @@
 				}
 			]
 			title: "Botany Pot"
-			x: 6.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
@@ -557,7 +497,7 @@
 				}
 			]
 			title: "Hopper Botany Pot"
-			x: 7.5d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -587,548 +527,8 @@
 				}
 			]
 			title: "Honey Bee (egg)"
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Tomato Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:tomatoseeditem"
-			id: "28E9AF9B8CBCE738"
-			rewards: [
-				{
-					count: 4
-					id: "7A1BD50C881155BB"
-					item: "pamhc2crops:tomatoseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "147B4B82D98385E2"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Tomato Seeds"
-			x: 1.5d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Lettuce Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:lettuceseeditem"
-			id: "00A582ECFE418E48"
-			rewards: [
-				{
-					count: 4
-					id: "0CDFD11242225DE9"
-					item: "pamhc2crops:lettuceseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "4FFE9F628B4BA8C2"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Lettuce Seeds"
-			x: 3.0d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Onion Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:onionseeditem"
-			id: "7946438DCB06EEB5"
-			rewards: [
-				{
-					count: 4
-					id: "3491079CBD1DF783"
-					item: "pamhc2crops:onionseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "2AD9BA8AE827B605"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Onion Seeds"
-			x: 4.5d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Corn Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:cornseeditem"
-			id: "6B0F815030C89D2C"
-			rewards: [
-				{
-					count: 6
-					id: "0F9431C18E955143"
-					item: "pamhc2crops:cornseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "60BFC29DB388311B"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Corn Seeds"
 			x: 6.0d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Rice Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:riceseeditem"
-			id: "6F8415C45F181502"
-			rewards: [
-				{
-					count: 6
-					id: "181DCA96ABC13EF1"
-					item: "pamhc2crops:riceseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "30175C7301BD105B"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Rice Seeds"
-			x: 7.5d
-			y: 4.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Bean Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:beanseeditem"
-			id: "0CD216347EE64B92"
-			rewards: [
-				{
-					count: 6
-					id: "7A138C4C349BD34A"
-					item: "pamhc2crops:beanseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "7F74B6BD5CC09C54"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Bean Seeds"
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Cucumber Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:cucumberseeditem"
-			id: "5E7B1108696B0FB9"
-			rewards: [
-				{
-					count: 4
-					id: "746B2B503CB34344"
-					item: "pamhc2crops:cucumberseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "104124B7B5A40849"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Cucumber Seeds"
-			x: 1.5d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"2x Strawberry Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:strawberryseeditem"
-			id: "7B415205CB9502C9"
-			rewards: [
-				{
-					count: 2
-					id: "45C02F115827117B"
-					item: "pamhc2crops:strawberryseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "2ACF7BEC2B9D9450"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Strawberry Seeds"
-			x: 3.0d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Bellpepper Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:bellpepperseeditem"
-			id: "2AC177E0DE2D1E60"
-			rewards: [
-				{
-					count: 4
-					id: "4BAD401A96D8EC2F"
-					item: "pamhc2crops:bellpepperseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "68ECAEB6F1869CE0"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Bellpepper Seeds"
-			x: 4.5d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Broccoli Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:broccoliseeditem"
-			id: "51385F0C575C19B8"
-			rewards: [
-				{
-					count: 4
-					id: "21588C499D2C2700"
-					item: "pamhc2crops:broccoliseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "2F116A95CE9C7825"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Broccoli Seeds"
-			x: 6.0d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Spinach Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:spinachseeditem"
-			id: "200395E12D01FE36"
-			rewards: [
-				{
-					count: 4
-					id: "77233C39DFF7CEB9"
-					item: "pamhc2crops:spinachseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "6054B946E05A53A2"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Spinach Seeds"
-			x: 7.5d
-			y: 6.0d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"2x Grape Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:grapeseeditem"
-			id: "1505C367A611F42E"
-			rewards: [
-				{
-					count: 2
-					id: "543276092DA41A1F"
-					item: "pamhc2crops:grapeseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "7F8473C7804D4957"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Grape Seeds"
-			x: 0.0d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Cotton Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:cottonseeditem"
-			id: "161B37DB926EA5DA"
-			rewards: [
-				{
-					count: 6
-					id: "02D8A45ECE2F5122"
-					item: "pamhc2crops:cottonseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "466D720380117C94"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Cotton Seeds"
-			x: 1.5d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Flax Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:flaxseeditem"
-			id: "4C58AD23552AB491"
-			rewards: [
-				{
-					count: 6
-					id: "124B29CF6925F348"
-					item: "pamhc2crops:flaxseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "1B4FEB0EB4723ACE"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Flax Seeds"
-			x: 3.0d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"4x Garlic Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:garlicseeditem"
-			id: "485A9BECD6F2F8F3"
-			rewards: [
-				{
-					count: 4
-					id: "24E03967C528CC21"
-					item: "pamhc2crops:garlicseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "0933090852505F3B"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Garlic Seeds"
-			x: 4.5d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Peas Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:peasseeditem"
-			id: "0CDA1EDCCA2FA6B0"
-			rewards: [
-				{
-					count: 6
-					id: "5C44FBA2D3D85D0E"
-					item: "pamhc2crops:peasseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "522A656C8DCA5155"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Peas Seeds"
-			x: 6.0d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Soybean Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:soybeanseeditem"
-			id: "4D55B88087B43809"
-			rewards: [
-				{
-					count: 6
-					id: "316B8207E1DA939F"
-					item: "pamhc2crops:soybeanseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "370C76B784590B86"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Soybean Seeds"
-			x: 7.5d
-			y: 7.5d
-		}
-		{
-			can_repeat: true
-			description: [
-				"&7[NCP Shop]"
-				""
-				"6x Papyrus Seeds for 1 NCP Scrip."
-				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
-			]
-			icon: "pamhc2crops:papyrusseeditem"
-			id: "7EAD4FF4CE11B5DA"
-			rewards: [
-				{
-					count: 6
-					id: "7C50BAF4C248830B"
-					item: "pamhc2crops:papyrusseeditem"
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					consume_items: true
-					id: "7198FD75B0C736F1"
-					item: "positronics:ncp_scrip"
-					type: "item"
-				}
-			]
-			title: "Papyrus Seeds"
-			x: 0.0d
-			y: 9.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -1170,8 +570,8 @@
 				}
 			]
 			title: "Wrought Iron Hammer (Unbreaking I)"
-			x: 1.5d
-			y: 9.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -1202,8 +602,8 @@
 				}
 			]
 			title: "Wrought Iron Wrench"
-			x: 3.0d
-			y: 9.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1234,8 +634,8 @@
 				}
 			]
 			title: "Wrought Iron File"
-			x: 4.5d
-			y: 9.0d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1266,8 +666,8 @@
 				}
 			]
 			title: "Wrought Iron Screwdriver"
-			x: 6.0d
-			y: 9.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1298,8 +698,8 @@
 				}
 			]
 			title: "Wrought Iron Wire Cutter"
-			x: 7.5d
-			y: 9.0d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1330,8 +730,8 @@
 				}
 			]
 			title: "Wrought Iron Saw"
-			x: 0.0d
-			y: 10.5d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1362,8 +762,8 @@
 				}
 			]
 			title: "Wrought Iron Mortar"
-			x: 1.5d
-			y: 10.5d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			can_repeat: true
@@ -1394,8 +794,8 @@
 				}
 			]
 			title: "Wrought Iron Knife"
-			x: 3.0d
-			y: 10.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1437,8 +837,8 @@
 				}
 			]
 			title: "Steel Hammer (Unbreaking II)"
-			x: 4.5d
-			y: 10.5d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1469,8 +869,8 @@
 				}
 			]
 			title: "Steel Wrench"
-			x: 6.0d
-			y: 10.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1501,8 +901,8 @@
 				}
 			]
 			title: "Steel File"
-			x: 7.5d
-			y: 10.5d
+			x: 4.5d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1533,8 +933,8 @@
 				}
 			]
 			title: "Steel Screwdriver"
-			x: 0.0d
-			y: 12.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1565,8 +965,8 @@
 				}
 			]
 			title: "Steel Wire Cutter"
-			x: 1.5d
-			y: 12.0d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			can_repeat: true
@@ -1597,8 +997,8 @@
 				}
 			]
 			title: "Steel Saw"
-			x: 3.0d
-			y: 12.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1629,8 +1029,8 @@
 				}
 			]
 			title: "Steel Mortar"
-			x: 4.5d
-			y: 12.0d
+			x: 1.5d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1661,8 +1061,8 @@
 				}
 			]
 			title: "Steel Knife"
-			x: 6.0d
-			y: 12.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1704,8 +1104,8 @@
 				}
 			]
 			title: "Diamond Hammer (Unbreaking III)"
-			x: 7.5d
-			y: 12.0d
+			x: 4.5d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1747,8 +1147,8 @@
 				}
 			]
 			title: "NCP-issue Shears"
-			x: 0.0d
-			y: 13.5d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1783,8 +1183,8 @@
 				}
 			]
 			title: "Bee Recall"
-			x: 1.5d
-			y: 13.5d
+			x: 7.5d
+			y: 7.5d
 		}
 	]
 	title: "NCP Shop"

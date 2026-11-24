@@ -1,0 +1,4423 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pams_market"
+	group: "54FF0D80BA2ED911"
+	icon: "pamhc2crops:soybeanseeditem"
+	id: "5CABD7A5182DEB4C"
+	order_index: 41
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Agave Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:agaveseeditem"
+			id: "1DD277BB22F6467A"
+			rewards: [
+				{
+					count: 4
+					id: "6C16574AC4F7AC7F"
+					item: "pamhc2crops:agaveseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "17AC254FDC5792C8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Agave Seeds"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Alfalfa Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:alfalfaseeditem"
+			id: "09189CB8907C2E55"
+			rewards: [
+				{
+					count: 4
+					id: "2DDDBEA4EA9C1FDD"
+					item: "pamhc2crops:alfalfaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "464306172B656906"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Alfalfa Seeds"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Aloe Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:aloeseeditem"
+			id: "5906AE4C8C5B18EE"
+			rewards: [
+				{
+					count: 4
+					id: "5BB06ECB89037CA8"
+					item: "pamhc2crops:aloeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2B17ACF1B3890DAC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Aloe Seeds"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Amaranth Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:amaranthseeditem"
+			id: "73C4C003BF34C21E"
+			rewards: [
+				{
+					count: 4
+					id: "4D6740221D4AD13C"
+					item: "pamhc2crops:amaranthseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "202019820F7D4B1C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Amaranth Seeds"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Arrowroot Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:arrowrootseeditem"
+			id: "42A04A826C1D547B"
+			rewards: [
+				{
+					count: 4
+					id: "07DC6CD87ADC2F4D"
+					item: "pamhc2crops:arrowrootseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "64D7D1AE91BCEBB9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Arrowroot Seeds"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Artichoke Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:artichokeseeditem"
+			id: "1414B158F7749AED"
+			rewards: [
+				{
+					count: 4
+					id: "736AA7D02EC1EA0F"
+					item: "pamhc2crops:artichokeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "457146688D42A47D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Artichoke Seeds"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Asparagus Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:asparagusseeditem"
+			id: "1A92EB245EC3FD12"
+			rewards: [
+				{
+					count: 4
+					id: "19F013E1092648C7"
+					item: "pamhc2crops:asparagusseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5D87DA67211102FC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Asparagus Seeds"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Barley Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:barleyseeditem"
+			id: "2BE756BD77A9C207"
+			rewards: [
+				{
+					count: 4
+					id: "7FF01685B0C3E282"
+					item: "pamhc2crops:barleyseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0FF74F26C4B92EE1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Barley Seeds"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Barrel Cactus Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:barrelcactusseeditem"
+			id: "02B3FF7442A3A4B9"
+			rewards: [
+				{
+					count: 4
+					id: "79BAA2C5680C364D"
+					item: "pamhc2crops:barrelcactusseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "055375621D67AC35"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Barrel Cactus Seeds"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Bean Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:beanseeditem"
+			id: "43827EB6422F064B"
+			rewards: [
+				{
+					count: 6
+					id: "539BF860632BAACF"
+					item: "pamhc2crops:beanseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "57F6A29CA1143F6C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bean Seeds"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Bellpepper Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:bellpepperseeditem"
+			id: "4118B64253A71D66"
+			rewards: [
+				{
+					count: 4
+					id: "2EF56ACF9381017D"
+					item: "pamhc2crops:bellpepperseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2D49BC7153151484"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bellpepper Seeds"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Blackberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:blackberryseeditem"
+			id: "1429283FE6DD311A"
+			rewards: [
+				{
+					count: 4
+					id: "0AABC80E69E5B012"
+					item: "pamhc2crops:blackberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "08880D27DE41C71F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Blackberry Seeds"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Blueberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:blueberryseeditem"
+			id: "3ACB7F9B0992D702"
+			rewards: [
+				{
+					count: 4
+					id: "0414816C7573F4FF"
+					item: "pamhc2crops:blueberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4C4BBC73B8DDDE99"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Blueberry Seeds"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Bok Choy Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:bokchoyseeditem"
+			id: "1A75DAAC0EE1981D"
+			rewards: [
+				{
+					count: 4
+					id: "5F734A4783B95B2F"
+					item: "pamhc2crops:bokchoyseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "342C86F8C16BE18E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Bok Choy Seeds"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Broccoli Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:broccoliseeditem"
+			id: "00EAE0A9E89CC597"
+			rewards: [
+				{
+					count: 4
+					id: "1D7ED496D20A27D2"
+					item: "pamhc2crops:broccoliseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0D31C571B2E78937"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Broccoli Seeds"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Brusselsprout Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:brusselsproutseeditem"
+			id: "0A4D4BBC2D7B228C"
+			rewards: [
+				{
+					count: 4
+					id: "0164CFB2ECD228EA"
+					item: "pamhc2crops:brusselsproutseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1042C38DB5693A11"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Brusselsprout Seeds"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cabbage Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cabbageseeditem"
+			id: "123656F8CDCF4D8C"
+			rewards: [
+				{
+					count: 4
+					id: "6D03D46E737626B6"
+					item: "pamhc2crops:cabbageseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "04F69D13D58E9771"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cabbage Seeds"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cactusfruit Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cactusfruitseeditem"
+			id: "1F503B7BC97F4020"
+			rewards: [
+				{
+					count: 4
+					id: "3B46E3DCDA227349"
+					item: "pamhc2crops:cactusfruitseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7BD1E0827E5FF7C0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cactusfruit Seeds"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Calabash Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:calabashseeditem"
+			id: "418EADC60D7784D4"
+			rewards: [
+				{
+					count: 4
+					id: "11EBDEFE31039EBD"
+					item: "pamhc2crops:calabashseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "3A0AAC2971A29714"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Calabash Seeds"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Candleberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:candleberryseeditem"
+			id: "3BA0135EA23C6CC0"
+			rewards: [
+				{
+					count: 4
+					id: "1BCDE6F983F8C03D"
+					item: "pamhc2crops:candleberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7227460262E15BE7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Candleberry Seeds"
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Canola Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:canolaseeditem"
+			id: "4F028F5C7277D8D2"
+			rewards: [
+				{
+					count: 4
+					id: "608747F608FD0D1C"
+					item: "pamhc2crops:canolaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4E6EDA2A4642119D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Canola Seeds"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cantaloupe Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cantaloupeseeditem"
+			id: "230FF857A31A25E8"
+			rewards: [
+				{
+					count: 4
+					id: "135A48AFB21FA8B8"
+					item: "pamhc2crops:cantaloupeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "36C78D9E63520687"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cantaloupe Seeds"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cassava Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cassavaseeditem"
+			id: "0E08D2CC470B1CF3"
+			rewards: [
+				{
+					count: 4
+					id: "0C9C7CAC31C31ABD"
+					item: "pamhc2crops:cassavaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1E47C5B6E2574892"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cassava Seeds"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cattail Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cattailseeditem"
+			id: "12A86664F578A08F"
+			rewards: [
+				{
+					count: 4
+					id: "75436576D70D14DC"
+					item: "pamhc2crops:cattailseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "009349511108A655"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cattail Seeds"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cauliflower Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cauliflowerseeditem"
+			id: "598145755FF1B58B"
+			rewards: [
+				{
+					count: 4
+					id: "1F3A17126698A9FF"
+					item: "pamhc2crops:cauliflowerseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "3516B8975986DB4A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cauliflower Seeds"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Celery Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:celeryseeditem"
+			id: "342CA62ECB025AB2"
+			rewards: [
+				{
+					count: 4
+					id: "591D21846D206ECB"
+					item: "pamhc2crops:celeryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "69948883B63CCBEC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Celery Seeds"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Chia Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:chiaseeditem"
+			id: "37190128431850E7"
+			rewards: [
+				{
+					count: 4
+					id: "6C9EDEC61E7CC03A"
+					item: "pamhc2crops:chiaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "34B5AE0791827F54"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Chia Seeds"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Chickpea Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:chickpeaseeditem"
+			id: "460542B45EADB1DE"
+			rewards: [
+				{
+					count: 4
+					id: "5CD6FACE03A0912F"
+					item: "pamhc2crops:chickpeaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2D6FE9A6F1E4614D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Chickpea Seeds"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Chilipepper Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:chilipepperseeditem"
+			id: "64246F60B755FA46"
+			rewards: [
+				{
+					count: 4
+					id: "21FE39645884E54A"
+					item: "pamhc2crops:chilipepperseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2F00781E32FBCB43"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Chilipepper Seeds"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cloudberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cloudberryseeditem"
+			id: "2C28E85AD0D5EEC9"
+			rewards: [
+				{
+					count: 4
+					id: "0997B604970A2089"
+					item: "pamhc2crops:cloudberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "3E4FBC806D7248A8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cloudberry Seeds"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Coffeebean Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:coffeebeanseeditem"
+			id: "6C2F21B20E3AE1A0"
+			rewards: [
+				{
+					count: 4
+					id: "1CF1D16DC5B562DE"
+					item: "pamhc2crops:coffeebeanseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "3E08FEEF604ADE98"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Coffeebean Seeds"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Corn Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cornseeditem"
+			id: "54F90BC688761861"
+			rewards: [
+				{
+					count: 6
+					id: "115C5B0AB50E1BFB"
+					item: "pamhc2crops:cornseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1190D88C01DA9E04"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Corn Seeds"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Cotton Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cottonseeditem"
+			id: "6B5CED5A4DC9152A"
+			rewards: [
+				{
+					count: 6
+					id: "4E1051FE32196376"
+					item: "pamhc2crops:cottonseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0ABD8C4EA7E3AD53"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cotton Seeds"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cranberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cranberryseeditem"
+			id: "42B5AD787DAFCCEE"
+			rewards: [
+				{
+					count: 4
+					id: "79325FA267B8C911"
+					item: "pamhc2crops:cranberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "464C3562DBF01658"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cranberry Seeds"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Cucumber Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:cucumberseeditem"
+			id: "753E634DBB91DEB8"
+			rewards: [
+				{
+					count: 4
+					id: "5534D1712D7AEA2B"
+					item: "pamhc2crops:cucumberseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "6F21E0A1E6601BB0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cucumber Seeds"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Eggplant Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:eggplantseeditem"
+			id: "0A70CECAF4219C39"
+			rewards: [
+				{
+					count: 4
+					id: "60343A2D8119DB1F"
+					item: "pamhc2crops:eggplantseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7A15A56CE03BA2DD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Eggplant Seeds"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Elderberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:elderberryseeditem"
+			id: "68F44D1790B159EF"
+			rewards: [
+				{
+					count: 4
+					id: "117BDA667C709B0D"
+					item: "pamhc2crops:elderberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "16FEFDF86A42E8F9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Elderberry Seeds"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Flax Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:flaxseeditem"
+			id: "50D71ECD2AF7D0FF"
+			rewards: [
+				{
+					count: 6
+					id: "7E99B44AB1EEF1BD"
+					item: "pamhc2crops:flaxseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1A7DC6B6B9EA3A7C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Flax Seeds"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Garlic Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:garlicseeditem"
+			id: "1B438B556F797F6B"
+			rewards: [
+				{
+					count: 4
+					id: "6BC4B95F3EB6267F"
+					item: "pamhc2crops:garlicseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "641AAFFBC40D6A6B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Garlic Seeds"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Ginger Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:gingerseeditem"
+			id: "1EC677D5C44C8D51"
+			rewards: [
+				{
+					count: 4
+					id: "10BD6FA1B3E6141E"
+					item: "pamhc2crops:gingerseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "79E067BD751AC153"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Ginger Seeds"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"2x Grape Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:grapeseeditem"
+			id: "0782038276A7BB15"
+			rewards: [
+				{
+					count: 2
+					id: "73E4B4B9DC78D8B1"
+					item: "pamhc2crops:grapeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "42F08646B31CD28A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Grape Seeds"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Green Grape Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:greengrapeseeditem"
+			id: "13122EC4AAFA601D"
+			rewards: [
+				{
+					count: 4
+					id: "22718A4398BAF455"
+					item: "pamhc2crops:greengrapeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5823AD8F1E0F3B73"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Green Grape Seeds"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Guarana Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:guaranaseeditem"
+			id: "368369038DAC27AB"
+			rewards: [
+				{
+					count: 4
+					id: "6F9A5839A9372602"
+					item: "pamhc2crops:guaranaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1E5033E17EF32612"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Guarana Seeds"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Huckleberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:huckleberryseeditem"
+			id: "1BA07B28B786EAB5"
+			rewards: [
+				{
+					count: 4
+					id: "1642E1EA41E43D19"
+					item: "pamhc2crops:huckleberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "6C74FC27788D3C9E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Huckleberry Seeds"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Jicama Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:jicamaseeditem"
+			id: "26C5D9A672F2AE99"
+			rewards: [
+				{
+					count: 4
+					id: "293956AC7D2EF353"
+					item: "pamhc2crops:jicamaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "6C96B44CDD5665D6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Jicama Seeds"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Juniperberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:juniperberryseeditem"
+			id: "390DFBF8D197AD06"
+			rewards: [
+				{
+					count: 4
+					id: "351C4EBF417E6458"
+					item: "pamhc2crops:juniperberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0AAEBEFAD483C5A8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Juniperberry Seeds"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Jute Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:juteseeditem"
+			id: "5E59E2B4D54D03F0"
+			rewards: [
+				{
+					count: 4
+					id: "31F524B0DC341008"
+					item: "pamhc2crops:juteseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "125C877FC56CA4F9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Jute Seeds"
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Kale Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:kaleseeditem"
+			id: "45A990DCE891A746"
+			rewards: [
+				{
+					count: 4
+					id: "15769D5218E75637"
+					item: "pamhc2crops:kaleseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5F0B73C6E00F27B4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Kale Seeds"
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Kenaf Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:kenafseeditem"
+			id: "7605E574D76937D5"
+			rewards: [
+				{
+					count: 4
+					id: "286845026A1E968F"
+					item: "pamhc2crops:kenafseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "59AC3E57C0A99B1B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Kenaf Seeds"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Kiwi Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:kiwiseeditem"
+			id: "089E3065AFE9897F"
+			rewards: [
+				{
+					count: 4
+					id: "3FCB6D09AFE56773"
+					item: "pamhc2crops:kiwiseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1C93C242A4C3FC74"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Kiwi Seeds"
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Kohlrabi Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:kohlrabiseeditem"
+			id: "28710DB352071DC1"
+			rewards: [
+				{
+					count: 4
+					id: "1A2222DFF8F19682"
+					item: "pamhc2crops:kohlrabiseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "79320F5BE8965D04"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Kohlrabi Seeds"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Leek Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:leekseeditem"
+			id: "2DDBFFEF4A6C5341"
+			rewards: [
+				{
+					count: 4
+					id: "058DA39641E86AA6"
+					item: "pamhc2crops:leekseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1CCF3ED0A2E821EF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Leek Seeds"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Lentil Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:lentilseeditem"
+			id: "4DFA3CB353DAFFB6"
+			rewards: [
+				{
+					count: 4
+					id: "3A4977995DFBA324"
+					item: "pamhc2crops:lentilseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2B2DBB31FCAC4B70"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lentil Seeds"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Lettuce Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:lettuceseeditem"
+			id: "2DA1D19461240BC5"
+			rewards: [
+				{
+					count: 4
+					id: "7A88C697E6B469BF"
+					item: "pamhc2crops:lettuceseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "28B817789AFBA6F0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lettuce Seeds"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Lotus Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:lotusseeditem"
+			id: "1848B690094232AD"
+			rewards: [
+				{
+					count: 4
+					id: "328843C6A27952A5"
+					item: "pamhc2crops:lotusseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4B9E147C2AC56997"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lotus Seeds"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Millet Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:milletseeditem"
+			id: "2F88B778B185AD2F"
+			rewards: [
+				{
+					count: 4
+					id: "3B59F27626AEF807"
+					item: "pamhc2crops:milletseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "03FFC9CBE57A7481"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Millet Seeds"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Mulberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:mulberryseeditem"
+			id: "0D2478233AA68775"
+			rewards: [
+				{
+					count: 4
+					id: "293041FDCEC34BB5"
+					item: "pamhc2crops:mulberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "53CEE6315869F3C5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Mulberry Seeds"
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Mustard Seeds Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:mustardseedsseeditem"
+			id: "0EF60598C5F3F134"
+			rewards: [
+				{
+					count: 4
+					id: "2DB376C92A71D9FF"
+					item: "pamhc2crops:mustardseedsseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "608FBB6799D757CC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Mustard Seeds Seeds"
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Nettles Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:nettlesseeditem"
+			id: "00C500768930C89B"
+			rewards: [
+				{
+					count: 4
+					id: "48AE0C1FF6C00925"
+					item: "pamhc2crops:nettlesseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4DE7AF85994B6531"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Nettles Seeds"
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Nopales Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:nopalesseeditem"
+			id: "5EC8ED39E8F55859"
+			rewards: [
+				{
+					count: 4
+					id: "604E819A5DB457E8"
+					item: "pamhc2crops:nopalesseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7A49A2F4E61E12CA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Nopales Seeds"
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Oats Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:oatsseeditem"
+			id: "7EA40C39035EE1B5"
+			rewards: [
+				{
+					count: 4
+					id: "64CB73F9235EA5BF"
+					item: "pamhc2crops:oatsseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "199C9EF98F65BFEC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Oats Seeds"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Okra Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:okraseeditem"
+			id: "5C3E09C2858E0D75"
+			rewards: [
+				{
+					count: 4
+					id: "2E6F4AB46B6D5353"
+					item: "pamhc2crops:okraseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5CCED4E637831D57"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Okra Seeds"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Onion Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:onionseeditem"
+			id: "28F38658C487686E"
+			rewards: [
+				{
+					count: 4
+					id: "0DACDC9E0A141B18"
+					item: "pamhc2crops:onionseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "224BB3CF51DF86D3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Onion Seeds"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Papyrus Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:papyrusseeditem"
+			id: "07B76A3B354AEEEF"
+			rewards: [
+				{
+					count: 6
+					id: "664CCEA777DD9857"
+					item: "pamhc2crops:papyrusseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "6B65311457AA3CA7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Papyrus Seeds"
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Parsnip Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:parsnipseeditem"
+			id: "60EE2C37233EBE4B"
+			rewards: [
+				{
+					count: 4
+					id: "19E51E17BBADD3EB"
+					item: "pamhc2crops:parsnipseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "4CA9FF96CB47CC17"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Parsnip Seeds"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Peanut Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:peanutseeditem"
+			id: "125ADE469E0ECD39"
+			rewards: [
+				{
+					count: 4
+					id: "798BABEC67DA0D32"
+					item: "pamhc2crops:peanutseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "34E61E19F914F187"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Peanut Seeds"
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Peas Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:peasseeditem"
+			id: "35E0BDC540A419DB"
+			rewards: [
+				{
+					count: 6
+					id: "163A71FB07889865"
+					item: "pamhc2crops:peasseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "77352093B1B26FC0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Peas Seeds"
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Pineapple Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:pineappleseeditem"
+			id: "2591E77CFA4374AB"
+			rewards: [
+				{
+					count: 4
+					id: "3D6E0D879CA501B3"
+					item: "pamhc2crops:pineappleseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0E28AE42289BC417"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pineapple Seeds"
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Quinoa Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:quinoaseeditem"
+			id: "21E96C81AABEEFBB"
+			rewards: [
+				{
+					count: 4
+					id: "0F03BEC3A3424C9D"
+					item: "pamhc2crops:quinoaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7B719916F23C9545"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Quinoa Seeds"
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Radish Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:radishseeditem"
+			id: "3251AB34F7DCDFEC"
+			rewards: [
+				{
+					count: 4
+					id: "318C0E41C12D0BC2"
+					item: "pamhc2crops:radishseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "01A50D4448BF2FF0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Radish Seeds"
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Raspberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:raspberryseeditem"
+			id: "3C84005F08D1305B"
+			rewards: [
+				{
+					count: 4
+					id: "36859C561AD47631"
+					item: "pamhc2crops:raspberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "65D17C991F364763"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Raspberry Seeds"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Rhubarb Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:rhubarbseeditem"
+			id: "5AAA8CED708BF421"
+			rewards: [
+				{
+					count: 4
+					id: "23A3733FA36B1BA7"
+					item: "pamhc2crops:rhubarbseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "610AF81751CD6961"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rhubarb Seeds"
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Rice Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:riceseeditem"
+			id: "183ACB95AEAEF6B9"
+			rewards: [
+				{
+					count: 6
+					id: "533CE0F2FD3447FE"
+					item: "pamhc2crops:riceseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "25B313C0DB87CAA0"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rice Seeds"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Rutabaga Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:rutabagaseeditem"
+			id: "05145E0EAA080B3E"
+			rewards: [
+				{
+					count: 4
+					id: "7D9B52718A2119E2"
+					item: "pamhc2crops:rutabagaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "577281C009E5473D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rutabaga Seeds"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Rye Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:ryeseeditem"
+			id: "09474ECC5814D14D"
+			rewards: [
+				{
+					count: 4
+					id: "71556C52689E3BA7"
+					item: "pamhc2crops:ryeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "71785194AF9EEA77"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rye Seeds"
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Scallion Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:scallionseeditem"
+			id: "0FFBE1937B273624"
+			rewards: [
+				{
+					count: 4
+					id: "61B5B7B4A6D58523"
+					item: "pamhc2crops:scallionseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "326D7BFE7F00EDE8"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Scallion Seeds"
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Sesame Seeds Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:sesameseedsseeditem"
+			id: "7FA4A38149E4FFB6"
+			rewards: [
+				{
+					count: 4
+					id: "611FA0211C3C54B8"
+					item: "pamhc2crops:sesameseedsseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7F486A1BA4246535"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sesame Seeds Seeds"
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Sisal Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:sisalseeditem"
+			id: "404918149DDE788E"
+			rewards: [
+				{
+					count: 4
+					id: "7E5E68938A50A345"
+					item: "pamhc2crops:sisalseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "2C00AC6C7D3E8184"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sisal Seeds"
+			x: 10.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Sorghum Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:sorghumseeditem"
+			id: "0CB4E465019ABAF0"
+			rewards: [
+				{
+					count: 4
+					id: "3C34777E3ABCC048"
+					item: "pamhc2crops:sorghumseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "0A926B617F314104"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sorghum Seeds"
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"6x Soybean Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:soybeanseeditem"
+			id: "2F249DEFC7842654"
+			rewards: [
+				{
+					count: 6
+					id: "1041B0EAF890DFCB"
+					item: "pamhc2crops:soybeanseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "568540FC4FD451C6"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Soybean Seeds"
+			x: 13.5d
+			y: 10.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Spiceleaf Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:spiceleafseeditem"
+			id: "7841DC3A8518F6D2"
+			rewards: [
+				{
+					count: 4
+					id: "63DD9611159A2611"
+					item: "pamhc2crops:spiceleafseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "507362066BFA9C20"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Spiceleaf Seeds"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Spinach Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:spinachseeditem"
+			id: "7A0F323674BA746E"
+			rewards: [
+				{
+					count: 4
+					id: "5B315EC0283DAD56"
+					item: "pamhc2crops:spinachseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "1B56157BD67A93B2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Spinach Seeds"
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"2x Strawberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:strawberryseeditem"
+			id: "60E0469C4AA9E780"
+			rewards: [
+				{
+					count: 2
+					id: "1239272E354C1481"
+					item: "pamhc2crops:strawberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "636F4ED79A8F408F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Strawberry Seeds"
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Sunchoke Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:sunchokeseeditem"
+			id: "733FA7743718555E"
+			rewards: [
+				{
+					count: 4
+					id: "28BF5DFE24527E1F"
+					item: "pamhc2crops:sunchokeseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "13955267FB90FD07"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sunchoke Seeds"
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Sweet Potato Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:sweetpotatoseeditem"
+			id: "3552EA3753DB7740"
+			rewards: [
+				{
+					count: 4
+					id: "1F1744FE9FB70A55"
+					item: "pamhc2crops:sweetpotatoseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "345CCBF2B3B2C2E9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sweet Potato Seeds"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Taro Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:taroseeditem"
+			id: "765D3AFEE772882B"
+			rewards: [
+				{
+					count: 4
+					id: "653E17789F73A1E2"
+					item: "pamhc2crops:taroseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "238DFFFFA1B80515"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Taro Seeds"
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Tealeaf Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:tealeafseeditem"
+			id: "29AC91ED52342E08"
+			rewards: [
+				{
+					count: 4
+					id: "658EEA4F10FBDD1F"
+					item: "pamhc2crops:tealeafseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7F93158481137BBA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Tealeaf Seeds"
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Tomatillo Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:tomatilloseeditem"
+			id: "5FE91BD21503F722"
+			rewards: [
+				{
+					count: 4
+					id: "53B112C83E138641"
+					item: "pamhc2crops:tomatilloseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7DC7FFD88D190504"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Tomatillo Seeds"
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Tomato Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:tomatoseeditem"
+			id: "1B261FFA32920735"
+			rewards: [
+				{
+					count: 4
+					id: "23ED7477635CB288"
+					item: "pamhc2crops:tomatoseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "26BAFC96FB562FFC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Tomato Seeds"
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Truffle Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:truffleseeditem"
+			id: "1D42F9EC798302EA"
+			rewards: [
+				{
+					count: 4
+					id: "39E3FC08524B9F52"
+					item: "pamhc2crops:truffleseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5FDDE5F1E85B2A5D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Truffle Seeds"
+			x: 13.5d
+			y: 12.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Turnip Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:turnipseeditem"
+			id: "44A56DFF37929998"
+			rewards: [
+				{
+					count: 4
+					id: "47DA24610F6D414E"
+					item: "pamhc2crops:turnipseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "7B94F136E549AEF2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Turnip Seeds"
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Waterchestnut Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:waterchestnutseeditem"
+			id: "45FA82D2E56ECBAA"
+			rewards: [
+				{
+					count: 4
+					id: "19C4E7BFDB7949BA"
+					item: "pamhc2crops:waterchestnutseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "5EFCBE3294E5BBC3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Waterchestnut Seeds"
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x White Mushroom Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:whitemushroomseeditem"
+			id: "72992826D1F142A7"
+			rewards: [
+				{
+					count: 4
+					id: "6B2C5E968B27357A"
+					item: "pamhc2crops:whitemushroomseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "13511F636AB68D11"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "White Mushroom Seeds"
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Winter Squash Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:wintersquashseeditem"
+			id: "55F51EA26FA1F163"
+			rewards: [
+				{
+					count: 4
+					id: "751BB8BCC360E0A7"
+					item: "pamhc2crops:wintersquashseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "72BCB55C5B5FEB82"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Winter Squash Seeds"
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Wolfberry Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:wolfberryseeditem"
+			id: "2C5D7A04EDA48893"
+			rewards: [
+				{
+					count: 4
+					id: "4E56F5F357E3ED58"
+					item: "pamhc2crops:wolfberryseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "24E955DAF97FAB1A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Wolfberry Seeds"
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Yucca Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:yuccaseeditem"
+			id: "15CDB151E7B3A381"
+			rewards: [
+				{
+					count: 4
+					id: "2BA7AEB668C2060C"
+					item: "pamhc2crops:yuccaseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "43BAA17C48EDA139"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Yucca Seeds"
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"4x Zucchini Seeds for 1 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2crops:zucchiniseeditem"
+			id: "31A4D2170DD7BCD0"
+			rewards: [
+				{
+					count: 4
+					id: "4BF8D415010A1ED7"
+					item: "pamhc2crops:zucchiniseeditem"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					id: "693BA51DEB200F56"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Zucchini Seeds"
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Acorn Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:acorn_sapling"
+			id: "6B1CF39BFE4AEA4B"
+			rewards: [
+				{
+					id: "0D38D895B610C226"
+					item: "pamhc2trees:acorn_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "31967686673B2A77"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Acorn Sapling"
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Almond Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:almond_sapling"
+			id: "6BDBF09A2419C380"
+			rewards: [
+				{
+					id: "6CB91780A3193C92"
+					item: "pamhc2trees:almond_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "0BA5D89EB453D1AA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Almond Sapling"
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Apple Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:apple_sapling"
+			id: "1030A7D10AB157E7"
+			rewards: [
+				{
+					id: "06A85DFB442F77D6"
+					item: "pamhc2trees:apple_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "558C375EB331BE8C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Apple Sapling"
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Apricot Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:apricot_sapling"
+			id: "4809B735C86AD2A8"
+			rewards: [
+				{
+					id: "5A41A3A57ED88BE2"
+					item: "pamhc2trees:apricot_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "75D74FB1F4D6737E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Apricot Sapling"
+			x: 4.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Avocado Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:avocado_sapling"
+			id: "74D7474E249AD118"
+			rewards: [
+				{
+					id: "173F0D4A2343E645"
+					item: "pamhc2trees:avocado_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "62380E87AE7ECF1A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Avocado Sapling"
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Banana Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:banana_sapling"
+			id: "0B5543777D994665"
+			rewards: [
+				{
+					id: "3ACB143DE771F21A"
+					item: "pamhc2trees:banana_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "6245C531E758DD3A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Banana Sapling"
+			x: 7.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Breadfruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:breadfruit_sapling"
+			id: "2889FBF9657CF043"
+			rewards: [
+				{
+					id: "6F016F736D9C526D"
+					item: "pamhc2trees:breadfruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "3A74801DC3220873"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Breadfruit Sapling"
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Candlenut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:candlenut_sapling"
+			id: "51F777461A3E8171"
+			rewards: [
+				{
+					id: "5E3F8AD20DA7339C"
+					item: "pamhc2trees:candlenut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "452C3C3AAF8EB751"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Candlenut Sapling"
+			x: 10.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Cashew Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:cashew_sapling"
+			id: "6DEDEC03B3457415"
+			rewards: [
+				{
+					id: "4FC578E3EE890CF7"
+					item: "pamhc2trees:cashew_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "7EB8C29960C9FD57"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cashew Sapling"
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Cherry Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:cherry_sapling"
+			id: "1DE05373A6E7BFD7"
+			rewards: [
+				{
+					id: "044A1BBF2D42CB05"
+					item: "pamhc2trees:cherry_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "29AE03275DAF5C82"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cherry Sapling"
+			x: 13.5d
+			y: 16.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Chestnut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:chestnut_sapling"
+			id: "5B9E8AA1D7D56B14"
+			rewards: [
+				{
+					id: "257E41CDA117115C"
+					item: "pamhc2trees:chestnut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "4CC73BAB01877E3F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Chestnut Sapling"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Cinnamon Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:cinnamon_sapling"
+			id: "1E36976DBE68C24B"
+			rewards: [
+				{
+					id: "5BC14FB58D3DE151"
+					item: "pamhc2trees:cinnamon_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "7B4D6167A42B18CE"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Cinnamon Sapling"
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Coconut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:coconut_sapling"
+			id: "44C1C07D1420451A"
+			rewards: [
+				{
+					id: "25EA7EA9575450EE"
+					item: "pamhc2trees:coconut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "7E6A1ADFE7D5F4AA"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Coconut Sapling"
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Date Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:date_sapling"
+			id: "5B79D3C5F4102A07"
+			rewards: [
+				{
+					id: "424E64E4AE30F09C"
+					item: "pamhc2trees:date_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5B5F9110288E301F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Date Sapling"
+			x: 4.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Dragonfruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:dragonfruit_sapling"
+			id: "75BDBE160093DA31"
+			rewards: [
+				{
+					id: "26400E26691CF199"
+					item: "pamhc2trees:dragonfruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "6C3AA63490C2633D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Dragonfruit Sapling"
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Durian Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:durian_sapling"
+			id: "2A82934BA9E04677"
+			rewards: [
+				{
+					id: "372E8C7FFE108EEB"
+					item: "pamhc2trees:durian_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5B7B975BC67D89A2"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Durian Sapling"
+			x: 7.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Fig Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:fig_sapling"
+			id: "1E8BEF8B9E2EA46C"
+			rewards: [
+				{
+					id: "2ADCB9A64C06A505"
+					item: "pamhc2trees:fig_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "16B1A95A776030BF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Fig Sapling"
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Gooseberry Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:gooseberry_sapling"
+			id: "5F0F29E87D49388B"
+			rewards: [
+				{
+					id: "4C6D1E178B14752F"
+					item: "pamhc2trees:gooseberry_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "17B7EF72C4F8BC49"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Gooseberry Sapling"
+			x: 10.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Grapefruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:grapefruit_sapling"
+			id: "00D8B0257ECF6D54"
+			rewards: [
+				{
+					id: "7509BD76724C4148"
+					item: "pamhc2trees:grapefruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "1408270A692ECB2A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Grapefruit Sapling"
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Guava Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:guava_sapling"
+			id: "2F87C14225622943"
+			rewards: [
+				{
+					id: "5E468CADD3632594"
+					item: "pamhc2trees:guava_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "2AF6F156D1ADB78D"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Guava Sapling"
+			x: 13.5d
+			y: 18.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Hazelnut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:hazelnut_sapling"
+			id: "61A71F50FDDA44E0"
+			rewards: [
+				{
+					id: "65DDF87812553FE4"
+					item: "pamhc2trees:hazelnut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5D95DB82B600416B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Hazelnut Sapling"
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Jackfruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:jackfruit_sapling"
+			id: "5D35ED22F1F415D5"
+			rewards: [
+				{
+					id: "68A5B57233EBB077"
+					item: "pamhc2trees:jackfruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "46C1AE5CBD7E4071"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Jackfruit Sapling"
+			x: 1.5d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Lemon Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:lemon_sapling"
+			id: "745C5E231C88B094"
+			rewards: [
+				{
+					id: "45434690E676E6CC"
+					item: "pamhc2trees:lemon_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "64113AA014197DD1"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lemon Sapling"
+			x: 3.0d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Lime Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:lime_sapling"
+			id: "25A10F53172A6679"
+			rewards: [
+				{
+					id: "676A6CD1EEF394FF"
+					item: "pamhc2trees:lime_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "0B510EC716786DFF"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lime Sapling"
+			x: 4.5d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Lychee Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:lychee_sapling"
+			id: "6552B1C9CB1A7FD3"
+			rewards: [
+				{
+					id: "2D8ED5A51ED88028"
+					item: "pamhc2trees:lychee_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "68CDC7A4959E00E4"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Lychee Sapling"
+			x: 6.0d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Mango Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:mango_sapling"
+			id: "412832136B88E08B"
+			rewards: [
+				{
+					id: "4357F4789F2D76BB"
+					item: "pamhc2trees:mango_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "3F4D000D62833958"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Mango Sapling"
+			x: 7.5d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Maple Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:maple_sapling"
+			id: "77195A4EA819AB8F"
+			rewards: [
+				{
+					id: "5E903D2C47976E58"
+					item: "pamhc2trees:maple_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "68363B26C79E83E3"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Maple Sapling"
+			x: 9.0d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Nutmeg Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:nutmeg_sapling"
+			id: "7BEEB9E5A8BE8EC0"
+			rewards: [
+				{
+					id: "48530AEA6FF1176B"
+					item: "pamhc2trees:nutmeg_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5B595B6BC15BB4E5"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Nutmeg Sapling"
+			x: 10.5d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Olive Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:olive_sapling"
+			id: "15718F352A1D7744"
+			rewards: [
+				{
+					id: "32413A916B27AD32"
+					item: "pamhc2trees:olive_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "7022248C6221CDA7"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Olive Sapling"
+			x: 12.0d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Orange Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:orange_sapling"
+			id: "4C159BF4FAFD0FE9"
+			rewards: [
+				{
+					id: "3EC22F1AA2CA5B9D"
+					item: "pamhc2trees:orange_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "76DBC66098667030"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Orange Sapling"
+			x: 13.5d
+			y: 19.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Papaya Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:papaya_sapling"
+			id: "381E30B74007E894"
+			rewards: [
+				{
+					id: "79E61180CA498EB9"
+					item: "pamhc2trees:papaya_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "26E6F671371E0849"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Papaya Sapling"
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Paperbark Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:paperbark_sapling"
+			id: "303B759D019EFBD2"
+			rewards: [
+				{
+					id: "7F3622DC5A34EB36"
+					item: "pamhc2trees:paperbark_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "67A0C5114F58BA3B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Paperbark Sapling"
+			x: 1.5d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Passionfruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:passionfruit_sapling"
+			id: "08676A3E38E5DBA0"
+			rewards: [
+				{
+					id: "0593B3BC3DDEA8D3"
+					item: "pamhc2trees:passionfruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "4B816D2D2D28BD88"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Passionfruit Sapling"
+			x: 3.0d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pawpaw Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pawpaw_sapling"
+			id: "18FA5FFE3E84E983"
+			rewards: [
+				{
+					id: "3CC8D233247FA983"
+					item: "pamhc2trees:pawpaw_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "6492CA8FE5FBE50A"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pawpaw Sapling"
+			x: 4.5d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Peach Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:peach_sapling"
+			id: "6DFC307365FB1D7A"
+			rewards: [
+				{
+					id: "5EAB06B1DBA51A5E"
+					item: "pamhc2trees:peach_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "22AAEC55134A670C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Peach Sapling"
+			x: 6.0d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pear Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pear_sapling"
+			id: "6387F2C7226A14DA"
+			rewards: [
+				{
+					id: "2DB921A60CF49A39"
+					item: "pamhc2trees:pear_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "47785854059B227F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pear Sapling"
+			x: 7.5d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pecan Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pecan_sapling"
+			id: "7D6917336B04D575"
+			rewards: [
+				{
+					id: "798B99E9ED974D42"
+					item: "pamhc2trees:pecan_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "69966C75DFAFE528"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pecan Sapling"
+			x: 9.0d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Peppercorn Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:peppercorn_sapling"
+			id: "38CD4BED7902BA1A"
+			rewards: [
+				{
+					id: "73A7AF5A1041DCD4"
+					item: "pamhc2trees:peppercorn_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "425C2D0E1697D10E"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Peppercorn Sapling"
+			x: 10.5d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Persimmon Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:persimmon_sapling"
+			id: "06E8454823F8961C"
+			rewards: [
+				{
+					id: "0CCB7464DB900C2F"
+					item: "pamhc2trees:persimmon_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "43DCE9FF12F70D68"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Persimmon Sapling"
+			x: 12.0d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pinenut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pinenut_sapling"
+			id: "3ED862DDF2E55CC6"
+			rewards: [
+				{
+					id: "20585D5FEE608EBA"
+					item: "pamhc2trees:pinenut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "149CE6C69EEC514C"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pinenut Sapling"
+			x: 13.5d
+			y: 21.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pistachio Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pistachio_sapling"
+			id: "378F123ECA750FEC"
+			rewards: [
+				{
+					id: "4561775BDEE9C8EB"
+					item: "pamhc2trees:pistachio_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "4DC981D4A2D56D27"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pistachio Sapling"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Plum Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:plum_sapling"
+			id: "0B891B976CD945A7"
+			rewards: [
+				{
+					id: "65C484B062FF070E"
+					item: "pamhc2trees:plum_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "6E59D07B6DC4E048"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Plum Sapling"
+			x: 1.5d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Pomegranate Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:pomegranate_sapling"
+			id: "3DF54A0A11AE7D41"
+			rewards: [
+				{
+					id: "77420FBE006312E6"
+					item: "pamhc2trees:pomegranate_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "257FEDA511B88C96"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Pomegranate Sapling"
+			x: 3.0d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Rambutan Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:rambutan_sapling"
+			id: "0F96B0B5D2F4E421"
+			rewards: [
+				{
+					id: "7C25A1D3024D0146"
+					item: "pamhc2trees:rambutan_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "379E0AE43DAAD371"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Rambutan Sapling"
+			x: 4.5d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Soursop Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:soursop_sapling"
+			id: "1670F2B74CFFF57F"
+			rewards: [
+				{
+					id: "160EA4FC63501823"
+					item: "pamhc2trees:soursop_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "2D20670E46B4765F"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Soursop Sapling"
+			x: 6.0d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Spiderweb Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:spiderweb_sapling"
+			id: "2A0935C08F30BB56"
+			rewards: [
+				{
+					id: "27059CA6BE8BF83B"
+					item: "pamhc2trees:spiderweb_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "3DC1C5F7CA954FEB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Spiderweb Sapling"
+			x: 7.5d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Starfruit Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:starfruit_sapling"
+			id: "75A635260DD08BEA"
+			rewards: [
+				{
+					id: "554013DF127E8DD1"
+					item: "pamhc2trees:starfruit_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "2383BA85DEE0D2D9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Starfruit Sapling"
+			x: 9.0d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Tamarind Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:tamarind_sapling"
+			id: "3B9665165F965AB6"
+			rewards: [
+				{
+					id: "2F586FFDF59B9292"
+					item: "pamhc2trees:tamarind_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5007A9DA08F99042"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Tamarind Sapling"
+			x: 10.5d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Vanillabean Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:vanillabean_sapling"
+			id: "47B09303CA07CDF4"
+			rewards: [
+				{
+					id: "692DC32C95F562BD"
+					item: "pamhc2trees:vanillabean_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "55403A8C1C589978"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Vanillabean Sapling"
+			x: 12.0d
+			y: 22.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&7[Pam's Market]"
+				""
+				"1x Walnut Sapling for 4 NCP Scrip."
+				"&7Click 'Submit' on the task to pay. Repeatable. No refunds; there's nobody left to ask."
+			]
+			icon: "pamhc2trees:walnut_sapling"
+			id: "00D672A85C7C5203"
+			rewards: [
+				{
+					id: "509D558DB5DC35F3"
+					item: "pamhc2trees:walnut_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "0ED08B5413CA8803"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Walnut Sapling"
+			x: 13.5d
+			y: 22.5d
+		}
+	]
+	title: "Pam's Market"
+}
