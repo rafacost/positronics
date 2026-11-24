@@ -12,9 +12,13 @@ A tech-only **GregTech + ProjectE skyblock** for **Minecraft 1.20.1 · Forge 47.
 You start on a small island in a dead world: no ores, no mobs, no villagers, no Nether and no End. Everything you
 make comes from rock, water, sunlight and atoms, and every tier has to be earned.
 
-**Status: beta `0.1.0-beta`** ([changelog](CHANGELOG.md)) · single player
+**Status: beta `0.1.0-beta`** ([changelog](CHANGELOG.md)) · single player, or solo on a dedicated server
 The whole pack is playable, ULV to UHV. It's a work in progress: so far it has been played through to the end of
 River Crossing (ULV), so reports from The Calla (LV) onward are especially welcome.
+
+> **Updates and your world.** We try hard not to break saves, but this is a beta, so expect it now and then.
+> A **patch** (0.1.0 → 0.1.1) never needs a new world; a **minor** update (0.1.x → 0.2.0) may, and its changelog
+> says so at the top. Back up your world before updating.
 
 ## What makes it different
 - **Strata, not ores.** Resources come from Strata: hammered out of gravel, sifted, then made by the

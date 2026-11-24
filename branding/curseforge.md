@@ -37,7 +37,11 @@ comes from rock, water, sunlight and atoms, and every tier has to be earned.
 
 - **Beta.** The whole pack is playable, ULV to UHV. It is a work in progress: so far it has been played through to
   the end of River Crossing (ULV), so expect rough edges past that, and please report them.
-- **Single player.** Multiplayer hasn't been tested.
+- **Updates and your world.** We try hard not to break saves, but this is a beta, so expect it now and then.
+  The version number tells you: a **patch** (0.1.0 → 0.1.1) never needs a new world; a **minor** update
+  (0.1.x → 0.2.0) may, and its changelog will say so at the top. Back up your world before updating.
+- **Single player**, or one player on a dedicated server (a server pack comes with each release). Teams and
+  multiple islands aren't supported yet.
 - **Memory:** give Minecraft at least **6 GB**.
 - **Start a new world.** The first quests teach you to drink, eat and hammer. Read them; the island is not forgiving.
 - **It's GregTech.** Expect long chains, real multiblocks and a slow, steady climb. That's the point.
