@@ -3,7 +3,7 @@
 All notable changes to Positronics. The current version is in [`VERSION`](VERSION).
 Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may need a new world; a PATCH bump never does.
 
-## Unreleased
+## 0.1.1-beta (2026-11-24)
 
 - **Soy Milk.** Pam's Fresh Milk is now Soy Milk, made from soybeans, almonds or coconuts: 2 beans and a purified
   water bottle by hand (you keep the bottle), or twice as much in an LV Mixer. The Mixer also fills a milk bucket
