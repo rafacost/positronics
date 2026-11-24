@@ -13,6 +13,10 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
 - **Storage blocks by tier.** Copper, tin and redstone blocks now craft by hand, like iron, bronze and steel; the ULV
   Reclamation Compressor packs all six. Every other ingot or gem block needs LV (compressor at 30 EU/t), and gold,
   diamond and emerald blocks need MV (120 EU/t on every GregTech route).
+- **Dedicated server fix:** joining a server kicked every player (null item in the recipe list). Our Water Purifier
+  recipe had the wrong input format; it now works as the memo says (dirty water to purified, 10 s) and replaces
+  Tough As Nails' two-step dirty-to-plain-water recipe.
+- **Server pack:** a dedicated-server zip for each release (`tools/make_server_pack.ps1`); tested with one player.
 - The first Tom's Simple Storage quest now rewards a Paint Kit, because dyes are scarce early on.
 
 ## 0.1.0-beta (2026-11-23)

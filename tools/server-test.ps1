@@ -14,7 +14,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
-$clientOnly = 'embeddium|LegendaryTooltips|Iceberg|^Prism|MouseTweaks|Controlling|Searchables|ToastControl|great_scrollable_tooltips|defaultoptions|hideexperimentalwarning|^CTM-'
+$clientOnly = (Get-Content (Join-Path $PSScriptRoot 'client-only-mods.txt') | Where-Object { $_ -and -not $_.StartsWith('#') }) -join '|'
 
 # 1) Mods: mirror from the instance, skipping client-only and disabled jars.
 $mods = Join-Path $ServerDir 'mods'

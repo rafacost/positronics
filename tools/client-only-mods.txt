@@ -1,0 +1,14 @@
+# Mods left out of every dedicated server (server-test.ps1, make_server_pack.ps1).
+# One regex per line, matched against the jar file name. Lines starting with # are comments.
+embeddium
+LegendaryTooltips
+Iceberg
+^Prism
+MouseTweaks
+Controlling
+Searchables
+ToastControl
+great_scrollable_tooltips
+defaultoptions
+hideexperimentalwarning
+^CTM-

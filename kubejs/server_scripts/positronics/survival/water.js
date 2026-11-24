@@ -25,9 +25,13 @@ ServerEvents.recipes(event => {
         cookingtime: 600
     }).id('positronics:survival/boil_water_on_campfire')
 
+    // Tough As Nails reads both input and result as item NBT ({ Count, id }). An { item } input left the
+    // recipe with a null stack: harmless in single player, but it kicks every player joining a dedicated
+    // server (the recipe list fails to encode). Its own dirty bottle -> plain water recipe is replaced.
+    event.remove({ id: 'toughasnails:potion' })
     event.custom({
         type: 'toughasnails:water_purifying',
-        input: { item: 'toughasnails:dirty_water_bottle' },
+        input: { Count: 1, id: 'toughasnails:dirty_water_bottle' },
         purifytime: 200,
         result: { Count: 1, id: 'toughasnails:purified_water_bottle' }
     }).id('positronics:survival/purify_dirty_water')
