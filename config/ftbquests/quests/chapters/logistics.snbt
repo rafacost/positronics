@@ -148,7 +148,12 @@
 			description: [
 				"&7[NCP Field Memo #3005: Controller]"
 				""
-				"One block that puts things into every drawer around it. Pusher and puller upgrades move items for you."
+				"One block that feeds a whole wall of drawers, and shows the whole wall to anything that asks: a pipe,"
+				"a hopper, a Tom's connector. &cBut only the drawers you link to it.&r Standing next to it counts for nothing."
+				"Make a &bLinking Tool&r (five paper, two gold ingots, a drawer and a diamond). Sneak and right-click the air"
+				"until it says &bMultiple&r, right-click the controller, then two opposite corners of the wall."
+				"Everything between them is linked, up to &b8 blocks&r from the controller. Hold the tool to see which."
+				"Pusher and puller upgrades move items for you."
 				"&7Your back stops hurting somewhere around the third one."
 			]
 			id: "6175C1319BD5FAD6"
@@ -168,6 +173,11 @@
 				}
 				{
 					id: "76333C6E657ECFC0"
+					item: "functionalstorage:linking_tool"
+					type: "item"
+				}
+				{
+					id: "2B27F8BFF50F66F7"
 					item: "functionalstorage:pusher_upgrade"
 					type: "item"
 				}

@@ -3,6 +3,11 @@
 All notable changes to Positronics. The current version is in [`VERSION`](VERSION).
 Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may need a new world; a PATCH bump never does.
 
+## Unreleased
+
+- **Storage Controller memo (3005) fixed:** it said the controller fills every drawer around it. It only works
+  with drawers linked to it with the Linking Tool; the memo now explains how, and the quest asks for the tool.
+
 ## 0.1.1-beta (2026-11-24)
 
 - **Soy Milk.** Pam's Fresh Milk is now Soy Milk, made from soybeans, almonds or coconuts: 2 beans and a purified
