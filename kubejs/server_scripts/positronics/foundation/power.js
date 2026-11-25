@@ -16,6 +16,19 @@
 ServerEvents.recipes(event => {
     // ---- Solar Flux panels
     for (let i = 1; i <= 8; i++) event.remove({ output: `solarflux:sp_${i}` })
+    // Solar Flux registers its own recipes through HammerLib (hammerlib:shaped_hl_recipe), which the output
+    // filter above never matches: until 0.1.2 every tier had a second, ungated recipe (found 2026-11-25).
+    // config/solarflux/recipes.cfg turns them off; removing them by id here is the second lock.
+    // Efficiency upgrades multiply output, so they go too; the other upgrades add no power.
+    for (let i = 1; i <= 8; i++) event.remove({ id: `solarflux:solar_panel_${i}` })
+    for (let i = 1; i <= 6; i++) event.remove({ id: `solarflux:photovoltaic_cell_${i}` })
+    ;['solarflux:solar_panels/avaritia/infinity', 'solarflux:solar_panels/avaritia/neutronium',
+      'solarflux:efficiency_upgrade'].forEach(id => event.remove({ id: id }))
+
+    // ---- GregTech solar: ULV only (foundation.js, NCP Emergency Solar). GT's LV panel wants LuV circuits and
+    // naquadah, MV-UV have no recipe at all, and Solar Flux is the solar line, so the rest go (2026-11-25).
+    ;['solar_panel', 'lv_solar_panel', 'mv_solar_panel', 'hv_solar_panel', 'ev_solar_panel', 'iv_solar_panel',
+      'luv_solar_panel', 'zpm_solar_panel', 'uv_solar_panel'].forEach(p => event.remove({ output: `gtceu:${p}` }))
 
     event.shaped('solarflux:sp_1', [
         'GGG',

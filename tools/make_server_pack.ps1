@@ -139,7 +139,17 @@ GOOD TO KNOW
 New-Item -ItemType Directory -Force $OutDir | Out-Null
 $zip = Join-Path $OutDir "$name.zip"
 if (Test-Path $zip) { Remove-Item $zip -Force }
-Add-Type -AssemblyName System.IO.Compression.FileSystem
-[IO.Compression.ZipFile]::CreateFromDirectory($stage, $zip, [IO.Compression.CompressionLevel]::Optimal, $false)
+# Entry by entry, with forward slashes: .NET Framework's ZipFile.CreateFromDirectory (Windows PowerShell 5.1)
+# writes backslash separators, which the zip spec forbids. Linux tools read them as file names, and the
+# 0.1.1 server pack "failed processing" on CurseForge (found 2026-11-25).
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+$fs = [IO.File]::Open($zip, [IO.FileMode]::CreateNew)
+$archive = New-Object IO.Compression.ZipArchive($fs, [IO.Compression.ZipArchiveMode]::Create)
+try {
+    Get-ChildItem $stage -Recurse -File | ForEach-Object {
+        $rel = $_.FullName.Substring($stage.Length + 1).Replace('\', '/')
+        [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive, $_.FullName, $rel, [IO.Compression.CompressionLevel]::Optimal) | Out-Null
+    }
+} finally { $archive.Dispose(); $fs.Dispose() }
 Remove-Item $stage -Recurse -Force
 Write-Host ("Server pack: $zip ({0:N0} MB)" -f ((Get-Item $zip).Length / 1MB))

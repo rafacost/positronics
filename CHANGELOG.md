@@ -3,8 +3,23 @@
 All notable changes to Positronics. The current version is in [`VERSION`](VERSION).
 Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may need a new world; a PATCH bump never does.
 
-## Unreleased
+## 0.1.2-beta (2026-11-25)
 
+- **Solar exploit closed.** Solar Flux's own panel recipes (all 8 tiers) were never removed, because Solar Flux
+  registers them through its own library. Any tier could be crafted from its photovoltaic cells with no voltage
+  gate. They're off now (`config/solarflux/recipes.cfg`, and removed by id), along with the photovoltaic cells,
+  the two Avaritia panels and the Efficiency Upgrade (it multiplied output). The Positronics chain is the only one
+  left: tiers 1-2 by hand, tier 3 and up in an assembler at that tier's voltage. Panels already placed keep working.
+- **GregTech solar is ULV only:** the NCP Emergency Solar panel stays. GT's LV panel needed LuV circuits and
+  naquadah, MV to UV had no recipe at all, so those and the Solar Panel cover are gone.
+- **AE2 now starts at MV, as the quests always said.** It had no gate at all, and certus comes at LV, so a whole
+  ME network could be built at the end of LV.
+  - The four presses come from an **MV assembler**: four aluminium plates, an MV circuit and the item each press
+    prints (memo 3008).
+  - The **Inscriber** and the **Charger** are built around an MV machine hull (memos 3008 and 3009).
+  - Powah's Energizing Orb no longer charges certus quartz. Charged certus comes only from the Charger.
+  - Everything else (processors, fluix, ExtendedAE's Ex Inscriber and Circuit Cutter, Advanced AE's Reaction
+    Chamber) needs one of those, so it waits for MV too. AE2 blocks already built keep working.
 - **Storage Controller memo (3005) fixed:** it said the controller fills every drawer around it. It only works
   with drawers linked to it with the Linking Tool; the memo now explains how, and the quest asks for the tool.
 - Avaritia's Nether Crafting Table is now the **Assembly Table** (name, EMI category and quests). There's no

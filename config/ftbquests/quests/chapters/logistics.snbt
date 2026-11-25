@@ -421,8 +421,8 @@
 				"&7[NCP Field Memo #3008: AE2]"
 				""
 				"Somewhere else, people find these presses in meteorites. Nothing falls from the sky here."
-				"NCP assembles the four presses in an LV assembler: four steel plates, an LV circuit, and one of what"
-				"each press prints (silicon, a gold plate, certus or a diamond)."
+				"NCP assembles the four presses in an MV assembler: four aluminium plates, an MV circuit, and one of what"
+				"each press prints (silicon, a gold plate, certus or a diamond). The Inscriber is built around an MV hull."
 				"Certus quartz crystals grow from certus dust in an autoclave. The Array sifts it out of rock dust on an"
 				"MV energy hatch (circuit 3), with the sky stone dust and glowstone dust AE2 also needs."
 				"&7The diamond press wants a diamond. There's more than one way to make one."
@@ -472,7 +472,7 @@
 			description: [
 				"&7[NCP Field Memo #3009: Fluix]"
 				""
-				"Charge certus in a charger (it takes GT power), then drop it in water with redstone and quartz."
+				"Charge certus in a charger (an MV hull at its heart, and it takes GT power), then drop it in water with redstone and quartz."
 				"It fizzes, and comes out purple. That's fluix."
 			]
 			id: "6960B68DB39CBE72"
