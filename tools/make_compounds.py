@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, "kubejs", "startup_scripts", "positronics", "generated"
 def find_jar():
     if len(sys.argv) > 1:
         return sys.argv[1]
-    hits = glob.glob(r"D:\Minecraft\Instances\Positronics\mods\chemlib-*.jar")
+    hits = glob.glob(r"D:\Minecraft\Instances\Positronics Dev\mods\chemlib-*.jar")
     if not hits:
         sys.exit("chemlib jar not found; pass its path")
     return hits[0]

@@ -3,7 +3,7 @@
 # The repo is the source of truth for everything it tracks. Untracked instance files are left alone.
 
 param(
-    [string]$Instance = 'D:\Minecraft\Instances\Positronics',
+    [string]$Instance = 'D:\Minecraft\Instances\Positronics Dev',
     [switch]$SkipModsCheck
 )
 

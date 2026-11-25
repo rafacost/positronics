@@ -63,7 +63,7 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     ids_only = "--ids-only" in sys.argv   # keep the generator's auto-layout (chapters nobody moved by hand)
     cid = args[0]
-    inst = args[1] if len(args) > 1 else r"D:\Minecraft\Instances\Positronics"
+    inst = args[1] if len(args) > 1 else r"D:\Minecraft\Instances\Positronics Dev"
     data = make_quests.load_data()
     ch = next(c for c in data.CHAPTERS if c["id"] == cid)
     path = os.path.join(inst, "config", "ftbquests", "quests", "chapters", ch["filename"] + ".snbt")

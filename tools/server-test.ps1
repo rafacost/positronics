@@ -7,7 +7,7 @@
 
 param(
     [Parameter(Mandatory = $true)][string]$ServerDir,
-    [string]$Instance = 'D:\Minecraft\Instances\Positronics',
+    [string]$Instance = 'D:\Minecraft\Instances\Positronics Dev',
     [string]$Java = 'D:\AI_Projects\usrg_automation\.jdk\jdk-17.0.19+10\bin\java.exe',
     [int]$TimeoutSec = 600
 )

@@ -10,7 +10,7 @@
 # Forge itself is not bundled: start.bat / start.sh download the official installer.
 
 param(
-    [string]$Instance = 'D:\Minecraft\Instances\Positronics',
+    [string]$Instance = 'D:\Minecraft\Instances\Positronics Dev',
     [string]$OutDir = '',
     [string]$Ram = '6G'
 )

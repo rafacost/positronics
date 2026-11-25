@@ -4,7 +4,7 @@
 # Afterwards review with `git diff` before committing: pull overwrites the repo copies.
 
 param(
-    [string]$Instance = 'D:\Minecraft\Instances\Positronics'
+    [string]$Instance = 'D:\Minecraft\Instances\Positronics Dev'
 )
 
 $ErrorActionPreference = 'Stop'
