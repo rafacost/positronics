@@ -1,0 +1,14 @@
+{
+  "block.avaritia.nether_crafting_table": "Assembly Table",
+  "container.nether_crafting_table": "Assembly Table",
+  "emi.category.avaritia.nether_crafting_table": "Assembly Table",
+  "jei.category.avaritia.nether_crafting_table": "Assembly Table",
+  "advancements.avaritia.nether_crafting_table.title": "A Bigger Grid",
+  "advancements.avaritia.nether_crafting_table.desc": "Build an Assembly Table",
+  "block.avaritia.end_crafting_table": "Heavy Assembly Table",
+  "container.end_crafting_table": "Heavy Assembly Table",
+  "emi.category.avaritia.end_crafting_table": "Heavy Assembly Table",
+  "jei.category.avaritia.end_crafting_table": "Heavy Assembly Table",
+  "advancements.avaritia.end_crafting_table.title": "Seven by Seven",
+  "advancements.avaritia.end_crafting_table.desc": "Build a Heavy Assembly Table"
+}

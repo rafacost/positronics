@@ -191,7 +191,13 @@ LOGISTICS = {
                       "Everything between them is linked, up to &b8 blocks&r from the controller. Hold the tool to see which.",
                       "Pusher and puller upgrades move items for you.",
                       "&7Your back stops hurting somewhere around the third one.")},
-        {"key": "sfm", "title": "Super Factory Manager", "deps": ["pipes2", "the_calla:seed2", "the_calla:dyegen"], "tasks": ["sfm:manager", ("sfm:cable", 16), "sfm:disk"],
+        {"key": "dyegen", "title": "Colour", "deps": ["the_calla:arrival"], "tasks": ["usrg:dyegenerator"],
+         "desc": memo("3023", "Generators, Zwei",
+                      "The next generators want a full &bKlein Star Zwei&r (200,000 EMC) and a steel block: Clay, Grass, Fungus and Dye.",
+                      "The &bDye Generator&r is the one you'll want first. It's the only place blue and black dye come from out here,",
+                      "and Super Factory Manager and XNet are built out of colours. Nothing else waits on it, so buy it when you need it.",
+                      "&7Sixteen dyes out of nothing. Somewhere, a painter is very confused.")},
+        {"key": "sfm", "title": "Super Factory Manager", "deps": ["pipes2", "the_calla:seed2", "dyegen"], "tasks": ["sfm:manager", ("sfm:cable", 16), "sfm:disk"],
          "desc": memo("3006", "Programming",
                       "Write a tiny program on a disk and it moves items between any inventories on the cable.",
                       "NCP approves of scripts. NCP was mostly scripts, at the end.")},
@@ -366,6 +372,30 @@ def market():
                                  ((i % 10) * 1.5, top + (i // 10) * 1.5), "Pam's Market"))
     return {"id": "pams_market", "filename": "pams_market", "order": 41, "group": "NCP Shop",
             "title": "Pam's Market", "icon": "pamhc2crops:soybeanseeditem", "quests": quests}
+
+
+def catalogue():
+    """Reclamation Catalogue (decided 2026-11-25): the first copy of each utility USRG generator for Scrip,
+    once per world (no repeat). More copies are crafted with a full Klein star (gates.js genRanks), so the star
+    still prices scaling. Ore and Gravel stay out (the strata engines), Grass too (no use yet). No memos: wait
+    and see whether players miss them; the shop line and EMI are enough."""
+    ranks = [  # rank, price, unlock, generators
+        ("Ein", 12, "river_crossing:oregen", [("dirtgenerator", "Dirt Generator"), ("sandgenerator", "Sand Generator")]),
+        ("Zwei", 25, "the_calla:arrival", [("claygenerator", "Clay Generator"), ("fungusgenerator", "Fungus Generator"),
+                                           ("dyegenerator", "Dye Generator")]),
+        ("Drei", 40, "lud:alu", [("snowgenerator", "Snow Generator"), ("icegenerator", "Ice Generator"),
+                                 ("obsidiangenerator", "Obsidian Generator")]),
+    ]
+    quests = []
+    for row, (rank, price, unlock, gens) in enumerate(ranks):
+        for col, (gen, name) in enumerate(gens):
+            q = shop_offer(gen, name, price, f"usrg:{gen}", 1, unlock, (col * 1.5, row * 1.5), "Reclamation Catalogue")
+            q["repeat"] = False
+            q["desc"] = ["&7[Reclamation Catalogue]", "", f"One {name} for {price} NCP Scrip.",
+                         f"&7Once per world. Every copy after this one is crafted with a full Klein Star {rank}."]
+            quests.append(q)
+    return {"id": "reclamation_catalogue", "filename": "reclamation_catalogue", "order": 42, "group": "NCP Shop",
+            "title": "Reclamation Catalogue", "icon": "usrg:dirtgenerator", "quests": quests}
 
 
 def shop():
@@ -804,4 +834,4 @@ KIT = {
     ],
 }
 
-SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, APIARY, periodic_table(), KIT, shop(), market()]
+SIDE_CHAPTERS = [FIELD_MANUAL, strata_index(), LOGISTICS, KITCHEN, simulation_lab(), SPACE, APIARY, periodic_table(), KIT, shop(), market(), catalogue()]

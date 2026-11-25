@@ -187,7 +187,37 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3A0A6C2952D4C227" "70B5506B5FAD2B04" "5BEF8AFF4CD15F03"]
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[NCP Field Memo #3023: Generators, Zwei]"
+				""
+				"The next generators want a full &bKlein Star Zwei&r (200,000 EMC) and a steel block: Clay, Grass, Fungus and Dye."
+				"The &bDye Generator&r is the one you'll want first. It's the only place blue and black dye come from out here,"
+				"and Super Factory Manager and XNet are built out of colours. Nothing else waits on it, so buy it when you need it."
+				"&7Sixteen dyes out of nothing. Somewhere, a painter is very confused."
+			]
+			id: "5BEF8AFF4CD15F03"
+			rewards: [
+				{
+					count: 2
+					id: "1F5D10FE418EB0DC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2801C52B70121B52"
+					item: "usrg:dyegenerator"
+					type: "item"
+				}
+			]
+			title: "Colour"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A0A6C2952D4C227" "5BEF8AFF4CD15F03" "70B5506B5FAD2B04"]
 			description: [
 				"&7[NCP Field Memo #3006: Programming]"
 				""

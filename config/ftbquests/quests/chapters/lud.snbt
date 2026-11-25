@@ -411,7 +411,7 @@
 			description: [
 				"&7[NCP Field Memo #0312: Charging]"
 				""
-				"&b51,200,000 EMC&r, the biggest Klein Star there is. Core III is a 5x5 recipe on the Nether Crafting Table."
+				"&b51,200,000 EMC&r, the biggest Klein Star there is. Core III is a 5x5 recipe on the Assembly Table."
 				"&7Lud's automation, piped into capacitors, fills it. You'll sleep through most of it. That's the point."
 			]
 			icon: "projecte:klein_star_omega"

@@ -53,13 +53,19 @@ TIPS = [
                               "From MV up it's four of the last, that tier's circuit and two plates, in an assembler."),
     ("0211", "tin_alloy", "Molten tin alloy: put tin alloy ingots in an LV extractor and catch the fluid in a bucket from its output tank."),
     ("0214", "hopper_pots", "Hopper botany pots over chests, and the crops harvest themselves."),
+    ("0220", "catalogue_dirt", "The Reclamation Catalogue, next to the NCP Shop, sells your first Dirt Generator for 12 Scrip "
+                               "instead of a full Klein Star Ein. Once per world; the next one costs the star."),
     # ---------------------------------------------------------------- Lud (0301-0316)
     ("0310", "keep_mk2", "An upgraded Ore Generator gives Seed II instead of Seed I. Keep one Mk II as it is, for your Seed I."),
     ("0314", "hcl", "Hydrochloric acid: electrolyse salt (Saline Stratum) for chlorine, then burn it with hydrogen."),
+    ("0316", "cold_chain", "The cold generators feed each other: the Snow Generator makes snow blocks, two snow blocks go into "
+                           "an Ice Generator, and two of its ice go into the Obsidian Generator."),
     # ---------------------------------------------------------------- Fedic, the Doors
     ("0609", "combiner_card", "Potassium dichromate is eleven atoms: that one's the Combiner's job, not your hands'."),
     ("1008", "oganesson", "Oganesson only comes out of Alchemistry's Fusion Chamber, at LuV."),
-    # ---------------------------------------------------------------- Logistics (3001-3022)
+    # ---------------------------------------------------------------- Logistics (3001-3023)
+    ("3023", "catalogue_dye", "The Reclamation Catalogue, next to the NCP Shop, sells your first Dye Generator for 25 Scrip "
+                              "instead of a full Klein Star Zwei. Once per world; the next one costs the star."),
     ("3001", "pipe_wrench", "Sneak-right-click a Pipez pipe with the wrench to choose which side extracts."),
     ("3008", "synthetic_diamond", "Eight graphite dust (Carbonic Stratum) and a bucket of water in an LV autoclave make a diamond."),
     ("3009", "nether_quartz", "Nether quartz: autoclave its dust, a Crystalline Stratum byproduct."),

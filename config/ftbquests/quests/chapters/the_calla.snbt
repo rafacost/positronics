@@ -329,7 +329,7 @@
 					type: "item"
 				}
 			]
-			title: "The Nether Crafting Table"
+			title: "The Assembly Table"
 			x: 10.0d
 			y: 1.5d
 		}
@@ -467,7 +467,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["05282D7A4CE074AA"]
+			dependencies: ["7427A2625A2AC8D3"]
 			description: [
 				"&7[NCP Field Memo #0214: Food]"
 				""
@@ -511,38 +511,39 @@
 				}
 			]
 			title: "Feeding the Calla"
-			x: 2.0d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["05282D7A4CE074AA"]
 			description: [
-				"&7[NCP Field Memo #0220: Generators, Zwei]"
+				"&7[NCP Field Memo #0220: Generators, Ein]"
 				""
-				"The next generators want a full &bKlein Star Zwei&r and a steel block: Clay, Grass, Fungus and Dye."
-				"The &bDye Generator&r matters most. It's the only place blue and black dye come from out here,"
-				"and Super Factory Manager and XNet are built out of colours."
-				"&7Sixteen dyes out of nothing. Somewhere, a painter is very confused."
+				"The Calla were farmers before they were anything else, and a farmer starts with ground."
+				"The &bDirt Generator&r costs what the Gravel Generator cost: a full &bKlein Star Ein&r (50,000 EMC),"
+				"stone bricks, an iron block, two dirt and glass. Then it makes dirt, forever."
+				"Botany pots, the fields, the nine blocks under the Paddy's glass: all of it starts here."
+				"&7Out here, a block of dirt is worth more than a block of gold. Nearly."
 			]
-			id: "5BEF8AFF4CD15F03"
+			id: "7427A2625A2AC8D3"
 			rewards: [
 				{
 					count: 3
-					id: "1F5D10FE418EB0DC"
+					id: "0062D0A0160D49A8"
 					item: "positronics:ncp_scrip"
 					type: "item"
 				}
 			]
 			tasks: [
 				{
-					id: "2801C52B70121B52"
-					item: "usrg:dyegenerator"
+					id: "196F172936418AD7"
+					item: "usrg:dirtgenerator"
 					type: "item"
 				}
 			]
-			title: "Colour"
-			x: 4.0d
-			y: -1.5d
+			title: "Soil"
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1845323CB80C94E1" "23959B9E619112CD"]

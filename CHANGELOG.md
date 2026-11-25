@@ -7,6 +7,20 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
 
 - **Storage Controller memo (3005) fixed:** it said the controller fills every drawer around it. It only works
   with drawers linked to it with the Linking Tool; the memo now explains how, and the quest asks for the tool.
+- Avaritia's Nether Crafting Table is now the **Assembly Table** (name, EMI category and quests). There's no
+  Nether here, and the name made it sound like there was. The End Crafting Table (7x7, EV) is now the
+  **Heavy Assembly Table**.
+- **The Calla opens with Soil:** a new quest (memo 0220) for the Dirt Generator (full Klein Star Ein, 50,000 EMC),
+  and Feeding the Calla now follows it, so the farms, botany pots and the Paddy's nine dirt have a source.
+- **The Dye Generator quest moved to Logistics** (memo 3023), just before Super Factory Manager, the only thing that
+  needs it. It no longer sits at the start of the Calla looking like the first step. If you already finished it,
+  it stays finished.
+- **Reclamation Catalogue**, a new chapter next to the NCP Shop. It sells the first copy of eight USRG generators
+  for Scrip, once per world: Dirt and Sand for 12 Scrip (after Reclamation Mk II); Clay, Fungus and Dye for 25
+  (in the Calla); Snow, Ice and Obsidian for 40 (after Lud's Aluminium quest). Further copies are still crafted
+  with a full Klein star. Ore and Gravel aren't sold.
+- New tips: the catalogue's Dirt (0220) and Dye (3023) offers, and how the snow, ice and obsidian generators feed
+  each other (0316).
 
 ## 0.1.1-beta (2026-11-24)
 

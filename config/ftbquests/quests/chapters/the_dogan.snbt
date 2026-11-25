@@ -309,7 +309,7 @@
 			description: [
 				"&7[NCP Field Memo #0511: Assembly]"
 				""
-				"A 7x7 grid: your Nether Crafting Table, rebuilt with EV parts. Positronic Core IV is assembled here."
+				"A 7x7 grid: your Assembly Table, rebuilt with EV parts. Positronic Core IV is assembled here."
 			]
 			id: "61088813BEE63811"
 			rewards: [
@@ -327,7 +327,7 @@
 					type: "item"
 				}
 			]
-			title: "The End Crafting Table"
+			title: "The Heavy Assembly Table"
 			x: 6.0d
 			y: 3.0d
 		}

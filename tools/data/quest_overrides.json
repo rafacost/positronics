@@ -117,6 +117,9 @@
   "logistics/controller/reward/0": "721BA8B99F785DF8",
   "logistics/drawers": "0DCACCA06866AA06",
   "logistics/drawers/task/0": "32DE2C3A110CBE18",
+  "logistics/dyegen": "5BEF8AFF4CD15F03",
+  "logistics/dyegen/reward/0": "1F5D10FE418EB0DC",
+  "logistics/dyegen/task/0": "2801C52B70121B52",
   "logistics/ex_ae": "4BDCB0A0A33D29D6",
   "logistics/ex_ae/task/1": "1DBAAF204EF0951C",
   "logistics/matrix": "16CC96C70B800E1D",
@@ -971,6 +974,10 @@
   "logistics/drawers": [
    0.0,
    1.5
+  ],
+  "logistics/dyegen": [
+   2.0,
+   -1.5
   ],
   "logistics/emc_ae": [
    14.0,
@@ -1892,16 +1899,12 @@
    16.0,
    0.0
   ],
-  "the_calla/dyegen": [
-   4.0,
-   -1.5
-  ],
   "the_calla/ebf": [
    12.0,
    1.5
   ],
   "the_calla/farms": [
-   2.0,
+   4.0,
    1.5
   ],
   "the_calla/gen": [
@@ -1935,6 +1938,10 @@
   "the_calla/seed2": [
    18.0,
    0.0
+  ],
+  "the_calla/soil": [
+   2.0,
+   1.5
   ],
   "the_calla/star": [
    14.0,
@@ -1999,6 +2006,10 @@
   "the_dogan/evhull": [
    4.0,
    0.0
+  ],
+  "the_dogan/hf": [
+   12.0,
+   -1.5
   ],
   "the_dogan/lcr": [
    6.0,

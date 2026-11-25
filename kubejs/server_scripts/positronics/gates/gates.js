@@ -1,7 +1,7 @@
 // Positronics: tier gates.
 //  1. Positronic Cores I-V: a FULLY charged star in the centre of a grid that grows with the tier
-//     (decided 2026-11-20): Core I 3x3 (crafting table, ULV), II 4x4 and III 5x5 (Nether Crafting Table,
-//     LV/MV), IV 7x7 (End Crafting Table, EV), V 9x9 (Extreme Crafting Table, LuV). Avaritia tables only
+//     (decided 2026-11-20): Core I 3x3 (crafting table, ULV), II 4x4 and III 5x5 (Assembly Table, Avaritia's nether_crafting_table,
+//     LV/MV), IV 7x7 (Heavy Assembly Table, Avaritia's end_crafting_table, EV), V 9x9 (Extreme Crafting Table, LuV). Avaritia tables only
 //     come in 3/5/7/9, and a smaller pattern fits a bigger table.
 //     Stars are charged by the Antimatter Relay ("Beam Capacitor") burning your own production.
 //  2. NCP Clearance Cards 1-10: card N is made at tier N; it gates tier N+1 machine hulls.

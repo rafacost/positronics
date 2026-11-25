@@ -1,0 +1,253 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "reclamation_catalogue"
+	group: "54FF0D80BA2ED911"
+	icon: "usrg:dirtgenerator"
+	id: "062EEEAECC90D505"
+	order_index: 42
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["473628F3957FFFB0"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Dirt Generator for 12 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Ein."
+			]
+			icon: "usrg:dirtgenerator"
+			id: "1FABCC67D7DC7029"
+			rewards: [
+				{
+					id: "5400F2F5BECA62DC"
+					item: "usrg:dirtgenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "2C68C9B0D0A6C87B"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Dirt Generator"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473628F3957FFFB0"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Sand Generator for 12 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Ein."
+			]
+			icon: "usrg:sandgenerator"
+			id: "79655499AED5953E"
+			rewards: [
+				{
+					id: "1341497B81FEC67E"
+					item: "usrg:sandgenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "2E950D864EC172A9"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Sand Generator"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Clay Generator for 25 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Zwei."
+			]
+			icon: "usrg:claygenerator"
+			id: "4FCCDE0F2441AB5F"
+			rewards: [
+				{
+					id: "579878BDD544EB98"
+					item: "usrg:claygenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 25L
+					id: "1730E16ABC080BEB"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Clay Generator"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Fungus Generator for 25 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Zwei."
+			]
+			icon: "usrg:fungusgenerator"
+			id: "69EF8CDA9B04CDE4"
+			rewards: [
+				{
+					id: "5609BD440646C110"
+					item: "usrg:fungusgenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 25L
+					id: "744494ED4BEA9130"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Fungus Generator"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05282D7A4CE074AA"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Dye Generator for 25 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Zwei."
+			]
+			icon: "usrg:dyegenerator"
+			id: "01739DC378FE975A"
+			rewards: [
+				{
+					id: "119255471BBB8975"
+					item: "usrg:dyegenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 25L
+					id: "2A4030CD16F2E266"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Dye Generator"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Snow Generator for 40 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Drei."
+			]
+			icon: "usrg:snowgenerator"
+			id: "678212C7226DCCB4"
+			rewards: [
+				{
+					id: "5214497BA57624BA"
+					item: "usrg:snowgenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 40L
+					id: "299EFB79DD7298DD"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Snow Generator"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Ice Generator for 40 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Drei."
+			]
+			icon: "usrg:icegenerator"
+			id: "5D3119D3C41EA0C2"
+			rewards: [
+				{
+					id: "4763D596980AF144"
+					item: "usrg:icegenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 40L
+					id: "77D14E71C61BE492"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Ice Generator"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["368F1143967A8DF5"]
+			description: [
+				"&7[Reclamation Catalogue]"
+				""
+				"One Obsidian Generator for 40 NCP Scrip."
+				"&7Once per world. Every copy after this one is crafted with a full Klein Star Drei."
+			]
+			icon: "usrg:obsidiangenerator"
+			id: "06B9D244422DA783"
+			rewards: [
+				{
+					id: "6F93318FD13A4A3A"
+					item: "usrg:obsidiangenerator"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 40L
+					id: "1540B02230D66BAC"
+					item: "positronics:ncp_scrip"
+					type: "item"
+				}
+			]
+			title: "Obsidian Generator"
+			x: 3.0d
+			y: 3.0d
+		}
+	]
+	title: "Reclamation Catalogue"
+}
