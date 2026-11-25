@@ -12,3 +12,8 @@ great_scrollable_tooltips
 defaultoptions
 hideexperimentalwarning
 ^CTM-
+# FancyMenu only draws the title screen; Konkrete and Melody are its libraries, FM Loop Fix patches it.
+^fancymenu_
+^konkrete_
+^melody_
+^fmloopfix-

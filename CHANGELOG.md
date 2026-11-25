@@ -19,6 +19,8 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
   for Scrip, once per world: Dirt and Sand for 12 Scrip (after Reclamation Mk II); Clay, Fungus and Dye for 25
   (in the Calla); Snow, Ice and Obsidian for 40 (after Lud's Aluminium quest). Further copies are still crafted
   with a full Klein star. Ore and Gravel aren't sold.
+- **Server pack** is smaller: FancyMenu (the title screen) and its libraries Konkrete, Melody and FM Loop Fix are
+  client-only now, and stray `.bak` config files are left out.
 - New tips: the catalogue's Dirt (0220) and Dye (3023) offers, and how the snow, ice and obsidian generators feed
   each other (0316).
 

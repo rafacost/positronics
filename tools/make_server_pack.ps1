@@ -40,7 +40,7 @@ Write-Host "mods: $($kept.Count) of $($jars.Count) jars (client-only left out: $
 foreach ($dir in 'config', 'defaultconfigs', 'kubejs') {
     $src = Join-Path $Instance $dir
     if (Test-Path $src) {
-        robocopy $src (Join-Path $stage $dir) /E /NJH /NJS /NP /NDL /XD probe exported local /XF *.log | Out-Null
+        robocopy $src (Join-Path $stage $dir) /E /NJH /NJS /NP /NDL /XD probe exported local /XF *.log *.bak | Out-Null
         if ($LASTEXITCODE -ge 8) { throw "robocopy failed for $dir ($LASTEXITCODE)" }
     }
 }
