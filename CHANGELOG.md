@@ -5,6 +5,9 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
 
 ## 0.1.2-beta (2026-11-25)
 
+- **Server pack zip fixed:** it was written with Windows backslashes in its paths, which the zip format doesn't
+  allow, so Linux tools (and CurseForge's processing) saw one long file name instead of folders. It also leaves out
+  FancyMenu and its libraries (client-only) and stray `.bak` configs now: 137 MB instead of 182.
 - **Solar exploit closed.** Solar Flux's own panel recipes (all 8 tiers) were never removed, because Solar Flux
   registers them through its own library. Any tier could be crafted from its photovoltaic cells with no voltage
   gate. They're off now (`config/solarflux/recipes.cfg`, and removed by id), along with the photovoltaic cells,
@@ -34,8 +37,6 @@ Versions follow `MAJOR.MINOR.PATCH-stage`. During the beta, a MINOR bump may nee
   for Scrip, once per world: Dirt and Sand for 12 Scrip (after Reclamation Mk II); Clay, Fungus and Dye for 25
   (in the Calla); Snow, Ice and Obsidian for 40 (after Lud's Aluminium quest). Further copies are still crafted
   with a full Klein star. Ore and Gravel aren't sold.
-- **Server pack** is smaller: FancyMenu (the title screen) and its libraries Konkrete, Melody and FM Loop Fix are
-  client-only now, and stray `.bak` config files are left out.
 - New tips: the catalogue's Dirt (0220) and Dye (3023) offers, and how the snow, ice and obsidian generators feed
   each other (0316).
 
